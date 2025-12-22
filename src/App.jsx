@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Routes, Route, NavLink, Outlet } from 'react-r
 import { motion, AnimatePresence } from 'framer-motion';
 import Dashboard from './pages/Dashboard';
 import TopicOne from './pages/TopicOne';
-
+import TopicTwo from './pages/TopicTwo';
+ 
 const Sidebar = () => {
   const menuItems = [
     { path: "/", label: "Dashboard", icon: "🏛️" },
     { path: "/home1", label: "Privaatrecht II", icon: "⚖️" },
-    { path: "/home2", label: "Bestuursrecht", icon: "📚", disabled: true },
+    { path: "/home2", label: "Erfrecht", icon: "📚" },
   ];
 
   return (
@@ -65,6 +66,7 @@ const App = () => {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/home1" element={<TopicOne />} />
+          <Route path="/home2" element={<TopicTwo />} />
         </Route>
       </Routes>
     </Router>
