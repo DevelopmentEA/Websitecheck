@@ -9,8 +9,9 @@ import TopicOne from './pages/TopicOne';
 import TopicTwo from './pages/TopicTwo';
 import TopicTree from './pages/TopicTree';
 
-// Importeer de knop vanuit de juiste map
+// Importeer de knoppen vanuit de juiste map
 import DonateButton from './pages/Button';
+import StudyMusic from './pages/StudyMusic'; // Zorg dat dit bestand in ./pages/ staat
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +59,7 @@ const Sidebar = () => {
           
           {/* Titel tekst (verdwijnt bij inklappen) */}
           <motion.div variants={textVariants} className="whitespace-nowrap">
-            <h1 className="text-2xl font-bold tracking-tighter font-serif italic">JUDICA</h1>
+            <h1 className="text-2xl font-bold tracking-tighter font-serif italic">ELBERT</h1>
             <p className="text-[8px] text-slate-400 uppercase tracking-[0.3em] font-black">Knowledge Base</p>
           </motion.div>
         </div>
@@ -112,7 +113,7 @@ const Sidebar = () => {
   );
 };
 
-// Layout met de DonateButton toegevoegd
+// Layout met de DonateButton en StudyMusic toegevoegd
 const MainLayout = () => (
   <div className="flex h-screen w-screen bg-[#FDFCFB] overflow-hidden relative">
     <Sidebar />
@@ -122,7 +123,10 @@ const MainLayout = () => (
       </div>
     </main>
     
-    {/* Hier staat de knop, altijd zichtbaar rechtsonder */}
+    {/* Studiemuziek knop linksonder */}
+    <StudyMusic />
+
+    {/* Doneer knop rechtsonder */}
     <DonateButton />
   </div>
 );

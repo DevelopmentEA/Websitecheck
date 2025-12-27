@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  /* HET PALET VAN ELBERT'S KENNISBANK */
   --primary-navy: #1A365D;
   --accent-gold: #C5A059;
   --paper-ivory: #FAF9F6;
@@ -12,7 +11,7 @@
   --border-soft: #E2E8F0;
 
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
+  line-height: 1.7; 
   font-weight: 400;
 
   color-scheme: light;
@@ -23,119 +22,98 @@
   -webkit-font-smoothing: antialiased;
 }
 
+/* VERWIJDER PADDING EN FLEX CENTERING OP BODY VOOR SIDEBAR LAYOUT */
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0; /* Weg met de witte balken */
   min-height: 100vh;
   width: 100%;
-  /* Padding zorgt dat content op mobiel niet tegen de rand staat */
-  padding: 1rem; 
-  box-sizing: border-box;
+  overflow: hidden; /* Zorgt dat de scrollbars in je 'main' element blijven */
   
-  /* Subtiele korrel-textuur */
-  background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
-  background-size: 24px 24px;
+  background-color: var(--paper-ivory);
+  background-image: radial-gradient(#e5e7eb 0.7px, transparent 0.7px);
+  background-size: 32px 32px; 
 }
 
-/* RESPONSIVE CONTAINER */
+/* ROOT MOET NU HET HELE SCHERM VULLEN */
 #root {
   width: 100%;
-  max-width: 1000px; /* Voorkomt dat de app te breed wordt op ultra-wide schermen */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
+  display: block; /* Veranderd van flex om sidebar niet te breken */
 }
 
-/* TYPOGRAFIE: GEBRUIK VAN CLAMP VOOR RESPONSIEVE GROOTTE */
+/* TITELS - COMPACT EN STRAK */
 h1 {
   font-family: 'Playfair Display', serif;
   color: var(--primary-navy);
-  /* clamp(minimum, voorkeur, maximum) - schaalt tussen mobiel en laptop */
-  font-size: clamp(2rem, 8vw, 3.5rem); 
-  line-height: 1.1;
+  font-size: clamp(1.25rem, 5vw, 2.5rem); 
+  line-height: 1.2;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   letter-spacing: -0.02em;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
   color: var(--primary-navy);
   margin-top: 2rem;
+  margin-bottom: 1.2rem;
 }
 
-/* LINKS: Mobielvriendelijke interactie */
-a {
-  font-weight: 600;
-  color: var(--primary-navy);
-  text-decoration: none;
-  border-bottom: 2px solid var(--accent-gold);
-  transition: all 0.2s ease;
-  padding: 2px 4px;
-}
-
-a:hover {
-  background-color: var(--accent-gold);
-  color: white;
-  border-radius: 4px;
-}
-
-/* BUTTONS: Geoptimaliseerd voor touch (mobiel) en click (laptop) */
+/* BUTTONS - GEEN GEDWONGEN WITTE KLEUR OP HOVER */
 button {
-  border-radius: 12px;
-  border: 1px solid var(--border-soft);
-  /* Grotere padding op mobiel voor dikke vingers */
-  padding: 0.8rem 1.6rem;
-  min-height: 44px; /* Apple/Google standaard voor touch targets */
-  font-size: 1rem;
+  border-radius: 14px;
+  border: 1.5px solid var(--border-soft);
+  padding: 0.8rem 2rem; 
+  min-height: 48px;
+  font-size: 1.1rem; 
   font-weight: 600;
   background-color: white;
   color: var(--primary-navy);
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  width: auto;
-  max-width: 100%;
-}
-
-/* Zorg dat knoppen op kleine schermen eventueel de volle breedte pakken indien nodig */
-@media (max-width: 480px) {
-  button {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
 }
 
 button:hover {
   border-color: var(--primary-navy);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+  /* Achtergrondkleur veranderen we hier niet, zodat StudyMusic blauw blijft */
 }
 
-/* QUIZ CARDS: Voor de overzichtelijkheid */
+/* QUIZ CARDS */
 .quiz-card {
   background: white;
   border: 1px solid var(--border-soft);
-  border-radius: 16px;
-  padding: 1.5rem;
+  border-radius: 20px;
+  padding: 2rem; 
   width: 100%;
+  max-width: 900px; /* Houdt de quiz leesbaar breed maar niet overdreven */
+  margin: 0 auto 2rem auto;
   box-sizing: border-box;
-  margin-bottom: 1rem;
-  transition: border-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
 .quiz-card:hover {
   border-color: var(--accent-gold);
 }
 
+/* TEXTUELE CONTENT */
+.prose-legal {
+  width: 100%;
+  max-width: 75ch; 
+  margin: 0 auto;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--ink-slate);
+}
+
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #E2E8F0;
+    color: #F1F5F9;
     background-color: #0F172A;
     --paper-ivory: #0F172A;
     --border-soft: #1E293B;
@@ -155,18 +133,12 @@ button:hover {
     color: white;
     border-color: #334155;
   }
+
+  button:hover {
+    border-color: var(--accent-gold);
+  }
   
   h1, h2, h3 {
     color: #F8FAFC;
   }
-}
-
-/* EXTRA SCHERM-OPTIMALISATIE VOOR CASUSSEN */
-.prose-legal {
-  width: 100%;
-  max-width: 65ch; /* Voorkomt te lange regels op laptops */
-  margin: 0 auto;
-  font-size: clamp(1rem, 3vw, 1.125rem);
-  text-align: justify;
-  hyphens: auto;
 }
