@@ -85,11 +85,11 @@ const Dashboard = () => {
               </div>
 
               <div className="relative z-10 flex gap-4 mt-8">
-                <NavLink to="/home1" className="flex items-center gap-3 px-8 py-4 bg-white text-[#1A365D] rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-[#C5A059] hover:text-white transition-all shadow-lg">
+                <NavLink to="/SRI" className="flex items-center gap-3 px-8 py-4 bg-white text-[#1A365D] rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-[#C5A059] hover:text-white transition-all shadow-lg">
                   Start Training
                   <ArrowRight size={16} />
                 </NavLink>
-                <NavLink to="/home2" className="flex items-center gap-3 px-8 py-4 bg-[#1A365D] border border-white/20 text-white rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-[#152C4E] transition-all">
+                <NavLink to="/SRII" className="flex items-center gap-3 px-8 py-4 bg-[#1A365D] border border-white/20 text-white rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-[#152C4E] transition-all">
                   Expert Modus
                 </NavLink>
               </div>

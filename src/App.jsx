@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard';
 import TopicOne from './pages/TopicOne';
 import TopicTwo from './pages/TopicTwo';
 import TopicTree from './pages/TopicTree';
+import TopicFour from './pages/TopicFour';
 
 // Importeer de knoppen vanuit de juiste map
 import DonateButton from './pages/Button';
@@ -18,9 +19,10 @@ const Sidebar = () => {
 
   const menuItems = [
     { path: "/", label: "Dashboard", icon: "😎" },
-    { path: "/home1", label: "Strafrecht", icon: "😔" },
-    { path: "/home2", label: "Strafrecht Expert", icon: "😭" },
-    { path: "/home3", label: "Strafrecht Extra", icon: "👹" },
+    { path: "/SRI", label: "Strafrecht", icon: "😔" },
+    { path: "/SRII", label: "Strafrecht Expert", icon: "😭" },
+    { path: "/SRIII", label: "Strafrecht Extra", icon: "👹" },
+    { path: "/IPR", label: "Internationaal Publiek Recht", icon: "🇪🇺" },
   ];
 
   // Animatie instellingen
@@ -137,9 +139,10 @@ const App = () => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/home1" element={<TopicOne />} />
-          <Route path="/home2" element={<TopicTwo />} />
-          <Route path="/home3" element={<TopicTree />} />
+          <Route path="/SRI" element={<TopicOne />} />
+          <Route path="/SRII" element={<TopicTwo />} />
+          <Route path="/SRIII" element={<TopicTree />} />
+          <Route path="/IPR" element={<TopicFour />} />
         </Route>
       </Routes>
     </Router>
