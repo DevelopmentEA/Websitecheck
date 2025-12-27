@@ -17,7 +17,7 @@ const Sidebar = () => {
 
   const menuItems = [
     { path: "/", label: "Dashboard", icon: "😎" },
-    { path: "/home1", label: "Strafrecht", icon: "😩" },
+    { path: "/home1", label: "Strafrecht", icon: "😔" },
     { path: "/home2", label: "Strafrecht Expert", icon: "😭" },
     { path: "/home3", label: "Strafrecht Extra", icon: "👹" },
   ];

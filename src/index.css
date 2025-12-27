@@ -1,28 +1,26 @@
 @import "tailwindcss";
 
-/* Google Fonts Import voor de academische look */
+/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   /* HET PALET VAN ELBERT'S KENNISBANK */
-  --primary-navy: #1A365D;    /* Oxford Blue */
-  --accent-gold: #C5A059;     /* Deep Gold */
-  --paper-ivory: #FAF9F6;     /* Off-white / Ivory */
-  --ink-slate: #2D3748;       /* Deep Slate for text */
+  --primary-navy: #1A365D;
+  --accent-gold: #C5A059;
+  --paper-ivory: #FAF9F6;
+  --ink-slate: #2D3748;
   --border-soft: #E2E8F0;
 
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  line-height: 1.6; /* Iets meer witruimte voor betere leesbaarheid van casussen */
+  line-height: 1.6;
   font-weight: 400;
 
   color-scheme: light;
   color: var(--ink-slate);
   background-color: var(--paper-ivory);
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -30,82 +28,126 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   min-height: 100vh;
   width: 100%;
-  /* Subtiele korrel-textuur voor een 'papieren' gevoel */
+  /* Padding zorgt dat content op mobiel niet tegen de rand staat */
+  padding: 1rem; 
+  box-sizing: border-box;
+  
+  /* Subtiele korrel-textuur */
   background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
   background-size: 24px 24px;
 }
 
-/* TYPOGRAFIE: SERIF VOOR KOPPEN (AUTORITEIT) */
-h1, h2, h3, .serif {
+/* RESPONSIVE CONTAINER */
+#root {
+  width: 100%;
+  max-width: 1000px; /* Voorkomt dat de app te breed wordt op ultra-wide schermen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TYPOGRAFIE: GEBRUIK VAN CLAMP VOOR RESPONSIEVE GROOTTE */
+h1 {
   font-family: 'Playfair Display', serif;
   color: var(--primary-navy);
+  /* clamp(minimum, voorkeur, maximum) - schaalt tussen mobiel en laptop */
+  font-size: clamp(2rem, 8vw, 3.5rem); 
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
 }
 
-h1 {
-  font-size: 3.5rem;
-  line-height: 1.1;
-  font-weight: 700;
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  color: var(--primary-navy);
+  margin-top: 2rem;
 }
 
-/* LINKS */
+/* LINKS: Mobielvriendelijke interactie */
 a {
   font-weight: 600;
   color: var(--primary-navy);
   text-decoration: none;
   border-bottom: 2px solid var(--accent-gold);
   transition: all 0.2s ease;
+  padding: 2px 4px;
 }
 
 a:hover {
   background-color: var(--accent-gold);
   color: white;
+  border-radius: 4px;
 }
 
-/* BUTTONS: STRAK EN PROFESSIONEEL */
+/* BUTTONS: Geoptimaliseerd voor touch (mobiel) en click (laptop) */
 button {
   border-radius: 12px;
   border: 1px solid var(--border-soft);
-  padding: 0.8em 1.6em;
-  font-size: 0.95rem;
+  /* Grotere padding op mobiel voor dikke vingers */
+  padding: 0.8rem 1.6rem;
+  min-height: 44px; /* Apple/Google standaard voor touch targets */
+  font-size: 1rem;
   font-weight: 600;
-  font-family: 'Inter', sans-serif;
   background-color: white;
   color: var(--primary-navy);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  width: auto;
+  max-width: 100%;
+}
+
+/* Zorg dat knoppen op kleine schermen eventueel de volle breedte pakken indien nodig */
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 }
 
 button:hover {
   border-color: var(--primary-navy);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-button:active {
-  transform: translateY(0);
+/* QUIZ CARDS: Voor de overzichtelijkheid */
+.quiz-card {
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s;
 }
 
-button:focus-visible {
-  outline: 3px solid var(--accent-gold);
-  outline-offset: 2px;
+.quiz-card:hover {
+  border-color: var(--accent-gold);
 }
 
-/* DARK MODE: DE "DEEP INK" VARIANT */
+/* DARK MODE */
 @media (prefers-color-scheme: dark) {
   :root {
     color: #E2E8F0;
-    background-color: #0F172A; /* Deep Navy Night */
-    --ink-slate: #E2E8F0;
+    background-color: #0F172A;
     --paper-ivory: #0F172A;
+    --border-soft: #1E293B;
   }
   
   body {
     background-image: radial-gradient(#1e293b 0.5px, transparent 0.5px);
+  }
+
+  .quiz-card {
+    background: #1E293B;
+    border-color: #334155;
   }
 
   button {
@@ -121,6 +163,10 @@ button:focus-visible {
 
 /* EXTRA SCHERM-OPTIMALISATIE VOOR CASUSSEN */
 .prose-legal {
-  max-width: 65ch; /* Optimale breedte voor het lezen van lange teksten */
-  font-size: 1.125rem;
+  width: 100%;
+  max-width: 65ch; /* Voorkomt te lange regels op laptops */
+  margin: 0 auto;
+  font-size: clamp(1rem, 3vw, 1.125rem);
+  text-align: justify;
+  hyphens: auto;
 }

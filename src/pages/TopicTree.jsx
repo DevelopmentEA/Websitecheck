@@ -621,7 +621,7 @@ const StrafrechtExpertQuiz = () => {
     <div className="w-full min-h-screen bg-slate-100 font-serif antialiased pb-20">
       <nav className="h-20 bg-white border-b border-slate-200 px-10 flex justify-between items-center sticky top-0 z-50 shadow-sm">
         <div className="flex flex-col">
-          <span className="text-xl font-bold tracking-tighter text-slate-800">ELBERTS EXPERT QUIZ</span>
+          <span className="text-xl font-bold tracking-tighter text-slate-800">EXPERT QUIZ</span>
           <span className="text-[9px] uppercase tracking-[0.4em] text-indigo-600 font-black italic">Master Strafrecht — Score: {currentScore} / {QUESTIONS.length}</span>
         </div>
         {gameState === 'quiz' && (
