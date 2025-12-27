@@ -9,6 +9,7 @@ import TopicOne from './pages/TopicOne';
 import TopicTwo from './pages/TopicTwo';
 import TopicTree from './pages/TopicTree';
 import TopicFour from './pages/TopicFour';
+import TopicFive from './pages/TopicFive';
 
 // Importeer de knoppen vanuit de juiste map
 import DonateButton from './pages/Button';
@@ -23,6 +24,7 @@ const Sidebar = () => {
     { path: "/SRII", label: "Strafrecht Expert", icon: "😭" },
     { path: "/SRIII", label: "Strafrecht Extra", icon: "👹" },
     { path: "/IPR", label: "Internationaal Publiek Recht", icon: "🇪🇺" },
+    { path: "/IPRII", label: "IPR Tentamen", icon: "🌍" },
   ];
 
   // Animatie instellingen
@@ -143,6 +145,7 @@ const App = () => {
           <Route path="/SRII" element={<TopicTwo />} />
           <Route path="/SRIII" element={<TopicTree />} />
           <Route path="/IPR" element={<TopicFour />} />
+          <Route path="/IPRII" element={<TopicFive />} />
         </Route>
       </Routes>
     </Router>
