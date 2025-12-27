@@ -98,11 +98,11 @@ const Sidebar = () => {
       <div className="p-0 h-24 flex items-center border-t border-white/10 bg-black/10">
         <div className="px-6 flex items-center gap-4 w-full">
           <div className="min-w-[24px] h-8 w-8 rounded-full bg-slate-500/20 flex items-center justify-center text-xs font-bold border border-white/20">
-            EJ
+            EA
           </div>
           <motion.div variants={textVariants} className="whitespace-nowrap">
             <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-tight">
-              User: Elbert J.<br/>
+              User: Unknown<br/>
               <span className="text-[#C5A059]">Premium</span>
             </p>
           </motion.div>
