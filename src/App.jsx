@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Outlet } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Scale } from 'lucide-react'; // Optioneel: een icoon voor de header
+import { motion } from 'framer-motion';
+import { Scale } from 'lucide-react';
+
+// Importeer je pagina's
 import Dashboard from './pages/Dashboard';
 import TopicOne from './pages/TopicOne';
 import TopicTwo from './pages/TopicTwo';
 import TopicTree from './pages/TopicTree';
+
+// Importeer de knop vanuit de juiste map
+import DonateButton from './pages/Button';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -107,15 +112,18 @@ const Sidebar = () => {
   );
 };
 
-// Layout
+// Layout met de DonateButton toegevoegd
 const MainLayout = () => (
-  <div className="flex h-screen w-screen bg-[#FDFCFB] overflow-hidden">
+  <div className="flex h-screen w-screen bg-[#FDFCFB] overflow-hidden relative">
     <Sidebar />
     <main className="flex-1 h-full overflow-y-auto relative">
       <div className="min-h-full w-full">
         <Outlet />
       </div>
     </main>
+    
+    {/* Hier staat de knop, altijd zichtbaar rechtsonder */}
+    <DonateButton />
   </div>
 );
 
