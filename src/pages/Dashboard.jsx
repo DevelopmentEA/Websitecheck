@@ -35,7 +35,7 @@ const Dashboard = () => {
           </div>
           <div>
             <h1 className="text-xl font-bold text-[#1A365D] font-serif tracking-tight leading-none">
-              ELBERTS STRAFRECHT PARADIJS
+              JOUW STRAFRECHT QUIZZEN
             </h1>
             <p className="text-[10px] uppercase tracking-widest text-[#C5A059] font-bold">
               Kennisbank & Training
