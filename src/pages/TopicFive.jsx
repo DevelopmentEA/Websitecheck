@@ -27,10 +27,9 @@ const questions = [
   { id: 16, q: "Wat is de juridische 'clou' van forum prorogatum?", a: "Instemming met rechtsmacht door te verschijnen in een zaak zonder bezwaar te maken.", r: "Rechtsmacht van het IGH is altijd gebaseerd op instemming; dit kan ook impliciet gebeuren na het starten van de procedure." },
   { id: 17, q: "In welke fase van een IGH-procedure kan het Hof 'voorlopige maatregelen' opleggen?", a: "In de fase waarin een onherstelbaar nadeel voor de rechten van een partij dreigt (Art. 41 Statuut).", r: "Deze maatregelen zijn bindend en bedoeld om de status quo te bevriezen zolang de bodemprocedure loopt." },
   { id: 18, q: "Wat is het verschil tussen bemiddeling en conciliatie?", a: "Conciliatie wordt gedaan door een commissie die een formeel (niet-bindend) rapport met oplossingen uitbrengt.", r: "Bemiddeling is minder formeel en meer gericht op het faciliteren van politieke onderhandelingen door een tussenpersoon." },
-  { id: 19, q: "Waarom zijn tegenmaatregelen (represailles) in principe onrechtmatig?", a: "Omdat het daden zijn die normaal een schending vormen, maar waarvan de onrechtmatigheid vervalt als reactie op een ander.", r: "Het is een vorm van zelfhulp die streng gereguleerd is om escalatie te voorkomen (bijv. verbod op geweld)." },
+  { id: 19, q: "Waarom zijn tegenmaatregelen (represailles) in principe onrechtmatig?", a: "Omdat het daden zijn die normaal een schending vormen, maar waarvan de onrechtmatigheid vervalt als reactie op een ander.", r: "Het is een vorm van zelfhulp die streng gereguleerd is om eigenrichting te beperken (bijv. verbod op geweld)." },
   { id: 20, q: "Wat houdt de 'monetary gold' doctrine in voor de ontvankelijkheid bij het IGH?", a: "Het Hof kan geen zaak behandelen als de juridische belangen van een derde staat de 'kern' van het geschil vormen zonder diens instemming.", r: "Omdat de rechtsmacht op consensus rust, mag het Hof niet indirect oordelen over de rechten van staten die geen partij zijn bij de zaak." },
 
-  // ... (Ik heb de lijst ingekort voor de leesbaarheid, maar je kunt hier de overige 30 vragen op dezelfde wijze invullen)
   { id: 21, q: "Welk beginsel verbiedt staten om in te grijpen in de binnenlandse aangelegenheden van een andere staat?", a: "Het non-interventiebeginsel.", r: "Dit vloeit rechtstreeks voort uit de soevereiniteit van staten en de 'domestic jurisdiction' (art 2 lid 7 VN-Handvest)." },
   { id: 22, q: "Wanneer is een 'countermeasure' disproportioneel?", a: "Wanneer de schade van de tegenmaatregel veel groter is dan de schade van de oorspronkelijke schending.", r: "Evenredigheid is een harde eis voor de rechtmatigheid van een represaille." },
   { id: 23, q: "Kan de Veiligheidsraad een advies van het IGH negeren?", a: "Ja, een advies is niet bindend.", r: "Hoewel adviezen zeer gezaghebbend zijn, hebben ze niet de executoriale kracht van een vonnis in een geschil." },
@@ -60,7 +59,7 @@ const questions = [
   { id: 47, q: "Zijn massavernietigingswapens toegestaan in de ruimte?", a: "Nee, het Ruimteverdrag verbiedt het plaatsen van kernwapens in een baan om de aarde.", r: "De ruimte is 'Province of all Mankind' en mag niet worden gemilitariseerd met dergelijke wapens." },
   { id: 48, q: "Wat is het 'Attributiebeginsel' bij IGO's?", a: "De organisatie mag alleen doen wat de lidstaten haar via het verdrag hebben opgedragen.", r: "In tegenstelling tot staten hebben IGO's geen algemene bevoegdheid." },
   { id: 49, q: "Wat zijn 'Implied Powers'?", a: "Bevoegdheden die niet in de tekst staan, maar noodzakelijk zijn voor de uitvoering van taken.", r: "Dit werd bevestigd in het Reparation for Injuries advies voor de VN." },
-  { id: 50, q: "Is de Europese Unie een 'gewone' IGO?", a: "Nee, het is een supranationale organisatie met eigen rechtsmacht boven de lidstaten.", r: "De EU kan direct rechten en plichten scheppen voor burgers zonder tussenkomst van de nationale staat." },
+  { id: 50, q: "Is de Europese Unie en 'gewone' IGO?", a: "Nee, het is een supranationale organisatie met eigen rechtsmacht boven de lidstaten.", r: "De EU kan direct rechten en plichten scheppen voor burgers zonder tussenkomst van de nationale staat." },
 ];
 
 const IPRStaticQuiz = () => {
@@ -99,7 +98,7 @@ const IPRStaticQuiz = () => {
         <div className="bg-[#1A365D] p-12 rounded-3xl text-center mb-24 shadow-2xl">
           <h3 className="text-white font-serif text-2xl mb-4 italic">Klaar met beantwoorden?</h3>
           <p className="text-white/70 mb-8 max-w-md mx-auto">
-            Scroll naar beneden voor de officiële antwoordsleutel en de juridische onderbouwing.
+            Scroll naar beneden voor de officiële antwoordsleutel en de Juridische Basis.
           </p>
           <motion.div 
             animate={{ y: [0, 10, 0] }}
@@ -113,7 +112,7 @@ const IPRStaticQuiz = () => {
         {/* Sectie 2: De Antwoorden */}
         <section id="answers">
           <h2 className="text-2xl font-serif text-[#1A365D] mb-8 border-b border-[#C5A059]/30 pb-2">
-            Deel II: Antwoorden & Rationale
+            Deel II: Antwoorden & Juridische Basis
           </h2>
           <div className="space-y-12">
             {questions.map((q) => (
@@ -129,7 +128,7 @@ const IPRStaticQuiz = () => {
                   <p className="font-bold text-[#1A365D] text-lg">{q.a}</p>
                 </div>
                 <div>
-                  <span className="text-xs font-black uppercase text-slate-400 block mb-1">Juridische Rationale:</span>
+                  <span className="text-xs font-black uppercase text-slate-400 block mb-1">Juridische Basis:</span>
                   <p className="text-slate-600 text-sm leading-relaxed">{q.r}</p>
                 </div>
               </div>
@@ -139,7 +138,7 @@ const IPRStaticQuiz = () => {
 
         {/* Footer */}
         <footer className="mt-24 text-center border-t border-slate-200 pt-12 text-slate-400 text-xs">
-          <p>© 2025 JUDICA Knowledge Base - Succes met je tentamen!</p>
+          <p>© 2025 Elbert Knowledge Base - Succes met je tentamen!</p>
         </footer>
       </div>
     </div>
