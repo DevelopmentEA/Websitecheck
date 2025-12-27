@@ -503,7 +503,7 @@ const StrafrechtNormalQuiz = () => {
     <div className="w-full min-h-screen bg-[#FAF9F6] font-serif antialiased pb-20">
       <nav className="h-20 bg-white border-b border-stone-200 px-10 flex justify-between items-center sticky top-0 z-50 shadow-sm">
         <div className="flex flex-col">
-          <span className="text-xl font-bold tracking-tighter text-[#1A365D]">LAWBOOKS KENNISBANK</span>
+          <span className="text-xl font-bold tracking-tighter text-[#1A365D]">Elbert KENNISBANK</span>
           <span className="text-[9px] uppercase tracking-[0.4em] text-[#C5A059] font-black italic">Editie Strafrecht — Score: {currentScore} / {QUESTIONS.length}</span>
         </div>
         {gameState === 'quiz' && (

@@ -5,6 +5,7 @@ import { Scale } from 'lucide-react'; // Optioneel: een icoon voor de header
 import Dashboard from './pages/Dashboard';
 import TopicOne from './pages/TopicOne';
 import TopicTwo from './pages/TopicTwo';
+import TopicTree from './pages/TopicTree';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ const Sidebar = () => {
     { path: "/", label: "Dashboard", icon: "😎" },
     { path: "/home1", label: "Strafrecht", icon: "😩" },
     { path: "/home2", label: "Strafrecht Expert", icon: "😭" },
+    { path: "/home3", label: "Strafrecht Extra", icon: "👹" },
   ];
 
   // Animatie instellingen
@@ -125,6 +127,7 @@ const App = () => {
           <Route path="/" element={<Dashboard />} />
           <Route path="/home1" element={<TopicOne />} />
           <Route path="/home2" element={<TopicTwo />} />
+          <Route path="/home3" element={<TopicTree />} />
         </Route>
       </Routes>
     </Router>
