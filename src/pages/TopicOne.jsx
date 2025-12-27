@@ -2,237 +2,128 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 
-const StrafrechtQuiz = () => {
+const StrafrechtNormalQuiz = () => {
   const [gameState, setGameState] = useState('start');
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<Record<number, number>>({}); 
+  const [userAnswers, setUserAnswers] = useState({}); 
   const [showFeedback, setShowFeedback] = useState(false);
 
+  // VRAGEN VAN NORMAAL NIVEAU (GEBASEERD OP DE SAMENVATTING)
   const QUESTIONS = useMemo(() => [
     {
-      q: "Wat is het gevolg voor de opbouw van het strafbare feit als 'wederrechtelijkheid' expliciet als bestanddeel in de delictsomschrijving is opgenomen (zoals bij vernieling)?",
+      q: "Wie is de enige partij die een verdachte voor de strafrechter kan brengen (vervolgingsmonopolie)?",
       options: [
-        "Er zijn dan vier lagen: gedraging, delictsomschrijving, wederrechtelijkheid en verwijtbaarheid.",
-        "De wederrechtelijkheid verschuift van element naar bestanddeel; het strafbare feit bestaat dan uit drie lagen.",
-        "De verdachte moet dan altijd een beroep doen op overmacht om strafbaarheid te ontlopen.",
-        "De officier van justitie hoeft de wederrechtelijkheid dan niet meer te bewijzen."
-      ],
-      correct: 1,
-      exp: "Als wederrechtelijkheid in de delictsomschrijving staat, is het een bestanddeel. Is de delictsomschrijving vervuld, dan staat de wederrechtelijkheid vast. Het feit bestaat dan uit: gedraging, delictsomschrijving en verwijtbaarheid."
-    },
-    {
-      q: "Welke interpretatiemethode hanteert de rechter wanneer hij de betekenis van een bepaling afleidt uit de bedoeling die de wetgever had ten tijde van de totstandkoming?",
-      options: [
-        "De grammaticale interpretatiemethode.",
-        "De teleologische interpretatiemethode.",
-        "De wetshistorische interpretatiemethode.",
-        "De wetssystematische interpretatiemethode."
+        "De politie.",
+        "Het slachtoffer.",
+        "Het Openbaar Ministerie (de Officier van Justitie).",
+        "De Rechter-Commissaris."
       ],
       correct: 2,
-      exp: "Bij de wetshistorische methode kijkt de rechter naar de parlementaire geschiedenis en de bedoeling van de wetgever bij het in het leven roepen van de bepaling."
+      exp: "In het strafrecht kan alleen de Officier van Justitie (namens het OM) beslissen om een verdachte te vervolgen en te dagvaarden. Burgers kunnen dit niet zelf."
     },
     {
-      q: "In het Porsche-arrest oordeelde de Hoge Raad dat er sprake was van bewuste schuld (culpa) en niet van voorwaardelijk opzet. Wat was hierbij een doorslaggevende contra-indicatie?",
+      q: "Wat houdt het 'lex scripta'-gebod van het legaliteitsbeginsel in?",
       options: [
-        "De verdachte was dronken en kon daardoor niet logisch nadenken.",
-        "De verdachte had eerdere inhaalpogingen afgebroken, wat wees op het niet aanvaarden van de kans op een ongeval.",
-        "De verdachte reed in een dure auto die hij niet wilde beschadigen.",
-        "De verdachte had de tegenliggers totaal niet gezien."
+        "De wet moet duidelijk en begrijpelijk zijn.",
+        "Strafbaarheid mag alleen gebaseerd zijn op een geschreven wet (geen gewoonterecht).",
+        "De rechter mag de wet niet met terugwerkende kracht toepassen.",
+        "De rechter mag de wet niet analoog interpreteren."
       ],
       correct: 1,
-      exp: "De Hoge Raad stelde dat het afbreken van eerdere inhaalpogingen een contra-indicatie was: hij wilde het risico blijkbaar niet zomaar aanvaarden (objectiveren)."
+      exp: "Lex scripta betekent letterlijk 'geschreven wet'. Het verbiedt strafbaarheid op basis van ongeschreven gewoonterecht."
     },
     {
-      q: "Wat is het wezenlijke verschil tussen voorwaardelijk opzet en bewuste schuld?",
+      q: "Uit welke vier componenten bestaat een strafbaar feit volgens de gebruikelijke opbouw (als wederrechtelijkheid geen bestanddeel is)?",
       options: [
-        "Bij voorwaardelijk opzet is er geen sprake van weten, bij schuld wel.",
-        "Bij voorwaardelijk opzet neemt de dader de kans op de koop toe; bij bewuste schuld vertrouwt hij (lichtvaardig) op een goede afloop.",
-        "Voorwaardelijk opzet wordt gestraft als overtreding, bewuste schuld als misdrijf.",
-        "Er is geen verschil; beide termen betekenen juridisch hetzelfde."
-      ],
-      correct: 1,
-      exp: "De grens ligt bij de aanvaarding: 'het zal wel niet gebeuren' is bewuste schuld, 'en als het gebeurt, dan is dat maar zo' is voorwaardelijk opzet."
-    },
-    {
-      q: "Wanneer is er sprake van een 'materieel' omschreven delict (gevolgsdelict)?",
-      options: [
-        "Wanneer de wet een specifieke handeling strafbaar stelt, ongeacht het gevolg.",
-        "Wanneer het delict alleen door een ambtenaar gepleegd kan worden.",
-        "Wanneer een bepaald resultaat of gevolg strafbaar is gesteld, ongeacht de wijze waarop dit is veroorzaakt.",
-        "Wanneer het delict is opgenomen in het Wetboek van Strafvordering."
-      ],
-      correct: 2,
-      exp: "Bij een materieel delict (zoals art. 287 Sr, doodslag) gaat het om het teweegbrengen van een gevolg (de dood), niet om de specifieke handeling."
-    },
-    {
-      q: "Welke strafuitsluitingsgrond neemt de verwijtbaarheid (schuld) van de dader weg?",
-      options: [
-        "Noodweer.",
-        "Bevoegd gegeven ambtelijk bevel.",
-        "Wettelijk voorschrift.",
-        "Ontoerekeningsvatbaarheid."
-      ],
-      correct: 3,
-      exp: "Ontoerekeningsvatbaarheid is een schulduitsluitingsgrond. Noodweer is een rechtvaardigingsgrond (neemt wederrechtelijkheid weg)."
-    },
-    {
-      q: "Volgens de leer van de redelijke toerekening (Letale longembolie) is causaliteit aanwezig wanneer...",
-      options: [
-        "Het gevolg redelijkerwijs aan het handelen van de verdachte kan worden toegerekend, gezien de omstandigheden.",
-        "Het gevolg onmogelijk had kunnen intreden zonder de handeling (conditio sine qua non).",
-        "De handeling de directe en enige oorzaak was van het gevolg.",
-        "De verdachte het gevolg expliciet gewild heeft."
+        "Menselijke gedraging, Delictsomschrijving, Wederrechtelijkheid, Schuld.",
+        "Daderschap, Opzet, Causaal verband, Straf.",
+        "Aanhouding, Vervolging, Berechting, Tenuitvoerlegging.",
+        "Wet, Bewijs, Overtuiging, Vonnis."
       ],
       correct: 0,
-      exp: "De Hoge Raad hanteert de leer van de redelijke toerekening: het hangt af van de specifieke omstandigheden of toerekening redelijk is, zelfs als het gevolg niet direct medisch noodzakelijk was."
+      exp: "Het strafbare feit bestaat uit: 1. Menselijke gedraging, 2. Delictsomschrijving (wettelijk), 3. Wederrechtelijkheid (strijd met recht), 4. Schuld (verwijtbaarheid)."
     },
     {
-      q: "Wat houdt het 'materieel criterium' voor een verdachte in (art. 27 lid 1 Sv)?",
+      q: "Wat is het kenmerkende verschil tussen 'voorwaardelijk opzet' en 'bewuste schuld'?",
       options: [
-        "Dat de persoon is aangehouden door een opsporingsambtenaar.",
-        "Dat er een redelijk vermoeden van schuld aan een strafbaar feit bestaat, voortvloeiend uit feiten of omstandigheden.",
-        "Dat de officier van justitie heeft besloten tot vervolging over te gaan.",
-        "Dat de verdachte een bekentenis heeft afgelegd."
-      ],
-      correct: 1,
-      exp: "Art. 27 lid 1 Sv definieert de verdachte als degene te wiens aanzien uit feiten of omstandigheden een redelijk vermoeden van schuld aan een strafbaar feit voortvloeit."
-    },
-    {
-      q: "Welk beginsel van behoorlijke procesorde speelde een centrale rol in het arrest 'Braak bij binnentreden'?",
-      options: [
-        "Het gelijkheidsbeginsel.",
-        "Het vertrouwensbeginsel.",
-        "Het beginsel van zuiverheid van oogmerk (détournement de pouvoir).",
-        "Het beginsel van redelijke en billijke belangenafweging (subsidiariteit/proportionaliteit)."
-      ],
-      correct: 3,
-      exp: "In 'Braak bij binnentreden' ging het om de proportionaliteit en subsidiariteit: mag de politie zware schade aanrichten (deur forceren) voor een relatief licht feit?"
-    },
-    {
-      q: "Voor voorlopige hechtenis moet worden voldaan aan vier voorwaarden. Welke hoort daar NIET bij?",
-      options: [
-        "Ernstige bezwaren tegen de verdachte.",
-        "Een geval waarin voorlopige hechtenis is toegelaten (bijv. 4-jaars feit).",
-        "De verdachte moet op heterdaad zijn betrapt.",
-        "Een grond zoals vluchtgevaar of gewichtige redenen van maatschappelijke veiligheid."
-      ],
-      correct: 2,
-      exp: "Heterdaad is geen vereiste voor voorlopige hechtenis. De vereisten zijn: geval (art 67), grond (art 67a), ernstige bezwaren en het anticipatiegebod."
-    },
-    {
-      q: "Mag een burger een verdachte aanhouden?",
-      options: [
-        "Nee, dit is een exclusieve bevoegdheid van opsporingsambtenaren.",
-        "Ja, maar alleen in geval van ontdekking op heterdaad (art. 53 Sv).",
-        "Ja, mits de burger eerst toestemming vraagt aan de Officier van Justitie.",
-        "Nee, tenzij het om een levensbedreigende situatie gaat."
-      ],
-      correct: 1,
-      exp: "Bij ontdekking op heterdaad is 'ieder' bevoegd de verdachte aan te houden (art. 53 Sv), dus ook burgers."
-    },
-    {
-      q: "Wat houdt de 'grondslagleer' in het strafprocesrecht in?",
-      options: [
-        "De rechter moet oordelen op basis van wat er werkelijk is gebeurd, ongeacht het dossier.",
-        "De rechter is gebonden aan de tenlastelegging en mag alleen datgene beoordelen wat de OvJ ten laste heeft gelegd.",
-        "De rechter mag zelf feiten toevoegen aan de tenlastelegging als hij dat nodig acht.",
-        "De grondslag van het vonnis moet altijd gebaseerd zijn op het EVRM."
-      ],
-      correct: 1,
-      exp: "De grondslagleer betekent dat de tenlastelegging het kader vormt: de rechter mag niet buiten de tenlastelegging treden (art. 348/350 Sv systematiek)."
-    },
-    {
-      q: "Welke beslissing volgt als de rechter bij de vragen van art. 350 Sv vaststelt dat het feit wel bewezen is, maar niet kwalificeerbaar is als strafbaar feit?",
-      options: [
-        "Vrijspraak.",
-        "Niet-ontvankelijkheid van het Openbaar Ministerie.",
-        "Ontslag van alle rechtsvervolging (OVAR).",
-        "Schorsing van de vervolging."
-      ],
-      correct: 2,
-      exp: "Als het bewezenverklaarde geen strafbaar feit oplevert (kwalificatievraag), volgt ontslag van alle rechtsvervolging."
-    },
-    {
-      q: "Wat is het gevolg van een geslaagd beroep op een rechtvaardigingsgrond (zoals noodweer) in het schema van 350 Sv?",
-      options: [
-        "Vrijspraak, want de wederrechtelijkheid ontbreekt.",
-        "Ontslag van alle rechtsvervolging, want de wederrechtelijkheid ontbreekt.",
-        "Ontslag van alle rechtsvervolging, want de verwijtbaarheid ontbreekt.",
-        "Vrijspraak, want het feit is niet bewezen."
-      ],
-      correct: 1,
-      exp: "Een rechtvaardigingsgrond neemt de wederrechtelijkheid weg. Als de wederrechtelijkheid geen bestanddeel in de tenlastelegging was, leidt dit tot OVAR."
-    },
-    {
-      q: "Welke straf is een 'bijkomende straf' volgens art. 9 Sr?",
-      options: [
-        "Gevangenisstraf.",
-        "Taakstraf.",
-        "Ontzetting van bepaalde rechten.",
-        "Plaatsing in een inrichting voor stelselmatige daders (ISD)."
-      ],
-      correct: 2,
-      exp: "Gevangenisstraf, hechtenis, taakstraf en geldboete zijn hoofdstraffen. Ontzetting van rechten, verbeurdverklaring en openbaarmaking uitspraak zijn bijkomende straffen. ISD is een maatregel."
-    },
-    {
-      q: "Wat is de maximale duur van een tijdelijke gevangenisstraf in Nederland?",
-      options: [
-        "20 jaar.",
-        "25 jaar.",
-        "30 jaar.",
-        "Levenslang (dus geen tijdelijke limiet)."
-      ],
-      correct: 2,
-      exp: "De maximale tijdelijke gevangenisstraf is 30 jaar (art. 10 lid 4 Sr). Levenslang is een aparte strafsoort."
-    },
-    {
-      q: "Wanneer is het Openbaar Ministerie niet-ontvankelijk?",
-      options: [
-        "Wanneer het bewijs onvoldoende is.",
-        "Wanneer het recht tot strafvervolging is vervallen (bijv. door verjaring of overlijden verdachte).",
-        "Wanneer de dagvaarding nietig is verklaard.",
-        "Wanneer de rechter onbevoegd is."
-      ],
-      correct: 1,
-      exp: "Niet-ontvankelijkheid volgt als er een vervolgingsbeletsel is, zoals verjaring, klachtdelict zonder klacht, ne bis in idem of overlijden."
-    },
-    {
-      q: "Wat houdt 'sprongcassatie' in en is dit toegestaan in het Nederlandse strafrecht?",
-      options: [
-        "Direct van de rechtbank naar de Hoge Raad; dit is toegestaan.",
-        "Direct van de rechtbank naar de Hoge Raad; dit is NIET toegestaan.",
-        "Van het gerechtshof naar het EHRM; dit is toegestaan.",
-        "Een cassatieberoep zonder advocaat; dit is NIET toegestaan."
-      ],
-      correct: 1,
-      exp: "Nederland kent een gesloten stelsel van rechtsmiddelen. Sprongcassatie (hoger beroep overslaan) is niet toegelaten (art. 78 lid 5 RO)."
-    },
-    {
-      q: "Wat is het essentiële verschil tussen een straf en een maatregel?",
-      options: [
-        "Een straf wordt door de rechter opgelegd, een maatregel door de OvJ.",
-        "Een straf is gericht op vergelding/leedtoevoeging, een maatregel op herstel of beveiliging van de samenleving.",
-        "Een maatregel kan alleen aan minderjarigen worden opgelegd.",
+        "Bij voorwaardelijk opzet weet de dader het zeker, bij schuld niet.",
+        "Bij voorwaardelijk opzet aanvaardt de dader de kans (op de koop toe nemen); bij bewuste schuld hoopt hij dat het goed gaat.",
+        "Voorwaardelijk opzet is een overtreding, bewuste schuld is een misdrijf.",
         "Er is geen verschil, het zijn synoniemen."
       ],
       correct: 1,
-      exp: "Straffen zien op vergelding (leed toevoegen). Maatregelen (zoals TBS of ontneming) zien op beveiliging van de maatschappij of herstel van de rechtmatige situatie."
+      exp: "De grens ligt bij de aanvaarding. Bij bewuste schuld (culpa) ziet de dader het gevaar wel, maar vertrouwt hij (lichtvaardig) op een goede afloop. Bij voorwaardelijk opzet neemt hij het risico voor lief."
     },
     {
-      q: "Wanneer mag een doorzoeking ter inbeslagneming in een woning plaatsvinden zonder toestemming bewoner?",
+      q: "Wie is volgens artikel 53 Sv bevoegd een verdachte aan te houden bij 'ontdekking op heterdaad'?",
       options: [
-        "Dit mag nooit.",
-        "Alleen door de Rechter-Commissaris (tenzij spoed/heterdaad uitzonderingen art. 97 Sv).",
-        "Altijd door een hulpofficier van justitie.",
-        "Door iedere burger bij heterdaad."
+        "Alleen de Officier van Justitie.",
+        "Alleen opsporingsambtenaren (politie).",
+        "Iedereen (dus ook burgers).",
+        "Alleen de rechter."
+      ],
+      correct: 2,
+      exp: "In geval van heterdaad is 'ieder' bevoegd, dus ook de 'gewone' burger mag de verdachte aanhouden in afwachting van de politie."
+    },
+    {
+      q: "Welke vraag komt aan de orde bij de 'kwalificatievraag' in het schema van artikel 350 Sv?",
+      options: [
+        "Is het tenlastegelegde feit wettig en overtuigend bewezen?",
+        "Levert het bewezenverklaarde feit een strafbaar feit op volgens de wet?",
+        "Is de verdachte strafbaar (zijn er schulduitsluitingsgronden)?",
+        "Welke straf moet worden opgelegd?"
       ],
       correct: 1,
-      exp: "Doorzoeking van een woning is voorbehouden aan de Rechter-Commissaris (art. 110 Sv), behoudens strikte uitzonderingen in art. 97 Sv."
+      exp: "De tweede vraag van 350 Sv is de kwalificatie: valt het gedrag dat bewezen is onder een wettelijke strafbepaling? Zo nee, dan volgt ontslag van alle rechtsvervolging."
+    },
+    {
+      q: "Welk rechtsmiddel kan worden ingesteld tegen een vonnis van de rechtbank?",
+      options: [
+        "Cassatie bij de Hoge Raad.",
+        "Hoger beroep bij het Gerechtshof.",
+        "Verzet bij de Kantonrechter.",
+        "Herziening bij de Minister."
+      ],
+      correct: 1,
+      exp: "Tegen een vonnis van de rechtbank staat hoger beroep open bij het gerechtshof. Pas daarna volgt eventueel cassatie."
+    },
+    {
+      q: "Wat is volgens artikel 9 Sr een 'hoofdstraf'?",
+      options: [
+        "Verbeurdverklaring.",
+        "Ontzetting van rechten.",
+        "Taakstraf.",
+        "TBS (Terbeschikkingstelling)."
+      ],
+      correct: 2,
+      exp: "De hoofdstraffen zijn: gevangenisstraf, hechtenis, taakstraf en geldboete. TBS is een maatregel, en verbeurdverklaring is een bijkomende straf."
+    },
+    {
+      q: "Wanneer is iemand 'verdachte' in de zin van artikel 27 Sv?",
+      options: [
+        "Zodra de politie hem aanspreekt op straat.",
+        "Als er een redelijk vermoeden van schuld is aan een strafbaar feit, gebaseerd op feiten of omstandigheden.",
+        "Pas als de rechter hem heeft veroordeeld.",
+        "Alleen als hij op heterdaad betrapt is."
+      ],
+      correct: 1,
+      exp: "Er moet sprake zijn van een 'redelijk vermoeden van schuld' dat objectiveerbaar is (gebaseerd op feiten/omstandigheden)."
+    },
+    {
+      q: "Wat houdt de 'grondslagleer' in?",
+      options: [
+        "De rechter mag zelf feiten toevoegen als hij dat nodig vindt.",
+        "De rechter moet zijn oordeel baseren op de Grondwet.",
+        "De rechter is gebonden aan de tenlastelegging (wat de OvJ heeft opgeschreven) en mag daar niet buiten treden.",
+        "De rechter mag de verdachte veroordelen voor feiten die niet in de dagvaarding staan."
+      ],
+      correct: 2,
+      exp: "De tenlastelegging vormt de grondslag van het onderzoek. De rechter mag alleen oordelen over datgene wat de officier van justitie ten laste heeft gelegd."
     }
   ], []);
 
-  // --- LOGICA ---
-  const handleAnswer = (optionIdx: number) => {
+  // --- LOGICA (STANDAARD) ---
+  const handleAnswer = (optionIdx) => {
     const newAnswers = { ...userAnswers, [currentIdx]: optionIdx };
     setUserAnswers(newAnswers);
     setShowFeedback(true);
@@ -287,7 +178,6 @@ const StrafrechtQuiz = () => {
             <motion.div key="start" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-center space-y-12">
               <div className="relative inline-block mt-8">
                 <div className="w-64 h-64 rounded-full border-[12px] border-white shadow-2xl overflow-hidden mx-auto bg-stone-100 flex items-center justify-center">
-                    {/* Placeholder image logic or text if no image available */}
                     <span className="text-6xl">⚖️</span>
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-[#C5A059] text-white w-20 h-20 rounded-2xl flex flex-col items-center justify-center shadow-xl rotate-12 border-4 border-white">
@@ -296,7 +186,7 @@ const StrafrechtQuiz = () => {
                 </div>
               </div>
               <h1 className="text-7xl font-bold text-[#1A365D] leading-tight font-serif italic tracking-tight">Inleiding Strafrecht.</h1>
-              <p className="text-stone-500 text-2xl italic font-light max-w-2xl mx-auto">Week 1 t/m 7: Van materieel strafrecht tot het sanctiestelsel.</p>
+              <p className="text-stone-500 text-2xl italic font-light max-w-2xl mx-auto">Week 1 t/m 7: Basisbegrippen en Kernstof.</p>
               <button onClick={() => setGameState('quiz')} className="px-16 py-6 bg-[#1A365D] text-white rounded-full font-bold uppercase tracking-[0.3em] text-[10px] shadow-2xl hover:scale-105 transition-all">Start Toets</button>
             </motion.div>
           )}
@@ -367,4 +257,4 @@ const StrafrechtQuiz = () => {
   );
 };
 
-export default StrafrechtQuiz;
+export default StrafrechtNormalQuiz;

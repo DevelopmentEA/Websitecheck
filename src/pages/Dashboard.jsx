@@ -22,7 +22,7 @@ const Dashboard = () => {
           <div className="flex items-center gap-3 mt-2">
             <div className="h-px w-8 bg-[#C5A059]"></div>
             <p className="text-[10px] uppercase tracking-[0.5em] text-stone-400 font-black">
-              Masterclass Privaatrecht II
+              Masterclass Recht
             </p>
           </div>
         </motion.div>
