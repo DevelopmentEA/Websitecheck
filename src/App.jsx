@@ -7,9 +7,9 @@ import TopicTwo from './pages/TopicTwo';
  
 const Sidebar = () => {
   const menuItems = [
-    { path: "/", label: "Dashboard", icon: "🏛️" },
-    { path: "/home1", label: "Privaatrecht II", icon: "⚖️" },
-    { path: "/home2", label: "Erfrecht", icon: "📚" },
+    { path: "/", label: "Dashboard", icon: "😎" },
+    { path: "/home1", label: "Strafrecht", icon: "😩" },
+    { path: "/home2", label: "Strafrecht moeilijker", icon: "😭" },
   ];
 
   return (
