@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Scale } from 'lucide-react';
+import { Scale, ExternalLink, BookOpen } from 'lucide-react';
 
 // Importeer je pagina's
 import Dashboard from './pages/Dashboard';
@@ -65,7 +65,7 @@ const Sidebar = () => {
           
           {/* Titel tekst (verdwijnt bij inklappen) */}
           <motion.div variants={textVariants} className="whitespace-nowrap">
-            <h1 className="text-2xl font-bold tracking-tighter font-serif italic">ELBERT</h1>
+            <h1 className="text-2xl font-bold tracking-tighter font-serif italic">Lawbooks</h1>
             <p className="text-[8px] text-slate-400 uppercase tracking-[0.3em] font-black">Knowledge Base</p>
           </motion.div>
         </div>
@@ -99,13 +99,36 @@ const Sidebar = () => {
             <div className={`absolute left-0 top-0 bottom-0 w-1 bg-[#C5A059] ${!isOpen ? 'block' : 'hidden'} opacity-0 group-[.active]:opacity-100`} />
           </NavLink>
         ))}
+
+        {/* EXTERNE LINK: LAWBOOKS.NL */}
+        <div className="pt-4 mt-4 border-t border-white/5">
+          <a
+            href="https://lawbooks.nl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-6 py-4 transition-all duration-300 group hover:bg-[#C5A059]/10 relative"
+          >
+            <div className="min-w-[20px] flex justify-center text-[#C5A059] group-hover:scale-110 transition-transform">
+              <BookOpen size={20} />
+            </div>
+            <motion.span 
+              variants={textVariants} 
+              className="font-bold tracking-wide text-[10px] uppercase ml-4 whitespace-nowrap text-[#C5A059]"
+            >
+              Boost je cijfers? 
+            </motion.span>
+            <motion.div variants={textVariants} className="ml-auto">
+                <ExternalLink size={12} className="text-slate-500" />
+            </motion.div>
+          </a>
+        </div>
       </div>
 
       {/* Footer Section */}
       <div className="p-0 h-24 flex items-center border-t border-white/10 bg-black/10">
         <div className="px-6 flex items-center gap-4 w-full">
           <div className="min-w-[24px] h-8 w-8 rounded-full bg-slate-500/20 flex items-center justify-center text-xs font-bold border border-white/20">
-            EA
+            LB
           </div>
           <motion.div variants={textVariants} className="whitespace-nowrap">
             <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-tight">
