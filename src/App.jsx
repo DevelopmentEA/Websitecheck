@@ -21,17 +21,14 @@ import StudyMusic from './pages/StudyMusic';
 // ==========================================
 const EmailPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    // Check of de gebruiker de popup al eerder heeft gezien
     const hasSeen = localStorage.getItem('hasSeenEmailPopup');
-    
     if (!hasSeen) {
       const timer = setTimeout(() => {
         setIsVisible(true);
-      }, 10000); // 10 seconden
+      }, 10000);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -41,11 +38,11 @@ const EmailPopup = () => {
     localStorage.setItem('hasSeenEmailPopup', 'true');
   };
 
-  const handleSubmit = (e) => {
-    // We laten de browser de form submission doen naar de verborgen iframe
+  const handleSubmit = () => {
     setSubmitted(true);
     localStorage.setItem('hasSeenEmailPopup', 'true');
-    setTimeout(() => setIsVisible(false), 3000);
+    // We geven de gebruiker 4 seconden om het succesbericht te zien voor we de hele popup sluiten
+    setTimeout(() => setIsVisible(false), 4000);
   };
 
   return (
@@ -53,19 +50,18 @@ const EmailPopup = () => {
       {isVisible && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
           <motion.div 
-            initial={{ scale: 0.9, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 20 }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
             className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden"
           >
-            {/* Header met Oxford Blue */}
+            {/* Header */}
             <div className="bg-[#1A365D] p-8 text-center relative">
-              <button 
-                onClick={handleClose}
-                className="absolute top-4 right-4 text-white/50 hover:text-white transition-colors"
-              >
-                <X size={24} />
-              </button>
+              {!submitted && (
+                <button onClick={handleClose} className="absolute top-4 right-4 text-white/50 hover:text-white transition-colors">
+                  <X size={24} />
+                </button>
+              )}
               <div className="w-16 h-16 bg-[#C5A059] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Mail className="text-white" size={32} />
               </div>
@@ -73,51 +69,52 @@ const EmailPopup = () => {
             </div>
 
             <div className="p-8 text-center">
-              {!submitted ? (
-                <>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    Wil je meer <strong>interactieve leermethodes</strong> in de toekomst? Laat je mail achter en help ons bouwen aan de beste rechten-omgeving.
-                  </p>
-                  
-                  {/* Google Forms Submission Logic */}
-                  <form 
-                    action="https://docs.google.com/forms/d/e/1FAIpQLSe-xEXNDDwXJeiwMe5v4bUOOfJ0MuZZjKoBefyVRQd0n1MrKQ/formResponse"
-                    method="POST"
-                    target="hidden_iframe"
-                    onSubmit={handleSubmit}
-                    className="space-y-4"
-                  >
-                    <div className="relative">
-                      <input 
-                        type="email" 
-                        name="entry.1504473130" // Jouw Google Form ID
-                        required
-                        placeholder="Je e-mailadres"
-                        className="w-full px-5 py-4 bg-gray-50 border-2 border-gray-100 rounded-xl focus:border-[#C5A059] focus:outline-none transition-all text-[#1A365D]"
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                    </div>
-                    <button 
-                      type="submit"
-                      className="w-full bg-[#1A365D] text-white py-4 rounded-xl font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-[#152c4d] transition-all shadow-lg active:scale-[0.98]"
-                    >
-                      Verzenden <Send size={18} />
-                    </button>
-                  </form>
-                  {/* Verborgen iframe om redirect van Google te voorkomen */}
-                  <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }}></iframe>
-                </>
-              ) : (
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }}
-                  className="py-6"
-                >
-                  <div className="text-emerald-500 mb-2 font-bold text-xl text-center">Bedankt!</div>
-                  <p className="text-gray-500">Je bent toegevoegd aan de lijst. We gaan snel verder!</p>
+              {/* Succes bericht (verschijnt na verzenden) */}
+              {submitted && (
+                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="py-6">
+                  <div className="text-emerald-500 mb-2 font-bold text-xl">Bedankt!</div>
+                  <p className="text-gray-500">Je bent toegevoegd aan de lijst. We bouwen samen verder!</p>
                 </motion.div>
               )}
+
+              {/* De Form - We gebruiken 'hidden' class in plaats van verwijderen uit DOM */}
+              <div className={submitted ? "hidden" : "block"}>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Wil je meer <strong>interactieve leermethodes</strong> in de toekomst? Laat je mail achter en help ons bouwen.
+                </p>
+                
+                <form 
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSe-xEXNDDwXJeiwMe5v4bUOOfJ0MuZZjKoBefyVRQd0n1MrKQ/formResponse"
+                  method="POST"
+                  target="hidden_iframe"
+                  onSubmit={handleSubmit}
+                  className="space-y-4"
+                >
+                  <input 
+                    type="email" 
+                    name="entry.1504473130" 
+                    required
+                    placeholder="Je e-mailadres"
+                    className="w-full px-5 py-4 bg-gray-50 border-2 border-gray-100 rounded-xl focus:border-[#C5A059] focus:outline-none text-[#1A365D]"
+                  />
+                  <button 
+                    type="submit"
+                    className="w-full bg-[#1A365D] text-white py-4 rounded-xl font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-[#152c4d] transition-all"
+                  >
+                    Verzenden <Send size={18} />
+                  </button>
+                </form>
+              </div>
             </div>
+
+            {/* De Iframe moet ALTIJD in de DOM staan en mag niet verborgen worden met logica */}
+            <iframe 
+              name="hidden_iframe" 
+              id="hidden_iframe" 
+              style={{ display: 'none' }}
+              title="hidden"
+            ></iframe>
+            
             <div className="h-2 w-full bg-[#C5A059]" />
           </motion.div>
         </div>
