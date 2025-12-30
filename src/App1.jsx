@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Scale, ExternalLink, BookOpen } from 'lucide-react';
+import { Scale } from 'lucide-react';
 
 // Importeer je pagina's
 import Dashboard from './pages/Dashboard';
@@ -11,6 +11,7 @@ import TopicTree from './pages/TopicTree';
 import TopicFour from './pages/TopicFour';
 import TopicFive from './pages/TopicFive';
 import TopicSix from './pages/TopicSix';
+import TopicSeven from './pages/TopicSeven';
 
 // Importeer de knoppen vanuit de juiste map
 import DonateButton from './pages/Button';
@@ -24,6 +25,7 @@ const Sidebar = () => {
     { path: "/SRI", label: "Strafrecht", icon: "😔" },
     { path: "/SRII", label: "Strafrecht Expert", icon: "😭" },
     { path: "/SRIII", label: "Strafrecht Extra", icon: "👹" },
+    { path: "/SRIV", label: "Strafrecht Extra", icon: "👹" },
     { path: "/IPR", label: "Internationaal Publiek Recht", icon: "🇪🇺" },
     { path: "/IPRII", label: "IPR Tentamen", icon: "🌍" },
     { path: "/IPRIII", label: "IPR Tentamen A/B/C/D", icon: "🏛️" },
@@ -99,29 +101,6 @@ const Sidebar = () => {
             <div className={`absolute left-0 top-0 bottom-0 w-1 bg-[#C5A059] ${!isOpen ? 'block' : 'hidden'} opacity-0 group-[.active]:opacity-100`} />
           </NavLink>
         ))}
-
-        {/* EXTERNE LINK: LAWBOOKS.NL */}
-        <div className="pt-4 mt-4 border-t border-white/5">
-          <a
-            href="https://lawbooks.nl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center px-6 py-4 transition-all duration-300 group hover:bg-[#C5A059]/10 relative"
-          >
-            <div className="min-w-[20px] flex justify-center text-[#C5A059] group-hover:scale-110 transition-transform">
-              <BookOpen size={20} />
-            </div>
-            <motion.span 
-              variants={textVariants} 
-              className="font-bold tracking-wide text-[10px] uppercase ml-4 whitespace-nowrap text-[#C5A059]"
-            >
-              Boost je cijfers? 🚀
-            </motion.span>
-            <motion.div variants={textVariants} className="ml-auto">
-                <ExternalLink size={12} className="text-slate-500" />
-            </motion.div>
-          </a>
-        </div>
       </div>
 
       {/* Footer Section */}
@@ -160,6 +139,8 @@ const MainLayout = () => (
   </div>
 );
 
+
+
 const App = () => {
   return (
     <Router>
@@ -172,10 +153,13 @@ const App = () => {
           <Route path="/IPR" element={<TopicFour />} />
           <Route path="/IPRII" element={<TopicFive />} />
           <Route path="/IPRIII" element={<TopicSix />} />
+          <Route path="/SRIV" element={<TopicSeven />} />
         </Route>
       </Routes>
     </Router>
   );
 };
+
+
 
 export default App;

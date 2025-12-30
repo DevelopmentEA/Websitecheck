@@ -65,7 +65,7 @@ const Sidebar = () => {
           
           {/* Titel tekst (verdwijnt bij inklappen) */}
           <motion.div variants={textVariants} className="whitespace-nowrap">
-            <h1 className="text-2xl font-bold tracking-tighter font-serif italic">Lawbooks</h1>
+            <h1 className="text-2xl font-bold tracking-tighter font-serif italic">AthenaStudies</h1>
             <p className="text-[8px] text-slate-400 uppercase tracking-[0.3em] font-black">Knowledge Base</p>
           </motion.div>
         </div>
@@ -100,10 +100,10 @@ const Sidebar = () => {
           </NavLink>
         ))}
 
-        {/* EXTERNE LINK: LAWBOOKS.NL */}
+        {/* EXTERNE LINK: Athena */}
         <div className="pt-4 mt-4 border-t border-white/5">
           <a
-            href="https://lawbooks.nl/"
+            href="https://athenastudies.nl/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center px-6 py-4 transition-all duration-300 group hover:bg-[#C5A059]/10 relative"
@@ -115,7 +115,7 @@ const Sidebar = () => {
               variants={textVariants} 
               className="font-bold tracking-wide text-[10px] uppercase ml-4 whitespace-nowrap text-[#C5A059]"
             >
-              Boost je cijfers? 🚀
+              Boost je cijfers? 
             </motion.span>
             <motion.div variants={textVariants} className="ml-auto">
                 <ExternalLink size={12} className="text-slate-500" />
