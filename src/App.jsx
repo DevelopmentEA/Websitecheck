@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Outlet, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Scale, ExternalLink, BookOpen, ShieldAlert, MessageSquare, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Scale, ExternalLink, BookOpen, ShieldAlert, MessageSquare, ChevronRight, X, Mail, Send } from 'lucide-react';
 
-// Pagina imports (staan in jouw code)
+// Pagina imports
 import Dashboard from './pages/Dashboard';
 import TopicOne from './pages/TopicOne';
 import TopicTwo from './pages/TopicTwo';
@@ -17,9 +17,118 @@ import DonateButton from './pages/Button';
 import StudyMusic from './pages/StudyMusic';
 
 // ==========================================
+// NEW: EMAIL POPUP COMPONENT
+// ==========================================
+const EmailPopup = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    // Check of de gebruiker de popup al eerder heeft gezien
+    const hasSeen = localStorage.getItem('hasSeenEmailPopup');
+    
+    if (!hasSeen) {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 10000); // 10 seconden
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  const handleClose = () => {
+    setIsVisible(false);
+    localStorage.setItem('hasSeenEmailPopup', 'true');
+  };
+
+  const handleSubmit = (e) => {
+    // We laten de browser de form submission doen naar de verborgen iframe
+    setSubmitted(true);
+    localStorage.setItem('hasSeenEmailPopup', 'true');
+    setTimeout(() => setIsVisible(false), 3000);
+  };
+
+  return (
+    <AnimatePresence>
+      {isVisible && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <motion.div 
+            initial={{ scale: 0.9, opacity: 0, y: 20 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.9, opacity: 0, y: 20 }}
+            className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden"
+          >
+            {/* Header met Oxford Blue */}
+            <div className="bg-[#1A365D] p-8 text-center relative">
+              <button 
+                onClick={handleClose}
+                className="absolute top-4 right-4 text-white/50 hover:text-white transition-colors"
+              >
+                <X size={24} />
+              </button>
+              <div className="w-16 h-16 bg-[#C5A059] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Mail className="text-white" size={32} />
+              </div>
+              <h2 className="text-2xl font-serif font-bold text-white italic">Toekomst van Leren</h2>
+            </div>
+
+            <div className="p-8 text-center">
+              {!submitted ? (
+                <>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    Wil je meer <strong>interactieve leermethodes</strong> in de toekomst? Laat je mail achter en help ons bouwen aan de beste rechten-omgeving.
+                  </p>
+                  
+                  {/* Google Forms Submission Logic */}
+                  <form 
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSe-xEXNDDwXJeiwMe5v4bUOOfJ0MuZZjKoBefyVRQd0n1MrKQ/formResponse"
+                    method="POST"
+                    target="hidden_iframe"
+                    onSubmit={handleSubmit}
+                    className="space-y-4"
+                  >
+                    <div className="relative">
+                      <input 
+                        type="email" 
+                        name="entry.1504473130" // Jouw Google Form ID
+                        required
+                        placeholder="Je e-mailadres"
+                        className="w-full px-5 py-4 bg-gray-50 border-2 border-gray-100 rounded-xl focus:border-[#C5A059] focus:outline-none transition-all text-[#1A365D]"
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                    <button 
+                      type="submit"
+                      className="w-full bg-[#1A365D] text-white py-4 rounded-xl font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-[#152c4d] transition-all shadow-lg active:scale-[0.98]"
+                    >
+                      Verzenden <Send size={18} />
+                    </button>
+                  </form>
+                  {/* Verborgen iframe om redirect van Google te voorkomen */}
+                  <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }}></iframe>
+                </>
+              ) : (
+                <motion.div 
+                  initial={{ opacity: 0 }} 
+                  animate={{ opacity: 1 }}
+                  className="py-6"
+                >
+                  <div className="text-emerald-500 mb-2 font-bold text-xl text-center">Bedankt!</div>
+                  <p className="text-gray-500">Je bent toegevoegd aan de lijst. We gaan snel verder!</p>
+                </motion.div>
+              )}
+            </div>
+            <div className="h-2 w-full bg-[#C5A059]" />
+          </motion.div>
+        </div>
+      )}
+    </AnimatePresence>
+  );
+};
+
+// ==========================================
 // 1. Standalone Iframe Detectie
 // ==========================================
-// Deze functie kijkt of we in een Iframe zitten óf dat we "?embed=true" in de URL hebben.
 const useIsEmbedded = () => {
   const { search } = useLocation();
   const params = new URLSearchParams(search);
@@ -41,7 +150,7 @@ const IframeGuard = () => {
         <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md text-center border-t-8 border-red-600">
           <ShieldAlert size={48} className="text-red-600 mx-auto mb-4" />
           <h1 className="text-xl font-bold mb-2">Beveiligde Omgeving</h1>
-          <p className="text-gray-600 text-sm">Deze module is alleen toegankelijk via de officiële Lawbooks leeromgeving.</p>
+          <p className="text-gray-600 text-sm">Deze Module is in productie in samenwerking met lawbooks.</p>
         </div>
       </div>
     );
@@ -80,7 +189,6 @@ const Sidebar = () => {
       onMouseLeave={() => setIsOpen(false)}
       className="h-screen bg-[#1A365D] text-white flex flex-col flex-shrink-0 shadow-xl z-50 overflow-hidden relative border-r border-white/5"
     >
-      {/* Mini Logo Area */}
       <div className="h-16 flex items-center px-4 border-b border-white/10 bg-[#152c4d]">
         <Scale size={24} className="text-[#C5A059] flex-shrink-0" />
         {isOpen && (
@@ -90,7 +198,6 @@ const Sidebar = () => {
         )}
       </div>
       
-      {/* Scrollable Menu */}
       <div className="flex-grow py-4 space-y-1 overflow-y-auto no-scrollbar">
         {menuItems.map((item) => (
           <NavLink
@@ -111,7 +218,6 @@ const Sidebar = () => {
         ))}
       </div>
 
-      {/* Externe Link - Compact */}
       <div className="p-2 border-t border-white/10">
         <a href="https://lawbooks.nl/" target="_blank" rel="noopener noreferrer" className="flex items-center p-2 rounded-lg hover:bg-[#C5A059]/20 text-[#C5A059]">
           <BookOpen size={20} />
@@ -123,14 +229,13 @@ const Sidebar = () => {
 };
 
 // ==========================================
-// 3. MAIN LAYOUT (Met Iframe Logica)
+// 3. MAIN LAYOUT
 // ==========================================
 const MainLayout = () => {
   const isEmbedded = useIsEmbedded();
 
   return (
     <div className="flex h-screen w-screen bg-[#FDFCFB] overflow-hidden relative">
-      {/* Verberg de sidebar volledig als "?embed=true" in de URL staat */}
       {!isEmbedded && <Sidebar />}
       
       <main className="flex-1 h-full overflow-y-auto relative">
@@ -139,7 +244,9 @@ const MainLayout = () => {
         </div>
       </main>
 
-      {/* Verberg extra knoppen in embedded modus voor een clean look in het LMS */}
+      {/* Popup verschijnt alleen als NIET embedded (of pas dit aan naar wens) */}
+      {!isEmbedded && <EmailPopup />}
+
       {!isEmbedded && (
         <>
           <StudyMusic />
