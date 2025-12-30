@@ -1,388 +1,274 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import confetti from 'canvas-confetti';
+import allQuestions from './vragen.json'; // Zorg dat dit bestand 150 vragen bevat
 
-const questions = [
-  // WEEK 1: RECHTSORDE
-  {
-    question: "In een puur dualistisch stelsel: wat is de vereiste stap voordat een burger een beroep kan doen op een internationaal verdrag?",
-    options: ["Geen, het verdrag is automatisch geldig", "De wetgever moet de verdragsinhoud omzetten in nationaal recht", "De rechter moet toetsen aan de Grondwet", "Het verdrag moet simpelweg gepubliceerd zijn in de Staatscourant"],
-    correct: 1
-  },
-  {
-    question: "Wat is de kern van de 'gematigd monistische' benadering van Nederland volgens art. 94 Gw?",
-    options: ["Alle verdragen gaan voor op de Grondwet", "Alleen eenieder verbindende verdragsbepalingen hebben voorrang op nationale wetten", "Internationaal recht is altijd ondergeschikt aan de Grondwet", "De rechter mag wetten in formele zin nooit toetsen aan verdragen"],
-    correct: 1
-  },
-  {
-    question: "Welke historische gebeurtenis wordt gezien als het fundament voor 'soevereine gelijkheid' tussen eenheden?",
-    options: ["De oprichting van de VN in 1945", "Het Verdrag van Versailles", "De Vrede van Westfalen in 1648", "De ontdekking van Amerika"],
-    correct: 2
-  },
-  {
-    question: "Wat hield het 'Spoorwegstaking-arrest' in voor de Nederlandse rechtsorde?",
-    options: ["Het verbood stakingen in de publieke sector", "Het definieerde wanneer een verdragsbepaling 'eenieder verbindend' is", "Het stelde dat het EVRM geen directe werking heeft", "Het gaf de koning de macht om verdragen te ontbinden"],
-    correct: 1
-  },
-  {
-    question: "Waarom is de term 'volkenrecht' tegenwoordig minder accuraat dan 'internationaal publiekrecht'?",
-    options: ["Omdat volkeren geen rechten meer hebben", "Omdat het recht zich nu ook richt op organisaties en individuen, niet alleen staten", "Omdat alleen de VN recht mag maken", "Omdat staten niet langer soeverein zijn"],
-    correct: 1
-  },
-  {
-    question: "Wat gebeurt er in Nederland als een wet in strijd is met een verdragsbepaling die NIET rechtstreeks werkend is?",
-    options: ["De wet moet buiten toepassing worden gelaten", "De verdragsbepaling krijgt alsnog voorrang", "De wet blijft geldig en de rechter past verdragsconforme interpretatie toe waar mogelijk", "De staat wordt direct ontbonden"],
-    correct: 2
-  },
-  {
-    question: "Welk concept verklaart dat staten vreedzaam naast elkaar bestaan zonder per se samen te werken?",
-    options: ["Recht van integratie", "Recht van co-existentie", "Supranationalisme", "Monisme"],
-    correct: 1
-  },
-  {
-    question: "Welke invloed heeft de EU op de soevereiniteit van lidstaten?",
-    options: ["Geen, lidstaten blijven volledig onafhankelijk", "Lidstaten dragen bevoegdheden over (integratie), maar behouden het recht om uit te treden", "De EU schaft nationale grondwetten af", "Lidstaten verliezen hun rechtssubjectiviteit"],
-    correct: 1
-  },
-
-  // WEEK 2: SUBJECTEN
-  {
-    question: "Welke entiteit bezit 'volledige' rechtssubjectiviteit in de internationale rechtsorde?",
-    options: ["De Verenigde Naties", "Multinationale ondernemingen", "Staten", "Het Rode Kruis"],
-    correct: 2
-  },
-  {
-    question: "Volgens het Montevideo-verdrag is voor staatvorming vereist:",
-    options: ["Erkenning door de P5 van de Veiligheidsraad", "Een effectieve regering en een gedefinieerd grondgebied", "Lidmaatschap van de VN", "Een democratisch gekozen parlement"],
-    correct: 1
-  },
-  {
-    question: "Wat is de juridische betekenis van 'erkenning' van een nieuwe staat volgens de heersende leer?",
-    options: ["Constitutief: zonder erkenning bestaat de staat niet", "Declaratoir: het bevestigt slechts een feitelijke situatie", "Het is een verplichting voor alle andere staten", "Het maakt de staat automatisch lid van de EU"],
-    correct: 1
-  },
-  {
-    question: "Wat is het verschil tussen IGO's en NGO's qua rechtssubjectiviteit?",
-    options: ["NGO's zijn altijd subjecten, IGO's nooit", "IGO's worden door staten opgericht en hebben geattribueerde macht; NGO's zijn privaat", "IGO's hebben geen personeel, NGO's wel", "Er is geen verschil"],
-    correct: 1
-  },
-  {
-    question: "Wat werd besloten in het 'Reparation for Injuries' advies van het IGH?",
-    options: ["Dat staten nooit aansprakelijk zijn voor VN-medewerkers", "Dat de VN objectieve rechtspersoonlijkheid bezit om claims in te dienen", "Dat alleen de VS de VN mag financieren", "Dat witte helmen verboden zijn"],
-    correct: 1
-  },
-  {
-    question: "Wanneer spreken we van een 'de facto-regime'?",
-    options: ["Wanneer een groep effectief gezag uitoefent over een gebied zonder officiële staatsstatus", "Wanneer een staat failliet is", "Wanneer een multinational een land overneemt", "Wanneer de VN een land tijdelijk bestuurt"],
-    correct: 0
-  },
-  {
-    question: "Welke status heeft het Koninkrijk der Nederlanden in het internationaal recht ten opzichte van de afzonderlijke landen (Aruba, Curaçao etc.)?",
-    options: ["Elk eiland is een aparte staat", "Alleen het Koninkrijk als geheel is het internationale rechtssubject", "Nederland is de baas over de andere subjecten", "De landen hebben elk een permanente zetel in de VN"],
-    correct: 1
-  },
-  {
-    question: "Kan een individu direct rechten ontlenen aan het internationaal recht?",
-    options: ["Nee, alleen via de staat", "Ja, met name via mensenrechtenverdragen zoals het EVRM", "Alleen als de individu een diplomaat is", "Ja, maar alleen in oorlogstijd"],
-    correct: 1
-  },
-
-  // WEEK 3: BRONNEN
-  {
-    question: "Welke bron staat niet expliciet in Artikel 38 van het IGH-statuut, maar is wel algemeen aanvaard?",
-    options: ["Verdragen", "Besluiten van internationale organisaties", "Gewoonterecht", "Algemene rechtsbeginselen"],
-    correct: 1
-  },
-  {
-    question: "Wat zijn de twee cumulatieve vereisten voor het ontstaan van gewoonterecht?",
-    options: ["Opinio juris en een geschreven tekst", "Statenpraktijk en opinio juris", "Een besluit van de VN en 10 jaar tijd", "Unanimiteit in de Algemene Vergadering"],
-    correct: 1
-  },
-  {
-    question: "Wat is een 'persistent objector'?",
-    options: ["Een staat die altijd tegen elk verdrag stemt", "Een staat die zich tijdens de vorming van een gewoonterechtsregel consequent heeft verzet", "Een staat die de Veiligheidsraad blokkeert", "Een rebel die de regering niet erkent"],
-    correct: 1
-  },
-  {
-    question: "Wat is de status van 'jus cogens' normen?",
-    options: ["Het zijn regels waarvan staten per verdrag mogen afwijken", "Het zijn dwingende normen waarvan geen afwijking is toegestaan", "Het zijn alleen regels voor de zee", "Het zijn aanbevelingen van de Algemene Vergadering"],
-    correct: 1
-  },
-  {
-    question: "Wanneer is het 'Weens Verdragenverdrag' (WVV) van toepassing?",
-    options: ["Op alle mondelinge en schriftelijke afspraken", "Op schriftelijke verdragen tussen staten", "Alleen op vredesverdragen", "Op contracten tussen multinationals"],
-    correct: 1
-  },
-  {
-    question: "Wat houdt het principe 'pacta sunt servanda' in?",
-    options: ["Staten mogen verdragen opzeggen wanneer ze willen", "Verdragen moeten te goeder trouw worden nageleefd", "Nieuwe staten zijn niet gebonden aan oude verdragen", "De wet gaat voor het verdrag"],
-    correct: 1
-  },
-  {
-    question: "Wat is een 'voorbehoud' bij een verdrag?",
-    options: ["Een verklaring om de juridische werking van bepaalde bepalingen uit te sluiten of te wijzigen", "Een pauze tijdens de onderhandelingen", "Een geheime afspraak tussen twee landen", "De bekrachtiging door het parlement"],
-    correct: 0
-  },
-  {
-    question: "Hoe wordt gewoonterecht bewezen als er geen fysieke handelingen zijn?",
-    options: ["Dat kan niet", "Door te kijken naar onthoudingen ondersteund door opinio juris", "Door de paus te raadplegen", "Door naar nationale kranten te kijken"],
-    correct: 1
-  },
-  {
-    question: "Welke regel geldt bij een conflict tussen twee verdragen over hetzelfde onderwerp (zonder specifieke bepaling)?",
-    options: ["Het oudste verdrag gaat voor", "Het nieuwere verdrag gaat voor (lex posterior)", "Beide verdragen vervallen", "De VN beslist welk verdrag geldt"],
-    correct: 1
-  },
-
-  // WEEK 4: GESCHILLEN
-  {
-    question: "Wat is het verschil tussen een 'retorsie' en een 'represaille'?",
-    options: ["Retorsie is onrechtmatig, represaille is rechtmatig", "Retorsie is een onvriendelijke maar rechtmatige daad; represaille is een gerechtvaardigde onrechtmatige daad", "Er is geen verschil", "Retorsie geldt alleen voor oorlog"],
-    correct: 1
-  },
-  {
-    question: "Op welke rechtsgrondslag kan het IGH rechtsmacht krijgen voor een geschil?",
-    options: ["Automatisch bij elk conflict tussen staten", "Alleen via instemming van de betrokken staten", "Door een bevel van de Amerikaanse president", "Door een verzoek van een burger"],
-    correct: 1
-  },
-  {
-    question: "Wat is een 'facultatieve verklaring' (art. 36 lid 2 IGH-statuut)?",
-    options: ["Een verklaring dat een staat nooit voor het hof verschijnt", "Een voorafgaande aanvaarding van de rechtsmacht van het IGH voor toekomstige geschillen", "Een lijst met rechters die een staat niet leuk vindt", "Een weigering om contributie te betalen"],
-    correct: 1
-  },
-  {
-    question: "Zijn adviezen (advisory opinions) van het IGH bindend voor staten?",
-    options: ["Ja, net als vonnissen", "Nee, ze zijn niet-bindend maar wel gezaghebbend", "Alleen als de Veiligheidsraad dat zegt", "Ja, maar alleen voor de verliezende partij"],
-    correct: 1
-  },
-  {
-    question: "Wat is het verschil tussen arbitrage en rechtspraak bij het IGH?",
-    options: ["Arbitrage is gratis, het IGH is duur", "Bij arbitrage kiezen partijen zelf de rechters en procedure ad hoc", "Het IGH doet geen bindende uitspraken, arbiters wel", "Arbitrage is alleen voor bedrijven"],
-    correct: 1
-  },
-  {
-    question: "Wat is 'forum prorogatum'?",
-    options: ["Rechtsmacht die ontstaat doordat een staat verschijnt en de procedure niet betwist", "Een verbod op het hof", "Een verlenging van de ambtstermijn van rechters", "Een verplaatsing van het hof naar New York"],
-    correct: 0
-  },
-  {
-    question: "Welke methode van diplomatieke geschillenbeslechting houdt in dat een derde partij zelf OPLOSSINGEN voorstelt?",
-    options: ["Goede diensten", "Onderhandelingen", "Bemiddeling", "Feitenonderzoek"],
-    correct: 2
-  },
-  {
-    question: "Wanneer mag een staat 'tegenmaatregelen' nemen?",
-    options: ["Wanneer hij zin heeft in wraak", "Als reactie op een eerdere onrechtmatige daad, om de andere staat tot naleving te dwingen", "Alleen als de VN toestemming geeft", "Nooit, tegenmaatregelen zijn verboden"],
-    correct: 1
-  },
-
-  // WEEK 5: AANSPRAKELIJKHEID
-  {
-    question: "Wat zijn de twee voorwaarden voor een 'internationale onrechtmatige daad' van een staat?",
-    options: ["Schuld en schade", "Schending van een verplichting en toerekenbaarheid aan de staat", "Opzet en een dodelijk slachtoffer", "Een bevel van de generaal en uitvoering door soldaten"],
-    correct: 1
-  },
-  {
-    question: "Wordt een 'ultra vires' handeling van een politieagent (buiten zijn boekje) toegerekend aan de staat?",
-    options: ["Nee, de agent handelde prive", "Ja, zolang hij handelde in zijn officiële hoedanigheid", "Alleen als de minister ervan wist", "Alleen als er media-aandacht is"],
-    correct: 1
-  },
-  {
-    question: "Wat is de standaard voor toerekening van daden van particulieren (zoals rebellen) volgens de Nicaragua-zaak?",
-    options: ["Overall control", "Effective control", "Financiële steun is genoeg", "Geen enkele controle is vereist"],
-    correct: 1
-  },
-  {
-    question: "Welke omstandigheid neemt de onrechtmatigheid weg bij een onvermijdelijke externe gebeurtenis?",
-    options: ["Noodtoestand", "Overmacht (force majeure)", "Zelfverdediging", "Toestemming"],
-    correct: 1
-  },
-  {
-    question: "Wat is 'restitutie' in het aansprakelijkheidsrecht?",
-    options: ["Het betalen van een boete", "Het herstellen van de situatie zoals die was voor de onrechtmatige daad", "Een spijtbetuiging via de krant", "Het ontslaan van de verantwoordelijke ambtenaar"],
-    correct: 1
-  },
-  {
-    question: "Wanneer kan een staat 'diplomatieke bescherming' uitoefenen voor een burger?",
-    options: ["Altijd", "Als de burger de nationale nationaliteit heeft en nationale rechtsmiddelen heeft uitgeput", "Alleen als de burger rijk is", "Alleen in vakantietijd"],
-    correct: 1
-  },
-  {
-    question: "Kan een staat aansprakelijk zijn voor een 'nalaten' (omissie)?",
-    options: ["Nee, alleen voor actieve handelingen", "Ja, als er een zorgplicht (due diligence) werd geschonden", "Alleen in het milieurecht", "Alleen als de VN dat besluit"],
-    correct: 1
-  },
-  {
-    question: "Wat is het doel van individuele aansprakelijkheid in het internationaal strafrecht?",
-    options: ["De staat failliet laten gaan", "Bestraffing van de feitelijke dader naast/in plaats van de staat", "Het EVRM afschaffen", "Geld inzamelen voor de VN"],
-    correct: 1
-  },
-  {
-    question: "Wat is 'genoegdoening' (satisfaction)?",
-    options: ["Geldelijke schadevergoeding", "Een niet-materiële vorm van herstel, zoals excuses of erkenning van de fout", "Het teruggeven van land", "Het bouwen van een monument"],
-    correct: 1
-  },
-
-  // WEEK 6: RECHTSMACHT / IMMUNITEIT / ZEE
-  {
-    question: "Welk beginsel geeft een staat rechtsmacht over misdrijven gepleegd tegen zijn eigen onderdanen in het buitenland?",
-    options: ["Actief nationaliteitsbeginsel", "Passief nationaliteitsbeginsel", "Subjectieve territorialiteit", "Beschermingsbeginsel"],
-    correct: 1
-  },
-  {
-    question: "Wat is 'universele rechtsmacht'?",
-    options: ["Rechtsmacht over de hele ruimte", "Rechtsmacht van elke staat over zeer ernstige misdrijven (zoals piraterij), ongeacht de locatie of dader", "Rechtsmacht van de VN", "Rechtsmacht over alle verdragen"],
-    correct: 1
-  },
-  {
-    question: "Wat is het verschil tussen persoonlijke en functionele immuniteit?",
-    options: ["Er is geen verschil", "Persoonlijke immuniteit geldt voor alle daden tijdens het ambt; functionele alleen voor officiële daden", "Functionele immuniteit vervalt direct na het ambt", "Persoonlijke immuniteit geldt voor alle burgers"],
-    correct: 1
-  },
-  {
-    question: "Geniet een voormalig Minister van Buitenlandse Zaken immuniteit voor privé-moorden gepleegd TIJDENS zijn ambt?",
-    options: ["Ja, persoonlijke immuniteit blijft altijd", "Nee, na zijn ambt vervalt persoonlijke immuniteit; privé-daden worden niet beschermd door functionele immuniteit", "Ja, ministers zijn altijd immuun", "Alleen als hij in Nederland woont"],
-    correct: 1
-  },
-  {
-    question: "Tot hoeveel zeemijl strekt de 'territoriale zee' zich maximaal uit?",
-    options: ["200 zeemijl", "24 zeemijl", "12 zeemijl", "Staten mogen dit zelf kiezen"],
-    correct: 2
-  },
-  {
-    question: "Wat mag een kuststaat in de Exclusieve Economische Zone (EEZ)?",
-    options: ["De scheepvaart volledig verbieden", "Delfstoffen winnen en vissen reguleren", "Andere staten belasten voor doorvaart", "Buitenlandse oorlogsschepen tot zinken brengen"],
-    correct: 1
-  },
-  {
-    question: "Wie heeft rechtsmacht over een schip op de 'Volle Zee'?",
-    options: ["De dichtstbijzijnde kuststaat", "De vlaggenstaat", "De Verenigde Naties", "Niemand, het is wetteloos gebied"],
-    correct: 1
-  },
-  {
-    question: "Wat is 'onschuldige doorvaart'?",
-    options: ["Vliegen over een land zonder te landen", "Varen door de territoriale zee zonder de vrede of veiligheid van de kuststaat te schaden", "Vissen zonder vergunning", "Het smokkelen van goederen"],
-    correct: 1
-  }
+const MONEY_LADDER = [
+  "€ 500", "€ 1.000", "€ 2.000", "€ 4.000", "€ 8.000", 
+  "€ 16.000", "€ 32.000", "€ 64.000", "€ 125.000", "€ 250.000", 
+  "€ 500.000", "€ 1.000.000"
 ];
 
-const IPRQuiz = () => {
+const Miljoenenjacht = () => {
+  const [gameState, setGameState] = useState('start'); 
+  const [questions, setQuestions] = useState([]); 
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [score, setScore] = useState(0);
-  const [showResults, setShowResults] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(25);
   const [selected, setSelected] = useState(null);
-  const [isAnswered, setIsAnswered] = useState(false);
+  const [evaluation, setEvaluation] = useState(null); // 'thinking', 'correct', 'wrong'
+  const audioRef = useRef(null);
 
-  const handleOptionClick = (idx) => {
-    if (isAnswered) return;
-    setSelected(idx);
-    setIsAnswered(true);
-    if (idx === questions[currentIdx].correct) {
-      setScore(score + 1);
-    }
-  };
-
-  const nextQuestion = () => {
-    if (currentIdx + 1 < questions.length) {
-      setCurrentIdx(currentIdx + 1);
-      setSelected(null);
-      setIsAnswered(false);
-    } else {
-      setShowResults(true);
-    }
-  };
-
-  const resetQuiz = () => {
+  // Functie om 12 random vragen te pakken
+  const startGame = () => {
+    const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
+    setQuestions(shuffled.slice(0, 12));
+    setGameState('playing');
     setCurrentIdx(0);
-    setScore(0);
-    setShowResults(false);
+    setTimeLeft(25);
     setSelected(null);
-    setIsAnswered(false);
+    setEvaluation(null);
   };
+
+  // Timer Logica
+  useEffect(() => {
+    let timer;
+    if (gameState === 'playing' && timeLeft > 0 && evaluation === null) {
+      timer = setInterval(() => setTimeLeft(prev => Math.max(0, prev - 0.1)), 100);
+    } else if (timeLeft <= 0 && gameState === 'playing' && evaluation === null) {
+      setGameState('lost');
+    }
+    return () => clearInterval(timer);
+  }, [gameState, timeLeft, evaluation]);
+
+  // Audio Logica
+  useEffect(() => {
+    if (gameState === 'playing' || gameState === 'transitioning') {
+      audioRef.current?.play().catch(() => {});
+    } else {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+    }
+  }, [gameState]);
+
+  const handleAnswer = (idx) => {
+    if (selected !== null) return;
+    
+    setSelected(idx);
+    setEvaluation('thinking'); // De knop wordt eerst goud (spanning)
+
+    const isCorrect = idx === questions[currentIdx].correct;
+
+    // Na 1.2 seconden onthullen we het antwoord
+    setTimeout(() => {
+      setEvaluation(isCorrect ? 'correct' : 'wrong');
+      
+      if (isCorrect) {
+        // Kleine dopamine pop
+        confetti({ 
+            particleCount: 50, spread: 70, origin: { y: 0.8 }, 
+            colors: ['#C5A059', '#10B981'] 
+        });
+
+        // Na nog eens 1.2 seconden naar het tussen-scherm
+        setTimeout(() => {
+          if (currentIdx === 11) { // Laatste vraag bereikt
+            confetti({ particleCount: 500, spread: 150, origin: { y: 0.6 } });
+            setGameState('won');
+          } else {
+            setGameState('transitioning');
+            // Na 1.8 seconden op het tussen-scherm naar de volgende vraag
+            setTimeout(() => {
+              setCurrentIdx(prev => prev + 1);
+              setTimeLeft(25);
+              setSelected(null);
+              setEvaluation(null);
+              setGameState('playing');
+            }, 1800);
+          }
+        }, 1500);
+      } else {
+        // Bij fout antwoord even laten trillen en dan naar lost
+        setTimeout(() => setGameState('lost'), 1500);
+      }
+    }, 1500);
+  };
+
+  const progress = ((currentIdx) / 12) * 100;
+
+  if (gameState === 'start') {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-[#FAF9F6] text-[#1A365D] p-6 text-center">
+        <audio ref={audioRef} src="/spannend.mp3" loop />
+        <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}>
+          <h1 className="text-8xl font-serif italic mb-2 tracking-tighter">Miljoenenjacht</h1>
+          <p className="text-[#C5A059] tracking-[0.5em] font-black text-sm mb-16 uppercase">Win jij een Miljoen?</p>
+          <button 
+            onClick={startGame}
+            className="px-20 py-8 bg-[#1A365D] text-white rounded-2xl font-black text-2xl shadow-[0_20px_50px_rgba(26,54,93,0.3)] hover:translate-y-[-5px] active:translate-y-[2px] transition-all"
+          >
+            START DE STRIJD
+          </button>
+        </motion.div>
+      </div>
+    );
+  }
 
   return (
-    <div className="w-full max-w-3xl mx-auto p-4 md:p-8">
-      <AnimatePresence mode="wait">
-        {!showResults ? (
-          <motion.div
-            key="quiz"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="quiz-card"
-          >
-            <div className="flex justify-between items-center mb-6">
-              <span className="text-xs font-black uppercase tracking-widest text-[#C5A059]">
-                Vraag {currentIdx + 1} / {questions.length}
-              </span>
-              <span className="text-xs font-bold text-slate-400 italic font-serif">
-                Judica Knowledge Base
-              </span>
-            </div>
+    <div className="min-h-screen bg-[#FAF9F6] flex flex-col font-sans text-[#1A365D] overflow-hidden">
+      <audio ref={audioRef} src="/spannend.mp3" loop />
+      
+      {/* Top Progress Nav */}
+      <div className="w-full h-2 bg-slate-100 relative z-50">
+        <motion.div 
+          className="h-full bg-gradient-to-r from-[#1A365D] to-[#C5A059]"
+          initial={{ width: 0 }}
+          animate={{ width: `${progress}%` }}
+        />
+      </div>
 
-            <h2 className="mb-8 leading-tight">{questions[currentIdx].question}</h2>
-
-            <div className="space-y-3">
-              {questions[currentIdx].options.map((opt, i) => {
-                let statusClass = "border-soft hover:border-[#1A365D]";
-                if (isAnswered) {
-                  if (i === questions[currentIdx].correct) statusClass = "bg-green-100 border-green-500 text-green-800";
-                  else if (i === selected) statusClass = "bg-red-100 border-red-500 text-red-800";
-                  else statusClass = "opacity-50 border-soft";
-                }
-
-                return (
-                  <button
-                    key={i}
-                    onClick={() => handleOptionClick(i)}
-                    className={`w-full text-left p-4 rounded-xl border transition-all duration-200 flex items-start gap-3 ${statusClass}`}
-                  >
-                    <span className="font-bold opacity-30">{String.fromCharCode(65 + i)}.</span>
-                    <span className="text-sm md:text-base">{opt}</span>
-                  </button>
-                );
-              })}
-            </div>
-
-            {isAnswered && (
+      <div className="flex-1 flex flex-col lg:flex-row">
+        
+        {/* Arena */}
+        <div className="flex-1 flex flex-col items-center justify-center p-6 lg:p-12 relative">
+          <AnimatePresence mode="wait">
+            {gameState === 'transitioning' ? (
               <motion.div 
-                initial={{ opacity: 0 }} 
-                animate={{ opacity: 1 }} 
-                className="mt-8 flex justify-end"
+                key="trans" 
+                initial={{ scale: 0.5, opacity: 0, rotate: -5 }} 
+                animate={{ scale: 1, opacity: 1, rotate: 0 }} 
+                exit={{ scale: 1.5, opacity: 0 }} 
+                className="text-center"
               >
-                <button 
-                  onClick={nextQuestion}
-                  className="bg-[#1A365D] text-white px-8 py-3 rounded-full font-bold hover:bg-[#2c4e80] transition-colors"
+                <p className="text-[#C5A059] font-black uppercase tracking-[0.4em] text-sm mb-6">NIVEAU BEREIKT</p>
+                <motion.h2 
+                    animate={{ scale: [1, 1.1, 1] }} 
+                    transition={{ repeat: Infinity, duration: 1 }}
+                    className="text-[10rem] font-serif italic font-black text-[#1A365D]"
                 >
-                  {currentIdx + 1 === questions.length ? "Bekijk Resultaat" : "Volgende Vraag →"}
-                </button>
+                  {MONEY_LADDER[currentIdx]}
+                </motion.h2>
               </motion.div>
-            )}
-          </motion.div>
-        ) : (
-          <motion.div
-            key="results"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="quiz-card text-center"
-          >
-            <h1 className="text-[#C5A059] mb-4">Resultaten</h1>
-            <div className="text-6xl font-bold text-[#1A365D] mb-4">{Math.round((score / questions.length) * 100)}%</div>
-            <p className="prose-legal mb-8">
-              Je hebt <strong>{score}</strong> van de <strong>{questions.length}</strong> vragen correct beantwoord.
-              <br />
-              {score > 40 ? "Uitmuntend! Je bent klaar voor het tentamen." : score > 25 ? "Voldoende, maar neem de details van week 5 en 6 nog eens door." : "Nog even flink studeren op de kernbegrippen!"}
-            </p>
-            <button 
-              onClick={resetQuiz}
-              className="border-2 border-[#1A365D] text-[#1A365D] px-10 py-4 rounded-full font-bold hover:bg-[#1A365D] hover:text-white transition-all"
-            >
-              Opnieuw Proberen
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            ) : gameState === 'playing' && questions[currentIdx] ? (
+              <motion.div 
+                key={currentIdx} 
+                initial={{ x: 100, opacity: 0 }} 
+                animate={{ x: 0, opacity: 1 }} 
+                exit={{ x: -100, opacity: 0 }} 
+                className="w-full max-w-4xl"
+              >
+                {/* Clean Vraag Kaart */}
+                <div className="bg-white border-2 border-slate-100 rounded-[3rem] shadow-2xl overflow-hidden mb-12 relative">
+                  <div className="p-12 md:p-16">
+                    <div className="flex justify-between items-center mb-10">
+                        <span className="px-4 py-1 rounded-full bg-slate-100 text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                          Vraag {currentIdx + 1}
+                        </span>
+                        <div className="flex items-center gap-3">
+                           <span className="text-[10px] font-bold text-slate-300 uppercase">TIJD</span>
+                           <span className={`font-mono text-xl font-bold ${timeLeft < 5 ? 'text-red-500 animate-pulse' : 'text-[#1A365D]'}`}>
+                             {Math.ceil(timeLeft)}s
+                           </span>
+                        </div>
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-serif leading-tight text-[#1A365D] font-medium italic">
+                      "{questions[currentIdx].q}"
+                    </h2>
+                  </div>
+                  
+                  {/* Timer Bar met Kleur-feedback */}
+                  <div className="h-3 w-full bg-slate-50 relative">
+                    <motion.div 
+                      className={`absolute top-0 left-0 bottom-0 ${evaluation === 'correct' ? 'bg-green-500' : evaluation === 'wrong' ? 'bg-red-500' : 'bg-[#C5A059]'}`}
+                      initial={{ width: "100%" }}
+                      animate={{ width: `${(timeLeft / 25) * 100}%` }}
+                      transition={{ duration: 0.1, ease: "linear" }}
+                    />
+                  </div>
+                </div>
+
+                {/* Antwoorden Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {questions[currentIdx].options.map((opt, i) => {
+                    const isCorrect = i === questions[currentIdx].correct;
+                    const isSelected = selected === i;
+                    
+                    let style = "bg-white border-slate-200 text-[#1A365D] hover:border-[#1A365D] hover:bg-slate-50 shadow-sm";
+                    
+                    // Dopamine Kleur Logica
+                    if (isSelected && evaluation === 'thinking') style = "bg-[#C5A059] border-[#C5A059] text-white shadow-[0_10px_30px_rgba(197,160,89,0.4)] scale-[0.98]";
+                    if (evaluation === 'correct' && isCorrect) style = "bg-green-500 border-green-500 text-white shadow-[0_0_40px_rgba(34,197,94,0.5)] scale-[1.05]";
+                    if (evaluation === 'wrong' && isSelected && !isCorrect) style = "bg-red-600 border-red-600 text-white";
+                    
+                    if (selected !== null && !isSelected && !(evaluation === 'correct' && isCorrect)) {
+                        style += " opacity-20 grayscale-[0.5] pointer-events-none";
+                    }
+
+                    return (
+                      <motion.button
+                        key={i}
+                        disabled={selected !== null}
+                        onClick={() => handleAnswer(i)}
+                        animate={evaluation === 'wrong' && isSelected ? { x: [-5, 5, -5, 5, 0] } : {}}
+                        className={`p-8 rounded-[2rem] border-2 transition-all duration-300 text-left flex items-center gap-6 ${style}`}
+                      >
+                        <span className={`w-10 h-10 flex items-center justify-center rounded-xl font-black text-xs ${isSelected || (evaluation === 'correct' && isCorrect) ? 'bg-white/20' : 'bg-slate-100 text-slate-400'}`}>
+                          {String.fromCharCode(65 + i)}
+                        </span>
+                        <span className="font-bold text-xl leading-tight">{opt}</span>
+                      </motion.button>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            ) : gameState === 'lost' ? (
+              <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center max-w-2xl bg-white p-16 rounded-[4rem] shadow-2xl border-t-[12px] border-red-500">
+                <h2 className="text-6xl font-serif mb-4 font-bold text-red-600 italic">Helaas...</h2>
+                <p className="text-slate-500 text-xl mb-6 uppercase tracking-widest">Je strandt op {currentIdx > 0 ? MONEY_LADDER[currentIdx-1] : "€ 0"}</p>
+                <div className="bg-slate-50 p-8 rounded-3xl mb-10 text-left border-l-4 border-[#C5A059]">
+                    <p className="text-[10px] font-black text-[#C5A059] uppercase mb-2">Juridische Basis</p>
+                    <p className="italic text-slate-600 text-lg leading-relaxed">{questions[currentIdx]?.basis}</p>
+                </div>
+                <button onClick={startGame} className="px-16 py-6 bg-[#1A365D] text-white rounded-full font-black text-xl hover:scale-105 transition-all shadow-xl">NIEUWE POGING</button>
+              </motion.div>
+            ) : gameState === 'won' ? (
+              <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center">
+                <h2 className="text-9xl font-serif mb-6 text-[#C5A059] font-black italic">MILJONAIR!</h2>
+                <p className="text-slate-500 text-2xl mb-12 font-bold uppercase tracking-widest">Je hebt de volledige set van 12 vragen verslagen.</p>
+                <button onClick={startGame} className="px-16 py-6 bg-green-600 text-white rounded-full font-black text-xl shadow-2xl hover:scale-105 transition-all">SPEEL OPNIEUW</button>
+              </motion.div>
+            ) : null}
+          </AnimatePresence>
+        </div>
+
+        {/* Sidebar Ladder - Sleek & Static */}
+        <div className="w-80 bg-white border-l border-slate-100 p-12 hidden lg:flex flex-col-reverse justify-center gap-1">
+          {MONEY_LADDER.map((amount, index) => {
+            const isCurrent = index === currentIdx;
+            const isDone = index < currentIdx;
+            return (
+              <motion.div 
+                key={amount}
+                animate={isCurrent ? { x: 10 } : { x: 0 }}
+                className={`flex justify-between items-center py-3 px-5 rounded-2xl transition-all duration-500 border
+                  ${isCurrent ? 'bg-[#1A365D] text-white border-[#1A365D] shadow-xl scale-110 z-10' : isDone ? 'text-slate-200 border-transparent' : 'text-slate-400 border-transparent opacity-60'}
+                `}
+              >
+                <span className={`text-[10px] font-black ${isCurrent ? 'text-[#C5A059]' : ''}`}>{index + 1}</span>
+                <span className="text-base font-bold tracking-tighter">{amount}</span>
+              </motion.div>
+            );
+          })}
+          <div className="mb-8 text-center">
+             <div className="h-1 w-12 bg-[#C5A059] mx-auto mb-3 rounded-full" />
+             <p className="text-[10px] font-black text-slate-300 uppercase tracking-[0.5em]">De Prijsladder</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 };
 
-export default IPRQuiz;
+export default Miljoenenjacht;

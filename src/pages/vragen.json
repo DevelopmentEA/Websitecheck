@@ -1,0 +1,596 @@
+[
+  {
+    "q": "Wat is het hoofddoel van het publiek strafrecht met betrekking tot conflicten tussen burgers?",
+    "options": ["Het bevorderen van morele regels van fatsoen", "Het voorkomen van eigenrichting", "Het stimuleren van privaatrechtelijke oplossingen", "Het verhogen van de belastingopbrengst via boetes"],
+    "correct": 1,
+    "basis": "Een van de doelen van het publiek strafrecht is om eigenrichting te voorkomen, waarbij men het recht in eigen handen neemt."
+  },
+  {
+    "q": "Wie is de enige persoon/instantie die een verdachte voor de strafrechter kan brengen?",
+    "options": ["Het slachtoffer", "De politiecommissaris", "De officier van justitie", "De burgemeester via de APV"],
+    "correct": 2,
+    "basis": "De enige die een verdachte voor de strafrechter kan brengen is de officier van justitie namens het Openbaar Ministerie."
+  },
+  {
+    "q": "Welk strafdoel richt zich op het morele aspect dat 'de dader kwaad heeft afgeroepen over de samenleving'?",
+    "options": ["Speciale preventie", "Generale preventie", "Vergelding", "Resocialisatie"],
+    "correct": 2,
+    "basis": "Vergelding zorgt voor morele genoegdoening: de dader heeft kwaad afgeroepen over de samenleving en krijgt daar straf voor terug."
+  },
+  {
+    "q": "Welk rechtsgebied bepaalt welk gedrag niet toegestaan is en wie daarvoor gestraft kan worden?",
+    "options": ["Formeel strafrecht", "Materiële strafrecht", "Sanctierecht", "Bestuursrecht"],
+    "correct": 1,
+    "basis": "Het materiële strafrecht bepaalt welk gedrag niet toegestaan is en welke personen daarvoor kunnen worden gestraft (de inhoud)."
+  },
+  {
+    "q": "Onder welke verzamelnaam valt het strafrecht dat in de wetboeken (Sr en Sv) is vastgelegd?",
+    "options": ["Bijzonder strafrecht", "Communestrafrecht", "Supranationaal recht", "Lokaal strafrecht"],
+    "correct": 1,
+    "basis": "Het strafrecht in wetboeken zoals het Wetboek van Strafrecht en Strafvordering wordt vaak het communestrafrecht genoemd."
+  },
+  {
+    "q": "In welk Boek van het Wetboek van Strafrecht staan de overtredingen?",
+    "options": ["Boek I", "Boek II", "Boek III", "Boek IV"],
+    "correct": 2,
+    "basis": "Boek II bevat de misdrijven en Boek III bevat de overtredingen."
+  },
+  {
+    "q": "Wat zijn de vier cumulatieve componenten van een strafbaar feit?",
+    "options": ["Menselijke gedraging, Delictsomschrijving, Wederrechtelijkheid, Verwijtbaarheid", "Opzet, Schuld, Causaliteit, Strafbaarheid", "Dagvaarding, Bewijs, Kwalificatie, Vonnis", "Aangifte, Onderzoek, Vervolging, Berechting"],
+    "correct": 0,
+    "basis": "Een strafbaar feit is een menselijke gedraging die valt binnen een wettelijke delictsomschrijving, die wederrechtelijk is en aan schuld te wijten is."
+  },
+  {
+    "q": "In welk arrest bepaalde de Hoge Raad dat 'Elektriciteit' als een 'goed' kan worden beschouwd?",
+    "options": ["Melk en Water", "Porsche-arrest", "Arrest Elektriciteit", "Arrest Onbehoorlijk gedrag"],
+    "correct": 2,
+    "basis": "In het arrest Elektriciteit bepaalde de Hoge Raad dat elektriciteit een goed is omdat het een economische waarde vertegenwoordigt."
+  },
+  {
+    "q": "Hoe noemt men de componenten wederrechtelijkheid en verwijtbaarheid samen?",
+    "options": ["Bestanddelen", "Elementen", "Kwalificaties", "Strafuitsluitingsgronden"],
+    "correct": 1,
+    "basis": "Wederrechtelijkheid en verwijtbaarheid worden samen ook wel de elementen genoemd."
+  },
+  {
+    "q": "Wat is het gevolg als een verdachte een moord pleegt onder invloed van een volledige geestelijke stoornis?",
+    "options": ["Vrijspraak", "Niet-ontvankelijkheid OM", "Ontslag van alle rechtsvervolging (OVAR)", "Veroordeling zonder straf"],
+    "correct": 2,
+    "basis": "Bij een geslaagde schulduitsluitingsgrond (zoals ontoerekeningsvatbaarheid) volgt OVAR omdat de verwijtbaarheid ontbreekt."
+  },
+  {
+    "q": "Welke deelnorm van het legaliteitsbeginsel stelt dat strafbepalingen helder en begrijpelijk moeten zijn?",
+    "options": ["Lex scripta", "Lex certa", "Lex stricta", "Verbod van terugwerkende kracht"],
+    "correct": 1,
+    "basis": "Het lex certa-gebod houdt in dat wettelijke strafbepalingen helder afgebakend en begrijpelijk moeten zijn."
+  },
+  {
+    "q": "Welke interpretatiemethode kijkt naar de bedoeling van de wetgever via parlementaire documenten?",
+    "options": ["Grammaticale interpretatie", "Teleologische interpretatie", "Wetshistorische interpretatie", "Wetssystematische interpretatie"],
+    "correct": 2,
+    "basis": "De wetshistorische methode stelt de uitleg afhankelijk van de bedoeling van de wetgever via parlementaire geschiedenis."
+  },
+  {
+    "q": "Wat is het verschil tussen een bestanddeel en een element?",
+    "options": ["Bestanddelen staan in de wet, elementen niet", "Elementen staan in de wet, bestanddelen niet", "Er is geen verschil", "Bestanddelen worden door de verdediging bewezen, elementen door het OM"],
+    "correct": 0,
+    "basis": "Bestanddelen staan in de wettelijke delictsomschrijving aangegeven, elementen komen uit de praktijk (wederrechtelijkheid en verwijtbaarheid)."
+  },
+  {
+    "q": "Wat is het gevolg voor de bewijslast als 'wederrechtelijk' expliciet in de delictsomschrijving staat?",
+    "options": ["Het OM hoeft het niet te bewijzen", "Het is een element geworden", "Het is een bestanddeel geworden dat door het OM bewezen moet worden", "De verdachte moet bewijzen dat hij niet wederrechtelijk handelde"],
+    "correct": 2,
+    "basis": "Als wederrechtelijkheid in de DO staat, is het een bestanddeel en moet het OM dit bewijzen. Bij ontbreken volgt vrijspraak in plaats van OVAR."
+  },
+  {
+    "q": "Welke strafuitsluitingsgronden nemen de wederrechtelijkheid weg?",
+    "options": ["Rechtvaardigingsgronden", "Schulduitsluitingsgronden", "Bijzondere strafuitsluitingsgronden", "Pardongronden"],
+    "correct": 0,
+    "basis": "Rechtvaardigingsgronden nemen de wederrechtelijkheid van de gedraging weg."
+  },
+  {
+    "q": "In welk arrest werd de ongeschreven rechtvaardigingsgrond 'Ontbreken van de materiële wederrechtelijkheid' erkend?",
+    "options": ["Melk en water", "Huizense veearts", "Porsche", "Saunders"],
+    "correct": 1,
+    "basis": "In het arrest Huizense veearts werd de ongeschreven rechtvaardigingsgrond 'ontbreken van de materiële wederrechtelijkheid' erkend."
+  },
+  {
+    "q": "Wat is een 'oneigenlijk omissiedelict'?",
+    "options": ["Een niet-doen dat als zodanig in de wet staat", "Een doen dat wordt verricht door juist iets niet te doen", "Een strafbaar feit begaan door een dier", "Een misdrijf begaan door een ambtenaar"],
+    "correct": 1,
+    "basis": "Een oneigenlijk omissiedelict is een delict dat als commissiedelict is omschreven, maar verricht wordt door niet-doen (bijv. kind niet voeden)."
+  },
+  {
+    "q": "Hoe noemt men een delict dat wegens de gevolgen aan een zwaardere strafbedreiging onderhevig is dan de grondvorm?",
+    "options": ["Geprivilegieerd delict", "Gekwalificeerd delict", "Materieel delict", "Formeel delict"],
+    "correct": 1,
+    "basis": "Gekwalificeerde delicten zijn verzwaarde vormen van een gronddelict door bijzondere omstandigheden of gevolgen."
+  },
+  {
+    "q": "Welke causaliteitsleer is momenteel het geldend recht volgens de Hoge Raad?",
+    "options": ["Conditio sine qua non", "Causa proxima", "Voorzienbaarheidsleer", "Leer van de redelijke toerekening"],
+    "correct": 3,
+    "basis": "De leer van de redelijke toerekening is de leer die momenteel geldend recht is (sinds Letale longembolie)."
+  },
+  {
+    "q": "Wat houdt de 'interne werking' van verdragen in de Nederlandse rechtsorde in?",
+    "options": ["Verdragen moeten eerst worden omgezet in nationale wetten", "Verdragen zijn nooit geldig voor burgers", "Eenieder verbindende bepalingen zijn direct van toepassing zonder omzetting", "Alleen de Grondwet bepaalt wat strafbaar is"],
+    "correct": 2,
+    "basis": "Nederland heeft een monistisch stelsel: eenieder verbindende verdragsbepalingen hebben direct interne werking."
+  },
+  {
+    "q": "Wat betekent 'nemo tenetur'?",
+    "options": ["Niemand is onschuldig tot het tegendeel bewezen is", "Het recht op een onafhankelijke rechter", "Het recht om jezelf niet te hoeven bezwaren", "Het verbod op dubbele vervolging"],
+    "correct": 2,
+    "basis": "Het nemo-teneturbeginsel houdt in dat iemand niet gedwongen mag worden om aan zijn eigen veroordeling mee te werken (zichzelf niet bezwaren)."
+  },
+  {
+    "q": "Wanneer spreekt men van 'dolus'?",
+    "options": ["Bij schuld", "Bij onvoorzichtigheid", "Bij opzet", "Bij roekeloosheid"],
+    "correct": 2,
+    "basis": "In het Latijn wordt opzet aangeduid met de term dolus."
+  },
+  {
+    "q": "Welke vorm van opzet is de lichtste gradatie en vormt de ondergrens van opzet?",
+    "options": ["Opzet met bedoeling", "Noodzakelijkheidsbewustzijn", "Voorwaardelijk opzet", "Bewuste schuld"],
+    "correct": 2,
+    "basis": "Voorwaardelijk opzet is de lichtste vorm van opzet en grenst aan culpa."
+  },
+  {
+    "q": "Wat zijn de twee criteria voor voorwaardelijk opzet?",
+    "options": ["Willen en weten", "Bewust de aanmerkelijke kans aanvaarden en voor lief nemen", "Zich het gevaar realiseren maar hopen dat het goed afloopt", "Een onvermijdelijk gevolg voorzien"],
+    "correct": 1,
+    "basis": "Voorwaardelijk opzet betekent: bewust de aanmerkelijke kans aanvaarden en deze voor lief nemen."
+  },
+  {
+    "q": "Wat is een 'geobjectiveerd bestanddeel'?",
+    "options": ["Een bestanddeel dat de rechter zelf mag invullen", "Een bestanddeel waarop het opzet van de verdachte niet gericht hoeft te zijn", "Een bestanddeel dat altijd wederrechtelijk is", "Een bestanddeel dat alleen voor misdrijven geldt"],
+    "correct": 1,
+    "basis": "Bij geobjectiveerde bestanddelen hoeft het opzet van de dader niet op dat specifieke onderdeel gericht te zijn."
+  },
+  {
+    "q": "Welk begrip omschrijft culpa het best?",
+    "options": ["Willens en wetens handelen", "Verwijtbare aanmerkelijke onvoorzichtigheid", "Onbewust een fout maken", "De kans voor lief nemen"],
+    "correct": 1,
+    "basis": "Culpa kan het beste worden uitgelegd als een verwijtbare aanmerkelijke onvoorzichtigheid."
+  },
+  {
+    "q": "Wat is de zwaarste variant van culpa?",
+    "options": ["Onbewuste schuld", "Bewuste schuld", "Roekeloosheid", "Voorwaardelijk opzet"],
+    "correct": 2,
+    "basis": "Roekeloosheid is de zwaarste variant van culpa (schuld)."
+  },
+  {
+    "q": "In welk arrest werd geoordeeld over het afbreken van inhaalpogingen als contra-indicatie voor opzet?",
+    "options": ["Porsche-arrest", "Hiv I", "Bumperkleven", "Schieten in de kroeg"],
+    "correct": 0,
+    "basis": "In het Porsche-arrest was het afbreken van inhaalpogingen een belangrijke reden om geen opzet maar schuld aan te nemen."
+  },
+  {
+    "q": "Welke methoden gebruikt de rechter om bij grensgevallen tussen opzet en schuld tot een oordeel te komen?",
+    "options": ["Inductie en deductie", "Objectiveren en normaliseren", "Analyseren en kwalificeren", "Horen en beslissen"],
+    "correct": 1,
+    "basis": "De rechter kan objectiveren (kijken naar de gedraging) en normaliseren (kijken naar wat een normaal mens denkt)."
+  },
+  {
+    "q": "Welke taak van opsporingsambtenaren ziet op het toezicht op de naleving van wetten zonder concrete verdenking?",
+    "options": ["Opsporing", "Controle", "Vervolging", "Handhaving"],
+    "correct": 1,
+    "basis": "Controle betekent: toezicht op de naleving van een wet, waarbij nog geen sprake hoeft te zijn van een verdachte."
+  },
+  {
+    "q": "Wat is het materiële verdachtenbegrip volgens art. 27 Sv?",
+    "options": ["Iedereen die door de politie wordt aangesproken", "Degene tegen wie een proces-verbaal is opgemaakt", "Degene te wiens aanzien een redelijk vermoeden van schuld aan een strafbaar feit bestaat", "Degene die een bekentenis heeft afgelegd"],
+    "correct": 2,
+    "basis": "Art. 27 lid 1 Sv: de verdachte is degene te wiens aanzien uit feiten of omstandigheden een redelijk vermoeden van schuld aan een strafbaar feit voortvloeit."
+  },
+  {
+    "q": "Wat moet een opsporingsambtenaar doen vóórdat hij een verdachte verhoort?",
+    "options": ["Zijn legitimatiebewijs tonen", "De cautie geven", "De raadsman bellen", "De handboeien omdoen"],
+    "correct": 1,
+    "basis": "Vóór het verhoor moet de verdachte op de hoogte gesteld worden van zijn zwijgrecht (de cautie, art. 29 lid 2 Sv)."
+  },
+  {
+    "q": "Welk beginsel verbiedt het de overheid om een bevoegdheid voor een ander doel te gebruiken dan waarvoor deze is gegeven?",
+    "options": ["Vertrouwensbeginsel", "Gelijkheidsbeginsel", "Zuiverheid van oogmerk (détournement de pouvoir)", "Proportionaliteitsbeginsel"],
+    "correct": 2,
+    "basis": "Détournement de pouvoir houdt in dat een bevoegdheid niet voor een ander doel mag worden gebruikt dan waarvoor deze is verleend."
+  },
+  {
+    "q": "Wie heeft de leiding over het opsporingsonderzoek?",
+    "options": ["De korpschef van de politie", "De rechter-commissaris", "De officier van justitie", "De minister van Justitie"],
+    "correct": 2,
+    "basis": "De officier van justitie is verantwoordelijk voor alle opsporingsactiviteiten (art. 148 Sv)."
+  },
+  {
+    "q": "Wat is het doel van het staande houden van een verdachte (art. 52 Sv)?",
+    "options": ["Hem verhoren over het delict", "Zijn woning doorzoeken", "Vragen naar zijn personalia", "Hem in de cel zetten"],
+    "correct": 2,
+    "basis": "Staande houden is bedoeld om de persoonsgegevens (personalia) van de verdachte te achterhalen."
+  },
+  {
+    "q": "Wie is in geval van ontdekking op heterdaad bevoegd de verdachte aan te houden?",
+    "options": ["Alleen de politie", "Alleen de officier van justitie", "Iedereen", "Alleen de opsporingsambtenaar"],
+    "correct": 2,
+    "basis": "In geval van ontdekking op heterdaad is ieder (dus iedereen) bevoegd de verdachte aan te houden (art. 53 Sv)."
+  },
+  {
+    "q": "Hoe lang mag een verdachte maximaal worden opgehouden voor onderzoek bij een misdrijf waarvoor voorlopige hechtenis is toegelaten?",
+    "options": ["6 uur", "9 uur", "3 dagen", "12 uur"],
+    "correct": 1,
+    "basis": "Bij een feit waarvoor voorlopige hechtenis is toegelaten, mag de verdachte 9 uur worden opgehouden (art. 56a Sv)."
+  },
+  {
+    "q": "Welk orgaan beslist over de 'bewaring' van een verdachte?",
+    "options": ["De officier van justitie", "De hulpofficier van justitie", "De rechter-commissaris", "De raadkamer van de rechtbank"],
+    "correct": 2,
+    "basis": "Alleen de rechter-commissaris mag de bewaring van een verdachte bevelen (art. 63 Sv)."
+  },
+  {
+    "q": "Wat is de maximale duur van de 'inverzekeringstelling'?",
+    "options": ["14 dagen", "3 dagen (plus eventueel 3 dagen verlenging)", "9 uur", "60 dagen"],
+    "correct": 1,
+    "basis": "De inverzekeringstelling duurt maximaal 3 dagen en kan bij dringende noodzaak eenmaal met 3 dagen worden verlengd."
+  },
+  {
+    "q": "Wat houdt het 'anticipatiegebod' bij voorlopige hechtenis in?",
+    "options": ["De verdachte moet altijd weten wanneer hij vrijkomt", "Voorarrest mag niet langer duren dan de uiteindelijke te verwachten gevangenisstraf", "De rechter moet rekening houden met de leeftijd", "Het OM moet bewijzen dat er vluchtgevaar is"],
+    "correct": 1,
+    "basis": "Het anticipatiegebod (67a lid 3 Sv) stelt dat voorarrest niet langer mag duren dan de straf die de rechter waarschijnlijk zal opleggen."
+  },
+  {
+    "q": "Wie is exclusief bevoegd tot het doorzoeken van een woning ter inbeslagneming (zonder spoed)?",
+    "options": ["De politie", "De officier van justitie", "De rechter-commissaris", "De burgemeester"],
+    "correct": 2,
+    "basis": "Doorzoeking van een woning ter inbeslagneming is de exclusieve bevoegdheid van de rechter-commissaris (art. 110 Sv)."
+  },
+  {
+    "q": "Wat is de definitie van 'ontdekking op heterdaad' volgens art. 128 Sv?",
+    "options": ["Wanneer de dader bekend is", "Wanneer het feit ontdekt wordt terwijl het begaan wordt of terstond nadat het begaan is", "Wanneer er camerabeelden zijn", "Wanneer het feit binnen 24 uur wordt ontdekt"],
+    "correct": 1,
+    "basis": "Art. 128 Sv: ontdekking op heterdaad is wanneer het feit ontdekt wordt terwijl het begaan wordt of terstond nadat het begaan is."
+  },
+  {
+    "q": "Welke bevoegdheid houdt in dat een opsporingsambtenaar undercover deelneemt aan een criminele groep?",
+    "options": ["Stelselmatige observatie", "Pseudokoop", "Infiltratie", "Visitatie"],
+    "correct": 2,
+    "basis": "Infiltratie is het deelnemen of medewerking verlenen aan een groep personen die misdrijven beramen of plegen."
+  },
+  {
+    "q": "Wanneer is er sprake van een 'beleidssepot'?",
+    "options": ["Wanneer er te weinig bewijs is", "Wanneer vervolging technisch niet mogelijk is", "Wanneer vervolging niet in het algemeen maatschappelijk belang is", "Wanneer de dader is overleden"],
+    "correct": 2,
+    "basis": "Een beleidssepot vindt plaats wanneer een zaak wel tot veroordeling zou kunnen leiden, maar vervolging niet opportuun is in het algemeen belang."
+  },
+  {
+    "q": "Wat is het 'opportuniteitsbeginsel'?",
+    "options": ["De plicht om altijd te vervolgen", "De vrijheid van het OM om van vervolging af te zien op gronden aan het algemeen belang ontleend", "Het recht van de rechter om de straf te bepalen", "De mogelijkheid voor burgers om aangifte te doen"],
+    "correct": 1,
+    "basis": "Het opportuniteitsbeginsel (art. 167 lid 2 Sv) geeft het OM de ruimte om af te zien van vervolging op basis van het algemeen belang."
+  },
+  {
+    "q": "Welke procedure kan een belanghebbende starten als het OM besluit niet te vervolgen?",
+    "options": ["Hoger beroep", "Cassatie", "Artikel 12-procedure", "Kort geding"],
+    "correct": 2,
+    "basis": "Als het OM niet vervolgt, kan een belanghebbende het Gerechtshof via een art. 12 Sv-procedure vragen alsnog vervolging te bevelen."
+  },
+  {
+    "q": "Wat is het voordeel van een 'strafbeschikking' ten opzichte van een 'transactie'?",
+    "options": ["De transactie is duurder", "De strafbeschikking is een daad van vervolging en wordt executoriaal zonder rechter", "De transactie is verplicht voor moord", "Er is geen verschil"],
+    "correct": 1,
+    "basis": "De strafbeschikking is een sanctie opgelegd door het OM die na de verzettermijn definitief ten uitvoer kan worden gelegd."
+  },
+  {
+    "q": "Welke term beschrijft het verbod om iemand twee keer voor hetzelfde feit te vervolgen?",
+    "options": ["Ne bis in idem", "Nullum crimen", "Lex certa", "Pacta sunt servanda"],
+    "correct": 0,
+    "basis": "Ne bis in idem (art. 68 Sr) betekent dat niemand twee keer voor hetzelfde feit mag worden vervolgd na een onherroepelijke uitspraak."
+  },
+  {
+    "q": "Welk karakter heeft het onderzoek ter terechtzitting in Nederland?",
+    "options": ["Inquisitoir", "Accusatoir", "Beide (voornamelijk accusatoir)", "Geen van beide"],
+    "correct": 2,
+    "basis": "Het vooronderzoek is inquisitoir, maar het onderzoek ter terechtzitting heeft een accusatoir karakter."
+  },
+  {
+    "q": "Hoe noemt men de beschuldiging die in de dagvaarding staat?",
+    "options": ["Requisitoir", "Pleidooi", "Tenlastelegging", "Vonnis"],
+    "correct": 2,
+    "basis": "De tenlastelegging is de omschrijving van het strafbare feit waarvan de verdachte wordt beschuldigd in de dagvaarding."
+  },
+  {
+    "q": "Wat houdt de 'grondslagleer' in?",
+    "options": ["De rechter moet altijd de Grondwet volgen", "De rechter mag alleen oordelen over het feit zoals dat in de tenlastelegging staat", "De politie moet bewijs verzamelen op de plek van het delict", "Het OM mag de tenlastelegging nooit wijzigen"],
+    "correct": 1,
+    "basis": "De grondslagleer betekent dat de tenlastelegging de basis (grondslag) vormt voor het hele proces; de rechter is hieraan gebonden."
+  },
+  {
+    "q": "Wat is het doel van een 'primair-subsidiaire' tenlastelegging?",
+    "options": ["Om twee verschillende daders tegelijk te vervolgen", "Om een 'vangnet' te hebben als de zwaardere (primaire) beschuldiging niet bewezen kan worden", "Om een boete én gevangenisstraf te eisen", "Om de rechter te dwingen tot vrijspraak"],
+    "correct": 1,
+    "basis": "Bij twijfel tussen kwalificaties kan de OvJ een zwaarder feit primair en een lichter feit subsidiair ten laste leggen."
+  },
+  {
+    "q": "Hoe noemt men de toespraak waarin de officier van justitie zijn strafeis formuleert?",
+    "options": ["Pleidooi", "Repliek", "Requisitoir", "Dupliek"],
+    "correct": 2,
+    "basis": "In het requisitoir geeft de officier van justitie zijn visie op de zaak en de strafeis."
+  },
+  {
+    "q": "Wat is het verschil tussen een 'onderbreking' en een 'schorsing' van de zitting?",
+    "options": ["Onderbreking is voor weken, schorsing voor uren", "Onderbreking is kort (dezelfde dag), schorsing is voor langere tijd (dagen/weken)", "Er is geen juridisch verschil", "Alleen de advocaat mag schorsen"],
+    "correct": 1,
+    "basis": "Onderbreking (art. 277 Sv) is kort, schorsing (art. 281 Sv) is voor een langere, bepaalde of onbepaalde tijd."
+  },
+  {
+    "q": "In welke wet staan de regels over welke type rechter (politierechter/meervoudige kamer) bevoegd is?",
+    "options": ["Wetboek van Strafrecht", "Wet op de Rechterlijke Organisatie (RO)", "Grondwet", "Wetboek van Strafvordering"],
+    "correct": 1,
+    "basis": "De regels omtrent absolute competentie zijn te vinden in de Wet op de rechterlijke organisatie (RO)."
+  },
+  {
+    "q": "Welke vraag van het beslissingsmodel van art. 350 Sv leidt tot 'vrijspraak'?",
+    "options": ["Vraag 1 (Is het ten laste gelegde bewezen?)", "Vraag 2 (Is het feit strafbaar?)", "Vraag 3 (Is de dader strafbaar?)", "Vraag 4 (Welke straf?)"],
+    "correct": 0,
+    "basis": "Als de eerste vraag (bewijs) ontkennend wordt beantwoord, volgt vrijspraak."
+  },
+  {
+    "q": "Wat is een 'negatief-wettelijk' bewijsstelsel?",
+    "options": ["De rechter mag nooit veroordelen", "Bewijs moet wettig zijn én de rechter moet de overtuiging hebben dat de verdachte het heeft gedaan", "Alleen bekentenissen tellen als bewijs", "De verdachte moet zijn onschuld bewijzen"],
+    "correct": 1,
+    "basis": "Het bewijs moet wettig zijn (via de wet) én de rechter moet de overtuiging hebben (negatief aspect)."
+  },
+  {
+    "q": "Wat is het gevolg voor de uitspraak als een rechtvaardigingsgrond slaagt?",
+    "options": ["Vrijspraak", "Ontslag van alle rechtsvervolging (OVAR)", "Veroordeling zonder straf", "Niet-ontvankelijkheid OM"],
+    "correct": 1,
+    "basis": "Een rechtvaardigingsgrond neemt de wederrechtelijkheid weg, wat leidt tot OVAR."
+  },
+  {
+    "q": "Welke van de volgende is een 'hoofdstraf'?",
+    "options": ["Verbeurdverklaring", "Ontzetting van rechten", "Geldboete", "Onttrekking aan het verkeer"],
+    "correct": 2,
+    "basis": "De vier hoofdstraffen (art. 9 Sr) zijn gevangenisstraf, hechtenis, taakstraf en geldboete."
+  },
+  {
+    "q": "Wat is het verschil tussen gevangenisstraf en hechtenis?",
+    "options": ["Gevangenisstraf is voor misdrijven, hechtenis kan ook voor overtredingen", "Hechtenis is altijd zwaarder", "Gevangenisstraf is thuis, hechtenis in de cel", "Hechtenis duurt maximaal 30 jaar"],
+    "correct": 0,
+    "basis": "Gevangenisstraf is enkel voor misdrijven; hechtenis is voor overtredingen en soms misdrijven (max 1 jaar)."
+  },
+  {
+    "q": "Wanneer kan 'voorwaardelijke invrijheidstelling' (VI) worden verleend bij een straf van meer dan 2 jaar?",
+    "options": ["Na de helft van de straf", "Na twee derde deel van de straf (maximaal 2 jaar VI)", "Altijd na 1 jaar", "Nooit meer sinds 2021"],
+    "correct": 1,
+    "basis": "Bij straffen boven de 2 jaar kan VI worden verleend na 2/3 deel, met een maximum van 2 jaar VI-periode."
+  },
+  {
+    "q": "Wat is het 'draagkrachtbeginsel' bij geldboetes?",
+    "options": ["De boete moet zo hoog mogelijk zijn", "De hoogte van de boete is afhankelijk van de financiële situatie van de dader", "Bedrijven betalen minder dan burgers", "De boete is altijd €50 per dag"],
+    "correct": 1,
+    "basis": "Het draagkrachtbeginsel (art. 24 Sr) houdt in dat de boete afhankelijk is van wat de veroordeelde financieel kan dragen."
+  },
+  {
+    "q": "Welke maatregel kan worden opgelegd aan ontoerekeningsvatbare daders?",
+    "options": ["TBS", "ISD", "Gevangenisstraf", "Taakstraf"],
+    "correct": 0,
+    "basis": "Terbeschikkingstelling (TBS) wordt opgelegd wanneer de rechter de dader ontoerekeningsvatbaar acht."
+  },
+  {
+    "q": "Wat is een 'rechterlijk pardon' (art. 9a Sr)?",
+    "options": ["De verdachte wordt vrijgesproken door de koning", "Veroordeling zonder oplegging van straf of maatregel", "Het seponeren van de zaak door de rechter", "Het kwijtschelden van een geldboete"],
+    "correct": 1,
+    "basis": "Art. 9a Sr: de rechter kan iemand schuldig verklaren maar besluiten geen straf of maatregel op te leggen."
+  },
+  {
+    "q": "Wat is het verschil tussen 'eendaadse' en 'meerdaadse' samenloop?",
+    "options": ["Eendaads is één handeling die meerdere wetten schendt; meerdaads zijn meerdere handelingen", "Er is geen verschil", "Bij eendaads worden alle straffen bij elkaar opgeteld", "Meerdaads geldt alleen voor moord"],
+    "correct": 0,
+    "basis": "Eendaadse samenloop (art. 55 Sr) is één handeling; meerdaadse samenloop (art. 57 Sr) zijn meerdere handelingen."
+  },
+  {
+    "q": "Tegen welke uitspraken staat 'hoger beroep' open?",
+    "options": ["Onherroepelijke vonnissen", "Vonnissen die nog niet in kracht van gewijsde zijn gegaan", "Alleen beschikkingen", "Alleen uitspraken van de Hoge Raad"],
+    "correct": 1,
+    "basis": "Hoger beroep is een gewoon rechtsmiddel tegen uitspraken die nog niet onherroepelijk zijn."
+  },
+  {
+    "q": "Welke instantie behandelt het 'cassatieberoep'?",
+    "options": ["De Rechtbank", "Het Gerechtshof", "De Hoge Raad", "Het EHRM"],
+    "correct": 2,
+    "basis": "Het cassatieberoep wordt behandeld door de Hoge Raad."
+  },
+  {
+    "q": "Wat toetst de Hoge Raad in cassatie NIET?",
+    "options": ["De feiten (nieuw feitenonderzoek)", "De juiste toepassing van het recht", "Vormverzuimen", "De motivering"],
+    "correct": 0,
+    "basis": "De Hoge Raad doet geen nieuw feitenonderzoek maar gaat uit van de feiten zoals vastgesteld door het Hof."
+  },
+  {
+    "q": "Welke procedure is bedoeld om onherroepelijke vonnissen aan te pakken bij een 'novum'?",
+    "options": ["Hoger beroep", "Cassatie", "Herziening", "Gratie"],
+    "correct": 2,
+    "basis": "Herziening is een buitengewoon rechtsmiddel tegen onherroepelijke vonnissen, o.a. op grond van een nieuw feit (novum)."
+  },
+  {
+    "q": "Wat is een 'novum' in de context van herziening?",
+    "options": ["Een nieuwe wet", "Een nieuw feit of gegeven dat niet bekend was tijdens de zitting", "Een fout in de dagvaarding", "Een bekentenis van de officier van justitie"],
+    "correct": 1,
+    "basis": "Een novum is een gegeven dat bij het onderzoek ter terechtzitting niet bekend was en tot een andere uitspraak had kunnen leiden."
+  },
+  {
+    "q": "Wie kan 'gratie' verlenen in Nederland?",
+    "options": ["De Hoge Raad", "De rechter-commissaris", "De Minister van Justitie en Veiligheid (namens de Koning)", "De burgemeester"],
+    "correct": 2,
+    "basis": "Gratie wordt verleend door de Minister van Justitie en Veiligheid via een verzoekschrift."
+  },
+  {
+    "q": "Hoe lang heeft een partij doorgaans de tijd om hoger beroep in te stellen na de einduitspraak?",
+    "options": ["7 dagen", "14 dagen", "30 dagen", "3 maanden"],
+    "correct": 1,
+    "basis": "Partijen hebben na de einduitspraak 14 dagen de tijd om hoger beroep of cassatie in te stellen."
+  },
+  {
+    "q": "Wat is 'sprongcassatie'?",
+    "options": ["Van de politie direct naar de rechter", "Van de rechtbank direct naar de Hoge Raad", "Van de rechter naar het EHRM", "Het overslaan van de dagvaarding"],
+    "correct": 1,
+    "basis": "Sprongcassatie is het overslaan van het Hof (direct van rechtbank naar HR); dit is in het strafrecht niet toegestaan."
+  },
+  {
+    "q": "Welk artikel bevat de negen vragen van de beraadslaging (voorvragen en hoofdvragen)?",
+    "options": ["Art. 310 en 311 Sr", "Art. 348 en 350 Sv", "Art. 1 en 2 Sv", "Art. 93 en 94 Gw"],
+    "correct": 1,
+    "basis": "Art. 348 (voorvragen) en 350 Sv (hoofdvragen) vormen het hart van het rechterlijk beslismodel."
+  },
+  {
+    "q": "Wat is het gevolg voor de dagvaarding als de tijd en plaats van het delict ontbreken?",
+    "options": ["Niet-ontvankelijkheid OM", "Nietigheid van de dagvaarding", "OVAR", "Vrijspraak"],
+    "correct": 1,
+    "basis": "Inhoudelijke gebreken aan de tenlastelegging (zoals ontbreken tijd/plaats) leiden tot nietigheid van de dagvaarding."
+  },
+  {
+    "q": "Wat is 'eendaadse samenloop'?",
+    "options": ["Meerdere handelingen achter elkaar", "Eén handeling die onder meerdere strafbepalingen valt", "Eén dader met meerdere slachtoffers", "Eén proces met meerdere daders"],
+    "correct": 1,
+    "basis": "Eendaadse samenloop (art. 55 Sr): een feit valt in meer dan één strafbepaling."
+  },
+  {
+    "q": "Hoe hoog is de minimale geldboete in Nederland?",
+    "options": ["€1", "€3", "€50", "Er is geen minimum"],
+    "correct": 1,
+    "basis": "Art. 23 lid 2 Sr stelt de minimale geldboete op €3."
+  },
+  {
+    "q": "Welk strafdoel richt zich op het voorkomen dat de dader opnieuw een feit pleegt?",
+    "options": ["Generale preventie", "Speciale preventie", "Vergelding", "Eigenrichting"],
+    "correct": 1,
+    "basis": "Speciale preventie richt zich op de dader zelf om herhaling te voorkomen."
+  },
+  {
+    "q": "Wat gebeurt er als de verdachte overlijdt tijdens het proces?",
+    "options": ["De erfgenamen worden vervolgd", "Het recht tot vervolging vervalt", "Het proces gaat gewoon door", "Er wordt automatisch OVAR uitgesproken"],
+    "correct": 1,
+    "basis": "Art. 69 Sr bepaalt dat het recht tot strafvervolging vervalt door de dood van de verdachte."
+  },
+  {
+    "q": "Wat is de maximale duur van een taakstraf?",
+    "options": ["100 uur", "180 uur", "240 uur", "480 uur"],
+    "correct": 2,
+    "basis": "Een taakstraf mag ten hoogste 240 uur duren."
+  },
+  {
+    "q": "Welke maatregel is bedoeld voor 'veelplegers'?",
+    "options": ["TBS", "ISD", "Onttrekking aan het verkeer", "Verbeurdverklaring"],
+    "correct": 1,
+    "basis": "De ISD-maatregel (Plaatsing in een inrichting voor stelselmatige daders) is bedoeld voor veelplegers."
+  },
+  {
+    "q": "Wat is een 'klachtdelict'?",
+    "options": ["Een delict waarover het slachtoffer klaagt bij de politie", "Een delict dat alleen vervolgbaar is als het slachtoffer een formele klacht indient", "Een delict dat alleen door de R-C wordt behandeld", "Een delict zonder strafbedreiging"],
+    "correct": 1,
+    "basis": "Sommige delicten zijn alleen vervolgbaar als er een formele klacht (verzoek tot vervolging) is ingediend."
+  },
+  {
+    "q": "In welk jaar is herziening ten nadele van de verdachte ingevoerd?",
+    "options": ["1916", "1950", "2013", "2021"],
+    "correct": 2,
+    "basis": "Herziening ten nadele van de verdachte is mogelijk sinds 1 oktober 2013."
+  },
+  {
+    "q": "Welk element wordt weggenomen bij een schulduitsluitingsgrond?",
+    "options": ["Wederrechtelijkheid", "Verwijtbaarheid", "Causaliteit", "MG"],
+    "correct": 1,
+    "basis": "Schulduitsluitingsgronden nemen de verwijtbaarheid (schuld van de dader) weg."
+  },
+  {
+    "q": "Wat is de 'lex scripta' deelnorm?",
+    "options": ["De wet moet duidelijk zijn", "Strafbaarheid mag alleen op grond van een wettelijke bepaling", "Rechters moeten analoog interpreteren", "Wet mag terugwerken"],
+    "correct": 1,
+    "basis": "Lex scripta betekent dat strafrechtelijke aansprakelijkheid uitsluitend op basis van een geschreven wettelijke bepaling mag rusten."
+  },
+  {
+    "q": "Wat is het doel van de ISD-maatregel?",
+    "options": ["Vergelding", "Beveiliging van de maatschappij en voorkomen van recidive", "De dader een opleiding geven", "Geld inzamelen"],
+    "correct": 1,
+    "basis": "De ISD-maatregel richt zich op het voorkomen van recidive door stelselmatige daders te behandelen/isoleren."
+  },
+  {
+    "q": "Mag een rechter analoog interpreteren in het strafrecht?",
+    "options": ["Ja, altijd", "Nee, dat verbiedt het lex stricta-gebod", "Alleen bij overtredingen", "Alleen als de OvJ dat vraagt"],
+    "correct": 1,
+    "basis": "Het lex stricta-gebod verbiedt analoge interpretatie; extensieve interpretatie mag wel."
+  },
+  {
+    "q": "Onder welke wet vallen boetes opgelegd door de gemeente?",
+    "options": ["Grondwet", "Wegenverkeerswet", "Algemene Plaatselijke Verordening (APV)", "Opiumwet"],
+    "correct": 2,
+    "basis": "APV's van gemeenten zijn lokale strafwetten."
+  },
+  {
+    "q": "Wie is de voorzitter van het raadkameroverleg na de zitting?",
+    "options": ["De oudste rechter", "De griffier", "De officier van justitie", "De rechter die de leiding had ter zitting"],
+    "correct": 3,
+    "basis": "De voorzitter van de rechtbank heeft de leiding over het onderzoek en de beraadslaging."
+  },
+  {
+    "q": "Hoe noemt men de schriftelijke klachten in cassatie?",
+    "options": ["Appelschriftuur", "Cassatiemiddelen", "Requisitoir", "Verweerschrift"],
+    "correct": 1,
+    "basis": "Klachten over het oordeel van het hof in cassatie heten cassatiemiddelen."
+  },
+  {
+    "q": "Wat is een 'falsa' bij herziening ten nadele?",
+    "options": ["Een nieuw DNA-bewijs", "Een onwaarheid (zoals meineed) die tot de eerdere vrijspraak heeft geleid", "Een type boete", "Een procedurele fout van de R-C"],
+    "correct": 1,
+    "basis": "Falsa is een onwaarheid (bijv. vals bewijs) die ten grondslag lag aan een onterechte vrijspraak."
+  },
+  {
+    "q": "Bij welke boetehoogte is de rechter verplicht rekening te houden met draagkracht?",
+    "options": ["Boven de €50", "Boven de €500", "Altijd bij elke geldboete", "Alleen bij misdrijven"],
+    "correct": 2,
+    "basis": "Het draagkrachtbeginsel (art. 24 Sr) geldt voor de bepaling van de hoogte van elke geldboete."
+  },
+  {
+    "q": "Welke vraag komt in het art. 350 Sv schema direct ná 'Is het feit strafbaar?'",
+    "options": ["Is de dader strafbaar?", "Is het feit bewezen?", "Welke sanctie?", "Is het OM ontvankelijk?"],
+    "correct": 0,
+    "basis": "Het schema is: 1. Bewijs, 2. Strafbaarheid feit, 3. Strafbaarheid dader, 4. Sanctie."
+  },
+  {
+    "q": "Wat is 'verbeurdverklaring'?",
+    "options": ["Een gevangenisstraf", "Een bijkomende vermogensstraf waarbij goederen aan de staat toekomen", "Een type maatregel", "Het intrekken van het rijbewijs"],
+    "correct": 1,
+    "basis": "Verbeurdverklaring is een bijkomende straf waarbij voorwerpen (gerelateerd aan het feit) worden ontnomen."
+  },
+  {
+    "q": "Mag de Hoge Raad getuigen horen?",
+    "options": ["Ja, als de advocaat dat wil", "Nee, de Hoge Raad doet geen feitenonderzoek", "Alleen bij moordzaken", "Alleen de procureur-generaal mag dat"],
+    "correct": 1,
+    "basis": "De Hoge Raad is een rechtsrechter en doet geen eigen feitenonderzoek (geen getuigen horen)."
+  },
+  {
+    "q": "Wat is 'pacta sunt servanda'?",
+    "options": ["Staten zijn gelijk", "Verdragen moeten te goeder trouw worden nagekomen", "Wet gaat voor verdrag", "Niemand is boven de wet"],
+    "correct": 1,
+    "basis": "Pacta sunt servanda is het beginsel dat gesloten verdragen moeten worden gerespecteerd en nageleefd."
+  },
+  {
+    "q": "Wat is de maximale tijdelijke gevangenisstraf in Nederland?",
+    "options": ["20 jaar", "30 jaar", "50 jaar", "99 jaar"],
+    "correct": 1,
+    "basis": "Art. 10 lid 4 Sr stelt de maximale tijdelijke gevangenisstraf op 30 jaar."
+  },
+  {
+    "q": "Welke strafuitsluitingsgrond wordt gebruikt bij 'ontoerekeningsvatbaarheid'?",
+    "options": ["Overmacht als rechtvaardigingsgrond", "Noodweer", "Psychische overmacht of AVAS", "Schulduitsluitingsgrond (art. 39 Sr)"],
+    "correct": 3,
+    "basis": "Ontoerekeningsvatbaarheid wegens een stoornis is een schulduitsluitingsgrond."
+  },
+  {
+    "q": "Welk rechtsmiddel is bedoeld voor de Procureur-Generaal om de rechtseenheid te bewaren?",
+    "options": ["Hoger beroep", "Gewone cassatie", "Cassatie in het belang der wet", "Herziening"],
+    "correct": 2,
+    "basis": "Cassatie in het belang der wet wordt door de P-G ingesteld om een belangrijke rechtsvraag voor te leggen zonder nadeel voor partijen."
+  }
+]
