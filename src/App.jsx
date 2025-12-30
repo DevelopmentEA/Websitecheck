@@ -50,12 +50,12 @@ const IframeGuard = () => {
           <div className="flex justify-center mb-6">
             <ShieldAlert size={64} className="text-red-600" />
           </div>
-          <h1 className="text-2xl font-bold mb-4 font-serif">Premium Content</h1>
+          <h1 className="text-2xl font-bold mb-4 font-serif">In Productie</h1>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Dit specifieke onderdeel (Topic 7) is exclusief beschikbaar via de beveiligde leeromgeving.
+            Dit specifieke onderdeel (Topic 7) is nog in ontwikkeling.
           </p>
           <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">
-            Lawbooks Only Access (coming soon) 
+            Elbert & Lawbooks Productie (coming soon) 
           </div>
         </div>
       </div>
