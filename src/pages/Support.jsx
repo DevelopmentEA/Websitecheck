@@ -81,12 +81,12 @@ export default function Support() {
 
         <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-                <label className="block text-xs font-bold text-[#1A365D] uppercase tracking-wider mb-2">Naam (Optioneel)</label>
+                <label className="block text-xs font-bold text-[#1A365D] uppercase tracking-wider mb-2">Mail</label>
                 <input 
                     type="text" 
                     name="naam"
                     className="w-full p-3 bg-slate-50 border border-slate-200 rounded focus:outline-none focus:border-[#C5A059] focus:bg-white transition-colors" 
-                    placeholder="Jouw naam..."
+                    placeholder="Jouw email-adres..."
                     value={formData.naam} 
                     onChange={handleChange} 
                 />

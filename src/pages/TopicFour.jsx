@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import html2canvas from 'html2canvas'; // Vergeet niet: npm install html2canvas
-import { Share2, Download } from 'lucide-react';
+import html2canvas from 'html2canvas'; 
+import { Share2, Award, Medal } from 'lucide-react'; // Nieuwe iconen voor de badge
 import allQuestions from './vragen.json';
 
 const MONEY_LADDER = [
@@ -19,7 +19,7 @@ const Miljoenenjacht = () => {
   const [selected, setSelected] = useState(null);
   const [evaluation, setEvaluation] = useState(null); 
   const audioRef = useRef(null);
-  const certificateRef = useRef(null); // Ref voor de screenshot
+  const certificateRef = useRef(null);
 
   const startGame = () => {
     const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
@@ -31,35 +31,31 @@ const Miljoenenjacht = () => {
     setEvaluation(null);
   };
 
-  // Screenshot & Deel functie
   const handleShare = async () => {
     if (!certificateRef.current) return;
     
-    // Maak een canvas van het (verborgen) certificaat
     const canvas = await html2canvas(certificateRef.current, {
       backgroundColor: '#1A365D',
-      scale: 2, // Hogere kwaliteit
+      scale: 3, // Ultra hoge kwaliteit
+      useCORS: true
     });
     
     const image = canvas.toDataURL("image/png");
-    
-    // Check of mobiel delen mogelijk is
+    const amount = MONEY_LADDER[currentIdx - 1] || "€ 0";
+
     if (navigator.share) {
       const blob = await (await fetch(image)).blob();
-      const file = new File([blob], "Lawbooks_Resultaat.png", { type: "image/png" });
+      const file = new File([blob], "Lawbooks_Miljoenenjacht.png", { type: "image/png" });
       try {
         await navigator.share({
-          title: 'Mijn Lawbooks Resultaat',
-          text: `Ik heb ${MONEY_LADDER[currentIdx - 1] || "een mooi bedrag"} behaald bij Miljoenenjacht! Durf jij het ook aan?`,
+          title: 'Lawbooks Miljoenenjacht',
+          text: `Ik heb ${amount} behaald in de Lawbooks Miljoenenjacht! Kom jij even ver als ik? ⚖️💰`,
           files: [file],
         });
-      } catch (err) {
-        console.log("Delen geannuleerd");
-      }
+      } catch (err) { console.log("Delen gestopt"); }
     } else {
-      // Fallback: Download de afbeelding op desktop
       const link = document.createElement('a');
-      link.download = `Lawbooks_Miljoenenjacht_${MONEY_LADDER[currentIdx-1]}.png`;
+      link.download = `Lawbooks_Resultaat_${amount}.png`;
       link.href = image;
       link.click();
     }
@@ -119,21 +115,6 @@ const Miljoenenjacht = () => {
 
   const progress = ((currentIdx) / 12) * 100;
 
-  // Render Helper voor de Deel-knop
-  const renderShareButton = () => {
-    // Toon knop alleen als ze minstens bij vraag 5 (index 4) zijn gekomen
-    if (currentIdx < 4) return null;
-
-    return (
-      <button 
-        onClick={handleShare}
-        className="mt-4 flex items-center justify-center gap-2 px-8 py-4 bg-[#C5A059] text-white rounded-xl font-bold uppercase tracking-widest hover:bg-[#b08d4b] transition-all shadow-lg"
-      >
-        <Share2 size={20} /> Deel mijn resultaat!
-      </button>
-    );
-  };
-
   if (gameState === 'start') {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-[#FAF9F6] text-[#1A365D] p-6 text-center">
@@ -151,15 +132,56 @@ const Miljoenenjacht = () => {
     <div className="min-h-screen bg-[#FAF9F6] flex flex-col font-sans text-[#1A365D] overflow-hidden">
       <audio ref={audioRef} src="/spannend.mp3" loop />
       
-      {/* 1. VERBORGEN CERTIFICAAT VOOR SCREENSHOT */}
+      {/* -------------------------------------------------------------
+          VERBETERD CERTIFICAAT VOOR SCREENSHOT (HETZELFDE ALS JE PNG)
+      ---------------------------------------------------------------- */}
       <div style={{ position: 'absolute', left: '-9999px' }}>
-        <div ref={certificateRef} style={{ width: '600px', padding: '40px', background: '#1A365D', color: 'white', textAlign: 'center', borderRadius: '20px', border: '10px solid #C5A059' }}>
-          <h1 style={{ fontSize: '40px', fontFamily: 'serif', fontStyle: 'italic', marginBottom: '10px' }}>Miljoenenjacht</h1>
-          <div style={{ height: '2px', background: '#C5A059', width: '100px', margin: '0 auto 20px' }}></div>
-          <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '12px' }}>Lawbooks Knowledge Base</p>
-          <h2 style={{ fontSize: '60px', fontWeight: '900', margin: '40px 0' }}>{MONEY_LADDER[currentIdx - 1] || "SCORE"}</h2>
-          <p style={{ opacity: '0.7' }}>Ik ben de juridische ladder beklommen!</p>
-          <p style={{ marginTop: '40px', fontSize: '10px' }}>www.lawbooks.nl</p>
+        <div 
+          ref={certificateRef} 
+          style={{ 
+            width: '800px', 
+            height: '600px', 
+            background: '#1A365D', 
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            padding: '40px',
+            border: '14px solid #C5A059',
+            borderRadius: '24px',
+            fontFamily: 'serif',
+            position: 'relative'
+          }}
+        >
+          {/* Gouden Zegel Badge */}
+          <div style={{ position: 'absolute', top: '40px' }}>
+             <div style={{ backgroundColor: '#C5A059', padding: '15px', borderRadius: '50%', border: '4px solid white', boxShadow: '0 10px 20px rgba(0,0,0,0.3)' }}>
+                <Award size={50} color="white" />
+             </div>
+          </div>
+
+          <div style={{ height: '3px', background: '#C5A059', width: '120px', marginTop: '100px', marginBottom: '40px' }}></div>
+          
+          <p style={{ color: 'white', textTransform: 'uppercase', letterSpacing: '6px', fontSize: '18px', fontWeight: '900', marginBottom: '50px' }}>
+            LAWBOOKS KNOWLEDGE BASE
+          </p>
+
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+            <h2 style={{ color: '#C5A059', fontSize: '56px', fontWeight: '900', margin: '0', textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+              SCORE: {currentIdx}/12
+            </h2>
+            <h2 style={{ color: '#C5A059', fontSize: '64px', fontWeight: '900', margin: '0', textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+              BEDRAG: {MONEY_LADDER[currentIdx - 1] || "€ 0"}
+            </h2>
+          </div>
+
+          <p style={{ color: 'white', fontSize: '26px', marginTop: '60px', fontStyle: 'italic', opacity: '0.9' }}>
+            Kom jij even ver als ik?
+          </p>
+
+          <p style={{ color: 'white', marginTop: '50px', fontSize: '14px', opacity: '0.5', letterSpacing: '2px' }}>
+            www.lawbooks.nl
+          </p>
         </div>
       </div>
 
@@ -210,7 +232,14 @@ const Miljoenenjacht = () => {
               <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center max-w-2xl bg-white p-16 rounded-[4rem] shadow-2xl border-t-[12px] border-red-500">
                 <h2 className="text-6xl font-serif mb-4 font-bold text-red-600 italic">Helaas...</h2>
                 <p className="text-slate-500 text-xl mb-6 uppercase tracking-widest">Je strandt op {currentIdx > 0 ? MONEY_LADDER[currentIdx-1] : "€ 0"}</p>
-                {renderShareButton()}
+                
+                {/* DEELKNOP VERSCHIJNT BIJ FOUT ANTWOORD BOVEN 16K */}
+                {currentIdx >= 4 && (
+                  <button onClick={handleShare} className="mb-8 flex items-center justify-center gap-2 w-full py-4 bg-[#C5A059] text-white rounded-xl font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-lg">
+                    <Share2 size={20} /> Deel mijn resultaat!
+                  </button>
+                )}
+
                 <div className="bg-slate-50 p-8 rounded-3xl my-8 text-left border-l-4 border-[#C5A059]">
                     <p className="italic text-slate-600 text-lg leading-relaxed">{questions[currentIdx]?.basis}</p>
                 </div>
@@ -219,11 +248,14 @@ const Miljoenenjacht = () => {
             ) : gameState === 'won' ? (
               <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center">
                 <h2 className="text-9xl font-serif mb-6 text-[#C5A059] font-black italic">MILJONAIR!</h2>
+                
+                {/* DEELKNOP BIJ WINNEN */}
+                <button onClick={handleShare} className="mb-8 flex items-center justify-center gap-2 px-12 py-5 bg-[#C5A059] text-white rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-2xl">
+                    <Share2 size={24} /> Deel mijn Overwinning!
+                </button>
+
                 <p className="text-slate-500 text-2xl mb-12 font-bold uppercase tracking-widest text-white drop-shadow-lg">Je hebt de Miljoen gehaald!</p>
-                <div className="flex flex-col gap-4 items-center">
-                  {renderShareButton()}
-                  <button onClick={startGame} className="px-16 py-6 bg-green-600 text-white rounded-full font-black text-xl shadow-2xl hover:scale-105 transition-all">SPEEL OPNIEUW</button>
-                </div>
+                <button onClick={startGame} className="px-16 py-6 bg-green-600 text-white rounded-full font-black text-xl shadow-2xl hover:scale-105 transition-all">SPEEL OPNIEUW</button>
               </motion.div>
             ) : null}
           </AnimatePresence>
