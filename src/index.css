@@ -1,3 +1,4 @@
+/* 1. IMPORTS (MOETEN ALTIJD BOVENAAN) */
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
 
@@ -38,7 +39,7 @@ body {
   /* dvh zorgt dat de hoogte klopt, inclusief browserbalken op laptops/mobiel */
   min-height: 100dvh;
   width: 100%;
-  /* Overschrijf hidden naar auto zodat je altijd bij de onderste knoppen kunt */
+  /* Zorgt dat je altijd bij de onderste knoppen kunt via scroll */
   overflow-y: auto; 
   overflow-x: hidden;
   
@@ -94,7 +95,7 @@ button:hover {
   box-shadow: 0 8px 15px rgba(0,0,0,0.05);
 }
 
-/* 6. HULPKLASSEN VOOR DE QUIZ */
+/* 6. HULPKLASSEN VOOR DE QUIZ & FRAMING */
 .quiz-card {
   background: white;
   border: 1px solid var(--border-soft);
@@ -107,16 +108,33 @@ button:hover {
   box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
-.quiz-card:hover {
-  border-color: var(--accent-gold);
+/* Verberg scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Extra witruimte onderaan om Windows-taakbalken te ontwijken */
 .safe-bottom-area {
-  padding-bottom: 60px;
+  padding-bottom: clamp(40px, 10vh, 100px);
 }
 
-/* Dunne, moderne scrollbar */
+/* Fix voor kleine laptop schermen (lage hoogte) */
+@media (max-height: 700px) {
+  .quiz-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Dunne, moderne scrollbar voor wanneer scrollen nodig is */
 ::-webkit-scrollbar {
   width: 6px;
 }
