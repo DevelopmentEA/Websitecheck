@@ -1,0 +1,252 @@
+[
+  {
+    "statement": "De Vrede van Westfalen (1648) markeerde het begin van het idee van soevereine staten die formeel gelijkwaardig zijn.",
+    "isCorrect": true,
+    "basis": "De tekst stelt dat deze vrede leidde tot het ontstaan van soevereine staten die zelf bepalen wat er binnen hun grenzen gebeurt."
+  },
+  {
+    "statement": "In een strikt dualistisch stelsel is internationaal recht automatisch onderdeel van de nationale rechtsorde.",
+    "isCorrect": false,
+    "basis": "In het dualisme heeft internationaal recht pas juridische betekenis als de wetgever deze regel uitdrukkelijk omzet in nationaal recht."
+  },
+  {
+    "statement": "Nederland wordt aangemerkt als een gematigd monistische staat op basis van de artikelen 93 en 94 van de Grondwet.",
+    "isCorrect": true,
+    "basis": "Nederland aanvaardt automatische interne werking, maar beperkt dit tot verdragsnormen die naar hun inhoud eenieder kunnen verbinden."
+  },
+  {
+    "statement": "Volgens het Spoorwegstaking-arrest hoeft een verdragsbepaling niet duidelijk te zijn om rechtstreeks te kunnen worden toegepast.",
+    "isCorrect": false,
+    "basis": "De Hoge Raad stelt juist dat een bepaling voldoende duidelijk moet zijn om als 'objectief recht' zonder nadere uitwerking te functioneren."
+  },
+  {
+    "statement": "Internationaal publiekrecht richt zich vooral op de internationale gemeenschap als geheel en de uitoefening van publiek gezag.",
+    "isCorrect": true,
+    "basis": "Dit onderscheidt het publiekrecht van het internationaal privaatrecht, dat zich richt op grensoverschrijdende privéverhoudingen."
+  },
+  {
+    "statement": "Volgens het Montevideo-verdrag is erkenning door de Verenigde Naties een noodzakelijk vereiste om een staat te vormen.",
+    "isCorrect": false,
+    "basis": "Het Montevideo-verdrag noemt bevolking, territorium, gezag en het vermogen om betrekkingen aan te gaan; erkenning is geen constitutief vereiste."
+  },
+  {
+    "statement": "Een entiteit bezit rechtssubjectiviteit zodra zij internationale bevoegdheden, rechten of plichten bezit.",
+    "isCorrect": true,
+    "basis": "Rechtssubjectiviteit duidt de status aan die het mogelijk maakt deel te nemen aan het internationale rechtsverkeer."
+  },
+  {
+    "statement": "De facto-regimes hebben doorgaans dezelfde mate van rechtssubjectiviteit als soevereine staten.",
+    "isCorrect": false,
+    "basis": "De mate van rechtssubjectiviteit van de facto-regimes is vaak zwak en staten erkennen dit meestal slechts beperkt om hen aan verplichtingen te binden."
+  },
+  {
+    "statement": "De constitutieve leer stelt dat een entiteit pas juridisch een staat is zodra deze door andere staten wordt erkend.",
+    "isCorrect": true,
+    "basis": "In deze leer is erkenning een voorwaarde voor het ontstaan van de staat, in tegenstelling tot de declaratoire leer."
+  },
+  {
+    "statement": "De Algemene Vergadering van de VN heeft de bevoegdheid om bindende wetgeving uit te vaardigen voor alle lidstaten.",
+    "isCorrect": false,
+    "basis": "De Algemene Vergadering is een politiek orgaan; haar resoluties zijn in beginsel niet bindend, maar kunnen wel gewoonterecht beïnvloeden."
+  },
+  {
+    "statement": "Het attributiebeginsel houdt in dat internationale organisaties enkel de bevoegdheden hebben die staten aan hen hebben toegekend.",
+    "isCorrect": true,
+    "basis": "Organisaties hebben geen soevereiniteit; hun macht is beperkt tot wat expliciet of impliciet in het oprichtingsverdrag staat."
+  },
+  {
+    "statement": "Het specialiteitsbeginsel betekent dat een internationale organisatie bevoegd is voor elk type mondiaal probleem.",
+    "isCorrect": false,
+    "basis": "Het specialiteitsbeginsel beperkt organisaties juist tot de doelen en het werkterrein waarvoor zij specifiek zijn opgericht."
+  },
+  {
+    "statement": "Artikel 38 van het IGH-statuut bevat een hiërarchische rangorde waarbij verdragen altijd belangrijker zijn dan gewoonterecht.",
+    "isCorrect": false,
+    "basis": "In beginsel zijn verdragsrecht, gewoonterecht en besluiten van gelijke rang; er bestaat geen algemene hiërarchische verhouding."
+  },
+  {
+    "statement": "Gewoonterecht vereist zowel een algemene praktijk (statenpraktijk) als een rechtsovertuiging (opinio juris).",
+    "isCorrect": true,
+    "basis": "Dit zijn de twee cumulatieve voorwaarden: staten moeten zich op een bepaalde wijze gedragen én geloven dat dit juridisch verplicht is."
+  },
+  {
+    "statement": "Opinio juris kan worden afgeleid uit het feit dat staten handelen uit politieke wenselijkheid.",
+    "isCorrect": false,
+    "basis": "Opinio juris vereist dat staten handelen omdat zij zich juridisch verplicht voelen, niet om redenen van politieke of economische aard."
+  },
+  {
+    "statement": "Een 'persistent objector' is een staat die bezwaar maakt tegen een regel nadat deze al als gewoonterecht is gevestigd.",
+    "isCorrect": false,
+    "basis": "Een persistent objector moet juist consequent bezwaar maken gedurende de periode dat de regel zich ontwikkelt."
+  },
+  {
+    "statement": "Het beginsel 'pacta sunt servanda' dwingt staten om gesloten verdragen te goeder trouw na te komen.",
+    "isCorrect": true,
+    "basis": "Dit is neergelegd in artikel 26 van het Weens Verdragenverdrag en is een hoeksteen van het internationale recht."
+  },
+  {
+    "statement": "Jus cogens normen zijn dwingende regels van internationaal recht waarvan niet mag worden afgeweken.",
+    "isCorrect": true,
+    "basis": "Voorbeelden van jus cogens zijn het verbod op agressie, volkerenmoord en foltering."
+  },
+  {
+    "statement": "Een verdrag is vernietigbaar als het bij de totstandkoming in strijd is met een norm van jus cogens.",
+    "isCorrect": false,
+    "basis": "Volgens artikel 53 WVV is een verdrag in dat geval van rechtswege nietig (niet slechts vernietigbaar)."
+  },
+  {
+    "statement": "Een voorbehoud bij een verdrag is toegestaan, tenzij het in strijd is met het voorwerp en doel van het verdrag.",
+    "isCorrect": true,
+    "basis": "Artikel 19 WVV stelt deze grens om te voorkomen dat de essentie van een verdrag door een staat wordt uitgehold."
+  },
+  {
+    "statement": "Het clean slate-beginsel houdt in dat een nieuwe staat automatisch gebonden is aan alle verdragen van de voorgangerstaat.",
+    "isCorrect": false,
+    "basis": "Nieuwe staten beginnen volgens dit beginsel juist met een 'schone lei' en zijn niet automatisch gebonden (behalve bij grensvraagstukken)."
+  },
+  {
+    "statement": "Arbitrage onderscheidt zich van rechtspraak doordat arbitrage leidt tot een niet-bindend advies.",
+    "isCorrect": false,
+    "basis": "Arbitrage leidt juist tot een juridisch bindende uitspraak; het verschil zit in de ad hoc oprichting en invloed op de samenstelling."
+  },
+  {
+    "statement": "Particulieren en internationale organisaties hebben geen toegang tot de contentieuze procedure van het IGH.",
+    "isCorrect": true,
+    "basis": "Artikel 34 van het IGH-statuut bepaalt uitdrukkelijk dat alleen staten partij kunnen zijn in geschillen voor het Hof."
+  },
+  {
+    "statement": "Een compromissoire clausule is een verdragsbepaling die toekomstige geschillen over dat verdrag toewijst aan een tribunaal.",
+    "isCorrect": true,
+    "basis": "Hierdoor geven staten vooraf toestemming voor de rechtsmacht van een hof voor geschillen die nog moeten ontstaan."
+  },
+  {
+    "statement": "Retorsies zijn handelingen die op zichzelf onrechtmatig zijn, maar gerechtvaardigd worden door een eerdere schending.",
+    "isCorrect": false,
+    "basis": "Retorsies zijn in beginsel niet verboden (onvriendelijk maar legaal). Represailles (tegenmaatregelen) zijn handelingen die normaal gesproken onrechtmatig zijn."
+  },
+  {
+    "statement": "Volgens artikel 2 ILCA vereist een onrechtmatige daad een schending van een verplichting én toerekenbaarheid aan de staat.",
+    "isCorrect": true,
+    "basis": "Dit zijn de twee cumulatieve voorwaarden voor staatsaansprakelijkheid."
+  },
+  {
+    "statement": "Een staat is niet aansprakelijk voor daden van organen die buiten hun officiële bevoegdheid handelen (ultra vires).",
+    "isCorrect": false,
+    "basis": "Artikel 7 ILCA stelt dat ultra-vires handelingen wel degelijk aan de staat worden toegerekend als het orgaan in die hoedanigheid handelde."
+  },
+  {
+    "statement": "Het IGH hanteert het 'effective control' criterium voor de toerekening van daden door private groepen aan een staat.",
+    "isCorrect": true,
+    "basis": "Dit volgt uit de Nicaragua-zaak: de staat moet effectieve controle hebben over de specifieke militaire of paramilitaire operaties."
+  },
+  {
+    "statement": "Restitutie is de vorm van rechtsherstel waarbij de situatie van vóór de onrechtmatige daad wordt hersteld.",
+    "isCorrect": true,
+    "basis": "Restitutie is de primaire vorm van herstel volgens artikel 35 ILCA."
+  },
+  {
+    "statement": "Bij de verdedigingsgrond 'distress' (noodtoestand) is er geen sprake van een keuzemoment voor de handelende persoon.",
+    "isCorrect": false,
+    "basis": "Bij distress is er juist wel een keuzemoment: men schendt een plicht om een eigen leven of dat van anderen te redden."
+  },
+  {
+    "statement": "Diplomatieke bescherming kan enkel worden uitgeoefend indien de onderdaan eerst de nationale rechtsmiddelen heeft uitgeput.",
+    "isCorrect": true,
+    "basis": "De staat die de rechten heeft geschonden moet eerst de kans krijgen dit op nationaal niveau te herstellen."
+  },
+  {
+    "statement": "Het territorialiteitsbeginsel houdt in dat de rechtsmacht van een staat binnen zijn eigen grondgebied in beginsel onbeperkt is.",
+    "isCorrect": true,
+    "basis": "Dit is de meest fundamentele grondslag voor rechtsmachtsuitoefening."
+  },
+  {
+    "statement": "Onder het passieve nationaliteitsbeginsel oefent een staat rechtsmacht uit over zijn eigen onderdanen in het buitenland.",
+    "isCorrect": false,
+    "basis": "Dat is het actieve nationaliteitsbeginsel. Het passieve beginsel ziet op rechtsmacht over vreemdelingen die onderdanen van de staat schaden."
+  },
+  {
+    "statement": "Zuivere universele rechtsmacht geldt voor misdrijven als volkerenmoord, misdrijven tegen de menselijkheid en piraterij.",
+    "isCorrect": true,
+    "basis": "Elke staat heeft belang bij het bestraffen van deze ernstige internationale misdrijven, ongeacht waar ze zijn gepleegd."
+  },
+  {
+    "statement": "Persoonlijke immuniteit (ratione personae) geldt uitsluitend voor handelingen verricht in officiële hoedanigheid.",
+    "isCorrect": false,
+    "basis": "Persoonlijke immuniteit strekt zich uit tot alle handelingen, ook privé-handelingen, maar geldt alleen tijdens de ambtstermijn."
+  },
+  {
+    "statement": "Staatshoofden, regeringsleiders en ministers van buitenlandse zaken vormen de 'Big Three' met persoonlijke immuniteit.",
+    "isCorrect": true,
+    "basis": "Dit is bevestigd in de Arrest Warrant-zaak om een ongestoord verloop van internationale betrekkingen te garanderen."
+  },
+  {
+    "statement": "Functionele immuniteit (ratione materiae) blijft bestaan na beëindiging van het ambt voor officiële handelingen.",
+    "isCorrect": true,
+    "basis": "Omdat de handeling aan de staat wordt toegerekend, blijft de bescherming voor die specifieke daad van kracht."
+  },
+  {
+    "statement": "Gezagsdragers kunnen voor het Internationaal Strafhof (ISH) geen beroep doen op immuniteit.",
+    "isCorrect": true,
+    "basis": "Artikel 27 van het Statuut van het ISH bepaalt dat officiële hoedanigheid geen beletsel vormt voor vervolging."
+  },
+  {
+    "statement": "De ontvangststaat mag een diplomatieke tas openen als er een redelijk vermoeden is van illegale inhoud.",
+    "isCorrect": false,
+    "basis": "Volgens artikel 27 CDV mag de diplomatieke tas niet worden geopend of vastgehouden; deze onschendbaarheid is strikt."
+  },
+  {
+    "statement": "Een 'persona non grata' verklaring verplicht een diplomaat om het land te verlaten.",
+    "isCorrect": true,
+    "basis": "De ontvangststaat kan dit te allen tijde doen zonder opgaaf van redenen volgens artikel 9 CDV."
+  },
+  {
+    "statement": "De territoriale zee strekt zich uit tot een maximum van 24 zeemijl vanaf de basislijn.",
+    "isCorrect": false,
+    "basis": "De territoriale zee is maximaal 12 zeemijl breed; de aansluitende zone is maximaal 24 zeemijl breed."
+  },
+  {
+    "statement": "Onschuldige doorvaart in de territoriale zee is toegestaan zolang het de vrede, orde of veiligheid van de kuststaat niet schaadt.",
+    "isCorrect": true,
+    "basis": "Dit is een fundamenteel recht van schepen van alle staten onder het VN-Zeeverdrag."
+  },
+  {
+    "statement": "In de Exclusieve Economische Zone (EEZ) heeft de kuststaat soevereiniteit over al het scheepvaartverkeer.",
+    "isCorrect": false,
+    "basis": "De kuststaat heeft in de EEZ enkel functionele rechtsmacht over grondstoffen; voor scheepvaart geldt in principe de vrijheid van de volle zee."
+  },
+  {
+    "statement": "Alle staten, ook staten zonder kust, hebben het recht om gebruik te maken van de vrijheden van de volle zee.",
+    "isCorrect": true,
+    "basis": "De volle zee valt buiten nationale jurisdictie en is voor vrij gebruik door alle staten."
+  },
+  {
+    "statement": "Op de volle zee zijn schepen onderworpen aan de exclusieve rechtsmacht van de vlaggenstaat.",
+    "isCorrect": true,
+    "basis": "De vlaggenstaat is de staat waar het schip officieel geregistreerd staat."
+  },
+  {
+    "statement": "Het Outer Space Treaty staat toe dat staten delen van de maan opeisen via soevereiniteitsaanspraken.",
+    "isCorrect": false,
+    "basis": "De ruimte en hemellichamen kunnen niet worden toegeëigend door staten; ze zijn voor vrij gebruik voor vreedzame doeleinden."
+  },
+  {
+    "statement": "Aan boord van een vliegtuig geldt in beginsel de rechtsmacht van de staat waar men op dat moment overheen vliegt.",
+    "isCorrect": false,
+    "basis": "In beginsel geldt het nationaliteitsbeginsel: het recht van de staat van nationaliteit van het vliegtuig is van toepassing."
+  },
+  {
+    "statement": "Het Verdrag inzake Antarctica bevriest alle territoriale claims op het continent.",
+    "isCorrect": true,
+    "basis": "Het verbiedt handelingen die bestaande claims versterken of nieuwe claims leggen; het gebied is voor wetenschappelijk gebruik."
+  },
+  {
+    "statement": "De VN-Veiligheidsraad bestaat uit 15 leden, waarvan er 5 een permanent vetorecht hebben.",
+    "isCorrect": true,
+    "basis": "Dit zijn de P5: China, Frankrijk, Rusland, het VK en de VS."
+  },
+  {
+    "statement": "Het monisme gaat uit van het idee dat internationaal en nationaal recht twee volledig gescheiden systemen zijn.",
+    "isCorrect": false,
+    "basis": "Dat is de definitie van dualisme. Monisme ziet beide als onderdeel van één en dezelfde rechtsorde."
+  }
+]

@@ -11,6 +11,7 @@ import TopicTree from './pages/TopicTree';
 import TopicFour from './pages/TopicFour';
 import TopicFive from './pages/TopicFive';
 import TopicSix from './pages/TopicSix';
+import TopicEight from './pages/TopicEight';
 import TopicSeven from './pages/TopicSeven';
 import Support from './pages/Support';
 import DonateButton from './pages/Button';
@@ -190,6 +191,7 @@ const Sidebar = () => {
                 {[
                   { path: "/IPRII", label: "Tentamen Training" },
                   { path: "/IPRIII", label: "Oefenvragen A-D" },
+                  { path: "/IPRIV", label: "Courtroom Rush" },
                 ].map(sub => (
                   <NavLink key={sub.path} to={sub.path} className={({ isActive }) => `block py-2 text-[9px] uppercase tracking-widest transition-colors ${isActive ? 'text-[#C5A059]' : 'text-slate-500 hover:text-slate-300'}`}>
                     {sub.label}
@@ -254,6 +256,7 @@ const App = () => (
         <Route path="/IPR" element={<TopicFour />} />
         <Route path="/IPRII" element={<TopicFive />} />
         <Route path="/IPRIII" element={<TopicSix />} />
+        <Route path="/IPRIV" element={<TopicEight />} />
         <Route path="/support" element={<Support />} />
         <Route path="/SRIV" element={<TopicSeven />} />
       </Route>
