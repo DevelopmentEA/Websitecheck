@@ -1,6 +1,4 @@
 @import "tailwindcss";
-
-/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -22,7 +20,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* SHAKE ANIMATIE VOOR FOUTIEVE MATCHES */
+/* 2. ANIMATIES */
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   20%, 60% { transform: translateX(-6px); }
@@ -33,12 +31,16 @@
   animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
 }
 
+/* 3. BASE LAYOUT FIXES VOOR FRAMING */
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  /* dvh zorgt dat de hoogte klopt, inclusief browserbalken op laptops/mobiel */
+  min-height: 100dvh;
   width: 100%;
-  overflow: hidden; 
+  /* Overschrijf hidden naar auto zodat je altijd bij de onderste knoppen kunt */
+  overflow-y: auto; 
+  overflow-x: hidden;
   
   background-color: var(--paper-ivory);
   background-image: radial-gradient(#e5e7eb 0.7px, transparent 0.7px);
@@ -47,11 +49,11 @@ body {
 
 #root {
   width: 100%;
-  height: 100vh;
+  min-height: 100dvh;
   display: block; 
 }
 
-/* TITELS */
+/* 4. TYPOGRAFIE */
 h1 {
   font-family: 'Playfair Display', serif;
   color: var(--primary-navy);
@@ -71,7 +73,7 @@ h2 {
   margin-bottom: 1.2rem;
 }
 
-/* BUTTONS */
+/* 5. INTERACTIEVE ELEMENTEN */
 button {
   border-radius: 14px;
   border: 1.5px solid var(--border-soft);
@@ -92,7 +94,7 @@ button:hover {
   box-shadow: 0 8px 15px rgba(0,0,0,0.05);
 }
 
-/* QUIZ CARDS */
+/* 6. HULPKLASSEN VOOR DE QUIZ */
 .quiz-card {
   background: white;
   border: 1px solid var(--border-soft);
@@ -109,16 +111,27 @@ button:hover {
   border-color: var(--accent-gold);
 }
 
-/* TEXTUELE CONTENT */
-.prose-legal {
-  width: 100%;
-  max-width: 75ch; 
-  margin: 0 auto;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  color: var(--ink-slate);
+/* Extra witruimte onderaan om Windows-taakbalken te ontwijken */
+.safe-bottom-area {
+  padding-bottom: 60px;
 }
 
-/* DARK MODE */
+/* Dunne, moderne scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--paper-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+/* 7. DARK MODE */
 @media (prefers-color-scheme: dark) {
   :root {
     color: #F1F5F9;
