@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare } from 'lucide-react';
+import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare, Zap } from 'lucide-react';
 
 // Pagina imports
 import Dashboard from './pages/Dashboard';
@@ -13,6 +13,7 @@ import TopicFive from './pages/TopicFive';
 import TopicSix from './pages/TopicSix';
 import TopicEight from './pages/TopicEight';
 import TopicSeven from './pages/TopicSeven';
+import TopicNine from './pages/TopicNine'; // Het nieuwe Strafrecht Pad
 import Support from './pages/Support';
 import DonateButton from './pages/Button';
 import StudyMusic from './pages/StudyMusic';
@@ -144,7 +145,6 @@ const Sidebar = () => {
                 {openMenus.strafrecht ? <ChevronDown size={12} opacity={0.5} /> : <ChevronRight size={12} opacity={0.5} />}
               </div>
             )}
-            {/* Gouden indicator voor open menu */}
             <div className={`absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full transition-opacity ${openMenus.strafrecht ? 'opacity-100' : 'opacity-0'}`} />
           </button>
           
@@ -181,7 +181,6 @@ const Sidebar = () => {
                 {openMenus.ipr ? <ChevronDown size={12} opacity={0.5} /> : <ChevronRight size={12} opacity={0.5} />}
               </div>
             )}
-            {/* Gouden indicator voor open menu */}
             <div className={`absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full transition-opacity ${openMenus.ipr ? 'opacity-100' : 'opacity-0'}`} />
           </button>
           
@@ -201,6 +200,13 @@ const Sidebar = () => {
             )}
           </AnimatePresence>
         </div>
+
+        {/* --- NIEUW: STRAFRECHT PAD (Standalone boven Support) --- */}
+        <NavLink to="/SRX" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
+          <Zap size={18} className="flex-shrink-0" />
+          {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Strafrecht Pad</span>}
+          <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
+        </NavLink>
 
         {/* Support */}
         <NavLink to="/support" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
@@ -253,6 +259,7 @@ const App = () => (
         <Route path="/SRI" element={<TopicOne />} />
         <Route path="/SRII" element={<TopicTwo />} />
         <Route path="/SRIII" element={<TopicTree />} />
+        <Route path="/SRX" element={<TopicNine />} /> {/* Strafrecht Pad */}
         <Route path="/IPR" element={<TopicFour />} />
         <Route path="/IPRII" element={<TopicFive />} />
         <Route path="/IPRIII" element={<TopicSix />} />
