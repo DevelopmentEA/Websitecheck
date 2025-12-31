@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare, Zap } from 'lucide-react';
+// Gavel toegevoegd aan imports
+import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare, Zap, Gavel } from 'lucide-react';
 
 // Pagina imports
 import Dashboard from './pages/Dashboard';
@@ -13,7 +14,8 @@ import TopicFive from './pages/TopicFive';
 import TopicSix from './pages/TopicSix';
 import TopicEight from './pages/TopicEight';
 import TopicSeven from './pages/TopicSeven';
-import TopicNine from './pages/TopicNine'; // Het nieuwe Strafrecht Pad
+import TopicNine from './pages/TopicNine'; 
+import TopicTen from './pages/TopicTen'; // Nieuwe import: Jurisprudentie Toets
 import Support from './pages/Support';
 import DonateButton from './pages/Button';
 import StudyMusic from './pages/StudyMusic';
@@ -132,7 +134,7 @@ const Sidebar = () => {
           <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
         </NavLink>
 
-        {/* Categorie: Strafrecht (Platte tekst) */}
+        {/* Categorie: Strafrecht */}
         <div className="py-1 relative group">
           <button 
             onClick={() => setOpenMenus(p => ({ ...p, strafrecht: !p.strafrecht }))}
@@ -168,7 +170,7 @@ const Sidebar = () => {
           </AnimatePresence>
         </div>
 
-        {/* Categorie: IPR (Platte tekst) */}
+        {/* Categorie: IPR */}
         <div className="py-1 relative group">
           <button 
             onClick={() => setOpenMenus(p => ({ ...p, ipr: !p.ipr }))}
@@ -201,10 +203,17 @@ const Sidebar = () => {
           </AnimatePresence>
         </div>
 
-        {/* --- NIEUW: STRAFRECHT PAD (Standalone boven Support) --- */}
+        {/* Standalone: Strafrecht Pad */}
         <NavLink to="/SRX" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
           <Zap size={18} className="flex-shrink-0" />
           {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Strafrecht Pad</span>}
+          <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
+        </NavLink>
+
+        {/* --- NIEUW: JURISPRUDENTIE TOETS (Standalone boven Support) --- */}
+        <NavLink to="/JUR" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
+          <Gavel size={18} className="flex-shrink-0" />
+          {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Jurisprudentie Toets</span>}
           <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
         </NavLink>
 
@@ -259,7 +268,8 @@ const App = () => (
         <Route path="/SRI" element={<TopicOne />} />
         <Route path="/SRII" element={<TopicTwo />} />
         <Route path="/SRIII" element={<TopicTree />} />
-        <Route path="/SRX" element={<TopicNine />} /> {/* Strafrecht Pad */}
+        <Route path="/SRX" element={<TopicNine />} />
+        <Route path="/JUR" element={<TopicTen />} /> {/* Route voor Jurisprudentie Toets */}
         <Route path="/IPR" element={<TopicFour />} />
         <Route path="/IPRII" element={<TopicFive />} />
         <Route path="/IPRIII" element={<TopicSix />} />
