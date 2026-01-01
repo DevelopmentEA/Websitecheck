@@ -20,7 +20,7 @@ import DonateButton from './pages/Button';
 import StudyMusic from './pages/StudyMusic';
 
 // ==========================================
-// 1. EMAIL POPUP (Aangepaste Stijl & Trigger)
+// 1. EMAIL POPUP (FIXED SUBMIT LOGIC)
 // ==========================================
 const EmailPopup = ({ forceShow, onClose, customText }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +32,7 @@ const EmailPopup = ({ forceShow, onClose, customText }) => {
     } else {
       const hasSeen = localStorage.getItem('hasSeenEmailPopup');
       if (!hasSeen) {
-        const timer = setTimeout(() => setIsVisible(true), 15000); // Iets later (15s)
+        const timer = setTimeout(() => setIsVisible(true), 15000); 
         return () => clearTimeout(timer);
       }
     }
@@ -40,8 +40,15 @@ const EmailPopup = ({ forceShow, onClose, customText }) => {
 
   const handleClose = () => {
     setIsVisible(false);
-    if (onClose) onClose(); // Reset parent state if needed
+    if (onClose) onClose(); 
     if (!forceShow) localStorage.setItem('hasSeenEmailPopup', 'true');
+  };
+
+  // DE FIX: Vertraag de state update zodat de POST request kan vertrekken
+  const handleSubmit = () => {
+    setTimeout(() => {
+      setSubmitted(true);
+    }, 150); // 150ms vertraging is genoeg voor de browser
   };
 
   return (
@@ -65,11 +72,14 @@ const EmailPopup = ({ forceShow, onClose, customText }) => {
                 {customText ? "Toegang Vereist" : "Premium Leren"}
               </h2>
             </div>
+            
             <div className="p-8 text-center">
               {!submitted ? (
                 <form 
                   action="https://docs.google.com/forms/d/e/1FAIpQLSe-xEXNDDwXJeiwMe5v4bUOOfJ0MuZZjKoBefyVRQd0n1MrKQ/formResponse"
-                  method="POST" target="hidden_iframe" onSubmit={() => setSubmitted(true)}
+                  method="POST" 
+                  target="hidden_iframe" 
+                  onSubmit={handleSubmit} // Gebruik de handler met timeout
                   className="space-y-4"
                 >
                   <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
@@ -82,6 +92,8 @@ const EmailPopup = ({ forceShow, onClose, customText }) => {
                 <div className="py-6 text-emerald-600 font-bold tracking-tight">Bedankt! We houden je op de hoogte.</div>
               )}
             </div>
+            
+            {/* Het Iframe moet ALTIJD bestaan, ook na submit, om de response op te vangen zonder redirect */}
             <iframe name="hidden_iframe" style={{ display: 'none' }}></iframe>
           </motion.div>
         </div>
@@ -95,7 +107,7 @@ const EmailPopup = ({ forceShow, onClose, customText }) => {
 // ==========================================
 const Sidebar = ({ onLockClick }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [openMenus, setOpenMenus] = useState({ strafrecht: true, ipr: false }); // Strafrecht standaard open
+  const [openMenus, setOpenMenus] = useState({ strafrecht: true, ipr: false }); 
 
   const sidebarVariants = {
     open: { width: "17rem" },
@@ -111,7 +123,6 @@ const Sidebar = ({ onLockClick }) => {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => {
         setIsOpen(false);
-        // We laten de menu's open staan voor betere UX, of resetten ze hier indien gewenst
       }}
       className="h-screen bg-white border-r border-slate-200 flex flex-col flex-shrink-0 z-50 overflow-hidden relative shadow-[4px_0_24px_rgba(0,0,0,0.02)]"
     >
@@ -139,7 +150,7 @@ const Sidebar = ({ onLockClick }) => {
           {isOpen && <span className="ml-3 text-sm font-semibold">Dashboard</span>}
         </NavLink>
 
-        {/* Categorie: Strafrecht (Alles hieronder) */}
+        {/* Categorie: Strafrecht */}
         <div className="relative group">
           <button 
             onClick={() => setOpenMenus(p => ({ ...p, strafrecht: !p.strafrecht }))}
@@ -160,8 +171,6 @@ const Sidebar = ({ onLockClick }) => {
                 <NavLink to="/SRI" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module I: Basis</NavLink>
                 <NavLink to="/SRII" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module II: Expert</NavLink>
                 <NavLink to="/SRIII" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module III: Casus</NavLink>
-                
-                {/* Jurisprudentie & Pad nu hier */}
                 <NavLink to="/JUR" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Jurisprudentie</NavLink>
                 <NavLink to="/SRX" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Strafrecht Pad</NavLink>
                 <NavLink to="/SRIV" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Extra Stof</NavLink>
