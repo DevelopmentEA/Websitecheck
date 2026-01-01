@@ -248,7 +248,7 @@ const MainLayout = () => {
   // State voor de locked popup
   const [showLockedPopup, setShowLockedPopup] = useState(false);
 
-  const hideSidebar = isEmbedded || location.pathname === '/SRIV'|| location.pathname === '/IPRIV';
+  const hideSidebar = isEmbedded || location.pathname === '/SRIV' || location.pathname === '/IPRIV';
 
   return (
     <div className="flex h-screen w-screen bg-[#F9FAFB] overflow-hidden text-slate-900">
