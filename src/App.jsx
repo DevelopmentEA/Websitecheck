@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare, Zap, Gavel, Layers } from 'lucide-react';
+import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare, Gavel, Layers, Lock } from 'lucide-react';
 
 // Pagina imports
 import Dashboard from './pages/Dashboard';
@@ -20,45 +20,50 @@ import DonateButton from './pages/Button';
 import StudyMusic from './pages/StudyMusic';
 
 // ==========================================
-// 1. EMAIL POPUP
+// 1. EMAIL POPUP (Aangepaste Stijl & Trigger)
 // ==========================================
-const EmailPopup = () => {
+const EmailPopup = ({ forceShow, onClose, customText }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    const hasSeen = localStorage.getItem('hasSeenEmailPopup');
-    if (!hasSeen) {
-      const timer = setTimeout(() => setIsVisible(true), 10000);
-      return () => clearTimeout(timer);
+    if (forceShow) {
+      setIsVisible(true);
+    } else {
+      const hasSeen = localStorage.getItem('hasSeenEmailPopup');
+      if (!hasSeen) {
+        const timer = setTimeout(() => setIsVisible(true), 15000); // Iets later (15s)
+        return () => clearTimeout(timer);
+      }
     }
-  }, []);
+  }, [forceShow]);
 
   const handleClose = () => {
     setIsVisible(false);
-    localStorage.setItem('hasSeenEmailPopup', 'true');
+    if (onClose) onClose(); // Reset parent state if needed
+    if (!forceShow) localStorage.setItem('hasSeenEmailPopup', 'true');
   };
 
   return (
     <AnimatePresence>
       {isVisible && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#1A365D]/40 backdrop-blur-md">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/30 backdrop-blur-sm">
           <motion.div 
             initial={{ opacity: 0, y: 30, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="relative w-full max-w-md bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-white/20"
+            className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100"
           >
-            <div className="bg-[#1A365D] p-8 text-center relative">
-              {!submitted && (
-                <button onClick={handleClose} className="absolute top-6 right-6 text-white/40 hover:text-white transition-colors">
-                  <X size={20} />
-                </button>
-              )}
-              <div className="w-14 h-14 bg-[#C5A059] rounded-2xl flex items-center justify-center mx-auto mb-4 rotate-3 shadow-lg">
-                <Mail className="text-white" size={28} />
+            <div className="bg-[#6EE7B7] p-8 text-center relative">
+              <button onClick={handleClose} className="absolute top-4 right-4 text-white hover:bg-white/20 p-2 rounded-full transition-colors">
+                <X size={20} />
+              </button>
+              <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 rotate-3 shadow-sm">
+                <Mail className="text-[#6EE7B7]" size={28} />
               </div>
-              <h2 className="text-2xl font-serif font-bold text-white italic">Premium Leren</h2>
+              <h2 className="text-xl font-bold text-white tracking-tight">
+                {customText ? "Toegang Vereist" : "Premium Leren"}
+              </h2>
             </div>
             <div className="p-8 text-center">
               {!submitted ? (
@@ -67,12 +72,14 @@ const EmailPopup = () => {
                   method="POST" target="hidden_iframe" onSubmit={() => setSubmitted(true)}
                   className="space-y-4"
                 >
-                  <p className="text-slate-500 text-sm mb-4">Wil je meer interactieve tools in de toekomst? Laat je mail achter.</p>
-                  <input type="email" name="entry.1504473130" required placeholder="E-mailadres" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#C5A059]/20 focus:border-[#C5A059] outline-none transition-all" />
-                  <button type="submit" className="w-full bg-[#1A365D] text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[10px] flex items-center justify-center gap-2 hover:bg-[#152c4d] transition-all">Verzenden <Send size={14}/></button>
+                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
+                    {customText || "Wil je meer interactieve tools in de toekomst? Laat je mail achter."}
+                  </p>
+                  <input type="email" name="entry.1504473130" required placeholder="E-mailadres" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-[#6EE7B7] focus:border-[#6EE7B7] outline-none transition-all text-sm" />
+                  <button type="submit" className="w-full bg-[#1F2937] text-white py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:bg-black transition-all shadow-md hover:shadow-lg">Verzenden <Send size={14}/></button>
                 </form>
               ) : (
-                <div className="py-6 text-emerald-600 font-bold tracking-tight">Bedankt! We nemen je mee op de lijst.</div>
+                <div className="py-6 text-emerald-600 font-bold tracking-tight">Bedankt! We houden je op de hoogte.</div>
               )}
             </div>
             <iframe name="hidden_iframe" style={{ display: 'none' }}></iframe>
@@ -84,15 +91,15 @@ const EmailPopup = () => {
 };
 
 // ==========================================
-// 2. ULTRA SLEEK SIDEBAR
+// 2. SIDEBAR (Gereorganiseerd)
 // ==========================================
-const Sidebar = () => {
+const Sidebar = ({ onLockClick }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [openMenus, setOpenMenus] = useState({ strafrecht: false, ipr: false });
+  const [openMenus, setOpenMenus] = useState({ strafrecht: true, ipr: false }); // Strafrecht standaard open
 
   const sidebarVariants = {
-    open: { width: "16rem" },
-    closed: { width: "4.5rem" }
+    open: { width: "17rem" },
+    closed: { width: "5rem" }
   };
 
   return (
@@ -104,17 +111,20 @@ const Sidebar = () => {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => {
         setIsOpen(false);
-        setOpenMenus({ strafrecht: false, ipr: false });
+        // We laten de menu's open staan voor betere UX, of resetten ze hier indien gewenst
       }}
-      className="h-screen bg-[#1A365D] text-white flex flex-col flex-shrink-0 z-50 overflow-hidden relative border-r border-white/5 shadow-2xl"
+      className="h-screen bg-white border-r border-slate-200 flex flex-col flex-shrink-0 z-50 overflow-hidden relative shadow-[4px_0_24px_rgba(0,0,0,0.02)]"
     >
-      <div className="h-20 flex items-center px-6 bg-[#152c4d]/50">
-        <Scale size={22} className="text-[#C5A059] flex-shrink-0" />
+      {/* Header Sidebar */}
+      <div className="h-20 flex items-center px-6 border-b border-slate-100">
+        <div className="w-10 h-10 bg-[#6EE7B7]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Scale size={20} className="text-[#6EE7B7]" />
+        </div>
         <AnimatePresence>
           {isOpen && (
             <motion.span 
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="ml-4 font-serif font-bold text-lg italic tracking-tight"
+              initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }}
+              className="ml-3 font-bold text-lg tracking-tight text-slate-800"
             >
               Lawbooks
             </motion.span>
@@ -122,115 +132,101 @@ const Sidebar = () => {
         </AnimatePresence>
       </div>
 
-      <div className="flex-grow py-6 space-y-1 overflow-y-auto no-scrollbar">
+      <div className="flex-grow py-6 space-y-1 overflow-y-auto no-scrollbar px-3">
         {/* Dashboard */}
-        <NavLink to="/" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
-          <Home size={18} className="flex-shrink-0" />
-          {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Dashboard</span>}
-          <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
+        <NavLink to="/" className={({ isActive }) => `flex items-center px-4 py-3 rounded-lg relative group transition-all ${isActive ? 'bg-[#6EE7B7]/10 text-[#059669]' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'}`}>
+          <Home size={20} className="flex-shrink-0" strokeWidth={2} />
+          {isOpen && <span className="ml-3 text-sm font-semibold">Dashboard</span>}
         </NavLink>
 
-        {/* Categorie: Strafrecht */}
-        <div className="py-1 relative group">
+        {/* Categorie: Strafrecht (Alles hieronder) */}
+        <div className="relative group">
           <button 
             onClick={() => setOpenMenus(p => ({ ...p, strafrecht: !p.strafrecht }))}
-            className={`w-full flex items-center px-6 py-3 text-left transition-colors relative ${openMenus.strafrecht ? 'text-white' : 'text-slate-400 hover:text-white'}`}
+            className={`w-full flex items-center px-4 py-3 rounded-lg text-left transition-all ${openMenus.strafrecht ? 'bg-slate-50 text-slate-900' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'}`}
           >
-            <Scale size={18} className="flex-shrink-0" />
+            <Gavel size={20} className="flex-shrink-0" strokeWidth={2} />
             {isOpen && (
-              <div className="flex items-center justify-between flex-1 ml-4">
-                <span className="text-[10px] uppercase tracking-[0.2em] font-medium">Strafrecht</span>
-                {openMenus.strafrecht ? <ChevronDown size={12} opacity={0.5} /> : <ChevronRight size={12} opacity={0.5} />}
+              <div className="flex items-center justify-between flex-1 ml-3">
+                <span className="text-sm font-semibold">Strafrecht</span>
+                {openMenus.strafrecht ? <ChevronDown size={14} className="text-slate-400" /> : <ChevronRight size={14} className="text-slate-400" />}
               </div>
             )}
-            <div className={`absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full transition-opacity ${openMenus.strafrecht ? 'opacity-100' : 'opacity-0'}`} />
           </button>
           
           <AnimatePresence>
             {isOpen && openMenus.strafrecht && (
-              <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-12 space-y-1 overflow-hidden bg-[#152c4d]/30">
-                {[
-                  { path: "/SRI", label: "Module I" },
-                  { path: "/SRII", label: "Module II" },
-                  { path: "/SRIII", label: "Module III" },
-                  { path: "/IPR", label: "Miljoenenjacht", icon: "💰" },
-                ].map(sub => (
-                  <NavLink key={sub.path} to={sub.path} className={({ isActive }) => `block py-2 text-[9px] uppercase tracking-widest transition-colors ${isActive ? 'text-[#C5A059]' : 'text-slate-500 hover:text-slate-300'}`}>
-                    {sub.icon && <span className="mr-2">{sub.icon}</span>}
-                    {sub.label}
-                  </NavLink>
-                ))}
+              <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-11 pr-2 space-y-1 overflow-hidden">
+                <NavLink to="/SRI" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module I: Basis</NavLink>
+                <NavLink to="/SRII" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module II: Expert</NavLink>
+                <NavLink to="/SRIII" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module III: Casus</NavLink>
+                
+                {/* Jurisprudentie & Pad nu hier */}
+                <NavLink to="/JUR" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Jurisprudentie</NavLink>
+                <NavLink to="/SRX" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Strafrecht Pad</NavLink>
+                <NavLink to="/SRIV" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Extra Stof</NavLink>
+
+                {/* LOCKED: Oefententamen */}
+                <button 
+                  onClick={onLockClick}
+                  className="w-full text-left py-2 px-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-600 flex items-center justify-between group"
+                >
+                  <span>Oefententamen</span>
+                  <Lock size={12} className="text-slate-300 group-hover:text-[#6EE7B7]" />
+                </button>
               </motion.div>
             )}
           </AnimatePresence>
         </div>
 
         {/* Categorie: IPR */}
-        <div className="py-1 relative group">
+        <div className="relative group">
           <button 
             onClick={() => setOpenMenus(p => ({ ...p, ipr: !p.ipr }))}
-            className={`w-full flex items-center px-6 py-3 text-left transition-colors relative ${openMenus.ipr ? 'text-white' : 'text-slate-400 hover:text-white'}`}
+            className={`w-full flex items-center px-4 py-3 rounded-lg text-left transition-all ${openMenus.ipr ? 'bg-slate-50 text-slate-900' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'}`}
           >
-            <BookOpen size={18} className="flex-shrink-0" />
+            <BookOpen size={20} className="flex-shrink-0" strokeWidth={2} />
             {isOpen && (
-              <div className="flex items-center justify-between flex-1 ml-4">
-                <span className="text-[10px] uppercase tracking-[0.2em] font-medium">IPR</span>
-                {openMenus.ipr ? <ChevronDown size={12} opacity={0.5} /> : <ChevronRight size={12} opacity={0.5} />}
+              <div className="flex items-center justify-between flex-1 ml-3">
+                <span className="text-sm font-semibold">IPR</span>
+                {openMenus.ipr ? <ChevronDown size={14} className="text-slate-400" /> : <ChevronRight size={14} className="text-slate-400" />}
               </div>
             )}
-            <div className={`absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full transition-opacity ${openMenus.ipr ? 'opacity-100' : 'opacity-0'}`} />
           </button>
           
           <AnimatePresence>
             {isOpen && openMenus.ipr && (
-              <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-12 space-y-1 overflow-hidden bg-[#152c4d]/30">
-                {[
-                  { path: "/IPRII", label: "Tentamen Training" },
-                  { path: "/IPRIII", label: "Oefenvragen A-D" },
-                  { path: "/IPRIV", label: "Courtroom Rush" },
-                ].map(sub => (
-                  <NavLink key={sub.path} to={sub.path} className={({ isActive }) => `block py-2 text-[9px] uppercase tracking-widest transition-colors ${isActive ? 'text-[#C5A059]' : 'text-slate-500 hover:text-slate-300'}`}>
-                    {sub.label}
-                  </NavLink>
-                ))}
+              <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-11 pr-2 space-y-1 overflow-hidden">
+                <NavLink to="/IPR" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>
+                  <span className="mr-2">💰</span> Miljoenenjacht
+                </NavLink>
+                <NavLink to="/IPRIII" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Oefenvragen A-D</NavLink>
+                <NavLink to="/IPRIV" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Courtroom Rush</NavLink>
+                
+                {/* LOCKED: Oefententamen */}
+                <button 
+                  onClick={onLockClick}
+                  className="w-full text-left py-2 px-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-600 flex items-center justify-between group"
+                >
+                  <span>Tentamen Training</span>
+                  <Lock size={12} className="text-slate-300 group-hover:text-[#6EE7B7]" />
+                </button>
               </motion.div>
             )}
           </AnimatePresence>
         </div>
 
-        {/* Standalone: Strafrecht Pad */}
-        <NavLink to="/SRX" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
-          <Zap size={18} className="flex-shrink-0" />
-          {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Strafrecht Pad</span>}
-          <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
-        </NavLink>
-
-        {/* Standalone: Jurisprudentie Toets */}
-        <NavLink to="/JUR" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
-          <Gavel size={18} className="flex-shrink-0" />
-          {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Jurisprudentie Toets</span>}
-          <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
-        </NavLink>
-
-        {/* Standalone: Extra Stof (LOS GEPLAATST) */}
-        <NavLink to="/SRIV" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
-          <Layers size={18} className="flex-shrink-0" />
-          {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Extra Stof</span>}
-          <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
-        </NavLink>
-
-        {/* Support */}
-        <NavLink to="/support" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
-          <MessageSquare size={18} className="flex-shrink-0" />
-          {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Support</span>}
-          <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
+        {/* Los: Support */}
+        <NavLink to="/support" className={({ isActive }) => `flex items-center px-4 py-3 rounded-lg relative group transition-all ${isActive ? 'bg-[#6EE7B7]/10 text-[#059669]' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'}`}>
+          <MessageSquare size={20} className="flex-shrink-0" strokeWidth={2} />
+          {isOpen && <span className="ml-3 text-sm font-semibold">Support</span>}
         </NavLink>
       </div>
 
-      <div className="p-4 border-t border-white/5">
-        <a href="https://lawbooks.nl/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 rounded-xl hover:bg-[#C5A059]/10 text-[#C5A059] transition-all">
-          <BookOpen size={16} />
-          {isOpen && <span className="ml-3 font-bold text-[9px] uppercase tracking-[0.2em]">Lawbooks.nl</span>}
+      <div className="p-4 border-t border-slate-100">
+        <a href="https://lawbooks.nl/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 rounded-lg hover:bg-slate-50 text-slate-400 hover:text-slate-900 transition-all">
+          <Layers size={18} />
+          {isOpen && <span className="ml-3 text-xs font-bold uppercase tracking-widest">Lawbooks.nl</span>}
         </a>
       </div>
     </motion.nav>
@@ -249,18 +245,31 @@ const MainLayout = () => {
   const isEmbedded = useIsEmbedded();
   const location = useLocation();
   
-  // Sidebar verbergen als de URL '/SRIV' (Extra Stof) is of als het een embed is
+  // State voor de locked popup
+  const [showLockedPopup, setShowLockedPopup] = useState(false);
+
   const hideSidebar = isEmbedded || location.pathname === '/SRIV';
 
   return (
-    <div className="flex h-screen w-screen bg-[#F8F9FA] overflow-hidden">
-      {!hideSidebar && <Sidebar />}
+    <div className="flex h-screen w-screen bg-[#F9FAFB] overflow-hidden text-slate-900">
+      {!hideSidebar && <Sidebar onLockClick={() => setShowLockedPopup(true)} />}
+      
       <main className="flex-1 h-full overflow-y-auto relative">
         <div className={`min-h-full w-full ${hideSidebar ? 'p-0' : 'p-6 lg:p-10'}`}>
           <Outlet />
         </div>
       </main>
-      {!hideSidebar && <EmailPopup />}
+
+      {/* Normale Timer Popup */}
+      {!hideSidebar && <EmailPopup />} 
+      
+      {/* Locked Feature Popup (Geforceerd) */}
+      <EmailPopup 
+        forceShow={showLockedPopup} 
+        onClose={() => setShowLockedPopup(false)} 
+        customText="Wil je meer oefententamens? Vul je mail hier in!" 
+      />
+
       {!hideSidebar && <><StudyMusic /><DonateButton /></>}
     </div>
   );
