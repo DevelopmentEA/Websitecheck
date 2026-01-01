@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-// Gavel toegevoegd aan imports
-import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare, Zap, Gavel } from 'lucide-react';
+import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare, Zap, Gavel, Layers } from 'lucide-react';
 
 // Pagina imports
 import Dashboard from './pages/Dashboard';
@@ -15,13 +14,13 @@ import TopicSix from './pages/TopicSix';
 import TopicEight from './pages/TopicEight';
 import TopicSeven from './pages/TopicSeven';
 import TopicNine from './pages/TopicNine'; 
-import TopicTen from './pages/TopicTen'; // Nieuwe import: Jurisprudentie Toets
+import TopicTen from './pages/TopicTen';
 import Support from './pages/Support';
 import DonateButton from './pages/Button';
 import StudyMusic from './pages/StudyMusic';
 
 // ==========================================
-// 1. EMAIL POPUP (Sleek Versie)
+// 1. EMAIL POPUP
 // ==========================================
 const EmailPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -109,7 +108,6 @@ const Sidebar = () => {
       }}
       className="h-screen bg-[#1A365D] text-white flex flex-col flex-shrink-0 z-50 overflow-hidden relative border-r border-white/5 shadow-2xl"
     >
-      {/* Header */}
       <div className="h-20 flex items-center px-6 bg-[#152c4d]/50">
         <Scale size={22} className="text-[#C5A059] flex-shrink-0" />
         <AnimatePresence>
@@ -124,9 +122,7 @@ const Sidebar = () => {
         </AnimatePresence>
       </div>
 
-      {/* Menu Area */}
       <div className="flex-grow py-6 space-y-1 overflow-y-auto no-scrollbar">
-        
         {/* Dashboard */}
         <NavLink to="/" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
           <Home size={18} className="flex-shrink-0" />
@@ -158,7 +154,6 @@ const Sidebar = () => {
                   { path: "/SRII", label: "Module II" },
                   { path: "/SRIII", label: "Module III" },
                   { path: "/IPR", label: "Miljoenenjacht", icon: "💰" },
-                  { path: "/SRIV", label: "Extra stof" },
                 ].map(sub => (
                   <NavLink key={sub.path} to={sub.path} className={({ isActive }) => `block py-2 text-[9px] uppercase tracking-widest transition-colors ${isActive ? 'text-[#C5A059]' : 'text-slate-500 hover:text-slate-300'}`}>
                     {sub.icon && <span className="mr-2">{sub.icon}</span>}
@@ -210,10 +205,17 @@ const Sidebar = () => {
           <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
         </NavLink>
 
-        {/* --- NIEUW: JURISPRUDENTIE TOETS (Standalone boven Support) --- */}
+        {/* Standalone: Jurisprudentie Toets */}
         <NavLink to="/JUR" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
           <Gavel size={18} className="flex-shrink-0" />
           {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Jurisprudentie Toets</span>}
+          <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
+        </NavLink>
+
+        {/* Standalone: Extra Stof (LOS GEPLAATST) */}
+        <NavLink to="/SRIV" className={({ isActive }) => `flex items-center px-6 py-3 relative group transition-colors ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}`}>
+          <Layers size={18} className="flex-shrink-0" />
+          {isOpen && <span className="ml-4 text-[10px] uppercase tracking-[0.2em] font-medium">Extra Stof</span>}
           <div className="absolute left-0 w-1 h-4 bg-[#C5A059] rounded-r-full opacity-0 group-[.active]:opacity-100 transition-opacity" />
         </NavLink>
 
@@ -225,7 +227,6 @@ const Sidebar = () => {
         </NavLink>
       </div>
 
-      {/* Footer */}
       <div className="p-4 border-t border-white/5">
         <a href="https://lawbooks.nl/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 rounded-xl hover:bg-[#C5A059]/10 text-[#C5A059] transition-all">
           <BookOpen size={16} />
@@ -246,16 +247,21 @@ const useIsEmbedded = () => {
 
 const MainLayout = () => {
   const isEmbedded = useIsEmbedded();
+  const location = useLocation();
+  
+  // Sidebar verbergen als de URL '/SRIV' (Extra Stof) is of als het een embed is
+  const hideSidebar = isEmbedded || location.pathname === '/SRIV';
+
   return (
     <div className="flex h-screen w-screen bg-[#F8F9FA] overflow-hidden">
-      {!isEmbedded && <Sidebar />}
+      {!hideSidebar && <Sidebar />}
       <main className="flex-1 h-full overflow-y-auto relative">
-        <div className={`min-h-full w-full ${isEmbedded ? 'p-0' : 'p-6 lg:p-10'}`}>
+        <div className={`min-h-full w-full ${hideSidebar ? 'p-0' : 'p-6 lg:p-10'}`}>
           <Outlet />
         </div>
       </main>
-      {!isEmbedded && <EmailPopup />}
-      {!isEmbedded && <><StudyMusic /><DonateButton /></>}
+      {!hideSidebar && <EmailPopup />}
+      {!hideSidebar && <><StudyMusic /><DonateButton /></>}
     </div>
   );
 };
@@ -269,7 +275,7 @@ const App = () => (
         <Route path="/SRII" element={<TopicTwo />} />
         <Route path="/SRIII" element={<TopicTree />} />
         <Route path="/SRX" element={<TopicNine />} />
-        <Route path="/JUR" element={<TopicTen />} /> {/* Route voor Jurisprudentie Toets */}
+        <Route path="/JUR" element={<TopicTen />} />
         <Route path="/IPR" element={<TopicFour />} />
         <Route path="/IPRII" element={<TopicFive />} />
         <Route path="/IPRIII" element={<TopicSix />} />
