@@ -193,7 +193,7 @@ const Dashboard = () => {
         className="mt-20 text-center"
       >
         <a href="https://lawbooks.nl" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-800 text-sm font-semibold transition-colors">
-          © 2024 Lawbooks Education
+          © 2026 Lawbooks Education
         </a>
       </motion.div>
     </div>
