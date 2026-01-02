@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import html2canvas from 'html2canvas'; 
 import { Share2, Award, Trophy, Timer } from 'lucide-react'; 
-import allQuestions from '../data/vragen_ipr.json'; // Pas pad aan indien nodig
+import allQuestions from './vragen2.json'; 
 
 // Ladder configuratie
 const MONEY_LADDER = [
