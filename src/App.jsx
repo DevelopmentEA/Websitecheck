@@ -167,10 +167,10 @@ const Dashboard = () => {
           to="/SRI"
         />
         <DashboardCard 
-          title="IPR: Miljoenenjacht"
+          title="SR: Miljoenenjacht"
           desc="Een interactieve game-show stijl quiz over Internationaal Privaatrecht. Speel voor de winst!"
           icon={BookOpen}
-          to="/IPR"
+          to="/SR"
         />
         <DashboardCard 
           title="Courtroom Rush"
@@ -268,7 +268,7 @@ const App = () => (
         
         {/* De 4 Geselecteerde Pagina's */}
         <Route path="/SRI" element={<TopicOne />} />
-        <Route path="/IPR" element={<TopicFour />} />
+        <Route path="/SR" element={<TopicFour />} />
         <Route path="/courtroom-rush" element={<TopicEight />} />
         <Route path="/jurisprudentie" element={<TopicTen />} />
         
