@@ -1,26 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, NavLink, Outlet, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation, Outlet } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Scale, BookOpen, X, Mail, Send, ChevronDown, ChevronRight, Home, MessageSquare, Gavel, Layers, Lock } from 'lucide-react';
+import { 
+  Scale, BookOpen, X, Mail, Send, Gavel, 
+  ArrowLeft, Play, Award, BrainCircuit, Heart 
+} from 'lucide-react';
 
-// Pagina imports
-import Dashboard from './pages/Dashboard';
-import TopicOne from './pages/TopicOne';
-import TopicTwo from './pages/TopicTwo';
-import TopicTree from './pages/TopicTree';
-import TopicFour from './pages/TopicFour';
-import TopicFive from './pages/TopicFive';
-import TopicSix from './pages/TopicSix';
-import TopicEight from './pages/TopicEight';
-import TopicSeven from './pages/TopicSeven';
-import TopicNine from './pages/TopicNine'; 
-import TopicTen from './pages/TopicTen';
+// Pagina imports (Zorg dat deze bestanden bestaan)
+import TopicOne from './pages/TopicOne';       // 1. Strafrecht Basis
+import TopicFour from './pages/TopicFour';     // 2. IPR Miljoenenjacht
+import TopicEight from './pages/TopicEight';   // 3. Courtroom Rush
+import TopicTen from './pages/TopicTen';       // 4. Jurisprudentie
 import Support from './pages/Support';
 import DonateButton from './pages/Button';
 import StudyMusic from './pages/StudyMusic';
 
 // ==========================================
-// 1. EMAIL POPUP (FIXED SUBMIT LOGIC)
+// 1. EMAIL POPUP (Ongewijzigd, alleen styling update)
 // ==========================================
 const EmailPopup = ({ forceShow, onClose, customText }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,29 +40,28 @@ const EmailPopup = ({ forceShow, onClose, customText }) => {
     if (!forceShow) localStorage.setItem('hasSeenEmailPopup', 'true');
   };
 
-  // DE FIX: Vertraag de state update zodat de POST request kan vertrekken
   const handleSubmit = () => {
     setTimeout(() => {
       setSubmitted(true);
-    }, 150); // 150ms vertraging is genoeg voor de browser
+    }, 150);
   };
 
   return (
     <AnimatePresence>
       {isVisible && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/30 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
           <motion.div 
             initial={{ opacity: 0, y: 30, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100"
           >
-            <div className="bg-[#6EE7B7] p-8 text-center relative">
-              <button onClick={handleClose} className="absolute top-4 right-4 text-white hover:bg-white/20 p-2 rounded-full transition-colors">
+            <div className="bg-[#1F2937] p-8 text-center relative">
+              <button onClick={handleClose} className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
                 <X size={20} />
               </button>
-              <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 rotate-3 shadow-sm">
-                <Mail className="text-[#6EE7B7]" size={28} />
+              <div className="w-14 h-14 bg-[#6EE7B7] rounded-xl flex items-center justify-center mx-auto mb-4 rotate-3 shadow-lg text-black">
+                <Mail size={28} />
               </div>
               <h2 className="text-xl font-bold text-white tracking-tight">
                 {customText ? "Toegang Vereist" : "Premium Leren"}
@@ -79,22 +74,20 @@ const EmailPopup = ({ forceShow, onClose, customText }) => {
                   action="https://docs.google.com/forms/d/e/1FAIpQLSe-xEXNDDwXJeiwMe5v4bUOOfJ0MuZZjKoBefyVRQd0n1MrKQ/formResponse"
                   method="POST" 
                   target="hidden_iframe" 
-                  onSubmit={handleSubmit} // Gebruik de handler met timeout
+                  onSubmit={handleSubmit}
                   className="space-y-4"
                 >
                   <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
-                    {customText || "Wil je meer interactieve tools in de toekomst? Laat je mail achter."}
+                    {customText || "Wil je toegang tot exclusieve samenvattingen en tools? Laat je mail achter."}
                   </p>
-                  <input type="email" name="entry.1504473130" required placeholder="E-mailadres" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-[#6EE7B7] focus:border-[#6EE7B7] outline-none transition-all text-sm" />
-                  <button type="submit" className="w-full bg-[#1F2937] text-white py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:bg-black transition-all shadow-md hover:shadow-lg">Verzenden <Send size={14}/></button>
+                  <input type="email" name="entry.1504473130" required placeholder="Jouw e-mailadres" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-[#6EE7B7] focus:border-[#6EE7B7] outline-none transition-all text-sm" />
+                  <button type="submit" className="w-full bg-[#6EE7B7] text-slate-900 py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#5CD6A8] transition-all shadow-md">Verzenden <Send size={14}/></button>
                 </form>
               ) : (
-                <div className="py-6 text-emerald-600 font-bold tracking-tight">Bedankt! We houden je op de hoogte.</div>
+                <div className="py-6 text-[#059669] font-bold tracking-tight">Bedankt! We houden je op de hoogte.</div>
               )}
             </div>
-            
-            {/* Het Iframe moet ALTIJD bestaan, ook na submit, om de response op te vangen zonder redirect */}
-            <iframe name="hidden_iframe" style={{ display: 'none' }}></iframe>
+            <iframe name="hidden_iframe" style={{ display: 'none' }} title="hidden_frame"></iframe>
           </motion.div>
         </div>
       )}
@@ -103,203 +96,184 @@ const EmailPopup = ({ forceShow, onClose, customText }) => {
 };
 
 // ==========================================
-// 2. SIDEBAR (Gereorganiseerd)
+// 2. NIEUW DASHBOARD COMPONENT
 // ==========================================
-const Sidebar = ({ onLockClick }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [openMenus, setOpenMenus] = useState({ strafrecht: true, ipr: false }); 
-
-  const sidebarVariants = {
-    open: { width: "17rem" },
-    closed: { width: "5rem" }
-  };
+const DashboardCard = ({ title, desc, icon: Icon, to, color = "bg-white" }) => {
+  const navigate = useNavigate();
 
   return (
-    <motion.nav
-      initial="closed"
-      animate={isOpen ? "open" : "closed"}
-      variants={sidebarVariants}
-      transition={{ type: "spring", stiffness: 300, damping: 35 }}
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => {
-        setIsOpen(false);
-      }}
-      className="h-screen bg-white border-r border-slate-200 flex flex-col flex-shrink-0 z-50 overflow-hidden relative shadow-[4px_0_24px_rgba(0,0,0,0.02)]"
+    <motion.div
+      whileHover={{ y: -8, scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      onClick={() => navigate(to)}
+      className={`relative cursor-pointer group overflow-hidden rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-300 ${color}`}
     >
-      {/* Header Sidebar */}
-      <div className="h-20 flex items-center px-6 border-b border-slate-100">
-        <div className="w-10 h-10 bg-[#6EE7B7]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-            <Scale size={20} className="text-[#6EE7B7]" />
+      <div className="p-8 h-full flex flex-col justify-between relative z-10">
+        <div>
+          <div className="w-12 h-12 bg-[#6EE7B7]/20 rounded-xl flex items-center justify-center mb-6 text-[#059669] group-hover:bg-[#6EE7B7] group-hover:text-slate-900 transition-colors duration-300">
+            <Icon size={24} strokeWidth={2.5} />
+          </div>
+          <h3 className="text-xl font-bold text-slate-900 mb-2">{title}</h3>
+          <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
         </div>
-        <AnimatePresence>
-          {isOpen && (
-            <motion.span 
-              initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }}
-              className="ml-3 font-bold text-lg tracking-tight text-slate-800"
-            >
-              Lawbooks
-            </motion.span>
-          )}
-        </AnimatePresence>
-      </div>
-
-      <div className="flex-grow py-6 space-y-1 overflow-y-auto no-scrollbar px-3">
-        {/* Dashboard */}
-        <NavLink to="/" className={({ isActive }) => `flex items-center px-4 py-3 rounded-lg relative group transition-all ${isActive ? 'bg-[#6EE7B7]/10 text-[#059669]' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'}`}>
-          <Home size={20} className="flex-shrink-0" strokeWidth={2} />
-          {isOpen && <span className="ml-3 text-sm font-semibold">Dashboard</span>}
-        </NavLink>
-
-        {/* Categorie: Strafrecht */}
-        <div className="relative group">
-          <button 
-            onClick={() => setOpenMenus(p => ({ ...p, strafrecht: !p.strafrecht }))}
-            className={`w-full flex items-center px-4 py-3 rounded-lg text-left transition-all ${openMenus.strafrecht ? 'bg-slate-50 text-slate-900' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'}`}
-          >
-            <Gavel size={20} className="flex-shrink-0" strokeWidth={2} />
-            {isOpen && (
-              <div className="flex items-center justify-between flex-1 ml-3">
-                <span className="text-sm font-semibold">Strafrecht</span>
-                {openMenus.strafrecht ? <ChevronDown size={14} className="text-slate-400" /> : <ChevronRight size={14} className="text-slate-400" />}
-              </div>
-            )}
-          </button>
-          
-          <AnimatePresence>
-            {isOpen && openMenus.strafrecht && (
-              <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-11 pr-2 space-y-1 overflow-hidden">
-                <NavLink to="/SRI" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module I: Basis</NavLink>
-                <NavLink to="/SRII" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module II: Expert</NavLink>
-                <NavLink to="/SRIII" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Module III: Casus</NavLink>
-                <NavLink to="/JUR" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Jurisprudentie</NavLink>
-                <NavLink to="/SRX" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Strafrecht Pad</NavLink>
-                <NavLink to="/SRIV" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Extra Stof</NavLink>
-
-                {/* LOCKED: Oefententamen */}
-                <button 
-                  onClick={onLockClick}
-                  className="w-full text-left py-2 px-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-600 flex items-center justify-between group"
-                >
-                  <span>Oefententamen</span>
-                  <Lock size={12} className="text-slate-300 group-hover:text-[#6EE7B7]" />
-                </button>
-              </motion.div>
-            )}
-          </AnimatePresence>
+        
+        <div className="mt-8 flex items-center text-sm font-bold text-[#059669] group-hover:translate-x-2 transition-transform duration-300">
+          Start Module <Play size={14} className="ml-2 fill-current" />
         </div>
-
-        {/* Categorie: IPR */}
-        <div className="relative group">
-          <button 
-            onClick={() => setOpenMenus(p => ({ ...p, ipr: !p.ipr }))}
-            className={`w-full flex items-center px-4 py-3 rounded-lg text-left transition-all ${openMenus.ipr ? 'bg-slate-50 text-slate-900' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'}`}
-          >
-            <BookOpen size={20} className="flex-shrink-0" strokeWidth={2} />
-            {isOpen && (
-              <div className="flex items-center justify-between flex-1 ml-3">
-                <span className="text-sm font-semibold">IPR</span>
-                {openMenus.ipr ? <ChevronDown size={14} className="text-slate-400" /> : <ChevronRight size={14} className="text-slate-400" />}
-              </div>
-            )}
-          </button>
-          
-          <AnimatePresence>
-            {isOpen && openMenus.ipr && (
-              <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="pl-11 pr-2 space-y-1 overflow-hidden">
-                <NavLink to="/IPR" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>
-                  <span className="mr-2">💰</span> Miljoenenjacht
-                </NavLink>
-                <NavLink to="/IPRIII" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Oefenvragen A-D</NavLink>
-                <NavLink to="/IPRIV" className={({ isActive }) => `block py-2 px-2 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900'}`}>Courtroom Rush</NavLink>
-                
-                {/* LOCKED: Oefententamen */}
-                <button 
-                  onClick={onLockClick}
-                  className="w-full text-left py-2 px-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-600 flex items-center justify-between group"
-                >
-                  <span>Tentamen Training</span>
-                  <Lock size={12} className="text-slate-300 group-hover:text-[#6EE7B7]" />
-                </button>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-
-        {/* Los: Support */}
-        <NavLink to="/support" className={({ isActive }) => `flex items-center px-4 py-3 rounded-lg relative group transition-all ${isActive ? 'bg-[#6EE7B7]/10 text-[#059669]' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'}`}>
-          <MessageSquare size={20} className="flex-shrink-0" strokeWidth={2} />
-          {isOpen && <span className="ml-3 text-sm font-semibold">Support</span>}
-        </NavLink>
       </div>
-
-      <div className="p-4 border-t border-slate-100">
-        <a href="https://lawbooks.nl/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 rounded-lg hover:bg-slate-50 text-slate-400 hover:text-slate-900 transition-all">
-          <Layers size={18} />
-          {isOpen && <span className="ml-3 text-xs font-bold uppercase tracking-widest">Lawbooks.nl</span>}
-        </a>
-      </div>
-    </motion.nav>
+      
+      {/* Decoratieve achtergrond cirkel */}
+      <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-[#6EE7B7]/20 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
+    </motion.div>
   );
 };
 
-// ==========================================
-// 3. LAYOUT & APP
-// ==========================================
-const useIsEmbedded = () => {
-  const { search } = useLocation();
-  return new URLSearchParams(search).get('embed') === 'true';
-};
-
-const MainLayout = () => {
-  const isEmbedded = useIsEmbedded();
-  const location = useLocation();
-  
-  // State voor de locked popup
-  const [showLockedPopup, setShowLockedPopup] = useState(false);
-
-  const hideSidebar = isEmbedded || location.pathname === '/SRIV' || location.pathname === '/IPRIV';
-
+const Dashboard = () => {
   return (
-    <div className="flex h-screen w-screen bg-[#F9FAFB] overflow-hidden text-slate-900">
-      {!hideSidebar && <Sidebar onLockClick={() => setShowLockedPopup(true)} />}
-      
-      <main className="flex-1 h-full overflow-y-auto relative">
-        <div className={`min-h-full w-full ${hideSidebar ? 'p-0' : 'p-6 lg:p-10'}`}>
-          <Outlet />
-        </div>
-      </main>
+    <div className="max-w-6xl mx-auto py-12 px-6">
+      {/* Header */}
+      <div className="text-center mb-16 space-y-4">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="inline-flex items-center gap-2 px-4 py-2 bg-[#6EE7B7]/10 text-[#059669] rounded-full text-xs font-bold uppercase tracking-wider"
+        >
+          <Scale size={14} /> Lawbooks Premium
+        </motion.div>
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight"
+        >
+          Kies je <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#059669] to-[#6EE7B7]">Oefenmodule</span>
+        </motion.h1>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="text-slate-500 max-w-lg mx-auto"
+        >
+          Selecteer hieronder een onderdeel om direct te starten met oefenen. Geen account nodig, direct toegang.
+        </motion.p>
+      </div>
 
-      {/* Normale Timer Popup */}
-      {!hideSidebar && <EmailPopup />} 
-      
-      {/* Locked Feature Popup (Geforceerd) */}
-      <EmailPopup 
-        forceShow={showLockedPopup} 
-        onClose={() => setShowLockedPopup(false)} 
-        customText="Wil je meer oefententamens? Vul je mail hier in!" 
-      />
+      {/* Grid met 4 Kaarten */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <DashboardCard 
+          title="Strafrecht: De Basis"
+          desc="Module I: Beheers de fundamenten van het strafrecht. Ideaal voor beginnende studenten."
+          icon={Gavel}
+          to="/SRI"
+        />
+        <DashboardCard 
+          title="IPR: Miljoenenjacht"
+          desc="Een interactieve game-show stijl quiz over Internationaal Privaatrecht. Speel voor de winst!"
+          icon={BookOpen}
+          to="/IPR"
+        />
+        <DashboardCard 
+          title="Courtroom Rush"
+          desc="Snelle beslissingen maken in de rechtszaal. Test je parate kennis onder tijdsdruk."
+          icon={BrainCircuit}
+          to="/courtroom-rush"
+        />
+        <DashboardCard 
+          title="Jurisprudentie Meester"
+          desc="Diepgaande analyse van de belangrijkste arresten. Weet jij welk arrest van toepassing is?"
+          icon={Award}
+          to="/jurisprudentie"
+        />
+      </div>
 
-      {!hideSidebar && <><StudyMusic /><DonateButton /></>}
+      {/* Footer link */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        className="mt-20 text-center"
+      >
+        <a href="https://lawbooks.nl" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-800 text-sm font-semibold transition-colors">
+          © 2024 Lawbooks Education
+        </a>
+      </motion.div>
     </div>
   );
 };
 
+// ==========================================
+// 3. LAYOUT (Zonder Sidebar, Met Terug-knop)
+// ==========================================
+const MainLayout = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isDashboard = location.pathname === '/';
+
+  return (
+    <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative">
+      
+      {/* Navigatie Bar (Alleen zichtbaar als NIET op dashboard) */}
+      {!isDashboard && (
+        <motion.div 
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex items-center justify-between"
+        >
+          <button 
+            onClick={() => navigate('/')}
+            className="flex items-center gap-2 text-slate-600 hover:text-[#059669] hover:bg-[#6EE7B7]/10 px-4 py-2 rounded-lg transition-all font-bold text-sm"
+          >
+            <ArrowLeft size={18} />
+            Terug naar Dashboard
+          </button>
+
+          <div className="font-bold text-lg tracking-tight flex items-center gap-2">
+             <Scale size={20} className="text-[#6EE7B7]" /> Lawbooks
+          </div>
+        </motion.div>
+      )}
+
+      {/* Main Content Area */}
+      <main className={`w-full min-h-screen ${!isDashboard ? 'pt-24 px-6 md:px-12 pb-12' : ''}`}>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={location.pathname}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Outlet />
+          </motion.div>
+        </AnimatePresence>
+      </main>
+
+      {/* Global Elements */}
+      <EmailPopup /> 
+      <StudyMusic />
+      <DonateButton />
+    </div>
+  );
+};
+
+// ==========================================
+// 4. APP ROUTING
+// ==========================================
 const App = () => (
   <Router>
     <Routes>
       <Route element={<MainLayout />}>
+        {/* Het Dashboard is nu de Homepage */}
         <Route path="/" element={<Dashboard />} />
+        
+        {/* De 4 Geselecteerde Pagina's */}
         <Route path="/SRI" element={<TopicOne />} />
-        <Route path="/SRII" element={<TopicTwo />} />
-        <Route path="/SRIII" element={<TopicTree />} />
-        <Route path="/SRX" element={<TopicNine />} />
-        <Route path="/JUR" element={<TopicTen />} />
         <Route path="/IPR" element={<TopicFour />} />
-        <Route path="/IPRII" element={<TopicFive />} />
-        <Route path="/IPRIII" element={<TopicSix />} />
-        <Route path="/IPRIV" element={<TopicEight />} />
+        <Route path="/courtroom-rush" element={<TopicEight />} />
+        <Route path="/jurisprudentie" element={<TopicTen />} />
+        
+        {/* Extra pagina voor support */}
         <Route path="/support" element={<Support />} />
-        <Route path="/SRIV" element={<TopicSeven />} />
       </Route>
     </Routes>
   </Router>
