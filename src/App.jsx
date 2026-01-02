@@ -13,7 +13,6 @@ import TopicEight from './pages/TopicEight';   // 3. Courtroom Rush
 import TopicTen from './pages/TopicTen';       // 4. Jurisprudentie
 import Support from './pages/Support';
 import DonateButton from './pages/Button';
-import StudyMusic from './pages/StudyMusic';
 
 // ==========================================
 // 1. EMAIL POPUP (Ongewijzigd, alleen styling update)
@@ -250,7 +249,6 @@ const MainLayout = () => {
 
       {/* Global Elements */}
       <EmailPopup /> 
-      <StudyMusic />
       <DonateButton />
     </div>
   );
