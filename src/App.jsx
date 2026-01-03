@@ -276,7 +276,7 @@ const MainLayout = () => {
       <EmailPopup 
         forceShow={showLockedPopup} 
         onClose={() => setShowLockedPopup(false)} 
-        customText="Wil je meer oefententamens? Vul je mail hier in!" 
+        customText="Wil je in de toekomst meer oefententamens? Vul je mail hier in!" 
       />
 
       {!hideSidebar && <><StudyMusic /><DonateButton /></>}
