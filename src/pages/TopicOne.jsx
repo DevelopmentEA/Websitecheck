@@ -1,50 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { BarChart3, CheckCircle2, XCircle, AlertCircle, Settings2, X, ChevronRight, Play } from 'lucide-react';
 
 // ===========================================================================
 // DATA IMPORT
-// Zorg dat je bestand 'IPRvragen.json' in dezelfde map staat
 // ===========================================================================
 import questionDb from './IPRvragen.json'; 
 
 // ===========================================================================
 // CONFIGURATIE
 // ===========================================================================
-// Let op: deze namen moeten exact overeenkomen met de keys in je JSON
-const DIFFICULTIES = ["Oefenen", "Tentamen", "Extra Moeilijk"]; 
+const DIFFICULTIES = ["Oefenen", "Tentamen", "Extra Moeillijk"];
 const MAX_QUESTIONS = 50; 
 
 export default function IPRAdaptiveQuiz() {
   // --- STATE ---
-  const [gameState, setGameState] = useState('intro'); // 'intro', 'quiz', 'results'
-  
-  // We selecteren standaard ALLE beschikbare weken (tot max 6 uit de filter)
+  const [gameState, setGameState] = useState('intro'); 
   const visibleWeeks = Object.keys(questionDb).slice(0, 6); 
   const [selectedWeeks, setSelectedWeeks] = useState(visibleWeeks);
-  
   const [targetDifficulty, setTargetDifficulty] = useState('Tentamen'); 
-  const [showSettings, setShowSettings] = useState(false); // Voor de popup
+  const [showSettings, setShowSettings] = useState(false);
   
-  // Quiz Runtime
   const [history, setHistory] = useState([]); 
   const [currentQ, setCurrentQ] = useState(null); 
   const [score, setScore] = useState(0);
   
-  // UI Interactie
   const [selectedOption, setSelectedOption] = useState(null);
   const [isFeedbackVisible, setIsFeedbackVisible] = useState(false);
+
+  // Ref om te tracken of dit de eerste render is
+  const isFirstRun = useRef(true);
 
   // --- LOGICA ---
 
   const getNextQuestion = (currentHistory) => {
     let pool = [];
-    
-    // Check of er weken geselecteerd zijn
     if (selectedWeeks.length === 0) return null;
 
-    // 1. Zoek in geselecteerde weken & moeilijkheid
     selectedWeeks.forEach(week => {
       if (questionDb[week]) {
         let questions = questionDb[week][targetDifficulty] || [];
@@ -56,7 +49,6 @@ export default function IPRAdaptiveQuiz() {
       }
     });
 
-    // 2. Fallback: Pak alles uit de geselecteerde weken als niveau op is
     if (pool.length === 0) {
       selectedWeeks.forEach(week => {
         DIFFICULTIES.forEach(diff => {
@@ -82,13 +74,24 @@ export default function IPRAdaptiveQuiz() {
     setGameState('quiz');
   };
 
-  // Laad nieuwe vraag als de game start of als huidige vraag leeg is
+  // --- CRUCIALE AANPASSING: LIVE UPDATE ---
+  // Deze useEffect vuurt ALTIJD als targetDifficulty of selectedWeeks verandert.
+  // Maar alleen als we in de quiz zitten EN de gebruiker nog geen antwoord heeft gegeven.
   useEffect(() => {
-    if (gameState === 'quiz' && currentQ === null) {
+    if (gameState === 'quiz' && !isFeedbackVisible) {
+        // Als dit de eerste render is of we starten net, doe niks (loadNewQuestion wordt al aangeroepen)
+        // Maar als we LIVE wisselen, willen we direct verversen.
         loadNewQuestion();
     }
-  }, [gameState, currentQ, targetDifficulty, selectedWeeks]); 
-  // ^ Trigger ook als difficulty of weken veranderen!
+  }, [targetDifficulty, selectedWeeks]); // Luister naar veranderingen
+
+  // Start de eerste vraag bij begin quiz
+  useEffect(() => {
+      if (gameState === 'quiz' && currentQ === null) {
+          loadNewQuestion();
+      }
+  }, [gameState]);
+
 
   const loadNewQuestion = () => {
     if (history.length >= MAX_QUESTIONS) {
@@ -100,12 +103,11 @@ export default function IPRAdaptiveQuiz() {
     
     if (q) {
       setCurrentQ(q);
-      setSelectedOption(null);
-      setIsFeedbackVisible(false);
+      setSelectedOption(null); // Reset selectie
+      setIsFeedbackVisible(false); // Verberg feedback
     } else {
-      // Geen vragen meer beschikbaar
-      if (history.length > 0) {
-          finishQuiz();
+      if (history.length > 0 && selectedWeeks.length > 0) {
+          // Op
       }
     }
   };
@@ -123,6 +125,8 @@ export default function IPRAdaptiveQuiz() {
 
   const handleNextClick = () => {
       setCurrentQ(null); 
+      setIsFeedbackVisible(false); // Zorg dat feedback weg is voordat we laden
+      // useEffect zal nu loadNewQuestion triggeren omdat currentQ null is
   }
 
   const finishQuiz = () => {
@@ -143,7 +147,6 @@ export default function IPRAdaptiveQuiz() {
   return (
     <div className="min-h-screen bg-[#FAFAFA] text-[#111] font-sans selection:bg-[#00E091] selection:text-black overflow-x-hidden relative">
       
-      {/* --- HEADER --- */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-100 z-40 h-20 flex items-center justify-between px-6 md:px-12">
         <div className="flex items-center gap-4">
             <div className="w-10 h-10 bg-[#111] rounded-xl flex items-center justify-center text-[#00E091] font-bold text-xl font-serif shadow-lg shadow-black/10">L</div>
@@ -155,7 +158,6 @@ export default function IPRAdaptiveQuiz() {
         
         {gameState === 'quiz' && (
            <div className="flex items-center gap-6">
-              {/* FILTER KNOP */}
               <button 
                 onClick={() => setShowSettings(true)}
                 className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
@@ -169,15 +171,14 @@ export default function IPRAdaptiveQuiz() {
               <div className="flex flex-col items-end">
                   <span className="text-[10px] font-bold uppercase text-gray-400 tracking-widest">Score</span>
                   <div className="flex items-center gap-2">
-                      <span className="font-serif font-bold text-lg text-[#00E091]">{score}</span>
-                      <span className="text-gray-300 font-serif text-lg">/ {history.length}</span>
+                     <span className="font-serif font-bold text-lg text-[#00E091]">{score}</span>
+                     <span className="text-gray-300 font-serif text-lg">/ {history.length}</span>
                   </div>
               </div>
            </div>
         )}
       </nav>
 
-      {/* --- SETTINGS POPUP (OVERLAY) --- */}
       <AnimatePresence>
         {showSettings && (
             <motion.div 
@@ -222,11 +223,9 @@ export default function IPRAdaptiveQuiz() {
         )}
       </AnimatePresence>
 
-      {/* --- MAIN CONTENT --- */}
       <main className="pt-32 pb-40 px-6 max-w-4xl mx-auto min-h-screen flex flex-col justify-center">
         <AnimatePresence mode="wait">
           
-          {/* === 1. INTRO SCHERM === */}
           {gameState === 'intro' && (
             <motion.div 
                 key="intro" 
@@ -244,7 +243,7 @@ export default function IPRAdaptiveQuiz() {
                 
                 <p className="text-xl text-gray-500 max-w-6xl mx-auto leading-relaxed">
                   Welkom bij de ultieme IPR training. Deze modus past zich op jouw keuzes aan.
-                  Je kunt tijdens de toets de moeilijkheidsgraad aanpassen en specifieke weken filteren. Dit gebeurt bij de volgende vraag nadat je iets aanpast.  
+                  Je kunt tijdens de toets de moeilijkheidsgraad aanpassen en specifieke weken filteren. Dit gebeurt direct.
                 </p>
 
                 <div className="flex justify-center gap-4 pt-4">
@@ -270,7 +269,6 @@ export default function IPRAdaptiveQuiz() {
             </motion.div>
           )}
 
-          {/* === 2. QUIZ SCREEN === */}
           {gameState === 'quiz' && currentQ && (
             <motion.div 
                 key="quiz" 
@@ -279,7 +277,6 @@ export default function IPRAdaptiveQuiz() {
                 exit={{ opacity: 0, x: -50 }} 
                 className="w-full"
             >
-              {/* Tags */}
               <div className="flex gap-3 mb-8">
                 <span className="px-4 py-1.5 bg-white border border-gray-100 text-gray-500 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm">
                   {currentQ.week}
@@ -291,12 +288,10 @@ export default function IPRAdaptiveQuiz() {
                 </span>
               </div>
 
-              {/* Vraag */}
               <h2 className="text-3xl md:text-4xl font-serif font-medium leading-[1.3] mb-12 text-[#111]">
                 {currentQ.q}
               </h2>
 
-              {/* Opties */}
               <div className="space-y-4">
                 {currentQ.a.map((opt, i) => {
                   const isSelected = selectedOption === i;
@@ -307,18 +302,18 @@ export default function IPRAdaptiveQuiz() {
                   let icon = <div className="w-5 h-5 rounded-full border-2 border-gray-200" />;
 
                   if (showResult) {
-                      if (isCorrect) {
-                          cardClasses = "bg-emerald-50 border-[#00E091] text-emerald-900 shadow-none";
-                          icon = <CheckCircle2 className="text-[#00E091]" />;
-                      } else if (isSelected && !isCorrect) {
-                          cardClasses = "bg-red-50 border-red-200 text-red-900 shadow-none";
-                          icon = <XCircle className="text-red-500" />;
-                      } else {
-                          cardClasses = "bg-gray-50 border-transparent text-gray-300 opacity-50";
-                      }
+                     if (isCorrect) {
+                         cardClasses = "bg-emerald-50 border-[#00E091] text-emerald-900 shadow-none";
+                         icon = <CheckCircle2 className="text-[#00E091]" />;
+                     } else if (isSelected && !isCorrect) {
+                         cardClasses = "bg-red-50 border-red-200 text-red-900 shadow-none";
+                         icon = <XCircle className="text-red-500" />;
+                     } else {
+                         cardClasses = "bg-gray-50 border-transparent text-gray-300 opacity-50";
+                     }
                   } else if (isSelected) {
-                      cardClasses = "bg-[#111] border-[#111] text-white shadow-lg";
-                      icon = <div className="w-5 h-5 rounded-full border-2 border-[#00E091] bg-[#00E091]" />;
+                     cardClasses = "bg-[#111] border-[#111] text-white shadow-lg";
+                     icon = <div className="w-5 h-5 rounded-full border-2 border-[#00E091] bg-[#00E091]" />;
                   }
 
                   return (
@@ -338,7 +333,6 @@ export default function IPRAdaptiveQuiz() {
                 })}
               </div>
 
-              {/* Feedback */}
               <AnimatePresence>
                 {isFeedbackVisible && (
                   <motion.div 
@@ -369,7 +363,6 @@ export default function IPRAdaptiveQuiz() {
             </motion.div>
           )}
 
-          {/* === 3. RESULTS SCREEN === */}
           {gameState === 'results' && (
              <motion.div key="results" className="flex flex-col items-center justify-center text-center py-10">
                 <div className="w-24 h-24 rounded-full bg-[#00E091]/10 flex items-center justify-center mb-8 border border-[#00E091]/20">
@@ -399,8 +392,7 @@ export default function IPRAdaptiveQuiz() {
         </AnimatePresence>
       </main>
 
-      {/* === CONTROLLER (DRIE LOSSE KNOPPEN) === */}
-      {/* Verbeterde logica voor de selectie kleur */}
+      {/* CONTROLLER */}
       <AnimatePresence>
         {gameState === 'quiz' && !isFeedbackVisible && (
             <motion.div 
@@ -412,8 +404,6 @@ export default function IPRAdaptiveQuiz() {
                 <div className="pointer-events-auto flex gap-4">
                     {DIFFICULTIES.map((level) => {
                         const isActive = targetDifficulty === level;
-                        
-                        // Hier definiëren we expliciet de stijlen
                         const activeStyle = "bg-[#00E091] border-[#00E091] text-[#111] scale-105 shadow-[0_0_20px_rgba(0,224,145,0.4)]";
                         const inactiveStyle = "bg-[#111] border-[#333] text-gray-400 hover:text-white hover:border-gray-500";
 
