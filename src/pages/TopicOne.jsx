@@ -11,13 +11,18 @@ import questionDb from './IPRvragen.json';
 // ===========================================================================
 // CONFIGURATIE
 // ===========================================================================
-const DIFFICULTIES = ["Oefenen", "Tentamen", "Extra Moeillijk"];
+// LET OP: Zorg dat deze spelling EXACT overeenkomt met je JSON keys!
+// Als in je JSON "Extra Moeilijk" (1 L) staat, pas het dan hieronder aan.
+const DIFFICULTIES = ["Oefenen", "Tentamen", "Extra Moeilijk"]; 
 const MAX_QUESTIONS = 50; 
 
 export default function IPRAdaptiveQuiz() {
   // --- STATE ---
   const [gameState, setGameState] = useState('intro'); 
-  const visibleWeeks = Object.keys(questionDb).slice(0, 6); 
+  
+  // Veilig de weken ophalen (voorkomt crash als json leeg is)
+  const visibleWeeks = questionDb ? Object.keys(questionDb).slice(0, 6) : [];
+  
   const [selectedWeeks, setSelectedWeeks] = useState(visibleWeeks);
   const [targetDifficulty, setTargetDifficulty] = useState('Tentamen'); 
   const [showSettings, setShowSettings] = useState(false);
@@ -29,43 +34,55 @@ export default function IPRAdaptiveQuiz() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isFeedbackVisible, setIsFeedbackVisible] = useState(false);
 
-  // Ref om te tracken of dit de eerste render is
-  const isFirstRun = useRef(true);
-
   // --- LOGICA ---
 
   const getNextQuestion = (currentHistory) => {
-    let pool = [];
-    if (selectedWeeks.length === 0) return null;
+    // Veiligheidscheck
+    if (!selectedWeeks || selectedWeeks.length === 0) return null;
 
+    let mainPool = [];     // Vragen van het gekozen niveau
+    let fallbackPool = []; // Vragen van andere niveaus (als backup)
+
+    // Loop door alle geselecteerde weken heen
     selectedWeeks.forEach(week => {
-      if (questionDb[week]) {
-        let questions = questionDb[week][targetDifficulty] || [];
-        questions.forEach(q => {
+      const weekData = questionDb[week];
+      if (!weekData) return; // Sla over als week niet bestaat in JSON
+
+      // 1. Probeer vragen van het gekozen niveau te vinden
+      const questionsAtTargetLevel = weekData[targetDifficulty];
+      
+      // Check of het een array is (voorkomt crash bij typefouten in JSON)
+      if (Array.isArray(questionsAtTargetLevel)) {
+        questionsAtTargetLevel.forEach(q => {
+          // Voeg alleen toe als hij nog niet in geschiedenis zit
           if (!currentHistory.some(h => h.q === q.q)) {
-            pool.push({ ...q, week: week, level: targetDifficulty });
+            mainPool.push({ ...q, week: week, level: targetDifficulty });
           }
         });
       }
+
+      // 2. Bouw tegelijkertijd een fallback pool op (voor het geval mainPool leeg blijft)
+      DIFFICULTIES.forEach(diff => {
+        if (diff !== targetDifficulty && Array.isArray(weekData[diff])) {
+           weekData[diff].forEach(q => {
+             if (!currentHistory.some(h => h.q === q.q)) {
+                fallbackPool.push({ ...q, week: week, level: diff });
+             }
+           });
+        }
+      });
     });
 
-    if (pool.length === 0) {
-      selectedWeeks.forEach(week => {
-        DIFFICULTIES.forEach(diff => {
-          if (questionDb[week][diff]) {
-            questionDb[week][diff].forEach(q => {
-              if (!currentHistory.some(h => h.q === q.q)) {
-                pool.push({ ...q, week: week, level: diff });
-              }
-            });
-          }
-        });
-      });
-    }
+    // KIES DE POOL:
+    // Hebben we vragen op het gewenste niveau? Gebruik die.
+    // Zo niet? (bijv. "Extra Moeillijk" is op of leeg), gebruik dan de rest.
+    const finalPool = mainPool.length > 0 ? mainPool : fallbackPool;
 
-    if (pool.length === 0) return null;
-    const randomIndex = Math.floor(Math.random() * pool.length);
-    return pool[randomIndex];
+    if (finalPool.length === 0) return null; // Echt alles is op
+
+    // Kies willekeurige vraag
+    const randomIndex = Math.floor(Math.random() * finalPool.length);
+    return finalPool[randomIndex];
   };
 
   const startQuiz = () => {
@@ -74,26 +91,16 @@ export default function IPRAdaptiveQuiz() {
     setGameState('quiz');
   };
 
-  // --- CRUCIALE AANPASSING: LIVE UPDATE ---
-  // Deze useEffect vuurt ALTIJD als targetDifficulty of selectedWeeks verandert.
-  // Maar alleen als we in de quiz zitten EN de gebruiker nog geen antwoord heeft gegeven.
+  // --- LIVE UPDATE EFFECT ---
+  // Dit zorgt dat de vraag direct verandert als je instellingen aanpast
   useEffect(() => {
     if (gameState === 'quiz' && !isFeedbackVisible) {
-        // Als dit de eerste render is of we starten net, doe niks (loadNewQuestion wordt al aangeroepen)
-        // Maar als we LIVE wisselen, willen we direct verversen.
         loadNewQuestion();
     }
-  }, [targetDifficulty, selectedWeeks]); // Luister naar veranderingen
-
-  // Start de eerste vraag bij begin quiz
-  useEffect(() => {
-      if (gameState === 'quiz' && currentQ === null) {
-          loadNewQuestion();
-      }
-  }, [gameState]);
-
+  }, [gameState, targetDifficulty, selectedWeeks]); 
 
   const loadNewQuestion = () => {
+    // Stop als we 50 vragen hebben gehad
     if (history.length >= MAX_QUESTIONS) {
         finishQuiz();
         return;
@@ -103,11 +110,12 @@ export default function IPRAdaptiveQuiz() {
     
     if (q) {
       setCurrentQ(q);
-      setSelectedOption(null); // Reset selectie
-      setIsFeedbackVisible(false); // Verberg feedback
+      setSelectedOption(null); 
+      setIsFeedbackVisible(false); 
     } else {
-      if (history.length > 0 && selectedWeeks.length > 0) {
-          // Op
+      // Als er geen vragen meer zijn (pool leeg), en we hebben nog niet de max bereikt:
+      if (history.length > 0) {
+          finishQuiz();
       }
     }
   };
@@ -115,18 +123,24 @@ export default function IPRAdaptiveQuiz() {
   const handleAnswer = (index) => {
     setSelectedOption(index);
     setIsFeedbackVisible(true);
-    setHistory(prev => [...prev, currentQ]);
-
-    if (index === currentQ.c) {
-      setScore(prev => prev + 1);
-      if (Math.random() > 0.3) confetti({ particleCount: 50, spread: 60, origin: { y: 0.8 }, colors: ['#00E091', '#FFFFFF'] });
+    
+    // Voeg toe aan geschiedenis
+    if(currentQ) {
+        setHistory(prev => [...prev, currentQ]);
+        if (index === currentQ.c) {
+            setScore(prev => prev + 1);
+            if (Math.random() > 0.3) confetti({ particleCount: 50, spread: 60, origin: { y: 0.8 }, colors: ['#00E091', '#FFFFFF'] });
+        }
     }
   };
 
   const handleNextClick = () => {
+      // Zet tijdelijk op null om een 'refresh' gevoel te geven, effect laadt nieuwe vraag
       setCurrentQ(null); 
-      setIsFeedbackVisible(false); // Zorg dat feedback weg is voordat we laden
-      // useEffect zal nu loadNewQuestion triggeren omdat currentQ null is
+      setIsFeedbackVisible(false);
+      // Omdat currentQ null wordt, en daarna loadNewQuestion wordt aangeroepen door logica of effect
+      // roepen we hem hier direct aan voor snelheid:
+      setTimeout(() => loadNewQuestion(), 50);
   }
 
   const finishQuiz = () => {
@@ -143,10 +157,19 @@ export default function IPRAdaptiveQuiz() {
     }
   };
 
+  const toggleSelectAll = () => {
+    if (selectedWeeks.length === visibleWeeks.length) {
+      setSelectedWeeks([]); 
+    } else {
+      setSelectedWeeks(visibleWeeks); 
+    }
+  };
+
   // --- RENDER ---
   return (
     <div className="min-h-screen bg-[#FAFAFA] text-[#111] font-sans selection:bg-[#00E091] selection:text-black overflow-x-hidden relative">
       
+      {/* HEADER */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-100 z-40 h-20 flex items-center justify-between px-6 md:px-12">
         <div className="flex items-center gap-4">
             <div className="w-10 h-10 bg-[#111] rounded-xl flex items-center justify-center text-[#00E091] font-bold text-xl font-serif shadow-lg shadow-black/10">L</div>
@@ -179,6 +202,7 @@ export default function IPRAdaptiveQuiz() {
         )}
       </nav>
 
+      {/* POPUP */}
       <AnimatePresence>
         {showSettings && (
             <motion.div 
@@ -211,13 +235,17 @@ export default function IPRAdaptiveQuiz() {
                             </button>
                         ))}
                     </div>
-                    
-                    <button 
-                        onClick={() => setShowSettings(false)}
-                        className="w-full py-4 bg-[#00E091] text-[#111] font-bold rounded-xl hover:bg-[#00c982] transition-colors"
-                    >
-                        Opslaan & Verder
-                    </button>
+                    <div className="flex justify-between items-center pt-2">
+                        <button onClick={toggleSelectAll} className="text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-[#111]">
+                            {selectedWeeks.length === visibleWeeks.length ? "Alles Deselecteren" : "Alles Selecteren"}
+                        </button>
+                        <button 
+                            onClick={() => setShowSettings(false)}
+                            className="px-8 py-3 bg-[#00E091] text-[#111] font-bold rounded-xl hover:bg-[#00c982] transition-colors"
+                        >
+                            Klaar
+                        </button>
+                    </div>
                 </motion.div>
             </motion.div>
         )}
@@ -404,6 +432,7 @@ export default function IPRAdaptiveQuiz() {
                 <div className="pointer-events-auto flex gap-4">
                     {DIFFICULTIES.map((level) => {
                         const isActive = targetDifficulty === level;
+                        // STYLES HARD INGESTELD VOOR DUIDELIJKHEID:
                         const activeStyle = "bg-[#00E091] border-[#00E091] text-[#111] scale-105 shadow-[0_0_20px_rgba(0,224,145,0.4)]";
                         const inactiveStyle = "bg-[#111] border-[#333] text-gray-400 hover:text-white hover:border-gray-500";
 
