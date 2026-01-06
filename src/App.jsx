@@ -9,6 +9,7 @@ import TopicOne from './pages/TopicOne';   // Nu: Ultiem IPR Tentamen
 import TopicFour from './pages/TopicFour'; // Miljoenenjacht
 import TopicSix from './pages/TopicSix';   // Oefenvragen A-D
 import TopicEight from './pages/TopicEight'; // Courtroom Rush
+import TopicTree from './pages/TopicTree'; // Jurisprudentie 
 import Support from './pages/Support';
 import DonateButton from './pages/Button';
 import StudyMusic from './pages/StudyMusic';
@@ -171,6 +172,10 @@ const Sidebar = ({ onLockClick }) => {
                    <BookOpen size={14} className="mr-2 opacity-70" />
                    Oefenvragen A-D
                 </NavLink>
+		<NavLink to="/ipr-Jurisprudentie" className={({ isActive }) => `flex items-center py-2 px-3 rounded-md text-xs font-medium transition-colors ${isActive ? 'text-[#059669] bg-[#6EE7B7]/10' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50'}`}>
+                   <BookOpen size={14} className="mr-2 opacity-70" />
+                   Jurisprudentie Gids
+                </NavLink>
 
                 <div className="pt-3 pb-1 pl-7 text-[10px] uppercase font-bold text-slate-400 tracking-wider">Games</div>
 
@@ -265,7 +270,7 @@ const App = () => (
         <Route path="/ipr-miljoenen" element={<TopicFour />} />
         <Route path="/ipr-vragen" element={<TopicSix />} />
         <Route path="/ipr-courtroom" element={<TopicEight />} />
-        
+        <Route path="/ipr-Jurisprudentie" element={<TopicTree />} />
         {/* Algemeen */}
         <Route path="/support" element={<Support />} />
       </Route>
