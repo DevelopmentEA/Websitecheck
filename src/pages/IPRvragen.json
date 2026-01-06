@@ -158,12 +158,12 @@
       {
         "q": "Wat is het verschil tussen het 'algemeen deel' en de 'bijzondere delen' van het IPR?",
         "a": [
-          "Algemeen geldt voor iedereen, bijzonder alleen voor diplomaten.",
-          "Algemeen bevat de basisregels (zoals bronnen en aansprakelijkheid), bijzonder gaat over specifieke onderwerpen (zoals milieu of zee).",
+          "Algemeen geldt voor iedereen, bijzonder alleen voor diplomaten.",      
           "Algemeen is geschreven recht, bijzonder is ongeschreven recht.",
+          "Algemeen bevat de basisregels (zoals bronnen en aansprakelijkheid), bijzonder gaat over specifieke onderwerpen (zoals milieu of zee).",
           "Er is geen verschil, het is één pot nat."
         ],
-        "c": 1,
+        "c": 2,
         "exp": "Het algemene deel bevat de 'spelregels' van het systeem (wie is een staat, hoe ontstaat recht). De bijzondere delen regelen specifieke beleidsterreinen zoals milieu, handel of mensenrechten."
       }
     ],
@@ -929,12 +929,12 @@
       {
         "q": "Wat houdt de 'Legal Status of Eastern Greenland'-zaak in met betrekking tot grondgebied?",
         "a": [
-          "Groenland is van de VS.",
           "In dunbevolkte gebieden zijn de eisen voor 'effectief gezag' lager; incidentele machtsuitoefening kan voldoende zijn voor een titel.",
+          "In dichtbevolkte gebieden zijn de eisen voor 'gezag' lager; incidentele machtsuitoefening kan voldoende zijn voor een titel.",
           "Denemarken had geen recht op Groenland.",
           "Bezetting is de enige manier om grondgebied te krijgen."
         ],
-        "c": 1,
+        "c": 0,
         "exp": "Het PCIJ oordeelde dat in onherbergzame gebieden (zoals Groenland) niet dezelfde mate van intensief bestuur nodig is als in dichtbevolkte gebieden om van effectieve bezetting te spreken."
       },
       {
@@ -2179,11 +2179,11 @@
         "q": "Wat is 'extraterritoriale handhaving' en mag dit?",
         "a": [
           "Handhaving op eigen grondgebied; dat mag.",
-          "Handhaving (bijv. arrestatie) op het grondgebied van een andere staat; dit is in beginsel verboden zonder toestemming (schending soevereiniteit).",
           "Handhaving op zee; dat mag altijd.",
+	  "Handhaving (bijv. arrestatie) op het grondgebied van een andere staat; dit is in beginsel verboden zonder toestemming (schending soevereiniteit).",
           "Handhaving via internet; dat mag altijd."
         ],
-        "c": 1,
+        "c": 2,
         "exp": "Een staat mag niet zomaar politie sturen naar een ander land. Dat is een schending van de territoriale integriteit, tenzij er toestemming is."
       },
       {
@@ -2302,11 +2302,11 @@
         "q": "Wat geldt er voor de immuniteit van staatshoofden voor het Internationaal Strafhof (ISH)?",
         "a": [
           "Die blijft onverminderd van kracht.",
-          "Artikel 27 Statuut ISH heft deze immuniteit expliciet op ('official capacity shall in no case exempt a person from criminal responsibility').",
+          "Alleen als ze vrijwillig komen",
           "Alleen als ze geen lid zijn van de VN.",
-          "Alleen als ze vrijwillig komen."
+          "Artikel 27 Statuut ISH heft deze immuniteit expliciet op ('official capacity shall in no case exempt a person from criminal responsibility').."
         ],
-        "c": 1,
+        "c": 3,
         "exp": "Voor het ISH (een verdragsrechtelijk tribunaal) hebben staten afstand gedaan van de immuniteit van hun leiders. Dit geldt dus *niet* automatisch voor nationale rechters."
       },
       {
