@@ -1,276 +1,212 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation, Outlet } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { 
-  Scale, BookOpen, X, Mail, Send, Gavel, 
-  ArrowLeft, Play, Award, BrainCircuit, Heart 
+  Scale, BookOpen, Gavel, ArrowLeft, Play, Award, BrainCircuit, Zap, Target
 } from 'lucide-react';
 
-// Pagina imports (Zorg dat deze bestanden bestaan)
-import TopicOne from './pages/TopicOne';       // 1. Strafrecht Basis
-import TopicFour from './pages/TopicFour';     // 2. IPR Miljoenenjacht
-import TopicEight from './pages/TopicEight';   // 3. Courtroom Rush
-import TopicTen from './pages/TopicTen';       // 4. Jurisprudentie
+// Pagina imports
+import TopicOne from './pages/TopicOne';     
+import TopicFour from './pages/TopicTwo';   
+import TopicEight from './pages/TopicTree'; 
+import TopicTen from './pages/TopicFour';     
 import Support from './pages/Support';
 import DonateButton from './pages/Button';
 
-// ==========================================
-// 1. EMAIL POPUP (Ongewijzigd, alleen styling update)
-// ==========================================
-const EmailPopup = ({ forceShow, onClose, customText }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+// --- ANIMATIE CONSTANTEN ---
+const transition = { duration: 0.6, ease: [0.22, 1, 0.36, 1] };
 
-  useEffect(() => {
-    if (forceShow) {
-      setIsVisible(true);
-    } else {
-      const hasSeen = localStorage.getItem('hasSeenEmailPopup');
-      if (!hasSeen) {
-        const timer = setTimeout(() => setIsVisible(true), 15000); 
-        return () => clearTimeout(timer);
-      }
-    }
-  }, [forceShow]);
-
-  const handleClose = () => {
-    setIsVisible(false);
-    if (onClose) onClose(); 
-    if (!forceShow) localStorage.setItem('hasSeenEmailPopup', 'true');
-  };
-
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 150);
-  };
-
-  return (
-    <AnimatePresence>
-      {isVisible && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
-          <motion.div 
-            initial={{ opacity: 0, y: 30, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100"
-          >
-            <div className="bg-[#1F2937] p-8 text-center relative">
-              <button onClick={handleClose} className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
-                <X size={20} />
-              </button>
-              <div className="w-14 h-14 bg-[#6EE7B7] rounded-xl flex items-center justify-center mx-auto mb-4 rotate-3 shadow-lg text-black">
-                <Mail size={28} />
-              </div>
-              <h2 className="text-xl font-bold text-white tracking-tight">
-                {customText ? "Toegang Vereist" : "Premium Leren"}
-              </h2>
-            </div>
-            
-            <div className="p-8 text-center">
-              {!submitted ? (
-                <form 
-                  action="https://docs.google.com/forms/d/e/1FAIpQLSe-xEXNDDwXJeiwMe5v4bUOOfJ0MuZZjKoBefyVRQd0n1MrKQ/formResponse"
-                  method="POST" 
-                  target="hidden_iframe" 
-                  onSubmit={handleSubmit}
-                  className="space-y-4"
-                >
-                  <p className="text-slate-600 text-sm mb-4 leading-relaxed font-medium">
-                    {customText || "Wil je toegang tot exclusieve samenvattingen en tools? Laat je mail achter."}
-                  </p>
-                  <input type="email" name="entry.1504473130" required placeholder="Jouw e-mailadres" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-[#6EE7B7] focus:border-[#6EE7B7] outline-none transition-all text-sm" />
-                  <button type="submit" className="w-full bg-[#6EE7B7] text-slate-900 py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#5CD6A8] transition-all shadow-md">Verzenden <Send size={14}/></button>
-                </form>
-              ) : (
-                <div className="py-6 text-[#059669] font-bold tracking-tight">Bedankt! We houden je op de hoogte.</div>
-              )}
-            </div>
-            <iframe name="hidden_iframe" style={{ display: 'none' }} title="hidden_frame"></iframe>
-          </motion.div>
-        </div>
-      )}
-    </AnimatePresence>
-  );
+const pageVariants = {
+  initial: { opacity: 0, scale: 0.98, y: 10 },
+  enter: { opacity: 1, scale: 1, y: 0, transition },
+  exit: { opacity: 0, scale: 1.02, y: -10, transition: { duration: 0.4 } }
 };
 
-// ==========================================
-// 2. NIEUW DASHBOARD COMPONENT
-// ==========================================
-const DashboardCard = ({ title, desc, icon: Icon, to, color = "bg-white" }) => {
+// --- PERFORMANCE CHECK ---
+const usePerformanceMode = () => {
+  const [isLowPower, setIsLowPower] = useState(false);
+  useEffect(() => {
+    const isMobile = window.matchMedia("(pointer: coarse)").matches;
+    setIsLowPower(isMobile);
+  }, []);
+  return isLowPower;
+};
+
+// --- ACHTERGROND: PULSEREND VIERKANT ---
+const BackgroundPulsator = ({ isLowPower }) => (
+  <div className="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none">
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={isLowPower ? { scale: 1, opacity: 1 } : { scale: [1, 1.03, 1], opacity: 1 }}
+      transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      className="w-[95%] h-[85%] max-w-6xl bg-[#6EE7B7]/5 border border-[#6EE7B7]/10 rounded-[3rem] md:rounded-[5rem]"
+    />
+  </div>
+);
+
+// --- TILT CARD (Met verfijnde klik-animatie) ---
+const TiltCard = ({ title, desc, icon: Icon, to, index }) => {
   const navigate = useNavigate();
+  const isLowPower = usePerformanceMode();
+  
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const mouseXSpring = useSpring(x);
+  const mouseYSpring = useSpring(y);
+
+  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["8deg", "-8deg"]);
+  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-8deg", "8deg"]);
+
+  const handleMouseMove = (e) => {
+    if (isLowPower) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    x.set((e.clientX - rect.left) / rect.width - 0.5);
+    y.set((e.clientY - rect.top) / rect.height - 0.5);
+  };
 
   return (
     <motion.div
-      whileHover={{ y: -8, scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
+      variants={{
+        initial: { opacity: 0, y: 20 },
+        enter: { opacity: 1, y: 0, transition: { ...transition, delay: index * 0.1 } }
+      }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={() => { x.set(0); y.set(0); }}
+      style={{ 
+        rotateX: isLowPower ? 0 : rotateX, 
+        rotateY: isLowPower ? 0 : rotateY, 
+        transformStyle: "preserve-3d" 
+      }}
       onClick={() => navigate(to)}
-      className={`relative cursor-pointer group overflow-hidden rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-300 ${color}`}
+      whileTap={{ scale: 0.95 }}
+      className="relative group cursor-pointer"
     >
-      <div className="p-8 h-full flex flex-col justify-between relative z-10">
-        <div>
-          <div className="w-12 h-12 bg-[#6EE7B7]/20 rounded-xl flex items-center justify-center mb-6 text-[#059669] group-hover:bg-[#6EE7B7] group-hover:text-slate-900 transition-colors duration-300">
-            <Icon size={24} strokeWidth={2.5} />
-          </div>
-          <h3 className="text-xl font-bold text-slate-900 mb-2">{title}</h3>
-          <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
+      <div 
+        style={{ transform: isLowPower ? "none" : "translateZ(30px)" }}
+        className="h-full bg-white border border-slate-100 p-6 md:p-10 rounded-[2.5rem] shadow-sm group-hover:shadow-xl group-hover:border-[#6EE7B7]/30 transition-all duration-500"
+      >
+        <div className="w-12 h-12 md:w-16 md:h-16 bg-[#6EE7B7]/10 rounded-2xl flex items-center justify-center mb-8 text-[#059669] group-hover:bg-[#6EE7B7] group-hover:text-white transition-all duration-500">
+          <Icon size={30} strokeWidth={2} />
         </div>
-        
-        <div className="mt-8 flex items-center text-sm font-bold text-[#059669] group-hover:translate-x-2 transition-transform duration-300">
-          Start Module <Play size={14} className="ml-2 fill-current" />
+        <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-3 tracking-tight">{title}</h3>
+        <p className="text-slate-500 text-sm leading-relaxed mb-8 opacity-80">{desc}</p>
+        <div className="flex items-center text-sm font-black uppercase tracking-widest text-[#059669]">
+          Start Tool <Zap size={14} className="ml-2 fill-current" />
         </div>
       </div>
-      
-      {/* Decoratieve achtergrond cirkel */}
-      <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-[#6EE7B7]/20 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
     </motion.div>
   );
 };
 
+// --- DASHBOARD ---
 const Dashboard = () => {
+  const isLowPower = usePerformanceMode();
+
   return (
-    <div className="max-w-6xl mx-auto py-12 px-6">
-      {/* Header */}
-      <div className="text-center mb-16 space-y-4">
+    <motion.div 
+      variants={pageVariants}
+      initial="initial"
+      animate="enter"
+      exit="exit"
+      className="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-8 relative"
+    >
+      <BackgroundPulsator isLowPower={isLowPower} />
+
+      <div className="flex flex-col md:flex-row justify-between items-start mb-16 md:mb-24 gap-8">
+        <div className="text-left w-full">
+          <motion.div 
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="flex items-center gap-2 text-[#059669] mb-6"
+          >
+            <Target size={14} /> 
+            <span className="text-[10px] font-black uppercase tracking-[0.4em]">Lawbooks Intelligence 2026</span>
+          </motion.div>
+          <h1 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tighter leading-[0.9]">
+            Kies je <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#059669] via-[#6EE7B7] to-[#059669] bg-[length:200%_auto] animate-gradient">Oefentool</span>
+          </h1>
+        </div>
+        
         <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-[#6EE7B7]/10 text-[#059669] rounded-full text-xs font-bold uppercase tracking-wider"
+          whileHover={{ rotate: 5, scale: 1.1 }}
+          className="relative shrink-0"
         >
-          <Scale size={14} /> Lawbooks Premium
+          <img src="/foto.jpg" alt="Profile" className="w-20 h-20 md:w-32 md:h-32 rounded-[2rem] border-4 border-white shadow-2xl object-cover" />
+          <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-[#6EE7B7] rounded-full border-4 border-white flex items-center justify-center shadow-lg">
+            <Zap size={18} className="text-white fill-current" />
+          </div>
         </motion.div>
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight"
-        >
-          Kies je <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#059669] to-[#6EE7B7]">Oefenmodule</span>
-        </motion.h1>
-        <motion.p 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-slate-500 max-w-lg mx-auto"
-        >
-          Selecteer hieronder een onderdeel om direct te starten met oefenen. Geen account nodig, direct toegang.
-        </motion.p>
       </div>
 
-      {/* Grid met 4 Kaarten */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        <DashboardCard 
-          title="Strafrecht: De Basis"
-          desc="Module I: Beheers de fundamenten van het strafrecht. Ideaal voor beginnende studenten."
-          icon={Gavel}
-          to="/SRI"
-        />
-        <DashboardCard 
-          title="SR: Miljoenenjacht"
-          desc="Een interactieve game-show stijl quiz over Internationaal Privaatrecht. Speel voor de winst!"
-          icon={BookOpen}
-          to="/SR"
-        />
-        <DashboardCard 
-          title="Courtroom Rush"
-          desc="Snelle beslissingen maken in de rechtszaal. Test je parate kennis onder tijdsdruk."
-          icon={BrainCircuit}
-          to="/courtroom-rush"
-        />
-        <DashboardCard 
-          title="Jurisprudentie Meester"
-          desc="Diepgaande analyse van de belangrijkste arresten. Weet jij welk arrest van toepassing is?"
-          icon={Award}
-          to="/jurisprudentie"
-        />
-      </div>
-
-      {/* Footer link */}
       <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="mt-20 text-center"
+        variants={{ enter: { transition: { staggerChildren: 0.1 } } }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10"
       >
-        <a href="https://lawbooks.nl" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-800 text-sm font-semibold transition-colors">
-          © 2026 Lawbooks Education
-        </a>
+        <TiltCard index={0} title="Strafrecht: Basis" desc="Beheers de fundamenten van het materiële strafrecht." icon={Gavel} to="/SRI" />
+        <TiltCard index={1} title="SR: Miljoenenjacht" desc="Strijd voor de hoofdprijs in deze IPR-quiz." icon={BookOpen} to="/SR" />
+        <TiltCard index={2} title="Courtroom Rush" desc="Maak juridische beslissingen onder tijdsdruk." icon={BrainCircuit} to="/courtroom-rush" />
+        <TiltCard index={3} title="Jurisprudentie" desc="Analyseer de meest invloedrijke arresten." icon={Award} to="/jurisprudentie" />
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
-// ==========================================
-// 3. LAYOUT (Zonder Sidebar, Met Terug-knop)
-// ==========================================
+// --- MAIN LAYOUT ---
 const MainLayout = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isDashboard = location.pathname === '/';
 
   return (
-    <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative">
-      
-      {/* Navigatie Bar (Alleen zichtbaar als NIET op dashboard) */}
+    <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative selection:bg-[#6EE7B7]/30">
+      {/* Subtiele Loading Line */}
+      <motion.div 
+        key={location.pathname + "-loader"}
+        initial={{ width: "0%", opacity: 1 }}
+        animate={{ width: "100%", opacity: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        className="fixed top-0 left-0 h-[3px] bg-[#6EE7B7] z-[60] shadow-[0_0_10px_#6EE7B7]"
+      />
+
       {!isDashboard && (
         <motion.div 
-          initial={{ y: -50, opacity: 0 }}
+          initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex items-center justify-between"
+          className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 px-6 py-4 flex items-center justify-between"
         >
           <button 
-            onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-slate-600 hover:text-[#059669] hover:bg-[#6EE7B7]/10 px-4 py-2 rounded-lg transition-all font-bold text-sm"
+            onClick={() => navigate('/')} 
+            className="flex items-center gap-2 text-slate-900 font-black text-[10px] uppercase tracking-widest hover:text-[#059669] transition-colors"
           >
-            <ArrowLeft size={18} />
-            Terug naar Dashboard
+            <ArrowLeft size={16} /> Terug naar Dashboard
           </button>
-
-          <div className="font-bold text-lg tracking-tight flex items-center gap-2">
-             <Scale size={20} className="text-[#6EE7B7]" /> Lawbooks
+          <div className="flex items-center gap-2 font-black italic text-sm tracking-tighter">
+             <Scale size={18} className="text-[#6EE7B7]" /> LAWBOOKS
           </div>
         </motion.div>
       )}
 
-      {/* Main Content Area */}
-      <main className={`w-full min-h-screen ${!isDashboard ? 'pt-24 px-6 md:px-12 pb-12' : ''}`}>
+      <main className={`relative ${!isDashboard ? 'pt-24' : ''}`}>
         <AnimatePresence mode="wait">
-          <motion.div
-            key={location.pathname}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Outlet />
-          </motion.div>
+          <Outlet key={location.pathname} />
         </AnimatePresence>
       </main>
-
-      {/* Global Elements */}
-      <EmailPopup /> 
+      
       <DonateButton />
     </div>
   );
 };
 
-// ==========================================
-// 4. APP ROUTING
-// ==========================================
 const App = () => (
   <Router>
     <Routes>
       <Route element={<MainLayout />}>
-        {/* Het Dashboard is nu de Homepage */}
         <Route path="/" element={<Dashboard />} />
-        
-        {/* De 4 Geselecteerde Pagina's */}
         <Route path="/SRI" element={<TopicOne />} />
         <Route path="/SR" element={<TopicFour />} />
         <Route path="/courtroom-rush" element={<TopicEight />} />
         <Route path="/jurisprudentie" element={<TopicTen />} />
-        
-        {/* Extra pagina voor support */}
         <Route path="/support" element={<Support />} />
       </Route>
     </Routes>
