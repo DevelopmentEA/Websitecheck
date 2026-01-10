@@ -23,7 +23,11 @@ const SecurityWrapper = ({ children }) => {
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     
     // Check of het Lawbooks.online is
-    const isLawbooks = referrer.includes('lawbooks.online');
+// Maak een lijst van toegestane domeinen
+    const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
+
+// Check of de referrer één van deze domeinen bevat
+    const isLawbooks = allowedDomains.some(domain => referrer.includes(domain));
 
     // Als het een iframe is, maar NIET van lawbooks en NIET lokaal (voor dev), dan blokkeren
     if (isIframe && !isLawbooks && !isLocal) {
