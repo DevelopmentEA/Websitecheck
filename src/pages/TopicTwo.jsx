@@ -1,48 +1,101 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import html2canvas from 'html2canvas'; 
-import { Share2, Award, Trophy, Timer } from 'lucide-react'; 
+import { 
+  Share2, Trophy, Timer, Zap, Gavel, 
+  CheckCircle2, AlertCircle, ArrowRight, RotateCcw 
+} from 'lucide-react'; 
 
-// Pas dit pad aan naar waar jouw json bestand staat!
 import allQuestions from './vragen.json'; 
 
-// Ladder configuratie
 const MONEY_LADDER = [
-  "€ 500", "€ 1.000", "€ 2.000", "€ 4.000", "€ 8.000", 
-  "€ 16.000", "€ 32.000", "€ 64.000", "€ 125.000", "€ 250.000", 
-  "€ 500.000", "€ 1.000.000"
+  "€ 500.000", "€ 1.000.000", "€ 2.000.000", "€ 4.000.000", "€ 8.000.000", 
+  "€ 16.000.000", "€ 32.000.000", "€ 64.000.000", "€ 125.000.000", "€ 250.000.000", 
+  "€ 500.000.000", "€ 1.000.000.000"
 ];
 
-// Kleurenpalet (JS Variabelen voor in styles)
 const COLORS = {
-  dark: '#1F2937',   
-  mint: '#6EE7B7',   
-  mintDark: '#059669', 
-  bg: '#F8FAFC',     
-  success: '#10B981', 
-  error: '#EF4444'    
+  mint: '#6EE7B7',
+  mintDark: '#059669',
+  dark: '#050505',
+  bg: '#F9FAFB'
 };
 
-const Miljoenenjacht = () => {
+// --- PERFORMANCE CHECK ---
+const usePerformanceMode = () => {
+  const [isLowPower, setIsLowPower] = useState(false);
+  useEffect(() => {
+    const isMobile = window.matchMedia("(pointer: coarse)").matches;
+    setIsLowPower(isMobile);
+  }, []);
+  return isLowPower;
+};
+
+// --- COMPACT TILT OPTION ---
+const AnswerOption = ({ opt, i, selected, evaluation, onClick, disabled, index }) => {
+  const isLowPower = usePerformanceMode();
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const mouseXSpring = useSpring(x);
+  const mouseYSpring = useSpring(y);
+  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["10deg", "-10deg"]);
+  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-10deg", "10deg"]);
+
+  const isSelected = selected === i;
+  const isCorrect = evaluation === 'correct' && isSelected;
+  const isWrong = evaluation === 'wrong' && isSelected;
+
+  return (
+    <motion.div
+      variants={{
+        initial: { opacity: 0, y: 10 },
+        enter: { opacity: 1, y: 0, transition: { delay: index * 0.05 } }
+      }}
+      style={{ rotateX: isLowPower ? 0 : rotateX, rotateY: isLowPower ? 0 : rotateY, transformStyle: "preserve-3d" }}
+      onMouseMove={(e) => {
+        if (isLowPower) return;
+        const rect = e.currentTarget.getBoundingClientRect();
+        x.set((e.clientX - rect.left) / rect.width - 0.5);
+        y.set((e.clientY - rect.top) / rect.height - 0.5);
+      }}
+      onMouseLeave={() => { x.set(0); y.set(0); }}
+      className="relative"
+    >
+      <motion.button
+        disabled={disabled}
+        onClick={() => onClick(i)}
+        whileTap={{ scale: 0.98 }}
+        className={`w-full p-4 md:p-5 rounded-2xl border-2 text-left flex items-center gap-4 transition-all duration-300 ${
+          isCorrect ? 'bg-[#10B981] border-[#10B981] text-white shadow-[0_0_20px_rgba(16,185,129,0.3)]' :
+          isWrong ? 'bg-[#EF4444] border-[#EF4444] text-white shadow-[0_0_20px_rgba(239,68,68,0.3)]' :
+          isSelected ? 'bg-black border-[#6EE7B7] text-white shadow-[0_0_20px_rgba(110,231,183,0.2)]' :
+          'bg-white border-slate-100 text-slate-800 hover:border-[#6EE7B7]/50 shadow-sm'
+        } ${disabled && !isSelected ? 'opacity-40 grayscale-[50%]' : 'opacity-100'}`}
+      >
+        <span className={`w-8 h-8 rounded-lg flex-shrink-0 flex items-center justify-center font-black text-xs ${
+          isSelected ? 'bg-[#6EE7B7] text-black' : 'bg-slate-100 text-slate-400'
+        }`}>
+          {String.fromCharCode(65 + i)}
+        </span>
+        <span className="font-bold text-sm md:text-base leading-tight">{opt}</span>
+      </motion.button>
+    </motion.div>
+  );
+};
+
+const Miljardenjacht = () => {
   const [gameState, setGameState] = useState('start'); 
   const [questions, setQuestions] = useState([]); 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [timeLeft, setTimeLeft] = useState(25);
   const [selected, setSelected] = useState(null);
   const [evaluation, setEvaluation] = useState(null); 
+  const isLowPower = usePerformanceMode();
   
-  const audioRef = useRef(null);
   const certificateRef = useRef(null);
 
-  // Start het spel
   const startGame = () => {
-    // Veiligheidscheck
-    if (!allQuestions || allQuestions.length === 0) {
-        alert("Geen vragen gevonden! Controleer src/data/vragen_ipr.json");
-        return;
-    }
-
     const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
     setQuestions(shuffled.slice(0, 12));
     setGameState('playing');
@@ -52,462 +105,212 @@ const Miljoenenjacht = () => {
     setEvaluation(null);
   };
 
-  // Functie om resultaat te delen
-  const handleShare = async () => {
-    if (!certificateRef.current) return;
-    
-    const canvas = await html2canvas(certificateRef.current, {
-      backgroundColor: COLORS.dark, 
-      scale: 3, 
-      useCORS: true
-    });
-    
-    const image = canvas.toDataURL("image/png");
-    const amount = MONEY_LADDER[currentIdx - 1] || "€ 0";
-
-    if (navigator.share) {
-      const blob = await (await fetch(image)).blob();
-      const file = new File([blob], "Lawbooks_Miljoenenjacht.png", { type: "image/png" });
-      try {
-        await navigator.share({
-          title: 'Lawbooks Miljoenenjacht',
-          text: `Ik heb ${amount} behaald in de Lawbooks Miljoenenjacht! Kom jij even ver als ik? ⚖️💰`,
-          files: [file],
-        });
-      } catch (err) { console.log("Delen gestopt"); }
-    } else {
-      const link = document.createElement('a');
-      link.download = `Lawbooks_Resultaat_${amount}.png`;
-      link.href = image;
-      link.click();
-    }
-  };
-
-  // Timer Logica
   useEffect(() => {
     let timer;
-    if (gameState === 'playing' && timeLeft > 0 && evaluation === null) {
+    if (gameState === 'playing' && timeLeft > 0 && !evaluation) {
       timer = setInterval(() => setTimeLeft(prev => Math.max(0, prev - 0.1)), 100);
-    } else if (timeLeft <= 0 && gameState === 'playing' && evaluation === null) {
+    } else if (timeLeft <= 0 && gameState === 'playing' && !evaluation) {
       setGameState('lost');
     }
     return () => clearInterval(timer);
   }, [gameState, timeLeft, evaluation]);
 
-  // Audio effecten
-  useEffect(() => {
-    if (gameState === 'playing' || gameState === 'transitioning') {
-      audioRef.current?.play().catch(() => {});
-    } else {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      }
-    }
-  }, [gameState]);
-
-  // Antwoord afhandeling
   const handleAnswer = (idx) => {
     if (selected !== null) return;
     setSelected(idx);
     setEvaluation('thinking');
     
-    if (!questions[currentIdx]) return;
-
     const isCorrect = idx === questions[currentIdx].correct;
 
     setTimeout(() => {
       setEvaluation(isCorrect ? 'correct' : 'wrong');
       if (isCorrect) {
-        confetti({ particleCount: 50, spread: 70, origin: { y: 0.8 }, colors: [COLORS.mint, COLORS.dark] });
+        confetti({ particleCount: 40, spread: 60, colors: [COLORS.mint, '#000000'] });
         setTimeout(() => {
-          if (currentIdx === 11) {
-            confetti({ particleCount: 500, spread: 150, origin: { y: 0.6 }, colors: [COLORS.mint, COLORS.dark, '#FFFFFF'] });
-            setGameState('won');
-          } else {
+          if (currentIdx === 11) setGameState('won');
+          else {
             setGameState('transitioning');
             setTimeout(() => {
-              setCurrentIdx(prev => prev + 1);
+              setCurrentIdx(p => p + 1);
               setTimeLeft(25);
               setSelected(null);
               setEvaluation(null);
               setGameState('playing');
-            }, 1800);
+            }, 1400);
           }
-        }, 1500);
+        }, 1200);
       } else {
-        setTimeout(() => setGameState('lost'), 1500);
+        setTimeout(() => setGameState('lost'), 1200);
       }
-    }, 1500);
+    }, 1000);
   };
 
-  const progress = ((currentIdx) / 12) * 100;
+  const handleShare = async () => {
+    if (!certificateRef.current) return;
+    const canvas = await html2canvas(certificateRef.current);
+    const image = canvas.toDataURL("image/png");
+    const link = document.createElement('a');
+    link.download = 'Lawbooks_Score.png';
+    link.href = image;
+    link.click();
+  };
 
-  // ------------------------------------------------------------------
-  // RENDER: START SCHERM
-  // ------------------------------------------------------------------
+  // --- RENDERS ---
+
   if (gameState === 'start') {
     return (
-      <div 
-        className="flex flex-col items-center justify-center h-full min-h-[80vh] w-full text-slate-900 p-6 text-center relative overflow-hidden rounded-3xl border border-slate-200"
-        style={{ backgroundColor: COLORS.bg, fontFamily: "'Nunito', sans-serif" }}
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
+        className="flex flex-col items-center justify-center min-h-[60vh] text-center p-8 bg-white rounded-[3rem] border border-slate-100 shadow-sm relative overflow-hidden"
       >
-        <style>
-          {`@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');`}
-        </style>
-        <audio ref={audioRef} src="/spannend.mp3" loop />
-        
-        {/* Decoratieve achtergrond elementen */}
-        <div 
-            className="absolute top-[-10%] left-[-10%] w-96 h-96 rounded-full blur-3xl" 
-            style={{ backgroundColor: `${COLORS.mint}33` }} 
-        />
-        <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-slate-200/50 rounded-full blur-3xl" />
-
-        <motion.div 
-          initial={{ scale: 0.9, opacity: 0 }} 
-          animate={{ scale: 1, opacity: 1 }}
-          className="relative z-10 max-w-2xl"
-        >
-          <div className="mb-6 flex justify-center">
-             <div 
-                className="w-24 h-24 rounded-2xl flex items-center justify-center shadow-xl border-4 rotate-12"
-                style={{ backgroundColor: COLORS.dark, borderColor: COLORS.mint }}
-             >
-                <Trophy size={40} style={{ color: COLORS.mint }} />
-             </div>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tight text-slate-900" 
-              style={{ fontFamily: "'Fredoka', sans-serif", textShadow: `4px 4px 0px ${COLORS.mint}66` }}>
-            Miljoenen<span className="text-transparent bg-clip-text" style={{ backgroundImage: `linear-gradient(to right, ${COLORS.mintDark}, ${COLORS.mint})` }}>jacht</span>
-          </h1>
-          <p className="text-slate-500 font-bold text-xl mb-12" style={{ fontFamily: "'Nunito', sans-serif" }}>
-            Test je kennis van het SR & win virtueel goud.
-          </p>
-          <button 
-            onClick={startGame} 
-            className="px-12 py-5 rounded-xl font-bold text-xl shadow-lg hover:scale-105 hover:shadow-xl transition-all flex items-center gap-3 mx-auto group"
-            style={{ 
-              backgroundColor: COLORS.dark, 
-              color: COLORS.mint,  // MINT TEKST!
-              fontFamily: "'Fredoka', sans-serif", 
-              letterSpacing: '1px' 
-            }}
-          >
-            Start de Strijd
-            <Timer className="group-hover:rotate-12 transition-transform" style={{ color: COLORS.mint }} />
-          </button>
+        <div className="absolute top-0 left-0 w-full h-full bg-[#6EE7B7]/5 -z-10" />
+        <motion.div whileHover={{ rotate: 12, scale: 1.1 }} className="w-20 h-20 bg-black rounded-3xl flex items-center justify-center mb-8 shadow-2xl">
+          <Trophy size={40} className="text-[#6EE7B7]" />
         </motion.div>
-      </div>
+        <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter mb-4 leading-none uppercase italic">
+          Miljarden<span className="text-[#059669]">jacht</span>
+        </h1>
+        <p className="text-slate-400 font-bold text-sm md:text-lg mb-10 max-w-sm">Win virtueel goud door je kennis van het recht te bewijzen.</p>
+        <button 
+          onClick={startGame}
+          className="px-10 py-4 bg-black text-[#6EE7B7] rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl flex items-center gap-3"
+        >
+          Start Module <ArrowRight size={18} />
+        </button>
+      </motion.div>
     );
   }
 
-  // ------------------------------------------------------------------
-  // RENDER: GAME & RESULTATEN
-  // ------------------------------------------------------------------
   return (
-    <div 
-        className="w-full h-full min-h-[85vh] flex flex-col overflow-hidden rounded-3xl shadow-sm border border-slate-200 relative"
-        style={{ backgroundColor: COLORS.bg, fontFamily: "'Nunito', sans-serif" }}
-    >
-      <style>
-          {`@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');`}
-      </style>
-      <audio ref={audioRef} src="/spannend.mp3" loop />
+    <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 py-2 md:py-6 relative">
       
-      {/* --- HIDDEN CERTIFICATE --- */}
-      <div style={{ position: 'absolute', left: '-9999px', top: 0 }}>
-        <div 
-          ref={certificateRef} 
-          style={{ 
-            width: '800px', 
-            height: '600px', 
-            background: COLORS.dark,
-            display: 'flex', 
-            flexDirection: 'column', 
-            alignItems: 'center', 
-            justifyContent: 'center', 
-            padding: '40px',
-            border: `14px solid ${COLORS.mint}`,
-            borderRadius: '0px',
-            fontFamily: "'Fredoka', sans-serif",
-            position: 'relative',
-            color: 'white'
-          }}
-        >
-          <div style={{ position: 'absolute', top: '40px' }}>
-             <div style={{ backgroundColor: COLORS.mint, padding: '15px', borderRadius: '20px', border: `4px solid ${COLORS.dark}` }}>
-                <Award size={50} color={COLORS.dark} />
-             </div>
+      {/* LADDER SIDEBAR */}
+      <div className="lg:col-span-3 order-2 lg:order-1">
+        <div className="bg-white border border-slate-100 rounded-[2.5rem] p-5 shadow-sm sticky top-20">
+          <h3 className="text-[9px] font-black uppercase tracking-[0.3em] text-slate-300 mb-6 text-center italic">Status Ladder</h3>
+          <div className="space-y-1.5 flex flex-col-reverse">
+            {MONEY_LADDER.map((amount, i) => (
+              <div 
+                key={i}
+                className={`flex justify-between items-center p-2.5 rounded-xl border transition-all duration-500 ${
+                  i === currentIdx ? 'bg-black border-[#6EE7B7] text-[#6EE7B7] scale-105 shadow-md' :
+                  i < currentIdx ? 'bg-[#6EE7B7]/10 border-transparent text-[#059669] opacity-60' :
+                  'bg-slate-50 border-transparent text-slate-300'
+                }`}
+              >
+                <span className="text-[9px] font-black italic">{i + 1}</span>
+                <span className="text-xs font-black tracking-tight">{amount}</span>
+              </div>
+            ))}
           </div>
-          <div style={{ height: '4px', background: COLORS.mint, width: '120px', marginTop: '100px', marginBottom: '40px' }}></div>
-          <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '20px', fontWeight: '800', marginBottom: '50px', color: COLORS.mint }}>LAWBOOKS PREMIUM</p>
-          <h2 style={{ fontSize: '56px', fontWeight: '900', margin: '0' }}>SCORE: {currentIdx}/12</h2>
-          <h2 style={{ color: COLORS.mint, fontSize: '80px', fontWeight: '900', margin: '10px 0' }}>{MONEY_LADDER[currentIdx - 1] || "€ 0"}</h2>
-          <p style={{ fontSize: '24px', marginTop: '50px', fontWeight: '600', color: '#9CA3AF', fontFamily: "'Nunito', sans-serif" }}>SR Miljoenenjacht</p>
         </div>
       </div>
 
-      {/* Progress Bar Top */}
-      <div className="w-full h-1.5 bg-slate-200 relative z-20">
-        <motion.div 
-          className="h-full"
-          style={{ backgroundColor: COLORS.mint }}
-          initial={{ width: 0 }} 
-          animate={{ width: `${progress}%` }} 
-        />
-      </div>
+      {/* GAME ENGINE AREA */}
+      <div className="lg:col-span-9 order-1 lg:order-2 flex flex-col gap-6">
+        <AnimatePresence mode="wait">
+          
+          {/* 1. TRANSITION */}
+          {gameState === 'transitioning' ? (
+            <motion.div 
+              key="trans" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
+              className="flex-1 flex flex-col items-center justify-center min-h-[350px] text-center"
+            >
+              <p className="text-[#059669] font-black uppercase tracking-widest text-[10px] mb-4">Mijlpaal Bereikt</p>
+              <h2 className="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter italic">{MONEY_LADDER[currentIdx]}</h2>
+              <Zap size={40} className="text-[#6EE7B7] mt-6 animate-pulse" />
+            </motion.div>
 
-      <div className="flex-1 flex flex-col lg:flex-row relative">
-        
-        {/* --- MAIN GAME AREA --- */}
-        <div className="flex-1 flex flex-col items-center p-6 lg:p-10 relative z-10 overflow-y-auto">
-          <div className="flex-grow max-h-[8vh] lg:max-h-[12vh]"></div>
-
-          <AnimatePresence mode="wait">
-            
-            {/* 1. TRANSITIE SCHERM */}
-            {gameState === 'transitioning' ? (
-              <motion.div 
-                key="trans" 
-                initial={{ scale: 0.8, opacity: 0 }} 
-                animate={{ scale: 1, opacity: 1 }} 
-                exit={{ scale: 1.1, opacity: 0 }} 
-                className="text-center my-auto"
-              >
-                <p className="font-black uppercase tracking-widest text-sm mb-4" style={{ color: COLORS.mintDark, fontFamily: "'Fredoka', sans-serif" }}>Volgend Niveau</p>
-                <motion.h2 
-                  animate={{ scale: [1, 1.05, 1] }} 
-                  transition={{ repeat: Infinity, duration: 1.5 }} 
-                  className="text-7xl md:text-9xl font-black text-slate-900"
-                  style={{ fontFamily: "'Fredoka', sans-serif", textShadow: `4px 4px 0px ${COLORS.mint}44` }}
-                >
-                  {MONEY_LADDER[currentIdx]}
-                </motion.h2>
-              </motion.div>
-
-            /* 2. SPEEL SCHERM (VRAAG) */
-            ) : gameState === 'playing' && questions[currentIdx] ? (
-              <motion.div 
-                key={currentIdx} 
-                initial={{ y: 20, opacity: 0 }} 
-                animate={{ y: 0, opacity: 1 }} 
-                exit={{ y: -20, opacity: 0 }} 
-                className="w-full max-w-4xl flex flex-col items-center"
-              >
-                {/* VRAAG KAART */}
-                <div className="w-full bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden mb-8 relative">
-                  {/* Timer Bar */}
-                  <div className="h-1.5 w-full bg-slate-100 absolute top-0 left-0">
-                    <motion.div 
-                      className="h-full"
-                      style={{ 
-                          backgroundColor: evaluation === 'correct' ? COLORS.success : evaluation === 'wrong' ? COLORS.error : COLORS.mint 
-                      }}
-                      initial={{ width: "100%" }} 
-                      animate={{ width: `${(timeLeft / 25) * 100}%` }} 
-                      transition={{ duration: 0.1, ease: "linear" }} 
-                    />
-                  </div>
-                  
-                  <div className="p-8 md:p-12 text-center">
-                    <div className="flex justify-between items-center mb-6">
-                      <span className="px-3 py-1 rounded-md bg-slate-100 text-[11px] font-black text-slate-500 uppercase tracking-widest" style={{ fontFamily: "'Fredoka', sans-serif" }}>
-                        Vraag {currentIdx + 1} / 12
-                      </span>
-                      <div className="flex items-center gap-1 font-bold text-sm" style={{ color: COLORS.mintDark, fontFamily: "'Fredoka', sans-serif" }}>
-                        <Timer size={16} style={{ color: COLORS.mint }} /> {Math.ceil(timeLeft)}s
-                      </div>
-                    </div>
-                    <h2 className="text-3xl md:text-4xl font-black leading-tight text-slate-900" style={{ fontFamily: "'Nunito', sans-serif" }}>
-                      {questions[currentIdx].q}
-                    </h2>
+          /* 2. PLAYING */
+          ) : gameState === 'playing' ? (
+            <motion.div key="play" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} className="space-y-4 md:space-y-6">
+              <div className="bg-white border border-slate-100 rounded-[2.5rem] md:rounded-[3.5rem] p-8 md:p-12 shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1.5 bg-slate-50">
+                  <motion.div 
+                    initial={{ width: "100%" }}
+                    animate={{ width: `${(timeLeft / 25) * 100}%` }}
+                    transition={{ duration: 0.1, ease: "linear" }}
+                    className="h-full bg-[#6EE7B7] shadow-[0_0_15px_#6EE7B7]"
+                  />
+                </div>
+                <div className="flex justify-between items-center mb-6 md:mb-10">
+                  <span className="px-4 py-1.5 rounded-full bg-slate-50 text-[9px] font-black text-slate-400 uppercase tracking-widest border border-slate-100">
+                    Vraag {currentIdx + 1}
+                  </span>
+                  <div className="flex items-center gap-2 text-slate-900 font-black text-sm md:text-base italic">
+                    <Timer size={18} className="text-[#6EE7B7]" /> {Math.ceil(timeLeft)}s
                   </div>
                 </div>
+                <h2 className="text-xl md:text-3xl font-black text-slate-900 tracking-tight leading-[1.15]">
+                  {questions[currentIdx]?.q}
+                </h2>
+              </div>
 
-                {/* ANTWOORDEN GRID */}
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {questions[currentIdx]?.options && questions[currentIdx].options.map((opt, i) => {
-                    const isCorrect = i === questions[currentIdx].correct;
-                    const isSelected = selected === i;
-                    
-                    let btnStyle = { 
-                        backgroundColor: '#FFFFFF', 
-                        borderColor: '#E2E8F0', 
-                        color: '#1F293B', 
-                        fontFamily: "'Nunito', sans-serif",
-                        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)'
-                    };
-                    let badgeStyle = {
-                        backgroundColor: '#F1F5F9', 
-                        color: '#64748B', 
-                        fontFamily: "'Fredoka', sans-serif"
-                    };
-
-                    if (isSelected && evaluation === 'thinking') {
-                         btnStyle = { ...btnStyle, backgroundColor: COLORS.dark, borderColor: COLORS.mint, color: 'white', transform: 'scale(0.99)' };
-                         badgeStyle = { backgroundColor: COLORS.mint, color: COLORS.dark };
-                    }
-                    if (evaluation === 'correct' && isCorrect) {
-                        btnStyle = { ...btnStyle, backgroundColor: COLORS.success, borderColor: COLORS.success, color: 'white', transform: 'scale(1.02)' };
-                        badgeStyle = { backgroundColor: 'rgba(255,255,255,0.2)', color: 'white' };
-                    }
-                    if (evaluation === 'wrong' && isSelected && !isCorrect) {
-                        btnStyle = { ...btnStyle, backgroundColor: COLORS.error, borderColor: COLORS.error, color: 'white' };
-                        badgeStyle = { backgroundColor: 'rgba(255,255,255,0.2)', color: 'white' };
-                    }
-                    if (selected !== null && !isSelected && !(evaluation === 'correct' && isCorrect)) {
-                        btnStyle = { ...btnStyle, opacity: 0.4, filter: 'grayscale(100%)', pointerEvents: 'none', borderColor: 'transparent' };
-                    }
-
-                    return (
-                      <motion.button 
-                        key={i} 
-                        disabled={selected !== null} 
-                        onClick={() => handleAnswer(i)} 
-                        whileHover={selected === null ? { y: -2, boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' } : {}}
-                        animate={evaluation === 'wrong' && isSelected ? { x: [-4, 4, -4, 4, 0] } : {}} 
-                        className="p-5 rounded-xl border-2 transition-all text-left flex items-center gap-4"
-                        style={btnStyle}
-                      >
-                        <span 
-                            className="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-lg font-black text-sm transition-colors shadow-sm"
-                            style={badgeStyle}
-                        >
-                          {String.fromCharCode(65 + i)}
-                        </span>
-                        <span className="font-bold text-lg leading-snug">{opt}</span>
-                      </motion.button>
-                    );
-                  })}
-                </div>
+              <motion.div initial="initial" animate="enter" className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                {questions[currentIdx]?.options.map((opt, i) => (
+                  <AnswerOption 
+                    key={i} i={i} index={i} opt={opt} 
+                    selected={selected} evaluation={evaluation}
+                    onClick={handleAnswer} disabled={selected !== null}
+                  />
+                ))}
               </motion.div>
+            </motion.div>
 
-            /* 3. VERLOREN SCHERM */
-            ) : gameState === 'lost' ? (
-              <motion.div 
-                initial={{ scale: 0.9, opacity: 0 }} 
-                animate={{ scale: 1, opacity: 1 }} 
-                className="text-center w-full max-w-lg bg-white p-10 rounded-3xl shadow-xl border-t-8 my-auto"
-                style={{ borderColor: COLORS.error }}
-              >
-                <h2 className="text-4xl mb-2 font-black" style={{ color: COLORS.error, fontFamily: "'Fredoka', sans-serif" }}>Helaas...</h2>
-                <p className="text-slate-400 text-sm mb-6 uppercase tracking-widest font-bold" style={{ fontFamily: "'Fredoka', sans-serif" }}>
-                  Je eindigt met
-                </p>
-                <div className="text-5xl font-black text-slate-900 mb-8" style={{ fontFamily: "'Fredoka', sans-serif" }}>
+          /* 3. LOST WITH BENTO FEEDBACK */
+          ) : gameState === 'lost' ? (
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="space-y-6">
+              <div className="bg-white border border-slate-100 rounded-[3rem] p-10 shadow-2xl text-center relative overflow-hidden">
+                <div className="absolute top-0 inset-x-0 h-2 bg-red-500" />
+                <h2 className="text-4xl font-black text-red-500 mb-2 uppercase italic tracking-tighter">Helaas...</h2>
+                <p className="text-slate-400 font-bold uppercase tracking-widest text-[9px] mb-4">Eindscore</p>
+                <div className="text-6xl font-black text-slate-900 tracking-tighter mb-8">
                   {currentIdx > 0 ? MONEY_LADDER[currentIdx-1] : "€ 0"}
                 </div>
-                
-                {questions[currentIdx] && (
-                  <div className="bg-slate-50 p-6 rounded-xl mb-8 text-left border-l-4" style={{ borderColor: COLORS.mintDark }}>
-                    <p className="text-xs text-slate-400 uppercase font-bold mb-1" style={{ fontFamily: "'Fredoka', sans-serif" }}>Het juiste antwoord was:</p>
-                    <p className="font-bold text-slate-900 mb-2">{questions[currentIdx].options[questions[currentIdx].correct]}</p>
-                    <p className="text-slate-600 text-sm leading-relaxed font-medium">{questions[currentIdx]?.basis}</p>
+
+                <div className="bg-slate-50 border border-slate-100 rounded-[2rem] p-6 text-left relative overflow-hidden">
+                  <div className="flex items-center gap-3 mb-4 text-slate-400">
+                    <AlertCircle size={18} className="text-red-500" />
+                    <span className="text-[9px] font-black uppercase tracking-widest">Legale Feedback</span>
                   </div>
-                )}
-
-                <div className="space-y-3">
-                  {currentIdx >= 4 && (
-                    <button 
-                        onClick={handleShare} 
-                        className="w-full py-3 rounded-lg font-bold uppercase text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
-                        style={{ backgroundColor: COLORS.mint, color: COLORS.dark, fontFamily: "'Fredoka', sans-serif" }}
-                    >
-                      <Share2 size={18} /> Deel resultaat
-                    </button>
-                  )}
-                  {/* --- AANGEPASTE KNOP --- */}
-                  <button 
-                    onClick={startGame} 
-                    className="w-full py-3 rounded-lg font-bold uppercase text-sm hover:bg-black transition-colors"
-                    style={{ 
-                      backgroundColor: COLORS.dark, 
-                      color: COLORS.mint, // MINT TEKST!
-                      fontFamily: "'Fredoka', sans-serif" 
-                    }}
-                  >
-                    Nieuwe poging
-                  </button>
+                  <p className="text-slate-900 font-black text-sm mb-2 italic">Correct antwoord:</p>
+                  <div className="bg-[#6EE7B7]/10 border border-[#6EE7B7]/30 p-4 rounded-xl mb-4">
+                    <p className="text-[#059669] font-black text-base italic leading-tight">
+                      {questions[currentIdx]?.options[questions[currentIdx].correct]}
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 size={16} className="text-[#6EE7B7] mt-0.5 shrink-0" />
+                    <p className="text-slate-500 text-xs leading-relaxed font-medium">
+                      <span className="text-slate-900 font-bold">Basis:</span> {questions[currentIdx]?.basis || "Zie relevante wetgeving en jurisprudentie voor de onderbouwing."}
+                    </p>
+                  </div>
                 </div>
-              </motion.div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <button onClick={handleShare} className="py-4 bg-[#6EE7B7] text-black rounded-2xl font-black uppercase tracking-widest text-[10px] flex items-center justify-center gap-2"><Share2 size={16} /> Deel</button>
+                <button onClick={startGame} className="py-4 bg-black text-[#6EE7B7] rounded-2xl font-black uppercase tracking-widest text-[10px] flex items-center justify-center gap-2"><RotateCcw size={16} /> Opnieuw</button>
+              </div>
+            </motion.div>
 
-            /* 4. GEWONNEN SCHERM */
-            ) : gameState === 'won' ? (
-              <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center my-auto">
-                <div className="mb-6 inline-block p-6 rounded-full" style={{ backgroundColor: `${COLORS.mint}33` }}>
-                  <Trophy size={64} style={{ color: COLORS.mintDark }} />
-                </div>
-                <h2 className="text-6xl md:text-8xl mb-4 text-slate-900 font-black tracking-tight" style={{ fontFamily: "'Fredoka', sans-serif", textShadow: `4px 4px 0px ${COLORS.mint}44` }}>MILJONAIR!</h2>
-                <p className="text-xl mb-12 font-bold uppercase tracking-widest" style={{ color: COLORS.mintDark, fontFamily: "'Fredoka', sans-serif" }}>
-                  Gefeliciteerd, alle vragen goed!
-                </p>
-                
-                <div className="flex flex-col md:flex-row gap-4 justify-center">
-                   <button 
-                        onClick={handleShare} 
-                        className="px-8 py-4 rounded-xl font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-lg flex items-center justify-center gap-2"
-                        style={{ backgroundColor: COLORS.mint, color: COLORS.dark, fontFamily: "'Fredoka', sans-serif" }}
-                    >
-                      <Share2 size={20} /> Deel Winst
-                   </button>
-                   <button 
-                        onClick={startGame} 
-                        className="px-8 py-4 rounded-xl font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-lg"
-                        style={{ 
-                          backgroundColor: COLORS.dark, 
-                          color: COLORS.mint, // MINT TEKST!
-                          fontFamily: "'Fredoka', sans-serif" 
-                        }}
-                    >
-                      Opnieuw Spelen
-                   </button>
-                </div>
-              </motion.div>
-            ) : null}
-          </AnimatePresence>
-          
-          {/* Spacer bottom */}
-          <div className="flex-grow"></div>
-        </div>
-
-        {/* --- LADDER SIDEBAR --- */}
-        <div className="w-64 bg-white border-l border-slate-200 hidden lg:flex flex-col-reverse justify-center py-8 px-6 gap-2 relative z-20">
-          <div className="absolute top-0 left-0 right-0 bg-slate-50 py-4 text-center border-b border-slate-100">
-            <span className="text-xs font-black uppercase tracking-widest text-slate-400" style={{ fontFamily: "'Fredoka', sans-serif" }}>Ladder</span>
-          </div>
-          {MONEY_LADDER.map((amount, index) => {
-            const isCurrent = index === currentIdx;
-            const isDone = index < currentIdx;
-            
-            let divStyle = { color: '#CBD5E1', fontFamily: "'Fredoka', sans-serif" }; // Slate-300
-            let numStyle = {};
-
-            if (isDone) {
-                divStyle = { ...divStyle, color: COLORS.mintDark, backgroundColor: `${COLORS.mint}1A` };
-            }
-
-            if (isCurrent) {
-                divStyle = { ...divStyle, backgroundColor: COLORS.dark, color: 'white', fontWeight: 'bold', transform: 'scale(1.05)', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' };
-                numStyle = { color: COLORS.mint };
-            }
-
-            return (
-              <motion.div 
-                key={amount} 
-                animate={isCurrent ? { x: 5 } : { x: 0 }} 
-                className="flex justify-between items-center py-2.5 px-4 rounded-xl transition-all border-2 border-transparent"
-                style={divStyle}
-              >
-                <span className="text-sm font-bold" style={numStyle}>{index + 1}</span>
-                <span className="text-base font-bold tracking-wide">{amount}</span>
-              </motion.div>
-            );
-          })}
-        </div>
+          /* 4. WON */
+          ) : (
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="bg-black text-white rounded-[3rem] p-12 text-center shadow-2xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-12 opacity-10"><Trophy size={180} /></div>
+              <Trophy size={64} className="text-[#6EE7B7] mx-auto mb-6 animate-bounce" />
+              <h2 className="text-5xl md:text-7xl font-black uppercase italic mb-2 tracking-tighter">Miljonair!</h2>
+              <p className="text-[#6EE7B7] font-black uppercase tracking-widest text-[10px] mb-8 italic">Perfecte Score</p>
+              <div className="text-7xl md:text-9xl font-black text-white mb-12 tracking-tighter">€ 1M</div>
+              <div className="flex flex-wrap justify-center gap-4">
+                <button onClick={startGame} className="px-12 py-5 bg-[#6EE7B7] text-black rounded-2xl font-black uppercase tracking-widest text-xs shadow-[0_0_30px_#6EE7B7]">Nieuwe Uitdaging</button>
+                <button onClick={handleShare} className="px-12 py-5 bg-white/10 text-white rounded-2xl font-black uppercase tracking-widest text-xs border border-white/10">Download Award</button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
 };
 
-export default Miljoenenjacht;
+export default Miljardenjacht;

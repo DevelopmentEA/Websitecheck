@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation, Outlet } from 'react-router-dom';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { Scale, BookOpen, Gavel, ArrowLeft, Play, Award, BrainCircuit, Zap, Target } from 'lucide-react';
+import { Scale, BookOpen, Gavel, ArrowLeft, Play, Award, BrainCircuit, Zap, Target, AlertTriangle } from 'lucide-react';
 
 // Pagina imports
 import TopicOne from './pages/TopicOne';     
@@ -13,7 +13,46 @@ import DonateButton from './pages/Button';
 
 const transition = { duration: 0.5, ease: [0.22, 1, 0.36, 1] };
 
-// --- PERFORMANCE CHECK ---
+// --- 1. SECURITY CHECK ---
+const SecurityWrapper = ({ children }) => {
+  const [isAuthorized, setIsAuthorized] = useState(true);
+
+  useEffect(() => {
+    const referrer = document.referrer;
+    const isIframe = window.self !== window.top;
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    // Check of het Lawbooks.online is
+    const isLawbooks = referrer.includes('lawbooks.online');
+
+    // Als het een iframe is, maar NIET van lawbooks en NIET lokaal (voor dev), dan blokkeren
+    if (isIframe && !isLawbooks && !isLocal) {
+      setIsAuthorized(false);
+    }
+  }, []);
+
+  if (!isAuthorized) {
+    return (
+      <div className="h-screen w-full bg-black flex items-center justify-center p-6 text-center">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }} 
+          animate={{ opacity: 1, scale: 1 }}
+          className="max-w-md p-10 rounded-[3rem] border border-red-500/30 bg-red-500/5 backdrop-blur-xl"
+        >
+          <AlertTriangle size={64} className="text-red-500 mx-auto mb-6 animate-pulse" />
+          <h2 className="text-white font-black text-2xl uppercase tracking-tighter mb-4">Toegang Geweigerd</h2>
+          <p className="text-red-400 font-bold text-sm leading-relaxed">
+            Dit mag niet - Je IP adres wordt opgeslagen en wellicht onderzocht.
+          </p>
+        </motion.div>
+      </div>
+    );
+  }
+
+  return children;
+};
+
+// --- 2. PERFORMANCE CHECK ---
 const usePerformanceMode = () => {
   const [isLowPower, setIsLowPower] = useState(false);
   useEffect(() => {
@@ -23,7 +62,7 @@ const usePerformanceMode = () => {
   return isLowPower;
 };
 
-// --- ACHTERGROND: PULSEREND BLOK ---
+// --- 3. ACHTERGROND: PULSEREND BLOK ---
 const BackgroundPulsator = ({ isLowPower }) => (
   <div className="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none">
     <motion.div
@@ -35,7 +74,7 @@ const BackgroundPulsator = ({ isLowPower }) => (
   </div>
 );
 
-// --- COMPACTE TILT CARD ---
+// --- 4. COMPACTE TILT CARD ---
 const TiltCard = ({ title, desc, icon: Icon, to, index }) => {
   const navigate = useNavigate();
   const isLowPower = usePerformanceMode();
@@ -80,7 +119,7 @@ const TiltCard = ({ title, desc, icon: Icon, to, index }) => {
   );
 };
 
-// --- HET DASHBOARD ---
+// --- 5. DASHBOARD ---
 const Dashboard = () => {
   const isLowPower = usePerformanceMode();
 
@@ -115,46 +154,48 @@ const Dashboard = () => {
   );
 };
 
-// --- MAIN LAYOUT ---
+// --- 6. MAIN LAYOUT ---
 const MainLayout = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isDashboard = location.pathname === '/';
 
   return (
-    <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative">
-      <AnimatePresence mode="wait">
-        <motion.div 
-          key={location.pathname + "-loader"}
-          initial={{ width: "0%" }} animate={{ width: "100%" }} exit={{ opacity: 0 }}
-          className="fixed top-0 left-0 h-[2px] bg-[#6EE7B7] z-[60]"
-        />
-      </AnimatePresence>
-
-      {!isDashboard && (
-        <motion.div initial={{ y: -20 }} animate={{ y: 0 }} className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 px-6 py-3 flex items-center justify-between">
-          <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-900 font-black text-[9px] uppercase tracking-widest">
-            <ArrowLeft size={14} /> Dashboard
-          </button>
-          <div className="flex items-center gap-2 font-black italic text-xs tracking-tighter uppercase"><Scale size={16} className="text-[#6EE7B7]" /> Lawbooks</div>
-        </motion.div>
-      )}
-
-      <main className={`relative ${!isDashboard ? 'pt-20' : ''}`}>
+    <SecurityWrapper>
+      <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative">
         <AnimatePresence mode="wait">
-          <motion.div
-            key={location.pathname}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={transition}
-          >
-            <Outlet />
-          </motion.div>
+          <motion.div 
+            key={location.pathname + "-loader"}
+            initial={{ width: "0%" }} animate={{ width: "100%" }} exit={{ opacity: 0 }}
+            className="fixed top-0 left-0 h-[2px] bg-[#6EE7B7] z-[60]"
+          />
         </AnimatePresence>
-      </main>
-      <DonateButton />
-    </div>
+
+        {!isDashboard && (
+          <motion.div initial={{ y: -20 }} animate={{ y: 0 }} className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 px-6 py-3 flex items-center justify-between">
+            <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-900 font-black text-[9px] uppercase tracking-widest">
+              <ArrowLeft size={14} /> Dashboard
+            </button>
+            <div className="flex items-center gap-2 font-black italic text-xs tracking-tighter uppercase"><Scale size={16} className="text-[#6EE7B7]" /> Lawbooks</div>
+          </motion.div>
+        )}
+
+        <main className={`relative ${!isDashboard ? 'pt-20' : ''}`}>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={location.pathname}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={transition}
+            >
+              <Outlet />
+            </motion.div>
+          </AnimatePresence>
+        </main>
+        <DonateButton />
+      </div>
+    </SecurityWrapper>
   );
 };
 
