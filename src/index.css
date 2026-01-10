@@ -1,73 +1,19 @@
-/* 1. TAILWIND & FONTS */
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
 
 :root {
-<<<<<<< HEAD
-  /* LAWBOOKS BRANDING */
   --mint: #6EE7B7;
   --dark: #1F2937;
   --bg-gray: #F9FAFB;
-  --white: #FFFFFF;
-  
-  /* UI SETTINGS */
-=======
-  /* LAWBOOKS KLEURENSCHEMA */
-  --lawbooks-green: #6EE7B7;
-  --lawbooks-dark: #1F2937;
-  --lawbooks-gray: #F9FAFB;
-  --white: #FFFFFF;
-  --border-color: #E5E7EB;
-
-  /* Font settings */
->>>>>>> 1d6bd31885c81de89a4c63b93a83452b7f65ebe3
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-}
-
-/* 2. IFRAME & MOBILE OPTIMIZATION */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
-  /* Voorkomt 'bouncing' en dubbele scrollbars in iframes */
-  overflow-x: hidden;
-<<<<<<< HEAD
-  background-color: var(--bg-gray);
-  /* Zorgt voor native-feel scrolling op mobiel */
-  -webkit-overflow-scrolling: touch;
-=======
-  background-color: var(--lawbooks-gray);
->>>>>>> 1d6bd31885c81de89a4c63b93a83452b7f65ebe3
-}
-
-#root {
-  width: 100%;
-  min-height: 100vh;
-}
-
-<<<<<<< HEAD
-/* 3. NEW GEN TYPOGRAPHY */
-h1, h2, h3 {
-  letter-spacing: -0.04em;
-=======
-/* 4. TYPOGRAFIE */
-h1 {
   font-family: 'Inter', sans-serif;
-  color: var(--lawbooks-dark);
-  font-size: clamp(1.5rem, 5vw, 2.2rem); 
-  line-height: 1.3;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 2rem;
-  letter-spacing: -0.02em;
->>>>>>> 1d6bd31885c81de89a4c63b93a83452b7f65ebe3
+  font-size: 14px; /* Iets kleiner basisfont voor compacte look */
 }
 
-/* De glanzende gradient tekst uit je App.jsx */
+@media (min-width: 768px) {
+  :root { font-size: 16px; }
+}
+
+h1, h2, h3 { letter-spacing: -0.04em; }
+
 .text-gradient {
   background: linear-gradient(to right, #059669, #6EE7B7, #059669);
   background-size: 200% auto;
@@ -76,90 +22,20 @@ h1 {
   animation: shine 4s linear infinite;
 }
 
-<<<<<<< HEAD
 @keyframes shine {
   to { background-position: 200% center; }
 }
 
-/* 4. MINT SCROLLBAR (Premium Detail) */
-=======
-/* BELANGRIJK: IK HEB HIER DE GLOBALE BUTTON STYLES VERWIJDERD.
-   We laten Tailwind in het component nu het werk doen.
-*/
-
-/* 5. HULPKLASSEN */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.animate-gradient {
+  background: linear-gradient(to right, #059669, #6EE7B7, #059669);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
 }
 
-/* Scrollbar styling */
->>>>>>> 1d6bd31885c81de89a4c63b93a83452b7f65ebe3
-::-webkit-scrollbar {
-  width: 6px;
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--mint); border-radius: 10px; }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--mint);
-  border-radius: 10px;
-}
-
-/* 5. INTERACTIEVE ELEMENTEN */
-button, .card {
-  /* Voorkom grijze box bij tikken op mobiel */
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
-}
-
-<<<<<<< HEAD
-/* Glassmorphism utility voor als je kaarten meer diepte wilt geven */
-.glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(110, 231, 183, 0.2);
-}
-
-/* 6. RESPONSIVE UTILITIES */
-@media (max-width: 768px) {
-  /* Maak tekst iets compacter voor mobiele schermen in iframes */
-  .quiz-container {
-    padding: 1rem !important;
-  }
-  
-  /* Schakel zware schaduwen uit op mobiel voor betere FPS */
-  .shadow-2xl {
-    shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  }
-}
-
-/* 7. DARK MODE SUPPORT (Optioneel) */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #020617; /* Deep Navy Black */
-    color: #F8FAFC;
-=======
-/* 6. DARK MODE */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --lawbooks-dark: #F3F4F6;
-    --lawbooks-gray: #111827;
-    --white: #1F293B;
-    --border-soft: #374151;
-    
-    color: #F3F4F6;
-    background-color: #111827;
-  }
-  
-  h1, h2, h3 {
-    color: #F9FAFB;
->>>>>>> 1d6bd31885c81de89a4c63b93a83452b7f65ebe3
-  }
-}
+/* Voorkom scrollbars in het iframe waar mogelijk */
+main { overflow-x: hidden; }
