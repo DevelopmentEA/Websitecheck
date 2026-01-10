@@ -13,6 +13,21 @@ import DonateButton from './pages/Button';
 
 const transition = { duration: 0.5, ease: [0.22, 1, 0.36, 1] };
 
+const pageVariants = {
+  initial: { opacity: 0, scale: 0.98, y: 10 },
+  enter: { 
+    opacity: 1, 
+    scale: 1, 
+    y: 0, 
+    transition: { 
+      ...transition, 
+      when: "beforeChildren", 
+      staggerChildren: 0.05 
+    } 
+  },
+  exit: { opacity: 0, scale: 0.95, y: -10, transition: { duration: 0.3 } }
+};
+
 // --- 1. SECURITY CHECK ---
 const SecurityWrapper = ({ children }) => {
   const [isAuthorized, setIsAuthorized] = useState(true);
@@ -22,14 +37,9 @@ const SecurityWrapper = ({ children }) => {
     const isIframe = window.self !== window.top;
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     
-    // Check of het Lawbooks.online is
-// Maak een lijst van toegestane domeinen
     const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
-
-// Check of de referrer één van deze domeinen bevat
     const isLawbooks = allowedDomains.some(domain => referrer.includes(domain));
 
-    // Als het een iframe is, maar NIET van lawbooks en NIET lokaal (voor dev), dan blokkeren
     if (isIframe && !isLawbooks && !isLocal) {
       setIsAuthorized(false);
     }
@@ -37,14 +47,14 @@ const SecurityWrapper = ({ children }) => {
 
   if (!isAuthorized) {
     return (
-      <div className="h-screen w-full bg-black flex items-center justify-center p-6 text-center">
+      <div className="h-screen w-full bg-[#050505] flex items-center justify-center p-6 text-center">
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }} 
           animate={{ opacity: 1, scale: 1 }}
           className="max-w-md p-10 rounded-[3rem] border border-red-500/30 bg-red-500/5 backdrop-blur-xl"
         >
           <AlertTriangle size={64} className="text-red-500 mx-auto mb-6 animate-pulse" />
-          <h2 className="text-white font-black text-2xl uppercase tracking-tighter mb-4">Toegang Geweigerd</h2>
+          <h2 className="text-white font-black text-2xl uppercase tracking-tighter mb-4 italic">Toegang Geweigerd</h2>
           <p className="text-red-400 font-bold text-sm leading-relaxed">
             Dit mag niet - Je IP adres wordt opgeslagen en wellicht onderzocht.
           </p>
@@ -56,7 +66,7 @@ const SecurityWrapper = ({ children }) => {
   return children;
 };
 
-// --- 2. PERFORMANCE CHECK ---
+// --- 2. PERFORMANCE MODE ---
 const usePerformanceMode = () => {
   const [isLowPower, setIsLowPower] = useState(false);
   useEffect(() => {
@@ -66,7 +76,7 @@ const usePerformanceMode = () => {
   return isLowPower;
 };
 
-// --- 3. ACHTERGROND: PULSEREND BLOK ---
+// --- 3. ACHTERGROND ELEMENT ---
 const BackgroundPulsator = ({ isLowPower }) => (
   <div className="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none">
     <motion.div
@@ -78,7 +88,7 @@ const BackgroundPulsator = ({ isLowPower }) => (
   </div>
 );
 
-// --- 4. COMPACTE TILT CARD ---
+// --- 4. TILT CARD COMPONENT ---
 const TiltCard = ({ title, desc, icon: Icon, to, index }) => {
   const navigate = useNavigate();
   const isLowPower = usePerformanceMode();
@@ -123,14 +133,16 @@ const TiltCard = ({ title, desc, icon: Icon, to, index }) => {
   );
 };
 
-// --- 5. DASHBOARD ---
+// --- 5. DASHBOARD COMPONENT ---
 const Dashboard = () => {
   const isLowPower = usePerformanceMode();
 
   return (
     <motion.div 
-      initial="initial" animate="enter" exit="exit"
-      variants={{ exit: { opacity: 0, scale: 0.95, transition } }}
+      variants={pageVariants}
+      initial="initial" 
+      animate="enter" 
+      exit="exit"
       className="max-w-6xl mx-auto py-8 md:py-12 px-4 md:px-8 relative"
     >
       <BackgroundPulsator isLowPower={isLowPower} />
@@ -140,25 +152,31 @@ const Dashboard = () => {
           <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="flex items-center gap-2 text-[#059669] mb-3">
             <Target size={14} /> <span className="text-[9px] font-black uppercase tracking-[0.3em]">Lawbooks Neo 2026</span>
           </motion.div>
-          <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tighter leading-none">
-            Kies je <span className="animate-gradient">Oefentool</span>
+          {/* AANGEPAST: leading-tight en pr-2 toegevoegd om wegvallen van de 'L' te voorkomen */}
+          <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tighter leading-tight italic">
+            Kies je <span className="animate-gradient text-transparent bg-clip-text pr-2">Oefentool</span>
           </h1>
           <p className="mt-4 text-slate-500 text-sm md:text-base max-w-md">Kies een module om direct te starten met trainen.</p>
         </div>
-        <motion.img whileHover={{ rotate: 5, scale: 1.1 }} src="/foto.jpg" alt="Logo" className="w-16 h-16 md:w-24 md:h-24 rounded-2xl border-2 border-white shadow-xl object-cover shrink-0" />
+        <motion.img 
+          whileHover={{ rotate: 5, scale: 1.1 }} 
+          src="/foto.jpg" 
+          alt="Logo" 
+          className="w-16 h-16 md:w-24 md:h-24 rounded-2xl border-2 border-white shadow-xl object-cover shrink-0" 
+        />
       </div>
 
-      <motion.div variants={{ enter: { transition: { staggerChildren: 0.05 } } }} className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         <TiltCard index={0} title="Strafrecht: Basis" desc="Beheers de fundamenten van het recht." icon={Gavel} to="/SRI" />
         <TiltCard index={1} title="SR: Miljoenenjacht" desc="Interactieve game-show quiz over IPR." icon={BookOpen} to="/SR" />
         <TiltCard index={2} title="Courtroom Rush" desc="Maak beslissingen onder tijdsdruk." icon={BrainCircuit} to="/courtroom-rush" />
         <TiltCard index={3} title="Jurisprudentie" desc="Analyseer de belangrijkste arresten." icon={Award} to="/jurisprudentie" />
-      </motion.div>
+      </div>
     </motion.div>
   );
 };
 
-// --- 6. MAIN LAYOUT ---
+// --- 6. MAIN LAYOUT COMPONENT ---
 const MainLayout = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -166,7 +184,7 @@ const MainLayout = () => {
 
   return (
     <SecurityWrapper>
-      <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative">
+      <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative selection:bg-[#6EE7B7]/30">
         <AnimatePresence mode="wait">
           <motion.div 
             key={location.pathname + "-loader"}
@@ -176,33 +194,38 @@ const MainLayout = () => {
         </AnimatePresence>
 
         {!isDashboard && (
-          <motion.div initial={{ y: -20 }} animate={{ y: 0 }} className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 px-6 py-3 flex items-center justify-between">
-            <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-900 font-black text-[9px] uppercase tracking-widest">
-              <ArrowLeft size={14} /> Dashboard
+          <motion.nav 
+            initial={{ y: -20, opacity: 0 }} 
+            animate={{ y: 0, opacity: 1 }} 
+            className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 px-6 py-3 flex items-center justify-between"
+          >
+            <button 
+              onClick={() => navigate('/')} 
+              className="flex items-center gap-2 text-slate-900 font-black text-[9px] uppercase tracking-widest hover:text-[#059669] transition-colors"
+            >
+              <ArrowLeft size={14} /> Terug naar Dashboard
             </button>
-            <div className="flex items-center gap-2 font-black italic text-xs tracking-tighter uppercase"><Scale size={16} className="text-[#6EE7B7]" /> Lawbooks</div>
-          </motion.div>
+            <div className="flex items-center gap-2 font-black italic text-xs tracking-tighter uppercase">
+              <Scale size={16} className="text-[#6EE7B7]" /> Lawbooks
+            </div>
+          </motion.nav>
         )}
 
         <main className={`relative ${!isDashboard ? 'pt-20' : ''}`}>
           <AnimatePresence mode="wait">
-            <motion.div
-              key={location.pathname}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={transition}
-            >
-              <Outlet />
-            </motion.div>
+            <div key={location.pathname}>
+               <Outlet />
+            </div>
           </AnimatePresence>
         </main>
+        
         <DonateButton />
       </div>
     </SecurityWrapper>
   );
 };
 
+// --- 7. APP ROUTER ---
 const App = () => (
   <Router>
     <Routes>
