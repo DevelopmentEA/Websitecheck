@@ -1,382 +1,499 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Star, Check, X, Trophy, AlertCircle, Scale, Zap, BookOpen, ChevronRight, Info, Play, Clock, Lock as LockIcon, Quote } from 'lucide-react';
-import confetti from 'canvas-confetti';
-import jurisprudenceData from './data.json';
+import { 
+  GitMerge, 
+  CheckCircle2, 
+  XCircle, 
+  ArrowDown, 
+  Scale, 
+  Globe, 
+  BookOpen, 
+  ShieldAlert,
+  HelpCircle,
+  FileText,
+  ChevronDown,
+  ChevronUp,
+  Info,
+  Zap,
+  Gavel,
+  AlertTriangle,
+  UserCheck,
+  Package,
+  Clock,
+  Briefcase
+} from 'lucide-react';
 
 // ==========================================
-// 1. ROBUUSTE MATCHING MODULE
+// HERBRUIKBARE UI-COMPONENTEN
 // ==========================================
-const JurisMatchingModule = ({ pairs, onComplete }) => {
-  const [selectedLeft, setSelectedLeft] = useState(null);
-  const [selectedRight, setSelectedRight] = useState(null);
-  const [matches, setMatches] = useState([]);
-  const [wrongPair, setWrongPair] = useState(null);
 
-  // We shuffelen de items ALLEEN als de paren veranderen
-  const leftItems = useMemo(() => [...pairs].sort(() => Math.random() - 0.5), [pairs]);
-  const rightItems = useMemo(() => [...pairs].sort(() => Math.random() - 0.5), [pairs]);
-
-  const handleLeftClick = (item) => {
-    if (wrongPair || matches.includes(item.term)) return;
-    // Als we al op deze hadden geklikt, deselecteer dan (toggle)
-    if (selectedLeft?.term === item.term) setSelectedLeft(null);
-    else setSelectedLeft(item);
+const DetailDropdown = ({ title, children, color = "blue" }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const colorClasses = {
+    blue: "bg-blue-50 text-blue-800 border-blue-200 hover:bg-blue-100",
+    slate: "bg-slate-50 text-slate-800 border-slate-200 hover:bg-slate-100",
+    emerald: "bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100",
+    amber: "bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100",
+    red: "bg-red-50 text-red-800 border-red-200 hover:bg-red-100",
   };
-
-  const handleRightClick = (itemMatchName) => {
-    if (wrongPair || matches.includes(itemMatchName)) return;
-    // Toggle logica
-    if (selectedRight === itemMatchName) setSelectedRight(null);
-    else setSelectedRight(itemMatchName);
-  };
-
-  // Effect dat de match controleert zodra beide zijden geselecteerd zijn
-  useEffect(() => {
-    if (selectedLeft && selectedRight) {
-      if (selectedLeft.match === selectedRight) {
-        // MATCH: Groen flitsen via matches state
-        const leftTerm = selectedLeft.term;
-        const rightTerm = selectedRight;
-        setMatches(prev => [...prev, leftTerm, rightTerm]);
-        setSelectedLeft(null);
-        setSelectedRight(null);
-      } else {
-        // FOUT: Rood flitsen
-        setWrongPair([selectedLeft.term, selectedRight]);
-        setTimeout(() => {
-          setWrongPair(null);
-          setSelectedLeft(null);
-          setSelectedRight(null);
-        }, 600);
-      }
-    }
-  }, [selectedLeft, selectedRight]);
-
-  useEffect(() => {
-    if (matches.length === pairs.length * 2) {
-      setTimeout(onComplete, 800);
-    }
-  }, [matches, pairs.length, onComplete]);
 
   return (
-    <div className="flex flex-col gap-6 w-full max-w-5xl mx-auto mt-4 px-2">
-      <div className="flex gap-4 sm:gap-10 relative">
-        
-        {/* KOLOM LINKS: RECHTSOVERWEGINGEN */}
-        <div className="flex-1 flex flex-col gap-3 p-5 bg-slate-50/80 rounded-[2.5rem] border border-slate-200/60 shadow-inner">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Quote size={14} className="text-slate-400" />
-            <span className="text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">Rechtsoverweging</span>
-          </div>
-          {leftItems.map((item, i) => {
-            const isMatched = matches.includes(item.term);
-            const isSelected = selectedLeft?.term === item.term;
-            const isWrong = wrongPair?.includes(item.term);
-
-            return (
-              <button
-                key={`left-${i}`}
-                onClick={() => handleLeftClick(item)}
-                className={`w-full p-4 rounded-2xl border-4 text-[10px] sm:text-[12px] leading-tight font-bold text-left transition-all min-h-[100px] flex items-center shadow-sm
-                  ${isMatched ? 'opacity-0 pointer-events-none scale-95' : 
-                    isWrong ? 'border-red-500 bg-red-50 text-red-700 animate-shake shadow-none' : 
-                    isSelected ? 'border-[#C5A059] bg-white text-[#1A365D] shadow-[0_0_20px_rgba(197,160,89,0.3)] scale-[1.03] z-10' : 
-                    'border-transparent bg-white text-slate-600 hover:border-slate-300'}
-                `}
-              >
-                {item.term}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* VISUELE SCHEIDING */}
-        <div className="hidden md:flex flex-col justify-between py-10">
-           <div className="w-px h-full bg-gradient-to-b from-transparent via-slate-200 to-transparent" />
-        </div>
-
-        {/* KOLOM RECHTS: ARRESTEN */}
-        <div className="flex-1 flex flex-col gap-3 p-5 bg-[#1A365D]/5 rounded-[2.5rem] border border-[#1A365D]/10 shadow-inner">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Scale size={14} className="text-[#1A365D]/30" />
-            <span className="text-[11px] font-black uppercase tracking-[0.2em] text-[#1A365D]/40">Arrestnaam</span>
-          </div>
-          {rightItems.map((item, i) => {
-            const isMatched = matches.includes(item.match);
-            const isSelected = selectedRight === item.match;
-            const isWrong = wrongPair?.includes(item.match);
-
-            return (
-              <button
-                key={`right-${i}`}
-                onClick={() => handleRightClick(item.match)}
-                className={`w-full p-4 rounded-2xl border-4 text-[11px] sm:text-[14px] font-black text-center transition-all min-h-[100px] flex items-center justify-center shadow-sm
-                  ${isMatched ? 'opacity-0 pointer-events-none scale-95' : 
-                    isWrong ? 'border-red-500 bg-red-50 text-red-700 animate-shake shadow-none' : 
-                    isSelected ? 'border-[#C5A059] bg-white text-[#1A365D] shadow-[0_0_20px_rgba(197,160,89,0.3)] scale-[1.03] z-10' : 
-                    'border-transparent bg-white text-slate-600 hover:border-slate-300'}
-                `}
-              >
-                {item.match}
-              </button>
-            );
-          })}
-        </div>
-
-      </div>
-    </div>
-  );
-};
-
-// ==========================================
-// 2. QUIZ OVERLAY
-// ==========================================
-const JurisQuizOverlay = ({ session, onClose, onComplete }) => {
-  const [currentIdx, setCurrentIdx] = useState(0);
-  const [gameState, setGameState] = useState('intro');
-  const [selected, setSelected] = useState(null);
-  const [showTip, setShowTip] = useState(false);
-  const [sessionPoints, setSessionPoints] = useState(0);
-  const [startTime, setStartTime] = useState(Date.now());
-
-  const currentCase = session?.questions?.[currentIdx];
-
-  // We memoizen de gameData per index zodat het NIET verandert tijdens het klikken in de matching module
-  const gameData = useMemo(() => {
-    if (gameState !== 'quiz' || !currentCase) return null;
-    
-    // We gebruiken de index om een voorspelbare maar random verdeling te krijgen
-    const seed = (session.step.id * 10) + currentIdx;
-    const rand = (Math.sin(seed) + 1) / 2; // Pseudo-random tussen 0 en 1
-    
-    if (rand < 0.45) {
-      const others = [...jurisprudenceData]
-        .filter(c => c.naam !== currentCase.naam)
-        .sort(() => Math.random() - 0.5)
-        .slice(0, 2);
-      const matchingPairs = [currentCase, ...others].map(c => ({ 
-        term: c.ro_punten[0], 
-        match: c.naam 
-      }));
-      return { type: 'MATCHING', pairs: matchingPairs, prompt: "Koppel de r.o. aan het dossier" };
-    } 
-    else if (rand < 0.75) {
-      const isCorrect = Math.random() > 0.5;
-      const otherPurport = jurisprudenceData.find(c => c.naam !== currentCase.naam).purport;
-      return { type: 'TF', prompt: `Betreft '${currentCase.naam}' dit oordeel?`, content: isCorrect ? currentCase.purport : otherPurport, correctValue: isCorrect };
-    } 
-    const options = [currentCase.quiz.correct, ...currentCase.quiz.distractors].sort(() => Math.random() - 0.5);
-    return { type: 'MC', prompt: currentCase.quiz.vraag, options: options, correctValue: currentCase.quiz.correct };
-  }, [currentIdx, gameState, currentCase, session.step.id]);
-
-  const handleAnswer = (isCorrect) => {
-    if (selected !== null) return;
-    const bonus = Math.max(50, 400 - Math.floor((Date.now() - startTime) / 150));
-    setSelected(isCorrect);
-    if (isCorrect) setSessionPoints(p => p + bonus);
-    setTimeout(() => setShowTip(true), 600);
-  };
-
-  const nextQuestion = () => {
-    if (currentIdx < session.questions.length - 1) {
-      setCurrentIdx(currentIdx + 1);
-      setSelected(null);
-      setShowTip(false);
-      setStartTime(Date.now());
-    } else {
-      setGameState('result');
-    }
-  };
-
-  if (gameState === 'intro') {
-    return (
-      <div className="fixed inset-0 z-[100] bg-[#1A365D] text-white flex flex-col p-10 items-center justify-center text-center">
-        <BookOpen size={64} className="text-[#C5A059] mb-6 animate-pulse" />
-        <h2 className="text-4xl font-serif italic mb-8">Zitting Voorbereiden</h2>
-        <div className="grid gap-3 w-full max-w-sm mb-12">
-          {session.questions.map(q => (
-            <div key={q.id} className="bg-white/5 border border-white/10 p-4 rounded-2xl flex items-center gap-4">
-              <div className="w-2 h-2 rounded-full bg-[#C5A059]" />
-              <span className="font-bold text-sm">{q.naam}</span>
-            </div>
-          ))}
-        </div>
-        <button onClick={() => { setGameState('quiz'); setStartTime(Date.now()); }} className="bg-[#C5A059] text-[#1A365D] px-16 py-5 rounded-[2rem] font-black uppercase tracking-widest flex items-center gap-3 shadow-xl">
-          START DOSSIER <Play fill="currentColor" size={16}/>
-        </button>
-      </div>
-    );
-  }
-
-  if (gameState === 'result') {
-    return (
-      <div className="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center p-10 text-center">
-        <Trophy size={80} className="text-[#C5A059] mb-6" />
-        <h2 className="text-5xl font-black text-[#1A365D] mb-2 uppercase">Dossier Afgerond</h2>
-        <div className="text-7xl font-mono font-bold text-[#1A365D] mb-12">+{sessionPoints}</div>
-        <button onClick={() => onComplete(sessionPoints)} className="bg-[#1A365D] text-white px-20 py-6 rounded-[2rem] font-black uppercase shadow-2xl">SLUITEN</button>
-      </div>
-    );
-  }
-
-  return (
-    <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} exit={{ y: '100%' }} className="fixed inset-0 z-[100] bg-white flex flex-col overflow-hidden">
-      <div className="p-8 flex items-center gap-6 max-w-6xl mx-auto w-full">
-        <X className="text-slate-300 cursor-pointer hover:text-slate-600 transition-colors" onClick={onClose} size={32} />
-        <div className="h-2 flex-1 bg-slate-100 rounded-full overflow-hidden border">
-          <motion.div className="h-full bg-[#C5A059]" animate={{ width: `${(currentIdx / session.questions.length) * 100}%` }} />
-        </div>
-        <div className="font-mono font-bold text-[#C5A059] flex items-center gap-2">
-          <Zap size={16} fill="currentColor" /> {sessionPoints}
-        </div>
-      </div>
-
-      <div className="flex-1 flex flex-col justify-center max-w-6xl mx-auto w-full px-8 overflow-y-auto pb-20 no-scrollbar">
-        {gameData?.type === 'MATCHING' ? (
-          <>
-            <div className="text-center mb-4">
-              <h2 className="text-2xl font-serif italic text-[#1A365D]">{gameData.prompt}</h2>
-            </div>
-            <JurisMatchingModule key={currentIdx} pairs={gameData.pairs} onComplete={() => handleAnswer(true)} />
-          </>
-        ) : gameData ? (
-          <>
-            <div className="text-center mb-10">
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#C5A059] mb-4 block">{gameData.type === 'MC' ? 'Multiple Choice' : 'Oordeel'}</span>
-              <h2 className="text-2xl md:text-4xl font-serif italic text-[#1A365D] leading-tight px-4 max-w-3xl mx-auto">{gameData.prompt}</h2>
-            </div>
-            {gameData.type === 'TF' ? (
-              <div className="space-y-10 max-w-xl mx-auto w-full">
-                <div className="p-10 bg-[#1A365D] rounded-[3rem] text-white text-center shadow-2xl border-t-[8px] border-[#C5A059]">
-                  <p className="text-xl font-serif italic italic leading-relaxed">"{gameData.content}"</p>
-                </div>
-                <div className="grid grid-cols-2 gap-6">
-                  <button onClick={() => handleAnswer(gameData.correctValue === true)} className="py-8 border-2 rounded-[2rem] font-black border-slate-100 hover:bg-slate-50 transition-all uppercase tracking-widest text-xs">Waar</button>
-                  <button onClick={() => handleAnswer(gameData.correctValue === false)} className="py-8 border-2 rounded-[2rem] font-black border-slate-100 hover:bg-slate-50 transition-all uppercase tracking-widest text-xs">Onwaar</button>
-                </div>
-              </div>
-            ) : (
-              <div className="grid gap-3 max-w-2xl mx-auto w-full">
-                {gameData.options.map((opt, i) => (
-                  <button key={i} onClick={() => handleAnswer(opt === gameData.correctValue)} className={`p-6 rounded-2xl border-2 text-left font-bold transition-all text-[13px] shadow-[0_4px_0_#f1f5f9] active:translate-y-1 active:shadow-none ${selected !== null ? (opt === gameData.correctValue ? 'bg-emerald-50 border-emerald-500 text-emerald-700 shadow-none' : 'bg-rose-50 border-rose-500 text-rose-700 shadow-none') : 'bg-white border-slate-100 hover:border-[#1A365D]'}`}>{opt}</button>
-                ))}
-              </div>
-            )}
-          </>
-        ) : null}
-      </div>
-
+    <div className="mt-3 w-full">
+      <button 
+        onClick={() => setIsOpen(!isOpen)}
+        className={`w-full flex items-center justify-between p-3 rounded-lg border text-xs font-bold uppercase tracking-wider transition-all ${colorClasses[color]}`}
+      >
+        <span className="flex items-center gap-2">
+          <Info size={14} /> {title}
+        </span>
+        {isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+      </button>
       <AnimatePresence>
-        {showTip && (
-          <motion.div initial={{ y: '100%' }} animate={{ y: 0 }} exit={{ y: '100%' }} className="absolute inset-0 bg-white z-[130] flex flex-col items-center justify-center p-12 text-center overflow-y-auto">
-            <div className={`w-20 h-20 flex-shrink-0 ${selected ? 'bg-emerald-100 text-emerald-600' : 'bg-rose-100 text-rose-600'} rounded-full flex items-center justify-center mb-8 shadow-lg`}>
-              {selected ? <Check size={40}/> : <X size={40}/>}
+        {isOpen && (
+          <motion.div 
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden"
+          >
+            <div className="p-4 border-x border-b border-slate-100 bg-white rounded-b-lg text-sm text-slate-600 leading-relaxed shadow-inner">
+              {children}
             </div>
-            <div className="bg-rose-50 p-8 rounded-[2.5rem] border-2 border-rose-100 max-w-md mb-10 shadow-sm">
-               <p className="text-rose-900 leading-relaxed font-medium mb-4 italic text-sm">"{currentCase?.purport}"</p>
-               <div className="h-px bg-rose-200 mb-4 w-1/2 mx-auto" />
-               <p className="text-rose-700 text-[9px] font-black uppercase tracking-widest">{currentCase?.tip}</p>
-            </div>
-            <button onClick={nextQuestion} className="bg-[#1A365D] flex-shrink-0 text-white px-16 py-5 rounded-[2rem] font-black flex items-center gap-3 shadow-[0_10px_0_#0f2038] active:translate-y-1 active:shadow-none transition-all uppercase tracking-widest text-[10px]">VERDER <ChevronRight size={14}/></button>
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.div>
-  );
-};
-
-// ==========================================
-// 3. MAIN COMPONENT
-// ==========================================
-const JurisprudenceMastery = () => {
-  const [progress, setProgress] = useState(1);
-  const [score, setScore] = useState(0);
-  const [activeQuiz, setActiveQuiz] = useState(null);
-
-  useEffect(() => {
-    const savedP = localStorage.getItem('juris_mastery_p');
-    const savedS = localStorage.getItem('juris_mastery_s');
-    if (savedP) setProgress(parseInt(savedP));
-    if (savedS) setScore(parseInt(savedS));
-  }, []);
-
-  const startLevel = (step) => {
-    if (step.id > progress) return;
-    const sessionCases = [...jurisprudenceData].sort(() => Math.random() - 0.5).slice(0, 5);
-    setActiveQuiz({ step, questions: sessionCases });
-  };
-
-  const STEPS = Array.from({ length: 12 }, (_, i) => ({
-    id: i + 1,
-    rank: i < 3 ? 'Stagiair' : i < 8 ? 'Pleiter' : 'Raadsheer'
-  }));
-
-  return (
-    <div className="min-h-screen bg-[#FDFCFB] font-sans text-[#1A365D]">
-      <nav className="sticky top-0 z-50 bg-[#1A365D] border-b border-[#C5A059]/30 px-8 py-5 flex justify-between items-center shadow-xl text-white">
-        <div className="flex items-center gap-3">
-          <Scale className="text-[#C5A059]" size={24} />
-          <span className="font-serif italic text-xl">Arresten Pad</span>
-        </div>
-        <div className="flex items-center gap-3 bg-white/10 px-5 py-2 rounded-2xl border border-white/20">
-          <Trophy className="text-[#C5A059]" size={20} />
-          <span className="font-black text-lg">{score.toLocaleString()}</span>
-        </div>
-      </nav>
-
-      <div className="max-w-xl mx-auto pt-24 pb-48 relative flex flex-col-reverse items-center">
-        <svg className="absolute inset-0 w-full h-full -z-10 opacity-10" preserveAspectRatio="none">
-          <path d="M 250 2000 Q 400 1800 250 1600 T 250 1200 T 250 800 T 250 400 T 250 0" fill="none" stroke="#1A365D" strokeWidth="4" strokeDasharray="12" />
-        </svg>
-
-        {STEPS.map((step, index) => {
-          const isLocked = step.id > progress;
-          const isCompleted = step.id < progress;
-          const xOffset = Math.sin(index * 1.4) * 85;
-
-          return (
-            <div key={step.id} className="relative w-full flex justify-center py-12">
-              <motion.div initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} style={{ x: xOffset }}>
-                <button
-                  onClick={() => startLevel(step)}
-                  className={`relative w-28 h-28 rounded-[2.8rem] flex flex-col items-center justify-center transition-all duration-300 shadow-2xl
-                    ${isLocked ? 'bg-slate-100 border-2 border-slate-200 opacity-40 cursor-not-allowed' : 
-                      isCompleted ? 'bg-[#C5A059] shadow-[0_12px_0_#9a7d46]' : 
-                      'bg-white border-4 border-[#1A365D] shadow-[0_12px_0_#1A365D]'}
-                  `}
-                >
-                  {isLocked ? <LockIcon className="text-slate-300" /> : isCompleted ? <Check className="text-white" size={44} strokeWidth={4} /> : <BookOpen className="text-[#1A365D]" size={44} />}
-                  <div className={`absolute -top-10 px-4 py-1 rounded-xl text-[9px] font-black uppercase tracking-widest border shadow-lg ${isLocked ? 'bg-white text-slate-300' : 'bg-white text-[#1A365D] border-[#C5A059]'}`}>
-                    {step.rank} Lvl {step.id}
-                  </div>
-                </button>
-              </motion.div>
-            </div>
-          );
-        })}
-      </div>
-
-      <AnimatePresence>
-        {activeQuiz && (
-          <JurisQuizOverlay 
-            session={activeQuiz} 
-            onClose={() => setActiveQuiz(null)}
-            onComplete={(s) => {
-              const nextP = progress + 1;
-              const newScore = score + s;
-              localStorage.setItem('juris_mastery_p', nextP);
-              localStorage.setItem('juris_mastery_s', newScore);
-              setProgress(nextP);
-              setScore(newScore);
-              setActiveQuiz(null);
-              confetti({ particleCount: 200, spread: 70, origin: { y: 0.6 } });
-            }}
-          />
-        )}
-      </AnimatePresence>
     </div>
   );
 };
 
-export default JurisprudenceMastery;
+const FlowStep = ({ title, description, type = 'neutral', isLast = false, outcome, extraContent }) => {
+  const getColors = () => {
+    switch(type) {
+      case 'success': return 'bg-emerald-50 border-emerald-300 text-emerald-900';
+      case 'failure': return 'bg-red-50 border-red-300 text-red-900';
+      case 'question': return 'bg-blue-50 border-blue-300 text-blue-900';
+      case 'law': return 'bg-slate-100 border-slate-400 text-slate-900';
+      default: return 'bg-white border-slate-200 text-slate-800';
+    }
+  };
+
+  return (
+    <div className="relative pl-8 pb-10 last:pb-0">
+      {!isLast && <div className="absolute left-[11px] top-8 bottom-0 w-0.5 bg-slate-200"></div>}
+      <div className={`absolute left-0 top-0 w-6 h-6 rounded-full border-2 flex items-center justify-center z-10 ${
+        type === 'question' ? 'bg-blue-500 border-blue-600' : 'bg-white border-slate-300'
+      }`}>
+        {type === 'question' ? <HelpCircle size={14} className="text-white" /> : <div className="w-2 h-2 rounded-full bg-slate-400" />}
+      </div>
+      <motion.div 
+        initial={{ opacity: 0, x: -10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className={`p-5 rounded-xl border-2 shadow-sm ${getColors()}`}
+      >
+        <h4 className="font-black text-xs uppercase tracking-widest mb-1 opacity-70">{title}</h4>
+        <p className="text-sm font-bold leading-snug">{description}</p>
+        {extraContent}
+        {outcome && (
+          <div className="mt-4 pt-3 border-t border-black/10 text-xs font-black flex items-center gap-2 italic uppercase">
+            <ArrowDown size={14} /> Resultaat: {outcome}
+          </div>
+        )}
+      </motion.div>
+    </div>
+  );
+};
+
+// ==========================================
+// DATA: DE 6 HOOFDSCHEMA'S
+// ==========================================
+
+const schemas = [
+  {
+    id: 'ovk-vorming',
+    title: '1. Totstandkoming & Geldigheid',
+    subtitle: 'Wilsverklaring, Vertrouwen & Wilsgebreken',
+    icon: <UserCheck size={20} />,
+    description: "Hoe ontstaat een verbintenis en is deze aantastbaar?",
+    content: (
+      <div className="space-y-4">
+        <FlowStep 
+          title="Stap 1: Aanbod & Aanvaarding"
+          description="Is er een geldige overeenkomst gevormd conform art. 6:217 BW?"
+          type="question"
+          extraContent={
+            <DetailDropdown title="Checklist Aanbod">
+              <p>1. <strong>Essentalia:</strong> Bevat het de kernvoorwaarden? (Art. 3:33 BW)</p>
+              <p>2. <strong>Herroepelijkheid:</strong> Is het ingetrokken vóór aanvaarding? (Art. 6:219 BW)</p>
+              <p>3. <strong>Vormvrijheid:</strong> Verklaringen kunnen in gedragingen besloten liggen (Art. 3:37 lid 1 BW).</p>
+            </DetailDropdown>
+          }
+        />
+        <FlowStep 
+          title="Stap 2: Wil vs Verklaring"
+          description="Lopen de wil en verklaring uiteen? (Bijv. verspreking/fout)"
+          type="question"
+          outcome="Indien JA: Kijk naar bescherming wederpartij."
+          extraContent={
+            <DetailDropdown title="Art. 3:33 vs 3:35 BW">
+              <p><strong>Art. 3:33:</strong> Geen wil = geen rechtshandeling.</p>
+              <p><strong>Art. 3:35:</strong> Gerechtvaardigd vertrouwen. Mocht de wederpartij er redelijkerwijs van uitgaan dat de verklaring klopte? (Haviltex/Eelman-Hin).</p>
+            </DetailDropdown>
+          }
+        />
+        <FlowStep 
+          title="Stap 3: Wilsgebreken"
+          description="Is de wil gebrekkig gevormd? (Vernietigbaarheid)"
+          type="law"
+          extraContent={
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
+              <div className="p-3 bg-white border rounded shadow-sm">
+                <p className="font-bold text-xs text-blue-600">DWALING (Art. 6:228)</p>
+                <p className="text-[10px]">Onjuiste voorstelling. Eis: Mededeling wederpartij, zwijgen of wederzijdse dwaling.</p>
+              </div>
+              <div className="p-3 bg-white border rounded shadow-sm">
+                <p className="font-bold text-xs text-red-600">BEDROG (Art. 3:44 lid 3)</p>
+                <p className="text-[10px]">Opzettelijke misleiding via kunstgrepen of verzwijgen.</p>
+              </div>
+            </div>
+          }
+        />
+      </div>
+    )
+  },
+  {
+    id: 'wanprestatie',
+    title: '2. Wanprestatie & Schade',
+    subtitle: 'Art. 6:74 BW - De weg naar schadevergoeding',
+    icon: <AlertTriangle size={20} />,
+    description: "Gebruik dit bij elke vraag over het eisen van geld wegens niet-nakoming.",
+    content: (
+      <div className="space-y-2">
+        <FlowStep 
+          title="Stap 1: Tekortkoming"
+          description="Is de schuldenaar achtergebleven bij de prestatie?"
+          type="question"
+          extraContent={<p className="text-xs italic mt-1">Check opeisbaarheid: Art. 6:38 of 6:39 BW.</p>}
+        />
+        <FlowStep 
+          title="Stap 2: Toerekenbaarheid"
+          description="Is de fout de schuldenaar aan te rekenen? (Art. 6:75 BW)"
+          type="question"
+          extraContent={
+            <DetailDropdown title="Check Overmacht" color="red">
+              <p>Geen toerekening als: Geen schuld + niet voor risico volgens wet (6:76 hulppersonen/6:77 zaken), rechtshandeling of verkeersopvatting.</p>
+            </DetailDropdown>
+          }
+        />
+        <FlowStep 
+          title="Stap 3: Verzuim"
+          description="Is nakoming nog mogelijk? Dan is verzuim vereist (Art. 6:74 lid 2)."
+          type="question"
+          extraContent={
+            <DetailDropdown title="Hoe treedt verzuim in?" color="amber">
+              <p>1. <strong>Ingebrekestelling (Art. 6:82):</strong> Schriftelijke aanmaning met redelijke termijn.</p>
+              <p>2. <strong>Van rechtswege (Art. 6:83):</strong> Bijv. fatale termijn (sub a) of mededeling schuldenaar (sub c).</p>
+            </DetailDropdown>
+          }
+        />
+        <FlowStep 
+          title="Stap 4: Schade & Causaliteit"
+          description="Is er schade en staat deze in verband met de fout? (Art. 6:95-98 BW)"
+          type="success"
+          isLast={true}
+          extraContent={
+            <DetailDropdown title="Causaliteitstoets" color="emerald">
+              <p><strong>Art. 6:98:</strong> Toerekening naar redelijkheid. Factoren: aard schade (letsel gaat voor vermogen) en aard aansprakelijkheid (schuld gaat voor risico).</p>
+            </DetailDropdown>
+          }
+        />
+      </div>
+    )
+  },
+  {
+    id: 'ontbinding-schema',
+    title: '3. Ontbinding (Xerxes)',
+    subtitle: 'Art. 6:265 BW - Contract beëindigen',
+    icon: <Zap size={20} />,
+    description: "Cruciaal schema voor casus Xerxes.",
+    content: (
+      <div className="space-y-2">
+        <FlowStep 
+          title="1. Wederkerige Overeenkomst"
+          description="Is er sprake van art. 6:261 BW?"
+          type="neutral"
+          outcome="Ja (bijv. Koop)"
+        />
+        <FlowStep 
+          title="2. Tekortkoming"
+          description="Iedere tekortkoming geeft recht op ontbinding."
+          type="law"
+          extraContent={<p className="text-xs text-red-600 font-bold">LET OP: Toerekenbaarheid (overmacht) is hier NIET vereist!</p>}
+        />
+        <FlowStep 
+          title="3. Verzuim"
+          description="Alleen nodig als nakoming nog mogelijk is (Art. 6:265 lid 2)."
+          type="question"
+          extraContent={
+            <div className="mt-2 p-2 bg-slate-100 rounded text-xs">
+              <strong>Casus Xerxes:</strong> Steppen zijn 'soortzaken' (alom verkrijgbaar). Nakoming is dus mogelijk. Verzuim nodig. Trad in via 6:83 sub a (fatale datum 1 juni).
+            </div>
+          }
+        />
+        <FlowStep 
+          title="4. Gevolgen"
+          description="Bevrijding (6:271) en ongedaanmaking."
+          type="success"
+          isLast={true}
+        />
+      </div>
+    )
+  },
+  {
+    id: 'onrechtmatige-daad',
+    title: '4. Onrechtmatige Daad',
+    subtitle: 'Art. 6:162 BW - Schade buiten contract',
+    icon: <Gavel size={20} />,
+    description: "Vaste structuur voor OD-vragen.",
+    content: (
+      <div className="space-y-2">
+        <FlowStep 
+          title="1. Onrechtmatigheid"
+          description="Drie gronden (Lid 2):"
+          type="law"
+          extraContent={
+            <ul className="text-xs list-disc ml-4 mt-2">
+              <li>Inbreuk op een recht (eigendom/lichaam)</li>
+              <li>Strijd met wettelijke plicht</li>
+              <li>Strijd met ongeschreven recht (Kelderluik)</li>
+            </ul>
+          }
+        />
+        <FlowStep 
+          title="Kelderluik-Criteria (Maatschappelijke Betamelijkheid)"
+          description="Moest de dader maatregelen nemen?"
+          type="question"
+          extraContent={
+            <div className="grid grid-cols-2 gap-2 text-[10px] mt-2">
+              <div className="bg-blue-50 p-1 border">1. Waarschijnlijkheid onoplettendheid</div>
+              <div className="bg-blue-50 p-1 border">2. Kans op ongeval</div>
+              <div className="bg-blue-50 p-1 border">3. Ernst gevolgen</div>
+              <div className="bg-blue-50 p-1 border">4. Bezwaarlijkheid maatregelen</div>
+            </div>
+          }
+        />
+        <FlowStep 
+          title="2. Toerekenbaarheid"
+          description="Schuld, wet of verkeersopvatting? (Lid 3)"
+          type="question"
+          extraContent={
+            <div className="bg-amber-50 p-2 border-l-4 border-amber-400 mt-2 text-xs">
+              <strong>CASUS BRAM:</strong> Art. 6:164 BW. Kind &lt; 14 jaar? Dan <u>nooit</u> toerekening aan het kind.
+            </div>
+          }
+        />
+        <FlowStep 
+          title="3. Relativiteit"
+          description="Art. 6:163 BW - Beschermt de norm dit slachtoffer?"
+          type="question"
+          isLast={true}
+        />
+      </div>
+    )
+  },
+  {
+    id: 'kwalitatief',
+    title: '5. Aansprakelijkheid voor Anderen',
+    subtitle: 'Art. 6:169 t/m 6:179 BW',
+    icon: <Scale size={20} />,
+    description: "Wanneer ben je aansprakelijk voor kinderen, werknemers of zaken?",
+    content: (
+      <div className="grid md:grid-cols-2 gap-4">
+        <div className="p-4 bg-slate-50 border rounded-xl">
+          <h5 className="font-bold text-sm mb-2">Kinderen (Art. 6:169)</h5>
+          <ul className="text-xs space-y-2">
+            <li><strong>&lt; 14 jaar:</strong> Ouders volledig aansprakelijk (risico).</li>
+            <li><strong>14 of 15 jaar:</strong> Ouders aansprakelijk, tenzij zij niet-nakoming zorgplicht aantonen.</li>
+          </ul>
+        </div>
+        <div className="p-4 bg-slate-50 border rounded-xl">
+          <h5 className="font-bold text-sm mb-2">Hulppersonen (Art. 6:170)</h5>
+          <p className="text-xs italic">Werkgever is aansprakelijk voor fout ondergeschikte mits functioneel verband.</p>
+        </div>
+        <div className="p-4 bg-slate-50 border rounded-xl">
+          <h5 className="font-bold text-sm mb-2">Zaken & Opstallen (6:173/174)</h5>
+          <p className="text-xs">Bezitters-aansprakelijkheid voor gebrekkige zaken/gebouwen.</p>
+        </div>
+        <div className="p-4 bg-slate-50 border rounded-xl">
+          <h5 className="font-bold text-sm mb-2">Dieren (Art. 6:179)</h5>
+          <p className="text-xs">Bezitter aansprakelijk voor de 'eigen energie' van het dier.</p>
+        </div>
+      </div>
+    )
+  },
+  {
+    id: 'vertegenwoordiging',
+    title: '6. Vertegenwoordiging',
+    subtitle: 'Volmacht & Bekrachtiging',
+    icon: <Briefcase size={20} />,
+    description: "Wie wordt gebonden door een handeling van een ander?",
+    content: (
+      <div className="space-y-3">
+        <FlowStep 
+          title="Is er een volmacht? (Art. 3:60)"
+          description="Heeft de achterman de tussenpersoon bevoegd gemaakt?"
+          type="question"
+          outcome="Indien NEE: Achterman niet gebonden, tenzij..."
+        />
+        <FlowStep 
+          title="Schijn van Volmacht (Art. 3:61 lid 2)"
+          description="Heeft de achterman door zijn doen of laten de schijn gewekt?"
+          type="question"
+          extraContent={<p className="text-xs italic">Wederpartij moet te goeder trouw zijn.</p>}
+        />
+        <FlowStep 
+          title="Bekrachtiging (Art. 3:69)"
+          description="De achterman kan de handeling achteraf alsnog geldig maken."
+          type="success"
+          isLast={true}
+        />
+      </div>
+    )
+  }
+];
+
+// ==========================================
+// MAIN APP COMPONENT
+// ==========================================
+
+const CivilLawToolkit = () => {
+  const [activeTab, setActiveTab] = useState('ovk-vorming');
+  const activeSchema = schemas.find(s => s.id === activeTab);
+
+  return (
+    <div className="w-full max-w-6xl mx-auto p-2 md:p-6 bg-slate-50 min-h-screen font-sans text-slate-900">
+      
+      {/* Header Section */}
+      <div className="mb-10 text-center md:text-left bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-600 text-white rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-4 shadow-lg shadow-blue-200">
+          <Gavel size={14} /> Leiden Law Study Partner
+        </div>
+        <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter mb-4">
+          Inleiding Burgerlijk Recht <span className="text-blue-600">I</span>
+        </h1>
+        <p className="text-slate-500 max-w-2xl text-lg font-medium leading-relaxed">
+          Interactieve schema's voor het oplossen van open vragen. Gebruik de <span className="font-bold text-slate-800 underline decoration-blue-400">IRAC-volgorde</span> zoals getoond in de stappenplannen.
+        </p>
+      </div>
+
+      {/* Navigation Tabs */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+        {schemas.map((schema) => (
+          <button
+            key={schema.id}
+            onClick={() => setActiveTab(schema.id)}
+            className={`flex flex-col items-center justify-center gap-3 p-4 rounded-2xl border-2 transition-all duration-300 ${
+              activeTab === schema.id 
+                ? 'bg-white border-blue-500 shadow-xl shadow-blue-100 scale-105 z-10' 
+                : 'bg-slate-50 border-slate-200 hover:border-slate-300 opacity-70 grayscale hover:grayscale-0'
+            }`}
+          >
+            <div className={`p-3 rounded-xl ${activeTab === schema.id ? 'bg-blue-600 text-white' : 'bg-slate-200 text-slate-500'}`}>
+              {schema.icon}
+            </div>
+            <span className={`font-black text-[10px] uppercase tracking-tighter text-center leading-tight ${activeTab === schema.id ? 'text-blue-700' : 'text-slate-500'}`}>
+              {schema.title.split('. ')[1]}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {/* Dynamic Content Display */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        {/* Main Stappenplan */}
+        <div className="lg:col-span-8">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden"
+            >
+              <div className="bg-slate-900 p-8 text-white">
+                <h2 className="text-3xl font-black tracking-tight flex items-center gap-3">
+                  {activeSchema.title}
+                </h2>
+                <p className="text-slate-400 font-bold mt-2 uppercase text-xs tracking-widest">{activeSchema.subtitle}</p>
+              </div>
+              
+              <div className="p-8 md:p-12">
+                <p className="text-slate-500 font-medium mb-10 pb-6 border-b border-slate-100 italic">
+                  "{activeSchema.description}"
+                </p>
+                {activeSchema.content}
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* Sidebar Tips & IRAC Reminder */}
+        <div className="lg:col-span-4 space-y-6">
+          <div className="bg-blue-600 text-white p-8 rounded-3xl shadow-xl shadow-blue-200">
+            <h3 className="text-xl font-black mb-4 flex items-center gap-2">
+              <BookOpen size={20} /> De IRAC-Methode
+            </h3>
+            <div className="space-y-4 text-sm font-medium opacity-90">
+              <div className="border-l-2 border-white/30 pl-3">
+                <p className="font-black text-xs uppercase">Issue (De Vraag)</p>
+                <p>"De vraag is of Xerxes de overeenkomst kan ontbinden..."</p>
+              </div>
+              <div className="border-l-2 border-white/30 pl-3">
+                <p className="font-black text-xs uppercase">Rule (De Regel)</p>
+                <p>"Hiervoor is art. 6:265 BW van belang. Dit vereist een tekortkoming..."</p>
+              </div>
+              <div className="border-l-2 border-white/30 pl-3">
+                <p className="font-black text-xs uppercase">Application (Toepassing)</p>
+                <p>"In casu is er een tekortkoming omdat Yka niet heeft geleverd..."</p>
+              </div>
+              <div className="border-l-2 border-white/30 pl-3">
+                <p className="font-black text-xs uppercase">Conclusion (Conclusie)</p>
+                <p>"Kortom, Xerxes kan rechtsgeldig ontbinden."</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-emerald-50 border-2 border-emerald-200 p-8 rounded-3xl">
+            <h3 className="text-emerald-900 font-black text-lg mb-4 flex items-center gap-2">
+              <ShieldAlert size={20} /> Tentamen Pro-Tips
+            </h3>
+            <ul className="text-xs text-emerald-800 space-y-3 font-bold">
+              <li className="flex gap-2">
+                <span className="text-emerald-500">●</span>
+                Noem bij schadevergoeding ALTIJD eerst de grondslag (bijv. 6:74 of 6:162).
+              </li>
+              <li className="flex gap-2">
+                <span className="text-emerald-500">●</span>
+                Vergeet bij minderjarigen (Bram) art. 1:234 lid 3 niet (gebruikelijke handelingen).
+              </li>
+              <li className="flex gap-2">
+                <span className="text-emerald-500">●</span>
+                Uitleg van het contract? Gebruik de Haviltex-norm (Week 3).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Footer Disclaimer */}
+      <footer className="mt-16 text-center text-slate-400 text-[10px] font-bold uppercase tracking-widest border-t border-slate-200 pt-8 pb-12">
+        © 2025 Universiteit Leiden Study Buddy | Niet delen of uploaden
+      </footer>
+
+    </div>
+  );
+};
+
+export default CivilLawToolkit;
