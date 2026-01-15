@@ -23,7 +23,6 @@ const MiniDonateButton = () => {
       title="Support Lawbooks"
     >
       <Heart size={16} className="text-slate-900 group-hover:fill-black group-hover:text-black transition-colors" />
-      {/* Tooltip die verschijnt bij hover */}
       <span className="absolute right-12 px-2 py-1 bg-black text-white text-[9px] font-black uppercase tracking-widest rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
         Support
       </span>
@@ -42,17 +41,28 @@ const pageVariants = {
   exit: { opacity: 0, scale: 0.95, y: -10, transition: { duration: 0.3 } }
 };
 
+// --- STRIKTE SECURITY WRAPPER ---
 const SecurityWrapper = ({ children }) => {
   const [isAuthorized, setIsAuthorized] = useState(true);
 
   useEffect(() => {
     const referrer = document.referrer;
-    const isIframe = window.self !== window.top;
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const hostname = window.location.hostname;
+    
+    // 1. Check of we op localhost draaien (voor development)
+    const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
+    
+    // 2. Toegestane domeinen
     const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
-    const isLawbooks = allowedDomains.some(domain => referrer.includes(domain));
+    
+    // 3. Controleer of de referrer uit de lijst komt (en niet leeg is)
+    const isAllowedReferrer = allowedDomains.some(domain => 
+      referrer !== "" && referrer.includes(domain)
+    );
 
-    if (isIframe && !isLawbooks && !isLocal) {
+    // BLOKKEER LOGICA:
+    // Als het niet lokaal is EN de referrer is niet toegestaan (of leeg), dan blokkeren.
+    if (!isLocal && !isAllowedReferrer) {
       setIsAuthorized(false);
     }
   }, []);
@@ -60,10 +70,20 @@ const SecurityWrapper = ({ children }) => {
   if (!isAuthorized) {
     return (
       <div className="h-screen w-full bg-[#050505] flex items-center justify-center p-6 text-center">
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="max-w-md p-10 rounded-[3rem] border border-red-500/30 bg-red-500/5 backdrop-blur-xl">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }} 
+          animate={{ opacity: 1, scale: 1 }} 
+          className="max-w-md p-10 rounded-[3rem] border border-red-500/30 bg-red-500/5 backdrop-blur-xl"
+        >
           <AlertTriangle size={64} className="text-red-500 mx-auto mb-6 animate-pulse" />
           <h2 className="text-white font-black text-2xl uppercase tracking-tighter mb-4 italic">Toegang Geweigerd</h2>
-          <p className="text-red-400 font-bold text-sm leading-relaxed">Dit mag niet - Je IP adres wordt opgeslagen en wellicht onderzocht.</p>
+          <p className="text-red-400 font-bold text-sm leading-relaxed mb-6">
+            Deze module is uitsluitend toegankelijk via het officiële Lawbooks platform. Directe toegang of onbevoegd gebruik is niet toegestaan.
+          </p>
+          <div className="text-[10px] text-white/30 font-mono uppercase tracking-widest">
+            Protocol: SEC_VOI_REF_01 <br />
+            IP-Status: Geregistreerd
+          </div>
         </motion.div>
       </div>
     );
@@ -176,7 +196,6 @@ const MainLayout = () => {
           </AnimatePresence>
         </main>
         
-        {/* De nieuwe compacte button */}
         <MiniDonateButton />
       </div>
     </SecurityWrapper>
