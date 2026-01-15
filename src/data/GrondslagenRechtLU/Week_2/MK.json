@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Welk verdrag legde in 1951 de juridische grondslag voor de allereerste Europese Gemeenschap?",
+    "a": [
+      "Het Verdrag van Parijs",
+      "Het Verdrag van Rome",
+      "De Europese Akte",
+      "Het Verdrag van Maastricht"
+    ],
+    "c": 0,
+    "exp": "In 1951 werd met het Verdrag van Parijs de Europese Gemeenschap voor Kolen en Staal (EGKS) opgericht om vrede en economische groei te bevorderen."
+  },
+  {
+    "q": "Wat was het voornaamste politieke gevolg van het Akkoord van Luxemburg (1966)?",
+    "a": [
+      "De Commissie kreeg volledige wetgevende macht.",
+      "Lidstaten kregen een veto bij gewichtige nationale belangen.",
+      "Het Europees Parlement kreeg een adviserende rol.",
+      "De rechtstreekse werking van het Unierecht werd beperkt."
+    ],
+    "c": 1,
+    "exp": "Het Akkoord van Luxemburg bepaalde dat lidstaten een veto konden uitspreken indien zeer gewichtige nationale belangen op het spel stonden, wat leidde tot meer inertie."
+  },
+  {
+    "q": "In welk arrest oordeelde het Hof van Justitie dat het Europese recht voorrang heeft op het nationale recht?",
+    "a": [
+      "Van Gend & Loos",
+      "Wightman",
+      "Costa/ENEL",
+      "Schengen"
+    ],
+    "c": 2,
+    "exp": "Terwijl Van Gend & Loos over rechtstreekse werking ging, bepaalde het arrest Costa/ENEL dat de Europese rechtsorde voorrang heeft op de nationale rechtsorde."
+  },
+  {
+    "q": "Wat was de belangrijkste economische doelstelling van de Europese Akte uit 1986?",
+    "a": [
+      "De oprichting van de Europese munteenheid.",
+      "Het creëren van een gemeenschappelijk defensiebeleid.",
+      "De uitbreiding van de Unie naar Oost-Europa.",
+      "De voltooiing van de interne Europese markt."
+    ],
+    "c": 3,
+    "exp": "De Europese Akte was gericht op het voltooien van de interne markt en het uitbouwen van het vrije verkeer tussen lidstaten na een periode van stagnatie."
+  },
+  {
+    "q": "Welke procedurele vernieuwing voor het Europees Parlement werd geïntroduceerd bij het Verdrag van Maastricht?",
+    "a": [
+      "De medebeslissingsprocedure",
+      "De raadplegingsprocedure",
+      "De samenwerkingsprocedure",
+      "De begrotingsprocedure"
+    ],
+    "c": 0,
+    "exp": "Het Verdrag van Maastricht (1992) introduceerde de medebeslissingsprocedure (codecisie), waardoor de macht van het Europees Parlement aanzienlijk toenam."
+  },
+  {
+    "q": "Wat was de directe aanleiding voor het aftreden van de volledige Europese Commissie in 1999?",
+    "a": [
+      "De afwijzing van het Verdrag van Nice.",
+      "Beschuldigingen van interne fraude.",
+      "De economische crisis in de eurozone.",
+      "Het mislukken van de uitbreidingsonderhandelingen."
+    ],
+    "c": 1,
+    "exp": "In 1999 trad de gehele Europese Commissie af naar aanleiding van ernstige beschuldigingen van fraude binnen de instelling."
+  },
+  {
+    "q": "Wat was een kenmerk van het Grondwettelijk Verdrag dat in 2005 door referenda werd verworpen?",
+    "a": [
+      "Het verplichtte lidstaten tot militaire deelname.",
+      "Het schafte alle nationale parlementen volledig af.",
+      "Het was grotendeels een codificatie van bestaande regels.",
+      "Het verbood de mogelijkheid om uit de Unie te treden."
+    ],
+    "c": 2,
+    "exp": "Veel kiezers dachten dat het verdrag te veel nieuwe bevoegdheden overdroeg, terwijl het juridisch gezien grotendeels bestaande bevoegdheden codificeerde."
+  },
+  {
+    "q": "Welke twee verdragen vormen sinds de inwerkingtreding van het Verdrag van Lissabon de basis van de EU?",
+    "a": [
+      "Het Grondwettelijk Verdrag en de Europese Akte.",
+      "Het Verdrag van Rome en het Verdrag van Parijs.",
+      "Het Verdrag van Amsterdam en het Verdrag van Nice.",
+      "Het EU-verdrag (VEU) en het Werkingsverdrag (VWEU)."
+    ],
+    "c": 3,
+    "exp": "Sinds 2009 wordt de Europese Unie geregeerd door het VEU en het VWEU, waarbij de eerdere gemeenschappen (behalve Euratom) zijn opgegaan in de Unie."
+  },
+  {
+    "q": "Wat was de belangrijkste rechtsregel uit het Wightman-arrest met betrekking tot artikel 50 VEU?",
+    "a": [
+      "Eenzijdige herroeping van uittreding is toegestaan.",
+      "Herroeping vereist toestemming van de Europese Raad.",
+      "Een uittredingsverzoek is juridisch onherroepelijk.",
+      "Intrekking kan enkel via een nationaal referendum."
+    ],
+    "c": 0,
+    "exp": "Het Hof oordeelde dat een lidstaat zijn voornemen tot terugtrekking eenzijdig kan herroepen, zolang er geen uittredingsakkoord in werking is getreden."
+  },
+  {
+    "q": "Tot welk moment kan een lidstaat volgens het arrest Wightman een uittredingsverzoek intrekken?",
+    "a": [
+      "Zolang de Europese Commissie nog niet heeft ingestemd.",
+      "Zolang het terugtrekkingsakkoord niet in werking is getreden.",
+      "Tot uiterlijk één jaar na de initiële kennisgeving.",
+      "Totdat de nationale rechter de uittreding heeft getoetst."
+    ],
+    "c": 1,
+    "exp": "Herroeping is mogelijk zolang er geen akkoord is of zolang de termijn van twee jaar (eventueel verlengd) nog niet is verstreken."
+  }
+]

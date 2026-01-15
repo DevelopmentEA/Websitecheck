@@ -1,0 +1,92 @@
+[
+ {
+  "q": "Het Gerecht (onderdeel van het HvJEU) is in eerste aanleg bevoegd om te oordelen over directe beroepen die door particulieren worden ingesteld.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. Volgens artikel 256 VWEU oordeelt het Gerecht in eerste instantie in de directe beroepen van natuurlijke of rechtspersonen (particulieren) tegen Unie-instellingen."
+ },
+ {
+  "q": "Lagere nationale rechters zijn nooit verplicht om een prejudiciële vraag te stellen aan het Hof van Justitie, omdat deze plicht alleen geldt voor de hoogste rechters.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. Hoewel de hoofdregel is dat lagere rechters mogen (niet moeten) verwijzen, geldt er een uitzondering: zij zijn verplicht te verwijzen als zij een EU-handeling ongeldig achten (arrest Foto-Frost)."
+ },
+ {
+  "q": "De Europese Commissie is juridisch verplicht om voor elke geconstateerde schending van het EU-recht een inbreukprocedure tegen de betreffende lidstaat te starten.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. De Europese Commissie heeft een discretionaire bevoegdheid. Zij mag zelf bepalen of het opportuun is om een procedure te starten; zij is hiertoe niet verplicht."
+ },
+ {
+  "q": "Het Hof van Justitie kan in een inbreukprocedure nationale wetgeving die in strijd is met het EU-recht direct nietig verklaren.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. Het Hof stelt vast (declaratoir) dat de lidstaat in gebreke is. Het Hof kan de nationale wet niet zelf vernietigen; de lidstaat moet zelf de wetgeving aanpassen."
+ },
+ {
+  "q": "Volgens het CILFIT-arrest hoeft een hoogste nationale rechter geen prejudiciële vraag te stellen als de juiste toepassing van het EU-recht zo evident is dat er redelijkerwijs geen twijfel bestaat (acte clair).",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. De verplichting voor de hoogste rechter is niet absoluut; bij een 'acte clair' (of 'acte éclairé') mag van verwijzing worden afgezien."
+ },
+ {
+  "q": "In het arrest Inuit oordeelde het Hof dat 'wetgevingshandelingen' (legislative acts) ook vallen onder het begrip 'regelgevingshandelingen' in de zin van artikel 263 lid 4 VWEU.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. Het Hof bevestigde dat 'regelgevingshandelingen' doelt op handelingen van algemene strekking die *geen* wetgevingshandelingen zijn. Tegen wetgevingshandelingen is de toetsing dus strenger."
+ },
+ {
+  "q": "Om als particulier ontvankelijk te zijn in een beroep tegen een beschikking die niet aan hem gericht is, is het volgens de Plaumann-formule voldoende dat hij economische schade lijdt.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. Economische geraaktheid is niet genoeg. Men moet 'individueel geraakt' zijn door bijzondere hoedanigheden die de persoon onderscheiden van alle anderen, vergelijkbaar met de adressaat."
+ },
+ {
+  "q": "Een lidstaat kan een andere lidstaat wegens schending van het EU-recht bij het Hof aanklagen, maar moet de zaak eerst voorleggen aan de Europese Commissie.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. Artikel 259 VWEU staat statenklachten toe, maar vereist dat de klagende staat de zaak eerst bij de Commissie aanhangig maakt voordat de stap naar het Hof wordt gezet."
+ },
+ {
+  "q": "Het Hof van Justitie heeft geen volledige rechtsmacht over het gemeenschappelijk buitenlands- en veiligheidsbeleid (GBVB), maar mag wel toezien op de rechtmatigheid van sancties tegen personen.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. Artikel 24 VEU en 275 VWEU sluiten het GBVB grotendeels uit van de rechtsmacht, met uitzondering van o.a. procedures over beperkende maatregelen (sancties) tegen natuurlijke of rechtspersonen."
+ },
+ {
+  "q": "Voor een succesvol beroep tot schadevergoeding tegen de Unie is vereist dat de geschonden rechtsregel bedoeld is om rechten toe te kennen aan particulieren (Schutznorm).",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. Analoog aan de staatsaansprakelijkheid geldt ook voor de Unie-aansprakelijkheid het vereiste dat de geschonden norm de bescherming van het individu beoogt (Schutznorm)."
+ }
+]

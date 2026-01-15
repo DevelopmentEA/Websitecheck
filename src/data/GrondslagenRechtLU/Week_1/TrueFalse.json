@@ -1,0 +1,92 @@
+[
+ {
+  "q": "Wit-Rusland is momenteel het enige land dat geen lid is van de Raad van Europa omdat het niet voldoet aan artikel 3 van het Statuut (beginselen van de rechtsstaat).",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. De tekst stelt dat de Raad 47 lidstaten telt en dat alleen Wit-Rusland geen lid is, omdat zij niet voldoet aan de eisen van artikel 3 van het Statuut."
+ },
+ {
+  "q": "Het Comité van Ministers heeft vergelijkbare supranationale wetgevende bevoegdheden als de Raad van de Europese Unie.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. De tekst benadrukt dat men geneigd is ze te vergelijken, maar dat het Comité van Ministers géén supranationale bevoegdheden heeft en besluiten neemt bij consensus."
+ },
+ {
+  "q": "Sinds de inwerkingtreding van Protocol nr. 11 is de rechtsmacht van het Hof niet langer facultatief, maar verplicht voor alle verdragspartijen.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. Protocol 11 zorgde voor een radicale hervorming waarbij het individuele klachtrecht en de rechtsmacht van het Hof niet langer facultatief waren, maar door iedere staat erkend moesten worden."
+ },
+ {
+  "q": "In de zaak 'Blondje t. Nederland' oordeelde het Hof dat de klacht ontvankelijk was, ondanks dat de klager anoniem wilde blijven.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. De klacht werd niet-ontvankelijk verklaard op basis van artikel 35 lid 2 EVRM, omdat klachten niet anoniem mogen worden ingediend en de identiteit van 'Blondje' onbekend bleef."
+ },
+ {
+  "q": "Het leerstuk van de 'margin of appreciation' houdt in dat het Hof de lidstaten minder beoordelingsruimte laat wanneer er in Europa consensus bestaat over een onderwerp.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. Als er consensus is, laat het Hof een nauwe margin. Ontbreekt die consensus, dan krijgt de staat dikwijls een ruimere margin of appreciation."
+ },
+ {
+  "q": "In de zaak 'Schuitemaker t. Nederland' oordeelde het Hof dat de verplichting om arbeid te aanvaarden in ruil voor een uitkering, strijdig is met het verbod op dwangarbeid (art. 4 EVRM).",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. Het Hof oordeelde dat het niet onredelijk is dat staten voorwaarden (zoals het verrichten van inspanningen) verbinden aan sociale zekerheid; dit kwalificeert niet als dwangarbeid."
+ },
+ {
+  "q": "Protocol nr. 16 introduceert een procedure waarbij hoogste nationale rechters het EHRM om een bindend advies kunnen vragen.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. Protocol 16 maakt het mogelijk advies te vragen, maar de tekst stelt expliciet dat dit een '(niet-bindend) advies' betreft."
+ },
+ {
+  "q": "In de zaak 'Corallo t. Nederland' werd geoordeeld dat het langdurig verblijf in een overvolle meerpersoonscel een schending van artikel 3 EVRM opleverde.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. Het ernstige ruimtegebrek (gedeelde cel van 16m2 met 5-6 man) en de slechte omstandigheden werden als onmenselijk/vernederend gekwalificeerd."
+ },
+ {
+  "q": "De 'dynamische interpretatie' (living instrument) van het EVRM betekent dat het verdrag moet worden uitgelegd naar de omstandigheden ten tijde van de opstelling in 1950.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 1,
+  "exp": "Dit is niet waar. Het concept 'living instrument' betekent juist dat het verdrag moet worden geïnterpreteerd naar 'present-day conditions' (hedendaagse omstandigheden)."
+ },
+ {
+  "q": "In de zaak 'Fedotova e.a. t. Rusland' oordeelde het Hof dat Rusland artikel 8 EVRM schond door koppels van gelijk geslacht geen enkele vorm van juridische erkenning te bieden.",
+  "a": [
+   "Waar",
+   "Niet waar"
+  ],
+  "c": 0,
+  "exp": "Dit is waar. Het Hof stelde dat Rusland zijn verplichtingen schond door samenlevingsvormen tussen mensen van hetzelfde geslacht op geen enkele manier te erkennen of te beschermen."
+ }
+]

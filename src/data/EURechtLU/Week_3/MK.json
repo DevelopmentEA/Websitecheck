@@ -1,0 +1,277 @@
+[
+  {
+    "q": "Welk juridisch beginsel vormt de grondslag voor de verdeling van taken tussen de instellingen en verplicht hen tot onderlinge samenwerking?",
+    "a": [
+      "Het beginsel van institutioneel evenwicht.",
+      "Het beginsel van loyale samenwerking tussen lidstaten.",
+      "Het beginsel van democratische legitimiteit.",
+      "Het beginsel van de degressieve proportionaliteit."
+    ],
+    "c": 0,
+    "exp": "Het beginsel van institutioneel evenwicht (Art. 13 VEU) houdt in dat elke instelling haar bevoegdheden uitoefent met inachtneming van die van de andere instellingen."
+  },
+  {
+    "q": "Wie maakt er, naast de regeringsleiders of staatshoofden, ambtshalve deel uit van de Europese Raad?",
+    "a": [
+      "De voorzitter van het Europees Parlement.",
+      "De voorzitter van de Europese Commissie.",
+      "De Hoge Vertegenwoordiger voor buitenlandse zaken.",
+      "De voorzitter van het Hof van Justitie."
+    ],
+    "c": 1,
+    "exp": "Volgens artikel 15 VEU bestaat de Europese Raad uit de staatshoofden of regeringsleiders van de lidstaten, samen met de eigen voorzitter en de voorzitter van de Commissie."
+  },
+  {
+    "q": "Voor welke termijn wordt de vaste voorzitter van de Europese Raad gekozen volgens de bepalingen van het Verdrag van Lissabon?",
+    "a": [
+      "Een periode van vijf jaar, niet herbenoembaar.",
+      "Een periode van achttien maanden, aansluitend op het triovoorzitterschap.",
+      "Een periode van tweeënhalf jaar, eenmaal herbenoembaar.",
+      "Een periode van zes jaar, gelijk aan de rechters van het Hof."
+    ],
+    "c": 2,
+    "exp": "De voorzitter van de Europese Raad wordt gekozen voor een termijn van 2,5 jaar en kan één keer worden herkozen."
+  },
+  {
+    "q": "Wat is de hoofdregel voor de besluitvorming binnen de Raad van de Europese Unie (Raad van Ministers)?",
+    "a": [
+      "Besluitvorming op basis van volledige eenparigheid van stemmen.",
+      "Besluitvorming via een eenvoudige meerderheid van de aanwezige leden.",
+      "Besluitvorming door middel van politieke consensus zonder formele stemming.",
+      "Besluitvorming met een gekwalificeerde meerderheid van stemmen."
+    ],
+    "c": 3,
+    "exp": "Artikel 16 VEU bepaalt dat de Raad met gekwalificeerde meerderheid besluit, tenzij de verdragen anders bepalen."
+  },
+  {
+    "q": "Welk orgaan is belast met het voorbereiden van de werkzaamheden van de Raad en het uitvoeren van de door de Raad gegeven opdrachten?",
+    "a": [
+      "Het Comité van Permanente Vertegenwoordigers (COREPER).",
+      "Het Secretariaat-generaal van de Europese Commissie.",
+      "Het bemiddelingscomité van het Europees Parlement.",
+      "De Conferentie van voorzitters van de politieke fracties."
+    ],
+    "c": 0,
+    "exp": "Het COREPER (I en II) bereidt de zittingen van de Raad voor en bestaat uit vertegenwoordigers van de lidstaten in Brussel."
+  },
+  {
+    "q": "Wat typeert de onafhankelijkheid van de leden van de Europese Commissie bij de uitoefening van hun taken?",
+    "a": [
+      "Zij leggen verantwoording af aan hun nationale parlementen voor het gevoerde beleid.",
+      "Zij mogen geen instructies vragen of aanvaarden van enige regering of instantie.",
+      "Zij worden direct gekozen door de burgers van de lidstaat waaruit zij afkomstig zijn.",
+      "Zij hebben een bindend mandaat van de Europese Raad voor hun beleidsterrein."
+    ],
+    "c": 1,
+    "exp": "Artikel 17 VEU en 245 VWEU stellen dat de commissarissen volledig onafhankelijk zijn en enkel het algemeen belang van de Unie behartigen."
+  },
+  {
+    "q": "Wat wordt bedoeld met het 'exclusieve recht van initiatief' van de Europese Commissie in het wetgevingsproces?",
+    "a": [
+      "De Commissie beslist als enige over de definitieve tekst van een verordening.",
+      "De Commissie kan wetgeving aannemen zonder tussenkomst van de Raad.",
+      "Zonder voorstel van de Commissie kan er in de regel geen wetgevingsprocedure starten.",
+      "De Commissie mag als enige instelling de begroting van de Unie vaststellen."
+    ],
+    "c": 2,
+    "exp": "De Commissie heeft het formele monpolie op het indienen van wetgevingsvoorstellen, hoewel de Raad en het Parlement de uiteindelijke beslissers zijn."
+  },
+  {
+    "q": "Hoe kan het Europees Parlement de Europese Commissie als collectief dwingen om af te treden?",
+    "a": [
+      "Door het verwerpen van de jaarlijkse ontwerpbegroting.",
+      "Door het instellen van een enquêtecommissie naar wanbeheer.",
+      "Door het afwijzen van de door de voorzitter voorgedragen Spitzenkandidaat.",
+      "Door het aannemen van een motie van afkeuring (motie van wantrouwen)."
+    ],
+    "c": 3,
+    "exp": "Op grond van artikel 234 VWEU kan het Parlement de Commissie tot aftreden dwingen via een motie van afkeuring."
+  },
+  {
+    "q": "Wat houdt het beginsel van 'degressieve proportionaliteit' in bij de zetelverdeling van het Europees Parlement?",
+    "a": [
+      "Kleine lidstaten krijgen relatief meer zetels per inwoner dan grote lidstaten.",
+      "Grote lidstaten krijgen altijd het maximumaantal van 96 zetels toegewezen.",
+      "Het aantal zetels wordt elk jaar aangepast aan de economische groei van een land.",
+      "Elke lidstaat krijgt exact hetzelfde aantal zetels om gelijkheid te waarborgen."
+    ],
+    "c": 0,
+    "exp": "Degressieve proportionaliteit zorgt ervoor dat kleinere landen niet ondergesneeuwd raken door een strikt naar bevolkingsgrootte evenredige verdeling."
+  },
+  {
+    "q": "Wat is het wettelijk vastgelegde maximumaantal leden (inclusief de voorzitter) van het Europees Parlement?",
+    "a": [
+      "Een totaal van 705 leden.",
+      "Een totaal van 751 leden.",
+      "Een totaal van 766 leden.",
+      "Een totaal van 800 leden."
+    ],
+    "c": 1,
+    "exp": "Artikel 14 lid 2 VEU bepaalt dat het Parlement niet meer dan 750 leden plus de voorzitter mag tellen (751 in totaal)."
+  },
+  {
+    "q": "Uit hoeveel rechters bestaat het Hof van Justitie van de Europese Unie (het hoogste rechtscollege)?",
+    "a": [
+      "Uit vijftien rechters die bij toerbeurt worden benoemd.",
+      "Uit een wisselend aantal rechters, afhankelijk van het aantal zaken.",
+      "Uit ten minste één rechter per lidstaat.",
+      "Uit twee rechters per lidstaat, analoog aan het Gerecht."
+    ],
+    "c": 2,
+    "exp": "Artikel 19 lid 2 VEU bepaalt dat het Hof van Justitie bestaat uit één rechter per lidstaat."
+  },
+  {
+    "q": "Wat is de specifieke taak van de advocaten-generaal bij het Hof van Justitie?",
+    "a": [
+      "Het verdedigen van de belangen van de Europese Commissie in inbreukprocedures.",
+      "Het optreden als landsadvocaat voor lidstaten die voor het Hof moeten verschijnen.",
+      "Het adviseren van de nationale rechter over de uitlegging van verdragsbepalingen.",
+      "Het uitbrengen van onafhankelijke conclusies in zaken die bij het Hof aanhangig zijn."
+    ],
+    "c": 3,
+    "exp": "Advocaten-generaal bereiden onafhankelijke adviezen (conclusies) voor die de rechters ondersteunen bij het nemen van een beslissing."
+  },
+  {
+    "q": "Welke conclusie trok het Hof in de zaak Frankrijk t. Europees Parlement (C-345/95) over de zetel van het Parlement?",
+    "a": [
+      "Het Parlement moet twaalf keer per jaar een plenaire vergadering in Straatsburg houden.",
+      "Het Parlement is vrij om de locatie van zijn vergaderingen zelfstandig te bepalen.",
+      "Lidstaten hebben geen bevoegdheid om de zetel van een instelling vast te leggen.",
+      "De administratie van het Parlement moet volledig worden verplaatst naar Brussel."
+    ],
+    "c": 0,
+    "exp": "Het Hof oordeelde dat het Besluit van Edinburgh nageleefd moet worden: de zetel is Straatsburg en daar horen 12 maandelijkse zittingen bij."
+  },
+  {
+    "q": "Wat was de kern van de uitspraak van het Hof in de zaak Eman en Sevinger?",
+    "a": [
+      "Arubanen hebben automatisch stemrecht voor de Tweede Kamer der Staten-Generaal.",
+      "Het uitsluiten van Arubanen van het EU-kiesrecht zonder objectieve rechtvaardiging is discriminatoir.",
+      "Lidstaten mogen geen woonplaatscriterium hanteren voor verkiezingen van de Unie.",
+      "Het burgerschap van de Unie is niet van toepassing op onderdanen buiten Europa."
+    ],
+    "c": 1,
+    "exp": "Het Hof oordeelde dat hoewel lidstaten kiesrechtvoorwaarden mogen stellen, het ongelijk behandelen van Nederlanders in Aruba t.o.v. Nederlanders in derde landen discriminatoir was."
+  },
+  {
+    "q": "Hoe wordt de Europese begroting volgens artikel 311 VWEU gefinancierd?",
+    "a": [
+      "Uitsluitend door vrijwillige bijdragen van de rijkste lidstaten.",
+      "Door middel van directe Europese inkomstenbelasting voor burgers.",
+      "Volledig uit eigen middelen van de Europese Unie.",
+      "Door leningen die worden aangegaan op de internationale kapitaalmarkt."
+    ],
+    "c": 2,
+    "exp": "De begroting wordt gefinancierd uit 'eigen middelen', zoals invoerrechten, een percentage van de btw en contributies gebaseerd op het bni."
+  },
+  {
+    "q": "Welke rol vervult het Parlement in de procedure voor de vaststelling van het Meerjarig Financieel Kader (MFK)?",
+    "a": [
+      "Het Parlement stelt het MFK zelfstandig vast bij eenvoudige meerderheid.",
+      "Het Parlement heeft een adviserende rol maar kan het besluit niet blokkeren.",
+      "Het Parlement stelt het MFK op en legt dit ter goedkeuring voor aan de Raad.",
+      "Het Parlement moet zijn goedkeuring verlenen aan het door de Raad vastgestelde kader."
+    ],
+    "c": 3,
+    "exp": "Op basis van artikel 312 VWEU stelt de Raad het MFK vast na goedkeuring van het Europees Parlement."
+  },
+  {
+    "q": "Wat hield de 'Spitzenkandidatenprocedure' in zoals toegepast in 2014?",
+    "a": [
+      "De grootste fractie in het Parlement draagt de kandidaat-voorzitter voor de Commissie aan.",
+      "De Europese Raad benoemt de voorzitter zonder overleg met politieke partijen.",
+      "Nationale parlementen kiezen gezamenlijk de voorzitter van de Commissie.",
+      "Lidstaten dragen per toerbeurt een kandidaat voor die het Parlement moet goedkeuren."
+    ],
+    "c": 0,
+    "exp": "In 2014 werd Juncker benoemd omdat hij de 'topkandidaat' was van de grootste fractie (EVP), wat de band tussen verkiezingen en commissievoorzitterschap versterkte."
+  },
+  {
+    "q": "Waarom pleiten sommige politici, zoals Macron, voor transnationale kieslijsten?",
+    "a": [
+      "Om de zwakte te verhelpen dat kiezers nu enkel op nationale kandidaten kunnen stemmen.",
+      "Om de invloed van kleinere politieke fracties in het Parlement te verkleinen.",
+      "Om de kosten van de Europese parlementsverkiezingen aanzienlijk te verlagen.",
+      "Om te voorkomen dat de Europese Raad nog invloed heeft op de benoeming."
+    ],
+    "c": 0,
+    "exp": "Transnationale lijsten zouden betekenen dat kiezers in de hele EU op dezelfde kandidaten kunnen stemmen, wat het Europese karakter van de verkiezingen versterkt."
+  },
+  {
+    "q": "Welke lidstaat oefent het voorzitterschap van de Raad Buitenlandse Zaken uit?",
+    "a": [
+      "De lidstaat die op dat moment het halfjaarlijkse toerbeurtvoorzitterschap heeft.",
+      "De drie lidstaten die samen het 18-maanden werkprogramma vormen.",
+      "Deze formatie heeft een permanent voorzitter: de Hoge Vertegenwoordiger.",
+      "De lidstaat met de grootste diplomatieke dienst binnen de Europese Unie."
+    ],
+    "c": 2,
+    "exp": "De Raad Buitenlandse Zaken is de enige uitzondering op de toerbeurt; deze wordt altijd voorgezeten door de Hoge Vertegenwoordiger."
+  },
+  {
+    "q": "Wat is het doel van de zogeheten 'Ioannina-bepaling' in het stemsysteem van de Raad?",
+    "a": [
+      "Het versnellen van besluitvorming bij humanitaire crises.",
+      "Het geven van een dubbel stemgewicht aan de grootste lidstaten.",
+      "Het uitsluiten van de Commissie bij gevoelige politieke dossiers.",
+      "Het creëren van een vertragingsmechanisme om tot een breder compromis te komen."
+    ],
+    "c": 3,
+    "exp": "De Ioannina-bepaling verplicht de Raad om verder te onderhandelen als een aanzienlijke minderheid tegen is, ook al is er formeel een meerderheid."
+  },
+  {
+    "q": "Op welke manier oefent de Europese Commissie haar controlerende taak uit jegens de lidstaten?",
+    "a": [
+      "Door het starten van een inbreukprocedure op grond van artikel 258 VWEU.",
+      "Door het ontbinden van nationale parlementen die EU-recht schenden.",
+      "Door het eenzijdig opleggen van strafrechtelijke sancties aan ministers.",
+      "Door het schorsen van het stemrecht van een lidstaat in de Europese Raad."
+    ],
+    "c": 0,
+    "exp": "De Commissie wordt ook wel de 'hoedster van de verdragen' genoemd en kan lidstaten voor het Hof dagen als zij hun verplichtingen niet nakomen."
+  },
+  {
+    "q": "Wie stelt de Europese Ombudsman aan en wat is de voornaamste taak van deze functionaris?",
+    "a": [
+      "De Raad; toezicht houden op de naleving van de mensenrechten in lidstaten.",
+      "Het Parlement; klachten van burgers over wanbeheer door EU-instellingen onderzoeken.",
+      "De Commissie; de financiële rechtmatigheid van EU-uitgaven controleren.",
+      "Het Hof van Justitie; het bemiddelen bij arbeidsconflicten binnen de Unie."
+    ],
+    "c": 1,
+    "exp": "De Ombudsman wordt door het Parlement benoemd (Art. 228 VWEU) om klachten over wanbeheer bij EU-organen te behandelen."
+  },
+  {
+    "q": "In welke procedure zijn het Europees Parlement en de Raad juridisch volledig gelijkwaardig als mede-wetgevers?",
+    "a": [
+      "In de raadplegingsprocedure bij fiscale harmonisatie.",
+      "In de procedure voor het sluiten van handelsakkoorden.",
+      "In de gewone wetgevingsprocedure (artikel 294 VWEU).",
+      "In de procedure voor de toetreding van nieuwe lidstaten."
+    ],
+    "c": 2,
+    "exp": "De gewone wetgevingsprocedure (voorheen codecisie) plaatst het Parlement op gelijke voet met de Raad."
+  },
+  {
+    "q": "Wat is de juridische consequentie van de benoeming van rechters en advocaten-generaal voor zes jaar?",
+    "a": [
+      "Zij moeten na drie jaar aftreden om plaats te maken voor nieuwe lidstaten.",
+      "Zij zijn na afloop van deze termijn niet meer herbenoembaar door de regeringen.",
+      "Zij verliezen hun onafhankelijkheid omdat zij afhankelijk zijn van nationale overheden.",
+      "Zij worden voor deze termijn benoemd en zijn daarna herbenoembaar."
+    ],
+    "c": 3,
+    "exp": "Rechters en AG's worden voor zes jaar benoemd door de lidstaten en kunnen opnieuw worden benoemd (Art. 253 VWEU)."
+  },
+  {
+    "q": "Welke bewering over de wetgevende rol van de Europese Raad is juridisch correct?",
+    "a": [
+      "De Europese Raad heeft formeel geen wetgevende taken.",
+      "De Europese Raad stelt richtlijnen vast op voorstel van de Commissie.",
+      "De Europese Raad fungeert als 'hogerhuis' boven het Europees Parlement.",
+      "De Europese Raad kan wetgeving van de Raad van Ministers vernietigen."
+    ],
+    "c": 0,
+    "exp": "Hoewel de Europese Raad politieke impulsen geeft, bepaalt artikel 15 VEU expliciet dat hij geen wetgevingstaken uitoefent."
+  }
+]

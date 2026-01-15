@@ -1,21 +1,50 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation, Outlet } from 'react-router-dom';
+import React, { useState, useEffect, useMemo } from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation, Outlet, useParams, Navigate } from 'react-router-dom';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { Scale, BookOpen, Gavel, ArrowLeft, Play, Award, BrainCircuit, Zap, Target, AlertTriangle, Heart } from 'lucide-react';
 
 // Pagina imports
-import TopicOne from './pages/TopicOne';     
-import TopicFour from './pages/TopicTwo';   
-import TopicEight from './pages/TopicTree'; 
-import TopicTen from './pages/TopicFour';     
+import TopicOne from './pages/TopicOne';      
+import TopicEight from './pages/TopicTree';  
+import TopicTen from './pages/TopicFour';      
 import Support from './pages/Support';
+
+// --- CONFIGURATIE: MASTER DATA PER VAK ---
+const masterData = {
+  "ipr-neo-2026": {
+    title: "IPR",
+    accent: "#6EE7B7",
+    tag: "Lawbooks Neo 2026",
+    path: "/course/ipr-module"
+  },
+  "sr1-premium-k92": {
+    title: "Strafrecht I",
+    accent: "#6EE7B7",
+    tag: "Lawbooks Premium 2026",
+    path: "/course/strafrecht-1"
+  },
+  "bestuursrecht-x72": {
+    title: "Bestuursrecht",
+    accent: "#6EE7B7",
+    tag: "Lawbooks Premium 2026",
+    path: "/course/bestuursrecht"
+  }
+};
+
+// Generieke kaarten: Miljoenenjacht is verwijderd, Jurisprudentie is terug
+const genericCards = [
+  { title: "Tentamen Killer", desc: "Beheers de fundamenten van het recht.", icon: Gavel, to: "SRI" },
+  { title: "Courtroom Rush", desc: "Maak beslissingen onder tijdsdruk.", icon: BrainCircuit, to: "courtroom-rush" },
+  { title: "Jurisprudentie", desc: "Analyseer de belangrijkste arresten.", icon: Award, to: "jurisprudentie" }
+];
 
 // --- SUBTIELE NEO SUPPORT BUTTON ---
 const MiniDonateButton = () => {
   const navigate = useNavigate();
+  const { subjectSlug } = useParams();
   return (
     <motion.button
-      onClick={() => navigate('/support')}
+      onClick={() => navigate(`/module/${subjectSlug}/support`)}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 0.6, scale: 1 }}
       whileHover={{ opacity: 1, scale: 1.1, backgroundColor: '#6EE7B7' }}
@@ -44,45 +73,38 @@ const pageVariants = {
 // --- STRIKTE SECURITY WRAPPER ---
 const SecurityWrapper = ({ children }) => {
   const [isAuthorized, setIsAuthorized] = useState(true);
+  const { subjectSlug } = useParams();
 
   useEffect(() => {
     const referrer = document.referrer;
     const hostname = window.location.hostname;
-    
-    // 1. Check of we op localhost draaien (voor development)
     const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
-    
-    // 2. Toegestane domeinen
     const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
     
-    // 3. Controleer of de referrer uit de lijst komt (en niet leeg is)
     const isAllowedReferrer = allowedDomains.some(domain => 
       referrer !== "" && referrer.includes(domain)
     );
 
-    // BLOKKEER LOGICA:
-    // Als het niet lokaal is EN de referrer is niet toegestaan (of leeg), dan blokkeren.
-    if (!isLocal && !isAllowedReferrer) {
+    const isValidSlug = !!masterData[subjectSlug];
+    const currentModule = masterData[subjectSlug];
+
+    if (!isLocal && (!isAllowedReferrer || !isValidSlug)) {
       setIsAuthorized(false);
     }
-  }, []);
+  }, [subjectSlug]);
 
   if (!isAuthorized) {
     return (
       <div className="h-screen w-full bg-[#050505] flex items-center justify-center p-6 text-center">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }} 
-          animate={{ opacity: 1, scale: 1 }} 
-          className="max-w-md p-10 rounded-[3rem] border border-red-500/30 bg-red-500/5 backdrop-blur-xl"
-        >
+        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="max-w-md p-10 rounded-[3rem] border border-red-500/30 bg-red-500/5 backdrop-blur-xl">
           <AlertTriangle size={64} className="text-red-500 mx-auto mb-6 animate-pulse" />
           <h2 className="text-white font-black text-2xl uppercase tracking-tighter mb-4 italic">Toegang Geweigerd</h2>
           <p className="text-red-400 font-bold text-sm leading-relaxed mb-6">
-            Deze module is uitsluitend toegankelijk via het officiële Lawbooks platform. Directe toegang of onbevoegd gebruik is niet toegestaan.
+            Deze module is uitsluitend toegankelijk via de geautoriseerde leeromgeving.
           </p>
           <div className="text-[10px] text-white/30 font-mono uppercase tracking-widest">
-            Protocol: SEC_VOI_REF_01 <br />
-            IP-Status: Geregistreerd
+            Protocol: SEC_VOI_REF_02 <br />
+            Status: Unauthorized_Path
           </div>
         </motion.div>
       </div>
@@ -99,26 +121,28 @@ const usePerformanceMode = () => {
   return isLowPower;
 };
 
-const BackgroundPulsator = ({ isLowPower }) => (
+const BackgroundPulsator = ({ isLowPower, color }) => (
   <div className="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none">
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
       animate={isLowPower ? { opacity: 1, scale: 1 } : { opacity: 1, scale: [1, 1.02, 1] }}
       transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-      className="w-[98%] h-[80%] max-w-6xl bg-[#6EE7B7]/5 border border-[#6EE7B7]/10 rounded-[3rem] md:rounded-[4rem]"
+      style={{ backgroundColor: `${color}0D`, borderColor: `${color}1A` }}
+      className="w-[98%] h-[80%] max-w-6xl border rounded-[3rem] md:rounded-[4rem]"
     />
   </div>
 );
 
-const TiltCard = ({ title, desc, icon: Icon, to, index }) => {
+const TiltCard = ({ title, desc, icon: Icon, to, index, color }) => {
   const navigate = useNavigate();
+  const { subjectSlug } = useParams();
   const isLowPower = usePerformanceMode();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const mouseXSpring = useSpring(x);
   const mouseYSpring = useSpring(y);
-  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["8deg", "-8deg"]);
-  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-8deg", "8deg"]);
+  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["4deg", "-4deg"]);
+  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-4deg", "4deg"]);
 
   return (
     <motion.div
@@ -126,64 +150,73 @@ const TiltCard = ({ title, desc, icon: Icon, to, index }) => {
       onMouseMove={(e) => { if (!isLowPower) { const rect = e.currentTarget.getBoundingClientRect(); x.set((e.clientX - rect.left) / rect.width - 0.5); y.set((e.clientY - rect.top) / rect.height - 0.5); }}}
       onMouseLeave={() => { x.set(0); y.set(0); }}
       style={{ rotateX: isLowPower ? 0 : rotateX, rotateY: isLowPower ? 0 : rotateY, transformStyle: "preserve-3d" }}
-      onClick={() => navigate(to)}
-      whileTap={{ scale: 0.97 }}
-      className="relative group cursor-pointer"
+      onClick={() => navigate(`/module/${subjectSlug}/${to}`)}
+      whileTap={{ scale: 0.98 }}
+      className="relative group cursor-pointer w-full"
     >
-      <div className="h-full bg-white border border-slate-100 p-5 md:p-6 rounded-[2rem] shadow-sm group-hover:shadow-lg transition-all duration-500">
-        <div className="w-10 h-10 md:w-12 md:h-12 bg-[#6EE7B7]/10 rounded-xl flex items-center justify-center mb-4 text-[#059669] group-hover:bg-[#6EE7B7] group-hover:text-white transition-all duration-300">
-          <Icon size={24} strokeWidth={2} />
+      <div className="bg-white border border-slate-100 p-6 md:p-8 rounded-[2.5rem] shadow-sm group-hover:shadow-xl transition-all duration-500 flex items-center gap-6">
+        <div style={{ color: color, backgroundColor: `${color}1A` }} className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#6EE7B7] group-hover:text-white transition-all duration-300">
+          <Icon size={32} strokeWidth={2} />
         </div>
-        <h3 className="text-lg md:text-xl font-black text-slate-900 mb-1 tracking-tight">{title}</h3>
-        <p className="text-slate-500 text-xs leading-snug mb-5 opacity-80">{desc}</p>
-        <div className="flex items-center text-[10px] font-black uppercase tracking-widest text-[#059669]">Start Module <Zap size={12} className="ml-1 fill-current" /></div>
+        <div className="flex-grow">
+          <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-1 tracking-tight">{title}</h3>
+          <p className="text-slate-500 text-sm opacity-80">{desc}</p>
+        </div>
+        <div style={{ color: color }} className="hidden md:flex items-center text-[10px] font-black uppercase tracking-widest shrink-0">
+          Start <Zap size={14} className="ml-1 fill-current" />
+        </div>
       </div>
     </motion.div>
   );
 };
 
 const Dashboard = () => {
+  const { subjectSlug } = useParams();
+  const data = masterData[subjectSlug];
   const isLowPower = usePerformanceMode();
+
+  if (!data) return null;
+
   return (
-    <motion.div variants={pageVariants} initial="initial" animate="enter" exit="exit" className="max-w-6xl mx-auto py-8 md:py-12 px-4 md:px-8 relative">
-      <BackgroundPulsator isLowPower={isLowPower} />
-      <div className="flex flex-col md:flex-row justify-between items-start mb-10 md:mb-14 gap-6">
+    <motion.div variants={pageVariants} initial="initial" animate="enter" exit="exit" className="max-w-4xl mx-auto py-8 md:py-12 px-4 md:px-8 relative">
+      <BackgroundPulsator isLowPower={isLowPower} color={data.accent} />
+      <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <div className="text-left w-full">
-          <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="flex items-center gap-2 text-[#059669] mb-3">
-            <Target size={14} /> <span className="text-[9px] font-black uppercase tracking-[0.3em]">Lawbooks Premium 2026</span>
+          <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="flex items-center gap-2 mb-3" style={{ color: data.accent }}>
+            <Target size={14} /> <span className="text-[9px] font-black uppercase tracking-[0.3em]">{data.tag}</span>
           </motion.div>
-          <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tighter leading-tight italic">
-            Kies je <span className="animate-gradient text-transparent bg-clip-text pr-2">Oefentool</span>
+          <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter leading-tight italic">
+            Kies je <span className="animate-gradient text-transparent bg-clip-text pr-2">Oefenmodule</span>
           </h1>
-          <p className="mt-4 text-slate-500 text-sm md:text-base max-w-md">Kies een module om direct te starten met trainen.</p>
+          <p className="mt-4 text-slate-500 text-sm md:text-base max-w-2xl">Kies een van de onderstaande tools om je vaardigheden te trainen.</p>
         </div>
-        <motion.img whileHover={{ rotate: 5, scale: 1.1 }} src="/foto.jpg" alt="Logo" className="w-16 h-16 md:w-24 md:h-24 rounded-2xl border-2 border-white shadow-xl object-cover shrink-0" />
+        <motion.img whileHover={{ rotate: 5, scale: 1.1 }} src="/foto.jpg" alt="Logo" className="w-20 h-20 md:w-24 md:h-24 rounded-3xl border-2 border-white shadow-xl object-cover shrink-0" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-        <TiltCard index={0} title="Strafrecht: Basis" desc="Beheers de fundamenten van het recht." icon={Gavel} to="/SRI" />
-        <TiltCard index={1} title="SR: Miljoenenjacht" desc="Interactieve game-show quiz over IPR." icon={BookOpen} to="/SR" />
-        <TiltCard index={2} title="Courtroom Rush" desc="Maak beslissingen onder tijdsdruk." icon={BrainCircuit} to="/courtroom-rush" />
-        <TiltCard index={3} title="Jurisprudentie" desc="Analyseer de belangrijkste arresten." icon={Award} to="/jurisprudentie" />
+      <div className="flex flex-col gap-4 md:gap-6 max-w-3xl">
+        {genericCards.map((card, idx) => (
+          <TiltCard key={idx} {...card} index={idx} color={data.accent} />
+        ))}
       </div>
     </motion.div>
   );
 };
 
 const MainLayout = () => {
+  const { subjectSlug } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
-  const isDashboard = location.pathname === '/';
+  const isDashboard = location.pathname === `/module/${subjectSlug}`;
 
   return (
     <SecurityWrapper>
       <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative selection:bg-[#6EE7B7]/30">
         <AnimatePresence mode="wait">
-          <motion.div key={location.pathname + "-loader"} initial={{ width: "0%" }} animate={{ width: "100%" }} exit={{ opacity: 0 }} className="fixed top-0 left-0 h-[2px] bg-[#6EE7B7] z-[60]" />
+          <motion.div key={location.pathname} initial={{ width: "0%" }} animate={{ width: "100%" }} exit={{ opacity: 0 }} className="fixed top-0 left-0 h-[2px] bg-[#6EE7B7] z-[60]" />
         </AnimatePresence>
 
         {!isDashboard && (
           <motion.nav initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 px-6 py-3 flex items-center justify-between">
-            <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-900 font-black text-[9px] uppercase tracking-widest hover:text-[#059669] transition-colors">
+            <button onClick={() => navigate(`/module/${subjectSlug}`)} className="flex items-center gap-2 text-slate-900 font-black text-[9px] uppercase tracking-widest hover:text-[#059669] transition-colors">
               <ArrowLeft size={14} /> Terug naar Dashboard
             </button>
             <div className="flex items-center gap-2 font-black italic text-xs tracking-tighter uppercase"><Scale size={16} className="text-[#6EE7B7]" /> Lawbooks</div>
@@ -205,14 +238,14 @@ const MainLayout = () => {
 const App = () => (
   <Router>
     <Routes>
-      <Route element={<MainLayout />}>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/SRI" element={<TopicOne />} />
-        <Route path="/SR" element={<TopicFour />} />
-        <Route path="/courtroom-rush" element={<TopicEight />} />
-        <Route path="/jurisprudentie" element={<TopicTen />} />
-        <Route path="/support" element={<Support />} />
+      <Route path="/module/:subjectSlug" element={<MainLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path="SRI" element={<TopicOne />} />
+        <Route path="courtroom-rush" element={<TopicEight />} />
+        <Route path="jurisprudentie" element={<TopicTen />} />
+        <Route path="support" element={<Support />} />
       </Route>
+      <Route path="/" element={<Navigate to="/module/ipr-neo-2026" replace />} />
     </Routes>
   </Router>
 );

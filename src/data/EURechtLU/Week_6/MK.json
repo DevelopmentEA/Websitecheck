@@ -1,0 +1,277 @@
+[
+ {
+  "q": "Wat is volgens artikel 19 VEU de primaire taak van het Hof van Justitie van de Europese Unie met betrekking tot het nationale recht?",
+  "a": [
+   "Het toetsen van alle nationale wetgeving aan het volledige internationale recht.",
+   "Het verzekeren van de eerbiediging van het recht bij de uitlegging en toepassing van de Verdragen.",
+   "Het fungeren als hoogste beroepsinstantie voor alle civiele procedures binnen de lidstaten.",
+   "Het opstellen van uniforme wetboeken van strafrecht voor alle lidstaten."
+  ],
+  "c": 1,
+  "exp": "Artikel 19 VEU stelt dat het Hof van Justitie de eerbiediging van het recht verzekert. De focus ligt op de uniforme en effectieve toepassing van het EU-recht in de lidstaten."
+ },
+ {
+  "q": "Op welk specifiek beleidsterrein heeft het Hof van Justitie in beginsel geen rechtsmacht, behoudens enkele uitzonderingen?",
+  "a": [
+   "Het gemeenschappelijk landbouwbeleid (GLB).",
+   "De interne markt en het mededingingsrecht.",
+   "Het gemeenschappelijk buitenlands- en veiligheidsbeleid (GBVB).",
+   "De douane-unie en het vrij verkeer van goederen."
+  ],
+  "c": 2,
+  "exp": "Het Hof heeft geen rechtsmacht inzake het GBVB (art. 24 VEU en 275 VWEU), tenzij het gaat om de afbakening van bevoegdheden of de rechtmatigheid van sancties tegen individuen."
+ },
+ {
+  "q": "Wat is de taakverdeling tussen het Hof van Justitie en het Gerecht bij directe beroepen van particulieren?",
+  "a": [
+   "Het Hof van Justitie behandelt alle zaken, het Gerecht geeft slechts advies.",
+   "Het Gerecht oordeelt in eerste aanleg over directe beroepen van particulieren; het Hof behandelt hogere voorzieningen.",
+   "Particulieren kunnen direct naar het Hof van Justitie, het Gerecht is er alleen voor geschillen tussen lidstaten.",
+   "Het Gerecht is uitsluitend bevoegd voor prejudiciële vragen, het Hof voor directe beroepen."
+  ],
+  "c": 1,
+  "exp": "Het Gerecht is de instantie die in eerste aanleg oordeelt over directe beroepen die door natuurlijke of rechtspersonen (particulieren) worden ingesteld (art. 256 VWEU)."
+ },
+ {
+  "q": "Wat is het doel van de prejudiciële procedure zoals geregeld in artikel 267 VWEU?",
+  "a": [
+   "Het bieden van een mogelijkheid voor particulieren om een staat aan te klagen wegens wanprestatie.",
+   "Het creëren van een uniforme uitleg van het EU-recht door antwoord te geven op vragen van nationale rechters.",
+   "Het vernietigen van nationale vonnissen die in strijd zijn met het EVRM.",
+   "Het geven van bindende adviezen aan de Europese Commissie over nieuwe wetgeving."
+  ],
+  "c": 1,
+  "exp": "De prejudiciële procedure stelt nationale rechters in staat (of verplicht hen) vragen te stellen aan het Hof over de uitleg of geldigheid van EU-recht om uniformiteit te waarborgen."
+ },
+ {
+  "q": "Wanneer is een nationale rechterlijke instantie verplicht om een prejudiciële vraag te stellen aan het Hof van Justitie?",
+  "a": [
+   "Wanneer de rechter twijfelt aan de feiten van de zaak.",
+   "Wanneer het een lagere rechter betreft en partijen daarom vragen.",
+   "Wanneer de beslissing van de rechter volgens het nationale recht niet vatbaar is voor hoger beroep.",
+   "Wanneer de zaak gaat over een onderwerp dat in de media veel aandacht krijgt."
+  ],
+  "c": 2,
+  "exp": "Artikel 267 lid 3 VWEU verplicht de hoogste nationale rechter (waarvan de beslissing niet vatbaar is voor hoger beroep) om vragen voor te leggen, tenzij een uitzondering (Cilfit) van toepassing is."
+ },
+ {
+  "q": "Wat houdt de 'acte clair'-doctrine in, zoals geformuleerd in het Cilfit-arrest?",
+  "a": [
+   "De rechter hoeft niet te verwijzen als de feiten van de zaak helder zijn.",
+   "De rechter hoeft niet te verwijzen als de juiste toepassing van het EU-recht zo evident is dat er redelijkerwijs geen twijfel mogelijk is.",
+   "De rechter moet altijd verwijzen, tenzij de zaak spoedeisend is.",
+   "De rechter mag niet verwijzen als de vraag al eerder is gesteld in een andere lidstaat."
+  ],
+  "c": 1,
+  "exp": "Acte clair betekent dat de uitleg van het EU-recht zo overduidelijk is ('evident') dat verwijzing naar het Hof overbodig is. De rechter moet hierbij wel rekening houden met alle taalversies en de context."
+ },
+ {
+  "q": "Wat is de kern van het arrest Foto-Frost met betrekking tot de bevoegdheid van nationale rechters?",
+  "a": [
+   "Nationale rechters mogen EU-rechtshandelingen ongeldig verklaren als ze in strijd zijn met de Grondwet.",
+   "Nationale rechters zijn bevoegd om handelingen van EU-instellingen geldig te verklaren, maar alleen het Hof mag ze ongeldig verklaren.",
+   "Nationale rechters hebben geen enkele bevoegdheid om te oordelen over de geldigheid van EU-recht.",
+   "Lagere nationale rechters moeten altijd verwijzen, ook bij uitleggingsvragen."
+  ],
+  "c": 1,
+  "exp": "In Foto-Frost bepaalde het Hof dat nationale rechters EU-handelingen wel geldig mogen achten, maar de exclusieve bevoegdheid om EU-handelingen *ongeldig* te verklaren bij het Hof ligt."
+ },
+ {
+  "q": "Wie heeft de discretionaire bevoegdheid om een inbreukprocedure (art. 258 VWEU) te starten tegen een lidstaat?",
+  "a": [
+   "Het Europees Parlement.",
+   "De Europese Raad.",
+   "Een andere lidstaat.",
+   "De Europese Commissie."
+  ],
+  "c": 3,
+  "exp": "De Europese Commissie is de 'hoeder van de Verdragen' en heeft de discretionaire bevoegdheid om een procedure te starten als een lidstaat het EU-recht niet nakomt."
+ },
+ {
+  "q": "Welke formele stap moet de Commissie nemen in de administratieve fase van de inbreukprocedure voordat zij naar het Hof stapt?",
+  "a": [
+   "Het direct opleggen van een geldboete.",
+   "Het uitbrengen van een met redenen omkleed advies.",
+   "Het publiceren van de schending in het Publicatieblad.",
+   "Het vragen van toestemming aan het Europees Parlement."
+  ],
+  "c": 1,
+  "exp": "Na de aanmaningsbrief volgt, indien de lidstaat niet toegeeft, het 'met redenen omkleed advies'. Pas als de daarin gestelde termijn verloopt, kan de Commissie naar het Hof."
+ },
+ {
+  "q": "Wat kan het Hof opleggen als een lidstaat een eerder arrest, waarin een schending was vastgesteld, niet naleeft (art. 260 VWEU)?",
+  "a": [
+   "Een gevangenisstraf voor de verantwoordelijke minister.",
+   "Schorsing van het stemrecht van de lidstaat in de Raad.",
+   "Een forfaitaire som en/of een dwangsom.",
+   "Uitsluiting van de lidstaat uit de interne markt."
+  ],
+  "c": 2,
+  "exp": "Als een lidstaat een arrest niet nakomt, kan de Commissie in een tweede procedure aan het Hof vragen om een financiële sanctie op te leggen: een forfaitaire som (boete) of een dwangsom."
+ },
+ {
+  "q": "Binnen welke termijn moet een beroep tot nietigverklaring (art. 263 VWEU) worden ingesteld?",
+  "a": [
+   "Binnen twee maanden na bekendmaking van de handeling.",
+   "Binnen zes maanden na inwerkingtreding.",
+   "Binnen één jaar na ontdekking van het gebrek.",
+   "Er geldt geen termijn zolang de handeling effect heeft."
+  ],
+  "c": 0,
+  "exp": "De termijn is strikt: het beroep moet worden ingesteld binnen twee maanden na de bekendmaking of kennisgeving van de handeling."
+ },
+ {
+  "q": "Wat houdt de 'Plaumann-formule' in voor de ontvankelijkheid van particulieren in een nietigheidsprocedure?",
+  "a": [
+   "De klager moet aantonen dat hij meer dan €10.000 schade heeft geleden.",
+   "De klager moet individueel geraakt worden door bijzondere hoedanigheden die hem onderscheiden van ieder ander.",
+   "De klager moet de steun hebben van zijn nationale regering.",
+   "De klager moet bewijzen dat de handeling discriminatoir is."
+  ],
+  "c": 1,
+  "exp": "Volgens het Plaumann-arrest is iemand 'individueel geraakt' als de beschikking hem treft wegens bijzondere hoedanigheden die hem ten opzichte van ieder ander karakteriseren (individualiseren)."
+ },
+ {
+  "q": "Welke verruiming bood het Verdrag van Lissabon in art. 263 lid 4 VWEU voor beroep door particulieren tegen 'regelgevingshandelingen'?",
+  "a": [
+   "Beroep is mogelijk als de handeling de klager rechtstreeks raakt en geen uitvoeringsmaatregelen vereist.",
+   "Beroep is mogelijk tegen alle wetgevingshandelingen zonder verdere eisen.",
+   "Beroep is alleen mogelijk na toestemming van de nationale rechter.",
+   "Beroep is mogelijk als er sprake is van een schending van mensenrechten, ongeacht de aard van de handeling."
+  ],
+  "c": 0,
+  "exp": "Bij regelgevingshandelingen (niet-wetgevingshandelingen) hoeft men niet 'individueel' geraakt te zijn, mits men 'rechtstreeks' geraakt is en de handeling 'geen uitvoeringsmaatregelen' vereist."
+ },
+ {
+  "q": "Wat was de uitkomst in de zaak Inuit met betrekking tot de definitie van 'regelgevingshandelingen'?",
+  "a": [
+   "Regelgevingshandelingen omvatten alle handelingen van algemene strekking, inclusief wetgevingshandelingen.",
+   "Wetgevingshandelingen (aangenomen via de wetgevingsprocedure) vallen niet onder het begrip 'regelgevingshandelingen'.",
+   "De Inuit hadden rechtstreeks beroep omdat hun cultuur bedreigd werd.",
+   "De verordening over zeehondenproducten werd nietig verklaard wegens gebrek aan rechtsbasis."
+  ],
+  "c": 1,
+  "exp": "Het Hof oordeelde dat 'regelgevingshandelingen' in art. 263 lid 4 VWEU zien op handelingen van algemene strekking die *geen* wetgevingshandelingen zijn. Tegen wetgevingshandelingen blijft de strenge Plaumann-toets gelden."
+ },
+ {
+  "q": "Welke grond voor nietigverklaring (art. 263 VWEU) ziet op het gebruik van een bevoegdheid voor een ander doel dan waarvoor deze is verleend?",
+  "a": [
+   "Onbevoegdheid.",
+   "Schending van wezenlijke vormvoorschriften.",
+   "Misbruik van bevoegdheid (détournement de pouvoir).",
+   "Schending van het Verdrag."
+  ],
+  "c": 2,
+  "exp": "Misbruik van bevoegdheid betekent dat een instelling een bevoegdheid aanwendt voor een ander doel dan waarvoor die bevoegdheid oorspronkelijk is gegeven."
+ },
+ {
+  "q": "Wat is het rechtsgevolg van een geslaagd beroep tot nietigverklaring?",
+  "a": [
+   "De handeling wordt vernietigd met terugwerkende kracht (ex tunc); juridisch heeft het nooit bestaan.",
+   "De handeling wordt ongeldig verklaard vanaf de datum van de uitspraak (ex nunc).",
+   "De instelling moet een schadevergoeding betalen, maar de handeling blijft bestaan.",
+   "De handeling wordt teruggestuurd naar de Raad voor heroverweging."
+  ],
+  "c": 0,
+  "exp": "Nietigverklaring werkt 'ex tunc' (vanuit het verleden). De handeling wordt geacht nooit te hebben bestaan. Wel kan het Hof soms bepalen dat bepaalde gevolgen in stand blijven (art. 264 VWEU)."
+ },
+ {
+  "q": "Wat houdt de 'acte éclairé'-uitzondering in het kader van de prejudiciële verwijzingsplicht in?",
+  "a": [
+   "De rechter hoeft niet te verwijzen als de vraag al beantwoord is in vaste rechtspraak van het Hof.",
+   "De rechter moet verwijzen als de vraag nieuw is en er geen precedent bestaat.",
+   "De rechter mag niet verwijzen als de partijen al een schikking hebben getroffen.",
+   "De rechter hoeft niet te verwijzen als de nationale wet duidelijker is dan de EU-wet."
+  ],
+  "c": 0,
+  "exp": "Acte éclairé houdt in dat de rechtsvraag al materieel beantwoord is door eerdere arresten van het Hof. Een nieuwe verwijzing is dan niet noodzakelijk."
+ },
+ {
+  "q": "In de zaak Commissie t. Frankrijk (Visserij) werd besloten dat het mogelijk is om zowel een dwangsom als een forfaitaire som op te leggen. Waarom?",
+  "a": [
+   "Om de Franse overheid failliet te laten gaan.",
+   "Omdat de schending zowel langdurig had voortgeduurd (forfaitaire som) als dreigde voort te duren (dwangsom).",
+   "Omdat Frankrijk weigerde mee te werken aan het onderzoek.",
+   "Omdat het Verdrag van Lissabon dit verplicht stelt bij visserijzaken."
+  ],
+  "c": 1,
+  "exp": "Het Hof oordeelde dat cumulatie mogelijk is: de forfaitaire som bestraft het verleden (de lange duur van de schending), de dwangsom prikkelt om de schending in de toekomst direct te stoppen."
+ },
+ {
+  "q": "Welk vereiste geldt er voor de aansprakelijkheid van de Unie bij een beroep tot schadevergoeding (art. 340 VWEU)?",
+  "a": [
+   "Er moet sprake zijn van opzet bij de ambtenaren van de EU.",
+   "De geschonden regel moet de bescherming van particulieren beogen (Schutznorm).",
+   "De schade moet minimaal 1 miljoen euro bedragen.",
+   "De lidstaat waar de schade viel moet eerst aansprakelijk zijn gesteld."
+  ],
+  "c": 1,
+  "exp": "Voor schadevergoeding gelden de 'Bergaderm'-criteria (analoog aan Francovich/Brasserie voor staten), waaronder dat de geschonden rechtsregel ertoe moet strekken rechten aan particulieren toe te kennen (Schutznorm)."
+ },
+ {
+  "q": "Wat gebeurt er als een nationale rechter de feiten en het juridisch kader op gebrekkige wijze uiteenzet in een prejudiciële verwijzing?",
+  "a": [
+   "Het Hof zal de vragen zelf herformuleren en de feiten aanvullen.",
+   "Het Hof kan de vragen niet-ontvankelijk verklaren.",
+   "Het Hof stuurt de zaak door naar het Gerecht.",
+   "De rechter krijgt een boete van het Hof."
+  ],
+  "c": 1,
+  "exp": "Het Hof heeft voldoende informatie nodig om een nuttig antwoord te geven. Als de verwijzing te vaag of gebrekkig is, kan het Hof de vragen niet-ontvankelijk verklaren."
+ },
+ {
+  "q": "Kan een lidstaat een andere lidstaat rechtstreeks aanklagen bij het Hof wegens schending van EU-recht?",
+  "a": [
+   "Nee, alleen de Commissie kan dit doen.",
+   "Ja, maar pas nadat de zaak eerst aan de Commissie is voorgelegd (art. 259 VWEU).",
+   "Ja, dit kan direct zonder tussenkomst van de Commissie.",
+   "Nee, lidstaten hebben immuniteit tegenover elkaar."
+  ],
+  "c": 1,
+  "exp": "Op grond van artikel 259 VWEU kan een lidstaat een andere lidstaat dagen, maar de procedure vereist dat de klacht eerst bij de Commissie wordt neergelegd."
+ },
+ {
+  "q": "Wat toonde de zaak Plaumann aan over de kans van slagen voor particulieren in beroepen tegen beschikkingen gericht aan lidstaten?",
+  "a": [
+   "Dat deze kans zeer groot is, mits men economische schade heeft.",
+   "Dat deze kans zeer klein is vanwege de strenge uitleg van 'individueel geraakt'.",
+   "Dat importeurs van fruit een bevoorrechte status hebben.",
+   "Dat de Commissie altijd gelijk krijgt in handelsgeschillen."
+  ],
+  "c": 1,
+  "exp": "De Plaumann-formule is zeer streng. Het enkele feit dat men economisch geraakt wordt (als mandarijnenimporteur) is onvoldoende om individueel onderscheiden te zijn; de groep is immers open en wijzigbaar."
+ },
+ {
+  "q": "Welke rol speelt de Commissie in de eerste fase van de inbreukprocedure (art. 258 VWEU)?",
+  "a": [
+   "De rol van rechter die direct sancties oplegt.",
+   "De rol van bemiddelaar die probeert de schending informeel met de lidstaat op te lossen.",
+   "De rol van aanklager die direct een dagvaarding stuurt.",
+   "De rol van wetgever die de regels aanpast aan de praktijk van de lidstaat."
+  ],
+  "c": 1,
+  "exp": "De procedure begint met een administratieve fase waarin de Commissie en de lidstaat in dialoog gaan om te onderzoeken of de schending zonder rechtszaak kan worden opgelost."
+ },
+ {
+  "q": "Mag een lagere nationale rechter zelf beslissen dat een EU-verordening ongeldig is?",
+  "a": [
+   "Ja, als de verordening duidelijk in strijd is met hogere rechtsregels.",
+   "Ja, als partijen hiermee instemmen.",
+   "Nee, volgens het arrest Foto-Frost moet de rechter dan een prejudiciële geldigheidsvraag stellen.",
+   "Nee, tenzij de verordening ouder is dan vijf jaar."
+  ],
+  "c": 2,
+  "exp": "Lagere rechters zijn in beginsel niet verplicht te verwijzen, *behalve* als zij van mening zijn dat een EU-handeling ongeldig is. Zij mogen die ongeldigheid niet zelf vaststellen (Foto-Frost)."
+ },
+ {
+  "q": "Wat is een 'acte éclairé'?",
+  "a": [
+   "Een handeling van de Commissie die duidelijkheid verschaft.",
+   "Een situatie waarin de rechtsvraag al eerder door het Hof is beantwoord.",
+   "Een wet die door het Parlement is aangenomen met verlichte meerderheid.",
+   "Een uitspraak van een nationale rechter die in heel Europa wordt gevolgd."
+  ],
+  "c": 1,
+  "exp": "Dit is de terminologie uit Cilfit: de vraag is al 'verhelderd' (éclairé) door eerdere rechtspraak, waardoor nieuwe verwijzing niet nodig is."
+ }
+]
