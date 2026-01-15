@@ -10,7 +10,7 @@ import TopicEight from './pages/TopicTree';
 import TopicTen from './pages/TopicFour';     
 import Support from './pages/Support';
 
-// --- SUBTIELE NEO DONATE BUTTON ---
+// --- SUBTIELE NEO SUPPORT BUTTON ---
 const MiniDonateButton = () => {
   const navigate = useNavigate();
   return (
@@ -150,7 +150,7 @@ const Dashboard = () => {
       <div className="flex flex-col md:flex-row justify-between items-start mb-10 md:mb-14 gap-6">
         <div className="text-left w-full">
           <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="flex items-center gap-2 text-[#059669] mb-3">
-            <Target size={14} /> <span className="text-[9px] font-black uppercase tracking-[0.3em]">Lawbooks Neo 2026</span>
+            <Target size={14} /> <span className="text-[9px] font-black uppercase tracking-[0.3em]">Lawbooks Premium 2026</span>
           </motion.div>
           <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tighter leading-tight italic">
             Kies je <span className="animate-gradient text-transparent bg-clip-text pr-2">Oefentool</span>
