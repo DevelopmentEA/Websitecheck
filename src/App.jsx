@@ -41,7 +41,67 @@ const genericCards = [
   { title: "Ben je locked in?", desc: "Een echt tentamen...", icon: Award, to: "jurisprudentie" }
 ];
 
-// --- SUBTIELE NEO SUPPORT BUTTON ---
+// --- STRIKTE SECURITY WRAPPER (IFRAME ONLY) ---
+const SecurityWrapper = ({ children }) => {
+  const [isAuthorized, setIsAuthorized] = useState(true);
+  const { subjectSlug } = useParams();
+
+  useEffect(() => {
+    // 1. Omgeving checken
+    const hostname = window.location.hostname;
+    const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
+    
+    // 2. Iframe check: Ben ik geladen in een ander venster?
+    const isInIframe = window.self !== window.top;
+
+    // 3. Referrer check: Komt het verzoek van een goedgekeurd domein?
+    const referrer = document.referrer;
+    const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
+    const isAllowedReferrer = allowedDomains.some(domain => 
+      referrer !== "" && referrer.includes(domain)
+    );
+
+    // 4. Data check: Is dit vak bekend?
+    const isValidSlug = !!masterData[subjectSlug];
+
+    // Handhaving: Alleen op productie-omgevingen
+    if (!isLocal) {
+      // We weigeren toegang als:
+      // - Het vak niet bestaat
+      // - OF de site NIET in een iframe zit
+      // - OF de referrer niet klopt (bijv. directe link zonder herkomst)
+      if (!isValidSlug || !isInIframe || !isAllowedReferrer) {
+        setIsAuthorized(false);
+      }
+    }
+  }, [subjectSlug]);
+
+  if (!isAuthorized) {
+    return (
+      <div className="h-screen w-full bg-[#050505] flex items-center justify-center p-6 text-center">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }} 
+          animate={{ opacity: 1, scale: 1 }} 
+          className="max-w-md p-10 rounded-[3rem] border border-red-500/30 bg-red-500/5 backdrop-blur-xl"
+        >
+          <AlertTriangle size={64} className="text-red-500 mx-auto mb-6 animate-pulse" />
+          <h2 className="text-white font-black text-2xl uppercase tracking-tighter mb-4 italic">Toegang Geweigerd</h2>
+          <p className="text-red-400 font-bold text-sm leading-relaxed mb-6">
+            Deze module is uitsluitend toegankelijk via de geautoriseerde Lawbooks leeromgeving. Directe toegang is uitgeschakeld.
+          </p>
+          <div className="text-[10px] text-white/30 font-mono uppercase tracking-widest">
+            Protocol: SEC_IFRAME_ONLY <br />
+            Status: Unauthorized_Environment
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
+  return children;
+};
+
+// --- REST VAN DE COMPONENTEN (ONGEWIJZIGD) ---
+
 const MiniDonateButton = () => {
   const navigate = useNavigate();
   const { subjectSlug } = useParams();
@@ -71,48 +131,6 @@ const pageVariants = {
     transition: { ...transition, when: "beforeChildren", staggerChildren: 0.05 } 
   },
   exit: { opacity: 0, scale: 0.95, y: -10, transition: { duration: 0.3 } }
-};
-
-// --- STRIKTE SECURITY WRAPPER ---
-const SecurityWrapper = ({ children }) => {
-  const [isAuthorized, setIsAuthorized] = useState(true);
-  const { subjectSlug } = useParams();
-
-  useEffect(() => {
-    const referrer = document.referrer;
-    const hostname = window.location.hostname;
-    const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
-    const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
-    
-    const isAllowedReferrer = allowedDomains.some(domain => 
-      referrer !== "" && referrer.includes(domain)
-    );
-
-    const isValidSlug = !!masterData[subjectSlug];
-
-    if (!isLocal && (!isAllowedReferrer || !isValidSlug)) {
-      setIsAuthorized(false);
-    }
-  }, [subjectSlug]);
-
-  if (!isAuthorized) {
-    return (
-      <div className="h-screen w-full bg-[#050505] flex items-center justify-center p-6 text-center">
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="max-w-md p-10 rounded-[3rem] border border-red-500/30 bg-red-500/5 backdrop-blur-xl">
-          <AlertTriangle size={64} className="text-red-500 mx-auto mb-6 animate-pulse" />
-          <h2 className="text-white font-black text-2xl uppercase tracking-tighter mb-4 italic">Toegang Geweigerd</h2>
-          <p className="text-red-400 font-bold text-sm leading-relaxed mb-6">
-            Deze module is uitsluitend toegankelijk via de geautoriseerde leeromgeving.
-          </p>
-          <div className="text-[10px] text-white/30 font-mono uppercase tracking-widest">
-            Protocol: SEC_VOI_REF_02 <br />
-            Status: Unauthorized_Path
-          </div>
-        </motion.div>
-      </div>
-    );
-  }
-  return children;
 };
 
 const usePerformanceMode = () => {
