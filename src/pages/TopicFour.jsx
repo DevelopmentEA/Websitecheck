@@ -1,499 +1,330 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import confetti from 'canvas-confetti';
 import { 
-  GitMerge, 
-  CheckCircle2, 
-  XCircle, 
-  ArrowDown, 
-  Scale, 
-  Globe, 
-  BookOpen, 
-  ShieldAlert,
-  HelpCircle,
-  FileText,
-  ChevronDown,
-  ChevronUp,
-  Info,
-  Zap,
-  Gavel,
-  AlertTriangle,
-  UserCheck,
-  Package,
-  Clock,
-  Briefcase
+  FileText, CheckCircle2, XCircle, AlertCircle, 
+  Send, ChevronRight, ChevronLeft, Play, Award, 
+  Clock, Info, RotateCcw, Eye, EyeOff
 } from 'lucide-react';
 
-// ==========================================
-// HERBRUIKBARE UI-COMPONENTEN
-// ==========================================
+import { masterData } from '../data/masterData';
 
-const DetailDropdown = ({ title, children, color = "blue" }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const colorClasses = {
-    blue: "bg-blue-50 text-blue-800 border-blue-200 hover:bg-blue-100",
-    slate: "bg-slate-50 text-slate-800 border-slate-200 hover:bg-slate-100",
-    emerald: "bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100",
-    amber: "bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100",
-    red: "bg-red-50 text-red-800 border-red-200 hover:bg-red-100",
+export default function TentamenSimulator() {
+  const { subjectSlug } = useParams();
+  const navigate = useNavigate();
+  
+  const activeSubject = masterData[subjectSlug];
+  const questionsDb = activeSubject?.db || {};
+  const accentColor = activeSubject?.accent || "#059669";
+
+  // --- STATES ---
+  const [gameState, setGameState] = useState('intro'); // intro, exam, eval_open, results
+  const [questions, setQuestions] = useState({ mk: [], open: null });
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [answers, setAnswers] = useState({}); 
+  const [openAnswer, setOpenAnswer] = useState("");
+  const [timeLeft, setTimeLeft] = useState(3 * 60 * 60); 
+  const [openGrade, setOpenGrade] = useState(5); 
+  const [showReview, setShowReview] = useState(false);
+
+  const storageKey = `exam_session_${subjectSlug}`;
+
+  // --- PERSISTENCE & INITIALISATIE ---
+  useEffect(() => {
+    const saved = localStorage.getItem(storageKey);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      setQuestions(parsed.questions);
+      setAnswers(parsed.answers);
+      setOpenAnswer(parsed.openAnswer);
+      setTimeLeft(parsed.timeLeft);
+      setGameState(parsed.gameState);
+      setCurrentIdx(parsed.currentIdx);
+    }
+  }, [subjectSlug, storageKey]);
+
+  useEffect(() => {
+    if (gameState === 'exam') {
+      const sessionData = { questions, answers, openAnswer, timeLeft, gameState, currentIdx };
+      localStorage.setItem(storageKey, JSON.stringify(sessionData));
+    }
+  }, [answers, openAnswer, timeLeft, gameState, currentIdx, questions, storageKey]);
+
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      if (gameState === 'exam') {
+        e.preventDefault();
+        e.returnValue = 'Je voortgang gaat verloren als je de pagina nu verlaat.';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [gameState]);
+
+  useEffect(() => {
+    let timer;
+    if (gameState === 'exam' && timeLeft > 0) {
+      timer = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
+    } else if (timeLeft <= 0 && gameState === 'exam') {
+      submitExam();
+    }
+    return () => clearInterval(timer);
+  }, [gameState, timeLeft]);
+
+  // --- LOGICA ---
+  const startNewExam = () => {
+    let mkPool = [];
+    let openPool = [];
+    Object.keys(questionsDb).forEach(week => {
+      if (questionsDb[week].MK) mkPool.push(...questionsDb[week].MK.map(q => ({...q, week})));
+      if (questionsDb[week].Open) openPool.push(...questionsDb[week].Open.map(q => ({...q, week})));
+    });
+
+    if (mkPool.length < 30) return alert("Onvoldoende vragen in database.");
+
+    const selectedMK = mkPool.sort(() => Math.random() - 0.5).slice(0, 30);
+    const selectedOpen = openPool.sort(() => Math.random() - 0.5)[0];
+
+    setQuestions({ mk: selectedMK, open: selectedOpen });
+    setAnswers({});
+    setOpenAnswer("");
+    setTimeLeft(3 * 60 * 60);
+    setGameState('exam');
   };
 
-  return (
-    <div className="mt-3 w-full">
-      <button 
-        onClick={() => setIsOpen(!isOpen)}
-        className={`w-full flex items-center justify-between p-3 rounded-lg border text-xs font-bold uppercase tracking-wider transition-all ${colorClasses[color]}`}
-      >
-        <span className="flex items-center gap-2">
-          <Info size={14} /> {title}
-        </span>
-        {isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-      </button>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div 
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden"
-          >
-            <div className="p-4 border-x border-b border-slate-100 bg-white rounded-b-lg text-sm text-slate-600 leading-relaxed shadow-inner">
-              {children}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-};
-
-const FlowStep = ({ title, description, type = 'neutral', isLast = false, outcome, extraContent }) => {
-  const getColors = () => {
-    switch(type) {
-      case 'success': return 'bg-emerald-50 border-emerald-300 text-emerald-900';
-      case 'failure': return 'bg-red-50 border-red-300 text-red-900';
-      case 'question': return 'bg-blue-50 border-blue-300 text-blue-900';
-      case 'law': return 'bg-slate-100 border-slate-400 text-slate-900';
-      default: return 'bg-white border-slate-200 text-slate-800';
+  const submitExam = () => {
+    if (window.confirm("Wil je het tentamen definitief inleveren? De antwoorden kunnen niet meer worden gewijzigd.")) {
+      setGameState('eval_open');
+      window.scrollTo(0, 0);
     }
   };
 
+  const formatTime = (seconds) => {
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = seconds % 60;
+    return `${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+  };
+
+  // --- ACADEMISCHE SCORE BEREKENING ---
+  const calculateResult = () => {
+    const N = 30; // Totaal aantal vragen
+    const k = 4;  // Aantal keuzemogelijkheden
+    const G = N / k; // Gokbasis (7.5)
+    const CesuurX = G + 0.5 * (N - G); // Punt voor een 6.0 (18.75)
+    
+    let rawScore = 0;
+    questions.mk.forEach((q, idx) => {
+      if (answers[idx] === q.c) rawScore++;
+    });
+
+    // Berekening MK cijfer op basis van cesuur
+    let mkGrade = 1;
+    if (rawScore <= G) {
+      mkGrade = 1.0;
+    } else if (rawScore > G && rawScore <= CesuurX) {
+      mkGrade = 1 + 5 * (rawScore - G) / (CesuurX - G);
+    } else {
+      mkGrade = 6 + 4 * (rawScore - CesuurX) / (N - CesuurX);
+    }
+
+    // Totaalcijfer: 80% MK + 20% Open
+    const finalGrade = (mkGrade * 0.8) + (openGrade * 0.2);
+    
+    return { 
+      rawScore, 
+      mkGrade: mkGrade.toFixed(2), 
+      finalGrade: Math.max(1, Math.min(10, finalGrade)).toFixed(1) 
+    };
+  };
+
+  if (!activeSubject) return null;
+
   return (
-    <div className="relative pl-8 pb-10 last:pb-0">
-      {!isLast && <div className="absolute left-[11px] top-8 bottom-0 w-0.5 bg-slate-200"></div>}
-      <div className={`absolute left-0 top-0 w-6 h-6 rounded-full border-2 flex items-center justify-center z-10 ${
-        type === 'question' ? 'bg-blue-500 border-blue-600' : 'bg-white border-slate-300'
-      }`}>
-        {type === 'question' ? <HelpCircle size={14} className="text-white" /> : <div className="w-2 h-2 rounded-full bg-slate-400" />}
-      </div>
-      <motion.div 
-        initial={{ opacity: 0, x: -10 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        className={`p-5 rounded-xl border-2 shadow-sm ${getColors()}`}
-      >
-        <h4 className="font-black text-xs uppercase tracking-widest mb-1 opacity-70">{title}</h4>
-        <p className="text-sm font-bold leading-snug">{description}</p>
-        {extraContent}
-        {outcome && (
-          <div className="mt-4 pt-3 border-t border-black/10 text-xs font-black flex items-center gap-2 italic uppercase">
-            <ArrowDown size={14} /> Resultaat: {outcome}
+    <div className="min-h-screen bg-[#F3F4F6] text-slate-900 font-sans pb-20">
+      
+      {/* EXAMEN HEADER */}
+      {gameState === 'exam' && (
+        <div className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex justify-between items-center">
+          <div className="flex items-center gap-3">
+            <div className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
+            <span className="font-black uppercase text-[9px] tracking-widest text-slate-400">Examen Modus</span>
+          </div>
+          <div className={`px-6 py-2 rounded-full font-mono text-xl font-black ${timeLeft < 600 ? 'bg-red-100 text-red-600' : 'bg-slate-100 text-slate-700'}`}>
+             {formatTime(timeLeft)}
+          </div>
+          <button onClick={submitExam} className="bg-black text-white px-5 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest">Inleveren</button>
+        </div>
+      )}
+
+      <main className={`max-w-4xl mx-auto px-6 ${gameState === 'exam' ? 'pt-28' : 'pt-12'}`}>
+        
+        {/* 1. INTRO */}
+        {gameState === 'intro' && (
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-white p-12 rounded-[3rem] shadow-xl border border-slate-100 text-center">
+            <div className="w-20 h-20 bg-slate-50 rounded-3xl flex items-center justify-center mx-auto mb-8 text-4xl border border-slate-100">🎓</div>
+            <h1 className="text-5xl font-black tracking-tighter uppercase italic mb-2">{activeSubject.title}</h1>
+            <h2 className="text-xl font-bold text-slate-400 mb-12">Officieel Oefententamen Simulator</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-left">
+              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                <FileText className="mb-3 text-slate-400" />
+                <p className="font-black text-[9px] uppercase text-slate-400">Onderdelen</p>
+                <p className="font-bold text-sm">30 MK (80%) + Casus (20%)</p>
+              </div>
+              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                <AlertCircle className="mb-3 text-orange-400" />
+                <p className="font-black text-[9px] uppercase text-slate-400">Gokcorrectie</p>
+                <p className="font-bold text-sm">Actief (Cesuur bij 18.75)</p>
+              </div>
+              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                <Clock className="mb-3 text-slate-400" />
+                <p className="font-black text-[9px] uppercase text-slate-400">Beschikbare Tijd</p>
+                <p className="font-bold text-sm">180 minuten</p>
+              </div>
+            </div>
+
+            <button onClick={startNewExam} className="w-full py-6 rounded-2xl text-white font-black uppercase tracking-widest text-sm shadow-xl hover:scale-[1.01] transition-all" style={{ backgroundColor: accentColor }}>
+              Start de Simulatie
+            </button>
+          </motion.div>
+        )}
+
+        {/* 2. EXAMEN LOOP */}
+        {gameState === 'exam' && (
+          <div className="space-y-10">
+            <div className="flex flex-wrap gap-1.5 justify-center">
+              {[...Array(30)].map((_, i) => (
+                <button key={i} onClick={() => setCurrentIdx(i)} className={`w-9 h-9 rounded-lg text-[10px] font-black transition-all border-2 ${currentIdx === i ? 'scale-110' : ''} ${answers[i] !== undefined ? 'bg-slate-800 border-slate-800 text-white' : 'bg-white border-slate-200 text-slate-400'}`} style={currentIdx === i ? { borderColor: accentColor } : {}}>{i + 1}</button>
+              ))}
+              <button onClick={() => setCurrentIdx(30)} className={`px-4 h-9 rounded-lg text-[9px] font-black uppercase tracking-widest border-2 ${currentIdx === 30 ? 'scale-110' : ''} ${openAnswer.length > 50 ? 'bg-slate-800 border-slate-800 text-white' : 'bg-white border-slate-200 text-slate-400'}`} style={currentIdx === 30 ? { borderColor: accentColor } : {}}>Casus</button>
+            </div>
+
+            {currentIdx < 30 ? (
+              <motion.div key={currentIdx} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} className="bg-white p-10 rounded-[3rem] shadow-lg border border-slate-100">
+                <span className="text-[10px] font-black uppercase text-slate-300 mb-4 block">Vraag {currentIdx + 1}</span>
+                <h2 className="text-2xl font-black leading-tight mb-10 text-slate-800">{questions.mk[currentIdx].q}</h2>
+                <div className="grid gap-3">
+                  {questions.mk[currentIdx].a.map((opt, i) => (
+                    <button key={i} onClick={() => setAnswers({...answers, [currentIdx]: i})} className={`w-full p-6 text-left border-2 rounded-2xl font-bold transition-all flex justify-between items-center ${answers[currentIdx] === i ? 'bg-slate-900 text-white border-slate-900' : 'bg-white border-slate-100 hover:border-slate-200'}`}>
+                      {opt} {answers[currentIdx] === i && <CheckCircle2 size={18} className="text-[#6EE7B7]" />}
+                    </button>
+                  ))}
+                </div>
+              </motion.div>
+            ) : (
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white p-10 rounded-[3rem] shadow-lg border border-slate-100">
+                <h2 className="text-2xl font-black leading-tight mb-8">{questions.open.q}</h2>
+                <textarea value={openAnswer} onChange={(e) => setOpenAnswer(e.target.value)} placeholder="Schrijf je antwoord hier..." className="w-full h-96 p-8 rounded-3xl border-2 border-slate-100 focus:border-slate-300 outline-none transition-all font-medium text-lg resize-none shadow-inner bg-slate-50/50" />
+              </motion.div>
+            )}
+            
+            <div className="flex justify-between mt-6">
+              <button disabled={currentIdx === 0} onClick={() => setCurrentIdx(prev => prev - 1)} className="px-6 py-3 font-black text-[10px] uppercase text-slate-400 disabled:opacity-0">Vorige</button>
+              <button disabled={currentIdx === 30} onClick={() => setCurrentIdx(prev => prev + 1)} className="px-6 py-3 font-black text-[10px] uppercase text-slate-800 disabled:opacity-0">Volgende</button>
+            </div>
           </div>
         )}
-      </motion.div>
-    </div>
-  );
-};
 
-// ==========================================
-// DATA: DE 6 HOOFDSCHEMA'S
-// ==========================================
-
-const schemas = [
-  {
-    id: 'ovk-vorming',
-    title: '1. Totstandkoming & Geldigheid',
-    subtitle: 'Wilsverklaring, Vertrouwen & Wilsgebreken',
-    icon: <UserCheck size={20} />,
-    description: "Hoe ontstaat een verbintenis en is deze aantastbaar?",
-    content: (
-      <div className="space-y-4">
-        <FlowStep 
-          title="Stap 1: Aanbod & Aanvaarding"
-          description="Is er een geldige overeenkomst gevormd conform art. 6:217 BW?"
-          type="question"
-          extraContent={
-            <DetailDropdown title="Checklist Aanbod">
-              <p>1. <strong>Essentalia:</strong> Bevat het de kernvoorwaarden? (Art. 3:33 BW)</p>
-              <p>2. <strong>Herroepelijkheid:</strong> Is het ingetrokken vóór aanvaarding? (Art. 6:219 BW)</p>
-              <p>3. <strong>Vormvrijheid:</strong> Verklaringen kunnen in gedragingen besloten liggen (Art. 3:37 lid 1 BW).</p>
-            </DetailDropdown>
-          }
-        />
-        <FlowStep 
-          title="Stap 2: Wil vs Verklaring"
-          description="Lopen de wil en verklaring uiteen? (Bijv. verspreking/fout)"
-          type="question"
-          outcome="Indien JA: Kijk naar bescherming wederpartij."
-          extraContent={
-            <DetailDropdown title="Art. 3:33 vs 3:35 BW">
-              <p><strong>Art. 3:33:</strong> Geen wil = geen rechtshandeling.</p>
-              <p><strong>Art. 3:35:</strong> Gerechtvaardigd vertrouwen. Mocht de wederpartij er redelijkerwijs van uitgaan dat de verklaring klopte? (Haviltex/Eelman-Hin).</p>
-            </DetailDropdown>
-          }
-        />
-        <FlowStep 
-          title="Stap 3: Wilsgebreken"
-          description="Is de wil gebrekkig gevormd? (Vernietigbaarheid)"
-          type="law"
-          extraContent={
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
-              <div className="p-3 bg-white border rounded shadow-sm">
-                <p className="font-bold text-xs text-blue-600">DWALING (Art. 6:228)</p>
-                <p className="text-[10px]">Onjuiste voorstelling. Eis: Mededeling wederpartij, zwijgen of wederzijdse dwaling.</p>
+        {/* 3. EVALUATIE OPEN VRAAG */}
+        {gameState === 'eval_open' && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white p-10 rounded-[3rem] shadow-2xl border border-slate-100">
+            <h2 className="text-3xl font-black mb-10 italic uppercase tracking-tighter">Zelf-beoordeling</h2>
+            <div className="grid md:grid-cols-2 gap-10 mb-12">
+              <div>
+                <p className="text-[10px] font-black uppercase text-slate-400 mb-3">Jouw uitwerking</p>
+                <div className="p-6 bg-slate-50 rounded-2xl text-slate-600 text-sm italic h-64 overflow-y-auto border border-slate-100">{openAnswer || "Geen antwoord ingevuld."}</div>
               </div>
-              <div className="p-3 bg-white border rounded shadow-sm">
-                <p className="font-bold text-xs text-red-600">BEDROG (Art. 3:44 lid 3)</p>
-                <p className="text-[10px]">Opzettelijke misleiding via kunstgrepen of verzwijgen.</p>
+              <div>
+                <p className="text-[10px] font-black uppercase text-[#059669] mb-3">Modelantwoord</p>
+                <div className="p-6 bg-emerald-50 rounded-2xl text-emerald-900 font-bold text-sm h-64 overflow-y-auto border border-emerald-100">{questions.open.sample}</div>
               </div>
             </div>
-          }
-        />
-      </div>
-    )
-  },
-  {
-    id: 'wanprestatie',
-    title: '2. Wanprestatie & Schade',
-    subtitle: 'Art. 6:74 BW - De weg naar schadevergoeding',
-    icon: <AlertTriangle size={20} />,
-    description: "Gebruik dit bij elke vraag over het eisen van geld wegens niet-nakoming.",
-    content: (
-      <div className="space-y-2">
-        <FlowStep 
-          title="Stap 1: Tekortkoming"
-          description="Is de schuldenaar achtergebleven bij de prestatie?"
-          type="question"
-          extraContent={<p className="text-xs italic mt-1">Check opeisbaarheid: Art. 6:38 of 6:39 BW.</p>}
-        />
-        <FlowStep 
-          title="Stap 2: Toerekenbaarheid"
-          description="Is de fout de schuldenaar aan te rekenen? (Art. 6:75 BW)"
-          type="question"
-          extraContent={
-            <DetailDropdown title="Check Overmacht" color="red">
-              <p>Geen toerekening als: Geen schuld + niet voor risico volgens wet (6:76 hulppersonen/6:77 zaken), rechtshandeling of verkeersopvatting.</p>
-            </DetailDropdown>
-          }
-        />
-        <FlowStep 
-          title="Stap 3: Verzuim"
-          description="Is nakoming nog mogelijk? Dan is verzuim vereist (Art. 6:74 lid 2)."
-          type="question"
-          extraContent={
-            <DetailDropdown title="Hoe treedt verzuim in?" color="amber">
-              <p>1. <strong>Ingebrekestelling (Art. 6:82):</strong> Schriftelijke aanmaning met redelijke termijn.</p>
-              <p>2. <strong>Van rechtswege (Art. 6:83):</strong> Bijv. fatale termijn (sub a) of mededeling schuldenaar (sub c).</p>
-            </DetailDropdown>
-          }
-        />
-        <FlowStep 
-          title="Stap 4: Schade & Causaliteit"
-          description="Is er schade en staat deze in verband met de fout? (Art. 6:95-98 BW)"
-          type="success"
-          isLast={true}
-          extraContent={
-            <DetailDropdown title="Causaliteitstoets" color="emerald">
-              <p><strong>Art. 6:98:</strong> Toerekening naar redelijkheid. Factoren: aard schade (letsel gaat voor vermogen) en aard aansprakelijkheid (schuld gaat voor risico).</p>
-            </DetailDropdown>
-          }
-        />
-      </div>
-    )
-  },
-  {
-    id: 'ontbinding-schema',
-    title: '3. Ontbinding (Xerxes)',
-    subtitle: 'Art. 6:265 BW - Contract beëindigen',
-    icon: <Zap size={20} />,
-    description: "Cruciaal schema voor casus Xerxes.",
-    content: (
-      <div className="space-y-2">
-        <FlowStep 
-          title="1. Wederkerige Overeenkomst"
-          description="Is er sprake van art. 6:261 BW?"
-          type="neutral"
-          outcome="Ja (bijv. Koop)"
-        />
-        <FlowStep 
-          title="2. Tekortkoming"
-          description="Iedere tekortkoming geeft recht op ontbinding."
-          type="law"
-          extraContent={<p className="text-xs text-red-600 font-bold">LET OP: Toerekenbaarheid (overmacht) is hier NIET vereist!</p>}
-        />
-        <FlowStep 
-          title="3. Verzuim"
-          description="Alleen nodig als nakoming nog mogelijk is (Art. 6:265 lid 2)."
-          type="question"
-          extraContent={
-            <div className="mt-2 p-2 bg-slate-100 rounded text-xs">
-              <strong>Casus Xerxes:</strong> Steppen zijn 'soortzaken' (alom verkrijgbaar). Nakoming is dus mogelijk. Verzuim nodig. Trad in via 6:83 sub a (fatale datum 1 juni).
-            </div>
-          }
-        />
-        <FlowStep 
-          title="4. Gevolgen"
-          description="Bevrijding (6:271) en ongedaanmaking."
-          type="success"
-          isLast={true}
-        />
-      </div>
-    )
-  },
-  {
-    id: 'onrechtmatige-daad',
-    title: '4. Onrechtmatige Daad',
-    subtitle: 'Art. 6:162 BW - Schade buiten contract',
-    icon: <Gavel size={20} />,
-    description: "Vaste structuur voor OD-vragen.",
-    content: (
-      <div className="space-y-2">
-        <FlowStep 
-          title="1. Onrechtmatigheid"
-          description="Drie gronden (Lid 2):"
-          type="law"
-          extraContent={
-            <ul className="text-xs list-disc ml-4 mt-2">
-              <li>Inbreuk op een recht (eigendom/lichaam)</li>
-              <li>Strijd met wettelijke plicht</li>
-              <li>Strijd met ongeschreven recht (Kelderluik)</li>
-            </ul>
-          }
-        />
-        <FlowStep 
-          title="Kelderluik-Criteria (Maatschappelijke Betamelijkheid)"
-          description="Moest de dader maatregelen nemen?"
-          type="question"
-          extraContent={
-            <div className="grid grid-cols-2 gap-2 text-[10px] mt-2">
-              <div className="bg-blue-50 p-1 border">1. Waarschijnlijkheid onoplettendheid</div>
-              <div className="bg-blue-50 p-1 border">2. Kans op ongeval</div>
-              <div className="bg-blue-50 p-1 border">3. Ernst gevolgen</div>
-              <div className="bg-blue-50 p-1 border">4. Bezwaarlijkheid maatregelen</div>
-            </div>
-          }
-        />
-        <FlowStep 
-          title="2. Toerekenbaarheid"
-          description="Schuld, wet of verkeersopvatting? (Lid 3)"
-          type="question"
-          extraContent={
-            <div className="bg-amber-50 p-2 border-l-4 border-amber-400 mt-2 text-xs">
-              <strong>CASUS BRAM:</strong> Art. 6:164 BW. Kind &lt; 14 jaar? Dan <u>nooit</u> toerekening aan het kind.
-            </div>
-          }
-        />
-        <FlowStep 
-          title="3. Relativiteit"
-          description="Art. 6:163 BW - Beschermt de norm dit slachtoffer?"
-          type="question"
-          isLast={true}
-        />
-      </div>
-    )
-  },
-  {
-    id: 'kwalitatief',
-    title: '5. Aansprakelijkheid voor Anderen',
-    subtitle: 'Art. 6:169 t/m 6:179 BW',
-    icon: <Scale size={20} />,
-    description: "Wanneer ben je aansprakelijk voor kinderen, werknemers of zaken?",
-    content: (
-      <div className="grid md:grid-cols-2 gap-4">
-        <div className="p-4 bg-slate-50 border rounded-xl">
-          <h5 className="font-bold text-sm mb-2">Kinderen (Art. 6:169)</h5>
-          <ul className="text-xs space-y-2">
-            <li><strong>&lt; 14 jaar:</strong> Ouders volledig aansprakelijk (risico).</li>
-            <li><strong>14 of 15 jaar:</strong> Ouders aansprakelijk, tenzij zij niet-nakoming zorgplicht aantonen.</li>
-          </ul>
-        </div>
-        <div className="p-4 bg-slate-50 border rounded-xl">
-          <h5 className="font-bold text-sm mb-2">Hulppersonen (Art. 6:170)</h5>
-          <p className="text-xs italic">Werkgever is aansprakelijk voor fout ondergeschikte mits functioneel verband.</p>
-        </div>
-        <div className="p-4 bg-slate-50 border rounded-xl">
-          <h5 className="font-bold text-sm mb-2">Zaken & Opstallen (6:173/174)</h5>
-          <p className="text-xs">Bezitters-aansprakelijkheid voor gebrekkige zaken/gebouwen.</p>
-        </div>
-        <div className="p-4 bg-slate-50 border rounded-xl">
-          <h5 className="font-bold text-sm mb-2">Dieren (Art. 6:179)</h5>
-          <p className="text-xs">Bezitter aansprakelijk voor de 'eigen energie' van het dier.</p>
-        </div>
-      </div>
-    )
-  },
-  {
-    id: 'vertegenwoordiging',
-    title: '6. Vertegenwoordiging',
-    subtitle: 'Volmacht & Bekrachtiging',
-    icon: <Briefcase size={20} />,
-    description: "Wie wordt gebonden door een handeling van een ander?",
-    content: (
-      <div className="space-y-3">
-        <FlowStep 
-          title="Is er een volmacht? (Art. 3:60)"
-          description="Heeft de achterman de tussenpersoon bevoegd gemaakt?"
-          type="question"
-          outcome="Indien NEE: Achterman niet gebonden, tenzij..."
-        />
-        <FlowStep 
-          title="Schijn van Volmacht (Art. 3:61 lid 2)"
-          description="Heeft de achterman door zijn doen of laten de schijn gewekt?"
-          type="question"
-          extraContent={<p className="text-xs italic">Wederpartij moet te goeder trouw zijn.</p>}
-        />
-        <FlowStep 
-          title="Bekrachtiging (Art. 3:69)"
-          description="De achterman kan de handeling achteraf alsnog geldig maken."
-          type="success"
-          isLast={true}
-        />
-      </div>
-    )
-  }
-];
-
-// ==========================================
-// MAIN APP COMPONENT
-// ==========================================
-
-const CivilLawToolkit = () => {
-  const [activeTab, setActiveTab] = useState('ovk-vorming');
-  const activeSchema = schemas.find(s => s.id === activeTab);
-
-  return (
-    <div className="w-full max-w-6xl mx-auto p-2 md:p-6 bg-slate-50 min-h-screen font-sans text-slate-900">
-      
-      {/* Header Section */}
-      <div className="mb-10 text-center md:text-left bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-600 text-white rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-4 shadow-lg shadow-blue-200">
-          <Gavel size={14} /> Leiden Law Study Partner
-        </div>
-        <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter mb-4">
-          Inleiding Burgerlijk Recht <span className="text-blue-600">I</span>
-        </h1>
-        <p className="text-slate-500 max-w-2xl text-lg font-medium leading-relaxed">
-          Interactieve schema's voor het oplossen van open vragen. Gebruik de <span className="font-bold text-slate-800 underline decoration-blue-400">IRAC-volgorde</span> zoals getoond in de stappenplannen.
-        </p>
-      </div>
-
-      {/* Navigation Tabs */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
-        {schemas.map((schema) => (
-          <button
-            key={schema.id}
-            onClick={() => setActiveTab(schema.id)}
-            className={`flex flex-col items-center justify-center gap-3 p-4 rounded-2xl border-2 transition-all duration-300 ${
-              activeTab === schema.id 
-                ? 'bg-white border-blue-500 shadow-xl shadow-blue-100 scale-105 z-10' 
-                : 'bg-slate-50 border-slate-200 hover:border-slate-300 opacity-70 grayscale hover:grayscale-0'
-            }`}
-          >
-            <div className={`p-3 rounded-xl ${activeTab === schema.id ? 'bg-blue-600 text-white' : 'bg-slate-200 text-slate-500'}`}>
-              {schema.icon}
-            </div>
-            <span className={`font-black text-[10px] uppercase tracking-tighter text-center leading-tight ${activeTab === schema.id ? 'text-blue-700' : 'text-slate-500'}`}>
-              {schema.title.split('. ')[1]}
-            </span>
-          </button>
-        ))}
-      </div>
-
-      {/* Dynamic Content Display */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        
-        {/* Main Stappenplan */}
-        <div className="lg:col-span-8">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeTab}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.3 }}
-              className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden"
-            >
-              <div className="bg-slate-900 p-8 text-white">
-                <h2 className="text-3xl font-black tracking-tight flex items-center gap-3">
-                  {activeSchema.title}
-                </h2>
-                <p className="text-slate-400 font-bold mt-2 uppercase text-xs tracking-widest">{activeSchema.subtitle}</p>
+            <div className="p-8 bg-slate-50 rounded-3xl mb-12 border border-slate-100">
+              <p className="text-[10px] font-black uppercase text-slate-400 mb-4 text-center tracking-widest">Checklist Kernpunten</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {questions.open.checklist.map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 p-3 bg-white rounded-xl text-xs font-bold border border-slate-100 shadow-sm">
+                    <div className="w-5 h-5 rounded bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">✓</div> {item}
+                  </div>
+                ))}
               </div>
-              
-              <div className="p-8 md:p-12">
-                <p className="text-slate-500 font-medium mb-10 pb-6 border-b border-slate-100 italic">
-                  "{activeSchema.description}"
-                </p>
-                {activeSchema.content}
+            </div>
+            <div className="text-center">
+              <p className="font-black uppercase text-xs mb-6">Ken jezelf een score toe voor de casus (0-10)</p>
+              <div className="flex flex-wrap justify-center gap-2 mb-10">
+                {[...Array(11)].map((_, i) => (
+                  <button key={i} onClick={() => setOpenGrade(i)} className={`w-10 h-10 rounded-lg font-black text-sm transition-all ${openGrade === i ? 'bg-black text-white scale-110 shadow-lg' : 'bg-slate-100 text-slate-400'}`}>{i}</button>
+                ))}
               </div>
+              <button onClick={() => { setGameState('results'); localStorage.removeItem(storageKey); confetti({ particleCount: 200, spread: 100 }); }} className="w-full py-5 text-white font-black uppercase rounded-2xl shadow-xl hover:scale-[1.01] transition-all" style={{ backgroundColor: accentColor }}>Bekijk Resultaten</button>
+            </div>
+          </motion.div>
+        )}
+
+        {/* 4. RESULTATEN & INZAGE */}
+        {gameState === 'results' && (
+          <div className="space-y-8">
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="bg-white p-12 rounded-[4rem] shadow-2xl border border-slate-100 text-center relative overflow-hidden">
+               <div className="absolute top-0 left-0 w-full h-3" style={{ backgroundColor: accentColor }} />
+               <h1 className="text-6xl font-black tracking-tighter uppercase italic mb-10">Resultaat</h1>
+               <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-12">
+                  <div>
+                    <p className="text-[10px] font-black uppercase text-slate-400 mb-2">Eindcijfer</p>
+                    <div className="text-9xl font-black tracking-tighter italic" style={{ color: accentColor }}>{calculateResult().finalGrade}</div>
+                  </div>
+                  <div className="text-left bg-slate-50 p-8 rounded-[2rem] border border-slate-100">
+                    <p className="text-[10px] font-black uppercase text-slate-400 mb-4 tracking-widest text-center">Specificaties</p>
+                    <div className="space-y-4">
+                      <div className="flex justify-between gap-10"><span>MK Punten</span><span className="font-black text-slate-900">{calculateResult().rawScore} / 30</span></div>
+                      <div className="flex justify-between gap-10"><span>MK Cijfer (80%)</span><span className="font-black text-slate-900">{calculateResult().mkGrade} / 10</span></div>
+                      <div className="flex justify-between gap-10"><span>Casus Cijfer (20%)</span><span className="font-black text-slate-900">{openGrade}.0 / 10</span></div>
+                    </div>
+                  </div>
+               </div>
+               <div className="flex flex-col md:flex-row gap-4">
+                 <button onClick={() => setShowReview(!showReview)} className="flex-1 py-5 bg-slate-900 text-white font-black uppercase tracking-widest text-xs rounded-2xl flex items-center justify-center gap-2">
+                   {showReview ? <EyeOff size={16}/> : <Eye size={16}/>} {showReview ? "Inzage Sluiten" : "Inzage MK Vragen"}
+                 </button>
+                 <button onClick={() => { setGameState('intro'); window.scrollTo(0,0); }} className="flex-1 py-5 bg-white border-2 border-slate-100 font-black uppercase tracking-widest text-xs rounded-2xl flex items-center justify-center gap-2"><RotateCcw size={16}/> Nieuw Tentamen</button>
+               </div>
             </motion.div>
-          </AnimatePresence>
-        </div>
 
-        {/* Sidebar Tips & IRAC Reminder */}
-        <div className="lg:col-span-4 space-y-6">
-          <div className="bg-blue-600 text-white p-8 rounded-3xl shadow-xl shadow-blue-200">
-            <h3 className="text-xl font-black mb-4 flex items-center gap-2">
-              <BookOpen size={20} /> De IRAC-Methode
-            </h3>
-            <div className="space-y-4 text-sm font-medium opacity-90">
-              <div className="border-l-2 border-white/30 pl-3">
-                <p className="font-black text-xs uppercase">Issue (De Vraag)</p>
-                <p>"De vraag is of Xerxes de overeenkomst kan ontbinden..."</p>
-              </div>
-              <div className="border-l-2 border-white/30 pl-3">
-                <p className="font-black text-xs uppercase">Rule (De Regel)</p>
-                <p>"Hiervoor is art. 6:265 BW van belang. Dit vereist een tekortkoming..."</p>
-              </div>
-              <div className="border-l-2 border-white/30 pl-3">
-                <p className="font-black text-xs uppercase">Application (Toepassing)</p>
-                <p>"In casu is er een tekortkoming omdat Yka niet heeft geleverd..."</p>
-              </div>
-              <div className="border-l-2 border-white/30 pl-3">
-                <p className="font-black text-xs uppercase">Conclusion (Conclusie)</p>
-                <p>"Kortom, Xerxes kan rechtsgeldig ontbinden."</p>
-              </div>
-            </div>
+            {/* INZAGE SECTIE */}
+            <AnimatePresence>
+              {showReview && (
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} className="space-y-6">
+                  <h3 className="text-xl font-black uppercase italic tracking-tighter ml-4">Inzage Meerkeuze</h3>
+                  {questions.mk.map((q, idx) => {
+                    const isCorrect = answers[idx] === q.c;
+                    return (
+                      <div key={idx} className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm">
+                        <div className="flex justify-between mb-4">
+                          <span className="text-[10px] font-black uppercase text-slate-400">Vraag {idx + 1}</span>
+                          {isCorrect ? <span className="text-emerald-500 font-black text-[10px] flex items-center gap-1"><CheckCircle2 size={12}/> CORRECT</span> : <span className="text-red-500 font-black text-[10px] flex items-center gap-1"><XCircle size={12}/> INCORRECT</span>}
+                        </div>
+                        <h4 className="text-lg font-bold text-slate-800 mb-6">{q.q}</h4>
+                        <div className="grid gap-2 mb-6">
+                          {q.a.map((opt, i) => (
+                            <div key={i} className={`p-4 rounded-xl text-sm font-medium border ${i === q.c ? 'bg-emerald-50 border-emerald-200 text-emerald-900 font-bold' : i === answers[idx] ? 'bg-red-50 border-red-200 text-red-900' : 'bg-slate-50 border-transparent text-slate-400'}`}>
+                              {opt}
+                            </div>
+                          ))}
+                        </div>
+                        <div className="p-5 bg-slate-50 rounded-2xl border-l-4 border-slate-800">
+                          <p className="text-[10px] font-black uppercase text-slate-400 mb-1 italic">Analyse</p>
+                          <p className="text-sm text-slate-600 font-medium leading-relaxed">{q.exp}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-
-          <div className="bg-emerald-50 border-2 border-emerald-200 p-8 rounded-3xl">
-            <h3 className="text-emerald-900 font-black text-lg mb-4 flex items-center gap-2">
-              <ShieldAlert size={20} /> Tentamen Pro-Tips
-            </h3>
-            <ul className="text-xs text-emerald-800 space-y-3 font-bold">
-              <li className="flex gap-2">
-                <span className="text-emerald-500">●</span>
-                Noem bij schadevergoeding ALTIJD eerst de grondslag (bijv. 6:74 of 6:162).
-              </li>
-              <li className="flex gap-2">
-                <span className="text-emerald-500">●</span>
-                Vergeet bij minderjarigen (Bram) art. 1:234 lid 3 niet (gebruikelijke handelingen).
-              </li>
-              <li className="flex gap-2">
-                <span className="text-emerald-500">●</span>
-                Uitleg van het contract? Gebruik de Haviltex-norm (Week 3).
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      {/* Footer Disclaimer */}
-      <footer className="mt-16 text-center text-slate-400 text-[10px] font-bold uppercase tracking-widest border-t border-slate-200 pt-8 pb-12">
-        © 2025 Universiteit Leiden Study Buddy | Niet delen of uploaden
-      </footer>
-
+        )}
+      </main>
     </div>
   );
-};
-
-export default CivilLawToolkit;
+}

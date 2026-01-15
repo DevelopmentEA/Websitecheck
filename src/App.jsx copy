@@ -1,10 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation, Outlet, useParams, Navigate } from 'react-router-dom';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { Scale, BookOpen, Gavel, ArrowLeft, Play, Award, BrainCircuit, Zap, Target, AlertTriangle, Heart, Maximize2 } from 'lucide-react';
-
-// Focus Mode Import
-import Zenmode from './Zenmode';
+import { Scale, BookOpen, Gavel, ArrowLeft, Play, Award, BrainCircuit, Zap, Target, AlertTriangle, Heart } from 'lucide-react';
 
 // Pagina imports
 import TopicOne from './pages/TopicOne';      
@@ -34,7 +31,7 @@ const masterData = {
   }
 };
 
-// Generieke kaarten
+// Generieke kaarten: Miljoenenjacht is verwijderd, Jurisprudentie is terug
 const genericCards = [
   { title: "Tentamen Killer", desc: "Beheers de fundamenten van het recht.", icon: Gavel, to: "SRI" },
   { title: "Courtroom Rush", desc: "Maak beslissingen onder tijdsdruk.", icon: BrainCircuit, to: "courtroom-rush" },
@@ -89,6 +86,7 @@ const SecurityWrapper = ({ children }) => {
     );
 
     const isValidSlug = !!masterData[subjectSlug];
+    const currentModule = masterData[subjectSlug];
 
     if (!isLocal && (!isAllowedReferrer || !isValidSlug)) {
       setIsAuthorized(false);
@@ -207,17 +205,11 @@ const MainLayout = () => {
   const { subjectSlug } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
-  const [isZenActive, setIsZenActive] = useState(false);
   const isDashboard = location.pathname === `/module/${subjectSlug}`;
-  const data = masterData[subjectSlug];
 
   return (
     <SecurityWrapper>
       <div className="min-h-screen w-full bg-[#F9FAFB] text-slate-900 relative selection:bg-[#6EE7B7]/30">
-        
-        {/* ZEN MODE OVERLAY */}
-        <Zenmode isActive={isZenActive} onClose={() => setIsZenActive(false)} />
-
         <AnimatePresence mode="wait">
           <motion.div key={location.pathname} initial={{ width: "0%" }} animate={{ width: "100%" }} exit={{ opacity: 0 }} className="fixed top-0 left-0 h-[2px] bg-[#6EE7B7] z-[60]" />
         </AnimatePresence>
@@ -237,18 +229,6 @@ const MainLayout = () => {
           </AnimatePresence>
         </main>
         
-        {/* FOCUS KNOP (LINKSONDER) */}
-        {!isZenActive && (
-          <motion.button
-            onClick={() => setIsZenActive(true)}
-            initial={{ opacity: 0 }} animate={{ opacity: 0.6 }} whileHover={{ opacity: 1, scale: 1.1 }}
-            className="fixed bottom-6 left-6 z-40 w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-lg border border-slate-200/50 rounded-full shadow-sm group transition-all"
-          >
-            <Maximize2 size={16} />
-            <span className="absolute left-12 px-2 py-1 bg-black text-white text-[9px] font-black uppercase tracking-widest rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">Focus</span>
-          </motion.button>
-        )}
-
         <MiniDonateButton />
       </div>
     </SecurityWrapper>
