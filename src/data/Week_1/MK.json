@@ -1,0 +1,277 @@
+[
+ {
+  "q": "Wat is de juridische reden dat Wit-Rusland (Belarus) als enige Europese staat geen lid is van de Raad van Europa?",
+  "a": [
+   "Het land heeft het Europees Sociaal Handvest niet geratificeerd.",
+   "Het land ligt geografisch gezien niet volledig binnen het Europese continent.",
+   "Het land voldoet niet aan de voorwaarden van artikel 3 van het Statuut (beginselen van de rechtsstaat).",
+   "Het land heeft geweigerd de contributie aan het Comité van Ministers te voldoen."
+  ],
+  "c": 2,
+  "exp": "Lidmaatschap van de Raad van Europa vereist dat een staat de beginselen van de democratische rechtsstaat en de rechten van de mens onderschrijft (artikel 3 Statuut). Wit-Rusland voldoet hier niet aan."
+ },
+ {
+  "q": "Wat is een essentieel verschil tussen de Raad van de Europese Unie en het Comité van Ministers van de Raad van Europa?",
+  "a": [
+   "Het Comité van Ministers bestaat uit gekozen volksvertegenwoordigers, terwijl de Raad van de EU uit ministers bestaat.",
+   "Het Comité van Ministers kan bindende wetgeving vaststellen voor burgers, de Raad van de EU niet.",
+   "Het Comité van Ministers neemt besluiten bij meerderheid, de Raad van de EU altijd bij unanimiteit.",
+   "Het Comité van Ministers heeft geen supranationale bevoegdheden en werkt intergouvernementeel, in tegenstelling tot de EU-instellingen."
+  ],
+  "c": 3,
+  "exp": "De Raad van Europa is een intergouvernementele organisatie zonder supranationale wetgevende macht. Het Comité werkt op basis van consensus en tracht via verdragen en aanbevelingen samenwerking te stimuleren."
+ },
+ {
+  "q": "Hoe is de Parlementaire Vergadering van de Raad van Europa samengesteld?",
+  "a": [
+   "Leden worden rechtstreeks gekozen door de burgers via verkiezingen in de lidstaten.",
+   "Leden worden benoemd uit de nationale parlementen van de lidstaten (dubbelmandaat).",
+   "Leden worden aangewezen door de regeringsleiders van de lidstaten.",
+   "Leden worden voor het leven benoemd door het Europees Hof voor de Rechten van de Mens."
+  ],
+  "c": 1,
+  "exp": "De Parlementaire Vergadering bestaat uit delegaties van nationale parlementariërs. Zij hebben dus een dubbelmandaat: ze zijn lid van hun eigen parlement én van de Vergadering in Straatsburg."
+ },
+ {
+  "q": "Wat houdt de rechtsmacht in zoals omschreven in artikel 1 EVRM?",
+  "a": [
+   "Staten moeten de rechten verzekeren aan alleen hun eigen staatsburgers.",
+   "De bescherming is beperkt tot het officiële staatsgrondgebied zonder uitzonderingen.",
+   "Staten moeten de rechten verzekeren aan eenieder die onder hun rechtsmacht valt, ook bij effectieve controle buiten het eigen grondgebied.",
+   "De rechtsmacht strekt zich enkel uit tot personen die rechtmatig in het land verblijven."
+  ],
+  "c": 2,
+  "exp": "De term 'rechtsmacht' in artikel 1 EVRM is ruimer dan het grondgebied. Het omvat iedereen over wie de staat feitelijk gezag uitoefent (effective control), bijvoorbeeld tijdens militaire operaties in het buitenland."
+ },
+ {
+  "q": "Welke fundamentele wijziging in het klachtrecht werd doorgevoerd met Protocol nr. 11 (1998)?",
+  "a": [
+   "De fusie van de Europese Commissie en het Hof tot één permanent Hof met verplichte rechtsmacht.",
+   "De invoering van de mogelijkheid voor de Europese Unie om toe te treden tot het EVRM.",
+   "De introductie van het vereiste dat een klager 'aanzienlijk nadeel' moet hebben geleden.",
+   "De mogelijkheid voor hoogste nationale rechters om advies te vragen aan het Hof."
+  ],
+  "c": 0,
+  "exp": "Protocol 11 fuseerde de voormalige Commissie en het Hof tot één permanent orgaan en maakte het individuele klachtrecht en de rechtsmacht van het Hof verplicht voor alle verdragspartijen."
+ },
+ {
+  "q": "Wat houdt het vereiste van 'slachtofferschap' (victim status) in voor de ontvankelijkheid van een klacht bij het EHRM?",
+  "a": [
+   "Belangenorganisaties kunnen namens het algemeen belang klagen over slechte wetgeving.",
+   "Een individu moet zelf direct geraakt zijn door de schending; een actio popularis is niet mogelijk.",
+   "Iedere burger kan klagen over een wet, ongeacht of deze op hem is toegepast.",
+   "Een klager moet aantonen dat hij fysiek letsel heeft opgelopen door toedoen van de staat."
+  ],
+  "c": 1,
+  "exp": "Het EHRM kent geen 'actio popularis'. Men kan alleen klagen als men zelf slachtoffer is van een schending (direct geraakt door een handeling of nalaten)."
+ },
+ {
+  "q": "Wat was de uitkomst in de zaak 'Blondje t. Nederland' met betrekking tot de ontvankelijkheid?",
+  "a": [
+   "De klacht was ontvankelijk omdat de identiteit bij de nationale politie bekend was.",
+   "De klacht werd afgewezen omdat de nationale rechtsmiddelen niet waren uitgeput.",
+   "De klacht werd toegewezen omdat de staat de identiteit had moeten vaststellen.",
+   "De klacht was niet-ontvankelijk omdat deze anoniem was ingediend."
+  ],
+  "c": 3,
+  "exp": "Op grond van artikel 35 lid 2 EVRM mogen klachten niet anoniem worden ingediend. Omdat de klager weigerde zijn naam te noemen, werd de zaak niet-ontvankelijk verklaard."
+ },
+ {
+  "q": "Welke nieuwe niet-ontvankelijkheidsgrond is geïntroduceerd door Protocol nr. 14?",
+  "a": [
+   "De klacht is ingediend na de termijn van zes maanden.",
+   "De klacht is onverenigbaar met de bepalingen van het verdrag.",
+   "De klager heeft 'geen aanzienlijk nadeel' (no significant disadvantage) geleden.",
+   "De klacht is reeds in behandeling bij een andere internationale instantie."
+  ],
+  "c": 2,
+  "exp": "Protocol 14 voegde de grond 'geen aanzienlijk nadeel' toe (art. 35 lid 3b EVRM) om het Hof te ontlasten van bagatelzaken, mits de zaak nationaal wel goed is bekeken."
+ },
+ {
+  "q": "Hoe is de ambtstermijn van rechters bij het EHRM geregeld na de inwerkingtreding van Protocol nr. 14?",
+  "a": [
+   "Een termijn van negen jaar, die niet verlengbaar is.",
+   "Een termijn van zes jaar, met de mogelijkheid tot één herverkiezing.",
+   "Een benoeming voor het leven, met een pensioenleeftijd van 70 jaar.",
+   "Een termijn van drie jaar, die onbeperkt verlengbaar is."
+  ],
+  "c": 0,
+  "exp": "Om de onafhankelijkheid te waarborgen en druk van herverkiezing te voorkomen, is de termijn vastgesteld op negen jaar zonder mogelijkheid tot herverkiezing."
+ },
+ {
+  "q": "Wat wordt bedoeld met de 'living instrument'-doctrine van het EHRM?",
+  "a": [
+   "Het verdrag is alleen van toepassing op levende natuurlijke personen.",
+   "Het verdrag moet worden uitgelegd in het licht van de hedendaagse omstandigheden en opvattingen.",
+   "Het verdrag wordt elke vijf jaar volledig herschreven door de lidstaten.",
+   "Het verdrag moet strikt worden uitgelegd volgens de oorspronkelijke bedoeling van de opstellers uit 1950."
+  ],
+  "c": 1,
+  "exp": "Het EHRM interpreteert het verdrag dynamisch ('present-day conditions'). Maatschappelijke ontwikkelingen spelen een rol bij de uitleg van de rechten."
+ },
+ {
+  "q": "Wanneer laat het EHRM een ruime 'margin of appreciation' aan de lidstaten?",
+  "a": [
+   "Wanneer er sprake is van een absolute schending van het folterverbod.",
+   "Wanneer de nationale wetgeving in strijd is met EU-richtlijnen.",
+   "Wanneer er een duidelijke Europese consensus bestaat over het onderwerp.",
+   "Wanneer er geen Europese consensus bestaat en het gaat om complexe morele of sociaaleconomische vraagstukken."
+  ],
+  "c": 3,
+  "exp": "De margin of appreciation (beoordelingsruimte) is ruimer als staten onderling verschillen (geen consensus) of bij gevoelige kwesties waar de nationale autoriteiten beter kunnen oordelen."
+ },
+ {
+  "q": "Wat oordeelde het Hof in de zaak 'Schuitemaker t. Nederland' over de verplichting om arbeid te aanvaarden?",
+  "a": [
+   "Het stellen van voorwaarden aan een sociale uitkering is geen dwangarbeid in de zin van art. 4 EVRM.",
+   "Het korten op een uitkering wegens werkweigering is een schending van het eigendomsrecht.",
+   "Dwangarbeid is alleen toegestaan als het werk aansluit bij de opleiding van de betrokkene.",
+   "Het verplichten tot arbeid is in strijd met het recht op privéleven."
+  ],
+  "c": 0,
+  "exp": "Het Hof stelde dat een voorwaarde om algemeen geaccepteerde arbeid te verrichten in ruil voor een uitkering, niet kwalificeert als verboden dwangarbeid."
+ },
+ {
+  "q": "Waarom werd in de zaak 'Corallo t. Nederland' een schending van artikel 3 EVRM aangenomen?",
+  "a": [
+   "De verdachte werd te lang in voorarrest gehouden zonder proces.",
+   "De verdachte mocht geen contact hebben met zijn advocaat.",
+   "De detentieomstandigheden waren onmenselijk door ernstig ruimtegebrek en slechte hygiëne.",
+   "De uitlevering aan Italië bracht een risico op foltering met zich mee."
+  ],
+  "c": 2,
+  "exp": "Het Hof oordeelde dat het opsluiten in een meerpersoonscel met minder dan 3m² persoonlijke ruimte, in combinatie met andere slechte omstandigheden, een onmenselijke behandeling opleverde."
+ },
+ {
+  "q": "Wat was de kern van het arrest 'Fedotova e.a. t. Rusland' omtrent relaties van gelijk geslacht?",
+  "a": [
+   "Staten zijn verplicht het huwelijk open te stellen voor paren van gelijk geslacht.",
+   "Staten schenden artikel 8 EVRM als zij geen enkele vorm van juridische erkenning bieden aan paren van gelijk geslacht.",
+   "Staten mogen op basis van traditionele waarden erkenning van paren van gelijk geslacht weigeren.",
+   "Het discriminatieverbod verplicht tot volledige gelijkstelling van huwelijk en partnerschap."
+  ],
+  "c": 1,
+  "exp": "Hoewel het homohuwelijk (nog) niet verplicht werd gesteld, oordeelde het Hof dat er een positieve verplichting is om *een* vorm van juridisch kader/erkenning te bieden. Totaal niets regelen schendt art. 8."
+ },
+ {
+  "q": "Wat is het gevolg van het toetsingsverbod in artikel 120 van de Nederlandse Grondwet voor de rol van het EVRM?",
+  "a": [
+   "De Nederlandse rechter mag wetten niet toetsen aan het EVRM.",
+   "Het EVRM heeft geen voorrang op nationale wetgeving.",
+   "Het EVRM speelt geen rol in de Nederlandse rechtspraak.",
+   "Omdat de rechter wetten niet aan de Grondwet mag toetsen, is toetsing aan het EVRM (art. 94 Gw) de belangrijkste manier om grondrechten te handhaven."
+  ],
+  "c": 3,
+  "exp": "Artikel 120 Gw verbiedt grondwetstoetsing. Via art. 93 en 94 Gw kan de rechter wetten wél toetsen aan eenieder verbindende verdragsbepalingen. Het EVRM vult daarmee het gat van de grondwetstoetsing."
+ },
+ {
+  "q": "Wat is het doel van Protocol nr. 16 bij het EVRM?",
+  "a": [
+   "Hoogste nationale rechters de mogelijkheid geven om het EHRM om advies te vragen over de interpretatie van het verdrag.",
+   "De toetreding van de Europese Unie tot het EVRM juridisch mogelijk maken.",
+   "Het verkorten van de termijn voor het indienen van een klacht.",
+   "Het instellen van een interne beroepsprocedure binnen het EHRM."
+  ],
+  "c": 0,
+  "exp": "Protocol 16 introduceert de adviesprocedure. Hoogste nationale rechters kunnen (in een lopende zaak) het EHRM vragen hoe het verdrag uitgelegd moet worden. Het advies is niet-bindend."
+ },
+ {
+  "q": "Welk orgaan van de Raad van Europa houdt toezicht op de uitvoering van de arresten van het EHRM?",
+  "a": [
+   "De Secretaris-Generaal.",
+   "De Parlementaire Vergadering.",
+   "Het Comité van Ministers.",
+   "De Grote Kamer van het Hof."
+  ],
+  "c": 2,
+  "exp": "Volgens artikel 46 EVRM is het Comité van Ministers verantwoordelijk voor het toezicht op de executie van vonnissen (zoals betaling schadevergoeding of wetswijziging)."
+ },
+ {
+  "q": "Wat wordt verstaan onder 'positieve verplichtingen' in de context van het EVRM?",
+  "a": [
+   "De plicht van burgers om zich positief op te stellen tegenover de overheid.",
+   "De verplichting van de staat om actief maatregelen te nemen om rechten te beschermen, niet slechts zich te onthouden van inbreuken.",
+   "De verplichting van het Hof om zaken binnen een redelijke termijn af te handelen.",
+   "De plicht van staten om het verdrag positief te interpreteren."
+  ],
+  "c": 1,
+  "exp": "Naast onthouding (negatieve plicht) moet de overheid soms actief optreden (positieve plicht) om te zorgen dat mensenrechten effectief worden genoten (bijv. bescherming tegen mishandeling door derden)."
+ },
+ {
+  "q": "Wat houdt het leerstuk in dat het EHRM geen 'vierde instantie' (fourth instance) is?",
+  "a": [
+   "Het EHRM behandelt zaken pas als ze door vier nationale rechters zijn gezien.",
+   "Het EHRM is de vierde stap in de procedure na Rechtbank, Hof en Hoge Raad.",
+   "Het EHRM kan nationale vonnissen vernietigen en zelf de strafmaat bepalen.",
+   "Het EHRM treedt niet in de plaats van de nationale rechter voor feitenonderzoek of schuldvragen, maar toetst slechts de eerlijkheid van de procedure."
+  ],
+  "c": 3,
+  "exp": "Het Hof gaat niet opnieuw op de stoel van de nationale rechter zitten om bewijs te wegen of nationaal recht uit te leggen, tenzij de procedure als geheel oneerlijk was (art. 6)."
+ },
+ {
+  "q": "Wat is een harde voorwaarde voordat een individuele klager naar het EHRM kan stappen?",
+  "a": [
+   "Alle nationale rechtsmiddelen moeten zijn uitgeput.",
+   "De klager moet worden vertegenwoordigd door een advocaat uit Straatsburg.",
+   "De klacht moet worden gesteund door een NGO.",
+   "De klager moet de nationaliteit hebben van de aangeklaagde staat."
+  ],
+  "c": 0,
+  "exp": "Het subsidiariteitsbeginsel vereist dat de nationale rechtsorde eerst de kans krijgt de fout te herstellen. Uitputting van nationale rechtsmiddelen (exhaustion of domestic remedies) is verplicht."
+ },
+ {
+  "q": "Hoe is de verhouding tussen individuele klachten en statenklachten in de praktijk van het EHRM?",
+  "a": [
+   "Statenklachten komen het meeste voor, individuele klachten zijn zeldzaam.",
+   "Er is een evenwichtige verdeling tussen beide typen klachten.",
+   "Individuele klachten vormen de overgrote meerderheid; statenklachten zijn uitzonderlijk.",
+   "Statenklachten zijn afgeschaft met Protocol 11."
+  ],
+  "c": 2,
+  "exp": "Hoewel statenklachten (art. 33) mogelijk zijn en soms veel impact hebben, bestaat de absolute 'bulk' van het werk van het Hof uit tienduizenden individuele verzoekschriften."
+ },
+ {
+  "q": "Wat houdt de 'rehearing'-mogelijkheid van artikel 43 EVRM in?",
+  "a": [
+   "Een zaak wordt terugverwezen naar de nationale rechter voor een nieuwe behandeling.",
+   "Partijen kunnen verzoeken een zaak na een Kamer-uitspraak te verwijzen naar de Grote Kamer.",
+   "Het Comité van Ministers kan vragen om een herziening van het arrest.",
+   "De klager mag na een jaar een nieuwe klacht indienen over hetzelfde feit."
+  ],
+  "c": 1,
+  "exp": "Dit is een vorm van intern appel. Binnen drie maanden kan verwijzing naar de Grote Kamer worden gevraagd. Een panel van 5 rechters beslist of de zaak belangrijk genoeg is voor zo'n rehearing."
+ },
+ {
+  "q": "Wat maakt de beoogde toetreding van de Europese Unie tot het EVRM bijzonder in het volkenrecht?",
+  "a": [
+   "Het is de eerste keer dat een internationale organisatie (niet-staat) partij wordt bij het EVRM.",
+   "De EU krijgt dan een vetorecht in het Comité van Ministers.",
+   "Het EHRM wordt dan een instelling van de Europese Unie.",
+   "Alle EU-burgers verliezen dan hun individuele klachtrecht in Straatsburg."
+  ],
+  "c": 0,
+  "exp": "Het EVRM is een verdrag tussen staten. Toetreding van de EU (een internationale organisatie) is een unicum en vereiste een aanpassing van het verdrag (Protocol 14)."
+ },
+ {
+  "q": "Waarom is Straatsburg gekozen als zetel voor de Raad van Europa?",
+  "a": [
+   "Vanwege de centrale ligging in Europa.",
+   "Omdat daar de meeste internationale rechtbanken al gevestigd waren.",
+   "Omdat de stad neutraal terrein was, vergelijkbaar met Zwitserland.",
+   "Als symbool voor de verzoening tussen Frankrijk en Duitsland."
+  ],
+  "c": 3,
+  "exp": "Straatsburg was eeuwenlang een twistappel tussen Frankrijk en Duitsland. De keuze voor deze stad symboliseert de vrede en samenwerking na WOII."
+ },
+ {
+  "q": "Waarom werd de zaak 'Chaloub en Camara t. Nederland' van de rol geschrapt?",
+  "a": [
+   "Het Hof achtte de vrees voor besnijdenis ongegrond.",
+   "De klagers waren onvindbaar voor hun advocaat.",
+   "Het geschil was opgelost doordat de overheid alsnog een verblijfsvergunning verleende.",
+   "De klacht was te laat ingediend."
+  ],
+  "c": 2,
+  "exp": "Artikel 37 EVRM staat toe een zaak te schrappen als het geschil is opgelost (matter resolved). Doordat ze een vergunning kregen, waren ze geen slachtoffer meer en was een uitspraak niet meer nodig."
+ }
+]

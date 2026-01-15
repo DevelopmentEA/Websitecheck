@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Een klokkenluider uit staat 'X' (partij bij het EVRM) dient een klacht in onder het pseudoniem 'De Rechtvaardige' uit vrees voor represailles. Hij stelt in zijn verzoekschrift dat het EHRM zijn werkelijke identiteit kan opvragen bij zijn advocaat. Beoordeel de ontvankelijkheid van deze klacht op basis van artikel 35 EVRM en de relevante jurisprudentie.",
+    "sample": "De klacht is niet-ontvankelijk. Op grond van artikel 35 lid 2 sub a EVRM neemt het Hof geen individuele verzoekschriften in behandeling die anoniem zijn. In de zaak 'Blondje' t. Nederland oordeelde het EHRM dat een klacht als anoniem wordt beschouwd als de identiteit van de klager niet uit het dossier zelf blijkt. Vrees voor represailles rechtvaardigt geen anonimiteit bij indiening; de klager had op basis van het procesreglement moeten verzoeken om zijn naam niet openbaar te maken in de gepubliceerde uitspraak, maar moet bij het Hof wel bekend zijn.",
+    "checklist": [
+      "Artikel 35 lid 2 sub a EVRM (anonieme klachten)",
+      "Jurisprudentie 'Blondje' t. Nederland",
+      "Onderscheid tussen anoniem indienen vs. verzoek om niet-openbaarmaking",
+      "Niet-ontvankelijkheid op basis van art. 35 lid 4 EVRM"
+    ],
+    "exp": "Context: Deze vraag toetst de strikte formele vereisten van het Hof. Voorbeeld redenering: 'Hoewel de klager een legitiem belang heeft bij veiligheid, is de sanctie op anonimiteit absoluut. Een goed antwoord begint bij art. 35 lid 2 EVRM, koppelt dit aan de zaak Blondje en concludeert dat verwijzing naar een advocaat onvoldoende is omdat het dossier zelf de identiteit moet bevatten.'"
+  },
+  {
+    "q": "Staat 'Y' oefent tijdens een militaire missie effectieve beheersing uit over een district buiten het geografische grondgebied van de Raad van Europa. Een lokale burger wordt daar door militairen van staat 'Y' zonder proces vastgezet. De staat voert aan dat de burger geen beroep kan doen op artikel 5 EVRM omdat het feit zich buiten Europa afspeelde. Leg uit of dit verweer slaagt.",
+    "sample": "Het verweer van staat 'Y' slaagt niet. Artikel 1 EVRM bepaalt dat de verdragsluitende staten de rechten moeten verzekeren aan eenieder die onder hun 'rechtsmacht' (jurisdiction) ressorteert. Hoewel dit primair territoriaal is, heeft het Hof bepaald dat de rechtsmacht zich ook uitstrekt tot gebieden buiten het eigen grondgebied waar een staat 'effectieve beheersing' uitoefent, zoals bij een militaire operatie. Omdat staat 'Y' de feitelijke macht heeft in het district, is zij verplicht de EVRM-rechten daar te waarborgen.",
+    "checklist": [
+      "Artikel 1 EVRM (basisverplichting)",
+      "Begrip 'rechtsmacht' (jurisdiction)",
+      "Criterium 'effectieve beheersing' (effective control)",
+      "Extraterritoriale werking van het EVRM"
+    ],
+    "exp": "Context: Toetst de reikwijdte van het verdrag. Voorbeeld redenering: 'De kern is het begrip rechtsmacht uit art. 1 EVRM. Je moet uitleggen dat dit niet stopt bij de grens van de lidstaat. Gebruik de zinsnede \"effectieve beheersing\" om aan te tonen dat de fysieke macht van het leger van staat Y de juridische verantwoordelijkheid onder het EVRM met zich meebrengt.'"
+  },
+  {
+    "q": "Een werkloze filosoof klaagt bij het EHRM dat een nieuwe nationale wet, die verplicht tot het aanvaarden van 'algemeen geaccepteerde arbeid' op straffe van korting, strijdig is met het verbod op dwangarbeid (art. 4 EVRM). Haar eigen uitkering is echter nog niet stopgezet of gekort. Beoordeel de ontvankelijkheid van deze klacht aan de hand van de zaak 'Schuitemaker t. Nederland'.",
+    "sample": "De klacht zal niet-ontvankelijk worden verklaard. Op grond van artikel 34 EVRM moet een klager 'slachtoffer' zijn van een schending. In de zaak 'Schuitemaker t. Nederland' oordeelde het Hof dat een persoon pas kan klagen als de nadelige rechtsgevolgen (zoals een feitelijke korting) hem of haar rechtstreeks raken. Aangezien de uitkering nog niet is gekort, is de klacht 'kennelijk ongegrond' of is er geen sprake van een slachtofferstatus. Bovendien mag een staat redelijke voorwaarden verbinden aan sociale uitkeringen.",
+    "checklist": [
+      "Artikel 34 EVRM (slachtoffervereiste)",
+      "Jurisprudentie 'Schuitemaker t. Nederland'",
+      "Geen actio popularis (klagen over wet in abstracto)",
+      "Artikel 35 lid 3 EVRM (kennelijk ongegrond)"
+    ],
+    "exp": "Context: Benadrukt het slachtoffervereiste. Voorbeeld redenering: 'In je antwoord moet je het onderscheid maken tussen een theoretisch nadeel en een feitelijk nadeel. Verwijs naar art. 34 EVRM en leg uit dat het Hof geen abstracte toetsing van wetten (actio popularis) toestaat. Gebruik Schuitemaker om te laten zien dat een nog niet uitgevoerde korting niet kwalificeert als een actuele schending.'"
+  },
+  {
+    "q": "In de zaak 'Fedotova e.a. t. Rusland' stelde de staat dat zij niet verplicht was samenlevingsvormen van hetzelfde geslacht te erkennen vanwege 'traditionele familiewaarden'. Hoe pareerde het EHRM dit argument en welk specifiek interpretatie-instrument van het Hof speelt hierbij een rol?",
+    "sample": "Het Hof pareerde dit door te stellen dat het begrip 'familie' een vloeiend begrip is dat meegaat met maatschappelijke ontwikkelingen. Het gebruikte hiervoor de 'dynamische interpretatie' (de 'living instrument'-leer), waarbij het verdrag wordt uitgelegd naar 'present-day conditions'. Omdat er binnen de Raad van Europa een duidelijke trend en consensus bestaat over de bescherming van koppels van hetzelfde geslacht, weegt het belang van gelijke behandeling zwaarder dan nationale traditionele opvattingen.",
+    "checklist": [
+      "Dynamische interpretatie / Living instrument-leer",
+      "Present-day conditions (hedendaagse omstandigheden)",
+      "Consensus/trend binnen de Raad van Europa",
+      "Inperking van de 'margin of appreciation'"
+    ],
+    "exp": "Context: Toetst hoe het Hof het verdrag actueel houdt. Voorbeeld redenering: 'Begin met de doctrine van het \"living instrument\". Leg uit dat het EHRM kijkt naar de consensus binnen de 47 lidstaten. Als de meerderheid een recht erkent, vervalt het recht van een individuele staat (zoals Rusland) om vast te houden aan verouderde tradities op basis van hun margin of appreciation.'"
+  },
+  {
+    "q": "Protocol 15 heeft de verhouding tussen het EHRM en de lidstaten formeel gewijzigd in de preambule. Noem het centrale rechtsbegrip dat hierbij is toegevoegd en leg uit welk technisch gevolg dit protocol heeft voor de termijn waarop een burger een klacht moet indienen.",
+    "sample": "In de preambule is het begrip 'subsidiariteit' (gekoppeld aan de 'margin of appreciation') toegevoegd. Dit bevestigt dat de lidstaten de primaire verantwoordelijkheid hebben om de rechten te waarborgen en dat het Hof een terughoudende rol past. Een belangrijk technisch gevolg is de verkorting van de klachttermijn: een burger moet zijn klacht nu binnen vier maanden indienen nadat de definitieve nationale uitspraak is gedaan, in plaats van de eerdere termijn van zes maanden.",
+    "checklist": [
+      "Begrip: Subsidiariteit",
+      "Begrip: Margin of appreciation",
+      "Protocol 15",
+      "Verkorting termijn van 6 naar 4 maanden"
+    ],
+    "exp": "Context: Protocol 15 formaliseert de machtsbalans. Voorbeeld redenering: 'Je moet aantonen dat de lidstaten weer meer regie wilden (\"taking back control\"). Dit doe je door het woord subsidiariteit te noemen. Vergeet niet het zeer belangrijke praktische punt: de overgang van een termijn van 6 naar 4 maanden voor klagers, wat de toegang tot het Hof feitelijk verscherpt.'"
+  }
+]
