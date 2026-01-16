@@ -7,21 +7,21 @@ import { questionsDb as brDb } from './GrondslagenRechtLU/index';
 // --- 2. Configureer de MasterData ---
 export const masterData = {
   // VAK 1: Internationaal Privaatrecht
-  "ipr-neo-2026": {
-    title: "IPR",
+  "EU-neo-2026": {
+    title: "EU Recht",
     db: iprDb,
     accent: "#6EE7B7", // De Neo Groene kleur
-    tag: "Lawbooks Neo 2026",
-    path: "/course/ipr-module" // De Learnworlds URL voor extra path-check
+    tag: "Lawbooks premium 2026",
+    path: "/course/eu-recht" // De Learnworlds URL voor extra path-check
   },
 
   // VAK 2: Strafrecht I
   "sr1-premium-k92": {
-    title: "Strafrecht I",
+    title: "Grondslagen Recht",
     db: srDb,
     accent: "#6EE7B7", // Rood-achtig voor Strafrecht
     tag: "Lawbooks Premium 2026",
-    path: "/course/strafrecht-1"
+    path: "/course/grondslagen"
   },
 
   // VAK 3: Bestuursrecht

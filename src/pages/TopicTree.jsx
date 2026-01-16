@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { Gavel, AlertOctagon, CheckCircle2, Heart, Zap, X, ChevronRight } from 'lucide-react';
+import { Gavel, AlertOctagon, CheckCircle2, Heart, X, ChevronRight } from 'lucide-react';
 
 // Importeer de centrale masterData
 import { masterData } from '../data/masterData';
@@ -97,9 +97,7 @@ const CourtroomRush = () => {
     setGameState('feedback');
   };
 
-  // Nieuwe functie om handmatig door te gaan
   const proceedToNext = () => {
-    // Check of het spel moet eindigen (geen levens meer of einde vragenlijst)
     if (lives <= 0) {
       setGameState('result');
     } else if (currentIdx < questions.length - 1) {
@@ -121,17 +119,44 @@ const CourtroomRush = () => {
 
   if (!activeSubject) return <div className="p-20 text-center font-black">Laden van dossier...</div>;
 
+  // --------------------------------------------------------------------------
+  // HIER BEGINT DE RENDERING
+  // --------------------------------------------------------------------------
+
   if (gameState === 'start') {
     return (
       <div className="flex flex-col items-center justify-center min-h-[80vh] text-slate-900 p-6 text-center bg-slate-50 font-sans">
-        <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
-          <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm" style={{ color: accentColor }}>
-            <Gavel size={40} strokeWidth={1.5} />
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }} 
+          animate={{ y: 0, opacity: 1 }}
+          className="max-w-xl mx-auto"
+        >
+          
+          {/* --- NIEUWE AFBEELDING SECTIE --- */}
+          <div className="relative w-full max-w-[350px] mx-auto mb-8 group">
+            {/* Achtergrond gloed in de kleur van het vak */}
+            <div 
+              className="absolute -inset-2 rounded-[2rem] opacity-20 blur-xl transition duration-500 group-hover:opacity-40" 
+              style={{ backgroundColor: accentColor }}
+            ></div>
+            
+            {/* De Wario Afbeelding */}
+            <img 
+              src="/wario.jpg" 
+              alt="Courtroom Judge" 
+              className="relative w-full h-auto rounded-[2rem] shadow-2xl border-4 border-white transform transition duration-500 hover:scale-[1.02]"
+            />
           </div>
-          <h1 className="text-5xl font-bold mb-4 tracking-tight text-slate-900">{activeSubject.title} Rush</h1>
+          {/* -------------------------------- */}
+
+          <h1 className="text-5xl font-bold mb-4 tracking-tight text-slate-900">
+            {activeSubject.title} Rush
+          </h1>
+          
           <p className="text-slate-500 max-w-lg mx-auto mb-10 text-lg leading-relaxed font-medium">
-            Analyseer de verklaringen. Je krijgt vragen uit alle weken. Je hebt 22 seconden per casus.
+            Stap de rechtszaal binnen! Analyseer de verklaringen, oordeel snel en verzamel punten. Je hebt 22 seconden per casus.
           </p>
+          
           <button 
             onClick={startGame}
             className="px-10 py-4 text-white rounded-xl font-bold text-sm transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
@@ -176,7 +201,7 @@ const CourtroomRush = () => {
                   "{questions[currentIdx].statement}"
                 </h2>
               </div>
-              
+               
               <div className="h-2 w-full bg-slate-100 relative">
                 <motion.div 
                   className="absolute top-0 left-0 bottom-0"

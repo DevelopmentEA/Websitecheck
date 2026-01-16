@@ -14,17 +14,17 @@ import Support from './pages/Support';
 
 // --- CONFIGURATIE: MASTER DATA PER VAK ---
 const masterData = {
-  "ipr-neo-2026": {
-    title: "IPR",
+  "EU-neo-2026": {
+    title: "EU Recht",
     accent: "#6EE7B7",
-    tag: "Lawbooks Neo 2026",
-    path: "/course/ipr-module"
+    tag: "Lawbooks premium 2026",
+    path: "/course/EU-recht"
   },
   "sr1-premium-k92": {
-    title: "Strafrecht I",
+    title: "Grondslagen Recht",
     accent: "#6EE7B7",
     tag: "Lawbooks Premium 2026",
-    path: "/course/strafrecht-1"
+    path: "/course/grondslagen"
   },
   "bestuursrecht-x72": {
     title: "Bestuursrecht",
@@ -100,14 +100,15 @@ const SecurityWrapper = ({ children }) => {
   return children;
 };
 
-// --- REST VAN DE COMPONENTEN (ONGEWIJZIGD) ---
+// --- REST VAN DE COMPONENTEN ---
 
 const MiniDonateButton = () => {
   const navigate = useNavigate();
   const { subjectSlug } = useParams();
   return (
     <motion.button
-      onClick={() => navigate(`/module/${subjectSlug}/support`)}
+      // FIX: /module/ naar /course/
+      onClick={() => navigate(`/course/${subjectSlug}/support`)}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 0.6, scale: 1 }}
       whileHover={{ opacity: 1, scale: 1.1, backgroundColor: '#6EE7B7' }}
@@ -170,7 +171,8 @@ const TiltCard = ({ title, desc, icon: Icon, to, index, color }) => {
       onMouseMove={(e) => { if (!isLowPower) { const rect = e.currentTarget.getBoundingClientRect(); x.set((e.clientX - rect.left) / rect.width - 0.5); y.set((e.clientY - rect.top) / rect.height - 0.5); }}}
       onMouseLeave={() => { x.set(0); y.set(0); }}
       style={{ rotateX: isLowPower ? 0 : rotateX, rotateY: isLowPower ? 0 : rotateY, transformStyle: "preserve-3d" }}
-      onClick={() => navigate(`/module/${subjectSlug}/${to}`)}
+      // FIX: /module/ naar /course/
+      onClick={() => navigate(`/course/${subjectSlug}/${to}`)}
       whileTap={{ scale: 0.98 }}
       className="relative group cursor-pointer w-full"
     >
@@ -226,7 +228,9 @@ const MainLayout = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isZenActive, setIsZenActive] = useState(false);
-  const isDashboard = location.pathname === `/module/${subjectSlug}`;
+  
+  // FIX: /module/ naar /course/ voor correcte detectie
+  const isDashboard = location.pathname === `/course/${subjectSlug}`;
   const data = masterData[subjectSlug];
 
   return (
@@ -242,7 +246,8 @@ const MainLayout = () => {
 
         {!isDashboard && (
           <motion.nav initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 px-6 py-3 flex items-center justify-between">
-            <button onClick={() => navigate(`/module/${subjectSlug}`)} className="flex items-center gap-2 text-slate-900 font-black text-[9px] uppercase tracking-widest hover:text-[#059669] transition-colors">
+            {/* FIX: /module/ naar /course/ */}
+            <button onClick={() => navigate(`/course/${subjectSlug}`)} className="flex items-center gap-2 text-slate-900 font-black text-[9px] uppercase tracking-widest hover:text-[#059669] transition-colors">
               <ArrowLeft size={14} /> Terug naar Dashboard
             </button>
             <div className="flex items-center gap-2 font-black italic text-xs tracking-tighter uppercase"><Scale size={16} className="text-[#6EE7B7]" /> Lawbooks</div>
@@ -276,14 +281,15 @@ const MainLayout = () => {
 const App = () => (
   <Router>
     <Routes>
-      <Route path="/module/:subjectSlug" element={<MainLayout />}>
+      <Route path="/course/:subjectSlug" element={<MainLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="SRI" element={<TopicOne />} />
         <Route path="courtroom-rush" element={<TopicEight />} />
         <Route path="jurisprudentie" element={<TopicTen />} />
         <Route path="support" element={<Support />} />
       </Route>
-      <Route path="/" element={<Navigate to="/module/ipr-neo-2026" replace />} />
+      {/* FIX: Redirect aangepast naar een bestaande key in masterData om crash te voorkomen */}
+      <Route path="/" element={<Navigate to="/course/sr1-premium-k92" replace />} />
     </Routes>
   </Router>
 );
