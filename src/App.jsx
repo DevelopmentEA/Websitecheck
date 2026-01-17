@@ -36,9 +36,9 @@ const masterData = {
 
 // Generieke kaarten
 const genericCards = [
-  { title: "Tentamen Killer", desc: "Beheers de fundamenten van het recht.", icon: Gavel, to: "SRI" },
+  { title: "Oefenvragen Matrix", desc: "Toets de stof op een flexiebele manier.", icon: Gavel, to: "SRI" },
   { title: "Courtroom Rush", desc: "Maak beslissingen onder tijdsdruk.", icon: BrainCircuit, to: "courtroom-rush" },
-  { title: "Ben je locked in?", desc: "Een echt tentamen...", icon: Award, to: "jurisprudentie" }
+  { title: "Het Tentamen", desc: "Ben je echt locked in...", icon: Award, to: "jurisprudentie" }
 ];
 
 // --- STRIKTE SECURITY WRAPPER (IFRAME ONLY) ---

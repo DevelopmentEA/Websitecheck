@@ -1,1 +1,113 @@
-[]
+[
+  {
+    "q": "Wat houdt het legaliteitsbeginsel in binnen de Nederlandse democratische rechtsstaat?",
+    "a": [
+      "De overheid mag handelen zolang de wet het niet verbiedt.",
+      "Een bevoegdheid van de overheid heeft een grondslag nodig in de wet of Grondwet.",
+      "De rechter bepaalt welke bevoegdheden de overheid heeft.",
+      "De regering mag naar eigen inzicht handelen in het algemeen belang."
+    ],
+    "c": 1,
+    "exp": "Het legaliteitsbeginsel houdt in dat een bevoegdheid een wettelijke grondslag nodig heeft in een wet in formele zin of in de Grondwet. Iedere met dwang gepaard gaande overheidshandeling is gebonden aan een wettelijke grondslag."
+  },
+  {
+    "q": "Wat is volgens artikel 120 van de Grondwet verboden voor de rechter?",
+    "a": [
+      "Het toetsen van wetten in formele zin aan de Grondwet.",
+      "Het toetsen van lagere regelgeving aan de Grondwet.",
+      "Het toetsen van wetten aan internationale verdragen.",
+      "Het toetsen van gemeentelijke verordeningen aan provinciale verordeningen."
+    ],
+    "c": 0,
+    "exp": "Het is de rechter verboden om te beoordelen of een wet in formele zin (gemaakt door regering en Staten-Generaal) in strijd is met de Grondwet; dit heet het toetsingsverbod. De rechter mag wetten wel toetsen aan internationale verdragen."
+  },
+  {
+    "q": "Welke stelling over de vertrouwensregel is juist?",
+    "a": [
+      "Deze regel is expliciet vastgelegd in artikel 42 van de Grondwet.",
+      "Deze regel geldt alleen tussen de Tweede Kamer en de Koning.",
+      "Het is een ongeschreven regel die inhoudt dat een minister moet opstappen als het parlement het vertrouwen opzegt.",
+      "De regel houdt in dat de Eerste Kamer het kabinet niet naar huis mag sturen."
+    ],
+    "c": 2,
+    "exp": "De vertrouwensregel is niet wettelijk vastgelegd maar ongeschreven. Door het vertrouwen in een minister op te zeggen kan het parlement de minister bewegen om af te treden."
+  },
+  {
+    "q": "Welk arrest van het Hof van Justitie bevestigde dat het EU-recht voorrang heeft op nationaal recht?",
+    "a": [
+      "Het Van Gend en Loos-arrest",
+      "Het Costa/ENEL-arrest",
+      "Het Urgenda-arrest",
+      "Het Fluoridering-arrest"
+    ],
+    "c": 1,
+    "exp": "In het Costa/ENEL-arrest uit 1964 bevestigde het Hof dat nationale wetgeving niet in strijd mag zijn met het EU-recht en dat het EU-recht voorrang heeft. Het Van Gend en Loos-arrest ging over de eigen rechtsorde van de EU."
+  },
+  {
+    "q": "Hoe wordt het Nederlandse stelsel met betrekking tot de doorwerking van internationaal recht gekwalificeerd?",
+    "a": [
+      "Zuiver dualisme",
+      "Gematigd dualisme",
+      "Zuiver monisme",
+      "Gematigd monisme"
+    ],
+    "c": 3,
+    "exp": "Het Nederlandse rechtsstelsel kwalificeert ten aanzien van internationaal recht als gematigd monisme. Bepaalde verdragsbepalingen werken direct door, maar pas nadat deze zijn bekendgemaakt."
+  },
+  {
+    "q": "Wat is een kenmerkend verschil tussen klassieke en sociale grondrechten?",
+    "a": [
+      "Klassieke grondrechten vragen actief handelen van de overheid, sociale grondrechten vragen passiviteit.",
+      "Klassieke grondrechten zijn niet afdwingbaar bij de rechter, sociale grondrechten wel.",
+      "Klassieke grondrechten vragen van de overheid een dulden (passief), sociale grondrechten vergen een actieve handeling.",
+      "Sociale grondrechten staan in het EVRM, klassieke grondrechten alleen in de Grondwet."
+    ],
+    "c": 2,
+    "exp": "De klassieke grondrechten vragen van de overheid een dulden (passief), zoals het recht op privacy. Sociale grondrechten vergen van de overheid juist een handeling (actief) om levensvoorwaarden te bevorderen."
+  },
+  {
+    "q": "Wie heeft in Nederland het recht van amendement?",
+    "a": [
+      "De Eerste Kamer",
+      "De Tweede Kamer",
+      "De Raad van State",
+      "De Ministerraad"
+    ],
+    "c": 1,
+    "exp": "De Tweede Kamer heeft het recht van amendement om wetsvoorstellen te wijzigen. De Eerste Kamer heeft formeel gezien geen recht van amendement."
+  },
+  {
+    "q": "Wat is het belangrijkste verschil tussen deconcentratie en decentralisatie?",
+    "a": [
+      "Bij decentralisatie ontbreekt het hiërarchisch verband dat bij deconcentratie wel bestaat.",
+      "Deconcentratie gaat over provincies, decentralisatie over gemeenten.",
+      "Bij deconcentratie is er sprake van territoriale verdeling, bij decentralisatie van functionele verdeling.",
+      "Decentralisatie vindt plaats binnen één ministerie."
+    ],
+    "c": 0,
+    "exp": "Bij decentralisatie is er geen sprake van een hiërarchisch verband en ontbreekt de verantwoordingsplicht aan de centrale overheid, in tegenstelling tot deconcentratie."
+  },
+  {
+    "q": "Wie is er verantwoordelijk voor het handelen van de Koning volgens de Grondwet?",
+    "a": [
+      "De Koning zelf",
+      "De Raad van State",
+      "De ministers",
+      "De Eerste Kamer"
+    ],
+    "c": 2,
+    "exp": "Artikel 42 van de Grondwet bepaalt dat de Koning onschendbaar is en de ministers verantwoordelijk zijn. Dit betekent dat de ministers verantwoordelijk zijn voor het regeringsbeleid."
+  },
+  {
+    "q": "Wanneer hebben bepalingen van verdragen volgens artikel 93 van de Grondwet verbindende kracht?",
+    "a": [
+      "Direct na ondertekening door de minister.",
+      "Als zij naar hun inhoud eenieder kunnen verbinden en zijn bekendgemaakt.",
+      "Pas nadat ze zijn omgezet in nationale wetgeving.",
+      "Alleen als ze zijn goedgekeurd door de Hoge Raad."
+    ],
+    "c": 1,
+    "exp": "Bepalingen van verdragen die naar hun inhoud eenieder kunnen verbinden, hebben verbindende kracht nadat zij zijn bekendgemaakt."
+  }
+]
+```

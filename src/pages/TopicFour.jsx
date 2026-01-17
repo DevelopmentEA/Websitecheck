@@ -27,6 +27,7 @@ export default function TentamenSimulator() {
   const [timeLeft, setTimeLeft] = useState(3 * 60 * 60); 
   const [openGrade, setOpenGrade] = useState(5); 
   const [showReview, setShowReview] = useState(false);
+  const [showSubmitConfirm, setShowSubmitConfirm] = useState(false); // Nieuwe state voor modal
 
   const storageKey = `exam_session_${subjectSlug}`;
 
@@ -67,7 +68,7 @@ export default function TentamenSimulator() {
     if (gameState === 'exam' && timeLeft > 0) {
       timer = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
     } else if (timeLeft <= 0 && gameState === 'exam') {
-      submitExam();
+      confirmSubmit();
     }
     return () => clearInterval(timer);
   }, [gameState, timeLeft]);
@@ -94,10 +95,13 @@ export default function TentamenSimulator() {
   };
 
   const submitExam = () => {
-    if (window.confirm("Wil je het tentamen definitief inleveren? De antwoorden kunnen niet meer worden gewijzigd.")) {
-      setGameState('eval_open');
-      window.scrollTo(0, 0);
-    }
+    setShowSubmitConfirm(true);
+  };
+
+  const confirmSubmit = () => {
+    setShowSubmitConfirm(false);
+    setGameState('eval_open');
+    window.scrollTo(0, 0);
   };
 
   const formatTime = (seconds) => {
@@ -157,6 +161,48 @@ export default function TentamenSimulator() {
           <button onClick={submitExam} className="bg-black text-white px-5 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest">Inleveren</button>
         </div>
       )}
+
+      {/* SUBMIT MODAL */}
+      <AnimatePresence>
+        {showSubmitConfirm && (
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-slate-900/60 backdrop-blur-sm"
+          >
+            <motion.div 
+              initial={{ scale: 0.9, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 20 }}
+              className="bg-white p-10 rounded-[2.5rem] shadow-2xl max-w-md w-full text-center"
+            >
+              <div className="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <AlertCircle size={32} />
+              </div>
+              <h3 className="text-2xl font-black uppercase tracking-tighter mb-4">Tentamen Inleveren?</h3>
+              <p className="text-slate-500 font-bold text-sm mb-8 leading-relaxed">
+                Je staat op het punt het tentamen definitief te beëindigen. Je kunt hierna geen antwoorden meer wijzigen.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <button 
+                  onClick={() => setShowSubmitConfirm(false)}
+                  className="py-4 bg-slate-100 text-slate-400 font-black uppercase text-[10px] tracking-widest rounded-xl hover:bg-slate-200 transition-colors"
+                >
+                  Annuleren
+                </button>
+                <button 
+                  onClick={confirmSubmit}
+                  className="py-4 text-white font-black uppercase text-[10px] tracking-widest rounded-xl shadow-lg hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: accentColor }}
+                >
+                  Ja, Inleveren
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <main className={`max-w-4xl mx-auto px-6 ${gameState === 'exam' ? 'pt-28' : 'pt-12'}`}>
         
@@ -267,9 +313,9 @@ export default function TentamenSimulator() {
         {gameState === 'results' && (
           <div className="space-y-8">
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="bg-white p-12 rounded-[4rem] shadow-2xl border border-slate-100 text-center relative overflow-hidden">
-               <div className="absolute top-0 left-0 w-full h-3" style={{ backgroundColor: accentColor }} />
-               <h1 className="text-6xl font-black tracking-tighter uppercase italic mb-10">Resultaat</h1>
-               <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-12">
+                <div className="absolute top-0 left-0 w-full h-3" style={{ backgroundColor: accentColor }} />
+                <h1 className="text-6xl font-black tracking-tighter uppercase italic mb-10">Resultaat</h1>
+                <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-12">
                   <div>
                     <p className="text-[10px] font-black uppercase text-slate-400 mb-2">Eindcijfer</p>
                     <div className="text-9xl font-black tracking-tighter italic" style={{ color: accentColor }}>{calculateResult().finalGrade}</div>
@@ -282,13 +328,13 @@ export default function TentamenSimulator() {
                       <div className="flex justify-between gap-10"><span>Casus Cijfer (20%)</span><span className="font-black text-slate-900">{openGrade}.0 / 10</span></div>
                     </div>
                   </div>
-               </div>
-               <div className="flex flex-col md:flex-row gap-4">
-                 <button onClick={() => setShowReview(!showReview)} className="flex-1 py-5 bg-slate-900 text-white font-black uppercase tracking-widest text-xs rounded-2xl flex items-center justify-center gap-2">
-                   {showReview ? <EyeOff size={16}/> : <Eye size={16}/>} {showReview ? "Inzage Sluiten" : "Inzage MK Vragen"}
-                 </button>
-                 <button onClick={() => { setGameState('intro'); window.scrollTo(0,0); }} className="flex-1 py-5 bg-white border-2 border-slate-100 font-black uppercase tracking-widest text-xs rounded-2xl flex items-center justify-center gap-2"><RotateCcw size={16}/> Nieuw Tentamen</button>
-               </div>
+                </div>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <button onClick={() => setShowReview(!showReview)} className="flex-1 py-5 bg-slate-900 text-white font-black uppercase tracking-widest text-xs rounded-2xl flex items-center justify-center gap-2">
+                    {showReview ? <EyeOff size={16}/> : <Eye size={16}/>} {showReview ? "Inzage Sluiten" : "Inzage MK Vragen"}
+                  </button>
+                  <button onClick={() => { setGameState('intro'); window.scrollTo(0,0); }} className="flex-1 py-5 bg-white border-2 border-slate-100 font-black uppercase tracking-widest text-xs rounded-2xl flex items-center justify-center gap-2"><RotateCcw size={16}/> Nieuw Tentamen</button>
+                </div>
             </motion.div>
 
             {/* INZAGE SECTIE */}
