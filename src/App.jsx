@@ -37,20 +37,20 @@ import Support from './pages/Support';
 // --- DASHBOARD CONFIG ---
 const genericCards = [
   { 
-    title: "Oefenvragen Matrix", 
+    title: "Oefenvragen", 
     desc: "Toets de stof op een flexibele manier.", 
     icon: Gavel, 
     to: "SRI" 
   },
   { 
     title: "Courtroom Rush", 
-    desc: "Arcade-style beslissingen onder tijdsdruk.", 
+    desc: "Ben jij beter dan Bobby?", 
     icon: BrainCircuit, 
     to: "courtroom-rush" 
   },
   { 
-    title: "Het Tentamen", 
-    desc: "Ben je echt locked in voor het echte werk?", 
+    title: "Tentamen simulator", 
+    desc: "Hoe locked in ben je?", 
     icon: Award, 
     to: "jurisprudentie" 
   }
