@@ -199,7 +199,7 @@ const CourtroomRush = () => {
           <motion.div key="i" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="z-10 max-w-2xl w-full">
             <PixelBox className="p-10 space-y-8">
               <TypewriterText 
-                text="Dossier geladen. Analyseer de feiten. Oordeel snel. 3 strikes en je bent uit. Gebruik je power-ups wijs. Ben je klaar voor de zitting?" 
+                text="Dossier geladen. Analyseer de feiten. Oordeel snel. 3 strikes en dan game over. Gebruik je power-ups wijs. Ben je klaar voor de zitting?" 
                 onDone={() => setIntroFinished(true)} 
               />
               {introFinished && (
