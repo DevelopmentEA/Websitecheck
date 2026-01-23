@@ -1,25 +1,24 @@
-// --- 1. Importeer de databases van de verschillende vakken ---
-// Zorg dat de paden kloppen met je mappenstructuur (bijv. src/data/ipr/index.js)
-import { questionsDb as iprDb } from './BestuursrechtLU/index';
-import { questionsDb as srDb } from './EURechtLU/index';
-import { questionsDb as brDb } from './GrondslagenRechtLU/index';
+// --- 1. Importeer de databases ---
+import { questionsDb as bestuursDb } from './BestuursrechtLU/index';
+import { questionsDb as euDb } from './EURechtLU/index';
+import { questionsDb as grondslagenDb } from './GrondslagenRechtLU/index';
 
 // --- 2. Configureer de MasterData ---
 export const masterData = {
-  // VAK 1: Internationaal Privaatrecht
+  // VAK 1: EU Recht
   "EU-neo-2026": {
     title: "EU Recht",
-    db: iprDb,
-    accent: "#6EE7B7", // De Neo Groene kleur
-    tag: "Lawbooks premium 2026",
-    path: "/course/eu-recht" // De Learnworlds URL voor extra path-check
+    db: euDb,
+    accent: "#6EE7B7",
+    tag: "Lawbooks Premium 2026",
+    path: "/course/eu-recht"
   },
 
-  // VAK 2: Strafrecht I
+  // VAK 2: Grondslagen Recht - GEFIXT: komt nu overeen met sr1-premium-k92
   "sr1-premium-k92": {
     title: "Grondslagen Recht",
-    db: srDb,
-    accent: "#6EE7B7", // Rood-achtig voor Strafrecht
+    db: grondslagenDb,
+    accent: "#6EE7B7",
     tag: "Lawbooks Premium 2026",
     path: "/course/grondslagen"
   },
@@ -27,10 +26,19 @@ export const masterData = {
   // VAK 3: Bestuursrecht
   "bestuursrecht-x72": {
     title: "Bestuursrecht",
-    db: brDb,
-    accent: "#6EE7B7", // Blauw-achtig voor Bestuursrecht
+    db: bestuursDb,
+    accent: "#6EE7B7",
     tag: "Lawbooks Premium 2026",
     path: "/course/bestuursrecht"
+  },
+
+  // VAK 4: Goederenrecht
+  "Goederen-premium-k92": {
+    title: "Goederenrecht",
+    db: grondslagenDb, 
+    accent: "#6EE7B7",
+    tag: "Lawbooks Premium 2026",
+    path: "/course/goederenrecht"
   }
 };
 

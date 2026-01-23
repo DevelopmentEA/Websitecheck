@@ -1,19 +1,72 @@
 @import "tailwindcss";
 
+/* 1. RESET & BASIS STYLING */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
 :root {
   --mint: #6EE7B7;
   --dark: #1F2937;
   --bg-gray: #F9FAFB;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px; /* Iets kleiner basisfont voor compacte look */
+  --font-modern: 'Inter', sans-serif;
+  --font-retro: 'Press Start 2P', cursive;
+  font-family: var(--font-modern);
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
   :root { font-size: 16px; }
 }
 
-h1, h2, h3 { letter-spacing: -0.04em; }
+/* 2. FLEXIBELE BODY (SCROLL-VRIENDELIJK) */
+html, body {
+  width: 100%;
+  min-height: 100%; /* Gebruik min-height in plaats van vaste height */
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-gray);
+  /* Verwijder position: fixed zodat scrollen weer werkt */
+  overflow-x: hidden; 
+  overflow-y: auto; 
+}
 
+/* 3. MAIN WRAPPER */
+main {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 4. MODERN CONTAINER (HUB) */
+.modern-container {
+  width: 100%;
+  max-width: 1400px; 
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* 5. ARCADE MODE (GAME LOCK) */
+/* Wanneer de game aanstaat, zetten we de boel wél op slot voor de arcade-vibe */
+.arcade-mode {
+  background-color: #050505 !important;
+  font-family: var(--font-retro) !important;
+  color: white;
+  position: fixed; /* Lock alleen in game-mode */
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden; 
+  z-index: 100;
+}
+
+.arcade-mode img {
+  image-rendering: pixelated;
+}
+
+/* --- UI ELEMENTEN --- */
 .text-gradient {
   background: linear-gradient(to right, #059669, #6EE7B7, #059669);
   background-size: 200% auto;
@@ -22,20 +75,8 @@ h1, h2, h3 { letter-spacing: -0.04em; }
   animation: shine 4s linear infinite;
 }
 
-@keyframes shine {
-  to { background-position: 200% center; }
-}
+@keyframes shine { to { background-position: 200% center; } }
 
-.animate-gradient {
-  background: linear-gradient(to right, #059669, #6EE7B7, #059669);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s linear infinite;
-}
-
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
 ::-webkit-scrollbar-thumb { background: var(--mint); border-radius: 10px; }
-
-/* Voorkom scrollbars in het iframe waar mogelijk */
-main { overflow-x: hidden; }
