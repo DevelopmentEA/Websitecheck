@@ -209,7 +209,7 @@ const CourtroomRush = () => {
                   onClick={() => setGameState('playing')}
                   className="w-full flex items-center justify-center gap-3 bg-[#00e676] border-[4px] border-black p-4 font-['Press_Start_2P'] text-sm shadow-[4px_4px_0_0_#000] hover:translate-y-1 hover:shadow-none transition-all"
                 >
-                  <Play size={20} fill="currentColor" /> START MISSION
+                  <Play size={20} fill="currentColor" /> START GAME
                 </motion.button>
               )}
             </PixelBox>
