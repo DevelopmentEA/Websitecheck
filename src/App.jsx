@@ -29,10 +29,10 @@ import { masterData } from './data/masterData';
 // --- PAGES ---
 import Zenmode from './Zenmode';
 import VoortgangsToets from './pages/VoortgangsToets'; 
-import TopicOne from './pages/TopicOne';       
+import TopicOne from './pages/TopicOne';        
 import CourtroomRush from './pages/CourtroomRush'; 
-import TopicTen from './pages/TopicFour';       
-import Support from './pages/Support'; // Dit is de Rebrand Popup component
+import TopicTen from './pages/TopicFour';        
+import Support from './pages/Support';
 
 // --- DASHBOARD CONFIG ---
 const genericCards = [
@@ -147,7 +147,6 @@ const Dashboard = () => {
           ))}
         </div>
 
-        {/* Rebrand Trigger: Geen ping animatie, puur en strak */}
         <button 
           onClick={() => setIsRebrandOpen(true)}
           className="fixed bottom-8 right-8 z-[150] w-14 h-14 flex items-center justify-center bg-white border border-slate-200 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95 group"
@@ -156,7 +155,6 @@ const Dashboard = () => {
         </button>
       </motion.div>
 
-      {/* Popup voor rebranding */}
       <Support isOpen={isRebrandOpen} onClose={() => setIsRebrandOpen(false)} />
     </>
   );
@@ -172,16 +170,17 @@ const MainLayout = () => {
   const isArcade = location.pathname.includes('/courtroom-rush');
   const isVoortgang = location.pathname.includes('/voortgang');
   const isSRI = location.pathname.includes('/SRI'); 
-  const isDashboard = location.pathname === `/course/${subjectSlug}`;
+  const isDashboard = location.pathname.replace(/\/$/, "") === `/course/${subjectSlug}`.replace(/\/$/, "");
 
   const isFullPageModule = isArcade || isVoortgang || isSRI;
 
   return (
-    <SecurityWrapper>
-      <div className={`min-h-screen w-full transition-colors duration-500 ${isArcade ? 'arcade-mode' : 'bg-[#F9FAFB]'}`}>
-        
-        <Zenmode isActive={isZenActive} onClose={() => setIsZenActive(false)} />
-        
+    <div className={`min-h-screen w-full transition-colors duration-500 ${isArcade ? 'arcade-mode' : 'bg-[#F9FAFB]'}`}>
+      
+      {/* Zenmode staat nu buiten de SecurityWrapper */}
+      <Zenmode isActive={isZenActive} onClose={() => setIsZenActive(false)} />
+      
+      <SecurityWrapper>
         {!isFullPageModule && !isDashboard && (
           <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-8 py-4 flex items-center justify-between">
             <button 
@@ -202,17 +201,18 @@ const MainLayout = () => {
         <main className={`${(!isFullPageModule && !isDashboard) ? 'pt-24' : ''} h-full`}>
           <Outlet />
         </main>
+      </SecurityWrapper>
 
-        {isDashboard && (
-          <button 
-            onClick={() => setIsZenActive(true)} 
-            className="fixed bottom-8 left-8 z-40 w-12 h-12 flex items-center justify-center bg-white border border-slate-200 rounded-full shadow-lg hover:bg-slate-50 transition-all active:scale-90"
-          >
-            <Maximize2 size={18} className="text-slate-600" />
-          </button>
-        )}
-      </div>
-    </SecurityWrapper>
+      {/* Zenmode knop: overal behalve in Arcade (isArcade) */}
+      {!isArcade && (
+        <button 
+          onClick={() => setIsZenActive(true)} 
+          className="fixed bottom-8 left-8 z-[160] w-12 h-12 flex items-center justify-center bg-white border border-slate-200 rounded-full shadow-lg hover:bg-slate-50 transition-all active:scale-90"
+        >
+          <Maximize2 size={18} className="text-slate-600" />
+        </button>
+      )}
+    </div>
   );
 };
 
