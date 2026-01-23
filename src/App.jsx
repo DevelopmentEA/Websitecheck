@@ -9,7 +9,7 @@ import {
   useParams, 
   Navigate 
 } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Scale, 
   Gavel, 
@@ -19,7 +19,8 @@ import {
   Zap, 
   Target, 
   AlertTriangle, 
-  Maximize2 
+  Maximize2,
+  X 
 } from 'lucide-react';
 
 // --- DATA ---
@@ -28,10 +29,10 @@ import { masterData } from './data/masterData';
 // --- PAGES ---
 import Zenmode from './Zenmode';
 import VoortgangsToets from './pages/VoortgangsToets'; 
-import TopicOne from './pages/TopicOne';      
+import TopicOne from './pages/TopicOne';       
 import CourtroomRush from './pages/CourtroomRush'; 
-import TopicTen from './pages/TopicFour';      
-import Support from './pages/Support';
+import TopicTen from './pages/TopicFour';       
+import Support from './pages/Support'; // Dit is de Rebrand Popup component
 
 // --- DASHBOARD CONFIG ---
 const genericCards = [
@@ -79,12 +80,12 @@ const SecurityWrapper = ({ children }) => {
 
   if (!isAuthorized) {
     return (
-      <div className="h-screen w-full bg-[#050505] flex items-center justify-center p-6 text-center arcade-mode">
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="max-w-md p-10 border-4 border-red-500 shadow-[8px_8px_0_0_#ff000033]">
-          <AlertTriangle size={64} className="text-red-500 mx-auto mb-6" />
-          <h2 className="text-white font-black text-xl mb-4">ACCESS_DENIED</h2>
-          <p className="text-red-400 text-xs mb-6 uppercase">Module uitsluitend toegankelijk via geautoriseerde Lawbooks omgeving.</p>
-          <div className="text-[10px] text-white/30 font-mono italic">SEC_PROTOCOL_IFRAME_ONLY</div>
+      <div className="h-screen w-full bg-[#F9FAFB] flex items-center justify-center p-6 text-center">
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="max-w-md p-10 bg-white border border-slate-200 rounded-[2.5rem] shadow-xl">
+          <AlertTriangle size={48} className="text-amber-500 mx-auto mb-6" />
+          <h2 className="text-slate-900 font-bold text-xl mb-2">Toegang niet toegestaan</h2>
+          <p className="text-slate-500 text-sm mb-6">Deze module is uitsluitend toegankelijk via de officiële Lawbooks leeromgeving.</p>
+          <div className="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Beveiligde Verbinding</div>
         </motion.div>
       </div>
     );
@@ -124,26 +125,40 @@ const TiltCard = ({ title, desc, icon: Icon, to, color }) => {
 const Dashboard = () => {
   const { subjectSlug } = useParams();
   const data = masterData[subjectSlug];
+  const [isRebrandOpen, setIsRebrandOpen] = useState(false);
 
-  if (!data) return <div className="h-screen flex items-center justify-center font-bold uppercase tracking-widest text-slate-400">Loading Dossier...</div>;
+  if (!data) return <div className="h-screen flex items-center justify-center font-bold uppercase tracking-widest text-slate-400">Dossier laden...</div>;
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-4xl mx-auto py-16 px-8">
-      <div className="mb-14">
-        <div className="flex items-center gap-2 mb-4" style={{ color: data.accent }}>
-          <Target size={14} /> 
-          <span className="text-[10px] font-bold uppercase tracking-[0.4em]">{data.tag}</span>
+    <>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-4xl mx-auto py-16 px-8 relative">
+        <div className="mb-14">
+          <div className="flex items-center gap-2 mb-4" style={{ color: data.accent }}>
+            <Target size={14} /> 
+            <span className="text-[10px] font-bold uppercase tracking-[0.4em]">{data.tag}</span>
+          </div>
+          <h1 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+            Kies je <span className="text-gradient">Oefenmodule</span>
+          </h1>
         </div>
-        <h1 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight">
-          Kies je <span className="text-gradient">Oefenmodule</span>
-        </h1>
-      </div>
-      <div className="grid gap-6">
-        {genericCards.map((card, idx) => (
-          <TiltCard key={idx} {...card} color={data.accent} />
-        ))}
-      </div>
-    </motion.div>
+        <div className="grid gap-6">
+          {genericCards.map((card, idx) => (
+            <TiltCard key={idx} {...card} color={data.accent} />
+          ))}
+        </div>
+
+        {/* Rebrand Trigger: Geen ping animatie, puur en strak */}
+        <button 
+          onClick={() => setIsRebrandOpen(true)}
+          className="fixed bottom-8 right-8 z-[150] w-14 h-14 flex items-center justify-center bg-white border border-slate-200 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95 group"
+        >
+          <X size={28} className="text-[#10b981] drop-shadow-[0_0_8px_rgba(16,185,129,0.3)]" strokeWidth={3} />
+        </button>
+      </motion.div>
+
+      {/* Popup voor rebranding */}
+      <Support isOpen={isRebrandOpen} onClose={() => setIsRebrandOpen(false)} />
+    </>
   );
 };
 
@@ -154,20 +169,20 @@ const MainLayout = () => {
   const navigate = useNavigate();
   const [isZenActive, setIsZenActive] = useState(false);
 
-  // Checks voor de 'Arcade' vs 'Modern' splitsing
   const isArcade = location.pathname.includes('/courtroom-rush');
   const isVoortgang = location.pathname.includes('/voortgang');
+  const isSRI = location.pathname.includes('/SRI'); 
   const isDashboard = location.pathname === `/course/${subjectSlug}`;
+
+  const isFullPageModule = isArcade || isVoortgang || isSRI;
 
   return (
     <SecurityWrapper>
-      {/* Dynamic Class: 'arcade-mode' activeert de 8-bit CSS scope */}
       <div className={`min-h-screen w-full transition-colors duration-500 ${isArcade ? 'arcade-mode' : 'bg-[#F9FAFB]'}`}>
         
         <Zenmode isActive={isZenActive} onClose={() => setIsZenActive(false)} />
         
-        {/* Navigatie: Verbergen in Arcade & Voortgang voor maximale immersie */}
-        {!isArcade && !isVoortgang && !isDashboard && (
+        {!isFullPageModule && !isDashboard && (
           <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-8 py-4 flex items-center justify-between">
             <button 
               onClick={() => navigate(`/course/${subjectSlug}`)} 
@@ -175,19 +190,20 @@ const MainLayout = () => {
             >
               <ArrowLeft size={16} /> Terug
             </button>
-            <div className="text-sm font-black italic flex items-center gap-1 text-slate-900">
-              <Scale size={18} className="text-[#469585]" /> Lawbooks
+            <div className="flex items-center gap-2">
+              <Scale size={18} style={{ color: '#7AF9BF' }} />
+              <div className="text-[10px] font-black uppercase tracking-[0.3em] italic" style={{ color: '#7AF9BF' }}>
+                Lawbooks
+              </div>
             </div>
           </nav>
         )}
 
-        {/* Padding-top alleen nodig bij modern-style pagina's met een nav-balk */}
-        <main className={`${(!isDashboard && !isVoortgang && !isArcade) ? 'pt-24' : ''} h-full`}>
+        <main className={`${(!isFullPageModule && !isDashboard) ? 'pt-24' : ''} h-full`}>
           <Outlet />
         </main>
 
-        {/* Zenmode Switcher: Alleen in de moderne Hub */}
-        {!isArcade && !isVoortgang && (
+        {isDashboard && (
           <button 
             onClick={() => setIsZenActive(true)} 
             className="fixed bottom-8 left-8 z-40 w-12 h-12 flex items-center justify-center bg-white border border-slate-200 rounded-full shadow-lg hover:bg-slate-50 transition-all active:scale-90"
@@ -210,7 +226,7 @@ const App = () => (
         <Route path="SRI" element={<TopicOne />} />
         <Route path="courtroom-rush" element={<CourtroomRush />} />
         <Route path="jurisprudentie" element={<TopicTen />} />
-        <Route path="support" element={<Support />} />
+        <Route path="support" element={<Support isOpen={true} onClose={() => window.history.back()} />} />
       </Route>
       <Route path="/" element={<Navigate to="/course/sr1-premium-k92" replace />} />
     </Routes>

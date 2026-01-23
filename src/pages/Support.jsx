@@ -1,176 +1,146 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, MessageSquare, Gavel, CheckCircle2, AlertCircle, ArrowLeft, Mail } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { X, Send, Sparkles, Zap, Check, PencilLine, User } from "lucide-react";
+import confetti from 'canvas-confetti';
 
-// --- CONFIGURATIE ---
 const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScEQXP_l9zXJ4_OKXhJiiK_jMzsYWssU2grLHddKQnWShVyQA/formResponse";
+const FIELD_IDS = { NAAM: "entry.634230514", BERICHT: "entry.272309703" };
 
-const FIELD_IDS = {
-  NAAM: "entry.634230514",
-  BERICHT: "entry.272309703",
-};
-
-export default function Support() {
+export default function ProductXPopup({ isOpen, onClose }) {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
-  const navigate = useNavigate();
-
-  const [formData, setFormData] = useState({
-      naam: "",
-      bericht: ""
-  });
-
-  const handleChange = (e) => {
-      setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const [formData, setFormData] = useState({ naam: "", bericht: "" });
 
   const handleSubmit = async (e) => {
-      e.preventDefault();
-      setLoading(true);
-      setError("");
+    e.preventDefault();
+    if (!formData.bericht.trim()) return;
 
-      try {
-          const form = new FormData();
-          form.append(FIELD_IDS.NAAM, formData.naam);
-          form.append(FIELD_IDS.BERICHT, formData.bericht);
-          
-          await fetch(GOOGLE_FORM_ACTION_URL, {
-              method: "POST",
-              mode: "no-cors", 
-              body: form
-          });
-
-          setSubmitted(true);
-          setFormData({ naam: "", bericht: "" });
-
-      } catch (err) {
-          setError("Er ging iets mis bij het versturen.");
-      } finally {
-          setLoading(false);
-      }
+    setLoading(true);
+    try {
+      const form = new FormData();
+      // Naam is optioneel, bericht is de kern
+      form.append(FIELD_IDS.NAAM, formData.naam || "Anoniem");
+      form.append(FIELD_IDS.BERICHT, formData.bericht);
+      
+      await fetch(GOOGLE_FORM_ACTION_URL, { method: "POST", mode: "no-cors", body: form });
+      
+      setSubmitted(true);
+      confetti({
+        particleCount: 80,
+        spread: 50,
+        origin: { y: 0.7 },
+        colors: ['#7AF9BF', '#10b981', '#000000']
+      });
+    } catch (err) {
+      alert("Er ging iets mis. Probeer het later nog eens.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div className="min-h-screen bg-[#F9FAFB] py-12 px-6 relative overflow-hidden">
-      
-      {/* Subtiele Achtergrond Decoratie */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#6EE7B7]/5 rounded-full blur-[100px] -z-10" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-black/5 rounded-full blur-[100px] -z-10" />
-
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="max-w-2xl mx-auto"
-      >
-        {/* Header Sectie */}
-        <div className="mb-10 flex flex-col items-start">
+    <AnimatePresence>
+      {isOpen && (
+        <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4">
           <motion.div 
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 text-[#059669] mb-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="absolute inset-0 bg-slate-900/40 backdrop-blur-md"
+          />
+
+          <motion.div 
+            initial={{ scale: 0.95, opacity: 0, y: 10 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.95, opacity: 0, y: 10 }}
+            className="relative w-full max-w-xl bg-white rounded-[2.5rem] shadow-2xl overflow-hidden"
           >
-            <Gavel size={14} />
-            <span className="text-[10px] font-black uppercase tracking-[0.3em]">Legal Intelligence Support</span>
-          </motion.div>
-          <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter leading-none italic uppercase">
-            Support & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#059669] to-[#6EE7B7]">Feedback</span>
-          </h1>
-          <p className="mt-4 text-slate-500 font-medium">Iets onduidelijk of een foutje gezien? Onze juridische redactie kijkt mee.</p>
-        </div>
+            <button onClick={onClose} className="absolute top-6 right-6 p-2 hover:bg-slate-50 rounded-full transition-colors z-10">
+              <X size={20} className="text-slate-400" />
+            </button>
 
-        <AnimatePresence mode="wait">
-          {submitted ? (
-            <motion.div 
-              key="success"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              className="bg-white border border-slate-100 p-12 rounded-[3rem] shadow-xl text-center relative overflow-hidden"
-            >
-              <div className="absolute top-0 left-0 w-full h-2 bg-[#6EE7B7]" />
-              <div className="w-20 h-20 bg-[#6EE7B7]/10 rounded-3xl flex items-center justify-center mx-auto mb-6 text-[#059669]">
-                <CheckCircle2 size={40} />
-              </div>
-              <h3 className="text-2xl font-black text-slate-900 mb-2 uppercase italic tracking-tighter">Melding Ontvangen</h3>
-              <p className="text-slate-500 mb-8 font-medium">Bedankt voor je scherpte. We gaan er direct mee aan de slag.</p>
-              <button 
-                onClick={() => setSubmitted(false)}
-                className="px-8 py-4 bg-black text-[#6EE7B7] rounded-2xl font-black uppercase tracking-widest text-[10px] hover:scale-105 transition-all shadow-lg"
-              >
-                Nieuwe Melding
-              </button>
-            </motion.div>
-          ) : (
-            <motion.div 
-              key="form"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="bg-white border border-slate-100 p-8 md:p-10 rounded-[3rem] shadow-xl relative"
-            >
-              {error && (
-                <div className="bg-red-50 text-red-600 p-4 rounded-2xl flex items-center gap-3 mb-6 text-sm font-bold border border-red-100">
-                  <AlertCircle size={18} /> {error}
-                </div>
-              )}
-
-              <form onSubmit={handleSubmit} className="space-y-8">
-                <div className="grid grid-cols-1 gap-6">
-                  {/* Mail Input */}
-                  <div className="relative group">
-                    <label className="flex items-center gap-2 text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 ml-1">
-                      <Mail size={12} className="text-[#6EE7B7]" /> Jouw E-mail
-                    </label>
-                    <input 
-                      type="email" 
-                      name="naam"
-                      required
-                      className="w-full p-4 bg-slate-50 border border-transparent rounded-2xl focus:outline-none focus:border-[#6EE7B7] focus:bg-white transition-all font-bold text-slate-900 placeholder:text-slate-300" 
-                      placeholder="naam@student.nl"
-                      value={formData.naam} 
-                      onChange={handleChange} 
-                    />
+            <div className="p-8 md:p-12">
+              {!submitted ? (
+                <div className="space-y-8">
+                  <div>
+                    <div className="flex items-center gap-2 mb-4 text-[#10b981]">
+                      <Sparkles size={16} />
+                      <span className="text-[10px] font-black uppercase tracking-[0.2em]">The Naming Project</span>
+                    </div>
+                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight leading-tight">
+                      Geef Product X <br />een nieuwe naam.
+                    </h2>
+                    <p className="mt-3 text-slate-500 text-sm font-medium">
+                      Onze nieuwe module is bijna klaar. Hoe moeten we hem noemen?
+                    </p>
                   </div>
 
-                  {/* Bericht Input */}
-                  <div className="relative group">
-                    <label className="flex items-center gap-2 text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 ml-1">
-                      <MessageSquare size={12} className="text-[#6EE7B7]" /> Opmerking / Correctie
-                    </label>
-                    <textarea 
-                      name="bericht"
-                      required
-                      className="w-full p-4 bg-slate-50 border border-transparent rounded-2xl h-40 focus:outline-none focus:border-[#6EE7B7] focus:bg-white transition-all font-medium text-slate-900 placeholder:text-slate-300 resize-none" 
-                      placeholder="Omschrijf de fout of je vraag..."
-                      value={formData.bericht} 
-                      onChange={handleChange} 
-                    />
-                  </div>
-                </div>
+                  <form onSubmit={handleSubmit} className="space-y-5">
+                    <div className="space-y-4">
+                      <div className="relative">
+                        <label className="flex items-center gap-2 text-[9px] font-black text-slate-400 uppercase tracking-widest mb-2 ml-1">
+                          <PencilLine size={12} /> Jouw voorstel
+                        </label>
+                        <textarea 
+                          required
+                          className="w-full p-5 bg-slate-50 border-2 border-transparent rounded-3xl focus:border-[#7AF9BF] focus:bg-white transition-all font-bold text-lg resize-none h-32 outline-none"
+                          placeholder="Bijv. Lexicon, Juris, Flow..."
+                          value={formData.bericht}
+                          onChange={(e) => setFormData({...formData, bericht: e.target.value})}
+                        />
+                      </div>
 
-                <motion.button 
-                  type="submit" 
-                  disabled={loading}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full py-5 bg-black text-[#6EE7B7] font-black uppercase tracking-[0.2em] text-xs rounded-2xl hover:shadow-[0_20px_40px_rgba(110,231,183,0.2)] disabled:opacity-50 disabled:cursor-wait transition-all flex items-center justify-center gap-3"
+                      <div className="relative">
+                        <label className="flex items-center gap-2 text-[9px] font-black text-slate-400 uppercase tracking-widest mb-2 ml-1">
+                          <User size={12} /> Je naam (optioneel)
+                        </label>
+                        <input 
+                          type="text"
+                          className="w-full p-4 bg-slate-50 border-2 border-transparent rounded-2xl focus:border-[#7AF9BF] focus:bg-white transition-all font-bold outline-none"
+                          placeholder="Wie ben je?"
+                          value={formData.naam}
+                          onChange={(e) => setFormData({...formData, naam: e.target.value})}
+                        />
+                      </div>
+                    </div>
+
+                    <motion.button 
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.99 }}
+                      type="submit" disabled={loading || !formData.bericht}
+                      className="w-full py-5 bg-slate-900 text-[#7AF9BF] font-black uppercase tracking-[0.2em] text-[10px] rounded-2xl shadow-lg flex items-center justify-center gap-3 disabled:opacity-30 disabled:grayscale transition-all"
+                    >
+                      {loading ? "Verzenden..." : "Voorstel indienen"}
+                      {!loading && <Send size={14} />}
+                    </motion.button>
+                  </form>
+                </div>
+              ) : (
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="py-12 text-center"
                 >
-                  {loading ? "Systeem Verwerkt..." : "Versturen naar Redactie"}
-                  <Send size={16} className={loading ? "animate-pulse" : ""} />
-                </motion.button>
-              </form>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        {/* Footer Link */}
-        <motion.button 
-          onClick={() => navigate("/")}
-          className="mt-10 flex items-center gap-2 text-slate-400 hover:text-slate-900 transition-colors mx-auto font-black uppercase text-[10px] tracking-widest"
-        >
-          <ArrowLeft size={14} /> Terug naar Dashboard
-        </motion.button>
-      </motion.div>
-    </div>
+                  <div className="w-16 h-16 bg-[#7AF9BF]/20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-[#059669]">
+                    <Check size={32} strokeWidth={3} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2">Bedankt!</h3>
+                  <p className="text-slate-500 font-medium mb-8 text-sm">
+                    Je voorstel is ontvangen. We nemen alle suggesties mee in de definitieve keuze.
+                  </p>
+                  <button 
+                    onClick={onClose} 
+                    className="px-8 py-3 bg-slate-100 text-slate-600 rounded-xl font-bold text-xs hover:bg-slate-200 transition-colors"
+                  >
+                    Sluiten
+                  </button>
+                </motion.div>
+              )}
+            </div>
+          </motion.div>
+        </div>
+      )}
+    </AnimatePresence>
   );
 }

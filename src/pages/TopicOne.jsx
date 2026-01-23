@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { BarChart3, CheckCircle2, XCircle, AlertCircle, Settings2, X, ChevronRight, Play, ListChecks, HelpCircle, ShieldQuestion, Send } from 'lucide-react';
+import { 
+  BarChart3, CheckCircle2, XCircle, AlertCircle, Settings2, 
+  X, ChevronRight, Play, Send, ChevronLeft, Check, Scale 
+} from 'lucide-react';
 
 import { masterData } from '../data/masterData'; 
 
@@ -14,19 +17,20 @@ const QUESTION_TYPES = [
 
 const LIMITS = { "MK": 30, "TF": 30, "Open": 10 };
 
-export default function IPRAdaptiveQuiz() {
+export default function UnifiedAdaptiveQuiz() {
   const { subjectSlug } = useParams();
+  const navigate = useNavigate();
   
   const activeSubject = masterData[subjectSlug];
   const questionsDb = activeSubject?.db || {};
   const accentColor = activeSubject?.accent || "#059669";
 
+  // States
   const [gameState, setGameState] = useState('intro'); 
   const [targetType, setTargetType] = useState('MK'); 
   const [pendingType, setPendingType] = useState(null); 
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [userOpenAnswer, setUserOpenAnswer] = useState(""); 
   
   const availableWeeks = useMemo(() => Object.keys(questionsDb), [questionsDb]);
   const [selectedWeeks, setSelectedWeeks] = useState(availableWeeks);
@@ -34,17 +38,24 @@ export default function IPRAdaptiveQuiz() {
   const [history, setHistory] = useState([]); 
   const [currentQ, setCurrentQ] = useState(null); 
   const [score, setScore] = useState(0);
+  const [userOpenAnswer, setUserOpenAnswer] = useState(""); 
   const [selectedOption, setSelectedOption] = useState(null);
   const [isFeedbackVisible, setIsFeedbackVisible] = useState(false);
 
   const currentMax = LIMITS[targetType] || 10;
 
-  // --- LOGICA VOOR DIRECT LADEN BIJ WISSEL ---
+  // Sync weeks bij laden
   useEffect(() => {
-    // Als we al in een quiz zitten, laad dan direct een nieuwe vraag voor het nieuwe type
+    if (availableWeeks.length > 0 && selectedWeeks.length === 0) {
+      setSelectedWeeks(availableWeeks);
+    }
+  }, [availableWeeks]);
+
+  // Quiz resetten bij type wissel
+  useEffect(() => {
     if (gameState === 'quiz') {
       resetForNewType();
-      loadNewQuestion([]); // Forceer met lege history voor de nieuwe start
+      loadNewQuestion([]); 
     }
   }, [targetType]);
 
@@ -73,13 +84,14 @@ export default function IPRAdaptiveQuiz() {
   };
 
   const startQuiz = () => {
-    resetForNewType();
+    if (selectedWeeks.length === 0) return alert("Selecteer tenminste één categorie.");
     setGameState('quiz');
-    // Gebruik een kleine timeout om zeker te weten dat de state clean is
+    resetForNewType();
     setTimeout(() => loadNewQuestion([]), 10);
   };
 
   const loadNewQuestion = (currentHistory = history) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     if (currentHistory.length >= currentMax) { finishQuiz(); return; }
     const q = getNextQuestion(currentHistory);
     if (q) {
@@ -89,7 +101,7 @@ export default function IPRAdaptiveQuiz() {
       setIsFeedbackVisible(false); 
     } else {
       if (currentHistory.length > 0) finishQuiz();
-      else setGameState('intro'); 
+      else setGameState('intro');
     }
   };
 
@@ -108,7 +120,6 @@ export default function IPRAdaptiveQuiz() {
     setShowConfirmModal(false);
     setTargetType(pendingType);
     setPendingType(null);
-    // De useEffect hierboven handelt de rest af (reset & load)
   };
 
   const handleChoiceAnswer = (index) => {
@@ -119,7 +130,7 @@ export default function IPRAdaptiveQuiz() {
     setHistory(prev => [...prev, { question: currentQ, userChoice: index, correct: isCorrect }]);
     if (isCorrect) {
         setScore(prev => prev + 1);
-        confetti({ particleCount: 40, spread: 60, origin: { y: 0.8 } });
+        confetti({ particleCount: 40, spread: 60, origin: { y: 0.7 } });
     }
   };
 
@@ -134,148 +145,203 @@ export default function IPRAdaptiveQuiz() {
   const finishQuiz = () => {
     setGameState('results');
     setCurrentQ(null);
-    confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
+    confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
   };
 
-  if (!activeSubject) return <div className="p-20 text-center font-black">Laden...</div>;
+  if (!activeSubject) return null;
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] text-[#111] font-sans">
+    <div className="min-h-screen bg-[#F8FAFC] text-[#1e293b] font-sans selection:bg-emerald-100 flex flex-col overflow-x-hidden">
       
-      {/* CONFIRMATION POPUP */}
+      {/* --- NAVIGATIE --- */}
+      <nav className="fixed top-0 left-0 w-full z-[100] bg-white/80 backdrop-blur-md border-b border-slate-200 h-14">
+        <div className="max-w-4xl mx-auto px-6 h-full flex items-center justify-between">
+          <button onClick={() => navigate(-1)} className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-black transition-colors">
+            <ChevronLeft size={14} strokeWidth={3} /> TERUG
+          </button>
+          
+          {/* LOGO SECTIE */}
+          <div className="flex items-center gap-2">
+            <Scale size={18} style={{ color: '#7AF9BF' }} />
+            <div className="text-[10px] font-black uppercase tracking-[0.3em] italic" style={{ color: '#7AF9BF' }}>
+              Lawbooks
+            </div>
+          </div>
+
+          <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-black transition-colors"><Settings2 size={18}/></button>
+        </div>
+        {gameState === 'quiz' && (
+          <div className="absolute bottom-0 left-0 w-full h-[2px] bg-slate-100">
+            <motion.div className="h-full" style={{ backgroundColor: accentColor }} animate={{ width: `${(history.length / currentMax) * 100}%` }} />
+          </div>
+        )}
+      </nav>
+
+      {/* --- MODALS --- */}
       <AnimatePresence>
+        {/* 1. Bevestigings Modal */}
         {showConfirmModal && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[110] bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[200] bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-6">
             <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="bg-white p-8 rounded-[2rem] max-w-sm w-full shadow-2xl text-center">
               <AlertCircle size={48} className="mx-auto mb-4 text-orange-500" />
-              <h3 className="text-xl font-black uppercase italic mb-2">Vorm Wisselen?</h3>
-              <p className="text-slate-500 text-sm mb-6">Je huidige voortgang wordt gewist als je nu overstapt naar {QUESTION_TYPES.find(t => t.key === pendingType)?.label}.</p>
+              <h3 className="text-xl font-black uppercase italic mb-2 tracking-tight">Vorm Wisselen?</h3>
+              <p className="text-slate-500 text-sm mb-6 leading-relaxed">Je huidige voortgang wordt gewist als je nu overstapt naar {QUESTION_TYPES.find(t => t.key === pendingType)?.label}.</p>
               <div className="flex gap-3">
                 <button onClick={() => setShowConfirmModal(false)} className="flex-1 py-3 bg-slate-100 rounded-xl font-bold text-xs uppercase tracking-widest">Blijf</button>
-                <button onClick={confirmTypeChange} className="flex-1 py-3 bg-red-500 text-white rounded-xl font-bold text-xs uppercase tracking-widest">Wissel</button>
+                <button onClick={confirmTypeChange} className="flex-1 py-3 bg-red-500 text-white rounded-xl font-bold text-xs uppercase tracking-widest shadow-lg shadow-red-200">Wissel</button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+
+        {/* 2. Filter / Settings Modal */}
+        {showSettings && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[200] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-6">
+            <motion.div initial={{ scale: 0.95, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95, y: 20 }} className="bg-white w-full max-w-md rounded-[2.5rem] shadow-2xl overflow-hidden">
+              <div className="p-8">
+                <div className="flex justify-between items-center mb-6">
+                  <h3 className="font-black uppercase text-sm tracking-widest">Filter Categorieën</h3>
+                  <button onClick={() => setShowSettings(false)} className="p-2 bg-slate-50 rounded-full hover:bg-slate-100"><X size={20}/></button>
+                </div>
+                <div className="space-y-2 max-h-[40vh] overflow-y-auto pr-2 custom-scrollbar">
+                  {availableWeeks.map(week => (
+                    <button key={week} onClick={() => setSelectedWeeks(prev => prev.includes(week) ? prev.filter(w => w !== week) : [...prev, week])}
+                      className={`w-full flex items-center justify-between p-4 rounded-2xl border-2 transition-all ${selectedWeeks.includes(week) ? "border-emerald-500 bg-emerald-50 text-emerald-900" : "border-slate-100 bg-white text-slate-400"}`}
+                    >
+                      <span className="font-bold text-sm">{week.replace('_', ' ')}</span>
+                      {selectedWeeks.includes(week) && <Check size={18} strokeWidth={3} />}
+                    </button>
+                  ))}
+                </div>
+                <button onClick={() => { setShowSettings(false); if(gameState === 'quiz') resetForNewType(); startQuiz(); }}
+                  className="w-full mt-8 py-4 bg-slate-900 text-white rounded-2xl font-black uppercase text-[10px] tracking-widest shadow-xl active:scale-95 transition-all"
+                > Instellingen Opslaan </button>
               </div>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <main className="pt-10 pb-40 px-6 max-w-4xl mx-auto min-h-screen">
+      {/* --- CONTENT AREA --- */}
+      <main className="flex-grow pt-20 pb-32 px-6 max-w-3xl mx-auto w-full">
+        {gameState === 'intro' && (
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col items-center py-10 text-center">
+            <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl mb-6 border border-slate-200">⚖️</div>
+            <h1 className="text-3xl md:text-5xl font-black uppercase italic mb-3 tracking-tight text-slate-900 leading-tight">{activeSubject.title}</h1>
+            <p className="text-slate-400 font-bold mb-10 uppercase text-[10px] tracking-[0.3em]">Module: {QUESTION_TYPES.find(t => t.key === targetType).label}</p>
+            <button onClick={startQuiz} className="group py-4 px-10 text-white font-black uppercase text-xs rounded-xl shadow-lg flex items-center gap-3 transition-all hover:scale-[1.02]" style={{ backgroundColor: accentColor }}>
+              Start Training <Play size={14} fill="white" />
+            </button>
+          </motion.div>
+        )}
+
         {gameState === 'quiz' && currentQ && (
-          <div className="w-full">
-            <div className="flex justify-between items-center mb-8">
-                <span className="text-[10px] font-black uppercase text-slate-400 tracking-widest">{currentQ.week?.replace('_', ' ')} — {history.length + 1}/{currentMax}</span>
-                <button onClick={() => setShowSettings(true)} className="p-2 bg-white border rounded-lg text-slate-400"><Settings2 size={16}/></button>
+          <motion.div key={currentQ.q} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <div className="flex justify-center mb-6">
+                <span className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-[9px] font-black uppercase text-slate-500 tracking-wider">
+                  {currentQ.week?.replace('_', ' ')} • {history.length + 1}/{currentMax}
+                </span>
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-black mb-10 text-slate-900">{currentQ.q}</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-8 text-slate-900 leading-snug text-center max-w-2xl mx-auto">
+              {currentQ.q}
+            </h2>
 
-            {targetType !== 'Open' ? (
-              <div className="space-y-4">
-                {/* VEILIGE CHECK MET OPTIONAL CHAINING OM DE .MAP FOUT TE VOORKOMEN */}
-                {currentQ.a?.map((opt, i) => {
+            <div className="grid grid-cols-1 gap-3 max-w-2xl mx-auto">
+              {targetType !== 'Open' ? (
+                currentQ.a?.map((opt, i) => {
                   const isSelected = selectedOption === i;
                   const isCorrect = i === currentQ.c;
                   return (
                     <button key={i} disabled={isFeedbackVisible} onClick={() => handleChoiceAnswer(i)} 
-                      className={`w-full p-6 text-left border-2 rounded-2xl transition-all font-bold flex justify-between items-center ${isFeedbackVisible ? (isCorrect ? "bg-emerald-50 border-emerald-400 text-emerald-900" : (isSelected ? "bg-red-50 border-red-200 text-red-900" : "opacity-40 grayscale")) : "bg-white border-slate-100 hover:border-slate-300 text-slate-700"}`}
-                      style={!isFeedbackVisible && isSelected ? { backgroundColor: accentColor, borderColor: accentColor, color: 'white' } : {}}
+                      className={`w-full p-4 md:p-5 text-left border-2 rounded-2xl transition-all font-semibold flex justify-between items-center group
+                        ${isFeedbackVisible ? (isCorrect ? "bg-emerald-50 border-emerald-400 text-emerald-900" : (isSelected ? "bg-red-50 border-red-200 text-red-900" : "opacity-40 grayscale")) : "bg-white border-white hover:border-slate-200 text-slate-700 shadow-sm"}`}
                     >
-                      <span className="max-w-[90%]">{opt}</span>
-                      {isFeedbackVisible && isCorrect && <CheckCircle2 className="text-emerald-600 shrink-0"/>}
+                      <span className="max-w-[90%] text-base md:text-lg leading-snug">{opt}</span>
+                      {isFeedbackVisible && isCorrect && <CheckCircle2 size={22} className="text-emerald-600 shrink-0 ml-2" />}
+                      {isFeedbackVisible && isSelected && !isCorrect && <XCircle size={22} className="text-red-500 shrink-0 ml-2" />}
                     </button>
                   );
-                })}
-              </div>
-            ) : (
-              <div className="space-y-6">
-                <textarea 
-                  value={userOpenAnswer}
-                  onChange={(e) => setUserOpenAnswer(e.target.value)}
-                  disabled={isFeedbackVisible}
-                  placeholder="Typ je antwoord..."
-                  className="w-full h-48 p-6 rounded-3xl border-2 border-slate-100 outline-none font-medium text-lg resize-none shadow-sm"
-                />
-                {!isFeedbackVisible && (
-                  <button onClick={handleOpenSubmit} className="w-full py-5 bg-black text-white font-black uppercase text-xs rounded-2xl flex items-center justify-center gap-3">
-                    Controleer Antwoord <Send size={18}/>
-                  </button>
-                )}
-              </div>
-            )}
+                })
+              ) : (
+                <div className="space-y-4">
+                  <textarea value={userOpenAnswer} onChange={(e) => setUserOpenAnswer(e.target.value)} disabled={isFeedbackVisible}
+                    placeholder="Typ hier je juridische analyse..."
+                    className="w-full h-48 p-6 rounded-3xl border-2 border-white outline-none font-medium text-lg resize-none bg-white focus:border-slate-200 transition-all shadow-sm"
+                  />
+                  {!isFeedbackVisible && (
+                    <button onClick={handleOpenSubmit} className="w-full py-4 bg-slate-900 text-white font-black uppercase text-[10px] tracking-[0.2em] rounded-xl shadow-lg active:scale-95 transition-transform flex items-center justify-center gap-3">
+                      CONTROLEER ANTWOORD <Send size={14} />
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
 
             <AnimatePresence>
               {isFeedbackVisible && (
-                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mt-10 p-8 bg-white border border-slate-100 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-2 h-full" style={{ backgroundColor: accentColor }} />
-                  
-                  {targetType === 'Open' && (
-                    <div className="mb-8">
-                      <p className="text-[10px] font-black uppercase mb-4 italic flex items-center gap-2" style={{ color: accentColor }}><CheckCircle2 size={14}/> Voorbeeld Antwoord</p>
-                      <p className="text-slate-800 text-lg font-bold leading-relaxed mb-8 bg-slate-50 p-6 rounded-2xl border border-slate-100">{currentQ.sample}</p>
-                      
-                      <p className="text-[10px] font-black uppercase text-slate-400 mb-4 italic">Checklist</p>
-                      <div className="grid gap-2 mb-8">
-                          {/* OOK HIER VEILIG MAPPEN */}
+                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} className="mt-8 max-w-2xl mx-auto">
+                  <div className="p-6 md:p-8 bg-white border border-slate-200 rounded-[2rem] shadow-xl relative overflow-hidden">
+                    <div className="absolute top-0 left-0 w-1.5 h-full" style={{ backgroundColor: accentColor }} />
+                    
+                    {targetType === 'Open' && (
+                      <div className="mb-6">
+                        <p className="text-[9px] font-black uppercase mb-3 italic flex items-center gap-2" style={{ color: accentColor }}><CheckCircle2 size={12}/> Modelantwoord</p>
+                        <p className="text-slate-800 text-base font-bold leading-relaxed mb-6 bg-slate-50 p-5 rounded-2xl border border-slate-100">{currentQ.sample}</p>
+                        <p className="text-[9px] font-black uppercase text-slate-400 mb-3 italic">Checklist punten</p>
+                        <div className="grid gap-2 mb-6">
                           {currentQ.checklist?.map((item, idx) => (
-                              <div key={idx} className="flex items-center gap-3 p-4 bg-slate-50/50 border border-slate-100 rounded-xl text-sm font-bold text-slate-600">
-                                  <div className="w-6 h-6 rounded-md bg-white border border-slate-200 flex items-center justify-center shrink-0" style={{ color: accentColor }}>✓</div>
-                                  {item}
-                              </div>
+                            <div key={idx} className="flex items-center gap-3 p-3 bg-slate-50/50 border border-slate-100 rounded-xl text-[13px] font-bold text-slate-600">
+                              <div className="w-5 h-5 rounded-md bg-white border border-slate-200 flex items-center justify-center shrink-0" style={{ color: accentColor }}>✓</div>
+                              {item}
+                            </div>
                           ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                  
-                  <p className="text-[10px] font-black uppercase text-slate-400 mb-2 italic tracking-widest flex items-center gap-2"><AlertCircle size={14}/> Toelichting</p>
-                  <p className="text-slate-600 font-medium leading-relaxed mb-10 text-base">{currentQ.exp}</p>
-                  
-                  <button onClick={() => loadNewQuestion()} className="w-full py-5 text-white font-black uppercase tracking-widest text-xs rounded-2xl flex items-center justify-center gap-2 shadow-lg" style={{ backgroundColor: accentColor }}>
-                    Volgende Vraag <ChevronRight size={20}/>
-                  </button>
+                    )}
+
+                    <p className="text-[9px] font-black uppercase text-slate-400 mb-2 tracking-widest flex items-center gap-2"><AlertCircle size={12}/> Toelichting</p>
+                    <p className="text-slate-700 font-medium leading-relaxed mb-8 text-sm md:text-base">{currentQ.exp}</p>
+                    <button onClick={() => loadNewQuestion()} className="w-full py-4 text-white font-black uppercase text-[10px] tracking-[0.2em] rounded-xl shadow-md hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2" style={{ backgroundColor: accentColor }}>
+                      VOLGENDE VRAAG <ChevronRight size={16} strokeWidth={3}/>
+                    </button>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
-        )}
-
-        {gameState === 'intro' && (
-            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-20 flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-3xl shadow-xl flex items-center justify-center text-5xl mb-10 border border-slate-100">⚖️</div>
-                <h1 className="text-5xl md:text-7xl font-black italic uppercase mb-4 text-slate-900 leading-none">{activeSubject.title} Training</h1>
-                <p className="text-slate-400 font-bold mb-12 uppercase text-[10px] tracking-[0.3em]">Huidige vorm: {QUESTION_TYPES.find(t => t.key === targetType).label}</p>
-                <button onClick={startQuiz} className="px-16 py-6 text-white font-black uppercase text-xs rounded-full shadow-2xl flex items-center gap-4" style={{ backgroundColor: accentColor }}>
-                  Start Sessie <Play size={16} fill="white"/>
-                </button>
-            </motion.div>
+          </motion.div>
         )}
 
         {gameState === 'results' && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-10">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style={{ color: accentColor, backgroundColor: `${accentColor}1A` }}>
-                    <BarChart3 size={40}/>
-                </div>
-                <h2 className="text-4xl font-black uppercase italic mb-2">Voltooid</h2>
-                <p className="text-slate-400 font-bold mb-10 uppercase text-xs">Score: <span style={{ color: accentColor }}>{score} / {currentMax}</span></p>
-                <button onClick={() => setGameState('intro')} className="px-12 py-4 bg-black text-white font-black uppercase text-[10px] rounded-full">Menu</button>
-            </motion.div>
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-10">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style={{ color: accentColor, backgroundColor: `${accentColor}1A` }}>
+              <BarChart3 size={32}/>
+            </div>
+            <h2 className="text-3xl font-black uppercase italic mb-2 tracking-tight">Training Voltooid</h2>
+            <p className="text-slate-400 font-bold mb-10 uppercase text-[10px]">Resultaat: <span style={{ color: accentColor }}>{score} / {currentMax}</span></p>
+            <button onClick={() => setGameState('intro')} className="px-10 py-4 bg-slate-900 text-white font-black uppercase text-[10px] rounded-full shadow-xl">Terug naar Menu</button>
+          </motion.div>
         )}
       </main>
 
-      {/* NAV BAR ONDERAAN */}
-      <div className="fixed bottom-10 left-0 w-full flex justify-center px-6 pointer-events-none">
-          <div className="bg-white/90 backdrop-blur-xl border border-slate-200 p-2 rounded-full shadow-2xl flex gap-1 pointer-events-auto ring-4 ring-black/5">
+      {/* --- BOTTOM NAV --- */}
+      <div className="fixed bottom-6 left-0 w-full flex justify-center px-6 z-[150]">
+          <div className="bg-white/90 backdrop-blur-xl border border-slate-200 p-1.5 rounded-2xl shadow-xl flex gap-1">
               {QUESTION_TYPES.map((type) => (
-                  <button 
-                    key={type.key} 
-                    onClick={() => requestTypeChange(type.key)} 
-                    className={`px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-widest transition-all ${targetType === type.key ? "text-white shadow-lg" : "text-slate-400 hover:text-slate-900"}`}
+                  <button key={type.key} onClick={() => requestTypeChange(type.key)} 
+                    className={`px-5 py-2.5 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all
+                      ${targetType === type.key ? "text-white shadow-sm" : "text-slate-400 hover:text-slate-600 hover:bg-slate-50"}`}
                     style={targetType === type.key ? { backgroundColor: accentColor } : {}}
-                  >
-                      {type.label}
-                  </button>
+                  > {type.label} </button>
               ))}
           </div>
       </div>
+
+      <style dangerouslySetInnerHTML={{ __html: `
+        body { background: #F8FAFC; margin: 0; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+      `}} />
     </div>
   );
 }
