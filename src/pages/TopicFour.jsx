@@ -321,7 +321,8 @@ export default function LawbooksTentamenSimulator() {
                   <button onClick={() => setShowReview(!showReview)} className="flex-1 py-4 bg-slate-900 text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-black transition-colors">{showReview ? <EyeOff size={18}/> : <Eye size={18}/>} Inzage MK Vragen</button>
                   <button onClick={() => { setGameState('intro'); window.scrollTo(0,0); }} className="flex-1 py-4 bg-white border-2 border-slate-200 font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-slate-50 transition-colors"><RotateCcw size={18}/> Nieuw Tentamen</button>
                 </div>
-                <button onClick={() => navigate('/')} className="w-full py-4 bg-red-50 text-red-600 border-2 border-red-100 font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-red-100 transition-colors"><LogOut size={18}/> Afsluiten & Terug naar overzicht</button>
+                {/* AANGEPAST: navigate gaat nu naar vakoverzicht */}
+                <button onClick={() => navigate(`/course/${subjectSlug}`)} className="w-full py-4 bg-red-50 text-red-600 border-2 border-red-100 font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-red-100 transition-colors"><LogOut size={18}/> Afsluiten & Terug naar vakoverzicht</button>
             </motion.div>
             {showReview && (
               <div className="space-y-6">
@@ -382,15 +383,16 @@ export default function LawbooksTentamenSimulator() {
           </motion.div>
         )}
 
-        {/* LEEG FORMULIER MODAL (WIL JE NAAR HOME?) */}
+        {/* LEEG FORMULIER MODAL (WIL JE NAAR DASHBOARD?) */}
         {showEmptyConfirm && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[210] flex items-center justify-center bg-[#002C5B]/60 backdrop-blur-xl p-6">
             <motion.div initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} className="bg-white p-10 rounded-[3rem] max-w-md w-full shadow-2xl text-center">
               <div className="w-16 h-16 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6"><Home size={32} /></div>
               <h3 className="text-2xl font-black mb-2 tracking-tight">Leeg tentamen?</h3>
-              <p className="text-slate-500 text-sm mb-10 leading-relaxed">Je hebt nog geen vragen beantwoord. Wil je stoppen en terugkeren naar de homepage?</p>
+              <p className="text-slate-500 text-sm mb-10 leading-relaxed">Je hebt nog geen vragen beantwoord. Wil je stoppen en terugkeren naar het vakoverzicht?</p>
               <div className="flex flex-col gap-3">
-                <button onClick={() => { localStorage.removeItem(storageKey); navigate('/'); }} className="w-full py-4 text-white rounded-2xl font-black uppercase text-xs tracking-widest shadow-lg hover:brightness-110 transition-all" style={{ backgroundColor: lbBlue }}>Ja, terug naar home</button>
+                {/* AANGEPAST: navigate gaat nu naar vakoverzicht */}
+                <button onClick={() => { localStorage.removeItem(storageKey); navigate(`/course/${subjectSlug}`); }} className="w-full py-4 text-white rounded-2xl font-black uppercase text-xs tracking-widest shadow-lg hover:brightness-110 transition-all" style={{ backgroundColor: lbBlue }}>Ja, terug naar vakoverzicht</button>
                 <button onClick={() => setShowEmptyConfirm(false)} className="w-full py-4 bg-slate-100 rounded-2xl font-bold text-slate-400 hover:bg-slate-200 transition-colors">Nee, ik wil verder gaan</button>
               </div>
             </motion.div>
