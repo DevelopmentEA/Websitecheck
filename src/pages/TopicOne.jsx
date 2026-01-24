@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useOutletContext } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { 
@@ -7,8 +7,7 @@ import {
   X, ChevronRight, Play, Send, ChevronLeft, Check, Scale 
 } from 'lucide-react';
 
-import { masterData } from '../data/masterData'; 
-
+// --- CONFIGURATIE ---
 const QUESTION_TYPES = [
   { label: "Meerkeuze", key: "MK" },
   { label: "True / False", key: "TF" },
@@ -18,12 +17,17 @@ const QUESTION_TYPES = [
 const LIMITS = { "MK": 30, "TF": 30, "Open": 10 };
 
 export default function UnifiedAdaptiveQuiz() {
-  const { subjectSlug } = useParams();
   const navigate = useNavigate();
   
-  const activeSubject = masterData[subjectSlug];
-  const questionsDb = activeSubject?.db || {};
-  const accentColor = activeSubject?.accent || "#059669";
+  // --- AANGEPAST DEEL START ---
+  // In plaats van masterData te importeren, halen we de geladen data op uit de context
+  const { db, config } = useOutletContext();
+
+  // We mappen de variabelen zodat de rest van je script blijft werken zonder wijzigingen
+  const questionsDb = db || {};
+  const activeSubject = config; 
+  const accentColor = config?.accent || "#059669";
+  // --- AANGEPAST DEEL EIND ---
 
   // States
   const [gameState, setGameState] = useState('intro'); 
@@ -33,7 +37,7 @@ export default function UnifiedAdaptiveQuiz() {
   const [showSettings, setShowSettings] = useState(false);
   
   const availableWeeks = useMemo(() => Object.keys(questionsDb), [questionsDb]);
-  const [selectedWeeks, setSelectedWeeks] = useState(availableWeeks);
+  const [selectedWeeks, setSelectedWeeks] = useState([]);
   
   const [history, setHistory] = useState([]); 
   const [currentQ, setCurrentQ] = useState(null); 
@@ -162,8 +166,8 @@ export default function UnifiedAdaptiveQuiz() {
           
           {/* LOGO SECTIE */}
           <div className="flex items-center gap-2">
-            <Scale size={18} style={{ color: '#7AF9BF' }} />
-            <div className="text-[10px] font-black uppercase tracking-[0.3em] italic" style={{ color: '#7AF9BF' }}>
+            <Scale size={18} style={{ color: accentColor }} />
+            <div className="text-[10px] font-black uppercase tracking-[0.3em] italic" style={{ color: accentColor }}>
               Lawbooks
             </div>
           </div>
@@ -206,7 +210,8 @@ export default function UnifiedAdaptiveQuiz() {
                 <div className="space-y-2 max-h-[40vh] overflow-y-auto pr-2 custom-scrollbar">
                   {availableWeeks.map(week => (
                     <button key={week} onClick={() => setSelectedWeeks(prev => prev.includes(week) ? prev.filter(w => w !== week) : [...prev, week])}
-                      className={`w-full flex items-center justify-between p-4 rounded-2xl border-2 transition-all ${selectedWeeks.includes(week) ? "border-emerald-500 bg-emerald-50 text-emerald-900" : "border-slate-100 bg-white text-slate-400"}`}
+                      className={`w-full flex items-center justify-between p-4 rounded-2xl border-2 transition-all ${selectedWeeks.includes(week) ? "bg-emerald-50 text-emerald-900" : "border-slate-100 bg-white text-slate-400"}`}
+                      style={selectedWeeks.includes(week) ? { borderColor: accentColor, backgroundColor: `${accentColor}1A`, color: accentColor } : {}}
                     >
                       <span className="font-bold text-sm">{week.replace('_', ' ')}</span>
                       {selectedWeeks.includes(week) && <Check size={18} strokeWidth={3} />}

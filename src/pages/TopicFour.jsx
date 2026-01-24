@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useOutletContext } from 'react-router-dom'; // <--- AANGEPAST
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { 
@@ -8,14 +8,20 @@ import {
   RotateCcw, Eye, EyeOff, CheckCircle2, XCircle, Info, Check, LogOut, Home
 } from 'lucide-react';
 
-import { masterData } from '../data/masterData';
+// masterData import is VERWIJDERD
 
 export default function LawbooksTentamenSimulator() {
   const { subjectSlug } = useParams();
   const navigate = useNavigate();
   
-  const activeSubject = masterData[subjectSlug];
-  const questionsDb = activeSubject?.db || {};
+  // --- AANGEPAST DEEL START ---
+  // Haal data uit de context van App.jsx
+  const { db, config } = useOutletContext();
+
+  // Map de variabelen zodat de rest van je script ongewijzigd blijft
+  const activeSubject = config;
+  const questionsDb = db || {};
+  // --- AANGEPAST DEEL EIND ---
   
   const lbBlue = "#002C5B"; 
   const lbOrange = "#F39200";

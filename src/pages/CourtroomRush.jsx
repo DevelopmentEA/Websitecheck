@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useOutletContext } from 'react-router-dom'; // <--- AANGEPAST
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { Clock, Shield, Zap, ChevronRight, Volume2, VolumeX, LogOut, Play } from 'lucide-react';
-import { masterData } from '../data/masterData';
+
+// masterData import is VERWIJDERD
 
 // --- HELPERS ---
 const PixelBox = ({ children, className = "", variant = "white" }) => {
@@ -45,9 +46,16 @@ const TypewriterText = ({ text, onDone }) => {
 const CourtroomRush = () => {
   const { subjectSlug } = useParams();
   const navigate = useNavigate();
-  const activeSubject = masterData[subjectSlug];
-  const questionsDb = activeSubject?.db || {};
-  const accentColor = activeSubject?.accent || "#6EE7B7";
+
+  // --- AANGEPAST DEEL START ---
+  // Haal data uit de context van App.jsx
+  const { db, config } = useOutletContext();
+
+  // Map de variabelen zodat de rest van je script ongewijzigd blijft
+  const activeSubject = config;
+  const questionsDb = db || {};
+  const accentColor = config?.accent || "#6EE7B7";
+  // --- AANGEPAST DEEL EIND ---
 
   const [gameState, setGameState] = useState('start'); 
   const [currentIdx, setCurrentIdx] = useState(0);
