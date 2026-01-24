@@ -46,7 +46,7 @@ const genericCards = [
   { 
     title: "Courtroom Rush", 
     desc: "Ben jij beter dan Bobby?", 
-    icon: "rush-png", // Speciale marker voor de afbeelding
+    icon: "rush-logo", // Speciale marker voor de afbeelding
     to: "courtroom-rush" 
   },
   { 
@@ -70,12 +70,20 @@ const TiltCard = ({ title, desc, icon: Icon, to, color }) => {
     >
       <div 
         style={{ color: color, backgroundColor: `${color}15` }} 
-        className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-[#469585] group-hover:text-white transition-all duration-300"
+        className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 overflow-hidden group-hover:bg-[#469585] transition-all duration-300"
       >
-        {Icon === "rush-png" ? (
-          <img src="/rush.png" alt="Rush" className="w-[30px] h-[30px] object-contain group-hover:brightness-0 group-hover:invert transition-all" />
+        {Icon === "rush-logo" ? (
+          // HIER IS DE IMAGE LOGICA AANGEPAST VOOR JE NIEUWE LOGO
+          <img 
+            src="/rush.png" 
+            alt="Rush" 
+            className="w-full h-full object-cover" 
+          />
         ) : (
-          <Icon size={30} />
+          // DIT IS VOOR DE NORMALE ICOONTJES (Kleuren wit bij hover)
+          <div className="group-hover:text-white transition-colors">
+            <Icon size={30} />
+          </div>
         )}
       </div>
       <div className="flex-grow">
