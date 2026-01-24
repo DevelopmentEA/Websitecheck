@@ -146,21 +146,39 @@ const MainLayout = () => {
   useEffect(() => {
     const initCourse = async () => {
       setStatus('loading');
-      const foundConfig = getCourseConfig(subjectSlug);
       
-      const hostname = window.location.hostname;
-      const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
-      const isInIframe = window.self !== window.top;
-      const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
-      const isAllowedReferrer = isLocal || allowedDomains.some(domain => 
-        document.referrer.includes(domain) || hostname.includes(domain)
-      );
-
-      if (!foundConfig || (!isLocal && (!isInIframe || !isAllowedReferrer))) {
-        setStatus('denied');
+      // 1. Config ophalen (sync)
+      const foundConfig = getCourseConfig(subjectSlug);
+      if (!foundConfig) {
+        setStatus('denied'); // Of error, wat je wilt. Vak bestaat niet.
         return;
       }
 
+      // 2. Security Check (Strengere controle)
+      const hostname = window.location.hostname;
+      const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
+      
+      // In productie MOET het in een iframe zitten
+      const isInIframe = window.self !== window.top;
+      
+      // De referrer check: komt het verzoek van lawbooks.online?
+      // Let op: referrer kan leeg zijn bij direct bezoek of privacy settings, 
+      // dus we checken of hij een toegestaan domein BEVAT.
+      const referrer = document.referrer || "";
+      const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
+      const isAllowedReferrer = allowedDomains.some(domain => referrer.includes(domain));
+
+      // DE CHECK:
+      // Als we NIET lokaal zijn, EN (niet in iframe OF verkeerde referrer) -> Blokkeer.
+      if (!isLocal) {
+        if (!isInIframe || !isAllowedReferrer) {
+           console.warn("Security Block: Not local, and failed iframe/referrer check.", { isInIframe, referrer });
+           setStatus('denied');
+           return;
+        }
+      }
+
+      // 3. Data laden (alleen als security geslaagd is)
       const questions = await getCourseQuestions(subjectSlug);
       if (!questions) {
         setStatus('error');
@@ -171,6 +189,7 @@ const MainLayout = () => {
       setDb(questions);
       setStatus('authorized');
     };
+
     initCourse();
   }, [subjectSlug]);
 
