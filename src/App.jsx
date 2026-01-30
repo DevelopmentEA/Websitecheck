@@ -86,7 +86,7 @@ const Klavierplezier = () => {
           </div>
           <div className="relative">
             <div className="aspect-[4/5] rounded-t-full overflow-hidden shadow-2xl border-8 border-white">
-              <img src="/image_7f7e59.jpg" className="w-full h-full object-cover" alt="Foto 2: De studio" />
+              <img src="/Foto2.jpg" className="w-full h-full object-cover" alt="De studio" />
             </div>
             <div className="absolute -bottom-8 -left-8 bg-white p-8 shadow-xl max-w-xs hidden lg:block">
               <Quote className="text-amber-800 mb-4" />
@@ -179,9 +179,9 @@ const Klavierplezier = () => {
             <div className="md:col-span-5 relative">
               <div className="absolute inset-0 border-[12px] border-white -translate-x-6 -translate-y-6 z-0 shadow-lg" />
               <img 
-                src="/image_7f7e3a.png" 
+                src="/Foto1.jpg" 
                 className="w-full relative z-10 shadow-2xl rounded-sm" 
-                alt="Foto 1: Annette Niels" 
+                alt="Annette Niels" 
               />
               <div className="absolute -bottom-6 -right-6 bg-slate-900 p-8 text-white z-20 shadow-xl">
                  <Award size={40} className="text-amber-400" />
