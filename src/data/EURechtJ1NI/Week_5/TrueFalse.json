@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Onder het begrip 'goederen' in de zin van de interne markt vallen uitsluitend tastbare objecten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Het Hof van Justitie heeft geoordeeld dat onder goederen moet worden verstaan: waren die op geld waardeerbaar zijn en als zodanig het voorwerp van handelstransacties kunnen vormen. Dit is een ruime opvatting die ook zaken als elektriciteit omvat."
+  },
+  {
+    "q": "De Dassonville-formule vereist dat een nationale handelsregeling de intracommunautaire handel daadwerkelijk belemmert om als maatregel van gelijke werking te worden aangemerkt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Volgens het arrest Dassonville is iedere handelsregeling die de intracommunautaire handel al dan niet rechtstreeks, daadwerkelijk of potentieel kan belemmeren, een maatregel van gelijke werking."
+  },
+  {
+    "q": "Het beginsel van wederzijdse erkenning houdt in dat producten die in een lidstaat rechtmatig zijn geproduceerd en in de handel gebracht, in beginsel ook toegang moeten hebben tot de markt van andere lidstaten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Dit beginsel is geformuleerd in het arrest Cassis de Dijon en stelt dat er geen geldige reden is om goederen te weren die in een andere lidstaat aan de daar geldende eisen voldoen."
+  },
+  {
+    "q": "Een beroep op de 'rule of reason' (dwingende vereisten van algemeen belang) is mogelijk voor nationale maatregelen die direct onderscheid maken op basis van nationaliteit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Een beroep op de 'rule of reason' is volgens de jurisprudentie (Cassis de Dijon) uitsluitend mogelijk bij nationale maatregelen die zonder onderscheid gelden voor binnenlandse en ingevoerde producten."
+  },
+  {
+    "q": "Nationale bepalingen die verkoopmodaliteiten beperken vallen volgens het arrest Keck en Mithouard altijd binnen de reikwijdte van artikel 34 VWEU.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Het Hof oordeelde in Keck dat bepalingen die verkoopmodaliteiten regelen buiten artikel 34 VWEU vallen, mits zij van toepassing zijn op alle marktdeelnemers en rechtens en feitelijk dezelfde invloed hebben op nationale en ingevoerde producten."
+  },
+  {
+    "q": "Artikel 36 VWEU bevat een limitatieve opsomming van rechtvaardigingsgronden voor kwantitatieve beperkingen en maatregelen van gelijke werking.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. De in artikel 36 VWEU genoemde gronden (zoals openbare zedelijkheid, openbare orde, bescherming van gezondheid) vormen een limitatieve lijst die niet door de rechter kan worden uitgebreid."
+  },
+  {
+    "q": "In het arrest Mickelsson oordeelde het Hof dat een gebruiksverbod geen maatregel van gelijke werking kan zijn omdat het de verkoop niet direct verbiedt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Het Hof oordeelde dat regels die het gebruik van een product aanzienlijk beperken, de toegang tot de markt belemmeren en daarom als maatregel van gelijke werking onder artikel 34 VWEU vallen."
+  },
+  {
+    "q": "Artikel 30 VWEU verbiedt in- en uitvoerrechten en heffingen van gelijke werking tussen de lidstaten absoluut.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Artikel 30 VWEU bevat een absoluut verbod op douanerechten en heffingen van gelijke werking in het intracommunautaire handelsverkeer."
+  },
+  {
+    "q": "Een heffing van gelijke werking is een geldelijke last die deel uitmaakt van een algemeen stelsel van binnenlandse belastingen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Een heffing van gelijke werking is een eenzijdig opgelegde last wegens grensoverschrijding. Als het deel uitmaakt van een algemeen stelsel van binnenlandse belastingen, valt het onder artikel 110 VWEU."
+  },
+  {
+    "q": "Bij maximumharmonisatie behouden lidstaten de bevoegdheid om strengere nationale regels te stellen dan de Europese norm.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Maximumharmonisatie wordt gekenmerkt door een gesloten norm die geen beleidsvrijheid of speelruimte aan de lidstaten laat om afwijkende (strengere) regels te stellen."
+  },
+  {
+    "q": "Omgekeerde discriminatie, waarbij een lidstaat eigen onderdanen slechter behandelt dan onderdanen uit andere lidstaten in een zuiver interne situatie, is verboden door artikel 34 VWEU.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. De regels van vrij verkeer zijn niet van toepassing op zuiver interne situaties. Omgekeerde discriminatie is in beginsel niet verboden onder het Unierecht."
+  },
+  {
+    "q": "Het evenredigheidsbeginsel vereist dat een nationale maatregel geschikt en noodzakelijk is om het nagestreefde doel te bereiken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. De proportionaliteitstoets houdt in dat de maatregel geschikt moet zijn voor het doel en niet verder mag gaan dan noodzakelijk (er is geen minder ingrijpend alternatief)."
+  },
+  {
+    "q": "Producteisen, zoals regels over de samenstelling of verpakking van een goed, vallen onder de uitzondering van het arrest Keck en Mithouard.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Het arrest Keck maakt een onderscheid tussen producteisen (vallen onder art. 34 VWEU/Cassis de Dijon) en verkoopmodaliteiten (vallen buiten art. 34 VWEU mits non-discriminatoir)."
+  },
+  {
+    "q": "Consumentenbescherming wordt in artikel 36 VWEU expliciet genoemd als rechtvaardigingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Consumentenbescherming staat niet in artikel 36 VWEU, maar is door het Hof in het arrest Cassis de Dijon erkend als dwingend vereiste van algemeen belang (rule of reason)."
+  },
+  {
+    "q": "Indien een onderwerp uitputtend is geharmoniseerd op EU-niveau, kan een lidstaat zich niet meer beroepen op artikel 36 VWEU.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Wanneer er sprake is van volledige harmonisatie, moet de nationale maatregel aan de harmonisatieregeling worden getoetst en kan geen beroep meer worden gedaan op de verdragsexcepties."
+  },
+  {
+    "q": "Artikel 34 VWEU heeft verticale rechtstreekse werking.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Het verbod op kwantitatieve beperkingen en maatregelen van gelijke werking is duidelijk en onvoorwaardelijk en kan door particulieren tegen de staat worden ingeroepen."
+  },
+  {
+    "q": "Zuiver economische belangen kunnen dienen als rechtvaardigingsgrond onder de 'rule of reason'.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Volgens vaste rechtspraak van het Hof mogen publieke belangen (dwingende vereisten) niet worden ingeroepen om maatregelen van zuiver economische aard te rechtvaardigen."
+  },
+  {
+    "q": "Een douane-unie kenmerkt zich door een gemeenschappelijk buitentarief, in tegenstelling tot een vrijhandelszone.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. In een vrijhandelszone bepalen landen zelf hun tarieven tegenover derden; een douane-unie hanteert een gemeenschappelijk douanetarief aan de buitengrenzen."
+  },
+  {
+    "q": "De interne markt omvat volgens artikel 26 lid 2 VWEU een ruimte zonder binnengrenzen waarin het vrije verkeer van goederen, personen, diensten en kapitaal is gewaarborgd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Dit is de letterlijke definitie van de interne markt zoals vastgelegd in artikel 26 lid 2 VWEU."
+  },
+  {
+    "q": "Artikel 110 VWEU verbiedt interne belastingen die discriminerend werken ten opzichte van producten uit andere lidstaten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Artikel 110 VWEU verbiedt lidstaten om op producten van overige lidstaten hogere belastingen te heffen dan op gelijksoortige nationale producten."
+  },
+  {
+    "q": "Het arrest Cassis de Dijon introduceerde de 'rule of reason' in het EU-recht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. In dit arrest overwoog het Hof dat belemmeringen als gevolg van dispariteiten moeten worden aanvaard als ze noodzakelijk zijn voor dwingende vereisten van algemeen belang."
+  },
+  {
+    "q": "Kwantitatieve invoerbeperkingen zijn maatregelen die de invoer geheel of gedeeltelijk beperken naar hoeveelheid of waarde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Dit is de definitie van kwantitatieve beperkingen (zoals quota en invoerverboden) in de context van artikel 34 VWEU."
+  },
+  {
+    "q": "Minimumharmonisatie betekent dat de EU geen enkele regelgeving vaststelt en alles aan de lidstaten overlaat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Bij minimumharmonisatie stelt de EU een basisnorm (ondergrens) vast waaraan alle lidstaten moeten voldoen, maar mogen zij strengere regels hanteren."
+  },
+  {
+    "q": "Discriminatie is een vereiste voor de toepassing van artikel 34 VWEU op maatregelen van gelijke werking.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Volgens de Dassonville- en Cassis de Dijon-rechtspraak vallen ook maatregelen die zonder onderscheid gelden (niet-discriminatoir zijn) onder artikel 34 VWEU als ze de handel belemmeren."
+  },
+  {
+    "q": "Een beroep op artikel 36 VWEU is mogelijk bij zowel discriminerende als niet-discriminerende maatregelen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Artikel 36 VWEU kan maatregelen rechtvaardigen ongeacht of ze discriminerend zijn, mits er geen sprake is van willekeurige discriminatie of verkapte handelsbeperking."
+  },
+  {
+    "q": "De 'U-bocht constructie' wordt door het Hof altijd beschermd onder het vrije verkeer van goederen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Als het uitvoeren van producten enkel bedoeld is om nationale regels te ontduiken door ze direct weer in te voeren, kan dit als misbruik van recht worden beschouwd en wordt geen bescherming geboden."
+  },
+  {
+    "q": "Het vereiste van proportionaliteit houdt in dat de maatregel de minst belemmerende optie moet zijn.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Waar. Onderdeel van de proportionaliteitstoets is de noodzakelijkheid: de maatregel mag niet verder gaan dan nodig is voor het bereiken van het doel (er is geen lichter middel)."
+  },
+  {
+    "q": "Het begrip 'maatregel van gelijke werking' wordt in artikel 35 VWEU (uitvoer) ruimer uitgelegd dan in artikel 34 VWEU (invoer).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Bij uitvoerbelemmeringen (art. 35) wordt het begrip enger uitgelegd en ligt de nadruk op maatregelen die specifiek de uitvoer benadelen ten opzichte van de binnenlandse handel (discriminatie)."
+  },
+  {
+    "q": "Volgens het arrest Keck en Mithouard is een verbod op wederverkoop met verlies in strijd met het EU-recht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Het Hof oordeelde dat een dergelijk verbod een verkoopmodaliteit is die, mits non-discriminatoir, buiten de werkingssfeer van artikel 34 VWEU valt."
+  },
+  {
+    "q": "De bescherming van het milieu is een rechtvaardigingsgrond die expliciet in artikel 36 VWEU wordt genoemd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Niet waar. Milieubescherming wordt niet genoemd in artikel 36 VWEU, maar is door het Hof erkend als een dwingend vereiste van algemeen belang (rule of reason)."
+  }
+]

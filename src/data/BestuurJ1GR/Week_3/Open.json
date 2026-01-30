@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Casus: De gemeente verleent een omgevingsvergunning voor de bouw van een groot mestbassin. Bewoner Pietersen woont op 400 meter afstand van de locatie. De gemeente verklaart zijn bezwaar niet-ontvankelijk, verwijzend naar een vaste beleidsregel die stelt dat omwonenden buiten een straal van 250 meter per definitie geen belanghebbende zijn. Pietersen stelt dat hij bij bepaalde windrichtingen wel degelijk stankoverlast zal ervaren. Is Pietersen belanghebbende?",
+    "sample": "Issue: Is Pietersen belanghebbende in de zin van de Awb ondanks de afstand van 400 meter?\n\nRule: Art. 1:2 lid 1 Awb vereist een rechtstreeks betrokken belang. Volgens de uitspraak Mestbassin Mechelen is het uitgangspunt dat degene die rechtstreeks feitelijke gevolgen ondervindt, belanghebbende is. Een afstandsnorm is niet doorslaggevend; het gaat om ‘gevolgen van enige betekenis’.\n\nApplication: Pietersen stelt stankoverlast te ervaren (feitelijke gevolgen). De gemeente mag zich niet verschuilen achter een vaste afstandsgrens als feitelijke gevolgen niet zijn uitgesloten.\n\nConclusion: Ja, Pietersen is belanghebbende, tenzij de gevolgen van de activiteit dermate gering zijn dat gevolgen van enige betekenis ontbreken.",
+    "checklist": [
+      "Art. 1:2 lid 1 Awb (belanghebbende)",
+      "Jurisprudentie Mestbassin Mechelen",
+      "Afstandsnorm is niet bepalend",
+      "Criterium: gevolgen van enige betekenis"
+    ],
+    "exp": "De casus betreft het criterium ‘persoonlijk belang’ en feitelijke gevolgen. De gemeente hanteert ten onrechte een harde afstandsgrens. Volgens de Afdeling is bepalend of de betrokkene gevolgen van enige betekenis ondervindt (zoals geurhinder), ongeacht de afstand."
+  },
+  {
+    "q": "Casus: Zorgkantoor Z weigert voortaan nog persoonsgebonden budgetten (pgb’s) uit te keren voor zorg verleend door Zorginstelling X, wegens twijfels aan de kwaliteit. De cliënten van X ontvangen het besluit. Zorginstelling X maakt bezwaar. Het Zorgkantoor stelt dat X slechts een afgeleid belang heeft, voortvloeiend uit de contractuele relatie met de cliënten. Is Zorginstelling X belanghebbende?",
+    "sample": "Issue: Heeft Zorginstelling X een eigen belang of slechts een afgeleid belang bij het besluit jegens de cliënten?\n\nRule: Art. 1:2 lid 1 Awb. Volgens de uitspraak Zorgcentrum Meerkerk staat een contractuele relatie niet in de weg aan belanghebbendheid als er sprake is van een zelfstandig eigen belang dat rechtstreeks betrokken is.\n\nApplication: Het besluit raakt X direct in haar vermogenspositie en bedrijfsvoering, los van de contractuele relatie met de specifieke cliënt. Er is sprake van een zelfstandig eigen belang.\n\nConclusion: Ja, Zorginstelling X is belanghebbende vanwege een zelfstandig eigen belang.",
+    "checklist": [
+      "Art. 1:2 lid 1 Awb (belanghebbende)",
+      "Jurisprudentie Zorgcentrum Meerkerk",
+      "Geen uitsluitend afgeleid belang",
+      "Zelfstandig eigen belang (vermogenspositie)"
+    ],
+    "exp": "Het leerstuk van het afgeleid belang wordt gecorrigeerd door de jurisprudentie Zorgcentrum Meerkerk. Een derde is belanghebbende als hij, naast een contractuele relatie, een zelfstandig eigen belang heeft dat rechtstreeks door het besluit wordt geraakt."
+  },
+  {
+    "q": "Casus: 'Stichting Wereldwelzijn' heeft als statutaire doelstelling: 'Het bevorderen van het welzijn van mens en dier op de gehele wereld'. De stichting komt in beroep tegen een kapvergunning voor drie eikenbomen in de gemeente De Bilt. De enige activiteit van de stichting in de afgelopen jaren bestond uit het voeren van juridische procedures tegen diverse overheidsbesluiten. Is de stichting belanghebbende?",
+    "sample": "Issue: Voldoet de stichting aan de eisen van art. 1:2 lid 3 Awb om als belanghebbende te worden aangemerkt?\n\nRule: Art. 1:2 lid 3 Awb vereist dat een rechtspersoon een algemeen belang in het bijzonder behartigt krachtens statuten en feitelijke werkzaamheden. Volgens Stichting Openbare Ruimte mag het doel niet te veelomvattend zijn en is louter procederen geen feitelijke werkzaamheid.\n\nApplication: De doelstelling is territoriaal en functioneel niet begrensd (te ruim). Er zijn geen feitelijke werkzaamheden anders dan procederen.\n\nConclusion: Nee, de stichting is geen belanghebbende.",
+    "checklist": [
+      "Art. 1:2 lid 3 Awb (rechtspersoon)",
+      "Statutaire doelstelling te veelomvattend",
+      "Geen reële feitelijke werkzaamheden",
+      "Jurisprudentie Stichting Openbare Ruimte"
+    ],
+    "exp": "Voor rechtspersonen gelden cumulatieve eisen: een voldoende specifiek statutair doel én feitelijke werkzaamheden. Louter procederen volstaat niet als feitelijke werkzaamheid (Stichting Openbare Ruimte)."
+  },
+  {
+    "q": "Casus: Wijkvereniging 'Leefbaar Randwyck' komt op tegen een bestemmingsplan dat hoogbouw in de wijk mogelijk maakt. De vereniging heeft als statutair doel het behouden van het leefklimaat in de wijk Randwyck. De gemeente stelt dat de vereniging geen feitelijke werkzaamheden verricht, omdat zij alleen namens de bewoners procedeert en geen andere activiteiten organiseert. Is de vereniging belanghebbende?",
+    "sample": "Issue: Kwalificeert de vereniging als belanghebbende ex art. 1:2 lid 3 Awb door het bundelen van belangen?\n\nRule: Art. 1:2 lid 3 Awb. Volgens de uitspraak Buurtplatform Randwyck kan in de bundeling van rechtstreeks betrokken individuele belangen door een rechtspersoon de vereiste feitelijke werkzaamheid besloten worden geacht.\n\nApplication: De vereniging bundelt de belangen van individuele bewoners die rechtstreeks geraakt worden (collectieve belangenbehartiging). Dit geldt als feitelijke werkzaamheid.\n\nConclusion: Ja, de vereniging is belanghebbende.",
+    "checklist": [
+      "Art. 1:2 lid 3 Awb (collectief belang)",
+      "Jurisprudentie Buurtplatform Randwyck",
+      "Bundeling van individuele belangen",
+      "Geldt als feitelijke werkzaamheden"
+    ],
+    "exp": "Bij een rechtspersoon die opkomt voor een collectief belang van omwonenden, kan het voeren van procedures namens die groep (bundeling) worden gezien als de vereiste feitelijke werkzaamheid (Buurtplatform Randwyck)."
+  },
+  {
+    "q": "Casus: Slagerij 'Het Karbonaadje' in Utrecht maakt bezwaar tegen de vergunningverlening aan een nieuwe supermarkt 'SuperVers' die zich in dezelfde straat wil vestigen. De slager vreest omzetverlies omdat de supermarkt ook vleeswaren verkoopt. De gemeente stelt dat concurrentie geen belang is dat beschermd wordt. Is de slager belanghebbende?",
+    "sample": "Issue: Is de slager als concurrent belanghebbende bij de vergunning van de supermarkt?\n\nRule: Art. 1:2 lid 1 Awb (persoonlijk belang). Volgens vaste jurisprudentie is een concurrent belanghebbende indien hij actief is in hetzelfde marktsegment en hetzelfde verzorgingsgebied.\n\nApplication: Beide bedrijven verkopen vlees (zelfde marktsegment) en zijn gevestigd in dezelfde straat (zelfde verzorgingsgebied). De slager onderscheidt zich voldoende door potentiële omzetschade.\n\nConclusion: Ja, de slager is belanghebbende.",
+    "checklist": [
+      "Art. 1:2 lid 1 Awb (persoonlijk belang)",
+      "Concurrent is belanghebbende",
+      "Hetzelfde marktsegment",
+      "Hetzelfde verzorgingsgebied"
+    ],
+    "exp": "Een concurrent heeft een persoonlijk belang (en is dus belanghebbende) als hij zich onderscheidt van de massa. Dit wordt aangenomen als de concurrent actief is in hetzelfde marktsegment en verzorgingsgebied."
+  }
+]

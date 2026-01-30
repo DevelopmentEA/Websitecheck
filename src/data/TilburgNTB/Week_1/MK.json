@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Welke stelling over de verhouding tussen het algemeen bestuursrecht en het bijzonder bestuursrecht is juist?",
+    "a": [
+      "Het algemeen bestuursrecht gaat bij strijdigheid altijd voor op het bijzonder bestuursrecht.",
+      "Het bijzonder bestuursrecht bevat uitsluitend regels van dwingende aard voor het bestuur.",
+      "Het algemeen bestuursrecht vult het bijzonder bestuursrecht aan tenzij de wet anders bepaalt.",
+      "Het bijzonder bestuursrecht heeft geen voorrang op de regels uit de Algemene wet bestuursrecht."
+    ],
+    "c": 2,
+    "exp": "Algemene wet bestuursrecht.\n\nDe Algemene wet bestuursrecht bevat algemene regels die gelden voor het gehele bestuursrecht. Indien een bijzondere wet afwijkende regels stelt, gaat de bijzondere wet als lex specialis voor op de algemene wet, tenzij de Algemene wet bestuursrecht dwingend recht voorschrijft."
+  },
+  {
+    "q": "Wat houdt het legaliteitsvereiste in binnen de context van het bestuursrecht?",
+    "a": [
+      "Het bestuur mag alleen handelen als dit bijdraagt aan de economische welvaart.",
+      "Het bestuurlijk handelen moet altijd direct herleidbaar zijn tot de Grondwet.",
+      "Het bestuur heeft voor ingrijpend optreden een grondslag in de wet nodig.",
+      "Het bestuur mag uitsluitend privaatrechtelijke handelingen verrichten."
+    ],
+    "c": 2,
+    "exp": "Grondwet.\n\nHet legaliteitsvereiste houdt in dat overheidsoptreden, met name wanneer dit belastend is voor de burger, moet berusten op een wettelijke grondslag. Dit vereiste waarborgt de democratische legitimatie van overheidsoptreden."
+  },
+  {
+    "q": "Welk beginsel vereist dat een bestuursorgaan een bevoegdheid alleen mag gebruiken voor het doel waarvoor deze is verleend?",
+    "a": [
+      "Het vertrouwensbeginsel.",
+      "Het specialiteitsbeginsel.",
+      "Het rechtszekerheidsbeginsel.",
+      "Het gelijkheidsbeginsel."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:3 Algemene wet bestuursrecht.\n\nHet specialiteitsbeginsel, gecodificeerd in artikel 3:3 Awb, verbiedt détournement de pouvoir. Een bestuursorgaan mag een bevoegdheid niet gebruiken voor een ander doel dan waarvoor die bevoegdheid is verleend."
+  },
+  {
+    "q": "Hoe wordt de opbouw van de Algemene wet bestuursrecht (Awb) gekarakteriseerd?",
+    "a": [
+      "De wet is opgebouwd van algemene bepalingen naar bijzondere bepalingen.",
+      "De wet is opgebouwd van bijzondere bepalingen naar algemene bepalingen.",
+      "De wet kent geen specifieke structuur maar is een verzameling losse wetten.",
+      "De wet is chronologisch opgebouwd op basis van de datum van inwerkingtreding."
+    ],
+    "c": 0,
+    "exp": "Algemene wet bestuursrecht.\n\nDe Awb kent een gelaagde structuur die loopt van algemeen naar bijzonder. Hoofdstuk 1 bevat definities die voor de gehele wet gelden, terwijl latere hoofdstukken specifieke onderwerpen zoals bezwaar en beroep regelen."
+  },
+  {
+    "q": "Welk type recht in de Algemene wet bestuursrecht staat afwijking in lagere regelgeving toe?",
+    "a": [
+      "Dwingend recht.",
+      "Aanvullend recht.",
+      "Facultatief recht.",
+      "Regelend recht."
+    ],
+    "c": 3,
+    "exp": "Algemene wet bestuursrecht.\n\nRegelend recht in de Awb bevat een hoofdregel waarvan in lagere regelgeving mag worden afgeweken. Dit onderscheidt zich van dwingend recht, waarvan niet mag worden afgeweken, en aanvullend recht, dat geldt als de bijzondere wet niets regelt."
+  },
+  {
+    "q": "Wat wordt in de hiërarchie van normen beschouwd als de hoogste rechtsbron?",
+    "a": [
+      "De Grondwet.",
+      "De wet in formele zin.",
+      "Een ieder verbindende verdragsbepalingen.",
+      "Algemene maatregelen van bestuur."
+    ],
+    "c": 2,
+    "exp": "Artikel 94 Grondwet.\n\nEen ieder verbindende bepalingen van verdragen en van besluiten van volkenrechtelijke organisaties hebben voorrang op nationale wettelijke voorschriften, inclusief de Grondwet, indien deze hiermee niet verenigbaar zijn."
+  },
+  {
+    "q": "Wat verbiedt artikel 120 van de Grondwet de rechter?",
+    "a": [
+      "Het toetsen van wetten in formele zin aan de Grondwet.",
+      "Het toetsen van lagere regelgeving aan de Grondwet.",
+      "Het toetsen van beleidsregels aan algemene beginselen.",
+      "Het toetsen van beschikkingen aan de Algemene wet bestuursrecht."
+    ],
+    "c": 0,
+    "exp": "Artikel 120 Grondwet.\n\nDe rechter treedt niet in de beoordeling van de grondwettigheid van wetten en verdragen. Dit toetsingsverbod geldt specifiek voor wetten in formele zin, vastgesteld door regering en Staten-Generaal gezamenlijk."
+  },
+  {
+    "q": "Welke bepaling in het wetsvoorstel Wet versterking waarborgfunctie Awb introduceert een algemene zorgplicht voor bestuursorganen om zich dienstbaar op te stellen?",
+    "a": [
+      "Artikel 2:4a Algemene wet bestuursrecht.",
+      "Artikel 3:4 Algemene wet bestuursrecht.",
+      "Artikel 4:84 Algemene wet bestuursrecht.",
+      "Artikel 8:51a Algemene wet bestuursrecht."
+    ],
+    "c": 0,
+    "exp": "Wetsvoorstel Wet versterking waarborgfunctie Awb.\n\nHet voorgestelde artikel 2:4a Awb bepaalt dat bestuursorganen zich bij de uitoefening van hun taak dienstbaar opstellen. Dit beoogt de menselijke maat en de dienstverlening in het bestuursrecht te versterken."
+  },
+  {
+    "q": "Wat houdt de voorgestelde 'burgerlus' in het bestuursprocesrecht in?",
+    "a": [
+      "De burger krijgt de mogelijkheid om het besluit zelf te vernietigen.",
+      "De burger krijgt de mogelijkheid om een bestuurlijke boete op te leggen.",
+      "De burger krijgt de gelegenheid een beroepsgrond nader te onderbouwen.",
+      "De burger krijgt de bevoegdheid om de rechter te wraken zonder zitting."
+    ],
+    "c": 2,
+    "exp": "Artikel 8:51e Algemene wet bestuursrecht (Wetsvoorstel).\n\nDe burgerlus biedt de bestuursrechter de mogelijkheid om een burger (of andere belanghebbende) in de gelegenheid te stellen een ingenomen stelling aannemelijk te maken of een beroepsgrond nader te onderbouwen, ter bevordering van equality of arms."
+  },
+  {
+    "q": "Welk kenmerk was bepalend voor de zogenaamde 'alles-of-niets'-lijn in de rechtspraak over de kinderopvangtoeslag tussen 2011 en 2019?",
+    "a": [
+      "De strikte toepassing van het dwingendrechtelijke karakter van de wetgeving.",
+      "De ruime toepassing van de hardheidsclausule in de bijzondere wet.",
+      "De consequente toepassing van het evenredigheidsbeginsel bij terugvordering.",
+      "De brede discretionaire bevoegdheid van de Belastingdienst bij terugvordering."
+    ],
+    "c": 0,
+    "exp": "Artikel 26 Algemene wet inkomensafhankelijke regelingen (Awir).\n\nDe rechtspraak hanteerde een strikte lijn waarbij de wet dwingend werd uitgelegd. Bij een vastgestelde onregelmatigheid moest het volledige bedrag aan toeslag worden teruggevorderd, zonder ruimte voor een belangenafweging op basis van evenredigheid."
+  },
+  {
+    "q": "Waarom kon de bestuursrechter vóór oktober 2019 het evenredigheidsbeginsel niet toepassen op de terugvordering van kinderopvangtoeslag?",
+    "a": [
+      "Omdat het evenredigheidsbeginsel niet in de wet was vastgelegd.",
+      "Omdat artikel 120 Grondwet toetsing van formele wetten verbiedt.",
+      "Omdat de ouders geen beroep hadden gedaan op dit beginsel.",
+      "Omdat de Raad van State geen bevoegdheid had in deze zaken."
+    ],
+    "c": 1,
+    "exp": "Artikel 120 Grondwet.\n\nDe terugvordering vloeide voort uit een dwingende bepaling in een wet in formele zin (artikel 26 Awir). Het grondwettelijke toetsingsverbod belette de rechter om deze formele wet buiten toepassing te laten wegens strijd met algemene rechtsbeginselen zoals evenredigheid."
+  },
+  {
+    "q": "Welke wijziging in artikel 3:4 lid 2 Awb wordt voorgesteld in de Wet versterking waarborgfunctie Awb?",
+    "a": [
+      "De toetsing aan evenredigheid wordt beperkt tot beleidsregels.",
+      "De toetsing aan evenredigheid wordt beperkt tot discretionaire bevoegdheden.",
+      "De toetsing aan evenredigheid geldt ook als de wet de belangenafweging beperkt.",
+      "De toetsing aan evenredigheid vervalt voor financiële beschikkingen."
+    ],
+    "c": 2,
+    "exp": "Wetsvoorstel Wet versterking waarborgfunctie Awb.\n\nHet voorstel wijzigt artikel 3:4 lid 2 Awb zodat de nadelige gevolgen van een besluit niet onevenredig mogen zijn in verhouding tot de te dienen doelen, ook indien het eerste lid of een wettelijk voorschrift de af te wegen belangen beperkt. Dit creëert een veiligheidsventiel bij dwingend recht."
+  },
+  {
+    "q": "Wat wordt verstaan onder 'verticaal gelede normstelling' in het bestuursrecht?",
+    "a": [
+      "Normstelling die plaatsvindt op basis van wetten van gelijke rang.",
+      "Normstelling die uitsluitend plaatsvindt in beleidsregels van het bestuur.",
+      "Normstelling verdeeld over verschillende niveaus, van wet tot beschikking.",
+      "Normstelling die enkel plaatsvindt in verdragen en de Grondwet."
+    ],
+    "c": 2,
+    "exp": "Algemene wet bestuursrecht systematiek.\n\nBij verticaal gelede normstelling wordt een onderwerp geregeld door een keten van regels van hoog naar laag: van een wet in formele zin, via een AMvB en ministeriële regeling, uiteindelijk resulterend in een individuele beschikking. Dit hangt nauw samen met het legaliteitsvereiste."
+  },
+  {
+    "q": "Welke verplichting voor het bestuursorgaan ten aanzien van financiële beschikkingen wordt aangescherpt in het wetsvoorstel Wet versterking waarborgfunctie Awb?",
+    "a": [
+      "De verplichting om altijd een betalingsregeling aan te bieden.",
+      "De verplichting om te horen bij ingrijpende financiële gevolgen.",
+      "De verplichting om de beslistermijn te verlengen naar dertien weken.",
+      "De verplichting om het besluit per aangetekende post te verzenden."
+    ],
+    "c": 1,
+    "exp": "Artikel 4:12 Algemene wet bestuursrecht (Wetsvoorstel).\n\nHet wetsvoorstel bepaalt dat er een hoorplicht geldt bij de voorbereiding van een financiële beschikking als deze niet is voorzien door de burger en redelijkerwijs kan worden vermoed dat deze aanmerkelijke gevolgen heeft voor de directe bestedingsruimte."
+  },
+  {
+    "q": "Welk type recht is artikel 6:7 Awb, dat de termijn voor het indienen van een bezwaarschrift op zes weken stelt?",
+    "a": [
+      "Facultatief recht.",
+      "Aanvullend recht.",
+      "Regelend recht.",
+      "Dwingend recht."
+    ],
+    "c": 3,
+    "exp": "Artikel 6:7 Algemene wet bestuursrecht.\n\nDe bepaling over de bezwaar- en beroepstermijn is van dwingend recht. Lagere wetgeving mag hier niet van afwijken. Dit waarborgt de rechtszekerheid en uniformiteit in het bestuursprocesrecht."
+  },
+  {
+    "q": "Wat is een 'algemeen verbindend voorschrift' (avv)?",
+    "a": [
+      "Een besluit dat zich richt tot één specifiek persoon voor één geval.",
+      "Een regel die uitsluitend de interne organisatie van het bestuur betreft.",
+      "Een extern werkende, bindende regel voor een onbepaalde groep gevallen.",
+      "Een beleidsregel die aangeeft hoe een bestuursorgaan belangen afweegt."
+    ],
+    "c": 2,
+    "exp": "Algemene wet bestuursrecht.\n\nEen algemeen verbindend voorschrift is een naar buiten werkende, voor de betrokkenen bindende regel, vastgesteld door een bevoegd gezag, die zich niet richt tot één of enkele personen, maar geldt voor een onbepaald aantal gevallen en personen."
+  },
+  {
+    "q": "Welke eis stelt het wetsvoorstel Wet versterking waarborgfunctie Awb aan de rechtsmiddelenvoorlichting in een besluit?",
+    "a": [
+      "Het besluit moet de naam van de behandelend rechter vermelden.",
+      "Het besluit moet de exacte einddatum van de bezwaartermijn vermelden.",
+      "Het besluit moet vermelden dat een advocaat verplicht is bij beroep.",
+      "Het besluit moet een schatting van de proceskosten bevatten."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:45 Algemene wet bestuursrecht (Wetsvoorstel).\n\nOm burgers beter te informeren en termijnoverschrijdingen te voorkomen, stelt het wetsvoorstel voor dat bestuursorganen in de rechtsmiddelenclausule de concrete datum vermelden waarop de termijn voor het indienen van bezwaar of beroep eindigt."
+  },
+  {
+    "q": "Wat is het fundamentele verschil tussen bestuursrecht en privaatrecht?",
+    "a": [
+      "Bestuursrecht regelt verhoudingen tussen burgers; privaatrecht tussen overheden.",
+      "Bestuursrecht kent enkel ongeschreven regels; privaatrecht enkel geschreven regels.",
+      "Bestuursrecht betreft eenzijdige bevoegdheidsuitoefening; privaatrecht gelijkwaardigheid.",
+      "Bestuursrecht wordt gehandhaafd door politie; privaatrecht door de burgemeester."
+    ],
+    "c": 2,
+    "exp": "Algemene wet bestuursrecht.\n\nHet bestuursrecht kenmerkt zich door de verticale verhouding waarbij de overheid eenzijdig de rechtspositie van burgers kan bepalen (publiekrechtelijke rechtshandeling). Het privaatrecht gaat uit van horizontale verhoudingen en gelijkwaardigheid tussen partijen."
+  },
+  {
+    "q": "Welke instantie wordt in de Awb gedefinieerd als 'bestuursorgaan'?",
+    "a": [
+      "De wetgever in formele zin.",
+      "De onafhankelijke rechterlijke macht.",
+      "Een orgaan van een publiekrechtelijke rechtspersoon.",
+      "Een commercieel bedrijf zonder overheidstaak."
+    ],
+    "c": 2,
+    "exp": "Artikel 1:1 lid 1 Algemene wet bestuursrecht.\n\nEen bestuursorgaan is een orgaan van een rechtspersoon die krachtens publiekrecht is ingesteld (a-orgaan), of een ander persoon of college, met enig openbaar gezag bekleed (b-orgaan)."
+  },
+  {
+    "q": "Wat was de juridische grondslag voor de 'koerswijziging' van de Afdeling bestuursrechtspraak in oktober 2019 inzake de toeslagenaffaire?",
+    "a": [
+      "Een aanpassing van de Grondwet door de wetgever.",
+      "Een beleidswijziging van de Belastingdienst/Toeslagen.",
+      "Een herinterpretatie van de wet in combinatie met artikel 3:4 lid 2 Awb.",
+      "Een uitspraak van het Europees Hof voor de Rechten van de Mens."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:4 lid 2 Algemene wet bestuursrecht.\n\nDe Afdeling paste een 'noodgreep' toe door de wet anders te interpreteren (ruimte lezend waar die eerder niet werd gezien) om zo toepassing te kunnen geven aan het evenredigheidsbeginsel van artikel 3:4 lid 2 Awb en maatwerk af te dwingen."
+  },
+  {
+    "q": "Welke vorm van decentralisatie wordt gekenmerkt door een beperking naar taak of functie, zoals bij waterschappen?",
+    "a": [
+      "Territoriale decentralisatie.",
+      "Functionele decentralisatie.",
+      "Administratieve decentralisatie.",
+      "Politieke decentralisatie."
+    ],
+    "c": 1,
+    "exp": "Grondwet / Waterschapswet.\n\nBij functionele decentralisatie is de bevoegdheid van het openbaar lichaam beperkt tot een specifieke functie of taak (zoals waterbeheer), in tegenstelling tot territoriale decentralisatie (zoals gemeenten) die een open huishouding hebben binnen een gebied."
+  },
+  {
+    "q": "Wat impliceert de 'dienstbaarheid' van het bestuur zoals voorgesteld in artikel 2:4a Awb?",
+    "a": [
+      "Dat het bestuur altijd doet wat de burger vraagt.",
+      "Dat het bestuur zich laat leiden door politieke wensen.",
+      "Dat het bestuur handelt vanuit het perspectief van de burger.",
+      "Dat het bestuur afziet van handhaving bij overtredingen."
+    ],
+    "c": 2,
+    "exp": "Wetsvoorstel Wet versterking waarborgfunctie Awb.\n\nHet dienstbaarheidsbeginsel impliceert dat het bestuur zich behulpzaam opstelt en handelt vanuit het perspectief van de burger, waarbij oog is voor diens belangen en doenvermogen, zonder dat dit betekent dat de burger altijd gelijk krijgt."
+  },
+  {
+    "q": "Wat is het gevolg van de hiërarchie van normen voor een gemeentelijke verordening?",
+    "a": [
+      "Deze mag niet in strijd zijn met hogere regelingen zoals wetten in formele zin.",
+      "Deze mag afwijken van de Grondwet als de gemeenteraad daartoe besluit.",
+      "Deze staat in rang gelijk aan een ministeriële regeling.",
+      "Deze heeft voorrang op provinciale verordeningen binnen de gemeente."
+    ],
+    "c": 0,
+    "exp": "Gemeentewet / Grondwet.\n\nIn de normenhiërarchie staat de gemeentelijke verordening onder de wet in formele zin en andere hogere regelingen. Een lagere regel mag niet in strijd zijn met een hogere regel (lex superior derogat legi inferiori)."
+  },
+  {
+    "q": "Welk doel dient de introductie van artikel 7:1b Awb in het wetsvoorstel Wet versterking waarborgfunctie Awb?",
+    "a": [
+      "Het verplichten van een advocaat in de bezwaarfase.",
+      "Het stimuleren van informeel en oplossingsgericht contact in bezwaar.",
+      "Het afschaffen van de bezwaarfase voor financiële besluiten.",
+      "Het verkorten van de beslistermijn in bezwaar naar twee weken."
+    ],
+    "c": 1,
+    "exp": "Artikel 7:1b Algemene wet bestuursrecht (Wetsvoorstel).\n\nDit artikel verplicht bestuursorganen om in overleg met de indiener van een bezwaarschrift te onderzoeken of een oplossing mogelijk is, om zo laagdrempelige en oplossingsgerichte geschilbeslechting te bevorderen."
+  },
+  {
+    "q": "Wat wordt in de Awb verstaan onder 'aanvullend recht'?",
+    "a": [
+      "Recht dat geldt voor zover de bijzondere wetgever het onderwerp niet heeft geregeld.",
+      "Recht dat de bevoegdheid geeft om aanvullende regels te stellen.",
+      "Recht dat de rechter mag toepassen als de wet onduidelijk is.",
+      "Recht dat alleen geldt voor aanvullende bestuursorganen."
+    ],
+    "c": 0,
+    "exp": "Algemene wet bestuursrecht.\n\nAanvullend recht in de Awb fungeert als een vangnet. Het is van toepassing als de bijzondere wet geen regeling treft voor een bepaald onderwerp. Als de bijzondere wet wel een regeling treft, heeft die voorrang."
+  },
+  {
+    "q": "Wat houdt het 'assimilatiebeginsel' in bij de handhaving van EU-recht?",
+    "a": [
+      "EU-recht moet altijd strafrechtelijk worden gehandhaafd.",
+      "Nationale sancties voor schending van EU-recht moeten gelijk zijn aan die voor nationaal recht.",
+      "Bestuursorganen moeten EU-recht negeren als het strijdig is met nationaal beleid.",
+      "De Awb is niet van toepassing op besluiten die voortvloeien uit EU-recht."
+    ],
+    "c": 1,
+    "exp": "Artikel 4:3 Verdrag betreffende de Europese Unie (Unietrouw).\n\nLidstaten moeten schendingen van het EU-recht bestraffen met sancties die vergelijkbaar zijn met sancties voor schendingen van soortgelijk nationaal recht (assimilatie) en die doeltreffend, evenredig en afschrikkend zijn."
+  },
+  {
+    "q": "Welk onderscheid wordt gemaakt tussen publiekrechtelijke en privaatrechtelijke rechtshandelingen van de overheid?",
+    "a": [
+      "Alleen privaatrechtelijke handelingen zijn gericht op rechtsgevolg.",
+      "Publiekrechtelijke handelingen zijn eenzijdig; privaatrechtelijke vereisen wilsovereenstemming.",
+      "Publiekrechtelijke handelingen zijn altijd feitelijk van aard.",
+      "Privaatrechtelijke handelingen worden getoetst door de bestuursrechter."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 Algemene wet bestuursrecht / Burgerlijk Wetboek.\n\nEen publiekrechtelijke rechtshandeling (besluit) is een eenzijdige bepaling van de rechtspositie door een bestuursorgaan op basis van een exclusieve wettelijke bevoegdheid. Privaatrechtelijke handelingen (zoals een overeenkomst) vereisen gelijkwaardigheid en wilsovereenstemming."
+  },
+  {
+    "q": "Wat is het gevolg van het niet-tijdig nemen van een besluit door een bestuursorgaan?",
+    "a": [
+      "De aanvraag wordt automatisch afgewezen.",
+      "De burger heeft geen rechtsmiddelen meer.",
+      "Tegen het niet-tijdig beslissen kan beroep worden ingesteld.",
+      "Het bestuursorgaan wordt strafrechtelijk vervolgd."
+    ],
+    "c": 2,
+    "exp": "Artikel 6:2 aanhef en onder b Algemene wet bestuursrecht.\n\nHet niet tijdig nemen van een besluit wordt voor de toepassing van wettelijke voorschriften over bezwaar en beroep gelijkgesteld met een besluit. Hierdoor kan de burger rechtsbescherming inroepen tegen de traagheid van het bestuur."
+  },
+  {
+    "q": "Wat houdt het 'verbod van détournement de pouvoir' in?",
+    "a": [
+      "Een bestuursorgaan mag geen bevoegdheden delegeren.",
+      "Een bestuursorgaan mag een bevoegdheid niet voor een ander doel gebruiken dan waarvoor deze is verleend.",
+      "Een bestuursorgaan mag geen besluiten nemen met terugwerkende kracht.",
+      "Een bestuursorgaan mag niet afwijken van zijn eigen beleidsregels."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:3 Algemene wet bestuursrecht.\n\nDit artikel codificeert het specifieke beginsel dat een bestuursorgaan de hem toegekende bevoegdheid niet mag aanwenden voor een ander doel dan waarvoor die bevoegdheid is gegeven (specialiteitsbeginsel)."
+  },
+  {
+    "q": "Wat is kenmerkend voor 'horizontaal gelede normstelling'?",
+    "a": [
+      "Normstelling die uitsluitend plaatsvindt via jurisprudentie.",
+      "Normstelling die hiërarchisch is opgebouwd van wet naar beschikking.",
+      "Normstelling waarbij meerdere wetten van gelijke rang van toepassing zijn.",
+      "Normstelling die alleen geldt voor decentrale overheden."
+    ],
+    "c": 2,
+    "exp": "Bestuursrechtelijke theorie.\n\nBij horizontaal gelede normstelling wordt een activiteit of onderwerp gereguleerd door verschillende wetten die op hetzelfde hiërarchische niveau staan (bijvoorbeeld de Algemene wet bestuursrecht naast een bijzondere wet zoals de Wabo), die gezamenlijk het kader vormen."
+  }
+]

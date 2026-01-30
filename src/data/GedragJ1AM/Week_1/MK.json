@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Welke term wordt gebruikt om de verzameling van alle formele regels en wetten aan te duiden die elk aspect van het dagelijks leven reguleren?",
+    "a": [
+      "De behavioral code",
+      "De social code",
+      "De legal code",
+      "De moral code"
+    ],
+    "c": 2,
+    "exp": "De term 'legal code' verwijst naar de totale verzameling van formele wetten en regels binnen een rechtssysteem die gedrag en situaties in de samenleving reguleren. Dit omvat de wetgeving die, indien fysiek op objecten geplakt, een overweldigende hoeveelheid tekst zou vormen."
+  },
+  {
+    "q": "Welk mechanisme wordt, naast aankondiging, bestraffing en informatieverstrekking, onderscheiden om de naleving van nieuwe regels positief te beïnvloeden?",
+    "a": [
+      "Sociale uitsluiting",
+      "Directe ",
+      "Fysieke dwang",
+      "Economische beloning"
+    ],
+    "c": 1,
+    "exp": "Er worden vier mechanismen onderscheiden om naleving te bevorderen: aankondiging, bestraffing, informatieverstrekking en directe . Directe  zorgt voor een onmiddellijke herinnering bij niet-naleving, zoals een geluidssignaal bij het niet dragen van een autogordel."
+  },
+  {
+    "q": "Wat wordt in de sociaalwetenschappelijke benadering van het recht verstaan onder de 'behavioral code'?",
+    "a": [
+      "De formele wetgeving zoals vastgelegd in wetboeken en verdragen.",
+      "De principes en strategieën om menselijk gedrag te sturen voor effectieve wetsnaleving.",
+      "De ongeschreven gedragsregels die gelden binnen criminele organisaties.",
+      "De ethische gedragscode die geldt voor juridische professionals."
+    ],
+    "c": 1,
+    "exp": "De 'behavioral code' is de verzameling van inzichten en strategieën uit de gedragswetenschappen die nodig is om de 'legal code' effectief te laten functioneren. Het richt zich op het beïnvloeden van menselijk gedrag om naleving van regels te realiseren."
+  },
+  {
+    "q": "Uit empirisch onderzoek naar kennis van het recht in Engeland en Wales blijkt dat burgers op een specifiek rechtsgebied significant slechter scoren dan op basis van toeval verwacht mag worden. Welk rechtsgebied betreft dit?",
+    "a": [
+      "Huurrecht",
+      "Arbeidsrecht",
+      "Strafrecht",
+      "Consumentenrecht"
+    ],
+    "c": 3,
+    "exp": "Uit het onderzoek blijkt dat respondenten op het gebied van consumentenrecht slechts 34% van de vragen correct beantwoordden. Dit is lager dan wat op basis van gokken verwacht zou worden, wat duidt op fundamentele misvattingen over dit rechtsgebied."
+  },
+  {
+    "q": "Wat houdt het 'false consensus effect' in binnen de context van de kennis die burgers hebben van het recht?",
+    "a": [
+      "De neiging van mensen om te denken dat de meerderheid van de bevolking de wet overtreedt.",
+      "De aanname dat juridische regels altijd overeenkomen met de eigen morele opvattingen over rechtvaardigheid.",
+      "Het verschijnsel dat mensen in een groep sneller tot een onjuiste juridische conclusie komen.",
+      "De overtuiging dat wetgeving altijd tot stand komt op basis van volledige maatschappelijke consensus."
+    ],
+    "c": 1,
+    "exp": "Het 'false consensus effect' verwijst naar de neiging van mensen om ervan uit te gaan dat de wet hun eigen morele normen en waarden weerspiegelt. Hierdoor verwarren burgers hun persoonlijke opvatting van rechtvaardigheid met de daadwerkelijke juridische regels."
+  },
+  {
+    "q": "Welke factor blijkt uit onderzoek consistent geassocieerd te zijn met een lager niveau van juridische kennis bij burgers?",
+    "a": [
+      "Een hogere leeftijd",
+      "Een hoog opleidingsniveau",
+      "Recente migratie",
+      "Het zijn van huiseigenaar"
+    ],
+    "c": 0,
+    "exp": "Leeftijd is een consistente factor die geassocieerd wordt met juridische kennis, waarbij oudere respondenten over het algemeen lagere kennisniveaus vertonen. Dit staat in contrast met opleidingsniveau of beroepsstatus, die in specifieke contexten positief correleren."
+  },
+  {
+    "q": "Wat is een kenmerkend verschil in 'perspectief' tussen de juridische en de empirische bestudering van het recht?",
+    "a": [
+      "De juridische benadering is extern georiënteerd, de empirische benadering intern.",
+      "De juridische benadering kijkt naar de toekomst, de empirische benadering naar het verleden.",
+      "De juridische benadering hanteert een intern perspectief, de empirische benadering een extern perspectief.",
+      "De juridische benadering is subjectief van aard, de empirische benadering normatief."
+    ],
+    "c": 2,
+    "exp": "De juridische benadering hanteert een intern perspectief waarbij het recht van binnenuit (vanuit de regels zelf) wordt bestudeerd. De empirische benadering hanteert een extern perspectief waarbij het recht als een sociaal verschijnsel van buitenaf wordt geobserveerd."
+  },
+  {
+    "q": "Binnen de empirische bestudering van het recht wordt onderscheid gemaakt tussen verschillende benaderingen. Welke benadering beschouwt het recht primair als een middel om gedrag te sturen en maatschappelijke doelen te bereiken?",
+    "a": [
+      "De rechtspluralistische benadering",
+      "De instrumentele benadering",
+      "De constitutieve benadering",
+      "De kritische rechtsstudie"
+    ],
+    "c": 1,
+    "exp": "De instrumentele benadering ziet het recht niet als een autonoom systeem, maar als een beleidsinstrument om maatschappelijke verandering en gedragssturing te realiseren. Empirical Legal Studies (ELS) valt grotendeels binnen deze traditie."
+  },
+  {
+    "q": "Wat is de kern van de rechtspluralistische benadering binnen het empirisch-juridisch onderzoek?",
+    "a": [
+      "Het recht bestaat uitsluitend uit wetten die door de staat zijn uitgevaardigd.",
+      "Naast formele wetgeving vormen ook sociale normen en informele regels bindende verplichtingen.",
+      "Het recht moet in meerdere talen beschikbaar zijn om effectief te zijn.",
+      "Rechters moeten bij hun uitspraken rekening houden met buitenlandse rechtsstelsels."
+    ],
+    "c": 1,
+    "exp": "Rechtspluralisme stelt dat het recht breder is dan alleen staatsrecht. Het erkent dat informele regels, sociale normen en andere normatieve stelsels naast het officiële recht bestaan en het gedrag van mensen beïnvloeden."
+  },
+  {
+    "q": "Welk begrip introduceerde Ehrlich om aan te geven dat maatschappelijke regels en gewoonten het daadwerkelijke ordenende recht vormen, in tegenstelling tot het papieren recht van de staat?",
+    "a": [
+      "Het levende recht",
+      "Het natuurrecht",
+      "Het positieve recht",
+      "Het gewoonterecht"
+    ],
+    "c": 0,
+    "exp": "Ehrlich introduceerde het begrip 'levende recht' (living law). Dit verwijst naar de regels die daadwerkelijk het leven in de samenleving beheersen, in tegenstelling tot het recht dat enkel in wetboeken staat en mogelijk niet wordt nageleefd."
+  },
+  {
+    "q": "Wat is een kenmerkend uitgangspunt van de recht-en-samenlevingbenadering?",
+    "a": [
+      "Het recht is een gesloten systeem dat losstaat van politieke invloeden.",
+      "Recht en maatschappelijke verhoudingen beïnvloeden elkaar wederzijds.",
+      "Juridische regels zijn de enige bron van normatieve verplichtingen.",
+      "De effectiviteit van recht wordt enkel bepaald door de zwaarte van sancties."
+    ],
+    "c": 1,
+    "exp": "De recht-en-samenlevingbenadering onderzoekt de wederzijdse beïnvloeding tussen recht en sociale structuren. Het kijkt hoe sociale, politieke en economische krachten het recht vormen en hoe het recht op zijn beurt de maatschappij beïnvloedt."
+  },
+  {
+    "q": "Welke vorm van onderzoek richt zich specifiek op de vraag of een bepaalde sanctie juridisch is toegestaan op basis van wetgeving en jurisprudentie?",
+    "a": [
+      "Empirisch onderzoek",
+      "Positiefrechtelijk onderzoek",
+      "Rechtsfilosofisch onderzoek",
+      "Sociologisch onderzoek"
+    ],
+    "c": 1,
+    "exp": "Positiefrechtelijk onderzoek richt zich op de geldende rechtsregels, de interpretatie daarvan en de toepassing in concrete gevallen. Het beantwoordt vragen over wat rechtens is volgens de formele bronnen van het recht."
+  },
+  {
+    "q": "Wat wordt bedoeld met de 'is-ought' problematiek in de context van juridisch en empirisch onderzoek?",
+    "a": [
+      "Het verschil tussen kwalitatieve en kwantitatieve onderzoeksmethoden.",
+      "De spanning tussen beschrijven hoe de werkelijkheid is en voorschrijven hoe deze zou moeten zijn.",
+      "De discrepantie tussen de wet in de boeken en de wet in actie.",
+      "Het onderscheid tussen nationaal recht en internationaal recht."
+    ],
+    "c": 1,
+    "exp": "De 'is-ought' problematiek verwijst naar het onderscheid tussen feitelijke constateringen (empirie: hoe het is) en normatieve oordelen (juridisch/ethisch: hoe het zou moeten zijn). Empirisch onderzoek kan feiten leveren, maar geen normatieve keuzes maken."
+  },
+  {
+    "q": "Welke onderzoeksmethode is doorgaans het meest geschikt voor het toetsen van causale verbanden en hypothesen op basis van grote datasets?",
+    "a": [
+      "Kwalitatief onderzoek",
+      "Kwantitatief onderzoek",
+      "Rechtsvergelijkend onderzoek",
+      "Fenomenologisch onderzoek"
+    ],
+    "c": 1,
+    "exp": "Kwantitatief onderzoek maakt gebruik van statistische analyses en grootschalige dataverzameling. Dit is bij uitstek geschikt voor deductief onderzoek waarbij theorieën en hypothesen worden getoetst en verbanden worden gekwantificeerd."
+  },
+  {
+    "q": "Wat houdt het kwaliteitscriterium 'validiteit' in bij empirisch-juridisch onderzoek?",
+    "a": [
+      "De mate waarin de onderzoeksresultaten consistent zijn bij herhaling.",
+      "De mate waarin het onderzoek daadwerkelijk meet wat het beoogt te meten.",
+      "De mate waarin de resultaten toepasbaar zijn op andere groepen.",
+      "De mate waarin de onderzoeker zijn persoonlijke mening uitsluit."
+    ],
+    "c": 1,
+    "exp": "Validiteit heeft betrekking op de geldigheid van de meting: meet het instrument daadwerkelijk het concept dat men wil onderzoeken, of wordt er per ongeluk iets anders gemeten? Het gaat om de accuraatheid van de bevindingen."
+  },
+  {
+    "q": "Wanneer spreekt men in empirisch onderzoek van een 'deductieve benadering'?",
+    "a": [
+      "Wanneer men vanuit de data een nieuwe theorie ontwikkelt.",
+      "Wanneer men een specifieke casus diepgaand analyseert zonder theorie.",
+      "Wanneer men start vanuit een bestaande theorie en deze toetst aan de praktijk.",
+      "Wanneer men uitsluitend gebruik maakt van participerende observatie."
+    ],
+    "c": 2,
+    "exp": "Een deductieve benadering begint met een algemene theorie of hypothese en test deze vervolgens aan de hand van empirische waarnemingen. Dit staat tegenover inductie, waarbij men vanuit waarnemingen tot een theorie komt."
+  },
+  {
+    "q": "Wat wordt in het kader van empirisch onderzoek verstaan onder 'operationalisatie'?",
+    "a": [
+      "Het uitvoeren van het daadwerkelijke veldwerk.",
+      "Het vertalen van abstracte concepten naar meetbare variabelen.",
+      "Het statistisch analyseren van de verzamelde gegevens.",
+      "Het publiceren van de onderzoeksresultaten in een juridisch tijdschrift."
+    ],
+    "c": 1,
+    "exp": "Operationalisatie is het proces waarbij theoretische, abstracte begrippen (zoals 'afschrikking') worden omgezet in concreet meetbare indicatoren (zoals 'aantal uitgedeelde boetes'), zodat ze empirisch onderzocht kunnen worden."
+  },
+  {
+    "q": "Welke beperking is inherent aan het gebruik van enquêtes en bestaande overheidsdata in kwantitatief onderzoek?",
+    "a": [
+      "Het is onmogelijk om grote groepen respondenten te bereiken.",
+      "Het is vaak lastig om causaliteit (oorzaak-gevolg) met zekerheid vast te stellen.",
+      "De resultaten zijn nooit generaliseerbaar naar een grotere populatie.",
+      "De data zijn per definitie subjectief en gekleurd door de onderzoeker."
+    ],
+    "c": 1,
+    "exp": "Bij correlationeel onderzoek (zoals enquêtes) is het moeilijk om causaliteit vast te stellen omdat er sprake kan zijn van schijnverbanden of niet-gemeten variabelen die de resultaten beïnvloeden. Alleen experimenten kunnen causaliteit sterk aantonen."
+  },
+  {
+    "q": "Welke term wordt gebruikt voor het verschijnsel dat wetgeving op papier verschilt van de toepassing in de praktijk?",
+    "a": [
+      "Law in books vs. Law in action",
+      "Common law vs. Civil law",
+      "Publiekrecht vs. Privaatrecht",
+      "Dwingend recht vs. Regelend recht"
+    ],
+    "c": 0,
+    "exp": "Het onderscheid tussen 'law in books' (de formele regels) en 'law in action' (de daadwerkelijke toepassing en effecten) is een kernconcept in de rechtssociologie en de instrumentele benadering van het recht."
+  },
+  {
+    "q": "Wat is een belangrijk kenmerk van een rechtsfilosofische onderzoeksvraag?",
+    "a": [
+      "Het richt zich op het meten van effecten van wetgeving.",
+      "Het analyseert de geldende jurisprudentie van de Hoge Raad.",
+      "Het beoordeelt de rechtvaardigheid of wenselijkheid van een regel.",
+      "Het beschrijft de historische ontwikkeling van een wetsartikel."
+    ],
+    "c": 2,
+    "exp": "Rechtsfilosofisch onderzoek is normatief en theoretisch van aard. Het toetst regels niet aan de praktijk (empirie) of aan hogere regels (positief recht), maar aan fundamentele waarden, ethiek en rechtvaardigheidsprincipes."
+  },
+  {
+    "q": "Welke vorm van onderzoek is het meest geschikt om 'waarom'-vragen te beantwoorden en diepgaand inzicht te krijgen in motivaties?",
+    "a": [
+      "Kwantitatief onderzoek",
+      "Kwalitatief onderzoek",
+      "Statistisch onderzoek",
+      "Experimenteel onderzoek"
+    ],
+    "c": 1,
+    "exp": "Kwalitatief onderzoek, zoals interviews en observaties, is gericht op het begrijpen van betekenisgeving, motivaties en de context van gedrag. Het biedt de diepgang die nodig is voor verklarende 'waarom'-vragen."
+  },
+  {
+    "q": "Wat houdt het begrip 'generaliseerbaarheid' in binnen empirisch-juridisch onderzoek?",
+    "a": [
+      "De mate waarin het onderzoek herhaalbaar is door andere onderzoekers.",
+      "De mate waarin abstracte begrippen meetbaar zijn gemaakt.",
+      "De mate waarin resultaten van de steekproef gelden voor de gehele populatie.",
+      "De mate waarin de onderzoeker objectief is gebleven."
+    ],
+    "c": 2,
+    "exp": "Generaliseerbaarheid (of externe validiteit) gaat over de vraag of de conclusies die getrokken zijn uit de onderzochte groep (de steekproef) ook van toepassing zijn op de grotere groep of andere situaties die niet direct onderzocht zijn."
+  },
+  {
+    "q": "Wat toonde het voorbeeld van de invoering van de autogordelplicht in de Verenigde Staten aan met betrekking tot wetgeving?",
+    "a": [
+      "Dat het enkel invoeren van een wet voldoende is om gedrag volledig te veranderen.",
+      "Dat wetgeving pas effectief wordt door handhaving, sociale normen en technologie.",
+      "Dat financiële prikkels de enige manier zijn om mensen de wet te laten naleven.",
+      "Dat burgers uit zichzelf altijd rationele keuzes maken omtrent veiligheid."
+    ],
+    "c": 1,
+    "exp": "De casus van de autogordel laat zien dat de wet op papier ('mere text') niet genoeg was. Naleving steeg pas significant door een combinatie van handhaving (boetes), campagnes (sociale normen) en technologie (waarschuwingssignalen)."
+  },
+  {
+    "q": "Welk psychologisch mechanisme zorgt ervoor dat mensen hun foutieve overtuigingen over de wet vaak niet corrigeren, zelfs niet na tegenstrijdige informatie?",
+    "a": [
+      "Cognitieve dissonantie",
+      "Confirmation bias",
+      "Het Dunning-Kruger effect",
+      "De availability heuristic"
+    ],
+    "c": 0,
+    "exp": "Cognitieve dissonantie theorie suggereert dat mensen psychologisch ongemak ervaren bij tegenstrijdige kennis. Om dit ongemak te verminderen, negeren of verwerpen ze informatie die niet strookt met hun bestaande overtuigingen over de wet."
+  },
+  {
+    "q": "Wat is volgens Mascini een essentieel verschil in 'kennisclaims' tussen juridisch en empirisch onderzoek?",
+    "a": [
+      "Juridische kennis is universeel, empirische kennis is lokaal.",
+      "Juridische kennis is gebonden aan autoriteit, empirische kennis aan observatie.",
+      "Juridische kennis is objectief, empirische kennis is normatief.",
+      "Juridische kennis is tijdloos, empirische kennis is momentgebonden."
+    ],
+    "c": 1,
+    "exp": "Juridische kennisclaims leunen sterk op de autoriteit van de bron (wetgever, rechter). Empirische kennisclaims ontlenen hun geldigheid aan de methodologische kwaliteit van de observatie en de objectiviteit van de data."
+  },
+  {
+    "q": "Welke conclusie kan worden getrokken over de kennis van consumentenrechten op basis van het onderzoek 'Wrong about Rights'?",
+    "a": [
+      "Mensen zijn zich bewust van hun gebrek aan kennis.",
+      "Mensen overschatten hun kennis en presteren slechter dan toeval.",
+      "Mensen presteren beter dan toeval door intuïtieve rechtvaardigheid.",
+      "Mensen kennen consumentenrecht beter dan huurrecht."
+    ],
+    "c": 1,
+    "exp": "Het onderzoek toont aan dat mensen vaak zelfverzekerd zijn over hun kennis van consumentenrechten, maar in werkelijkheid slechts 34% van de vragen goed hadden, wat slechter is dan wanneer ze willekeurig zouden gokken."
+  },
+  {
+    "q": "Wat is een risico van het uitsluitend gebruiken van een interne, positiefrechtelijke benadering bij het maken van beleid?",
+    "a": [
+      "Dat de wetten juridisch niet kloppen.",
+      "Dat er geen rekening wordt gehouden met de onbedoelde neveneffecten in de praktijk.",
+      "Dat de wetgever te veel macht krijgt ten opzichte van de rechter.",
+      "Dat internationale verdragen worden geschonden."
+    ],
+    "c": 1,
+    "exp": "Een louter interne benadering focust op de juridische logica en samenhang, maar mist inzicht in de daadwerkelijke effecten op gedrag (law in action). Hierdoor kunnen onbedoelde sociale gevolgen of uitvoeringsproblemen over het hoofd worden gezien."
+  },
+  {
+    "q": "Welk begrip wordt gebruikt voor de situatie waarin formele wetten, sociale normen en religieuze regels naast elkaar bestaan en elkaar beïnvloeden?",
+    "a": [
+      "Rechtspluralisme",
+      "Rechtsstaatsbeginsel",
+      "Rechtsmonisme",
+      "Rechtsverwerking"
+    ],
+    "c": 0,
+    "exp": "Rechtspluralisme is het naast elkaar bestaan van verschillende normatieve stelsels binnen eenzelfde sociaal veld. Dit houdt in dat niet alleen de staatswet, maar ook andere regels (sociaal, religieus) het gedrag sturen."
+  },
+  {
+    "q": "Wat is een belangrijk kenmerk van 'Empirical Legal Studies' (ELS) als stroming?",
+    "a": [
+      "Het verwerpt het gebruik van kwantitatieve methoden.",
+      "Het leunt sterk op zware sociologische theorievorming.",
+      "Het gebruikt empirische methoden om juridische aannames te toetsen.",
+      "Het richt zich uitsluitend op kwalitatief interviewonderzoek."
+    ],
+    "c": 2,
+    "exp": "ELS onderscheidt zich door de toepassing van rigoureuze empirische (vaak kwantitatieve) methoden om de werking en effectiviteit van het recht te onderzoeken, vaak zonder zware theoretische sociologische ballast (in tegenstelling tot de recht-en-samenleving benadering)."
+  },
+  {
+    "q": "Wat toont het voorbeeld van de mestfraude-casus aan met betrekking tot de instrumentele benadering van het recht?",
+    "a": [
+      "Dat strengere wetgeving fraude volledig kan uitbannen.",
+      "Dat er een kloof bestaat tussen de wettelijke regels en de naleving in de praktijk.",
+      "Dat boeren altijd ethisch handelen ongeacht de regelgeving.",
+      "Dat juridisch onderzoek voldoende is om fraude te begrijpen."
+    ],
+    "c": 1,
+    "exp": "De mestfraude-casus illustreert de kloof tussen 'law in books' (strenge mestregels) en 'law in action' (grootschalige fraude). De instrumentele benadering gebruikt empirisch onderzoek om deze kloof te dichten en de effectiviteit van handhaving te verbeteren."
+  }
+]

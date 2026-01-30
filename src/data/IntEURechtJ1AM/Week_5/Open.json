@@ -1,0 +1,57 @@
+[
+  {
+    "q": "De Europese Unie wil de luchtkwaliteit verbeteren door de uitstoot van stikstof in de gehele Unie te reguleren. Aangezien milieu een gedeelde bevoegdheid is (art. 4 VWEU), stelt de Commissie een maatregel voor. Nederland maakt bezwaar en stelt dat lokale provincies dit probleem beter zelf kunnen aanpakken vanwege specifieke geografische omstandigheden. Beoordeel aan de hand van het toepasselijke beginsel of de Unie hier mag optreden.",
+    "sample": "Issue: De rechtsvraag is of het optreden van de Unie in strijd is met het subsidiariteitsbeginsel.\n\nRule: Volgens art. 5 lid 3 VEU mag de Unie op gebieden van niet-exclusieve bevoegdheid slechts optreden indien de doelstellingen niet voldoende door de lidstaten kunnen worden verwezenlijkt en beter door de Unie kunnen worden bereikt.\n\nApplication: Luchtvervuiling is grensoverschrijdend, waardoor individuele actie van lidstaten of provincies onvoldoende effectief is. Een aanpak op Unieniveau is noodzakelijk voor het bereiken van het doel.\n\nConclusion: Het optreden is in overeenstemming met het subsidiariteitsbeginsel en de Unie is bevoegd.",
+    "checklist": [
+      "Toetsing aan het subsidiariteitsbeginsel (art. 5 lid 3 VEU)",
+      "Betreft een niet-exclusieve (gedeelde) bevoegdheid",
+      "Doelstellingen niet voldoende door lidstaten te verwezenlijken",
+      "Doelstellingen worden beter door de Unie bereikt"
+    ],
+    "exp": "Op gebieden die niet onder de exclusieve bevoegdheid vallen, toetst men aan het subsidiariteitsbeginsel (art. 5 lid 3 VEU). Er geldt een dubbele toets: noodzaak (kunnen lidstaten het zelf?) en meerwaarde (kan de EU het beter?)."
+  },
+  {
+    "q": "De Europese Commissie wil de regels voor consumentenbescherming bij online aankopen harmoniseren. Het doel is dat lidstaten hun wetgeving aanpassen aan een vastgesteld resultaat, maar wel de vrijheid behouden om zelf de vormen en middelen te kiezen. De Commissie stelt voor om dit te doen via een verordening. Adviseer of dit het juiste juridische instrument is.",
+    "sample": "Issue: De rechtsvraag is of een verordening het juiste instrument is gegeven de wens voor beleidsvrijheid.\n\nRule: Art. 288 VWEU bepaalt dat een verordening verbindend is in al haar onderdelen en rechtstreeks toepasselijk is. Een richtlijn is verbindend qua resultaat, maar laat de keuze van vorm en middelen aan nationale instanties.\n\nApplication: De Commissie wil lidstaten vrijheid geven in middelen, wat strijdig is met de aard van een verordening. Een richtlijn sluit aan bij de wens voor resultaatverplichting met keuzevrijheid.\n\nConclusion: Een verordening is onjuist; de Commissie moet kiezen voor een richtlijn.",
+    "checklist": [
+      "Toetsing aan art. 288 VWEU (definities rechtsinstrumenten)",
+      "Verordening is rechtstreeks toepasselijk en volledig bindend",
+      "Richtlijn laat keuzevrijheid voor vorm en middelen",
+      "Richtlijn is het passende instrument in deze casus"
+    ],
+    "exp": "De keuze voor een rechtsinstrument wordt bepaald door art. 288 VWEU en het evenredigheidsbeginsel. Als keuzevrijheid voor implementatie gewenst is, is de richtlijn het aangewezen middel, niet de verordening."
+  },
+  {
+    "q": "De Raad neemt een besluit over de instelling van de interne markt. De Raad raadpleegt het Europees Parlement om advies, maar besluit vervolgens zonder de instemming van het Parlement de wetgeving aan te nemen. Het Parlement stelt dat de procedure onjuist is verlopen. Heeft het Parlement gelijk?",
+    "sample": "Issue: De rechtsvraag is of de juiste wetgevingsprocedure is gevolgd bij een besluit over de interne markt.\n\nRule: Art. 114 VWEU (interne markt) schrijft de gewone wetgevingsprocedure voor (art. 294 VWEU). Deze procedure vereist gezamenlijke aanname door Raad en Parlement (codecisie).\n\nApplication: De Raad heeft het besluit eenzijdig genomen en het Parlement slechts geraadpleegd. In de gewone wetgevingsprocedure heeft het Parlement echter een vetorecht en is instemming vereist.\n\nConclusion: Het Parlement heeft gelijk; de procedure is geschonden omdat de gewone wetgevingsprocedure niet is gevolgd.",
+    "checklist": [
+      "Vaststellen toepasselijkheid gewone wetgevingsprocedure (art. 294 VWEU)",
+      "Parlement en Raad zijn gelijkwaardige wetgevers",
+      "Instemming van beide instellingen is vereist",
+      "Besluit is ongeldig wegens procedurefout"
+    ],
+    "exp": "Bij de gewone wetgevingsprocedure (art. 294 VWEU) beslissen Raad en Parlement gezamenlijk. Het passeren van het Parlement bij een dergelijke rechtsbasis maakt het besluit vatbaar voor vernietiging."
+  },
+  {
+    "q": "Tijdens een plotselinge toename van asielzoekers besluit de Raad, op voorstel van de Commissie, om een tijdelijke herplaatsingsmaatregel vast te stellen ten gunste van zwaar belaste lidstaten. De Raad baseert zich op art. 78 lid 3 VWEU en betrekt de nationale parlementen niet bij de besluitvorming. Een lidstaat stelt dat dit besluit ongeldig is omdat nationale parlementen gepasseerd zijn. Slaagt dit verweer?",
+    "sample": "Issue: De rechtsvraag is of de Raad op basis van art. 78 lid 3 VWEU een maatregel kan nemen zonder betrokkenheid van nationale parlementen.\n\nRule: In de zaak Slowakije en Hongarije v. Raad oordeelde het Hof dat besluiten op basis van art. 78 lid 3 VWEU niet-wetgevingshandelingen zijn. De formele vereisten voor wetgevingshandelingen gelden niet.\n\nApplication: Omdat het een niet-wetgevingshandeling betreft (voorlopige maatregel), is de participatie van nationale parlementen niet vereist volgens de verdragsregels voor wetgevingshandelingen.\n\nConclusion: Het verweer slaagt niet; de Raad was bevoegd om zonder nationale parlementen te besluiten.",
+    "checklist": [
+      "Toetsing aan arrest Slowakije en Hongarije v. Raad",
+      "Kwalificatie als niet-wetgevingshandeling",
+      "Rechtsbasis art. 78 lid 3 VWEU is toereikend",
+      "Betrokkenheid nationale parlementen is niet vereist"
+    ],
+    "exp": "Het Hof bevestigde in de Quotumzaak dat art. 78 lid 3 VWEU een zelfstandige rechtsbasis biedt voor niet-wetgevingshandelingen in noodsituaties, waarbij de gewone wetgevingsprocedure niet gevolgd hoeft te worden."
+  },
+  {
+    "q": "De Europese Unie stelt een verordening vast die de lesprogramma's van basisscholen in alle lidstaten volledig harmoniseert om de kwaliteit van onderwijs te verbeteren. De Unie baseert zich op de bevoegdheid voor onderwijs. Is deze verordening rechtsgeldig vastgesteld?",
+    "sample": "Issue: De rechtsvraag is of de Unie bevoegd is om nationale wetgeving op het gebied van onderwijs te harmoniseren.\n\nRule: Onderwijs valt onder de ondersteunende, coördinerende of aanvullende bevoegdheden (art. 6 VWEU). Art. 2 lid 5 VWEU bepaalt dat harmonisatie op deze gebieden is uitgesloten.\n\nApplication: De vastgestelde verordening harmoniseert de lesprogramma's. Dit is in directe strijd met het harmonisatieverbod dat geldt voor ondersteunende bevoegdheden.\n\nConclusion: De verordening is niet rechtsgeldig wegens schending van het attributiebeginsel en het harmonisatieverbod.",
+    "checklist": [
+      "Identificatie bevoegdheid onderwijs (art. 6 VWEU)",
+      "Kwalificatie als ondersteunende bevoegdheid",
+      "Toepassing harmonisatieverbod (art. 2 lid 5 VWEU)",
+      "Schending attributiebeginsel maakt handeling ongeldig"
+    ],
+    "exp": "Op gebieden met een ondersteunende bevoegdheid (zoals onderwijs en cultuur) mag de Unie optreden, maar is harmonisatie van de wettelijke bepalingen van lidstaten expliciet verboden (art. 2 lid 5 VWEU)."
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Klaas steelt een fiets van Pieter. Klaas verkoopt de fiets vervolgens aan Willem. Willem betaalt de koopprijs, maar spreekt met Klaas af dat Klaas de fiets nog twee weken mag gebruiken voor woon-werkverkeer. Een week later ziet Pieter zijn fiets bij Klaas staan en eist deze op. Willem verzet zich en stelt eigenaar te zijn geworden omdat hij te goeder trouw was. Wie is eigenaar van de fiets?",
+    "sample": "Rechtsvraag: Is Willem eigenaar geworden van de fiets ondanks de beschikkingsonbevoegdheid van Klaas?\n\nRechtsregel: Voor overdracht is levering krachtens geldige titel door een beschikkingsbevoegde vereist (art. 3:84 lid 1 BW). Bij onbevoegdheid kan de verkrijger beschermd worden (art. 3:86 lid 1 BW). Levering via constitutum possessorium werkt echter niet tegen een ouder gerechtigde zolang de zaak in handen van de vervreemder blijft (art. 3:90 lid 2 BW).\n\nToepassing: Er is een geldige titel (koop) en levering via constitutum possessorium (art. 3:115 sub a BW). Klaas is als dief beschikkingsonbevoegd. Willem beroept zich op derdenbescherming. Echter, omdat de fiets nog bij Klaas (de vervreemder) is, werkt de levering niet tegen Pieter (de oudere gerechtigde).\n\nConclusie: De levering werkt niet tegen Pieter. Willem wordt geen eigenaar zolang Klaas de fiets houdt. Pieter is eigenaar gebleven.",
+    "checklist": [
+      "Levering geschiedt via constitutum possessorium",
+      "Klaas is beschikkingsonbevoegd wegens diefstal",
+      "Levering c.p. werkt niet tegen ouder recht",
+      "Pieter is eigenaar gebleven"
+    ],
+    "exp": "De levering vindt plaats door een tweezijdige verklaring waarbij de vervreemder de zaak blijft houden (constitutum possessorium, art. 3:115 sub a BW). Artikel 3:90 lid 2 BW bepaalt dat een dergelijke levering niet werkt tegen iemand met een ouder recht (Pieter) zolang de zaak in handen van de vervreemder (Klaas) blijft. Hierdoor faalt een beroep op derdenbescherming ex artikel 3:86 BW zolang de feitelijke machtsverschaffing niet heeft plaatsgevonden."
+  },
+  {
+    "q": "Bouwbedrijf A heeft een vordering op Opdrachtgever B. In de overeenkomst tussen A en B staat opgenomen dat de vordering niet overdraagbaar is. Ondanks dit beding draagt A de vordering over aan Factormaatschappij C. C weet niets van het beding en is te goeder trouw. Is C rechthebbende geworden op de vordering?",
+    "sample": "Rechtsvraag: Is de vordering rechtsgeldig overgedragen aan C ondanks het contractuele overdrachtsverbod?\n\nRechtsregel: Vorderingsrechten zijn overdraagbaar, tenzij de aard van het recht zich daartegen verzet (art. 3:83 lid 1 BW). Een contractueel overdrachtsverbod leidt tot onoverdraagbaarheid van de vordering zelf, wat goederenrechtelijke werking heeft (Hoge Raad Oryx/Van Eesteren).\n\nToepassing: De overeenkomst bevat een overdrachtsverbod. Dit betekent dat de vordering naar haar aard niet overdraagbaar is. Dit heeft goederenrechtelijke werking. De overdracht is daardoor ongeldig. De goede trouw van C is hierbij niet relevant, omdat het geen kwestie is van beschikkingsonbevoegdheid, maar van de onoverdraagbaarheid van het goed zelf.\n\nConclusie: Nee, de overdracht is ongeldig. C is geen rechthebbende geworden.",
+    "checklist": [
+      "Overdrachtsverbod leidt tot onoverdraagbaarheid vordering",
+      "Verbod heeft goederenrechtelijke werking",
+      "Goede trouw verkrijger is niet relevant",
+      "Overdracht aan C is ongeldig"
+    ],
+    "exp": "In het arrest Oryx/Van Eesteren heeft de Hoge Raad bepaald dat een contractueel verbod tot overdracht leidt tot onoverdraagbaarheid van de vordering zelf (art. 3:83 lid 2 BW). Dit heeft goederenrechtelijke werking. Hierdoor faalt de overdracht wegens het ontbreken van de overdraagbaarheid van het goed, ongeacht de eventuele goede trouw van de verkrijger."
+  },
+  {
+    "q": "Willem koopt via Marktplaats een tweedehands laptop van een particulier voor €300. Willem betaalt en krijgt de laptop direct mee. Een maand later blijkt dat de laptop twee weken voor de koop gestolen was van de oorspronkelijke eigenaar, Sophie. Sophie eist de laptop op bij Willem. Willem beroept zich op zijn goede trouw. Moet Willem de laptop afgeven?",
+    "sample": "Rechtsvraag: Kan Sophie de laptop revindiceren ondanks de goede trouw van Willem?\n\nRechtsregel: De eigenaar van een door diefstal verloren roerende zaak kan deze gedurende drie jaren na de diefstal opeisen, ook als de verkrijger te goeder trouw is (art. 3:86 lid 3 BW), tenzij de zaak is gekocht in een daartoe bestemde bedrijfsruimte (consumentenkoop, art. 3:86 lid 3 sub a BW).\n\nToepassing: De laptop is gestolen. Willem is te goeder trouw en heeft betaald (anders dan om niet). Echter, de diefstal is recent (minder dan 3 jaar). De koop vond plaats via Marktplaats bij een particulier, niet in een bedrijfsruimte. De uitzondering voor consumentenkoop geldt dus niet.\n\nConclusie: Ja, Willem moet de laptop afgeven. Sophie kan haar eigendom revindiceren.",
+    "checklist": [
+      "Eigenaar kan gestolen zaak drie jaar opeisen",
+      "Willem kocht van particulier via Marktplaats",
+      "Geen beroep op consumentenbescherming mogelijk",
+      "Sophie kan de laptop succesvol revindiceren"
+    ],
+    "exp": "Artikel 3:86 lid 3 BW bepaalt dat een eigenaar een gestolen zaak gedurende drie jaar kan revindiceren, zelfs tegen een verkrijger te goeder trouw. De uitzondering van lid 3 sub a (verkrijging in een bedrijfsruimte door een consument) is niet van toepassing, aangezien de koop via Marktplaats bij een particulier plaatsvond."
+  },
+  {
+    "q": "Klaas heeft zijn oldtimer ter reparatie staan bij Garagehouder G. Klaas verkoopt de auto aan Willem. Klaas en Willem spreken af dat de auto eigendom wordt van Willem, maar dat deze voorlopig bij G blijft staan totdat de reparatie klaar is. G weet nog van niets. Is de auto rechtsgeldig geleverd aan Willem?",
+    "sample": "Rechtsvraag: Is de levering van de auto voltooid voordat de derde-houder is ingelicht?\n\nRechtsregel: Levering van een roerende zaak die in handen is van een derde geschiedt door een tweezijdige verklaring, maar werkt pas tegenover de derde na mededeling aan hem of erkenning door hem (traditio longa manu, art. 3:115 sub c BW).\n\nToepassing: Er is een geldige titel en Klaas is beschikkingsbevoegd. De leveringswijze is traditio longa manu. De auto is bij derde G. Er is echter nog geen mededeling gedaan aan G en G heeft de overdracht niet erkend. De levering heeft daardoor nog geen werking tegenover G en is juridisch nog niet voltooid.\n\nConclusie: Nee, de levering is nog niet voltooid/heeft nog geen werking zolang G niet is ingelicht.",
+    "checklist": [
+      "Levering via traditio longa manu",
+      "Derde-houder moet overdracht erkennen",
+      "Of mededeling moet aan derde gedaan zijn",
+      "Zonder mededeling/erkenning geen voltooide levering"
+    ],
+    "exp": "Bij levering longa manu (art. 3:115 sub c BW) gaat het bezit over door een tweezijdige verklaring, maar werkt de levering pas tegenover de derde (de garagehouder) en derden nadat de overdracht aan hem is medegedeeld of door hem is erkend."
+  },
+  {
+    "q": "Klaas steelt in 1995 een schilderij van een museum. Hij hangt het in zijn woonkamer. In 2018 ontdekt het museum dat het schilderij bij Klaas hangt en eist het op. Klaas stelt dat hij eigenaar is geworden. Slaagt het verweer van Klaas?",
+    "sample": "Rechtsvraag: Is Klaas door verjaring eigenaar geworden van het gestolen schilderij?\n\nRechtsregel: De rechtsvordering tot beëindiging van het bezit verjaart na twintig jaar (art. 3:306 BW). Hij die een goed bezit op het tijdstip waarop de verjaring van de rechtsvordering tot beëindiging van het bezit wordt voltooid, verkrijgt dat goed, ook al was zijn bezit niet te goeder trouw (art. 3:105 BW).\n\nToepassing: Klaas is bezitter (niet te goeder trouw). De termijn voor bevrijdende verjaring is 20 jaar. Tussen 1995 en 2018 zijn meer dan 20 jaar verstreken. De vordering van het museum is verjaard. Op dat moment verkrijgt Klaas de eigendom.\n\nConclusie: Ja, het verweer slaagt. Klaas is eigenaar geworden door bevrijdende verjaring.",
+    "checklist": [
+      "Rechtsvordering tot revindicatie verjaart na twintig jaar",
+      "Klaas is bezitter niet te goeder trouw",
+      "Eigendomsverkrijging na voltooiing verjaringstermijn",
+      "Museum kan schilderij niet meer opeisen"
+    ],
+    "exp": "Artikel 3:105 BW bepaalt dat de bezitter eigenaar wordt op het moment dat de rechtsvordering tot beëindiging van het bezit verjaart. Volgens artikel 3:306 BW is deze verjaringstermijn twintig jaar. Klaas bezit het schilderij langer dan twintig jaar, dus hij is eigenaar geworden ondanks zijn kwade trouw."
+  }
+]

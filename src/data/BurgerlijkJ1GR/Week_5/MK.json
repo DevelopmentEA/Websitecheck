@@ -1,0 +1,332 @@
+[
+  {
+    "q": "In welk van de onderstaande gevallen is een beroep op vernietiging van een overeenkomst wegens dwaling uitgesloten op grond van artikel 6:228 lid 2 BW?",
+    "a": [
+      "Indien de dwaling is veroorzaakt door een onjuiste inlichting van de wederpartij.",
+      "Indien de dwaling een uitsluitend toekomstige omstandigheid betreft.",
+      "Indien de wederpartij in verband met hetgeen zij wist de dwalende had behoren in te lichten.",
+      "Indien de wederpartij van dezelfde onjuiste veronderstelling is uitgegaan als de dwalende."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:228 lid 2 BW.\n\nDe vernietiging kan niet worden gegrond op een dwaling die een uitsluitend toekomstige omstandigheid betreft."
+  },
+  {
+    "q": "Wat is de rechtsregel uit het arrest Booy/Wisman met betrekking tot toekomstige omstandigheden bij dwaling?",
+    "a": [
+      "Toekomstige verwachtingen over gevolgen van bestaande eigenschappen zijn geen zuiver toekomstige omstandigheden.",
+      "Het niet verkrijgen van een kentekenbewijs is altijd aan te merken als een uitsluitend toekomstige omstandigheid.",
+      "Een beroep op dwaling is uitgesloten indien de koper geen zelfstandig onderzoek heeft gedaan naar de feiten.",
+      "De onderzoeksplicht van de koper weegt bij toekomstige omstandigheden zwaarder dan de mededelingsplicht."
+    ],
+    "c": 0,
+    "exp": "HR 21 januari 1966, NJ 1966/183 (Booy/Wisman).\n\nDe Hoge Raad oordeelde dat de verwachting van het verkrijgen van een kentekenbewijs betrekking had op de op dat moment reeds aanwezige eigenschappen van de kraan. Dit is derhalve geen uitsluitend toekomstige omstandigheid."
+  },
+  {
+    "q": "Wat is volgens het arrest Van Geest/Nederlof de verhouding tussen de mededelingsplicht en de onderzoeksplicht bij dwaling?",
+    "a": [
+      "De onderzoeksplicht van de koper prevaleert te allen tijde boven de mededelingsplicht van de verkoper.",
+      "De goede trouw verzet zich ertegen dat de verkoper de onderzoeksplicht als verweer voert bij schending van zijn mededelingsplicht.",
+      "Een koper kan zich nooit op dwaling beroepen indien hij heeft nagelaten een aankoopkeuring te verrichten.",
+      "De mededelingsplicht geldt uitsluitend indien de koper expliciet naar bepaalde eigenschappen heeft gevraagd."
+    ],
+    "c": 1,
+    "exp": "HR 21 december 1990, NJ 1991/251 (Van Geest/Nederlof).\n\nWanneer een partij haar mededelingsplicht heeft geschonden, kan zij de wederpartij in het algemeen niet tegenwerpen dat deze onvoldoende onderzoek heeft verricht."
+  },
+  {
+    "q": "Welk vereiste is noodzakelijk om met succes een beroep te kunnen doen op bedrog in de zin van artikel 3:44 lid 3 BW?",
+    "a": [
+      "Er moet sprake zijn van een aanprijzing in algemene bewoordingen.",
+      "Er moet sprake zijn van dwaling omtrent een uitsluitend toekomstige omstandigheid.",
+      "Er moet sprake zijn van opzet tot misleiding door de wederpartij.",
+      "Er moet sprake zijn van een wederzijdse onjuiste voorstelling van zaken."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:44 lid 3 BW.\n\nBedrog vereist dat iemand een ander tot het verrichten van een rechtshandeling beweegt door enige opzettelijk daartoe gedane onjuiste mededeling, door het opzettelijk daartoe verzwijgen van enig feit of door een andere kunstgreep."
+  },
+  {
+    "q": "Wanneer wordt toestemming van de wettelijk vertegenwoordiger aan een minderjarige verondersteld te zijn verleend volgens artikel 1:234 lid 3 BW?",
+    "a": [
+      "Indien het een rechtshandeling betreft die gebruikelijk is voor minderjarigen van zijn leeftijd.",
+      "Indien de minderjarige de leeftijd van zestien jaar heeft bereikt en zelfstandig woont.",
+      "Indien de rechtshandeling schriftelijk is vastgelegd en ondertekend door de minderjarige.",
+      "Indien de minderjarige met eigen geld betaalt dat hij door arbeid heeft verkregen."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:234 lid 3 BW.\n\nDe toestemming wordt verondersteld te zijn verleend indien het een rechtshandeling betreft ten aanzien waarvan in het maatschappelijk verkeer gebruikelijk is dat minderjarigen van zijn leeftijd deze zelfstandig verrichten."
+  },
+  {
+    "q": "Wat is het rechtsgevolg van een rechtshandeling die verricht is door een onder curatele gestelde zonder de vereiste toestemming van de curator?",
+    "a": [
+      "De rechtshandeling is nietig van rechtswege.",
+      "De rechtshandeling is rechtsgeldig maar ontbindbaar.",
+      "De rechtshandeling is vernietigbaar.",
+      "De rechtshandeling is geldig zolang de curator geen bezwaar maakt."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:32 lid 2 BW.\n\nEen rechtshandeling van een onbekwame is vernietigbaar."
+  },
+  {
+    "q": "Wat is de sanctie op een rechtshandeling die door inhoud of strekking in strijd is met de goede zeden of de openbare orde?",
+    "a": [
+      "De rechtshandeling is vernietigbaar op verzoek van de benadeelde.",
+      "De rechtshandeling is van rechtswege nietig.",
+      "De rechtshandeling is geldig, maar de rechter kan de gevolgen matigen.",
+      "De rechtshandeling is vernietigbaar, tenzij de wederpartij te goeder trouw was."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:40 lid 1 BW.\n\nEen rechtshandeling die door inhoud of strekking in strijd is met de goede zeden of de openbare orde, is nietig."
+  },
+  {
+    "q": "Welke maatstaf hanteert de Hoge Raad in het arrest Haviltex voor de uitleg van overeenkomsten?",
+    "a": [
+      "Uitsluitend de taalkundige betekenis van de bewoordingen in het contract is beslissend.",
+      "De bedoeling van de partijen is irrelevant indien de tekst van het contract duidelijk is.",
+      "De zin die partijen in de gegeven omstandigheden over en weer redelijkerwijs aan de bepalingen mochten toekennen.",
+      "De uitleg die de meest gunstige rechtsgevolgen heeft voor de partij die het contract niet heeft opgesteld."
+    ],
+    "c": 2,
+    "exp": "HR 13 maart 1981, NJ 1981/635 (Haviltex).\n\nBeslissend is de zin die partijen in de gegeven omstandigheden over en weer redelijkerwijs aan de bepalingen mochten toekennen en hetgeen zij te dien aanzien redelijkerwijs van elkaar mochten verwachten."
+  },
+  {
+    "q": "Wanneer is volgens het arrest Kuunders/Swinkels een beroep op een exoneratiebeding naar maatstaven van redelijkheid en billijkheid onaanvaardbaar?",
+    "a": [
+      "Indien de schade is veroorzaakt door lichte onachtzaamheid van een ondergeschikte.",
+      "Indien de schade is veroorzaakt door ernstige nalatigheid van niet-leidinggevend personeel.",
+      "Indien de schade is gedekt door een verzekering van de benadeelde partij.",
+      "Indien de schade is te wijten aan opzet of bewuste roekeloosheid van de schuldenaar of zijn leidinggevenden."
+    ],
+    "c": 3,
+    "exp": "HR 18 juni 2004, NJ 2004/585 (Kuunders/Swinkels).\n\nEen beroep op een exoneratiebeding is onaanvaardbaar als de schade is te wijten aan opzet of bewuste roekeloosheid van de schuldenaar of van met de leiding van zijn bedrijf belaste personen."
+  },
+  {
+    "q": "Wat houdt de beperkende werking van de redelijkheid en billijkheid in zoals omschreven in artikel 6:248 lid 2 BW?",
+    "a": [
+      "Een regel is niet van toepassing voor zover dit in de gegeven omstandigheden naar maatstaven van redelijkheid en billijkheid onaanvaardbaar zou zijn.",
+      "Een regel is niet van toepassing indien dit nadelig is voor de zwakkere partij bij de overeenkomst.",
+      "Een regel is slechts van toepassing indien partijen deze uitdrukkelijk in de overeenkomst hebben opgenomen.",
+      "Een regel is van toepassing tenzij partijen schriftelijk anders zijn overeengekomen."
+    ],
+    "c": 0,
+    "exp": "Artikel 6:248 lid 2 BW.\n\nEen tussen partijen als gevolg van de overeenkomst geldende regel is niet van toepassing, voor zover dit in de gegeven omstandigheden naar maatstaven van redelijkheid en billijkheid onaanvaardbaar zou zijn."
+  },
+  {
+    "q": "Welk criterium geldt voor wijziging of ontbinding van een overeenkomst wegens onvoorziene omstandigheden ex artikel 6:258 BW?",
+    "a": [
+      "De omstandigheden moeten de nakoming van de overeenkomst blijvend onmogelijk maken.",
+      "De omstandigheden moeten van dien aard zijn dat de wederpartij ongewijzigde instandhouding niet mag verwachten.",
+      "De omstandigheden moeten reeds bij het sluiten van de overeenkomst voorzienbaar zijn geweest.",
+      "De omstandigheden moeten uitsluitend financieel nadeel toebrengen aan één van de partijen."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:258 lid 1 BW.\n\nDe rechter kan de overeenkomst wijzigen of ontbinden op grond van onvoorziene omstandigheden welke van dien aard zijn dat de wederpartij naar maatstaven van redelijkheid en billijkheid ongewijzigde instandhouding van de overeenkomst niet mag verwachten."
+  },
+  {
+    "q": "Wat is een vereiste voor een geslaagd beroep op misbruik van omstandigheden volgens artikel 3:44 lid 4 BW?",
+    "a": [
+      "De rechtshandeling moet onder invloed van een bedreiging met enig nadeel tot stand zijn gekomen.",
+      "De wederpartij moet een onjuiste mededeling hebben gedaan met het oogmerk te misleiden.",
+      "De wederpartij wist of moest begrijpen dat de ander door bijzondere omstandigheden werd bewogen.",
+      "De rechtshandeling moet nadelig zijn voor beide partijen bij de overeenkomst."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:44 lid 4 BW.\n\nMisbruik van omstandigheden is aanwezig wanneer iemand die weet of moet begrijpen dat een ander door bijzondere omstandigheden wordt bewogen, het tot stand komen van die rechtshandeling bevordert."
+  },
+  {
+    "q": "Wanneer levert een bedreiging een wilsgebrek op in de zin van artikel 3:44 lid 2 BW?",
+    "a": [
+      "Indien de bedreiging zodanig is dat een redelijk oordelend mens daardoor kan worden beïnvloed.",
+      "Indien de bedreiging uitsluitend betrekking heeft op een fysieke aantasting van de persoon.",
+      "Indien de bedreiging afkomstig is van een derde die geen partij is bij de overeenkomst.",
+      "Indien de bedreiging pas na het sluiten van de overeenkomst ter kennis van de wederpartij komt."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:44 lid 2 BW.\n\nDe bedreiging moet zodanig zijn, dat een redelijk oordelend mens daardoor kan worden beïnvloed."
+  },
+  {
+    "q": "Op welke wijzen kan een vernietigbare rechtshandeling volgens artikel 3:49 BW worden vernietigd?",
+    "a": [
+      "Door een eenzijdige wilsverklaring zonder tussenkomst van de rechter of door verjaring.",
+      "Door een buitengerechtelijke verklaring of door een rechterlijke uitspraak.",
+      "Uitsluitend door een rechterlijke uitspraak op vordering van de benadeelde.",
+      "Door een gezamenlijke verklaring van beide partijen of door een notariële akte."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:49 BW.\n\nEen vernietigbare rechtshandeling wordt vernietigd hetzij door een buitengerechtelijke verklaring, hetzij door een rechterlijke uitspraak."
+  },
+  {
+    "q": "Wat is de verjaringstermijn voor de rechtsvordering tot vernietiging wegens dwaling volgens artikel 3:52 BW?",
+    "a": [
+      "Vijf jaren nadat de rechtshandeling is verricht.",
+      "Drie jaren nadat de dwaling is ontdekt.",
+      "Twintig jaren nadat de overeenkomst tot stand is gekomen.",
+      "Drie jaren nadat de prestatie is geleverd."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:52 lid 1 sub c BW.\n\nDe rechtsvordering tot vernietiging verjaart in geval van dwaling drie jaren nadat de dwaling is ontdekt."
+  },
+  {
+    "q": "Wat is het juridische gevolg van een rechtshandeling die onder invloed van een geestelijke stoornis is verricht (artikel 3:34 BW)?",
+    "a": [
+      "De rechtshandeling is geldig, maar de wederpartij is schadeplichtig.",
+      "De rechtshandeling is van rechtswege nietig.",
+      "De rechtshandeling is vernietigbaar.",
+      "De rechtshandeling is geldig, tenzij de wederpartij te kwader trouw was."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:34 lid 2 BW.\n\nEen rechtshandeling verricht onder invloed van een geestelijke stoornis is vernietigbaar (tenzij het een eenzijdige ongerichte rechtshandeling betreft, dan is deze nietig)."
+  },
+  {
+    "q": "In welk geval kan een wederpartij zich beroepen op gerechtvaardigd vertrouwen tegen een beroep op het ontbreken van de wil (artikel 3:35 BW)?",
+    "a": [
+      "Indien de wederpartij de verklaring of gedraging redelijkerwijze als een verklaring van die strekking mocht opvatten.",
+      "Indien de wederpartij wist dat de wil van de andere partij ontbrak bij de verklaring.",
+      "Indien de verklaring afkomstig is van een handelingsonbekwame persoon.",
+      "Indien de verklaring is gedaan onder invloed van bedreiging of bedrog."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:35 BW.\n\nTegen hem die een verklaring of gedraging overeenkomstig de zin die hij daaraan onder de gegeven omstandigheden redelijkerwijze mocht toekennen, heeft opgevat, kan geen beroep worden gedaan op het ontbreken van de wil."
+  },
+  {
+    "q": "Kan een verbintenis door een ander dan de schuldenaar worden nagekomen volgens artikel 6:30 BW?",
+    "a": [
+      "Nee, een verbintenis moet altijd persoonlijk door de schuldenaar worden nagekomen.",
+      "Ja, tenzij de inhoud of de strekking van de verbintenis zich daartegen verzet.",
+      "Ja, maar alleen met uitdrukkelijke schriftelijke toestemming van de schuldeiser.",
+      "Nee, tenzij de schuldenaar in staat van faillissement verkeert."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:30 BW.\n\nDe nakoming van een verbintenis kan geschieden door een ander dan de schuldenaar, tenzij de inhoud of strekking van de verbintenis zich daartegen verzet."
+  },
+  {
+    "q": "Wat is het gevolg van een betaling aan een onbevoegde volgens artikel 6:32 BW?",
+    "a": [
+      "De betaling is geldig en bevrijdend, ongeacht de omstandigheden.",
+      "De betaling is nooit geldig; de schuldenaar moet opnieuw betalen aan de schuldeiser.",
+      "De betaling is geldig indien degene aan wie betaald moest worden de betaling heeft bekrachtigd of erdoor is gebaat.",
+      "De betaling is geldig indien de onbevoegde te goeder trouw was ten tijde van de ontvangst."
+    ],
+    "c": 2,
+    "exp": "Artikel 6:32 BW.\n\nBetaling aan een ander dan de schuldeiser of dan degene die met hem of in zijn plaats bevoegd is de betaling in ontvangst te nemen, bevrijdt de schuldenaar, voor zover degene aan wie betaald moest worden de betaling heeft bekrachtigd of erdoor is gebaat."
+  },
+  {
+    "q": "Wat is het gevolg van een overeenkomst die in strijd is met een dwingende wetsbepaling die uitsluitend strekt ter bescherming van één van de partijen?",
+    "a": [
+      "De overeenkomst is nietig.",
+      "De overeenkomst is vernietigbaar.",
+      "De overeenkomst is rechtsgeldig.",
+      "De overeenkomst is ontbindbaar."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:40 lid 2 BW.\n\nStrijd met een dwingende wetsbepaling leidt tot nietigheid, doch uitsluitend indien de bepaling strekt ter bescherming van één van de partijen, leidt dit tot vernietigbaarheid."
+  },
+  {
+    "q": "Welke mogelijkheid heeft de schuldeiser indien de schuldenaar aanbiedt het verschuldigde in gedeelten te voldoen (artikel 6:29 BW)?",
+    "a": [
+      "De schuldeiser is verplicht de deelbetaling te accepteren.",
+      "De schuldeiser mag de deelbetaling weigeren, tenzij de wet anders bepaalt.",
+      "De schuldeiser moet de deelbetaling accepteren als deze minimaal de helft bedraagt.",
+      "De schuldeiser mag de deelbetaling alleen weigeren bij een geldsom."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:29 BW.\n\nDe schuldenaar is zonder toestemming van de schuldeiser niet bevoegd het verschuldigde in gedeelten te voldoen."
+  },
+  {
+    "q": "Wat is het rechtsgevolg indien een rechtshandeling niet voldoet aan een wettelijk voorgeschreven vorm (artikel 3:39 BW)?",
+    "a": [
+      "De rechtshandeling is vernietigbaar.",
+      "De rechtshandeling is nietig, tenzij de wet anders bepaalt.",
+      "De rechtshandeling is geldig, maar de bewijslast wordt omgekeerd.",
+      "De rechtshandeling is geldig, maar kan door de rechter worden herroepen."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:39 BW.\n\nTenzij de wet anders bepaalt, zijn rechtshandelingen die niet in de voorgeschreven vorm zijn verricht, nietig."
+  },
+  {
+    "q": "Wat houdt de bevoegdheid tot bevestiging van een rechtshandeling in volgens artikel 3:55 BW?",
+    "a": [
+      "De bevoegdheid van de rechter om een nietige rechtshandeling geldig te verklaren.",
+      "De bevoegdheid van de wederpartij om de vernietiging ongedaan te maken.",
+      "De bevoegdheid om een vernietigbare rechtshandeling als geldig te bevestigen, waardoor het recht op vernietiging vervalt.",
+      "De bevoegdheid van de notaris om een onderhandse akte te bekrachtigen."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:55 lid 1 BW.\n\nDe bevoegdheid om ter zake van een vernietigbare rechtshandeling een beroep op een vernietigingsgrond te doen, vervalt, wanneer hij aan wie deze bevoegdheid toekomt, de rechtshandeling heeft bevestigd."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest Uitleg Echtscheidingsconvenant (2015) over de uitlegmaatstaf bij tegenstrijdige belangen?",
+    "a": [
+      "Bij tegenstrijdige belangen is de taalkundige betekenis altijd doorslaggevend.",
+      "De Haviltex-maatstaf is niet van toepassing bij de uitleg van echtscheidingsconvenanten.",
+      "Ook bij haaks op elkaar staande belangen blijft de Haviltex-norm beslissend voor de uitleg.",
+      "Bij onduidelijkheid moet de overeenkomst in het nadeel van de opsteller worden uitgelegd."
+    ],
+    "c": 2,
+    "exp": "HR 13 november 2015, NJ 2015/467 (Uitleg echtscheidingsconvenant).\n\nDe Haviltexmaatstaf is ook van toepassing indien partijen op de tekst van de overeenkomst haaks op elkaar staande bedoelingen en verwachtingen baseren."
+  },
+  {
+    "q": "Wat is het rechtsgevolg van een aanbod waarin een termijn voor aanvaarding is gesteld (artikel 6:221 BW)?",
+    "a": [
+      "Het aanbod vervalt door verloop van de gestelde termijn.",
+      "Het aanbod blijft geldig tot het expliciet wordt herroepen.",
+      "Het aanbod wordt na de termijn omgezet in een vrijblijvend aanbod.",
+      "Het aanbod kan na de termijn alleen nog schriftelijk worden aanvaard."
+    ],
+    "c": 0,
+    "exp": "Artikel 6:221 lid 1 BW.\n\nEen schriftelijk aanbod vervalt, wanneer het niet binnen een redelijke tijd wordt aanvaard (indien geen termijn is gesteld) of door verloop van de gestelde termijn."
+  },
+  {
+    "q": "Wanneer is er sprake van onverschuldigde betaling in de zin van artikel 6:203 BW?",
+    "a": [
+      "Wanneer de prestatie niet voldoet aan de kwaliteitseisen.",
+      "Wanneer een prestatie is verricht zonder dat daartoe een rechtsgrond bestond.",
+      "Wanneer de schuldenaar te laat heeft betaald.",
+      "Wanneer de betaling is verricht aan een onbevoegde vertegenwoordiger."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:203 lid 1 BW.\n\nDegene die een ander zonder rechtsgrond een goed heeft gegeven, is gerechtigd dit van de ontvanger als onverschuldigd betaald terug te vorderen."
+  },
+  {
+    "q": "Welk vereiste stelt artikel 6:198 BW aan zaakwaarneming?",
+    "a": [
+      "De waarnemer moet een vergoeding bedingen voor zijn diensten.",
+      "Het zich willens en wetens en op redelijke grond inlaten met de behartiging van eens anders belang.",
+      "De waarnemer moet handelen op basis van een volmacht van de belanghebbende.",
+      "De waarneming moet leiden tot een vermogensvermeerdering bij de belanghebbende."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:198 BW.\n\nZaakwaarneming is het zich willens en wetens en op redelijke grond inlaten met de behartiging van eens anders belang, zonder de bevoegdheid daartoe aan een rechtshandeling of een elders in de wet geregelde rechtsverhouding te ontlenen."
+  },
+  {
+    "q": "Tot welk bedrag is degene die ongerechtvaardigd is verrijkt verplicht de schade te vergoeden volgens artikel 6:212 BW?",
+    "a": [
+      "Tot het volledige bedrag van de geleden schade, ongeacht de verrijking.",
+      "Tot het bedrag van zijn verrijking, voor zover dit redelijk is.",
+      "Tot de helft van de verrijking, tenzij de wet anders bepaalt.",
+      "Tot het bedrag dat de verarmde heeft uitgegeven."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:212 lid 1 BW.\n\nHij die ongerechtvaardigd is verrijkt ten koste van een ander, is verplicht, voor zover dit redelijk is, diens schade te vergoeden tot het bedrag van zijn verrijking."
+  },
+  {
+    "q": "Wat is de status van een eenzijdige ongerichte rechtshandeling verricht door een handelingsonbekwame (artikel 3:32 BW)?",
+    "a": [
+      "Deze is vernietigbaar.",
+      "Deze is rechtsgeldig.",
+      "Deze is nietig.",
+      "Deze is geldig, mits bekrachtigd door de wettelijk vertegenwoordiger."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:32 lid 2 BW.\n\nEen eenzijdige rechtshandeling van een onbekwame, die niet tot een of meer bepaalde personen gericht was, is nietig."
+  },
+  {
+    "q": "Wanneer is sprake van wederzijdse dwaling in de zin van artikel 6:228 lid 1 sub c BW?",
+    "a": [
+      "Wanneer beide partijen bij het sluiten van de overeenkomst van dezelfde onjuiste veronderstelling zijn uitgegaan.",
+      "Wanneer beide partijen elkaar opzettelijk hebben misleid.",
+      "Wanneer beide partijen een andere uitleg geven aan de bepalingen van het contract.",
+      "Wanneer de dwaling voor beide partijen kenbaar was."
+    ],
+    "c": 0,
+    "exp": "Artikel 6:228 lid 1 sub c BW.\n\nDe overeenkomst is vernietigbaar indien de wederpartij bij het sluiten van de overeenkomst van dezelfde onjuiste veronderstelling als de dwalende is uitgegaan."
+  }
+]

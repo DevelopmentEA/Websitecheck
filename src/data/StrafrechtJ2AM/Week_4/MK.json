@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Welke leer ten aanzien van het criterium 'begin van uitvoering' bij strafbare poging wordt in de Nederlandse rechtspraak gehanteerd?",
+    "a": [
+      "De gematigd objectieve leer, waarbij de uiterlijke verschijningsvorm centraal staat.",
+      "De subjectieve leer, waarbij de criminele wil van de dader als enige maatstaf geldt.",
+      "De zuiver objectieve leer, waarbij de daadwerkelijke fysieke schade bepalend is.",
+      "De materiele leer, waarbij enkel de voltooiing van het delict tot strafbaarheid leidt."
+    ],
+    "c": 0,
+    "exp": "HR Uitzendbureau Cito; HR Helikopter.\n\nDe Nederlandse rechtspraak hanteert een gematigd objectieve benadering ten aanzien van het begrip 'begin van uitvoering'. Het gaat om gedragingen die naar hun uiterlijke verschijningsvorm zijn gericht op de voltooiing van het voorgenomen misdrijf."
+  },
+  {
+    "q": "Wat is de maximale strafbedreiging voor een poging tot misdrijf in vergelijking met het voltooide delict?",
+    "a": [
+      "De straf is gelijk aan die van het voltooide delict.",
+      "De straf wordt bij poging met een derde verminderd.",
+      "De straf wordt bij poging met de helft verminderd.",
+      "De straf is afhankelijk van de mate van voltooiing."
+    ],
+    "c": 1,
+    "exp": "Art. 45 lid 2 Sr.\n\nHet maximum van de hoofdstraffen op het misdrijf gesteld wordt bij poging met een derde verminderd."
+  },
+  {
+    "q": "Welk vereiste geldt voor de strafbaarstelling van voorbereidingshandelingen volgens artikel 46 Sr?",
+    "a": [
+      "Het moet gaan om een misdrijf waarop een gevangenisstraf van vier jaar of meer is gesteld.",
+      "Het moet gaan om een misdrijf waarop een gevangenisstraf van zes jaar of meer is gesteld.",
+      "Het moet gaan om een misdrijf waarop een gevangenisstraf van acht jaar of meer is gesteld.",
+      "Het moet gaan om een misdrijf waarop een levenslange gevangenisstraf is gesteld."
+    ],
+    "c": 2,
+    "exp": "Art. 46 Sr.\n\nVoorbereiding is strafbaar wanneer het gaat om de voorbereiding van een misdrijf waarop naar de wettelijke omschrijving een gevangenisstraf van acht jaren of meer is gesteld."
+  },
+  {
+    "q": "In het arrest Grenswisselkantoor stonden verdachten met een auto en wapens te wachten voor een bank. Waarom was hier géén sprake van een strafbare poging?",
+    "a": [
+      "Omdat de verdachten vrijwillig waren teruggetreden voordat de politie arriveerde.",
+      "Omdat de verdachten de bank daadwerkelijk waren binnengegaan zonder wapens.",
+      "Omdat de auto niet als een gevaarlijk voorwerp kon worden gekwalificeerd.",
+      "Omdat zij de auto niet hadden verlaten en geen handeling hadden verricht gericht op voltooiing."
+    ],
+    "c": 3,
+    "exp": "HR Grenswisselkantoor.\n\nEr is geen begin van uitvoering als iemand zich met een auto naar een bank begeeft, maar die auto niet verlaat en geen gedraging verricht die naar uiterlijke verschijningsvorm gericht is op de voltooiing van het misdrijf."
+  },
+  {
+    "q": "Wat is vereist voor een geslaagd beroep op vrijwillige terugtred bij een zogenoemde 'voltooide poging'?",
+    "a": [
+      "Een zodanig optreden van de verdachte dat naar aard en tijdstip geschikt is het intreden van het gevolg te beletten.",
+      "Het enkel staken van de uitvoeringshandelingen voordat het misdrijf volledig is voltooid door de verdachte.",
+      "Het afwachten of het gevolg intreedt en vervolgens de politie waarschuwen over de locatie van het delict.",
+      "Het tonen van berouw na de daad, ongeacht of het gevolg door toedoen van de verdachte wordt voorkomen."
+    ],
+    "c": 0,
+    "exp": "HR Kopje Onder; HR Remkabel.\n\nBij een voltooide poging is voor vrijwillige terugtred vereist dat de verdachte zodanig optreedt dat dit naar aard en tijdstip geschikt is om het intreden van het gevolg te beletten."
+  },
+  {
+    "q": "Welke van de volgende categorieën behoort tot de limitatieve opsomming van voorbereidingsmiddelen in artikel 46 Sr?",
+    "a": [
+      "Geldmiddelen.",
+      "Vervoermiddelen.",
+      "Menselijke hulp.",
+      "Geestelijke steun."
+    ],
+    "c": 1,
+    "exp": "Art. 46 Sr.\n\nArtikel 46 Sr bevat een limitatieve opsomming van voorbereidingsmiddelen: voorwerpen, stoffen, informatiedragers, ruimten of vervoermiddelen."
+  },
+  {
+    "q": "Hoe oordeelde de Hoge Raad in het arrest Samir A. over de 'primitieve' aard van de aangetroffen voorbereidingsmiddelen?",
+    "a": [
+      "De primitieve aard sluit strafbaarheid uit omdat de middelen objectief ongeschikt zijn.",
+      "De middelen moeten daadwerkelijk geschikt zijn om het misdrijf te kunnen voltooien.",
+      "Het gaat erom of de middelen naar uiterlijke verschijningsvorm dienstig kunnen zijn voor het misdadige doel.",
+      "Bij onbeholpen middelen is er sprake van een absoluut ondeugdelijke poging en dus straffeloosheid."
+    ],
+    "c": 2,
+    "exp": "HR Samir A.\n\nDe Hoge Raad stelt dat beoordeeld moet worden of voorwerpen naar hun uiterlijke verschijningsvorm ten tijde van het handelen dienstig kunnen zijn voor het misdadige doel dat de verdachte voor ogen had, ook als deze primitief zijn."
+  },
+  {
+    "q": "Wat houdt de 'gematigd objectieve leer' in bij de beoordeling van een strafbare poging?",
+    "a": [
+      "De intentie van de dader is irrelevant; alleen de fysieke schade telt.",
+      "De gevaarlijke wil van de dader is voldoende voor strafbaarheid.",
+      "De gedraging moet een begin van uitvoering zijn, maar de intentie is ook van belang.",
+      "Er moet sprake zijn van een volledig voltooide uitvoeringshandeling."
+    ],
+    "c": 2,
+    "exp": "HR Uitzendbureau Cito; HR Helikopter.\n\nBij de gematigd objectieve benadering ligt het zwaartepunt bij de objectieve zijde (begin van uitvoering/uiterlijke verschijningsvorm), maar wordt dit ingekleurd door de subjectieve intentie van de verdachte."
+  },
+  {
+    "q": "In welke situatie spreekt men van 'relatieve ondeugdelijkheid' bij een poging?",
+    "a": [
+      "Wanneer het middel of object in het specifieke geval ondeugdelijk is.",
+      "Wanneer het middel of object in alle gevallen ondeugdelijk is.",
+      "Wanneer de dader vrijwillig terugtreedt voor de voltooiing.",
+      "Wanneer het gevolg door een derde wordt voorkomen."
+    ],
+    "c": 0,
+    "exp": "Studieboek materieel strafrecht.\n\nWanneer het middel of object slechts in het specifieke geval ondeugdelijk is, noemt men dat relatieve ondeugdelijkheid. Dit leidt in beginsel tot strafbaarheid."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest 'Steken in de buik' over het dragen van een steekwerend vest door het slachtoffer?",
+    "a": [
+      "Dit levert een absoluut ondeugdelijke poging op, waardoor de verdachte niet strafbaar is.",
+      "Dit is een bijzondere omstandigheid die niet wegneemt dat steken normaal een aanmerkelijke kans op de dood oplevert.",
+      "Dit zorgt ervoor dat er geen sprake kan zijn van een begin van uitvoering van doodslag.",
+      "Dit maakt dat de verdachte slechts veroordeeld kan worden voor zware mishandeling."
+    ],
+    "c": 1,
+    "exp": "HR Steken in de buik.\n\nEen bijzondere omstandigheid zoals een steekwerend vest is niet onverenigbaar met de vaststelling dat het met kracht steken in de buik normaal gesproken een aanmerkelijke kans op de dood doet ontstaan."
+  },
+  {
+    "q": "Welke rol spelen externe factoren bij een beroep op vrijwillige terugtred volgens het arrest m.s. Canopus?",
+    "a": [
+      "Externe factoren sluiten vrijwillige terugtred per definitie uit.",
+      "Externe factoren zijn irrelevant als de dader stopt met de uitvoering.",
+      "Externe factoren mogen niet de overhand hebben gehad in de beslissing tot terugtred.",
+      "Externe factoren leiden altijd tot strafvermindering, maar niet tot straffeloosheid."
+    ],
+    "c": 2,
+    "exp": "HR m.s. Canopus.\n\nVoor vrijwillige terugtred is vereist dat de externe, niet van de wil van de dader afhankelijke factoren, niet de overhand hebben gehad bij de beslissing om het misdrijf niet te voltooien."
+  },
+  {
+    "q": "Wat is vereist ten aanzien van het 'misdadige doel' bij strafbare voorbereiding volgens het arrest Misdadig doel?",
+    "a": [
+      "Het doel moet volledig gerealiseerd zijn voordat strafbaarheid intreedt.",
+      "Het enkele bezit van voorwerpen is voldoende, ongeacht het doel.",
+      "Het doel hoeft niet vast te staan, zolang de voorwerpen verdacht zijn.",
+      "Uit de bewijsvoering moet met voldoende bepaaldheid blijken welk misdadig doel de verdachte voor ogen had."
+    ],
+    "c": 3,
+    "exp": "HR Misdadig doel.\n\nHet enkele voorhanden hebben van voorwerpen is onvoldoende; er moet uit de bewijsvoering met voldoende bepaaldheid blijken welk misdadig doel de verdachte met de voorwerpen voor ogen had."
+  },
+  {
+    "q": "Welk delict is volgens de wetgever uitgesloten van strafbare poging vanwege de aard van het delict?",
+    "a": [
+      "Eenvoudige mishandeling (art. 300 Sr).",
+      "Diefstal (art. 310 Sr).",
+      "Moord (art. 289 Sr).",
+      "Brandstichting (art. 157 Sr)."
+    ],
+    "c": 0,
+    "exp": "Art. 300 Sr; Studieboek materieel strafrecht.\n\nPoging tot eenvoudige mishandeling is niet strafbaar, omdat dit al sprake zou zijn als iemand zijn arm met kracht opheft zonder te slaan."
+  },
+  {
+    "q": "Wat impliceert het arrest HR Remkabel ten aanzien van vrijwillige terugtred?",
+    "a": [
+      "Hoe waarschijnlijker het intreden van het gevolg, des te minder ligt vrijwillige terugtred voor de hand.",
+      "Het doorsnijden van een remkabel is altijd een voltooide poging zonder mogelijkheid tot terugtred.",
+      "Een telefonische waarschuwing is per definitie voldoende voor vrijwillige terugtred.",
+      "Vrijwillige terugtred is alleen mogelijk als de dader fysiek ingrijpt op de plaats delict."
+    ],
+    "c": 0,
+    "exp": "HR Remkabel.\n\nBij de beoordeling van vrijwillige terugtred is mede van belang in welke mate het waarschijnlijk is dat het gevolg zou zijn ingetreden; hoe waarschijnlijker, des te minder ligt vrijwillige terugtred in de rede."
+  },
+  {
+    "q": "Welk type opzet is minimaal vereist voor strafbare voorbereiding in de zin van artikel 46 Sr?",
+    "a": [
+      "Oogmerk.",
+      "Voorwaardelijk opzet.",
+      "Noodzakelijkheidsbewustzijn.",
+      "Roekeloosheid."
+    ],
+    "c": 1,
+    "exp": "Art. 46 Sr; Jurisprudentie.\n\nVoor strafbare voorbereiding is opzet vereist, waarbij voorwaardelijk opzet volstaat. Dit opzet moet gericht zijn op de voorbereidingshandeling én het gronddelict."
+  },
+  {
+    "q": "Is een poging tot een culpoos misdrijf strafbaar volgens het Wetboek van Strafrecht?",
+    "a": [
+      "Ja, poging tot elk misdrijf is strafbaar.",
+      "Ja, mits het gaat om een misdrijf met een levenslang strafmaximum.",
+      "Nee, poging vereist het voornemen (opzet) en is bij culpa ondenkbaar.",
+      "Nee, tenzij de culpa roekeloosheid betreft."
+    ],
+    "c": 2,
+    "exp": "Art. 45 Sr.\n\nArt. 45 Sr vereist een voornemen (opzet) van de dader. Omdat culpoze delicten per definitie geen opzet bevatten, is een opzettelijke poging tot een culpoos delict onmogelijk."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest Uitzendbureau Cito over het begin van uitvoering?",
+    "a": [
+      "Er is pas een begin van uitvoering als de dader de kassa heeft aangeraakt.",
+      "Aanbellen met een vermomming en wapen kan worden beschouwd als een begin van uitvoering.",
+      "Het enkel observeren van het pand is voldoende voor een begin van uitvoering.",
+      "Er is geen begin van uitvoering zolang er geen fysiek geweld is gebruikt."
+    ],
+    "c": 1,
+    "exp": "HR Uitzendbureau Cito.\n\nGedragingen zoals aangebellen met gedeeltelijk afgedekt gelaat en een schietklaar vuurwapen moeten naar hun uiterlijke verschijningsvorm worden beschouwd als te zijn gericht op de voltooiing van het misdrijf."
+  },
+  {
+    "q": "Welk criterium uit HR Helikopter is relevant voor het bepalen van een begin van uitvoering?",
+    "a": [
+      "Of de verdachte fysiek aanwezig was op de plaats delict.",
+      "Of de handeling uitsluitend door de hoofddader is verricht.",
+      "Of de gedragingen naar hun uiterlijke verschijningsvorm zijn gericht op voltooiing, mede gelet op het planmatige karakter.",
+      "Of de verdachte een bekentenis heeft afgelegd over zijn intenties."
+    ],
+    "c": 2,
+    "exp": "HR Helikopter.\n\nDe Hoge Raad herhaalt het Cito-criterium en benadrukt dat het aankomt op de concrete omstandigheden, waarbij het planmatige karakter en de samenhang van gedragingen van belang zijn."
+  },
+  {
+    "q": "Wat wordt verstaan onder 'absolute ondeugdelijkheid' bij een poging?",
+    "a": [
+      "Het middel of object is onder geen enkele omstandigheid geschikt om het misdrijf te voltooien.",
+      "Het middel is in dit specifieke geval toevallig niet geschikt.",
+      "De dader is fysiek niet in staat het delict uit te voeren.",
+      "Het object is wel aanwezig, maar niet bereikbaar voor de dader."
+    ],
+    "c": 0,
+    "exp": "Studieboek materieel strafrecht.\n\nAbsolute ondeugdelijkheid houdt in dat het middel of object altijd (in alle gevallen) ondeugdelijk is om het beoogde gevolg te bewerkstelligen (bijv. schieten op een lijk)."
+  },
+  {
+    "q": "Welk aspect moet worden vastgesteld bij de 'kenniscomponent' van voorwaardelijk opzet in de context van poging?",
+    "a": [
+      "Dat de dader zeker wist dat het gevolg zou intreden.",
+      "Dat de dader wetenschap had van de aanmerkelijke kans op het gevolg.",
+      "Dat de dader de bedoeling had om de rechtsorde te schokken.",
+      "Dat de dader op de hoogte was van de strafbaarheid van het feit."
+    ],
+    "c": 1,
+    "exp": "Jurisprudentie (algemeen kader voorwaardelijk opzet).\n\nDe kenniscomponent vereist dat de dader wetenschap heeft van de aanmerkelijke kans dat het gevolg zal intreden (of dat die wetenschap verondersteld mag worden)."
+  },
+  {
+    "q": "Wat is het rechtsgevolg van een geslaagd beroep op vrijwillige terugtred?",
+    "a": [
+      "De verdachte is strafbaar, maar krijgt strafvermindering.",
+      "De verdachte wordt ontslagen van alle rechtsvervolging wegens gebrek aan schuld.",
+      "De poging is niet strafbaar.",
+      "De verdachte wordt vrijgesproken wegens gebrek aan bewijs."
+    ],
+    "c": 2,
+    "exp": "Art. 46b Sr.\n\nPoging (en voorbereiding) bestaat niet indien het misdrijf niet is voltooid ten gevolge van omstandigheden van de wil van de dader afhankelijk; de poging is dan niet strafbaar."
+  },
+  {
+    "q": "Hoe wordt het 'misdadige doel' bij strafbare voorbereiding vastgesteld volgens jurisprudentie en literatuur?",
+    "a": [
+      "Het moet gaan om een vaag voornemen om de wet te overtreden.",
+      "Er moet sprake zijn van een voldoende geconcretiseerd daadplan.",
+      "Het doel hoeft niet bewezen te worden als de middelen verboden zijn.",
+      "Het doel wordt uitsluitend afgeleid uit het strafblad van de verdachte."
+    ],
+    "c": 1,
+    "exp": "HR Misdadig doel; Ter Haar TPWS 2017.\n\nUit de bewijsvoering moet met voldoende bepaaldheid blijken welk misdadig doel de verdachte voor ogen had; er moet een enigszins geconcretiseerd daadplan zijn."
+  },
+  {
+    "q": "In welke fase van het delict is art. 46 Sr (voorbereiding) van toepassing?",
+    "a": [
+      "Nadat de uitvoering is begonnen maar niet voltooid.",
+      "Voordat er sprake is van een begin van uitvoering.",
+      "Nadat het misdrijf volledig is voltooid.",
+      "Tijdens de vlucht na het plegen van het delict."
+    ],
+    "c": 1,
+    "exp": "Art. 46 Sr; Studieboek materieel strafrecht.\n\nStrafbare voorbereiding ziet op de fase vóórdat er sprake is van een begin van uitvoering (poging) van het misdrijf."
+  },
+  {
+    "q": "Kan het voorhanden hebben van alledaagse voorwerpen zoals een auto en benzine strafbare voorbereiding opleveren?",
+    "a": [
+      "Nee, alledaagse voorwerpen vallen nooit onder art. 46 Sr.",
+      "Ja, als bewezen kan worden dat ze bestemd zijn tot het begaan van een specifiek ernstig misdrijf.",
+      "Nee, tenzij de voorwerpen op zichzelf illegaal zijn (zoals wapens).",
+      "Ja, maar alleen als de verdachte een bekentenis aflegt."
+    ],
+    "c": 1,
+    "exp": "HR Samir A.; HR Misdadig doel.\n\nVoorwerpen kunnen strafbare voorbereidingsmiddelen zijn als ze naar hun uiterlijke verschijningsvorm ten tijde van het handelen dienstig kunnen zijn voor het misdadige doel dat de verdachte voor ogen had."
+  },
+  {
+    "q": "Is voor strafbare voorbereiding vereist dat de dader zelf deelneemt aan het uiteindelijke misdrijf?",
+    "a": [
+      "Ja, de voorbereider moet ook de uitvoerder zijn.",
+      "Ja, tenzij er sprake is van overmacht.",
+      "Nee, het is niet nodig dat de voorbereider zelf aan het beoogde misdrijf deelneemt.",
+      "Nee, maar hij moet wel fysiek aanwezig zijn bij de uitvoering."
+    ],
+    "c": 2,
+    "exp": "Studieboek materieel strafrecht.\n\nVoor strafbaarheid ex art. 46 Sr is niet nodig dat de dader van de voorbereidingshandelingen ook zelf aan het beoogde misdrijf deelneemt."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in HR Kopje Onder over vrijwillige terugtred bij een voltooide poging?",
+    "a": [
+      "Vrijwillige terugtred is na een voltooide poging juridisch onmogelijk.",
+      "Vrijwillige terugtred is mogelijk als de verdachte optreedt om het gevolg te beletten.",
+      "Vrijwillige terugtred is alleen mogelijk als de politie nog niet is ingelicht.",
+      "Vrijwillige terugtred vereist dat de verdachte zichzelf aangeeft bij de politie."
+    ],
+    "c": 1,
+    "exp": "HR Kopje Onder.\n\nVoor vrijwillige terugtred bij een voltooide poging is een zodanig optreden van de verdachte vereist dat dit naar aard en tijdstip geschikt is om het intreden van het gevolg te beletten."
+  },
+  {
+    "q": "Welke eis stelt de wet aan de intentie van de verdachte bij strafbare voorbereiding?",
+    "a": [
+      "Er is geen opzetvereiste; schuld is voldoende.",
+      "Er moet sprake zijn van dubbel opzet (op voorbereiding en gronddelict).",
+      "Er moet sprake zijn van oogmerk op de voltooiing.",
+      "Er moet sprake zijn van boos opzet op de wederrechtelijkheid."
+    ],
+    "c": 1,
+    "exp": "Art. 46 Sr; Studieboek materieel strafrecht.\n\nBij voorbereiding is dubbel opzet vereist: opzet op de voorbereidingshandeling (bijv. voorhanden hebben) én opzet op het grondmisdrijf."
+  },
+  {
+    "q": "Wat wordt verstaan onder 'uiterlijke verschijningsvorm' in het Cito-criterium?",
+    "a": [
+      "De subjectieve gedachten van de verdachte op het moment van handelen.",
+      "De indruk die de gedraging maakt als zijnde gericht op de voltooiing van het misdrijf.",
+      "De fysieke afstand tussen de dader en het object van het misdrijf.",
+      "De verklaring die de verdachte achteraf geeft over zijn handelen."
+    ],
+    "c": 1,
+    "exp": "HR Uitzendbureau Cito.\n\nHet gaat om gedragingen die naar hun uiterlijke verschijningsvorm moeten worden beschouwd als te zijn gericht op de voltooiing van het voorgenomen misdrijf."
+  },
+  {
+    "q": "Waarom is er bij een 'absoluut ondeugdelijk object' geen sprake van een strafbare poging in de objectieve leer?",
+    "a": [
+      "Omdat de rechtsorde niet daadwerkelijk in gevaar is gebracht.",
+      "Omdat de dader geen strafbare intentie had.",
+      "Omdat er geen sprake is van een begin van uitvoering.",
+      "Omdat het gebruikte middel niet gevaarlijk was."
+    ],
+    "c": 0,
+    "exp": "Studieboek materieel strafrecht.\n\nIn de objectieve leer leidt absolute ondeugdelijkheid tot straffeloosheid omdat het gevaar voor het rechtsgoed ontbreekt (bijv. schieten op een lijk is geen gevaar voor het leven)."
+  },
+  {
+    "q": "Wat is het verschil tussen voorbereiding en poging wat betreft de strafbaarheid van 'samenspanning'?",
+    "a": [
+      "Samenspanning is een vorm van poging.",
+      "Samenspanning is een zelfstandig delict en valt vaak onder collectieve voorbereiding.",
+      "Samenspanning is alleen strafbaar als er een begin van uitvoering is.",
+      "Samenspanning wordt gelijkgesteld aan een voltooide poging."
+    ],
+    "c": 1,
+    "exp": "Studieboek materieel strafrecht.\n\nSamenspanning (art. 80 Sr) is een vorm van collectieve voorbereiding die strafbaar is gesteld zodra de afspraak tot het plegen van een ernstig misdrijf is gemaakt, nog vóór een poging."
+  }
+]

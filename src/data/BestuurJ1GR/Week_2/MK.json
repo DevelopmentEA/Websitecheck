@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Wat wordt in de Algemene wet bestuursrecht verstaan onder een a-bestuursorgaan?",
+    "a": [
+      "Een orgaan van een rechtspersoon die krachtens publiekrecht is ingesteld.",
+      "Een persoon of college, met enig openbaar gezag bekleed.",
+      "Een orgaan van een privaatrechtelijke rechtspersoon met een publieke taak.",
+      "Een instelling die volledig wordt gefinancierd door de overheid."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:1 lid 1 onder a Awb.\n\nEen a-bestuursorgaan wordt gedefinieerd als een orgaan van een rechtspersoon die krachtens publiekrecht is ingesteld."
+  },
+  {
+    "q": "Welk juridisch gevolg heeft het feit dat een bestuursorgaan geen eigen vermogen heeft?",
+    "a": [
+      "Het bestuursorgaan kan nooit aansprakelijk worden gesteld voor schade.",
+      "De vermogensrechtelijke gevolgen treffen de rechtspersoon waartoe het orgaan behoort.",
+      "Het bestuursorgaan kan geen privaatrechtelijke overeenkomsten sluiten.",
+      "De leden van het bestuursorgaan zijn altijd persoonlijk aansprakelijk."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 4 Awb.\n\nDe vermogensrechtelijke gevolgen van een handeling van een bestuursorgaan treffen de rechtspersoon waartoe het bestuursorgaan behoort."
+  },
+  {
+    "q": "Welke eis stelt artikel 2:4 lid 1 Awb aan het bestuursorgaan bij de vervulling van zijn taak?",
+    "a": [
+      "Het bestuursorgaan vervult zijn taak zonder enige vorm van partijdigheid.",
+      "Het bestuursorgaan handelt uitsluitend in het algemeen belang.",
+      "Het bestuursorgaan vervult zijn taak zonder vooringenomenheid.",
+      "Het bestuursorgaan handelt conform de beleidsregels van de minister."
+    ],
+    "c": 2,
+    "exp": "Artikel 2:4 lid 1 Awb.\n\nHet bestuursorgaan vervult zijn taak zonder vooringenomenheid."
+  },
+  {
+    "q": "Wanneer is een privaatrechtelijke rechtspersoon met openbaar gezag bekleed volgens het arrest Stichting bevordering kwaliteit leefomgeving Schipholregio?",
+    "a": [
+      "Indien de rechtspersoon statutair het algemeen belang behartigt.",
+      "Indien de overheid een doorslaggevende invloed heeft in het bestuur.",
+      "Indien een overheidstaak met publiekrechtelijke bevoegdheden is opgedragen.",
+      "Indien de rechtspersoon door een minister is opgericht."
+    ],
+    "c": 2,
+    "exp": "ABRvS Stichting bevordering kwaliteit leefomgeving Schipholregio.\n\nEen privaatrechtelijke rechtspersoon is met openbaar gezag bekleed indien en voor zover hem een of meer overheidstaken zijn opgedragen en de daarvoor benodigde publiekrechtelijke bevoegdheden zijn toegekend."
+  },
+  {
+    "q": "Wat is de verplichting van een bestuursorgaan bij een onbevoegd ontvangen geschrift?",
+    "a": [
+      "Het geschrift per omgaande terugzenden aan de afzender.",
+      "Het geschrift zo spoedig mogelijk doorzenden aan het bevoegde orgaan.",
+      "Het geschrift vernietigen en de afzender daarover informeren.",
+      "Het geschrift alsnog zelf in behandeling nemen."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:3 lid 1 Awb.\n\nHet bestuursorgaan zendt geschriften tot behandeling waarvan kennelijk een ander bestuursorgaan bevoegd is, onverwijld door naar dat orgaan, onder gelijktijdige mededeling daarvan aan de afzender."
+  },
+  {
+    "q": "Welk artikel wijst de rechtspersonen aan die krachtens publiekrecht zijn ingesteld?",
+    "a": [
+      "Artikel 1:1 Awb.",
+      "Artikel 2:1 BW.",
+      "Artikel 1:3 Awb.",
+      "Artikel 2:3 BW."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:1 BW.\n\nDe staat, de provincies, de gemeenten, de waterschappen, alsmede alle andere lichamen waaraan krachtens de Grondwet verordenende bevoegdheid is verleend, bezitten rechtspersoonlijkheid."
+  },
+  {
+    "q": "Welk criterium geldt voor het 'financiële vereiste' bij de uitzondering voor b-bestuursorganen die uitkeringen verstrekken?",
+    "a": [
+      "De verstrekking wordt voor minstens de helft gefinancierd door een a-bestuursorgaan.",
+      "De verstrekking wordt volledig gefinancierd door een a-bestuursorgaan.",
+      "De verstrekking wordt in overwegende mate (2/3 of meer) gefinancierd door een a-bestuursorgaan.",
+      "De verstrekking wordt gefinancierd uit algemene middelen van de overheid."
+    ],
+    "c": 2,
+    "exp": "ABRvS Stichting bevordering kwaliteit leefomgeving Schipholregio.\n\nDe verstrekking van deze uitkeringen moet in overwegende mate, dat wil zeggen in beginsel voor twee derde of meer, worden gefinancierd door een of meer a-bestuursorganen."
+  },
+  {
+    "q": "Wat bepaalt artikel 1:1 lid 3 Awb over uitgezonderde organen ten aanzien van ambtenaren?",
+    "a": [
+      "Zij worden alsnog als bestuursorgaan aangemerkt bij besluiten ten aanzien van ambtenaren.",
+      "Zij zijn nooit een bestuursorgaan, ook niet in ambtenarenzaken.",
+      "Zij zijn alleen bestuursorgaan als het gaat om de benoeming van ambtenaren.",
+      "Zij zijn bestuursorgaan indien de ambtenaar daarmee instemt."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:1 lid 3 Awb.\n\nEen ingevolge het tweede lid uitgezonderd orgaan wordt wel als bestuursorgaan aangemerkt voor zover het besluiten neemt of handelingen verricht ten aanzien van een ambtenaar als zodanig."
+  },
+  {
+    "q": "Welke rol heeft een bestuursorgaan bij de uitoefening van zijn bevoegdheden ten opzichte van de rechtspersoon?",
+    "a": [
+      "Het treedt op als vertegenwoordiger van de rechtspersoon.",
+      "Het treedt op als zelfstandig onderdeel binnen de rechtspersoon.",
+      "Het handelt uitsluitend in opdracht van de rechtspersoon.",
+      "Het is hiërarchisch ondergeschikt aan de rechtspersoon."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 1 Awb.\n\nHet bestuursorgaan treedt bij de uitoefening van haar bestuursbevoegdheid op als een zelfstandig onderdeel en niet als een vertegenwoordiger van de rechtspersoon."
+  },
+  {
+    "q": "Wat is een b-bestuursorgaan in de zin van de Algemene wet bestuursrecht?",
+    "a": [
+      "Een orgaan van een publiekrechtelijke rechtspersoon.",
+      "Een persoon of college dat deels door de overheid wordt gefinancierd.",
+      "Een ander persoon of college, met enig openbaar gezag bekleed.",
+      "Een privaatrechtelijke stichting die een publiek doel dient."
+    ],
+    "c": 2,
+    "exp": "Artikel 1:1 lid 1 onder b Awb.\n\nOnder bestuursorgaan wordt verstaan: een ander persoon of college, met enig openbaar gezag bekleed."
+  },
+  {
+    "q": "Wanneer bezitten 'andere lichamen' waaraan een deel van de overheidstaak is opgedragen rechtspersoonlijkheid?",
+    "a": [
+      "Indien dit bij notariële akte is vastgelegd.",
+      "Indien dit uit het bij of krachtens de wet bepaalde volgt.",
+      "Indien zij feitelijk als overheidsorgaan functioneren.",
+      "Indien zij volledig door de overheid worden gefinancierd."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:1 lid 2 BW.\n\nAndere lichamen, waaraan een deel van de overheidstaak is opgedragen, bezitten slechts rechtspersoonlijkheid, indien dit uit het bij of krachtens de wet bepaalde volgt."
+  },
+  {
+    "q": "Welke verplichting legt artikel 2:5 lid 1 Awb op aan betrokkenen bij de uitvoering van de taak van een bestuursorgaan?",
+    "a": [
+      "Een verplichting tot actieve openbaarmaking van gegevens.",
+      "Een verplichting tot geheimhouding van vertrouwelijke gegevens.",
+      "Een verplichting tot het doorzenden van stukken.",
+      "Een verplichting tot het vermijden van vooringenomenheid."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:5 lid 1 Awb.\n\nEen ieder die betrokken is bij de uitvoering van de taak van een bestuursorgaan en daarbij de beschikking krijgt over gegevens waarvan hij het vertrouwelijke karakter kent of redelijkerwijs moet vermoeden, is verplicht tot geheimhouding van die gegevens."
+  },
+  {
+    "q": "Wat wordt in het kader van b-bestuursorganen verstaan onder het 'inhoudelijke vereiste' bij geldelijke verstrekkingen?",
+    "a": [
+      "De criteria voor verstrekking worden in beslissende mate bepaald door een a-bestuursorgaan.",
+      "De verstrekking heeft een inhoudelijk wettelijke grondslag in een formele wet.",
+      "Het privaatrechtelijke orgaan bepaalt zelfstandig de inhoud van de criteria.",
+      "De inhoud van de verstrekking is van algemeen maatschappelijk belang."
+    ],
+    "c": 0,
+    "exp": "ABRvS Stichting bevordering kwaliteit leefomgeving Schipholregio.\n\nDe criteria voor de verstrekking van geldelijke uitkeringen of voorzieningen moeten in beslissende mate worden bepaald door een of meer a-bestuursorganen."
+  },
+  {
+    "q": "Wat geldt ten aanzien van de doorzendplicht bij een onbevoegd niet-bestuursorgaan?",
+    "a": [
+      "Er geldt een wettelijke doorzendplicht op grond van artikel 2:3 Awb.",
+      "Er geldt geen doorzendplicht, tenzij sprake is van een bijzondere wet.",
+      "Er geldt een inspanningsverplichting om het stuk door te sturen.",
+      "Het stuk moet worden teruggezonden met een ontvangstbevestiging."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:3 lid 1 Awb.\n\nDe doorzendplicht geldt voor bestuursorganen. Indien een verzoekschrift gericht is aan een niet-bestuursorgaan, is deze niet verplicht het door te zenden, tenzij een bijzondere wet (zoals art. 6:15 Awb) anders bepaalt."
+  },
+  {
+    "q": "Kan een burger zich in het bestuurlijk verkeer laten bijstaan?",
+    "a": [
+      "Ja, een burger kan zich te allen tijde laten bijstaan.",
+      "Nee, tenzij het bestuursorgaan hiervoor toestemming geeft.",
+      "Ja, maar uitsluitend door een advocaat of rechtshulpverlener.",
+      "Nee, persoonlijke verschijning is in alle gevallen verplicht."
+    ],
+    "c": 0,
+    "exp": "Artikel 2:1 lid 1 Awb.\n\nEen ieder kan zich in het verkeer met bestuursorganen laten bijstaan of door een gemachtigde laten vertegenwoordigen."
+  },
+  {
+    "q": "Wanneer is een b-bestuursorgaan daadwerkelijk een bestuursorgaan?",
+    "a": [
+      "Voor al zijn handelingen, zowel privaatrechtelijk als publiekrechtelijk.",
+      "Uitsluitend voor zover het orgaan met openbaar gezag is bekleed.",
+      "Alleen wanneer het orgaan financieel afhankelijk is van de overheid.",
+      "Wanneer het orgaan in de statuten als zodanig is aangewezen."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 1 onder b Awb.\n\nEen ander persoon of college is een bestuursorgaan voor zover het met enig openbaar gezag is bekleed."
+  },
+  {
+    "q": "Welke status hebben privaatrechtelijke rechtspersonen zoals bedoeld in artikel 2:3 BW in het bestuursrecht?",
+    "a": [
+      "Zij zijn van rechtswege altijd een bestuursorgaan.",
+      "Zij kunnen nooit drager zijn van bestuursrechtelijke rechten en plichten.",
+      "Zij kunnen als rechtssubject optreden aan de zijde van de burger.",
+      "Zij zijn uitsluitend onderworpen aan het privaatrecht."
+    ],
+    "c": 2,
+    "exp": "Algemene wet bestuursrecht / BW.\n\nRechtspersonen naar privaatrecht kunnen optreden als belanghebbende of burger in de zin van het bestuursrecht."
+  },
+  {
+    "q": "Hoe wordt vastgesteld of een persoon orgaan is van een publiekrechtelijke rechtspersoon?",
+    "a": [
+      "Door te kijken of de persoon feitelijk leiding geeft.",
+      "Door te raadplegen of de persoon in de instellingswet een zelfstandige positie heeft.",
+      "Door te beoordelen of de persoon ambtenaar is.",
+      "Door te kijken of de persoon op de loonlijst staat van de overheid."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 1 onder a Awb.\n\nMen moet kijken of een persoon of college in de wet op een zodanige wijze is neergelegd dat deze een zelfstandige plaats of functie heeft gekregen binnen de desbetreffende rechtspersoon (bijvoorbeeld via rubricering in de wet)."
+  },
+  {
+    "q": "Wat houdt het verbod op vooringenomenheid in artikel 2:4 lid 2 Awb in?",
+    "a": [
+      "Het bestuursorgaan mag geen politieke voorkeur hebben.",
+      "Betrokkenen met een persoonlijk belang mogen de besluitvorming niet beïnvloeden.",
+      "Het bestuursorgaan moet alle burgers gelijk behandelen.",
+      "Het bestuursorgaan mag geen advies inwinnen bij derden."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:4 lid 2 Awb.\n\nHet bestuursorgaan waakt ertegen dat tot het bestuursorgaan behorende of daarvoor werkzame personen die een persoonlijk belang bij een besluit hebben, de besluitvorming beïnvloeden."
+  },
+  {
+    "q": "Welke uitzondering maakt artikel 1:1 lid 2 Awb voor bepaalde organen?",
+    "a": [
+      "Zij worden uitgezonderd van de begrotingsregels.",
+      "Zij worden niet als bestuursorgaan aangemerkt.",
+      "Zij hebben geen rechtspersoonlijkheid.",
+      "Zij vallen niet onder het privaatrecht."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 2 Awb.\n\nDe in dit lid opgesomde personen, organen en colleges worden niet als bestuursorgaan aangemerkt."
+  },
+  {
+    "q": "Wat is het rechtsgevolg als een verzoekschrift bij een onbevoegd bestuursorgaan wordt ingediend?",
+    "a": [
+      "De datum van ontvangst bij het onbevoegde orgaan geldt als datum van ontvangst.",
+      "De termijn voor indiening wordt gestuit tot het juiste orgaan is gevonden.",
+      "Het verzoek is niet-ontvankelijk en moet opnieuw worden ingediend.",
+      "De burger krijgt een boete voor het onjuist indienen."
+    ],
+    "c": 0,
+    "exp": "Artikel 6:15 lid 3 Awb.\n\nHet tijdstip van indiening bij het onbevoegde orgaan geldt als het tijdstip van indiening bij het bevoegde orgaan (behoud van datum)."
+  },
+  {
+    "q": "Kan een privaatrechtelijke stichting een a-bestuursorgaan zijn?",
+    "a": [
+      "Ja, als de stichting een publieke taak uitvoert.",
+      "Nee, een a-bestuursorgaan is altijd een orgaan van een krachtens publiekrecht ingestelde rechtspersoon.",
+      "Ja, als de stichting volledig door de overheid wordt gefinancierd.",
+      "Nee, tenzij de statuten bij wet zijn goedgekeurd."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 1 onder a Awb.\n\nEen a-bestuursorgaan is per definitie een orgaan van een rechtspersoon die krachtens publiekrecht is ingesteld. Een stichting is privaatrechtelijk (art 2:3 BW)."
+  },
+  {
+    "q": "Is het bestuur van de Stichting bevordering kwaliteit leefomgeving Schipholregio een a-bestuursorgaan?",
+    "a": [
+      "Ja, want het is ingesteld bij wet.",
+      "Nee, want de stichting is geen krachtens publiekrecht ingestelde rechtspersoon.",
+      "Ja, want het oefent openbaar gezag uit.",
+      "Nee, want het voldoet niet aan het financiële vereiste."
+    ],
+    "c": 1,
+    "exp": "ABRvS Stichting bevordering kwaliteit leefomgeving Schipholregio.\n\nHet bestuur van de Stichting is niet aan te merken als bestuursorgaan in de zin van artikel 1:1, eerste lid, aanhef en onder a, van de Awb, reeds omdat de Stichting geen krachtens publiekrecht ingestelde rechtspersoon is."
+  },
+  {
+    "q": "Wat is kenmerkend voor de wijze waarop publiekrechtelijke rechtspersonen tot stand komen?",
+    "a": [
+      "Zij worden opgericht bij notariële akte.",
+      "Zij worden ingesteld bij of krachtens de wet.",
+      "Zij ontstaan door inschrijving in het handelsregister.",
+      "Zij worden opgericht door een besluit van de minister."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:1 lid 1 en 2 BW.\n\nPubliekrechtelijke rechtspersonen ontlenen hun rechtspersoonlijkheid direct aan de wet of dit volgt uit het bij of krachtens de wet bepaalde."
+  },
+  {
+    "q": "Wie wordt in het bestuursrecht als 'ambtsdrager' aangeduid?",
+    "a": [
+      "De natuurlijke persoon die de bevoegdheden van het bestuursorgaan uitoefent.",
+      "De rechtspersoon waartoe het bestuursorgaan behoort.",
+      "De ambtenaar die ondersteunende werkzaamheden verricht.",
+      "De burger die een aanvraag indient bij het bestuursorgaan."
+    ],
+    "c": 0,
+    "exp": "Algemene wet bestuursrecht (impliciet in systeem).\n\nDe bevoegdheden van een bestuursorgaan worden uitgeoefend door natuurlijke personen, die worden aangeduid als ambtsdragers en het bestuursorgaan belichamen."
+  },
+  {
+    "q": "Wat houdt de 'doorzendplicht' van artikel 2:3 Awb in voor de afzender?",
+    "a": [
+      "De afzender moet zelf het stuk opnieuw indienen bij het juiste orgaan.",
+      "De afzender krijgt gelijktijdig mededeling van de doorzending.",
+      "De afzender verliest zijn recht op behandeling als hij verkeerd indient.",
+      "De afzender moet instemmen met de doorzending."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:3 lid 1 Awb.\n\nHet bestuursorgaan zendt het geschrift door onder gelijktijdige mededeling daarvan aan de afzender."
+  },
+  {
+    "q": "Wanneer is er sprake van een 'restcategorie' bij het bepalen van organen binnen een publiekrechtelijke rechtspersoon?",
+    "a": [
+      "Als de wet expliciet vermeldt dat het geen orgaan is.",
+      "Als het orgaan niet in de wet wordt gepresenteerd maar wel een zelfstandige positie heeft.",
+      "Als het orgaan uitsluitend adviserende bevoegdheden heeft.",
+      "Als het orgaan is ingesteld door een privaatrechtelijke rechtspersoon."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 1 onder a Awb.\n\nEr kan sprake zijn van een orgaan als een persoon of college, hoewel niet als zodanig in de wet gepresenteerd of met openbaar gezag bekleed, vanwege zijn zelfstandige positie binnen de rechtspersoon als orgaan moet worden aangemerkt."
+  },
+  {
+    "q": "Wat impliceert de eis van een 'zelfstandige plaats of functie' voor een a-bestuursorgaan?",
+    "a": [
+      "Dat het orgaan financieel onafhankelijk is van de overheid.",
+      "Dat het orgaan bij wet is opgedragen taken zelfstandig uit te voeren.",
+      "Dat het orgaan geen verantwoording schuldig is aan de politiek.",
+      "Dat het orgaan uitsluitend bestaat uit onafhankelijke deskundigen."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 1 onder a Awb.\n\nEen persoon of college moet op een zodanige wijze in de wet worden neergelegd dat deze een zelfstandige plaats of functie heeft gekregen binnen de desbetreffende rechtspersoon."
+  },
+  {
+    "q": "Is het bestuur van een Stichting die uitsluitend overheidstaken uitvoert automatisch een a-bestuursorgaan?",
+    "a": [
+      "Ja, want het voert overheidstaken uit.",
+      "Nee, want een stichting is geen krachtens publiekrecht ingestelde rechtspersoon.",
+      "Ja, want het wordt gefinancierd met publieke middelen.",
+      "Nee, tenzij de minister het bestuur benoemt."
+    ],
+    "c": 1,
+    "exp": "ABRvS Stichting bevordering kwaliteit leefomgeving Schipholregio.\n\nHet bestuur van een stichting is geen a-bestuursorgaan omdat de stichting geen krachtens publiekrecht ingestelde rechtspersoon is."
+  },
+  {
+    "q": "Welke waarborg biedt artikel 2:4 lid 1 Awb voor de besluitvorming?",
+    "a": [
+      "De besluitvorming moet binnen een redelijke termijn plaatsvinden.",
+      "De besluitvorming mag niet worden beïnvloed door vooringenomenheid.",
+      "De besluitvorming moet schriftelijk worden vastgelegd.",
+      "De besluitvorming moet worden gebaseerd op een wettelijke grondslag."
+    ],
+    "c": 1,
+    "exp": "Artikel 2:4 lid 1 Awb.\n\nHet bestuursorgaan vervult zijn taak zonder vooringenomenheid."
+  }
+]

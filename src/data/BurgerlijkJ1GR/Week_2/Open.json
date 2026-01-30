@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Klaas verkoopt zijn perceel grond aan Willem. In de koopovereenkomst is opgenomen dat Willem verplicht is om de grindweg die over het perceel loopt jaarlijks te egaliseren. Willem verkoopt en levert het perceel twee jaar later door aan Roger. Roger weigert de weg te onderhouden, stellende dat hij niets met Klaas te maken heeft. Klaas vordert nakoming van Roger. Slaagt deze vordering?",
+    "sample": "Rechtsvraag: Is Roger gebonden aan de persoonlijke verplichting die Willem is aangegaan jegens Klaas?\n\nRechtsregel: Uit het arrest Blaauboer/Berlips volgt dat persoonlijke verbintenissen in beginsel niet overgaan op de verkrijger van het goed onder bijzondere titel. Een dergelijke verplichting rust uitsluitend op de oorspronkelijke contractspartij, tenzij er sprake is van een kwalitatieve verplichting of kettingbeding.\n\nToepassing: De afspraak tussen Klaas en Willem betreft een persoonlijke verplichting om de weg te onderhouden. Roger is een derde in deze verhouding. Bij de overdracht van het perceel van Willem aan Roger is deze persoonlijke verplichting niet automatisch overgegaan.\n\nConclusie: De vordering van Klaas slaagt niet; Roger is niet gebonden aan de persoonlijke verbintenis van Willem.",
+    "checklist": [
+      "Persoonlijke verbintenis gaat niet over",
+      "Arrest Blaauboer/Berlips",
+      "Verkrijger onder bijzondere titel niet gebonden",
+      "Vordering op Roger slaagt niet"
+    ],
+    "exp": "De casus betreft het onderscheid tussen absolute en relatieve rechten zoals behandeld in het arrest Blaauboer/Berlips. Persoonlijke verplichtingen binden alleen de contractspartijen en gaan niet van rechtswege over op rechtsopvolgers onder bijzondere titel."
+  },
+  {
+    "q": "Klaas bouwt een schuur in zijn achtertuin. Door een meetfout bouwt hij de muur van de garage per ongeluk 20 centimeter over de erfgrens op de grond van zijn buurvrouw Sonja. Sonja eist dat Klaas het overbouwde gedeelte afbreekt (amotie). De kosten voor afbraak zijn voor Klaas echter exorbitant hoog in verhouding tot de waarde van de strook grond van Sonja. Kan Sonja onverkort amotie vorderen?",
+    "sample": "Rechtsvraag: Is de vordering tot amotie van Sonja toewijsbaar of levert dit misbruik van bevoegdheid op?\n\nRechtsregel: Op grond van artikel 3:13 BW kan een bevoegdheid niet worden ingeroepen voor zover deze wordt misbruikt. In het arrest Grensoverschrijdende garage is bepaald dat misbruik van recht aanwezig kan zijn indien de eigenaar, in verhouding tot de onevenredigheid van de belangen, naar redelijkheid niet tot uitoefening van zijn recht tot amotie had kunnen komen.\n\nToepassing: Sonja heeft in beginsel het recht om verwijdering te vorderen (artikel 5:1 BW). Echter, de schade voor Klaas bij afbraak is onevenredig groot vergeleken met het nadeel van Sonja (verlies van een smalle strook grond). Sonja handelt in strijd met de redelijkheid door amotie te eisen.\n\nConclusie: Sonja kan geen amotie vorderen wegens misbruik van bevoegdheid; schadevergoeding of overdracht van de grondstrook ligt voor de hand.",
+    "checklist": [
+      "Beroep op misbruik van bevoegdheid",
+      "Artikel 3:13 BW",
+      "Arrest Grensoverschrijdende garage",
+      "Onevenredigheid van belangen verhindert amotie"
+    ],
+    "exp": "De eigenaar mag in beginsel amotie vorderen bij inbreuk op het eigendomsrecht. Echter, op basis van het arrest Grensoverschrijdende garage kan deze vordering worden geblokkeerd door artikel 3:13 BW indien de belangen onevenredig zijn."
+  },
+  {
+    "q": "Willem leent de dure racefiets van zijn vriend Klaas voor een fietsvakantie. Onderweg besluit Willem dat hij de fiets zelf wil houden. Hij stuurt Klaas een bericht: 'Ik beschouw de fiets vanaf nu als mijn eigendom en ik geef hem niet meer terug'. Is Willem door deze handeling bezitter van de fiets geworden?",
+    "sample": "Rechtsvraag: Kan een houder zichzelf door een enkele wilsverklaring tot bezitter maken?\n\nRechtsregel: Op grond van artikel 3:111 BW geldt het interversieverbod. Wie is aangevangen krachtens een rechtsverhouding voor een ander te houden, gaat daarmee onder dezelfde titel voort, zolang niet blijkt dat hierin verandering is gebracht, hetzij ten gevolge van een handeling van hem voor wie men houdt, hetzij ten gevolge van een tegenspraak van diens recht.\n\nToepassing: Willem is begonnen als houder (detentor) voor Klaas op basis van de bruikleenovereenkomst. Een enkele mededeling van Willem dat hij nu bezitter is, kwalificeert niet als een handeling van Klaas of een geldige tegenspraak van recht die interversie bewerkstelligt.\n\nConclusie: Willem is geen bezitter geworden; hij blijft houder van de fiets.",
+    "checklist": [
+      "Willem is houder (detentor)",
+      "Interversieverbod artikel 3:111 BW",
+      "Enkele wilsverandering is onvoldoende",
+      "Willem is geen bezitter geworden"
+    ],
+    "exp": "Willem is houder en kan zichzelf niet tot bezitter maken door een enkele wilsverandering. Het interversieverbod van artikel 3:111 BW staat hieraan in de weg, tenzij er sprake is van een handeling van de eigenaar of tegenspraak van recht."
+  },
+  {
+    "q": "Klaas verkoopt zijn auto aan Willem. Ze komen een prijs overeen en Klaas overhandigt de sleutels en de auto aan Willem. Klaas blijkt achteraf echter handelingsonbekwaam te zijn geweest ten tijde van de verkoop wegens een geestelijke stoornis en ondercuratelestelling. Is Willem eigenaar geworden van de auto?",
+    "sample": "Rechtsvraag: Is er een geldige eigendomsoverdracht tot stand gekomen ondanks de handelingsonbekwaamheid van Klaas?\n\nRechtsregel: Voor een geldige overdracht is vereist: een geldige titel, beschikkingsbevoegdheid en levering (artikel 3:84 lid 1 BW). Een rechtshandeling van een handelingsonbekwame is vernietigbaar (artikel 3:32 lid 2 BW). Vernietiging heeft terugwerkende kracht (artikel 3:53 BW).\n\nToepassing: De titel (koopovereenkomst) is vernietigbaar omdat Klaas handelingsonbekwaam was. Na vernietiging wordt de titel geacht nooit te hebben bestaan. Aangezien Nederland een causaal stelsel kent, ontbreekt hiermee met terugwerkende kracht een geldigvereiste voor overdracht.\n\nConclusie: Willem is geen eigenaar geworden door het ontbreken van een geldige titel.",
+    "checklist": [
+      "Vereisten artikel 3:84 lid 1 BW",
+      "Titel is vernietigbaar (handelingsonbekwaamheid)",
+      "Vernietiging heeft terugwerkende kracht",
+      "Geen geldige overdracht (causaal stelsel)"
+    ],
+    "exp": "De overdracht vereist een geldige titel. Door de handelingsonbekwaamheid is de titel vernietigbaar. Na vernietiging vervalt de titel met terugwerkende kracht, waardoor de overdracht in het causale stelsel ongeldig is."
+  },
+  {
+    "q": "Sonja woont samen met haar broer Willem. Willem rijdt dagelijks in een auto die bij het huis geparkeerd staat. Na een ruzie claimt Sonja dat de auto van haar is en eist ze deze op. Willem stelt dat hij de auto bezit en dus eigenaar is. Wie moet in een procedure bewijzen dat hij/zij eigenaar is?",
+    "sample": "Rechtsvraag: Bij wie ligt de bewijslast omtrent het eigendom van de auto?\n\nRechtsregel: Artikel 3:109 BW bepaalt dat wie een goed houdt, vermoed wordt dit voor zichzelf te houden (bezitter te zijn). Artikel 3:119 BW bepaalt dat de bezitter wordt vermoed rechthebbende te zijn. In het arrest Gielkens/Gielkens is bevestigd dat dit wettelijk vermoeden de bewijslast bij de wederpartij legt.\n\nToepassing: Willem heeft de feitelijke macht over de auto en wordt dus vermoed bezitter te zijn. Op grond van de processuele functie van het bezit wordt hij tevens vermoed eigenaar te zijn. Sonja betwist dit recht.\n\nConclusie: Sonja draagt de bewijslast en moet bewijzen dat zij de eigenaar is en niet Willem.",
+    "checklist": [
+      "Willem wordt vermoed bezitter te zijn",
+      "Bezitter wordt vermoed eigenaar te zijn",
+      "Arrest Gielkens/Gielkens",
+      "Sonja draagt de bewijslast"
+    ],
+    "exp": "Op grond van artikel 3:109 en 3:119 BW en het arrest Gielkens/Gielkens wordt de houder vermoed bezitter en daarmee rechthebbende te zijn. De wederpartij (Sonja) moet dit vermoeden weerleggen."
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Een onroerende zaak die door de eigenaar is prijsgegeven, wordt een res nullius en kan door inbezitneming in eigendom worden verkregen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 5:24 BW.\n\nOnroerende zaken die aan niemand toebehoren, behoren toe aan de Staat. Inbezitneming (occupatie) als wijze van eigendomsverkrijging geldt krachtens artikel 5:4 BW enkel voor roerende zaken."
+  },
+  {
+    "q": "Een schat die wordt gevonden in de grond van een ander, komt voor gelijke delen toe aan de vinder en de grondeigenaar.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 5:13 lid 1 BW.\n\nEen schat komt voor gelijke delen toe aan degene die hem ontdekt, en aan de eigenaar van de onroerende of roerende zaak, waarin de schat wordt aangetroffen."
+  },
+  {
+    "q": "Indien een roerende zaak bestanddeel wordt van een andere roerende zaak die als hoofdzaak is aan te merken, gaat de eigendom over op de eigenaar van de hoofdzaak.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 5:14 lid 1 BW.\n\nDe eigendom van een roerende zaak die een bestanddeel wordt van een andere roerende zaak die als hoofdzaak is aan te merken, gaat door natrekking over aan de eigenaar van deze hoofdzaak."
+  },
+  {
+    "q": "Bij vermenging van roerende zaken waarbij geen hoofdzaak is aan te wijzen, wordt de zaak eigendom van de vinder.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 5:15 BW jo. Artikel 5:14 lid 2 BW.\n\nIndien geen van de zaken als hoofdzaak is aan te merken, ontstaat er mede-eigendom. De nieuwe zaak toebehoort dan toe aan de oorspronkelijke eigenaren gezamenlijk."
+  },
+  {
+    "q": "Degene die voor zichzelf een nieuwe zaak vormt uit hem niet toebehorende roerende zaken, wordt eigenaar tenzij de kosten van de vorming dit wegens hun geringe omvang niet rechtvaardigen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 5:16 lid 2 BW.\n\nIndien iemand voor zichzelf een zaak vormt of doet vormen uit of mede uit een of meer hem niet toebehorende roerende zaken, wordt hij eigenaar van de nieuwe zaak, tenzij de kosten van de vorming dit wegens hun geringe omvang niet rechtvaardigen."
+  },
+  {
+    "q": "Het goederenrecht kent een open stelsel van beperkte rechten, waardoor partijen zelf nieuwe zakelijke rechten kunnen creëren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:81 lid 1 BW.\n\nHet goederenrecht kent een gesloten stelsel (numerus clausus). Men kan slechts de in de wet genoemde beperkte rechten vestigen."
+  },
+  {
+    "q": "Voor de vestiging van een recht van vruchtgebruik op een vordering op naam is een akte en mededeling aan de schuldenaar vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:98 BW jo. Artikel 3:94 BW.\n\nOp de vestiging van een beperkt recht zijn de regels voor overdracht van het goed waarop het rust van overeenkomstige toepassing. Voor een vordering op naam (openbare cessie) vereist dit een akte en mededeling."
+  },
+  {
+    "q": "Het recht van gebruik en bewoning kan door de rechthebbende worden vervreemd of bezwaard.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:226 lid 4 BW.\n\nDe rechten van gebruik en bewoning kunnen niet door de rechthebbende worden vervreemd of bezwaard en de zaak mag niet door een ander worden gebruikt of de woning door een ander worden bewoond."
+  },
+  {
+    "q": "Voor het vestigen van een erfdienstbaarheid is vereist dat het heersende en het dienende erf aan elkaar grenzen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 5:70 lid 1 BW.\n\nHet is niet noodzakelijk dat heersend en dienend erf aan elkaar grenzen. Denkbaar is dat de erven op afstand van elkaar liggen, zolang de erfdienstbaarheid strekt ten behoeve van het heersende erf."
+  },
+  {
+    "q": "De verplichting tot het betalen van een canon is een wettelijk constitutief vereiste voor het bestaan van het recht van erfpacht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 5:85 lid 2 BW.\n\nIn de akte van vestiging kan aan de erfpachter een verplichting tot betaling van een geldsom (canon) worden opgelegd. Dit is een mogelijkheid, geen dwingend vereiste voor het bestaan van het recht."
+  },
+  {
+    "q": "Het vestigen van een recht van opstal kan natrekking van een gebouw door de grond voorkomen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 5:101 BW.\n\nHet recht van opstal is een zakelijk recht om in, op of boven een onroerende zaak van een ander gebouwen, werken of beplantingen in eigendom te hebben. Dit doorbreekt de regel van natrekking (art. 5:20 BW)."
+  },
+  {
+    "q": "Het appartementsrecht is juridisch gezien een beperkt recht in de zin van artikel 3:8 BW.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 5:106 BW.\n\nEen appartementsrecht is geen beperkt recht, maar een aandeel in de goederen die in de splitsing zijn betrokken, dat de bevoegdheid omvat tot het uitsluitend gebruik van bepaalde gedeelten."
+  },
+  {
+    "q": "Het beginsel van paritas creditorum houdt in dat schuldeisers onderling een gelijk recht op voldoening hebben, behoudens door de wet erkende redenen van voorrang.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:277 lid 1 BW.\n\nSchuldeisers hebben onderling een gelijk recht om uit de netto-opbrengst van de goederen van hun schuldenaar te worden voldaan naar evenredigheid van ieders vordering, behoudens de door de wet erkende redenen van voorrang."
+  },
+  {
+    "q": "Een recht van hypotheek kan rechtsgeldig worden gevestigd op een roerende zaak, zoals een fiets.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:227 lid 1 BW.\n\nIs het recht op een registergoed gevestigd, dan is het een recht van hypotheek; is het recht op een ander goed gevestigd, dan is het een recht van pand. Een fiets is doorgaans geen registergoed."
+  },
+  {
+    "q": "Voor de vestiging van een vuistpand is vereist dat de zaak in de macht van de pandhouder of een derde wordt gebracht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:236 lid 1 BW.\n\nPandrecht op een roerende zaak wordt gevestigd door de zaak in de macht van de pandhouder of van een derde omtrent wie partijen zijn overeengekomen te brengen."
+  },
+  {
+    "q": "Bij de vestiging van een stil pandrecht op een vordering op naam is mededeling aan de schuldenaar van de vordering vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:239 lid 1 BW.\n\nPandrecht op een vordering op naam kan worden gevestigd bij authentieke of geregistreerde onderhandse akte, zonder dat daarvan mededeling aan de schuldenaar wordt gedaan (stil pandrecht)."
+  },
+  {
+    "q": "Een volmacht tot het vestigen van een hypotheek moet bij notariële akte worden verleend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:260 lid 3 BW.\n\nDe volmacht tot het vestigen van een hypotheek moet bij authentieke (notariële) akte worden verleend."
+  },
+  {
+    "q": "Het recht van reclame kan worden uitgeoefend op registergoederen die niet zijn betaald.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 7:39 lid 1 BW.\n\nDe verkoper kan een aan de koper afgeleverde roerende zaak, die niet een registergoed is, terugvorderen indien de koopprijs niet betaald is."
+  },
+  {
+    "q": "Volgens het arrest Dépex/Bergel is voor de vraag of apparatuur bestanddeel is van een gebouw mede van belang of zij in constructief opzicht op elkaar zijn afgestemd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Arrest Dépex/Bergel.\n\nDe Hoge Raad oordeelde dat van belang is of gebouw en apparatuur in constructief opzicht specifiek op elkaar zijn afgestemd, of dat het gebouw zonder de apparatuur als onvoltooid moet worden beschouwd."
+  },
+  {
+    "q": "Een boom die op de erfgrens van twee percelen staat, is eigendom van degene die de boom heeft geplant.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Arrest Grensoverschrijdende treurwilg / Artikel 5:20 lid 1 sub f BW.\n\nDe omstandigheid dat de stam van de boom verenigd is met de grond van beide erven brengt mee dat de boom toebehoort aan de eigenaren van beide erven gezamenlijk (mede-eigendom)."
+  },
+  {
+    "q": "Een natuurlijke verbintenis is een rechtens afdwingbare verbintenis.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:3 lid 1 BW.\n\nEen natuurlijke verbintenis is een rechtens niet-afdwingbare verbintenis."
+  },
+  {
+    "q": "Een aanbod dat een termijn voor aanvaarding inhoudt, kan in beginsel niet worden herroepen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:219 lid 1 BW.\n\nEen aanbod kan worden herroepen, tenzij het een termijn voor de aanvaarding inhoudt of de onherroepelijkheid ervan op andere wijze uit het aanbod volgt."
+  },
+  {
+    "q": "Een advertentie waarin een individueel bepaalde zaak voor een bepaalde prijs wordt aangeboden, geldt juridisch altijd als een bindend aanbod.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Arrest Hofland/Hennis.\n\nEen advertentie waarin een individueel bepaalde zaak voor een bepaalde prijs wordt aangeboden, is in beginsel een uitnodiging om in onderhandeling te treden."
+  },
+  {
+    "q": "Een tot een bepaalde persoon gerichte verklaring moet, om haar werking te hebben, die persoon hebben bereikt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:37 lid 3 BW.\n\nEen tot een bepaalde persoon gerichte verklaring moet, om haar werking te hebben, die persoon hebben bereikt (ontvangsttheorie)."
+  },
+  {
+    "q": "Artikel 3:35 BW (gerechtvaardigd vertrouwen) biedt bescherming aan de partij die een verklaring heeft afgelegd, indien zijn wil niet overeenkwam met zijn verklaring.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:35 BW.\n\nDit artikel beschermt de wederpartij (de geadresseerde) die gerechtvaardigd heeft vertrouwd op de verklaring, niet de verklarende partij zelf."
+  },
+  {
+    "q": "Bij de uitleg van een overeenkomst is volgens het Haviltex-arrest de taalkundige betekenis van de bewoordingen altijd doorslaggevend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Arrest Haviltex.\n\nBeslissend is de zin die partijen in de gegeven omstandigheden over en weer redelijkerwijs aan de bepalingen mochten toekennen en hetgeen zij te dien aanzien redelijkerwijs van elkaar mochten verwachten."
+  },
+  {
+    "q": "In het arrest Gemeente Amsterdam/Pullens is bepaald dat de eis van bepaalbaarheid niet los gezien kan worden van de eisen van redelijkheid en billijkheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Arrest Gemeente Amsterdam/Pullens.\n\nDe in artikel 6:227 BW neergelegde eis van bepaalbaarheid kan niet los gezien worden van de eisen van redelijkheid en billijkheid waardoor de obligatoire overeenkomst mede wordt beheerst."
+  },
+  {
+    "q": "Een vrijblijvend aanbod kan nog worden herroepen onverwijld na de aanvaarding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:219 lid 2 BW.\n\nIndien een aanbod vrijblijvend is gedaan, kan de herroeping nog onverwijld na de aanvaarding geschieden."
+  },
+  {
+    "q": "Voor de aanvaarding van een aanbod is altijd een schriftelijke verklaring vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:37 lid 1 BW.\n\nTenzij anders is bepaald, kunnen verklaringen, en dus ook de aanvaarding, in iedere vorm geschieden en kunnen zij zelfs in een of meer gedragingen besloten liggen."
+  },
+  {
+    "q": "Een overeenkomst is een meerzijdige rechtshandeling waarbij een of meer partijen jegens een of meer andere een verbintenis aangaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:213 BW.\n\nEen overeenkomst in de zin van deze titel is een meerzijdige rechtshandeling, waarbij een of meer partijen jegens een of meer andere een verbintenis aangaan."
+  }
+]

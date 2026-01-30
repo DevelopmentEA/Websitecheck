@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Cesare Beccaria introduceerde in 1764 drie essentiële elementen die de effectiviteit van straffen als afschrikmiddel bepalen. Welke drie elementen zijn dit?",
+    "a": [
+      "De zwaarte, de zekerheid en de snelheid van de straf.",
+      "De openbaarheid, de duur en de proportionaliteit van de straf.",
+      "De wettelijke basis, de rechterlijke toetsing en de uitvoering.",
+      "De zekerheid, de strengheid en de frequentie van de straf."
+    ],
+    "c": 0,
+    "exp": "Beccaria stelde dat de afschrikkende werking van straf afhankelijk is van de ernst (severity), de zekerheid (certainty) en de snelheid (swiftness) waarmee deze wordt opgelegd. Deze drie elementen vormen de kern van de klassieke afschrikkingstheorie."
+  },
+  {
+    "q": "Welk element van strafoplegging wordt in empirisch onderzoek doorgaans beschouwd als de meest bepalende factor voor generale preventie?",
+    "a": [
+      "De zwaarte van de opgelegde sanctie.",
+      "De snelheid van de juridische procedure.",
+      "De zekerheid dat de dader wordt gestraft.",
+      "De openbare aard van de veroordeling."
+    ],
+    "c": 2,
+    "exp": "Empirisch onderzoek toont aan dat de zekerheid van straf (pakkans en strafkans) een significant grotere invloed heeft op het afschrikken van potentiële daders dan de zwaarte van de straf. Een hogere strafmaat zonder verhoogde pakkans heeft doorgaans een verwaarloosbaar effect."
+  },
+  {
+    "q": "Wat wordt in de criminologie verstaan onder het 'experiëntiële effect' met betrekking tot risicoperceptie?",
+    "a": [
+      "Het verschijnsel dat daders die vaker ongestraft een delict plegen, de pakkans steeds lager gaan inschatten.",
+      "Het fenomeen dat slachtoffers van misdrijven de kans op herhaling systematisch overschatten.",
+      "De observatie dat rechters bij veelplegers zwaardere straffen opleggen naarmate het strafblad groeit.",
+      "De theorie dat de eerste gevangenisstraf de meeste indruk maakt en daarna een gewenningseffect optreedt."
+    ],
+    "c": 0,
+    "exp": "Het experiëntiële effect houdt in dat individuen die strafbare feiten plegen zonder gepakt te worden, hun perceptie van het risico naar beneden bijstellen. Het succesvol ontduiken van detectie verlaagt de subjectieve pakkans, wat verder onrechtmatig gedrag kan aanmoedigen."
+  },
+  {
+    "q": "Welke conclusie wordt in empirisch onderzoek getrokken over de effectiviteit van 'Three Strikes'-wetgeving?",
+    "a": [
+      "Deze wetgeving leidt tot een aanzienlijke en blijvende daling van de ernstige criminaliteitscijfers.",
+      "Deze wetgeving heeft een verwaarloosbaar afschrikkend effect en kan leiden tot een toename van geweld.",
+      "Deze wetgeving is kostenefficiënter dan investeringen in politiecapaciteit en preventie.",
+      "Deze wetgeving zorgt voor een snellere resocialisatie van veelplegers door langdurige behandeling."
+    ],
+    "c": 1,
+    "exp": "Onderzoek wijst uit dat 'Three Strikes'-wetten, die leiden tot langdurige opsluiting na een derde veroordeling, nauwelijks bijdragen aan misdaadreductie. In sommige gevallen kunnen ze zelfs leiden tot een toename van geweld, omdat daders die een derde strike vrezen, meer risico nemen om arrestatie te voorkomen."
+  },
+  {
+    "q": "Wat is het kernmechanisme achter de effectiviteit van 'hot spot policing'?",
+    "a": [
+      "Het verhogen van de strafmaat voor delicten gepleegd in specifieke risicogebieden.",
+      "Het verbeteren van de sociale cohesie in wijken door buurtbemiddeling.",
+      "Het vergroten van de waargenomen pakkans door zichtbare politieaanwezigheid.",
+      "Het inzetten van stille surveillanten om daders op heterdaad te betrappen."
+    ],
+    "c": 2,
+    "exp": "Hot spot policing concentreert handhavingscapaciteit op locaties met veel criminaliteit. Dit werkt preventief door het 'sentinel effect': de zichtbare aanwezigheid van politie verhoogt de perceptie bij potentiële daders dat de kans om gepakt te worden (zekerheid) groot is."
+  },
+  {
+    "q": "Hoe verhoudt recidive na een werkstraf zich tot recidive na een korte gevangenisstraf, gecorrigeerd voor achtergrondkenmerken?",
+    "a": [
+      "De recidive na een werkstraf is significant lager dan na een gevangenisstraf.",
+      "De recidive na een werkstraf is significant hoger dan na een gevangenisstraf.",
+      "Er is geen significant verschil in recidive tussen beide strafmodaliteiten.",
+      "De recidive is alleen lager bij werkstraffen voor vrouwelijke daders."
+    ],
+    "c": 0,
+    "exp": "Uit onderzoek waarin vergelijkbare groepen daders zijn geanalyseerd (o.a. via propensity score matching), blijkt dat de recidive na een werkstraf aanzienlijk lager ligt dan na een korte gevangenisstraf. Dit geldt voor zowel mannen als vrouwen en over verschillende leeftijdscategorieën."
+  },
+  {
+    "q": "Welke criminologische theorie voorspelt dat gevangenisstraffen leiden tot meer recidive doordat daders in contact komen met andere criminelen?",
+    "a": [
+      "De afschrikkingstheorie.",
+      "De rationele keuzetheorie.",
+      "De differentiële-associatietheorie.",
+      "De sociale-controletheorie."
+    ],
+    "c": 2,
+    "exp": "De differentiële-associatietheorie stelt dat crimineel gedrag wordt aangeleerd door interactie met anderen. In een gevangenisomgeving worden daders blootgesteld aan criminele normen en technieken van medegevangenen, wat de kans op recidive na vrijlating vergroot."
+  },
+  {
+    "q": "Wat is de kerngedachte van de labelingtheorie met betrekking tot de effecten van gevangenisstraf?",
+    "a": [
+      "Gevangenisstraf werkt als een krachtig signaal dat normoverschrijding niet wordt getolereerd.",
+      "Stigmatisering door detentie belemmert re-integratie en vergroot de kans op recidive.",
+      "Het labelen van gedrag als crimineel zorgt voor duidelijkheid en versterkt de sociale norm.",
+      "Detentie biedt de mogelijkheid om daders te labelen voor specifieke behandelprogramma's."
+    ],
+    "c": 1,
+    "exp": "De labelingtheorie stelt dat het opleggen van een gevangenisstraf een dader stigmatiseert. Dit stigma bemoeilijkt het vinden van werk en sociale acceptatie na vrijlating, waardoor de dader sneller terugvalt in crimineel gedrag (secundaire deviantie)."
+  },
+  {
+    "q": "Wat wordt in de context van corporate compliance verstaan onder 'implicit general deterrence'?",
+    "a": [
+      "De angst voor specifieke juridische sancties zoals boetes of gevangenisstraf.",
+      "Het mechanisme waarbij bedrijven onbewust regels overtreden door gebrekkige kennis.",
+      "De naleving van regels voortkomend uit een normatief plichtsbesef en sociale verwachtingen.",
+      "Het preventieve effect van onaangekondigde inspecties door toezichthouders."
+    ],
+    "c": 2,
+    "exp": "Implicit general deterrence verwijst naar de aanname dat bedrijven zich aan de wet houden vanuit een geïnternaliseerde plicht of sociale norm, in plaats van enkel uit angst voor een specifieke straf. In rechtstaten gaan bedrijven er vaak a priori vanuit dat naleving de norm is."
+  },
+  {
+    "q": "Welke functie vervult 'general deterrence' voornamelijk voor bedrijven die reeds geneigd zijn de wet na te leven?",
+    "a": [
+      "Een afschrikkingsfunctie die hen behoedt voor het plegen van zware misdrijven.",
+      "Een geruststellende functie die bevestigt dat naleving niet leidt tot concurrentienadeel.",
+      "Een educatieve functie die hen leert welke specifieke wetten van kracht zijn.",
+      "Een corrigerende functie die direct ingrijpt in hun bedrijfsprocessen."
+    ],
+    "c": 1,
+    "exp": "Voor bonafide bedrijven heeft general deterrence een 'reassurance function'. Het zien dat concurrenten gestraft worden voor overtredingen, stelt hen gerust dat hun investeringen in compliance hen geen nadelige concurrentiepositie opleveren ten opzichte van overtreders."
+  },
+  {
+    "q": "Wat toont onderzoek aan over de kennis van bedrijven omtrent specifieke boetes voor milieuovertredingen?",
+    "a": [
+      "Bedrijven hebben doorgaans een zeer accurate kennis van de hoogte van de boetes.",
+      "Bedrijven overschatten de hoogte van de boetes systematisch met een factor tien.",
+      "Bedrijven hebben vaak weinig specifieke kennis van concrete strafzaken of boetehoogtes.",
+      "Bedrijven baseren hun kennis uitsluitend op informatie van advocatenkantoren."
+    ],
+    "c": 2,
+    "exp": "Uit onderzoek blijkt dat managers vaak slechts een vage notie hebben van specifieke strafzaken ('signal cases') of de exacte hoogte van boetes. De 'general deterrence message' is vaak zwak en diffuus, al is er wel een algemeen besef dat overtredingen bestraft kunnen worden."
+  },
+  {
+    "q": "Wat is het doel van 'propensity score matching' in recidive-onderzoek?",
+    "a": [
+      "Het willekeurig toewijzen van straffen aan daders om causaliteit te testen.",
+      "Het corrigeren voor selectie-effecten door vergelijkbare groepen daders te creëren.",
+      "Het voorspellen van de kans dat een dader opnieuw een strafbaar feit zal plegen.",
+      "Het meten van de zwaarte van de straf in verhouding tot de ernst van het delict."
+    ],
+    "c": 1,
+    "exp": "Omdat rechters niet willekeurig straffen opleggen (selectiebias), kunnen groepen niet zomaar vergeleken worden. Propensity score matching maakt de groep werkgestraften en gevangenisgestraften vergelijkbaar op basis van kenmerken zoals delictverleden en leeftijd, om het zuivere effect van de straf te isoleren."
+  },
+  {
+    "q": "Welke theorie suggereert dat werkstraffen recidive verminderen omdat ze de sociale banden van de dader intact laten?",
+    "a": [
+      "De afschrikkingstheorie.",
+      "De sociale-controletheorie.",
+      "De rationele keuzetheorie.",
+      "De differentiële-associatietheorie."
+    ],
+    "c": 1,
+    "exp": "De sociale-controletheorie stelt dat sterke banden met de samenleving (zoals werk, familie) mensen weerhouden van criminaliteit. Werkstraffen ondermijnen deze banden minder dan gevangenisstraffen, waardoor de informele sociale controle behouden blijft en recidive wordt beperkt."
+  },
+  {
+    "q": "Wat wordt bedoeld met de 'reminder function' van handhaving bij bedrijven?",
+    "a": [
+      "Het mechanisme waarbij boetes bedrijven eraan herinneren om hun administratie bij te werken.",
+      "Het effect dat nieuws over sancties compliance weer op de agenda van het management zet.",
+      "De wettelijke verplichting voor toezichthouders om eerst te waarschuwen voor te beboeten.",
+      "Het proces waarbij recidiverende bedrijven vaker worden gecontroleerd."
+    ],
+    "c": 1,
+    "exp": "De 'reminder function' houdt in dat berichten over handhaving (zoals boetes bij concurrenten) fungeren als een 'head turner'. Ze vestigen de aandacht van het management opnieuw op het belang van compliance-routines die mogelijk verslapt waren."
+  },
+  {
+    "q": "Waarom is het vaststellen van causaliteit bij het afschrikkende effect van straffen methodologisch complex?",
+    "a": [
+      "Omdat er geen betrouwbare statistieken zijn over opgelegde straffen.",
+      "Omdat straffen nooit geïsoleerd worden toegepast zonder preventieve maatregelen.",
+      "Omdat correlatie tussen straf en misdaadcijfers beïnvloed kan worden door andere factoren.",
+      "Omdat daders niet bereid zijn om mee te werken aan wetenschappelijk onderzoek."
+    ],
+    "c": 2,
+    "exp": "Een daling in criminaliteit na strafverzwaring bewijst geen causaal verband. Externe factoren zoals economische conjunctuur, sociale programma's of demografische veranderingen kunnen de oorzaak zijn. Correlatie is geen causaliteit."
+  },
+  {
+    "q": "Wat is een belangrijk nadeel van gevangenisstraf vanuit het perspectief van speciale preventie?",
+    "a": [
+      "De straf wordt door de maatschappij vaak als te licht ervaren voor zware delicten.",
+      "Het verbreekt de banden met de samenleving en kan criminogeen werken.",
+      "De kosten van tenuitvoerlegging zijn lager dan die van taakstraffen.",
+      "Het biedt onvoldoende mogelijkheden voor vergelding van het aangedane leed."
+    ],
+    "c": 1,
+    "exp": "Speciale preventie richt zich op het voorkomen van herhaling door de dader. Gevangenisstraf werkt hierbij vaak contraproductief omdat het sociale banden (werk, gezin) verbreekt en daders in een crimineel netwerk plaatst, wat de kans op recidive verhoogt."
+  },
+  {
+    "q": "Welke rol speelt 'reputatieschade' bij de naleving van regels door bedrijven?",
+    "a": [
+      "Het speelt geen rol, aangezien bedrijven alleen reageren op financiële prikkels.",
+      "Het is een informele consequentie die vaak zwaarder weegt dan de formele juridische straf.",
+      "Het is een formeel onderdeel van het sanctiepakket dat de rechter oplegt.",
+      "Het heeft alleen effect bij beursgenoteerde bedrijven en niet bij het MKB."
+    ],
+    "c": 1,
+    "exp": "Voor veel bedrijven is de angst voor informele sancties, zoals reputatieschade en verlies van maatschappelijk vertrouwen, een sterkere drijfveer voor naleving dan de angst voor de juridische boete zelf."
+  },
+  {
+    "q": "Wat houdt het 'tipping point' in met betrekking tot de zekerheid van straf?",
+    "a": [
+      "Het punt waarop de kosten van detentie de maatschappelijke baten overstijgen.",
+      "Een drempelwaarde in de pakkans waaronder straffen nauwelijks effect hebben.",
+      "Het moment waarop een dader besluit te stoppen met zijn criminele carrière.",
+      "De maximale strafmaat die een rechter kan opleggen zonder contraproductief te zijn."
+    ],
+    "c": 1,
+    "exp": "Onderzoek suggereert dat er een 'tipping point' is in de pakkans (bijvoorbeeld arrestatieratio's). Pas wanneer de pakkans boven een bepaald niveau komt, heeft de dreiging van straf een significant afschrikkend effect op de criminaliteitscijfers."
+  },
+  {
+    "q": "Op welke manier verschilt de 'instrumentele benadering' van recht van de 'rechtsfilosofische benadering'?",
+    "a": [
+      "De instrumentele benadering richt zich op de rechtvaardigheid van de norm.",
+      "De instrumentele benadering ziet recht als middel tot gedragssturing en meet effectiviteit.",
+      "De rechtsfilosofische benadering gebruikt kwantitatieve data om wetgeving te toetsen.",
+      "De rechtsfilosofische benadering richt zich op de interpretatie van wetteksten."
+    ],
+    "c": 1,
+    "exp": "De instrumentele benadering (o.a. in Empirical Legal Studies) beschouwt het recht als een instrument om maatschappelijke doelen te bereiken en onderzoekt de feitelijke effectiviteit. De rechtsfilosofische benadering toetst het recht aan normatieve waarden zoals rechtvaardigheid."
+  },
+  {
+    "q": "Wat bleek uit onderzoek naar de perceptie van belastingcontroles onder Nederlandse belastingbetalers?",
+    "a": [
+      "Zij hadden een zeer accurate inschatting van de lage pakkans.",
+      "Zij onderschatten de pakkans, wat leidde tot massale belastingontduiking.",
+      "Zij overschatten de pakkans en strafmaat, wat bijdroeg aan naleving.",
+      "Hun gedrag werd niet beïnvloed door hun perceptie van de controlekans."
+    ],
+    "c": 2,
+    "exp": "Onderzoek toont aan dat belastingbetalers de kans op een controle en de zwaarte van de sancties vaak overschatten. Deze misperceptie (in het voordeel van de fiscus) draagt bij aan een hogere naleving dan op basis van de werkelijke, lage pakkans verwacht zou worden."
+  },
+  {
+    "q": "Wat is een belangrijk kenmerk van 'explicit general deterrence'?",
+    "a": [
+      "Het mechanisme werkt via onbewuste sociale normen.",
+      "Het vereist dat potentiële overtreders kennis hebben van straffen die aan anderen zijn opgelegd.",
+      "Het richt zich op het fysiek onmogelijk maken van overtredingen.",
+      "Het is uitsluitend gericht op het voorkomen van recidive bij de gestrafte zelf."
+    ],
+    "c": 1,
+    "exp": "Explicit general deterrence gaat ervan uit dat potentiële overtreders rationeel reageren op informatie over bestraffing van anderen. Om te werken, moeten overtreders dus daadwerkelijk kennis nemen van handhavingsacties en hun risico-inschatting daarop aanpassen."
+  },
+  {
+    "q": "Welke conclusie kan worden getrokken over de 'severity' (zwaarte) van straffen op basis van The Behavioral Code?",
+    "a": [
+      "Het verhogen van de strafmaat is de meest efficiënte manier om misdaad te bestrijden.",
+      "Zware straffen hebben een sterk afschrikkend effect, mits breed gecommuniceerd.",
+      "De zwaarte van de straf is minder bepalend voor afschrikking dan de zekerheid van de straf.",
+      "Lichte straffen leiden per definitie tot meer criminaliteit."
+    ],
+    "c": 2,
+    "exp": "De consensus in sociaalwetenschappelijk onderzoek is dat het verhogen van de strafmaat (severity) slechts een marginaal effect heeft op criminaliteitscijfers, zeker in vergelijking met het verhogen van de pakkans (certainty)."
+  },
+  {
+    "q": "Wat is een 'veldexperiment' in de context van juridisch-empirisch onderzoek naar handhaving?",
+    "a": [
+      "Een theoretische simulatie van hoe mensen reageren op nieuwe wetgeving.",
+      "Een gecontroleerde studie in de werkelijke wereld, bijvoorbeeld door politie-inzet te variëren.",
+      "Een analyse van historische data over misdaadcijfers en wetswijzigingen.",
+      "Een enquête onder burgers over hun mening ten aanzien van straffen."
+    ],
+    "c": 1,
+    "exp": "Bij een veldexperiment wordt een interventie (zoals extra politiecontrole) uitgevoerd in een realistische setting, waarbij de effecten worden gemeten en vergeleken met een situatie zonder interventie om causaliteit vast te stellen."
+  },
+  {
+    "q": "Welke rol speelt de 'leeftijdsgebonden theorie van informele sociale controle' bij het verklaren van het succes van werkstraffen?",
+    "a": [
+      "Jongeren zijn gevoeliger voor de fysieke beperkingen van gevangenisstraf.",
+      "Werkstraffen behouden de banden met school, werk en familie die cruciaal zijn voor bepaalde leeftijdsgroepen.",
+      "Oudere daders hebben minder baat bij werkstraffen vanwege fysieke beperkingen.",
+      "De theorie stelt dat straffen überhaupt geen effect hebben op jongvolwassenen."
+    ],
+    "c": 1,
+    "exp": "Deze theorie benadrukt dat levensloopgebonden bindingen (school, werk, relaties) cruciaal zijn voor sociale controle. Werkstraffen verstoren deze bindingen minder dan detentie, waardoor de informele controlemechanismen die recidive voorkomen, intact blijven."
+  },
+  {
+    "q": "Wat is het effect van 'incapacitation' (insluiting) als doel van straf?",
+    "a": [
+      "De dader leert van zijn fouten en keert verbeterd terug in de maatschappij.",
+      "De dader wordt fysiek verhinderd delicten te plegen in de vrije samenleving zolang de straf duurt.",
+      "De samenleving wordt afgeschrikt door het voorbeeld van de opgesloten dader.",
+      "De dader wordt gedwongen tot arbeid om de schade aan slachtoffers te vergoeden."
+    ],
+    "c": 1,
+    "exp": "Incapacitation (uitsluiting) is een vorm van speciale preventie waarbij het doel puur is om de dader de fysieke mogelijkheid te ontnemen om strafbare feiten te plegen in de samenleving gedurende de detentieperiode."
+  },
+  {
+    "q": "Waarom kan een gevangenisstraf criminogeen werken volgens de literatuur?",
+    "a": [
+      "Omdat gevangenissen te comfortabel zijn, waardoor ze geen afschrikking vormen.",
+      "Omdat gevangenen nieuwe criminele vaardigheden leren en hun netwerk uitbreiden.",
+      "Omdat het gevangenisregime te streng is, wat leidt tot rebellie.",
+      "Omdat de pakkans na vrijlating kleiner is door gebrek aan toezicht."
+    ],
+    "c": 1,
+    "exp": "Gevangenissen kunnen als 'leerscholen voor misdaad' fungeren. Door de concentratie van daders kunnen gevangenen nieuwe criminele technieken leren en netwerken vormen (differentiële associatie), wat de kans op recidive na vrijlating vergroot."
+  },
+  {
+    "q": "Wat impliceert de 'weak signal' hypothese in het onderzoek van Thornton et al.?",
+    "a": [
+      "Dat bedrijven elk signaal van handhaving onmiddellijk oppikken en hun gedrag aanpassen.",
+      "Dat informatie over specifieke strafzaken slechts beperkt doordringt tot andere bedrijven.",
+      "Dat de overheid zwak optreedt tegen milieuovertredingen.",
+      "Dat milieuovertredingen nauwelijks meetbare schade aanrichten."
+    ],
+    "c": 1,
+    "exp": "De 'weak signal' hypothese, die deels werd bevestigd, stelt dat specifieke informatie over sancties tegen individuele overtreders vaak niet of onvolledig aankomt bij andere bedrijven in de sector, waardoor het specifieke afschrikkingseffect beperkt is."
+  },
+  {
+    "q": "Wat is volgens de Behavioral Code noodzakelijk om wetgeving effectief te laten zijn in het sturen van gedrag?",
+    "a": [
+      "Het louter aannemen en publiceren van de wettekst in het staatsblad.",
+      "Het koppelen van draconische straffen aan elke overtreding.",
+      "Het combineren van regels met handhaving, sociale normen en praktische toepasbaarheid.",
+      "Het volledig uitsluiten van discretionaire bevoegdheid bij rechters."
+    ],
+    "c": 2,
+    "exp": "Wetten zijn op zichzelf slechts woorden op papier. Voor daadwerkelijke gedragsverandering is een integratie nodig van juridische regels met handhaving, sociale acceptatie (normen) en praktische uitvoerbaarheid (zoals mechanismen)."
+  },
+  {
+    "q": "Welk type onderzoeksmethode is het meest geschikt om causale verbanden vast te stellen tussen straf en gedrag?",
+    "a": [
+      "Kwalitatieve interviews met rechters.",
+      "Analyses van bestaande jurisprudentie.",
+      "Experimenten en quasi-experimenten.",
+      "Beschrijvende analyses van misdaadstatistieken."
+    ],
+    "c": 2,
+    "exp": "Om causaliteit (oorzaak-gevolg) vast te stellen en andere verklaringen uit te sluiten, zijn experimenten (zoals veldexperimenten) of quasi-experimenten (zoals propensity score matching) de gouden standaard in empirisch onderzoek."
+  },
+  {
+    "q": "Wat wordt bedoeld met de 'dark number' problematiek bij het meten van criminaliteit?",
+    "a": [
+      "Het feit dat veel criminaliteit 's nachts plaatsvindt en moeilijk te observeren is.",
+      "Het fenomeen dat niet alle gepleegde misdrijven worden gemeld of geregistreerd.",
+      "De statistische onzekerheid bij het berekenen van recidivecijfers.",
+      "De corruptie binnen politieorganisaties die cijfers manipuleert."
+    ],
+    "c": 1,
+    "exp": "Het 'dark number' (of dark figure) verwijst naar de verborgen criminaliteit: misdrijven die wel worden gepleegd maar niet bij de politie bekend worden (door gebrek aan aangifte of opsporing), waardoor officiële statistieken een onvolledig beeld geven."
+  }
+]

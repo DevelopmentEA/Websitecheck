@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Nederland voert een heffing in van €500 per ton op de invoer van chemisch afval uit België om de verwerking ervan te ontmoedigen. Een Belgisch recyclingbedrijf stelt dat dit in strijd is met het EU-recht. De Nederlandse staat verweert zich door te stellen dat afval geen 'goed' is omdat het een negatieve waarde heeft. Beoordeel de rechtmatigheid van deze heffing.",
+    "sample": "Issue: Is afval een goed in de zin van het VWEU en is de heffing een verboden heffing van gelijke werking (artikel 30 VWEU)?\n\nRule: Goederen zijn waren die op geld waardeerbaar zijn en het voorwerp van handelstransacties kunnen vormen. Artikel 30 VWEU verbiedt in- en uitvoerrechten en heffingen van gelijke werking. Een heffing van gelijke werking is een eenzijdig opgelegde geldelijke last wegens grensoverschrijding die geen douanerecht is.\n\nApplication: Afval kan worden gerecycled en heeft daarmee economische waarde, dus het is een goed. De heffing wordt eenzijdig opgelegd vanwege de grensoverschrijding van België naar Nederland.\n\nConclusion: De heffing kwalificeert als een verboden heffing van gelijke werking ex artikel 30 VWEU, aangezien afval een goed is.",
+    "checklist": [
+      "Definitie begrip goederen",
+      "Kwalificatie als heffing gelijke werking",
+      "Eenzijdig opgelegde geldelijke last",
+      "Opgelegd wegens grensoverschrijding"
+    ],
+    "exp": "Analyse op basis van de definitie van goederen en artikel 30 VWEU zoals besproken in de brontekst over tarifaire belemmeringen."
+  },
+  {
+    "q": "Frankrijk verbiedt de verkoop van vruchtenlikeur met een alcoholpercentage lager dan 25%. Een Duitse producent wil een likeur met 18% alcohol, die in Duitsland rechtmatig wordt geproduceerd, op de Franse markt brengen. Frankrijk weigert toegang. Beoordeel deze weigering.",
+    "sample": "Issue: Is de eis inzake het alcoholpercentage een maatregel van gelijke werking in de zin van artikel 34 VWEU?\n\nRule: Volgens het arrest Dassonville is iedere handelsregeling die de intracommunautaire handel direct of indirect, daadwerkelijk of potentieel kan belemmeren een maatregel van gelijke werking. Volgens Cassis de Dijon geldt het beginsel van wederzijdse erkenning: producten die in één lidstaat rechtmatig zijn vervaardigd, moeten in andere lidstaten worden toegelaten.\n\nApplication: De eis belemmert de toegang tot de Franse markt voor de Duitse likeur die in Duitsland rechtmatig is. Het betreft een producteis, geen verkoopmodaliteit.\n\nConclusion: De maatregel is een maatregel van gelijke werking en in beginsel verboden op grond van artikel 34 VWEU.",
+    "checklist": [
+      "Maatregel van gelijke werking",
+      "Dassonville-formule toepassen",
+      "Beginsel van wederzijdse erkenning",
+      "Strijd met artikel 34 VWEU"
+    ],
+    "exp": "Toepassing van de Dassonville-formule en het Cassis de Dijon-beginsel (wederzijdse erkenning) op een producteis."
+  },
+  {
+    "q": "Italië introduceert een wet die verbiedt dat winkels hun goederen verkopen met verlies (onder de inkoopprijs). Een handelaar stelt dat dit de import van buitenlandse producten belemmert. Beoordeel of deze nationale regel onder het verbod van artikel 34 VWEU valt.",
+    "sample": "Issue: Valt een verbod op verkoop met verlies onder artikel 34 VWEU of de uitzondering van Keck?\n\nRule: Nationale bepalingen die verkoopmodaliteiten beperken of verbieden vallen buiten artikel 34 VWEU, mits zij van toepassing zijn op alle marktdeelnemers en rechtens en feitelijk dezelfde invloed hebben op nationale en ingevoerde producten (arrest Keck).\n\nApplication: Een verbod op verkoop met verlies is een verkoopmodaliteit (hoe/wanneer verkopen). Indien deze regel voor alle handelaren geldt en geen onderscheid maakt tussen binnenlandse en buitenlandse producten, is aan de voorwaarden voldaan.\n\nConclusion: De regel valt buiten de reikwijdte van artikel 34 VWEU, mits niet-discriminerend.",
+    "checklist": [
+      "Kwalificatie als verkoopmodaliteit",
+      "Uitzondering arrest Keck",
+      "Van toepassing op alle marktdeelnemers",
+      "Rechtens en feitelijk dezelfde invloed"
+    ],
+    "exp": "Analyse van de Keck-uitzondering voor verkoopmodaliteiten versus producteisen."
+  },
+  {
+    "q": "Duitsland verbiedt het gebruik van waterscooters op alle openbare wateren om het milieu te beschermen. Een producent van waterscooters stelt dat hierdoor de import van waterscooters feitelijk onmogelijk wordt gemaakt. Is dit een maatregel van gelijke werking?",
+    "sample": "Issue: Is een gebruiksverbod een maatregel van gelijke werking in de zin van artikel 34 VWEU?\n\nRule: Regels die het gebruik van een product aanzienlijk beperken waardoor de toegang tot de markt wordt belemmerd, zijn maatregelen van gelijke werking (arrest Mickelsson).\n\nApplication: Een totaalverbod op gebruik heeft een grote invloed op het consumentengedrag; consumenten zullen het product niet kopen als ze het niet mogen gebruiken. Dit belemmert de markttoegang aanzienlijk.\n\nConclusion: Het verbod is een maatregel van gelijke werking onder artikel 34 VWEU, tenzij gerechtvaardigd en proportioneel.",
+    "checklist": [
+      "Gebruiksverbod beoordelen",
+      "Mickelsson markttoegangstoets",
+      "Aanzienlijke belemmering markttoegang",
+      "Kwalificatie als maatregel gelijke werking"
+    ],
+    "exp": "Toepassing van de Mickelsson-rechtspraak over gebruiksbeperkingen en markttoegang."
+  },
+  {
+    "q": "Nederland weert een bepaald type vitaminepreparaat uit Polen omdat het gevaarlijk zou zijn voor de volksgezondheid. Er is geen Europese harmonisatie. Nederland voert een totaalverbod in, terwijl een waarschuwingsetiket ook mogelijk was. Beoordeel de rechtvaardiging.",
+    "sample": "Issue: Kan het invoerverbod gerechtvaardigd worden onder artikel 36 VWEU en is het evenredig?\n\nRule: Belemmeringen kunnen gerechtvaardigd worden op grond van artikel 36 VWEU (o.a. volksgezondheid), mits de maatregel geschikt en noodzakelijk is (evenredigheidsbeginsel).\n\nApplication: Volksgezondheid is een geldig doel. Echter, een totaalverbod gaat verder dan noodzakelijk als een lichter middel, zoals een etiket, hetzelfde doel kan bereiken.\n\nConclusion: De maatregel is niet noodzakelijk en dus disproportioneel; het beroep op de rechtvaardigingsgrond faalt.",
+    "checklist": [
+      "Rechtvaardigingsgrond artikel 36 VWEU",
+      "Toetsing evenredigheidsbeginsel",
+      "Beoordeling noodzakelijkheid",
+      "Bestaan minder ingrijpend alternatief"
+    ],
+    "exp": "Analyse van rechtvaardigingsgronden en de proportionaliteitstoets (geschiktheid en noodzakelijkheid)."
+  }
+]

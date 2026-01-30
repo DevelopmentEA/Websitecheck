@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Booy verkoopt een kraan aan Wisman en verzekert hem dat hiervoor een kentekenbewijs zal worden afgegeven. De Rijksdienst weigert dit echter. Wisman beroept zich op dwaling. Booy stelt dat het verkrijgen van het kenteken een uitsluitend toekomstige omstandigheid betreft, waardoor een beroep op dwaling is uitgesloten op grond van artikel 6:228 lid 2 BW. Slag dit verweer?",
+    "sample": "Rechtsvraag: Is de verwachting omtrent het verkrijgen van een kentekenbewijs een uitsluitend toekomstige omstandigheid?\n\nRechtsregel: Volgens HR Booy/Wisman zijn toekomstige verwachtingen die betrekking hebben op gevolgen van bestaande eigenschappen geen zuiver toekomstige omstandigheden.\n\nToepassing: De onmogelijkheid om een kenteken te krijgen vloeide voort uit de eigenschappen die de kraan ten tijde van de koop reeds bezat.\n\nConclusie: Het verweer van Booy faalt; het beroep op dwaling is mogelijk.",
+    "checklist": [
+      "Rechtsvraag betreft uitsluitend toekomstige omstandigheid.",
+      "Verwachting gebaseerd op bestaande eigenschappen.",
+      "Geen zuiver toekomstige omstandigheid (Booy/Wisman).",
+      "Beroep op dwaling slaagt."
+    ],
+    "exp": "Uit het arrest HR Booy/Wisman blijkt dat de verwachting van het verkrijgen van een kentekenbewijs geen uitsluitend toekomstige omstandigheid is, omdat deze verwachting gebaseerd is op de eigenschappen die de zaak op het moment van de koop al bezat."
+  },
+  {
+    "q": "De 14-jarige Klaas koopt zonder toestemming van zijn ouders een nieuwe MacBook Pro voor €3.100 van zijn spaargeld. Zijn moeder wil de koop vernietigen. De winkelier stelt dat de overeenkomst geldig is omdat Klaas met eigen geld betaalde. Is de overeenkomst rechtsgeldig?",
+    "sample": "Rechtsvraag: Is de 14-jarige Klaas handelingsbekwaam voor deze aankoop?\n\nRechtsregel: Een minderjarige is handelingsonbekwaam, tenzij de wet anders bepaalt of toestemming wordt verondersteld voor gebruikelijke handelingen (art. 1:234 lid 3 BW).\n\nToepassing: Het kopen van een laptop van €3.100 is niet gebruikelijk voor een 14-jarige in het maatschappelijk verkeer.\n\nConclusie: Klaas is handelingsonbekwaam; de overeenkomst is vernietigbaar (art. 3:32 lid 2 BW).",
+    "checklist": [
+      "Minderjarige is in beginsel handelingsonbekwaam.",
+      "Toestemming verondersteld bij gebruikelijke handelingen.",
+      "Aankoop van €3.100 is ongebruikelijk.",
+      "Overeenkomst is vernietigbaar."
+    ],
+    "exp": "Op grond van artikel 1:234 lid 3 BW wordt toestemming slechts verondersteld bij rechtshandelingen die gebruikelijk zijn voor de leeftijd. Een uitgave van €3.100 is voor een 14-jarige niet gebruikelijk, waardoor hij handelingsonbekwaam is."
+  },
+  {
+    "q": "In een contract tussen twee partijen staat dat de koper een machine mag teruggeven voor f 20.000. De verkoper weigert de teruggave omdat de koper geen reden opgeeft, hoewel de tekst van het contract dit niet vereist. De verkoper stelt dat dit wel de bedoeling was. Welke maatstaf geldt voor de uitleg van dit contract?",
+    "sample": "Rechtsvraag: Is de zuiver taalkundige uitleg van de bepalingen doorslaggevend?\n\nRechtsregel: Volgens HR Haviltex is de zin die partijen redelijkerwijs aan de bepalingen mochten toekennen beslissend (Haviltex-norm).\n\nToepassing: Men kan niet volstaan met een zuiver taalkundige uitleg; de partijbedoelingen en verwachtingen zijn leidend.\n\nConclusie: De overeenkomst moet worden uitgelegd aan de hand van de Haviltex-maatstaf.",
+    "checklist": [
+      "Zuiver taalkundige uitleg is onvoldoende.",
+      "Haviltex-norm is beslissend.",
+      "Zin die partijen redelijkerwijs toekenden.",
+      "Verwachtingen over en weer relevant."
+    ],
+    "exp": "Het Haviltex-arrest bepaalt dat bij de uitleg van overeenkomsten niet de letterlijke tekst, maar de zin die partijen in de gegeven omstandigheden over en weer redelijkerwijs aan de bepalingen mochten toekennen, doorslaggevend is."
+  },
+  {
+    "q": "Installateur Swinkels schakelt tijdens werkzaamheden het klimaatalarm uit en vergeet dit weer in te schakelen, waardoor 764 varkens stikken. Swinkels beroept zich op een exoneratiebeding in de algemene voorwaarden. Kuunders stelt dat dit onaanvaardbaar is. Beoordeel de positie van Swinkels.",
+    "sample": "Rechtsvraag: Kan Swinkels zich in deze omstandigheden beroepen op het exoneratiebeding?\n\nRechtsregel: Een beroep op exoneratie is onaanvaardbaar naar redelijkheid en billijkheid bij opzet of bewuste roekeloosheid (HR Kuunders/Swinkels).\n\nToepassing: Het verzuim was zeer laakbaar en de gevolgen ernstig; Swinkels handelde bewust roekeloos.\n\nConclusie: Het beroep op het exoneratiebeding faalt (art. 6:248 lid 2 BW).",
+    "checklist": [
+      "Beroep op exoneratiebeding toetsen.",
+      "Beperkende werking redelijkheid en billijkheid.",
+      "Onaanvaardbaar bij opzet of bewuste roekeloosheid.",
+      "Swinkels is aansprakelijk."
+    ],
+    "exp": "Volgens HR Kuunders/Swinkels kan een beroep op een exoneratiebeding buiten toepassing blijven als dit naar maatstaven van redelijkheid en billijkheid onaanvaardbaar is, bijvoorbeeld bij bewuste roekeloosheid."
+  },
+  {
+    "q": "Van Geest koopt een auto van handelaar Nederlof. Nederlof verzwijgt dat de auto total loss is geweest. Nederlof verweert zich tegen het beroep op dwaling door te stellen dat Van Geest de auto had moeten laten keuren. Slaagt dit verweer?",
+    "sample": "Rechtsvraag: Weegt de onderzoeksplicht van de koper zwaarder dan de mededelingsplicht van de verkoper?\n\nRechtsregel: De goede trouw verzet zich ertegen dat de verkoper die zijn spreekplicht schendt, de koper tegenwerpt dat hij geen onderzoek deed (HR Van Geest/Nederlof).\n\nToepassing: Nederlof had de ernstige schade moeten mededelen en kan zich niet verschuilen achter de onderzoeksplicht van Van Geest.\n\nConclusie: Het verweer faalt; de mededelingsplicht gaat voor.",
+    "checklist": [
+      "Rangorde mededelingsplicht en onderzoeksplicht.",
+      "Verkoper schond mededelingsplicht.",
+      "Verweer inzake onderzoeksplicht faalt.",
+      "Mededelingsplicht weegt zwaarder."
+    ],
+    "exp": "Uit het arrest Van Geest/Nederlof volgt de rechtsregel dat de mededelingsplicht van de verkoper in het algemeen prevaleert boven de onderzoeksplicht van de koper bij dwaling."
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Beschrijvende normen verwijzen naar de perceptie van welk gedrag binnen een groep moreel wordt goedgekeurd of afgekeurd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Beschrijvende normen (descriptive norms) geven aan wat mensen feitelijk doen in een bepaalde situatie. Injunctieve normen verwijzen naar wat sociaal wordt goedgekeurd of afgekeurd (wat men zou moeten doen)."
+  },
+  {
+    "q": "Informationele sociale invloed wordt gedreven door de wens van een individu om accuraat te handelen in onzekere situaties.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Mensen conformeren zich aan sociale normen via informationele invloed omdat ze aannemen dat de groep over meer of betere informatie beschikt, wat hen helpt om correct te handelen."
+  },
+  {
+    "q": "Normatieve sociale invloed vindt plaats wanneer individuen hun gedrag aanpassen om sociale afkeuring te vermijden en bij de groep te horen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Normatieve sociale invloed vloeit voort uit de fundamentele menselijke behoefte aan sociale acceptatie en het vermijden van sancties of uitsluiting door de groep."
+  },
+  {
+    "q": "Het benadrukken van de prevalentie van ongewenst gedrag in een campagne leidt doorgaans tot een afname van dat gedrag.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het benadrukken dat veel mensen ongewenst gedrag vertonen (een beschrijvende norm) kan dit gedrag onbedoeld normaliseren en valideren, waardoor de frequentie ervan juist kan toenemen."
+  },
+  {
+    "q": "Bij interventies op basis van sociale normen is het gebruik van 'negative framing' (benadrukken wat men niet moet doen) vaak effectief.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Negative framing is effectief omdat het de aandacht richt op de injunctieve norm (sociale afkeuring), waardoor wordt ingespeeld op de motivatie van mensen om sociale sancties te vermijden."
+  },
+  {
+    "q": "De 'code van de straat' ontstaat primair in wijken waar een sterke formele rechtsorde en veel politieaanwezigheid is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De straatcultuur en bijbehorende code ontstaan juist in een vacuüm van formeel gezag, waar bewoners weinig vertrouwen hebben in de politie en het rechtssysteem, en daarom eigen regels voor veiligheid ontwikkelen."
+  },
+  {
+    "q": "In de straatcultuur fungeert 'respect' als een vorm van sociaal kapitaal dat bescherming kan bieden tegen fysiek geweld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Respect (of 'juice') wordt gezien als een essentieel bezit dat dwingt tot een bepaalde behandeling; het hebben van respect werkt als een schild tegen agressie van anderen."
+  },
+  {
+    "q": "Kinderen uit zogenaamde 'fatsoenlijke' gezinnen kunnen zich in de openbare ruimte volledig onttrekken aan de regels van de straatcultuur.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Kinderen uit fatsoenlijke gezinnen moeten 'code-switching' toepassen: zij moeten de regels van de straat kennen en kunnen toepassen om zich veilig in de openbare ruimte te handhaven."
+  },
+  {
+    "q": "Volgens de 'code van de straat' wordt het weglopen van een fysiek conflict gezien als een teken van volwassenheid en verstand.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Binnen de straatcode wordt weglopen gezien als een teken van zwakte. Vergelding is noodzakelijk om eer en zelfrespect te behouden en toekomstig gebrek aan respect te voorkomen."
+  },
+  {
+    "q": "Het concept 'nerve' in de straatcultuur verwijst naar het demonstreren van een gebrek aan angst voor fysieke consequenties of de dood.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het tonen van 'nerve' (lef) is cruciaal om respect af te dwingen; het laat zien dat men niet bang is voor fysiek letsel en bereid is geweld te gebruiken."
+  },
+  {
+    "q": "Berichten die de injunctieve norm benadrukken zijn effectiever in het verminderen van afgeleid rijgedrag dan berichten die enkel de prevalentie benadrukken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Uit onderzoek blijkt dat het expliciet maken van sociale afkeuring (injunctieve norm) effectiever is tegen ongewenst gedrag dan het benoemen van hoe vaak het voorkomt (beschrijvende norm)."
+  },
+  {
+    "q": "Een sociale norm beïnvloedt gedrag ongeacht of deze 'salient' (opvallend) is in de directe omgeving op het moment van beslissen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een sociale norm beïnvloedt gedrag alleen effectief als deze saillant is gemaakt in de specifieke context, bijvoorbeeld door borden of zichtbaar gedrag van anderen."
+  },
+  {
+    "q": "Volgens de Goal-framing theorie leidt het activeren van een normatief doel tot een gevoel van verplichting om gepast te handelen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Wanneer een normatief doel wordt geactiveerd, worden mensen gemotiveerd om te handelen in overeenstemming met wat als gepast wordt beschouwd binnen de sociale context."
+  },
+  {
+    "q": "Dynamische normen verwijzen naar informatie over hoe gedrag in de tijd verandert, wat conformiteit kan stimuleren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Informatie over veranderend gedrag (trends) kan mensen motiveren om zich aan te passen aan een toekomstige norm, zelfs als de meerderheid het gedrag op dit moment nog niet vertoont."
+  },
+  {
+    "q": "Impliciete boodschappen zoals 'gelieve niet te appen' zijn effectiever in het activeren van normatieve focus dan expliciete boodschappen van afkeuring.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Impliciete boodschappen activeren de normatieve focus vaak onvoldoende. Expliciete boodschappen die sociale afkeuring uitdrukken maken de injunctieve norm duidelijker en zijn daardoor effectiever."
+  },
+  {
+    "q": "Conformeren aan sociale normen correleert in neurowetenschappelijk onderzoek met een verhoogde activiteit in het beloningscentrum van de hersenen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Onderzoek toont aan dat conformiteit gepaard gaat met activiteit in de nucleus accumbens, wat suggereert dat het volgen van de groepsnorm intrinsiek belonend wordt ervaren."
+  },
+  {
+    "q": "Confederates in sociaalwetenschappelijk onderzoek zijn deelnemers die niet op de hoogte zijn van het doel van het experiment.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Confederates zijn handlangers van de onderzoekers (acteurs) die zich voordoen als gewone deelnemers om specifiek gedrag te modelleren en sociale invloed te triggeren."
+  },
+  {
+    "q": "Naleving van de wet is volgens psychologisch onderzoek voornamelijk een individuele, rationele kosten-batenanalyse die losstaat van de sociale context.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Gedragswetenschappelijk onderzoek toont aan dat naleving sterk wordt beïnvloed door sociale normen, groepsdynamiek en context, en zelden een puur individuele geïsoleerde keuze is."
+  },
+  {
+    "q": "Het geven van vergelijkende  over het energieverbruik van buren leidt vaak tot een daling van het eigen verbruik.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Door  te geven over het verbruik van buren wordt een sociale norm geactiveerd, waardoor mensen geneigd zijn hun gedrag aan te passen aan de groepsnorm."
+  },
+  {
+    "q": "In de straatcultuur wordt het bezit van dure materiële zaken zoals kleding en sieraden gezien als irrelevant voor iemands status.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Materiële bezittingen zijn juist symbolen van status en succes in de straatcultuur; ze dwingen respect af maar maken de eigenaar ook kwetsbaar voor beroving."
+  },
+  {
+    "q": "'Staging areas' zijn publieke plekken waar jongeren samenkomen en waar de strijd om respect en status plaatsvindt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Staging areas, zoals hangplekken, fungeren als het toneel waar individuen hun status tonen, anderen uitdagen en waar de hiërarchie van de straat wordt bepaald."
+  },
+  {
+    "q": "Het corrigeren van misvattingen over alcoholgebruik onder studenten leidt vaak tot een toename van de consumptie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Studenten overschatten vaak hoeveel anderen drinken. Het communiceren van de werkelijke (lagere) norm verlaagt de waargenomen sociale druk, wat leidt tot minder consumptie."
+  },
+  {
+    "q": "Normatieve boodschappen zijn effectiever wanneer ze verwijzen naar een sociale groep waarmee de ontvanger zich identificeert.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Sociale invloed is sterker wanneer de norm afkomstig is van een relevante 'in-group'; mensen conformeren zich sneller aan normen van groepen waar ze bij horen of bij willen horen."
+  },
+  {
+    "q": "Mannelijkheid ('manhood') in de straatcultuur is onlosmakelijk verbonden met de bereidheid om geweld te gebruiken indien uitgedaagd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In de straatcultuur betekent mannelijkheid het opeisen van respect, fysieke dominantie en het tonen van 'nerve', wat impliceert dat men geweld niet schuwt om eer te verdedigen."
+  },
+  {
+    "q": "Sociale norm-interventies moeten dwingend en directief zijn om effectief gedrag te veranderen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Interventies werken het beste als ze subtiel zijn. Te dwingende boodschappen kunnen weerstand (reactance) oproepen, waardoor mensen juist tegen de norm in gaan handelen."
+  },
+  {
+    "q": "De geloofwaardigheid van de bron is een cruciale factor voor het succes van een sociale norm-interventie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Als de doelgroep de bron wantrouwt of denkt dat de informatie gemanipuleerd is, zal de normatieve boodschap genegeerd of verworpen worden."
+  },
+  {
+    "q": "Het fenomeen waarbij individuen hun gedrag aanpassen aan de groep omdat ze denken dat de groep gelijk heeft, heet normatieve sociale invloed.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Dit fenomeen heet informationele sociale invloed. Normatieve sociale invloed gaat over de behoefte aan acceptatie, niet over de behoefte aan accurate informatie."
+  },
+  {
+    "q": "Vergelding (retaliation) binnen de straatcultuur wordt gezien als een noodzakelijk middel om de eigen eer te herstellen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het niet vergelden van een belediging of aanval wordt gezien als zwakte, wat leidt tot verlies van respect. Vergelding is dus functioneel voor statusbehoud."
+  },
+  {
+    "q": "Code-switching verwijst naar het permanent verlaten van de straatcultuur door te verhuizen naar een andere wijk.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Code-switching is het vermogen om het gedrag aan te passen aan de situatie: thuis fatsoenlijke waarden hanteren, maar op straat de straatcode volgen om te overleven."
+  },
+  {
+    "q": "Sociale normen kunnen gedrag beïnvloeden zonder dat er sprake is van directe interactie of expliciete verzoeken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Sociale normen werken vaak impliciet via observatie van de omgeving of informatie over wat anderen doen, zonder dat iemand direct vraagt om het gedrag aan te passen."
+  }
+]

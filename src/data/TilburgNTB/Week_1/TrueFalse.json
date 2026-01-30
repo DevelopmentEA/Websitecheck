@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Het bestuursrecht regelt uitsluitend de rechtsverhouding tussen de overheid en de burger en bevat geen regels voor bestuursorganen onderling.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het bestuursrecht omvat het recht van, voor en tegen het openbaar bestuur. Dit betekent dat het ook regels bevat die de verhoudingen tussen bestuursorganen onderling regelen (het recht voor het bestuur)."
+  },
+  {
+    "q": "Het legaliteitsvereiste houdt in dat overheidsoptreden dat ingrijpt in de rechten van burgers altijd gebaseerd moet zijn op een voorafgaande wettelijke grondslag.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het legaliteitsvereiste vereist dat de overheid voor belastend optreden, en in veel gevallen ook voor begunstigend optreden, een specifieke bevoegdheid moet kunnen aanwijzen in een wet."
+  },
+  {
+    "q": "De Algemene wet bestuursrecht (Awb) staat in hiërarchische rang boven andere wetten in formele zin, zoals de Gemeentewet.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Awb is een wet in formele zin en staat hiërarchisch op hetzelfde niveau als andere formele wetten. Bij strijdigheid gaat de bijzondere wet (lex specialis) in beginsel voor op de algemene wet (lex generalis), tenzij de Awb dwingend recht bevat."
+  },
+  {
+    "q": "Het specialiteitsbeginsel, zoals gecodificeerd in artikel 3:3 Awb, houdt in dat een bestuursorgaan een bevoegdheid alleen mag gebruiken voor het doel waarvoor deze is verleend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:3 Awb bepaalt dat het bestuursorgaan de bevoegdheid tot het nemen van een besluit niet voor een ander doel mag gebruiken dan waarvoor die bevoegdheid is verleend (verbod op détournement de pouvoir)."
+  },
+  {
+    "q": "Een ministeriële regeling staat in de normenhiërarchie boven een Algemene Maatregel van Bestuur (AMvB).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In de hiërarchie van normen staat de Algemene Maatregel van Bestuur (vastgesteld bij Koninklijk Besluit) boven de ministeriële regeling."
+  },
+  {
+    "q": "Artikel 120 van de Grondwet verbiedt de rechter om wetten in formele zin te toetsen aan de Grondwet.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 120 Grondwet bepaalt dat de rechter niet treedt in de beoordeling van de grondwettigheid van wetten en verdragen. Dit toetsingsverbod geldt specifiek voor wetten in formele zin."
+  },
+  {
+    "q": "Bij 'verticaal gelede normstelling' wordt een onderwerp geregeld door meerdere wetten van gelijke rang.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Verticaal gelede normstelling houdt in dat de normstelling plaatsvindt op verschillende niveaus van regelgeving (van hoog naar laag), bijvoorbeeld van een wet in formele zin naar een individuele beschikking. Horizontaal gelede normstelling betreft wetten van gelijke rang."
+  },
+  {
+    "q": "Een regeling in de Awb die van 'dwingend recht' is, staat afwijking in lagere regelgeving toe.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Van bepalingen van dwingend recht in de Awb mag niet worden afgeweken in lagere wetgeving. Uitsluitend een bijzondere wet in formele zin kan een uitzondering maken op dwingend recht."
+  },
+  {
+    "q": "Het begrip 'openbaar bestuur' is synoniem aan het begrip 'overheid'.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het openbaar bestuur (de uitvoerende macht) is een onderdeel van de overheid. Tot de overheid behoren ook de wetgevende macht en de rechterlijke macht."
+  },
+  {
+    "q": "Aanvullend recht in de Awb geldt alleen als de bijzondere wet het onderwerp niet zelf heeft geregeld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Aanvullend recht fungeert als een vangnet: de regel uit de Awb is van toepassing indien een regeling in de bijzondere wetgeving ontbreekt."
+  },
+  {
+    "q": "De termijn voor het indienen van een bezwaarschrift, zoals geregeld in artikel 6:7 Awb, is een voorbeeld van regelend recht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De termijn voor bezwaar en beroep (zes weken) is van dwingend recht om de rechtszekerheid en uniformiteit te waarborgen. Lagere wetgeving mag hier niet van afwijken."
+  },
+  {
+    "q": "Het Harmonisatiewetarrest bevestigde dat de rechter formele wetten mag toetsen aan algemene rechtsbeginselen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In het Harmonisatiewetarrest heeft de Hoge Raad bepaald dat artikel 120 Grondwet zich ertegen verzet dat de rechter een wet in formele zin toetst aan algemene rechtsbeginselen."
+  },
+  {
+    "q": "In de hiërarchie van rechtsnormen staan een ieder verbindende bepalingen van verdragen boven de Grondwet.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 94 Grondwet bepaalt dat binnen het Koninkrijk geldende wettelijke voorschriften (inclusief de Grondwet) geen toepassing vinden indien deze niet verenigbaar zijn met een ieder verbindende bepalingen van verdragen."
+  },
+  {
+    "q": "Facultatief recht in de Awb is recht dat automatisch geldt voor alle bestuursorganen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Facultatief recht geldt alleen als daartoe nadrukkelijk wordt besloten of als dit van toepassing wordt verklaard door een regelgever of bestuursorgaan (bijvoorbeeld de uniforme openbare voorbereidingsprocedure)."
+  },
+  {
+    "q": "Een van de doelstellingen van de Awb is het codificeren van normen die in de rechtspraak zijn ontwikkeld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De Awb heeft onder meer tot doel om ongeschreven recht en beginselen van behoorlijk bestuur die in de jurisprudentie zijn ontwikkeld, vast te leggen in de wet (codificatie)."
+  },
+  {
+    "q": "Het wetsvoorstel Wet versterking waarborgfunctie Awb introduceert een algemeen 'dienstbaarheidsbeginsel' in artikel 2:4a Awb.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het wetsvoorstel stelt voor om in artikel 2:4a Awb op te nemen dat bestuursorganen zich bij de uitoefening van hun taak dienstbaar opstellen."
+  },
+  {
+    "q": "Een gemeentelijke verordening is een wet in formele zin.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een wet in formele zin is een gezamenlijk besluit van de regering en de Staten-Generaal. Een gemeentelijke verordening is wetgeving in materiële zin (lagere wetgeving)."
+  },
+  {
+    "q": "De Grondwet bevat voornamelijk regels die direct gericht zijn tot de individuele burger.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Grondwet bevat voornamelijk organisatierecht en opdrachten aan de wetgever, en relatief weinig regels die burgers direct binden in het bestuursrechtelijke verkeer."
+  },
+  {
+    "q": "Het bestuursrecht behoort tot het publiekrecht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het publiekrecht regelt de inrichting van de staat en de relatie tussen overheid en burger. Het bestuursrecht is hier, naast het staatsrecht en strafrecht, een onderdeel van."
+  },
+  {
+    "q": "Horizontaal gelede normstelling ziet op de situatie waarbij voor een handeling meerdere wetten van gelijke rang van toepassing zijn.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij horizontale geleding wordt een activiteit gereguleerd door verschillende wetten die op hetzelfde hiërarchische niveau staan (bijvoorbeeld de Algemene wet bestuursrecht naast een bijzondere wet)."
+  },
+  {
+    "q": "Het Statuut voor het Koninkrijk der Nederlanden staat in de rechtsorde onder de Grondwet.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het Statuut is de hoogste regeling binnen het Koninkrijk en staat boven de Grondwet van Nederland."
+  },
+  {
+    "q": "De 'burgerlus' in het bestuursprocesrecht is bedoeld om bestuursorganen een extra kans te geven hun besluit te herstellen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De burgerlus is bedoeld om de burger in de gelegenheid te stellen een stelling aannemelijk te maken of een beroepsgrond nader te onderbouwen, ter bevordering van 'equality of arms'."
+  },
+  {
+    "q": "Het specialiteitsbeginsel houdt in dat het bestuur het algemeen belang in de breedste zin van het woord mag behartigen met elke bevoegdheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het specialiteitsbeginsel beperkt het bestuur juist: een bevoegdheid mag alleen worden gebruikt voor het specifieke belang waarvoor de wetgever die bevoegdheid in het leven heeft geroepen."
+  },
+  {
+    "q": "De Algemene wet bestuursrecht is in 1994 in zijn geheel in één keer ingevoerd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Awb is in tranches (delen) ingevoerd. De eerste twee tranches traden in 1994 in werking, de derde in 1998 en de vierde in 2009."
+  },
+  {
+    "q": "Regelend recht in de Awb is te herkennen aan formuleringen die afwijking in lagere regelgeving toestaan, zoals 'tenzij bij wettelijk voorschrift anders is bepaald'.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Regelend recht stelt een hoofdregel vast, maar biedt uitdrukkelijk de mogelijkheid om in lagere regelgeving een andere voorziening te treffen."
+  },
+  {
+    "q": "De hiërarchie van normen impliceert dat een provinciale verordening niet in strijd mag zijn met een gemeentelijke verordening.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De provincie is een hoger overheidslichaam dan de gemeente. Een gemeentelijke verordening (lagere regel) mag niet in strijd zijn met een provinciale verordening (hogere regel), niet andersom."
+  },
+  {
+    "q": "De 'alles-of-niets'-lijn in de toeslagenaffaire was een gevolg van het strikt toepassen van dwingend recht zonder ruimte voor belangenafweging.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De bestuursrechter oordeelde tot 2019 dat de wet dwingend voorschreef dat alles teruggevorderd moest worden bij een fout, waardoor er geen ruimte was voor het evenredigheidsbeginsel."
+  },
+  {
+    "q": "De Awb is ook van toepassing op de strafrechtelijke vervolging van verdachten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De strafrechtelijke vervolging wordt geregeld in het Wetboek van Strafvordering. De Awb ziet op bestuursrechtelijke verhoudingen, hoewel er raakvlakken zijn (zoals bij de bestuurlijke boete)."
+  },
+  {
+    "q": "In het voorgestelde artikel 3:4 lid 2 Awb (Wet versterking waarborgfunctie) wordt de toetsing aan evenredigheid beperkt tot gevallen waarin het eerste lid de belangenafweging niet beperkt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het voorstel beoogt juist dat de evenredigheidstoets ook plaatsvindt indien het eerste lid of een wettelijk voorschrift de af te wegen belangen beperkt (dus ook bij gebonden bevoegdheden)."
+  },
+  {
+    "q": "Het codificeren van ongeschreven rechtsbeginselen in de Awb heeft als doel de rechtszekerheid te vergroten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Door ongeschreven normen vast te leggen in de wet (zoals het motiveringsbeginsel of zorgvuldigheidsbeginsel) wordt voor burgers en bestuur duidelijker welke regels gelden, wat de rechtszekerheid dient."
+  }
+]

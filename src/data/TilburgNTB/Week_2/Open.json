@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Jan de Vries wil een schadevergoeding vorderen van de Gemeente Amsterdam. In zijn brief aan de rechtbank stelt hij dat de 'Gemeente Amsterdam' het bestuursorgaan is dat het onrechtmatige besluit heeft genomen. Analyseer aan de hand van de Algemene wet bestuursrecht en het Burgerlijk Wetboek of de 'Gemeente Amsterdam' als bestuursorgaan kan worden aangemerkt.",
+    "sample": "Issue: De rechtsvraag is of de 'Gemeente Amsterdam' kwalificeert als een bestuursorgaan in de zin van artikel 1:1 lid 1 Awb.\n\nRule: Artikel 1:1 lid 1 onder a Awb definieert een bestuursorgaan als een orgaan van een krachtens publiekrecht ingestelde rechtspersoon. Artikel 2:1 leden 1 en 2 BW bepalen dat de gemeente een publiekrechtelijke rechtspersoon is.\n\nApplication: De 'Gemeente Amsterdam' bezit rechtspersoonlijkheid op grond van artikel 2:1 BW. Een rechtspersoon is echter de drager van rechten en plichten, maar kan zelf geen bestuursorgaan zijn. Bestuursorganen zijn onderdelen (organen) van die rechtspersoon, zoals de burgemeester, de gemeenteraad of het college van B&W (artikel 6 Gemeentewet).\n\nConclusion: De Gemeente Amsterdam is geen bestuursorgaan, maar een publiekrechtelijke rechtspersoon. De stelling van Jan is onjuist.",
+    "checklist": [
+      "Gemeente is publiekrechtelijke rechtspersoon (art. 2:1 BW).",
+      "Rechtspersoon is zelf geen bestuursorgaan.",
+      "Bestuursorgaan is orgaan van rechtspersoon (art. 1:1 Awb).",
+      "Voorbeelden organen: burgemeester, raad, college."
+    ],
+    "exp": "Artikel 1:1 lid 1 onder a Awb en Artikel 2:1 BW.\n\nEr moet een strikt onderscheid worden gemaakt tussen de rechtspersoon (de gemeente) en het bestuursorgaan (bijvoorbeeld het college van B&W). De rechtspersoon is de juridische entiteit, het orgaan verricht de publiekrechtelijke rechtshandeling."
+  },
+  {
+    "q": "Stichting Cultuurfonds X verstrekt subsidies voor lokale kunstprojecten. De stichting is privaatrechtelijk opgericht, maar wordt voor 80% gefinancierd door de gemeente. De gemeente benoemt het bestuur en bepaalt in de subsidieverordening exact de criteria waaraan aanvragen moeten voldoen. Is het bestuur van deze stichting een bestuursorgaan bij het weigeren van een subsidie?",
+    "sample": "Issue: De rechtsvraag is of het bestuur van een privaatrechtelijke stichting kwalificeert als een b-orgaan in de zin van artikel 1:1 lid 1 onder b Awb.\n\nRule: Een privaatrechtelijk orgaan is een b-orgaan als het met openbaar gezag is bekleed. Volgens de uitspraak Schipholregio (ECLI:NL:RVS:2014:3379) is dit bij geldelijke verstrekkingen het geval als wordt voldaan aan het financiële vereiste (grotendeels bekostigd door a-orgaan) en het inhoudelijke vereiste (criteria bepaald door a-orgaan).\n\nApplication: De stichting wordt voor 80% gefinancierd door de gemeente (voldoet aan financieel vereiste > 2/3). De gemeente bepaalt de criteria in de verordening (voldoet aan inhoudelijk vereiste). Het bestuur oefent dus openbaar gezag uit.\n\nConclusion: Het bestuur van Stichting Cultuurfonds X is een b-orgaan en dus een bestuursorgaan in de zin van de Awb.",
+    "checklist": [
+      "Kwalificatie als b-orgaan (art. 1:1 lid 1 sub b).",
+      "Toetsing financieel vereiste (>2/3 overheidsfinanciering).",
+      "Toetsing inhoudelijk vereiste (beslissende invloed criteria).",
+      "Verwijzing naar jurisprudentie Schipholregio."
+    ],
+    "exp": "ABRvS 17 september 2014, ECLI:NL:RVS:2014:3379 (Stichting bevordering kwaliteit leefomgeving Schipholregio).\n\nBij privaatrechtelijke rechtspersonen die geld verstrekken, wordt aan de hand van de twee cumulatieve criteria uit het Schipholregio-arrest bepaald of sprake is van openbaar gezag en dus van een b-orgaan."
+  },
+  {
+    "q": "Het Waterschap Rijn en IJssel stelt een verordening vast die het gebruik van waterwegen regelt. Een burger stelt dat het Waterschap onbevoegd is omdat alleen de gemeente regels mag stellen voor het grondgebied. Analyseer dit standpunt aan de hand van de staatsrechtelijke inrichting van decentrale overheden.",
+    "sample": "Issue: De rechtsvraag is of het Waterschap bevoegd is regelgeving vast te stellen binnen zijn functionele taakgebied, naast de gemeente.\n\nRule: Nederland kent territoriale decentralisatie (gemeenten/provincies) met een open huishouding en functionele decentralisatie (waterschappen) met een gesloten huishouding. Waterschappen hebben een specifieke, doelgebonden taak (waterbeheer) en verordenende bevoegdheid binnen die taak (Waterschapswet/Grondwet).\n\nApplication: De gemeente heeft een algemene bestuurstaak binnen haar grondgebied. Het waterschap heeft echter een functionele taak (waterkwantiteit en -kwaliteit) die niet gebonden is aan gemeentegrenzen maar aan stroomgebieden. Binnen deze taak heeft het waterschap autonome regelgevende bevoegdheid.\n\nConclusion: Het standpunt is onjuist. Het waterschap is bevoegd op basis van functionele decentralisatie.",
+    "checklist": [
+      "Onderscheid territoriale en functionele decentralisatie.",
+      "Gemeente heeft open huishouding.",
+      "Waterschap heeft gesloten huishouding (doelgebonden).",
+      "Waterschap heeft eigen verordenende bevoegdheid."
+    ],
+    "exp": "Grondwet / Waterschapswet.\n\nDecentrale overheden zoals waterschappen zijn ingesteld op basis van functionele decentralisatie. Zij hebben een afgebakende taak (waterbeheer) en eigen bevoegdheden die losstaan van de algemene taak van de gemeente."
+  },
+  {
+    "q": "De minister van Infrastructuur en Waterstaat wil ingrijpen in een specifieke beslissing van het Centraal Bureau Rijvaardigheidsbewijzen (CBR) over de rijgeschiktheid van mevrouw Jansen. Hij geeft het CBR de instructie om het rijbewijs alsnog toe te kennen. Is het CBR verplicht deze instructie op te volgen?",
+    "sample": "Issue: De rechtsvraag is of de minister bevoegd is instructies te geven in individuele gevallen aan een zelfstandig bestuursorgaan (ZBO).\n\nRule: Een zelfstandig bestuursorgaan is een bestuursorgaan van de centrale overheid dat bij wet met openbaar gezag is bekleed en niet hiërarchisch ondergeschikt is aan de minister. Vanwege het ontbreken van hiërarchische ondergeschiktheid heeft de minister in beginsel geen instructiebevoegdheid in individuele gevallen, tenzij de wet dit specifiek regelt.\n\nApplication: Het CBR is een ZBO. De minister draagt wel politieke verantwoordelijkheid voor het algemene beleid, maar kan door de zelfstandige status niet ingrijpen in individuele besluitvorming zonder specifieke wettelijke grondslag.\n\nConclusion: Het CBR is niet verplicht de instructie op te volgen, aangezien het als ZBO geen hiërarchische ondergeschiktheid aan de minister kent voor individuele zaken.",
+    "checklist": [
+      "Kwalificatie CBR als Zelfstandig Bestuursorgaan (ZBO).",
+      "Kenmerk ZBO: geen hiërarchische ondergeschiktheid.",
+      "Minister heeft geen algemene instructiebevoegdheid.",
+      "Onderscheid individueel geval vs. algemeen beleid."
+    ],
+    "exp": "Kaderwet zelfstandige bestuursorganen / Algemene wet bestuursrecht.\n\nEen ZBO voert overheidstaken zelfstandig uit. De ministeriële verantwoordelijkheid is beperkt; de minister kan doorgaans alleen algemene beleidsregels vaststellen en toezicht houden, maar geen bevelen geven in concrete gevallen."
+  },
+  {
+    "q": "De Rechtbank Zeeland-West-Brabant legt een verdachte een gevangenisstraf op. De verdachte wil tegen deze uitspraak in bezwaar gaan op grond van de Algemene wet bestuursrecht, stellende dat de rechtbank een orgaan van de Staat is en dus een bestuursorgaan. Beoordeel de ontvankelijkheid van dit bezwaar.",
+    "sample": "Issue: De rechtsvraag is of de rechtbank (rechterlijke macht) kwalificeert als bestuursorgaan in de zin van de Awb, waardoor bezwaar mogelijk zou zijn.\n\nRule: Artikel 1:1 lid 1 onder a Awb definieert bestuursorganen. Artikel 1:1 lid 2 onder c Awb zondert echter expliciet de onafhankelijke rechterlijke macht en rechterlijke colleges uit van het begrip bestuursorgaan.\n\nApplication: Hoewel de rechtbank een orgaan van de Staat (publiekrechtelijke rechtspersoon) is, valt zij onder de uitzondering van artikel 1:1 lid 2 Awb. Rechtspraak is geen bestuur.\n\nConclusion: Het bezwaar is niet-ontvankelijk (of de Awb is niet van toepassing), omdat de rechtbank wettelijk is uitgezonderd van het bestuursorgaanbegrip.",
+    "checklist": [
+      "Hoofdregel art. 1:1 lid 1 Awb (a-orgaan).",
+      "Uitzondering art. 1:1 lid 2 Awb.",
+      "Rechterlijke macht is geen bestuursorgaan.",
+      "Geen bezwaar mogelijk op grond van Awb."
+    ],
+    "exp": "Artikel 1:1 lid 2 onder c Algemene wet bestuursrecht.\n\nDe wetgever heeft in het tweede lid van artikel 1:1 Awb een negatieve lijst opgenomen. Personen en colleges die tot de rechterlijke macht behoren, zijn uitgezonderd van het bestuursorgaanbegrip om de scheiding der machten te waarborgen."
+  }
+]

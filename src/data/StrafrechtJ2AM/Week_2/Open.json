@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Casus: Karel rijdt met hoge snelheid tegen een auto die voorrang heeft. De bestuurder van de andere auto, Tim, loopt ernstig beenletsel op en moet in het ziekenhuis verplichte bedrust houden. Twaalf dagen later overlijdt Tim plotseling aan een longembolie, ontstaan door trombose als gevolg van de bedrust. Karel verweert zich door te stellen dat de embolie een ongelukkige complicatie is die de causale keten doorbreekt.\n\nBeoordeel of het overlijden van Tim redelijkerwijs aan de gedraging van Karel kan worden toegerekend.",
+    "sample": "Rechtsvraag:\nIs er een causaal verband tussen de aanrijding en het overlijden aan de longembolie?\n\nRechtsregel:\nVoor strafrechtelijke causaliteit geldt de leer van de redelijke toerekening (HR Letale longembolie). Het gevolg moet redelijkerwijs aan de gedraging van de verdachte kunnen worden toegerekend. Een complicatie door noodzakelijke medische zorg doorbreekt de keten niet als deze niet hoogst onwaarschijnlijk is.\n\nToepassing:\nHet ongeval is een conditio sine qua non voor het letsel en de bedrust. De longembolie vloeide voort uit de noodzakelijke bedrust na het letsel. Dit verloop is niet zodanig onwaarschijnlijk dat toerekening onredelijk is.\n\nConclusie:\nHet overlijden kan redelijkerwijs aan Karel worden toegerekend.",
+    "checklist": [
+      "Conditio sine qua non-verband aanwezig",
+      "Maatstaf is leer van redelijke toerekening",
+      "Complicatie (embolie) doorbreekt causale keten niet",
+      "Gevolg redelijkerwijs toe te rekenen aan verdachte"
+    ],
+    "exp": "Analyse op basis van HR Letale longembolie. De Hoge Raad oordeelde dat een embolie als gevolg van bedrust na een ongeval niet als een buitengewone omstandigheid geldt die de causaliteit doorbreekt."
+  },
+  {
+    "q": "Casus: Ahmed steekt tijdens een ruzie Bert met een mes in de buik. Bert wordt met spoed geopereerd. De chirurg hecht de maagwand, maar ziet een perforatie van de aorta over het hoofd. Bert overlijdt kort daarna aan bloedverlies. Deskundigen verklaren dat Bert bij adequaat medisch ingrijpen hoogstwaarschijnlijk had overleefd. Ahmed stelt dat de medische fout de causale keten doorbreekt.\n\nBeoordeel of de dood van Bert aan Ahmed kan worden toegerekend.",
+    "sample": "Rechtsvraag:\nDoorbreekt een medische fout het causaal verband tussen de messteek en het overlijden?\n\nRechtsregel:\nVolgens de leer van de redelijke toerekening (HR Aortaperforatie) staat een medisch verzuim van de behandelend arts niet in de weg aan toerekening van de dood aan de dader, mits de gedraging naar haar aard geschikt was het gevolg teweeg te brengen.\n\nToepassing:\nDe messteek was een noodzakelijke voorwaarde voor de operatie. Het letsel was naar zijn aard levensbedreigend. Dat de arts een fout maakt, is geen omstandigheid die de toerekening aan de steker onredelijk maakt.\n\nConclusie:\nDe dood van Bert kan aan Ahmed worden toegerekend.",
+    "checklist": [
+      "Messteek is conditio sine qua non",
+      "Toetsing aan leer van redelijke toerekening",
+      "Medische fout doorbreekt causaliteit niet",
+      "Gevolg wordt toegerekend aan de steekpartij"
+    ],
+    "exp": "Analyse op basis van HR Aortaperforatie. Een medische fout sluit de redelijke toerekening van het gevolg aan de initiële geweldpleger niet uit, zeker niet bij ernstig letsel."
+  },
+  {
+    "q": "Casus: Cees schiet zijn vriendin Dorien in de hals, waardoor zij een dwarslaesie oploopt. In het ziekenhuis ontwikkelt zij een ernstige longinfectie. Omdat zij haar situatie als uitzichtloos ervaart, weigert Dorien verdere medische behandeling (antibiotica en beademing). Zij overlijdt kort daarna. Cees betoogt dat haar eigen keuze om behandeling te weigeren de causale keten heeft verbroken.\n\nBeoordeel de causaliteit tussen het schieten en het overlijden.",
+    "sample": "Rechtsvraag:\nVerbeekt de weigering van medische behandeling door het slachtoffer het causaal verband?\n\nRechtsregel:\nDe beslissing van een slachtoffer om behandeling te weigeren doorbreekt de causaliteit niet als de verdachte de omstandigheden heeft gecreëerd die tot deze keuze leidden (HR Niet behandelde longinfectie).\n\nToepassing:\nCees heeft door het schieten ernstig letsel toegebracht. De longinfectie was een gevolg daarvan. De keuze van Dorien vloeide voort uit de uitzichtloze situatie die Cees had veroorzaakt.\n\nConclusie:\nHet overlijden wordt redelijkerwijs aan Cees toegerekend.",
+    "checklist": [
+      "Schieten is conditio sine qua non",
+      "Verdachte creëerde de uitzichtloze situatie",
+      "Weigering behandeling doorbreekt causaliteit niet",
+      "Overlijden redelijkerwijs toe te rekenen aan verdachte"
+    ],
+    "exp": "Analyse op basis van HR Niet behandelde longinfectie. De keuze van het slachtoffer wordt gezien als een reactie op de door de verdachte veroorzaakte toestand, waardoor toerekening in stand blijft."
+  },
+  {
+    "q": "Casus: Nikita tatoeëert Quincy met een gebruikte naald om tijd te besparen. Quincy loopt een ernstige bloedvergiftiging op en houdt blijvend letsel aan zijn zenuwstelsel over. In het ziekenhuis werd de diagnose aanvankelijk gemist door een arts, waardoor de behandeling te laat startte. De advocaat van Nikita stelt dat zonder deze medische fout het letsel voorkomen had kunnen worden.\n\nBeoordeel of het letsel aan Nikita kan worden toegerekend.",
+    "sample": "Rechtsvraag:\nIs er een causaal verband tussen het gebruik van de vuile naald en het blijvend letsel, ondanks de medische fout?\n\nRechtsregel:\nCausaliteit wordt bepaald door redelijke toerekening. Een gedraging die de kans op het gevolg significant vergroot, kan leiden tot toerekening. Een medische fout staat hieraan niet in de weg (HR Aortaperforatie).\n\nToepassing:\nHet gebruiken van een vuile naald vergroot het risico op infectie significant. De medische fout is een complicatie, maar maakt toerekening aan de gevaarzetting (vuile naald) niet onredelijk.\n\nConclusie:\nHet letsel kan aan Nikita worden toegerekend.",
+    "checklist": [
+      "Gedraging vergroot kans op gevolg significant",
+      "Medische fout is geen absolute blokkade",
+      "Toetsing aan leer van redelijke toerekening",
+      "Letsel wordt toegerekend aan verdachte"
+    ],
+    "exp": "Analyse op basis van Oefententamen I (Nikita casus) en jurisprudentie over medische fouten. De gevaarzetting door de verdachte weegt zwaarder dan het medisch verzuim bij de toerekening."
+  },
+  {
+    "q": "Casus: Verdachte X injecteert slachtoffer Y met hiv-besmet bloed tijdens een bijeenkomst. Y blijkt later besmet met hiv. Y heeft in dezelfde periode echter ook onbeschermde seksuele contacten gehad met anderen. Het is niet met 100% zekerheid vast te stellen of de besmetting door de injectie of door de seksuele contacten is veroorzaakt. Het hof stelt dat de injectie de meest waarschijnlijke oorzaak is.\n\nBeoordeel of dit voldoende is voor het bewijs van causaal verband.",
+    "sample": "Rechtsvraag:\nIs causaal verband bewezen bij mogelijke alternatieve oorzaken?\n\nRechtsregel:\nBij alternatieve causaliteit moet vaststaan dat de gedraging een onmisbare schakel kan zijn geweest én dat alternatieve oorzaken hoogstwaarschijnlijk niet tot het gevolg hebben geleid (HR Groninger HIV).\n\nToepassing:\nEen enkele waarschijnlijkheid is onvoldoende. Als een reële alternatieve oorzaak (onbeschermde seks) niet kan worden uitgesloten, kan het gevolg niet redelijkerwijs aan de verdachte worden toegerekend.\n\nConclusie:\nZonder uitsluiting van het alternatief is causaliteit onbewezen.",
+    "checklist": [
+      "Eis: gedraging is onmisbare schakel",
+      "Alternatieve oorzaak moet hoogstwaarschijnlijk uitgesloten zijn",
+      "Enkele waarschijnlijkheid is onvoldoende bewijs",
+      "Causaliteit in dit geval niet bewezen"
+    ],
+    "exp": "Analyse op basis van HR Groninger HIV. Bij onzekerheid over de causale keten door alternatieve scenario's eist de Hoge Raad een hoge mate van waarschijnlijkheid voor toerekening."
+  }
+]

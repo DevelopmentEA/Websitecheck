@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Een ongeboren kind wordt als reeds geboren aangemerkt zo dikwijls zijn belang dit vordert.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 1:2 BW. Het kind waarvan een vrouw zwanger is, wordt als reeds geboren aangemerkt zo dikwijls zijn belang dit vordert. Komt het dood ter wereld, dan wordt het geacht nooit te hebben bestaan."
+  },
+  {
+    "q": "Tussen een broer en een zus bestaat bloedverwantschap in de eerste graad.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 1:3 BW. De graad van bloedverwantschap wordt bepaald door het getal der geboorten die de bloedverwantschap hebben veroorzaakt. Tussen broer en zus zijn dit twee stappen (broer -> ouder -> zus), dus de tweede graad."
+  },
+  {
+    "q": "Sinds 1 januari 2023 verkrijgen ongehuwde partners van rechtswege gezamenlijk gezag door erkenning.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 1:251b BW. Door een wetswijziging verkrijgen ongehuwde en niet-geregistreerde partners sinds 1 januari 2023 automatisch gezamenlijk gezag met de moeder indien zij het kind erkennen."
+  },
+  {
+    "q": "Een minderjarige van 16 jaar is handelingsbekwaam om zelfstandig een uiterste wil te maken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 4:55 lid 1 BW. Voor het maken van een uiterste wil is vereist dat de erflater de leeftijd van zestien jaren heeft bereikt."
+  },
+  {
+    "q": "De regels van het huwelijksvermogensrecht zijn analoog van toepassing op partners die informeel samenwonen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR 10 mei 2019. De Hoge Raad heeft bepaald dat de regels voor echtgenoten zich niet lenen voor analoge toepassing op informeel samenwonenden. Hun verhouding wordt beheerst door het algemene verbintenissenrecht."
+  },
+  {
+    "q": "Een geregistreerd partnerschap kan, in tegenstelling tot een huwelijk, nimmer worden beëindigd zonder tussenkomst van de rechter.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 1:80c lid 1 sub c BW. Een geregistreerd partnerschap kan met wederzijds goedvinden worden beëindigd zonder rechter, mits de partners geen kinderen hebben waarover zij gezamenlijk gezag uitoefenen."
+  },
+  {
+    "q": "Voor het verkopen van de echtelijke woning is op grond van art. 1:88 BW toestemming van de andere echtgenoot vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 1:88 lid 1 sub a BW. Een echtgenoot behoeft de toestemming van de andere echtgenoot voor overeenkomsten strekkende tot vervreemding van de door de echtgenoten bewoonde woning."
+  },
+  {
+    "q": "In het wettelijk erfrecht sluit de aanwezigheid van een erfgenaam in de derde parentele de erfgenamen in de tweede parentele uit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 4:10 BW. Het stelsel werkt andersom: een eerdere parentele sluit een latere uit. De tweede parentele (ouders/broers/zussen) sluit de derde (grootouders) uit."
+  },
+  {
+    "q": "In de tweede parentele is het erfdeel van een halfbroer gelijk aan dat van een volle broer.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 4:11 lid 2 BW. Het erfdeel van een halfbroer of halfzuster bedraagt de helft van dat van een volle broer of zus."
+  },
+  {
+    "q": "Bij de wettelijke verdeling verkrijgen de kinderen een direct opeisbare geldvordering op de langstlevende echtgenoot.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 4:13 lid 3 BW. De vordering van de kinderen is pas opeisbaar als de langstlevende echtgenoot overlijdt of failliet gaat (of in de schuldsanering raakt)."
+  },
+  {
+    "q": "De legitieme portie geeft de legitimaris recht op goederen uit de nalatenschap.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 4:79 e.v. BW. Sinds het nieuwe erfrecht (2003) is de legitieme portie een vordering in geld, niet een recht op goederen."
+  },
+  {
+    "q": "Een executeur is bevoegd om aandelen uit de nalatenschap te verkopen ter voorkoming van koersverlies.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Executeur en effecten. De executeur mag het beheer naar eigen inzicht voeren en is bevoegd goederen te verkopen ter voorkoming van dreigend nadeel."
+  },
+  {
+    "q": "Het meenemen van goederen zonder economische waarde uit de inboedel leidt automatisch tot zuivere aanvaarding van de nalatenschap.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Cadeaubonnen en gebak. Uit gedragingen mag niet te snel zuivere aanvaarding worden afgeleid. Beheerhandelingen of handelingen met goederen zonder economische waarde leiden niet tot zuivere aanvaarding."
+  },
+  {
+    "q": "Het recht van een kind op afstammingsinformatie prevaleert in beginsel boven het privacybelang van de verwekker.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Meewerken aan DNA-onderzoek. Het belang van het kind bij het kennen van de eigen afstamming weegt doorgaans zwaarder dan het belang van de vader om niet mee te werken."
+  },
+  {
+    "q": "Een minderjarige is handelingsonbekwaam, tenzij hij met toestemming van zijn wettelijke vertegenwoordiger handelt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 1:234 lid 1 BW. Dit is de hoofdregel voor de handelingsbekwaamheid van minderjarigen."
+  },
+  {
+    "q": "Erfenissen en giften vallen bij een huwelijk gesloten na 1 januari 2018 standaard in de wettelijke gemeenschap van goederen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 1:94 lid 2 sub a BW. Sinds 1 januari 2018 vallen krachtens erfopvolging, making of gift verkregen goederen standaard buiten de gemeenschap van goederen."
+  },
+  {
+    "q": "Bij de uitleg van een uiterste wilsbeschikking mag uitsluitend worden gekeken naar de letterlijke tekst van het testament.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Uitleg uiterste wilsbeschikking. Bij de uitleg dient mede te worden gelet op de verhoudingen die de erflater wilde regelen en de omstandigheden waaronder de beschikking is gemaakt."
+  },
+  {
+    "q": "Onwaardigheid om uit de nalatenschap voordeel te trekken treedt van rechtswege in.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 4:3 BW. Onwaardigheid treedt van rechtswege in bij het plegen van bepaalde ernstige misdrijven tegen de erflater."
+  },
+  {
+    "q": "Een kind heeft recht op een 'som ineens' voor verzorging en opvoeding tot het 21e levensjaar.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 4:35 BW. De som ineens voor verzorging en opvoeding geldt tot het 18e levensjaar. Voor levensonderhoud en studie geldt deze tot het 21e levensjaar."
+  },
+  {
+    "q": "Plaatsvervulling in het erfrecht vindt plaats bij vooroverlijden, onwaardigheid, onterving, verwerping en vervallenverklaring van erfrecht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 4:12 lid 1 BW. Deze bepaling somt de gronden voor plaatsvervulling limitatief op: vooroverlijden, onwaardigheid, onterving, verwerping en vervallenverklaring."
+  },
+  {
+    "q": "De langstlevende echtgenoot kan de wettelijke verdeling binnen drie maanden na het openvallen van de nalatenschap ongedaan maken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 4:18 BW. De echtgenoot heeft de bevoegdheid om binnen drie maanden na het openvallen van de nalatenschap door een notariële akte de wettelijke verdeling ongedaan te maken."
+  },
+  {
+    "q": "De alimentatieverplichting jegens een ex-echtgenoot duurt volgens de huidige wetgeving standaard maximaal twaalf jaar.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 1:157 BW. Sinds 1 januari 2020 geldt als hoofdregel dat de partneralimentatie maximaal vijf jaar duurt (met uitzonderingen voor lange huwelijken met kinderen/leeftijd). 12 jaar was de oude norm."
+  },
+  {
+    "q": "Handlichting verleent een minderjarige volledige meerderjarigheidsstatus voor alle rechtshandelingen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 1:235 BW. Handlichting verleent slechts bepaalde bevoegdheden van een meerderjarige, vaak beperkt tot het uitoefenen van een bedrijf, maar maakt de minderjarige niet volledig meerderjarig."
+  },
+  {
+    "q": "De juridische vader van een kind moet altijd ook de biologische vader zijn.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 1:199 BW. Juridisch vaderschap kan ontstaan door huwelijk of erkenning, wat los kan staan van de biologische werkelijkheid (bijvoorbeeld bij een bekende donor of overspel)."
+  },
+  {
+    "q": "Het ouderlijk gezag over een kind eindigt van rechtswege bij het bereiken van de 18-jarige leeftijd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 1:253a BW (impliciet) jo. 1:233 BW. Minderjarigheid eindigt bij 18 jaar, en daarmee eindigt ook het ouderlijk gezag over de persoon."
+  },
+  {
+    "q": "Een uitsluitingsclausule in een testament voorkomt dat de erfenis in de huwelijksgemeenschap van de erfgenaam valt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 1:94 lid 1 BW. De uitsluitingsclausule bepaalt dat de verkrijging buiten de gemeenschap van goederen valt."
+  },
+  {
+    "q": "Als ouders in de tweede parentele erven, bedraagt hun erfdeel altijd ten minste een kwart.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 4:11 lid 3 BW. In de tweede parentele bedraagt het erfdeel van de ouders telkens ten minste een kwart van de nalatenschap."
+  },
+  {
+    "q": "De legitieme portie bedraagt de helft van het erfdeel dat het kind bij versterf zou hebben gekregen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 4:64 BW. De legitieme portie is de helft van de waarde van het erfdeel dat de legitimaris bij versterf zou hebben gehad."
+  },
+  {
+    "q": "Beneficiaire aanvaarding van een nalatenschap kan vormvrij geschieden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 4:191 BW. Beneficiaire aanvaarding geschiedt door het afleggen van een verklaring ter griffie van de rechtbank."
+  },
+  {
+    "q": "Een samenlevingsovereenkomst is een vorm van geregistreerd partnerschap.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Titel 5A Boek 1 BW. Het geregistreerd partnerschap is een wettelijke status vergelijkbaar met het huwelijk. Een samenlevingsovereenkomst is een contract tussen partners zonder wettelijke status in Boek 1 BW."
+  }
+]

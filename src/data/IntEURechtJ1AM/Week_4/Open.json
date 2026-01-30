@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Casus: De firma Van Gend & Loos importeert chemische producten van Duitsland naar Nederland. Bij de grens heft de Nederlandse douane een invoerrecht van 8%, gebaseerd op een nieuwe Nederlandse wet die na de inwerkingtreding van het EEG-Verdrag is aangenomen. Artikel 12 EEG-Verdrag (thans art. 30 VWEU) verbiedt echter de invoering van nieuwe douanerechten. De Nederlandse overheid stelt dat het Verdrag enkel verplichtingen schept tussen lidstaten en dat een burger hieraan geen rechten kan ontlenen. Kan Van Gend & Loos zich voor de nationale rechter rechtstreeks beroepen op dit artikel?",
+    "sample": "Issue: De rechtsvraag is of artikel 12 EEG-Verdrag directe werking heeft binnen de nationale rechtsorde, zodat particulieren zich er rechtstreeks op kunnen beroepen.\n\nRule: Het Hof van Justitie bepaalde in het arrest Van Gend en Loos dat de Gemeenschap een nieuwe rechtsorde in het volkenrecht vormt. Bepalingen hebben directe werking indien zij helder, onvoorwaardelijk en niet afhankelijk van nadere nationale maatregelen zijn.\n\nApplication: Artikel 12 bevat een duidelijk en onvoorwaardelijk verbod om invoerrechten te verhogen (negatieve verplichting). Deze bepaling behoeft geen verdere wettelijke tussenkomst van de lidstaten.\n\nConclusion: Ja, het artikel heeft directe werking en schept rechten die Van Gend & Loos voor de nationale rechter geldend kan maken.",
+    "checklist": [
+      "Nieuwe rechtsorde in volkenrecht",
+      "Begrenzing soevereiniteit lidstaten",
+      "Rechten voor individuele burgers",
+      "Duidelijk en onvoorwaardelijk verbod"
+    ],
+    "exp": "HvJEU Van Gend en Loos.\n\nHet Hof oordeelde dat de Gemeenschap een nieuwe rechtsorde vormt ten bate waarvan staten hun soevereiniteit hebben begrensd. Het gemeenschapsrecht schept niet alleen verplichtingen voor staten, maar ook rechten voor particulieren. Artikel 12 bevat een duidelijk en onvoorwaardelijk verbod (negatieve verplichting) dat zich leent voor directe toepassing zonder tussenkomst van nationale wetgeving."
+  },
+  {
+    "q": "Casus: De heer Costa is aandeelhouder van een elektriciteitsbedrijf dat door de Italiaanse staat wordt genationaliseerd middels een wet uit 1962. Costa weigert zijn elektriciteitsrekening te betalen, stellende dat de nationalisatiewet in strijd is met het EEG-Verdrag uit 1957. De Italiaanse overheid beroept zich op het beginsel 'lex posterior derogat legi priori': de latere nationale wet van 1962 gaat voor op het eerdere Verdrag van 1957. Heeft de Italiaanse wet voorrang?",
+    "sample": "Issue: De vraag is of een latere nationale wet voorrang heeft op een eerdere bepaling van het Unierecht.\n\nRule: In het arrest Costa/ENEL bepaalde het Hof dat het EEG-Verdrag een eigen rechtsorde in het leven heeft geroepen die is opgenomen in de rechtsorde van de lidstaten. Lidstaten hebben hun soevereiniteit op beperkt terrein begrensd.\n\nApplication: Vanwege deze soevereiniteitsoverdracht kan een eenzijdig, later nationaal wettelijk voorschrift niet boven de rechtsorde van de Gemeenschap worden gesteld zonder de juridische basis ervan aan te tasten.\n\nConclusion: Nee, het Unierecht heeft voorrang op strijdig nationaal recht, ongeacht de datum van de nationale wet.",
+    "checklist": [
+      "Eigen autonome rechtsorde",
+      "Begrenzing soevereiniteit lidstaten",
+      "Voorrang van Unierecht",
+      "Latere nationale wet wijkt"
+    ],
+    "exp": "HvJEU Costa/ENEL.\n\nHet verdragsrecht vloeit voort uit een autonome bron en kan door geen enkel nationaal voorschrift opzij worden gezet. De lidstaten hebben hun soevereiniteit begrensd en een rechtsstelsel geschapen dat bindend is voor henzelf en hun onderdanen. Een latere nationale wet kan daarom geen voorrang hebben op het gemeenschapsrecht."
+  },
+  {
+    "q": "Casus: De Franse regering is het niet eens met een voorgenomen besluit van de Europese Commissie inzake landbouwsubsidies. De Franse president belt de Franse eurocommissaris op en geeft hem de dwingende instructie om tegen het voorstel te stemmen en het Franse nationale belang te verdedigen. De commissaris weigert deze instructie op te volgen. Handelt de commissaris juridisch correct?",
+    "sample": "Issue: De vraag is of een lid van de Europese Commissie instructies mag ontvangen van de regering van zijn lidstaat van herkomst.\n\nRule: Artikel 17 lid 3 VEU bepaalt dat de leden van de Commissie hun ambt uitoefenen in volkomen onafhankelijkheid. Zij mogen geen instructies van enige regering vragen of aanvaarden.\n\nApplication: De commissarissen vertegenwoordigen niet hun eigen lidstaat, maar het algemeen belang van de Unie. De Franse regering schendt het verdrag door instructies te geven.\n\nConclusion: Ja, de commissaris handelt correct door de instructie te weigeren en zijn onafhankelijkheid te bewaken.",
+    "checklist": [
+      "Artikel 17 lid 3 VEU",
+      "Vertegenwoordiging algemeen belang",
+      "Volkomen onafhankelijkheid vereist",
+      "Verbod op instructies regeringen"
+    ],
+    "exp": "Artikel 17 VEU.\n\nDe leden van de Commissie zijn weliswaar uit de lidstaten afkomstig, maar vertegenwoordigen deze niet. Zij vertegenwoordigen het algemeen belang van de Unie. Artikel 245 VWEU bevestigt dat lidstaten deze onafhankelijkheid moeten eerbiedigen en niet mogen trachten de leden te beïnvloeden."
+  },
+  {
+    "q": "Casus: Tijdens een vergadering van de Raad van Ministers in 1965 ontstaat een conflict over de financiering van het landbouwbeleid. Frankrijk is fel tegen de voorstellen en besluit om gedurende zeven maanden geen vertegenwoordiger meer naar de vergaderingen in Brussel te sturen, waardoor de besluitvorming stil komt te liggen. Hoe wordt deze historische gebeurtenis genoemd en wat was de politieke oplossing die hieruit voortvloeide?",
+    "sample": "Issue: De vraag betreft de identificatie van een specifieke constitutionele crisis in de geschiedenis van de EU en de oplossing daarvoor.\n\nRule: In 1965 vond de 'Lege Stoel-crisis' plaats, waarbij Frankrijk de Raad boycotte uit onvrede over supranationale ontwikkelingen. Dit werd opgelost met het Akkoord van Luxemburg (1966).\n\nApplication: De oplossing hield in dat wanneer zeer gewichtige nationale belangen op het spel staan, de leden van de Raad net zo lang moeten dooronderhandelen tot er een oplossing is bereikt (feitelijk een vetorecht).\n\nConclusion: Dit is de Lege Stoel-crisis, opgelost door het Akkoord van Luxemburg.",
+    "checklist": [
+      "Lege Stoel-crisis",
+      "Akkoord van Luxemburg 1966",
+      "Zeer gewichtige nationale belangen",
+      "Feitelijk vetorecht (consensus)"
+    ],
+    "exp": "Geschiedenis EU / Akkoord van Luxemburg.\n\nDe crisis ontstond door verzet tegen supranationale besluitvorming. Het Akkoord van Luxemburg was een politieke afspraak (geen verdragswijziging) dat bij gewichtige belangen de besluitvorming zou worden opgeschort totdat consensus was bereikt, wat de overgang naar meerderheidsbesluitvorming in de praktijk vertraagde."
+  },
+  {
+    "q": "Casus: De Europese Raad en de Raad van de Europese Unie hebben een meningsverschil over wie de wetgevende macht bezit. De Europese Raad stelt dat zij, als vergadering van regeringsleiders, de hoogste politieke leiding vormen en daarom wetten kunnen aannemen. De Raad van de EU stelt dat zij de wetgever zijn. Wie heeft gelijk op basis van het VEU?",
+    "sample": "Issue: De vraag is welke instelling wetgevende taken uitoefent: de Europese Raad of de Raad van de EU.\n\nRule: Artikel 15 lid 1 VEU bepaalt dat de Europese Raad de nodige impulsen geeft en politieke beleidslijnen bepaalt, maar geen wetgevingstaak uitoefent. Artikel 16 VEU bepaalt dat de Raad (van Ministers) de wetgevingstaak uitoefent, samen met het Parlement.\n\nApplication: De Europese Raad heeft expliciet geen wetgevende bevoegdheid. De Raad van de EU is samen met het Parlement de wetgever.\n\nConclusion: De Raad van de EU heeft gelijk; de Europese Raad oefent geen wetgevingstaak uit.",
+    "checklist": [
+      "Artikel 15 lid 1 VEU",
+      "Europese Raad: geen wetgevingstaak",
+      "Artikel 16 lid 1 VEU",
+      "Raad: wetgevings- en begrotingstaak"
+    ],
+    "exp": "Artikel 15 VEU / Artikel 16 VEU.\n\nDe Europese Raad bepaalt de algemene politieke beleidslijnen en prioriteiten, maar oefent geen wetgevingstaak uit. De Raad (van Ministers) oefent, gezamenlijk met het Europees Parlement, de wetgevingstaak en de begrotingstaak uit."
+  }
+]

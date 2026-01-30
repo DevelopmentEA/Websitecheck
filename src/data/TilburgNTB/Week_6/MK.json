@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Welke verplichting rust op een bestuursorgaan bij de voorbereiding van een besluit ingevolge artikel 3:2 Awb?",
+    "a": [
+      "Het bestuursorgaan moet altijd een adviescommissie inschakelen.",
+      "Het bestuursorgaan moet de nodige kennis omtrent de relevante feiten en de af te wegen belangen vergaren.",
+      "Het bestuursorgaan moet in alle gevallen een hoorzitting organiseren voor belanghebbenden.",
+      "Het bestuursorgaan moet het besluit binnen twee weken na de aanvraag nemen."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:2 Awb.\n\nDit artikel codificeert het zorgvuldigheidsbeginsel en bepaalt dat het bestuursorgaan bij de voorbereiding van een besluit de nodige kennis omtrent de relevante feiten en de af te wegen belangen vergaart. Dit wordt ook wel de kennisvergaringsplicht genoemd."
+  },
+  {
+    "q": "Wat houdt het verbod van détournement de pouvoir in zoals neergelegd in de Algemene wet bestuursrecht?",
+    "a": [
+      "Een bestuursorgaan mag een bevoegdheid slechts gebruiken voor het doel waarvoor deze is verleend.",
+      "Een bestuursorgaan mag geen besluiten nemen die onevenredig nadelig zijn voor een burger.",
+      "Een bestuursorgaan moet gelijke gevallen op een gelijke manier behandelen.",
+      "Een bestuursorgaan mag niet zonder wettelijke grondslag een belastende beschikking geven."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:3 Awb.\n\nHet verbod van misbruik van bevoegdheid, ofwel détournement de pouvoir, houdt in dat een bestuursorgaan de bevoegdheid tot het nemen van een besluit niet voor een ander doel mag gebruiken dan waarvoor die bevoegdheid is verleend."
+  },
+  {
+    "q": "Wanneer dient een bestuursorgaan volgens de hoofdregel van artikel 4:7 Awb een aanvrager in de gelegenheid te stellen zijn zienswijze naar voren te brengen?",
+    "a": [
+      "Indien de beschikking steunt op gegevens die de aanvrager zelf heeft verstrekt.",
+      "Indien de beschikking een afwijzing van de aanvraag inhoudt en steunt op gegevens over feiten die de aanvrager betreffen en afwijken van diens eigen gegevens.",
+      "Indien de beschikking financiële gevolgen heeft die groter zijn dan 500 euro.",
+      "Indien de beschikking binnen acht weken na de aanvraag wordt gegeven."
+    ],
+    "c": 1,
+    "exp": "Artikel 4:7 Awb.\n\nHet bestuursorgaan stelt de aanvrager in de gelegenheid zijn zienswijze naar voren te brengen indien de beschikking geheel of gedeeltelijk wordt afgewezen en steunt op gegevens over feiten en belangen die de aanvrager betreffen en die afwijken van gegevens die de aanvrager zelf heeft verstrekt."
+  },
+  {
+    "q": "Welke eis stelt artikel 3:46 Awb aan de motivering van een besluit?",
+    "a": [
+      "De motivering moet altijd verwijzen naar een beleidsregel.",
+      "De motivering moet juridisch complex geformuleerd zijn.",
+      "De motivering moet kunnen dragen dat de beslissing is genomen.",
+      "De motivering mag achteraf, tijdens de bezwaarprocedure, worden bedacht."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:46 Awb.\n\nEen besluit dient te berusten op een deugdelijke motivering. Dit betekent dat de motivering draagkrachtig moet zijn; de argumenten moeten de beslissing kunnen dragen en moeten kloppen met de feiten."
+  },
+  {
+    "q": "Op welk moment treedt een besluit dat tot een of meer belanghebbenden is gericht in werking?",
+    "a": [
+      "Op het moment dat het besluit door het bestuursorgaan is ondertekend.",
+      "Op de dag na de datum die op het besluit vermeld staat.",
+      "Op het moment dat het besluit is bekendgemaakt.",
+      "Op het moment dat de bezwaartermijn is verstreken."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:40 Awb.\n\nEen besluit treedt niet in werking voordat het is bekendgemaakt. De bekendmaking is daarmee een constitutief vereiste voor de inwerkingtreding en het ontstaan van rechtsgevolgen."
+  },
+  {
+    "q": "Hoe dient de bekendmaking van een besluit dat is gericht tot een of meer belanghebbenden plaats te vinden?",
+    "a": [
+      "Door plaatsing van het besluit in de Staatscourant of een huis-aan-huisblad.",
+      "Door toezending of uitreiking aan hen tot wie het is gericht.",
+      "Door terinzagelegging van het besluit op het gemeentehuis.",
+      "Door publicatie van het besluit op de website van het bestuursorgaan."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:41 Awb.\n\nDe bekendmaking van besluiten die tot een of meer belanghebbenden zijn gericht, geschiedt door toezending of uitreiking aan hen, onder wie begrepen de aanvrager."
+  },
+  {
+    "q": "Wat houdt het evenredigheidsbeginsel in zoals verwoord in artikel 3:4 lid 2 Awb?",
+    "a": [
+      "De voor een of meer belanghebbenden nadelige gevolgen van een besluit mogen niet onevenredig zijn in verhouding tot de met het besluit te dienen doelen.",
+      "Het bestuursorgaan moet bij elk besluit de kosten voor de burger volledig vergoeden.",
+      "Gelijke gevallen moeten gelijk worden behandeld en ongelijke gevallen ongelijk naar de mate van hun ongelijkheid.",
+      "Het bestuursorgaan mag een bevoegdheid niet gebruiken voor een ander doel dan waarvoor deze is verleend."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:4 lid 2 Awb.\n\nDit lid bepaalt dat de voor een of meer belanghebbenden nadelige gevolgen van een besluit niet onevenredig mogen zijn in verhouding tot de met het besluit te dienen doelen. Dit staat bekend als het evenredigheidsbeginsel."
+  },
+  {
+    "q": "Welke stap moet volgens de uitspraak 'Dakopbouw Amsterdam' als eerste worden gezet bij de beoordeling van een beroep op het vertrouwensbeginsel?",
+    "a": [
+      "Er moet worden beoordeeld of de toezegging aan het bestuursorgaan kan worden toegerekend.",
+      "Er moet een belangenafweging plaatsvinden tussen het gewekte vertrouwen en andere belangen.",
+      "Er moet worden gekeken of de uiting gekwalificeerd kan worden als een toezegging.",
+      "Er moet worden vastgesteld of er sprake is van schadevergoeding."
+    ],
+    "c": 2,
+    "exp": "ABRvS Dakopbouw Amsterdam.\n\nDe eerste stap is de juridische kwalificatie van de uitlating en/of gedraging. Er moet worden beoordeeld of deze kan worden gekwalificeerd als een toezegging, waarbij de nadruk ligt op hoe de uitlating bij een redelijk denkende burger overkomt."
+  },
+  {
+    "q": "Wat is volgens de uitspraak 'Dakopbouw Amsterdam' doorslaggevend voor de vraag of een toezegging als zodanig kan worden aangemerkt?",
+    "a": [
+      "De bedoeling die het bestuursorgaan had met de gedane uitlating.",
+      "De vraag of de ambtenaar formeel bevoegd was om de toezegging te doen.",
+      "De indruk die bij een redelijk denkende burger is gewekt van een welbewuste standpuntbepaling.",
+      "De schriftelijke bevestiging van de toezegging door het college van B&W."
+    ],
+    "c": 2,
+    "exp": "ABRvS Dakopbouw Amsterdam.\n\nOm aan te nemen dat een toezegging is gedaan, moet aannemelijk zijn dat sprake is van uitlatingen of gedragingen die bij de betrokkene redelijkerwijs de indruk wekken van een welbewuste standpuntbepaling. De nadruk ligt op hoe het bij de burger overkomt, minder op de bedoeling van het orgaan."
+  },
+  {
+    "q": "Wanneer mag een bestuursorgaan volgens artikel 4:84 Awb afwijken van een zelf vastgestelde beleidsregel?",
+    "a": [
+      "Indien het bestuursorgaan van mening is dat de beleidsregel verouderd is.",
+      "Indien handelen overeenkomstig de beleidsregel voor een of meer belanghebbenden gevolgen zou hebben die wegens bijzondere omstandigheden onevenredig zijn.",
+      "Indien de gemeenteraad bij motie heeft verzocht om in een specifiek geval af te wijken.",
+      "Indien de beleidsregel niet is gepubliceerd in het Gemeenteblad of de Staatscourant."
+    ],
+    "c": 1,
+    "exp": "Artikel 4:84 Awb.\n\nHet bestuursorgaan handelt overeenkomstig de beleidsregel, tenzij dat voor een of meer belanghebbenden gevolgen zou hebben die wegens bijzondere omstandigheden onevenredig zijn in verhouding tot de met de beleidsregel te dienen doelen."
+  },
+  {
+    "q": "Wat bepaalt artikel 3:47 Awb over de motivering van besluiten?",
+    "a": [
+      "De motivering moet altijd voorafgaand aan het besluit aan de belanghebbende worden toegezonden.",
+      "De motivering van een besluit wordt vermeld bij de bekendmaking van het besluit.",
+      "De motivering mag worden weggelaten als het besluit begunstigend is.",
+      "De motivering moet verwijzen naar de politieke overwegingen van het bestuursorgaan."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:47 Awb.\n\nDit artikel legt het beginsel van kenbare motivering vast. Het bepaalt dat de motivering wordt vermeld bij de bekendmaking van het besluit. Zo kan de burger weten waarom het besluit is genomen."
+  },
+  {
+    "q": "Welke verplichting heeft een bestuursorgaan op grond van artikel 3:9 Awb bij het gebruik van een advies van een adviseur?",
+    "a": [
+      "Het bestuursorgaan moet het advies integraal overnemen in het besluit.",
+      "Het bestuursorgaan moet het advies altijd voorleggen aan de gemeenteraad.",
+      "Het bestuursorgaan moet zich ervan vergewissen dat het onderzoek op zorgvuldige wijze heeft plaatsgevonden.",
+      "Het bestuursorgaan moet een contra-expertise laten uitvoeren als de burger het oneens is met het advies."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:9 Awb.\n\nIndien een besluit berust op een onderzoek naar feiten en gedragingen dat door een adviseur is verricht, dient het bestuursorgaan zich ervan te vergewissen dat dit onderzoek op zorgvuldige wijze heeft plaatsgevonden. Dit staat bekend als de vergewisplicht."
+  },
+  {
+    "q": "Welke drie aspecten kunnen volgens de uitspraak 'Woningsluiting Harderwijk' een rol spelen bij de toetsing aan het evenredigheidsbeginsel?",
+    "a": [
+      "De rechtmatigheid, de doelmatigheid en de integriteit.",
+      "De geschiktheid, de noodzakelijkheid en de evenwichtigheid.",
+      "De tijdigheid, de kenbaarheid en de zorgvuldigheid.",
+      "De bevoegdheid, de ontvankelijkheid en de gegrondheid."
+    ],
+    "c": 1,
+    "exp": "ABRvS Woningsluiting Harderwijk.\n\nBij de toetsing aan het evenredigheidsbeginsel (art. 3:4 lid 2 Awb) kunnen de geschiktheid, de noodzakelijkheid en de evenwichtigheid van de maatregel een rol spelen."
+  },
+  {
+    "q": "Wat houdt de derde stap van het stappenplan uit de uitspraak 'Dakopbouw Amsterdam' in?",
+    "a": [
+      "Het vaststellen of de gedane toezegging juridisch bindend is.",
+      "Het bepalen of de ambtenaar bevoegd was om de toezegging te doen.",
+      "Een belangenafweging om te bepalen of het gewekte vertrouwen moet worden gehonoreerd.",
+      "Het berekenen van de hoogte van de schadevergoeding voor de burger."
+    ],
+    "c": 2,
+    "exp": "ABRvS Dakopbouw Amsterdam.\n\nDe derde stap betreft de belangenafweging. Er moet worden beoordeeld of het gewekte vertrouwen moet worden gehonoreerd, waarbij het belang van de betrokkene wordt afgewogen tegen zwaarder wegende belangen zoals die van derden of het algemeen belang."
+  },
+  {
+    "q": "Wat is een consequentie als een bestuursorgaan de beslistermijn van artikel 4:13 Awb overschrijdt?",
+    "a": [
+      "Het besluit is van rechtswege nietig.",
+      "Het bestuursorgaan kan een dwangsom verbeuren indien het in gebreke is gesteld.",
+      "De aanvrager krijgt automatisch de gevraagde vergunning, ongeacht de inhoud.",
+      "Het bestuursorgaan verliest de bevoegdheid om op de aanvraag te beslissen."
+    ],
+    "c": 1,
+    "exp": "Artikel 4:17 Awb (samenhangend met 4:13 Awb).\n\nBij overschrijding van de beslistermijn verbeurt het bestuursorgaan een dwangsom voor elke dag dat het in gebreke is, mits het bestuursorgaan schriftelijk in gebreke is gesteld."
+  },
+  {
+    "q": "In welk geval kan de motivering van een besluit ingevolge artikel 3:48 Awb achterwege blijven?",
+    "a": [
+      "Indien het een besluit betreft tot het opleggen van een bestuurlijke boete.",
+      "Indien redelijkerwijs kan worden aangenomen dat aan motivering geen behoefte bestaat.",
+      "Indien het bestuursorgaan tijdgebrek heeft door onderbezetting.",
+      "Indien het besluit wordt genomen op basis van een gebonden bevoegdheid."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:48 Awb.\n\nDe vermelding van de motivering van het besluit kan achterwege blijven indien redelijkerwijs kan worden aangenomen dat daaraan geen behoefte bestaat. Dit is vaak het geval als conform de aanvraag wordt beslist."
+  },
+  {
+    "q": "Wat moet een bestuursorgaan vermelden bij de bekendmaking van een besluit op grond van artikel 3:45 Awb?",
+    "a": [
+      "De naam van de behandelend ambtenaar en diens directe telefoonnummer.",
+      "Of tegen het besluit bezwaar of beroep kan worden ingesteld, en zo ja, bij welk orgaan en binnen welke termijn.",
+      "Een overzicht van alle geraadpleegde jurisprudentie en literatuur.",
+      "De kosten die zijn gemaakt voor de voorbereiding van het besluit."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:45 Awb.\n\nIndien tegen een besluit bezwaar of beroep kan worden ingesteld, wordt daarvan bij de bekendmaking melding gemaakt. Hierbij wordt vermeld door wie, binnen welke termijn en bij welk orgaan dit kan geschieden."
+  },
+  {
+    "q": "Wat wordt in de uitspraak 'Woningsluiting Harderwijk' gezegd over de intensiteit van de toetsing door de bestuursrechter aan het evenredigheidsbeginsel?",
+    "a": [
+      "De rechter moet altijd marginaal toetsen en het bestuursorgaan ruime beleidsvrijheid gunnen.",
+      "De rechter mag niet toetsen aan het evenredigheidsbeginsel bij gebonden bevoegdheden.",
+      "De rechter moet niet beoordelen of het bestuursorgaan in redelijkheid tot het besluit kon komen, maar aansluiten bij de bewoordingen van artikel 3:4 lid 2 Awb.",
+      "De rechter moet de belangenafweging volledig overdoen en zijn eigen oordeel in de plaats stellen van dat van het bestuur."
+    ],
+    "c": 2,
+    "exp": "ABRvS Woningsluiting Harderwijk.\n\nDe bestuursrechter dient niet te beoordelen of het bestuursorgaan 'in redelijkheid' tot het besluit heeft kunnen komen, maar moet aansluiten bij de bewoordingen van artikel 3:4 lid 2 Awb (of de gevolgen niet onevenredig zijn)."
+  },
+  {
+    "q": "Wat impliceert het vertrouwensbeginsel met betrekking tot toezeggingen die aan het bestuursorgaan kunnen worden toegerekend?",
+    "a": [
+      "Dat deze toezeggingen altijd en onvoorwaardelijk moeten worden nagekomen.",
+      "Dat deze toezeggingen nooit bindend zijn als ze door een onbevoegde ambtenaar zijn gedaan.",
+      "Dat deze toezeggingen moeten worden nagekomen, tenzij zwaarder wegende belangen zich daartegen verzetten.",
+      "Dat deze toezeggingen alleen geldig zijn als ze schriftelijk zijn vastgelegd in een beschikking."
+    ],
+    "c": 2,
+    "exp": "ABRvS Dakopbouw Amsterdam.\n\nHet vertrouwensbeginsel brengt niet mee dat gerechtvaardigde verwachtingen altijd moeten worden gehonoreerd. Daartoe is vereist dat bij afweging van de betrokken belangen geen zwaarder wegende belangen aan het honoreren in de weg staan."
+  },
+  {
+    "q": "Welk onderscheid in de toetsing van besluiten wordt gemaakt op basis van de aanwezigheid van beleidsruimte?",
+    "a": [
+      "Bij beleidsruimte toetst de rechter terughoudend; bij gebonden bevoegdheden toetst de rechter vol.",
+      "Bij beleidsruimte toetst de rechter vol; bij gebonden bevoegdheden toetst de rechter terughoudend.",
+      "Bij beleidsruimte toetst de rechter alleen op procedurele gebreken; bij gebonden bevoegdheden op inhoud.",
+      "Bij beleidsruimte toetst de rechter aan de Grondwet; bij gebonden bevoegdheden aan de Awb."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:4 Awb (interpretatie).\n\nBij het gebruik van een discretionaire bevoegdheid (beleidsruimte) toetst de rechter terughoudend (marginaal) of het bestuursorgaan in redelijkheid tot het besluit heeft kunnen komen. Bij een gebonden bevoegdheid toetst de rechter vol of aan de wettelijke voorwaarden is voldaan."
+  },
+  {
+    "q": "Wat wordt verstaan onder het formele rechtszekerheidsbeginsel?",
+    "a": [
+      "Dat besluiten niet met terugwerkende kracht mogen worden gewijzigd ten nadele van de burger.",
+      "Dat een besluit duidelijk moet zijn, zodat de burger weet waar hij aan toe is.",
+      "Dat een besluit inhoudelijk juist moet zijn en in overeenstemming met de wet.",
+      "Dat gelijke gevallen op een gelijke manier behandeld moeten worden."
+    ],
+    "c": 1,
+    "exp": "Ongeschreven beginsel (Formele rechtszekerheid).\n\nHet beginsel van formele rechtszekerheid houdt in dat een besluit een zodanige inhoud moet hebben dat degenen voor wie het is bedoeld, kunnen weten waar ze aan toe zijn. Het besluit moet duidelijk en ondubbelzinnig zijn geformuleerd."
+  },
+  {
+    "q": "In welk geval is artikel 4:8 Awb van toepassing bij de voorbereiding van een beschikking?",
+    "a": [
+      "Wanneer het bestuursorgaan voornemens is een aanvraag af te wijzen.",
+      "Wanneer het bestuursorgaan voornemens is een beschikking te geven waartegen een belanghebbende die de beschikking niet heeft aangevraagd naar verwachting bedenkingen zal hebben.",
+      "Wanneer het bestuursorgaan een begunstigende beschikking wil geven die volledig tegemoetkomt aan de aanvraag.",
+      "Wanneer het bestuursorgaan de wettelijke beslistermijn dreigt te overschrijden."
+    ],
+    "c": 1,
+    "exp": "Artikel 4:8 Awb.\n\nDit artikel regelt de hoorplicht voor 'derde-belanghebbenden'. Het orgaan stelt een belanghebbende die de beschikking niet heeft aangevraagd in de gelegenheid zijn zienswijze naar voren te brengen als de beschikking hem naar verwachting bedenkingen zal geven."
+  },
+  {
+    "q": "Welke eis stelt artikel 3:42 Awb aan de bekendmaking van besluiten van algemene strekking die geen algemeen verbindende voorschriften zijn?",
+    "a": [
+      "Ze moeten worden toegezonden aan alle inwoners van de gemeente.",
+      "Ze moeten worden bekendgemaakt door kennisgeving van het besluit of van de zakelijke inhoud ervan in een officieel publicatieblad.",
+      "Ze moeten worden voorgelezen tijdens een openbare raadsvergadering.",
+      "Ze treden pas in werking nadat de termijn voor beroep is verstreken."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:42 Awb.\n\nDe bekendmaking van besluiten die geen tot een of meer belanghebbenden gerichte besluiten zijn (zoals besluiten van algemene strekking), geschiedt door kennisgeving van het besluit of van de zakelijke inhoud ervan in een officieel publicatieblad."
+  },
+  {
+    "q": "Wat is het rechtsgevolg als een bestuursorgaan een wettelijk advies niet volgt, volgens artikel 3:50 Awb?",
+    "a": [
+      "Het besluit is per definitie nietig.",
+      "Het bestuursorgaan moet het besluit laten goedkeuren door de rechter.",
+      "Het bestuursorgaan moet de afwijking van het advies motiveren in het besluit.",
+      "Het bestuursorgaan moet een nieuwe adviseur aanstellen voor een second opinion."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:50 Awb.\n\nIndien het bestuursorgaan een besluit neemt dat afwijkt van een krachtens wettelijk voorschrift uitgebracht advies, wordt dit in de motivering vermeld. De redenen voor de afwijking moeten worden gegeven."
+  },
+  {
+    "q": "Welk onderscheid maakt de wet tussen de bekendmaking en de mededeling van besluiten?",
+    "a": [
+      "Bekendmaking is bepalend voor de inwerkingtreding; mededeling heeft geen rechtsgevolg voor de inwerkingtreding.",
+      "Mededeling is bepalend voor de inwerkingtreding; bekendmaking is slechts een service.",
+      "Bekendmaking gebeurt altijd mondeling; mededeling gebeurt altijd schriftelijk.",
+      "Er is juridisch geen verschil; de termen worden door elkaar gebruikt."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:40 Awb en Afdeling 3.6 Awb.\n\nBekendmaking is een constitutief vereiste voor de inwerkingtreding van een besluit (art. 3:40 Awb). Mededeling (art. 3:43/3:44 Awb) aan anderen dan de geadresseerde is informatief en niet bepalend voor de inwerkingtreding."
+  },
+  {
+    "q": "Wat houdt het beginsel van materiële rechtszekerheid in?",
+    "a": [
+      "Dat de tekst van een besluit duidelijk en begrijpelijk moet zijn.",
+      "Dat het geldende recht daadwerkelijk moet worden toegepast en besluiten niet met terugwerkende kracht ten nadele van de burger mogen worden gewijzigd.",
+      "Dat de procedure voor het nemen van een besluit transparant moet zijn.",
+      "Dat elke burger recht heeft op een eerlijk proces voor een onafhankelijke rechter."
+    ],
+    "c": 1,
+    "exp": "Ongeschreven beginsel (Materiële rechtszekerheid).\n\nHet materiële rechtszekerheidsbeginsel houdt in dat het geldende recht daadwerkelijk wordt toegepast en dat de overheid besluiten niet met terugwerkende kracht ten nadele van burgers mag wijzigen (vertrouwensbescherming)."
+  },
+  {
+    "q": "Welke rol speelt het 'burgerperspectief' in de uitspraak 'Dakopbouw Amsterdam'?",
+    "a": [
+      "Het is irrelevant; alleen de intentie van het bestuursorgaan telt.",
+      "Het is leidend bij de vraag of een uitlating als toezegging kan worden gekwalificeerd.",
+      "Het speelt alleen een rol bij de vaststelling van de schadevergoeding.",
+      "Het wordt alleen gebruikt als de wet geen duidelijkheid biedt."
+    ],
+    "c": 1,
+    "exp": "ABRvS Dakopbouw Amsterdam.\n\nDe Afdeling stelt het burgerperspectief centraal bij de eerste stap (kwalificatie van de toezegging). De nadruk ligt op hoe een uitlating bij een redelijk denkende burger overkomt, en minder op wat het bestuursorgaan daarmee bedoelde."
+  },
+  {
+    "q": "Wanneer is de uniforme openbare voorbereidingsprocedure (afdeling 3.4 Awb) van toepassing?",
+    "a": [
+      "Altijd, bij elk besluit van een bestuursorgaan.",
+      "Alleen als dit bij wettelijk voorschrift of bij besluit van het bestuursorgaan is bepaald.",
+      "Alleen bij besluiten die financiële gevolgen hebben van meer dan 10.000 euro.",
+      "Wanneer een belanghebbende hier expliciet om verzoekt in de aanvraag."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:10 Awb.\n\nAfdeling 3.4 is van toepassing op de voorbereiding van besluiten indien dat bij wettelijk voorschrift of bij besluit van het bestuursorgaan is bepaald."
+  },
+  {
+    "q": "Wat bepaalt artikel 2:4 Awb over de taakuitoefening van een bestuursorgaan?",
+    "a": [
+      "Het bestuursorgaan vervult zijn taak zonder vooringenomenheid.",
+      "Het bestuursorgaan moet altijd de goedkoopste oplossing kiezen.",
+      "Het bestuursorgaan moet altijd juridisch advies inwinnen.",
+      "Het bestuursorgaan mag geen contact hebben met de aanvrager tijdens de procedure."
+    ],
+    "c": 0,
+    "exp": "Artikel 2:4 lid 1 Awb.\n\nHet bestuursorgaan vervult zijn taak zonder vooringenomenheid. Dit is de codificatie van het fair-play beginsel (verbod op vooringenomenheid)."
+  },
+  {
+    "q": "Wat is het gevolg van vernietiging van een besluit door de rechter wegens strijd met het gelijkheidsbeginsel?",
+    "a": [
+      "Het besluit blijft in stand, maar de burger krijgt een schadevergoeding.",
+      "Het besluit wordt vernietigd, omdat het niet berust op een deugdelijke motivering of zorgvuldige voorbereiding.",
+      "De rechter stelt zelf een nieuwe beleidsregel vast voor het bestuursorgaan.",
+      "De burger moet een nieuwe aanvraag indienen bij een ander bestuursorgaan."
+    ],
+    "c": 1,
+    "exp": "Rechtspraak/Doctrine (Gelijkheidsbeginsel).\n\nAls een beroep op het gelijkheidsbeginsel slaagt (het orgaan kan de ongelijkheid niet weerspreken), leidt dit tot vernietiging wegens het ontbreken van een draagkrachtige motivering (art. 3:46 Awb) of onzorgvuldige voorbereiding (art. 3:2 Awb), aangezien het orgaan niet consistent heeft gehandeld."
+  }
+]

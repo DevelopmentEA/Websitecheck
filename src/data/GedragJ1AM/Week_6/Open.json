@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Ahmed, een verdachte met een niet-westerse migratieachtergrond die de Nederlandse taal niet beheerst, staat terecht voor winkeldiefstal. In een vergelijkbare zaak staat Jan, een verdachte met een Nederlands uiterlijk die de taal vloeiend spreekt, ook terecht voor winkeldiefstal. De politierechter legt Ahmed een onvoorwaardelijke gevangenisstraf op, terwijl Jan een taakstraf krijgt. Analyseer dit verschil in straftoemeting vanuit de 'focal concerns'-theorie en empirische onderzoeksresultaten.",
+    "sample": "Issue: Is het onderscheid in strafmaat tussen Ahmed en Jan te verklaren vanuit empirische inzichten over straftoemeting en daderkenmerken?\n\nRule: Uit observatieonderzoek blijkt dat verdachten met een buitenlands uiterlijk die geen Nederlands spreken een twintig keer hogere kans hebben op een onvoorwaardelijke gevangenisstraf dan Nederlandssprekende verdachten met een Nederlands uiterlijk. De focal concerns-theorie stelt dat rechters beslissen op basis van verwijtbaarheid, gevaarlijkheid en praktische gevolgen. Bij gebrek aan informatie vallen rechters terug op stereotypen.\n\nApplication: Ahmed voldoet aan de kenmerken (buitenlands uiterlijk, spreekt geen Nederlands) die correleren met de hoogste strafkans. Rechters schatten mogelijk de gevaarlijkheid hoger in door negatieve stereotypering (minder binding met samenleving). Daarnaast spelen praktische gevolgen een rol: een taakstraf is praktisch lastig uitvoerbaar als een verdachte de taal niet spreekt, waardoor sneller voor detentie wordt gekozen.\n\nConclusion: De zwaardere straf voor Ahmed is consistent met empirische bevindingen waarbij stereotypering en praktische uitvoerbaarheid (taalbarrière) leiden tot strengere straffen.",
+    "checklist": [
+      "Combinatie uiterlijk en taalgebrek verhoogt strafkans significant.",
+      "Focal concerns: verwijtbaarheid, gevaarlijkheid en praktische gevolgen.",
+      "Rechters gebruiken stereotypen bij gebrek aan informatie.",
+      "Praktische onuitvoerbaarheid taakstraf door taalbarrière."
+    ],
+    "exp": "De analyse koppelt de specifieke daderkenmerken uit de casus direct aan de statistische bevindingen van Wermink et al. en de theoretische verklaring van de focal concerns (praktische uitvoerbaarheid en stereotypering)."
+  },
+  {
+    "q": "Tijdens een civiele procedure bij de kantonrechter verschijnt mevrouw De Vries zonder advocaat. Zij wordt gedaagd door een incassobureau wegens een onbetaalde rekening. De rechter merkt op dat de vordering mogelijk verjaard is, hoewel De Vries dit verweer zelf niet voert. De rechter stelt hierop gerichte vragen die De Vries helpen dit verweer te formuleren. Het incassobureau stelt dat de rechter hiermee zijn onpartijdigheid schendt. Beoordeel het handelen van de rechter.",
+    "sample": "Issue: Mag de kantonrechter een niet-vertegenwoordigde partij actief helpen bij het voeren van verweer zonder de onpartijdigheid te schenden?\n\nRule: In kantonprocedures nemen rechters een compensatoire rol aan bij niet-vertegenwoordigde partijen om ongelijkheid te compenseren ('equality of arms'). Waarheidsvinding en materiële rechtvaardigheid wegen zwaarder dan strikte partijautonomie. Rechters mogen informeren, regisseren en beschermen tegen formele valkuilen.\n\nApplication: Mevrouw De Vries is een 'one-shotter' zonder juridische kennis tegenover een professionele partij. Door te 'hinten' op verjaring of door te vragen, herstelt de rechter het evenwicht en voorkomt dat een juridisch onjuiste uitkomst ontstaat door onkunde van de gedaagde. Dit valt binnen de actieve procesbegeleiding die van kantonrechters wordt verwacht.\n\nConclusion: De rechter handelt correct door ongelijkheidscompensatie toe te passen en materiële rechtvaardigheid te prioriteren boven lijdelijkheid.",
+    "checklist": [
+      "Rechter neemt compensatoire rol bij onvertegenwoordigde partijen.",
+      "Doel is waarborgen van equality of arms.",
+      "Materiële rechtvaardigheid gaat boven strikte partijautonomie.",
+      "Rechter mag informeren en sturen bij onkunde."
+    ],
+    "exp": "Deze casus toont de spanning tussen lijdelijkheid en de actieve, compensatoire rol die kantonrechters in de praktijk aannemen om 'one-shotters' te beschermen tegen 'repeat players'."
+  },
+  {
+    "q": "Rechter Klaassen behandelt veel zaken in korte tijd vanwege strakke productienormen die zijn opgelegd door het gerechtsbestuur. In een zaak van een veelpleger wil hij eigenlijk de tijd nemen om de onderliggende schuldenproblematiek te bespreken en contact te leggen met de schuldhulpverlening, maar het rooster laat dit niet toe. Analyseer dit conflict aan de hand van de perspectieven op de rechterlijke organisatie.",
+    "sample": "Issue: Welk conflict tussen organisatieperspectieven doet zich voor in de afweging van rechter Klaassen?\n\nRule: Er bestaat een spanning tussen Nieuw Publiek Management (NPM), dat focust op efficiëntie, outputfinanciering en productienormen, en Maatschappelijk Effectieve Rechtspraak (MER), dat zich richt op responsiviteit en het oplossen van achterliggende maatschappelijke problemen.\n\nApplication: De productienormen en het strakke rooster zijn uitingen van NPM, gericht op kwantitatieve afdoening. De wens van de rechter om de schuldenproblematiek (de oorzaak van de criminaliteit) aan te pakken, is een uiting van MER. De organisatorische druk van NPM belemmert hier de maatschappelijke effectiviteit die de rechter nastreeft.\n\nConclusion: Er is sprake van een conflict tussen de efficiëntie-eisen van Nieuw Publiek Management en de probleemoplossende benadering van Maatschappelijk Effectieve Rechtspraak.",
+    "checklist": [
+      "Conflict tussen Nieuw Publiek Management en MER.",
+      "NPM focust op efficiëntie en outputfinanciering.",
+      "MER richt zich op oplossen achterliggende problemen.",
+      "Productiedruk belemmert responsiviteit van de rechter."
+    ],
+    "exp": "De casus illustreert de in de literatuur beschreven spanning tussen de bedrijfsmatige sturing van de rechtspraak (NPM) en de inhoudelijke wens tot responsieve rechtspraak (MER)."
+  },
+  {
+    "q": "Een advocaat adviseert zijn cliënt, verdachte van een zware mishandeling, om tijdens de zitting bij de politierechter nadrukkelijk spijt te betuigen. De advocaat stelt dat uit onderzoek blijkt dat het tonen van berouw de kans op een onvoorwaardelijke gevangenisstraf aanzienlijk verkleint. Evalueer dit advies op basis van empirisch onderzoek naar straftoemeting.",
+    "sample": "Issue: Leidt het tonen van spijt tijdens de zitting empirisch aantoonbaar tot een lagere kans op een onvoorwaardelijke gevangenisstraf?\n\nRule: Uit kwantitatief observatieonderzoek bij de politierechter blijkt dat het al dan niet betuigen van spijt geen statistisch significant effect heeft op de beslissing om een onvoorwaardelijke gevangenisstraf op te leggen. Factoren als strafblad, delicttype en persoonlijke kenmerken (geslacht, etniciteit) zijn wel bepalend.\n\nApplication: De aanname van de advocaat dat spijt de strafkans aanzienlijk verkleint, wordt niet ondersteund door de data. Hoewel spijt theoretisch de verwijtbaarheid of gevaarlijkheid zou kunnen verlagen in de ogen van de rechter, blijkt dit in de praktijk geen zelfstandige voorspeller voor de strafsoort (gevangenisstraf versus anders).\n\nConclusion: Het advies is feitelijk onjuist; spijtbetuiging heeft geen significant effect op de kans op een onvoorwaardelijke gevangenisstraf.",
+    "checklist": [
+      "Spijt heeft geen significant effect op strafkans.",
+      "Advies advocaat wordt niet ondersteund door data.",
+      "Andere factoren zoals strafblad zijn wel bepalend.",
+      "Focal concerns wegen zwaarder dan emotie verdachte."
+    ],
+    "exp": "Dit weerlegt een veelvoorkomende intuïtieve aanname met harde empirische data uit het onderzoek van Wermink e.a., zoals beschreven in de stof."
+  },
+  {
+    "q": "Kantonrechter Jansen behandelt een huurzaak. De gedaagde huurder voert verweer maar begrijpt de juridische terminologie niet. Jansen kiest ervoor om tijdens de mondelinge behandeling de juridische regels in ‘Jip-en-Janneketaal’ uit te leggen en wijst de huurder actief op een bewijsstuk dat hij vergeten is in te dienen. De verhuurder stelt dat de rechter hiermee zijn neutrale rol verlaat. Analyseer de rolopvatting van de rechter.",
+    "sample": "Issue: Handelt de rechter in strijd met zijn taak door juridische uitleg te geven en te wijzen op bewijs bij een onvertegenwoordigde partij?\n\nRule: Kantonrechters ervaren rolambiguïteit maar prioriteren vaak materiële rechtvaardigheid boven formele lijdelijkheid. Zij nemen een actieve rol aan (informerend, regisserend, beschermend) om te zorgen dat onkunde niet leidt tot verlies. Dit past binnen de ontwikkeling van ongelijkheidscompensatie.\n\nApplication: Door regels uit te leggen en te wijzen op bewijs, vervult Jansen de informerende en beschermende rol. Hij compenseert het gebrek aan juridische kennis van de huurder om waarheidsvinding mogelijk te maken. Dit wordt door kantonrechters gezien als noodzakelijk voor een eerlijk proces, ondanks de spanning met strikte neutraliteit.\n\nConclusion: De rechter handelt conform de moderne taakopvatting van kantonrechters, waarbij ongelijkheidscompensatie noodzakelijk is voor een eerlijke procedure.",
+    "checklist": [
+      "Rechter prioriteert materiële rechtvaardigheid boven formalisme.",
+      "Rollen: informerend, regisserend en beschermend.",
+      "Compensatie noodzakelijk voor eerlijke waarheidsvinding.",
+      "Rolambiguïteit tussen neutraliteit en ondersteuning."
+    ],
+    "exp": "De casus demonstreert de specifieke strategieën (informeren, beschermen) die rechters gebruiken om de kloof tussen 'leken' en het rechtssysteem te overbruggen, zoals beschreven door Hoevenaars."
+  }
+]

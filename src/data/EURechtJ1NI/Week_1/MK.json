@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Welk verdrag ligt ten grondslag aan de oprichting van de Europese Gemeenschap voor Kolen en Staal (EGKS)?",
+    "a": [
+      "Het Verdrag van Rome",
+      "Het Verdrag van Parijs",
+      "Het Verdrag van Maastricht",
+      "De Europese Akte"
+    ],
+    "c": 1,
+    "exp": "Verdrag van Parijs (1951).\n\nDe Europese Unie vindt haar oorsprong in de oprichting van de Europese Gemeenschap voor Kolen en Staal, welke werd opgericht met het Verdrag van Parijs in 1951."
+  },
+  {
+    "q": "Wat is volgens het Verdrag betreffende de Europese Unie de voornaamste taak van de Europese Raad?",
+    "a": [
+      "Het uitoefenen van wetgevende taken samen met het Parlement",
+      "Het dagelijks bestuur van de Unie en de uitvoering van de begroting",
+      "Het geven van de nodige impulsen en bepalen van politieke beleidslijnen",
+      "Het controleren van de wettigheid van handelingen van de instellingen"
+    ],
+    "c": 2,
+    "exp": "Artikel 15 lid 1 VEU.\n\nDe Europese Raad geeft de Unie de voor haar ontwikkeling nodige impulsen en bepaalt de algemene politieke beleidslijnen en prioriteiten. Hij oefent geen wetgevingstaak uit."
+  },
+  {
+    "q": "Hoe is de zetelverdeling binnen het Europees Parlement geregeld volgens het Verdrag betreffende de Europese Unie?",
+    "a": [
+      "Op basis van degressieve evenredigheid met een minimum van zes leden per lidstaat",
+      "Op basis van strikte evenredigheid naar inwonertal zonder minimumdrempel",
+      "Elke lidstaat heeft recht op een gelijk aantal van dertig zetels in het Parlement",
+      "Het aantal zetels wordt jaarlijks vastgesteld door de Europese Commissie"
+    ],
+    "c": 0,
+    "exp": "Artikel 14 lid 2 VEU.\n\nDe vertegenwoordiging van de burgers is degressief evenredig, met een minimumdrempel van zes leden per lidstaat en een maximum van zesennegentig zetels."
+  },
+  {
+    "q": "Welke instelling heeft in beginsel het exclusieve recht om wetgevingshandelingen van de Unie voor te stellen?",
+    "a": [
+      "Het Europees Parlement",
+      "De Europese Raad",
+      "De Raad van de Europese Unie",
+      "De Europese Commissie"
+    ],
+    "c": 3,
+    "exp": "Artikel 17 lid 2 VEU.\n\nWetgevingshandelingen van de Unie mogen alleen op voorstel van de Commissie worden vastgesteld, behalve indien de Verdragen anders bepalen."
+  },
+  {
+    "q": "Wanneer is er sprake van een gekwalificeerde meerderheid van stemmen in de Raad volgens de hoofdregel in het VEU?",
+    "a": [
+      "Bij instemming van 50% van de lidstaten die 50% van de bevolking vertegenwoordigen",
+      "Bij instemming van 72% van de lidstaten die 65% van de bevolking vertegenwoordigen",
+      "Bij instemming van 55% van de lidstaten die 65% van de bevolking vertegenwoordigen",
+      "Bij instemming van alle lidstaten (unanimiteit) behoudens onthoudingen"
+    ],
+    "c": 2,
+    "exp": "Artikel 16 lid 4 VEU.\n\nVanaf 1 november 2014 wordt onder gekwalificeerde meerderheid verstaan: ten minste 55% van de leden van de Raad, met een minimum van vijftien, die lidstaten vertegenwoordigen waarvan de bevolking ten minste 65% van de bevolking van de Unie uitmaakt."
+  },
+  {
+    "q": "Wat was de uitkomst van het Akkoord van Luxemburg (1966) na de zogeheten 'Lege Stoel-crisis'?",
+    "a": [
+      "Lidstaten mochten niet langer afwezig zijn bij vergaderingen van de Raad",
+      "Er kon een veto worden uitgesproken bij zeer gewichtige nationale belangen",
+      "De Europese Commissie kreeg de volledige bevoegdheid over landbouwbeleid",
+      "Het Europees Parlement kreeg voor het eerst directe wetgevende bevoegdheden"
+    ],
+    "c": 1,
+    "exp": "Akkoord van Luxemburg (1966).\n\nIn dit akkoord werd vastgesteld dat er altijd getracht moest worden consensus te bereiken, en indien dit niet lukte, konden lidstaten een veto uitspreken als er zeer gewichtige nationale belangen op het spel stonden."
+  },
+  {
+    "q": "Welk verdrag zorgde in 1986 voor een doorbraak in het integratieproces en de voltooiing van de interne markt?",
+    "a": [
+      "De Europese Akte",
+      "Het Verdrag van Amsterdam",
+      "Het Verdrag van Nice",
+      "Het Verdrag van Lissabon"
+    ],
+    "c": 0,
+    "exp": "Europese Akte (1986).\n\nNa jaren van stagnatie werd in 1986 de Europese Akte ondertekend waarin plannen stonden om het vrij verkeer tussen de lidstaten verder uit te bouwen en de interne markt te voltooien."
+  },
+  {
+    "q": "Met welk verdrag werd de structuur van de Europese Unie formeel opgericht en de muntunie geïntroduceerd?",
+    "a": [
+      "Verdrag van Rome",
+      "Europese Akte",
+      "Verdrag van Nice",
+      "Verdrag van Maastricht"
+    ],
+    "c": 3,
+    "exp": "Verdrag van Maastricht (1992).\n\nDe Europese Unie werd opgericht met het Verdrag van Maastricht. Hierbij werd ook de muntunie van de euro in het leven geroepen."
+  },
+  {
+    "q": "Wat is het maximumaantal leden van het Europees Parlement, inclusief de voorzitter, zoals vastgelegd in het VEU?",
+    "a": [
+      "705 leden",
+      "720 leden",
+      "751 leden",
+      "766 leden"
+    ],
+    "c": 2,
+    "exp": "Artikel 14 lid 2 VEU.\n\nHet Europees Parlement bestaat uit ten hoogste 750 leden, de voorzitter niet meegerekend (dus 751 in totaal)."
+  },
+  {
+    "q": "Wie hebben zitting in de Raad van de Europese Unie volgens artikel 16 VEU?",
+    "a": [
+      "De staatshoofden en regeringsleiders van de lidstaten",
+      "Eén vertegenwoordiger per lidstaat op ministerieel niveau",
+      "Onafhankelijke deskundigen benoemd door de Commissie",
+      "Rechtstreeks gekozen vertegenwoordigers van de burgers"
+    ],
+    "c": 1,
+    "exp": "Artikel 16 lid 2 VEU.\n\nDe Raad bestaat uit een vertegenwoordiger van iedere lidstaat op ministerieel niveau, die gemachtigd is om de regering van de lidstaat die hij vertegenwoordigt te binden en het stemrecht uit te oefenen."
+  },
+  {
+    "q": "Wat is de ambtstermijn van de leden van de Europese Commissie?",
+    "a": [
+      "Drie jaar",
+      "Vier jaar",
+      "Vijf jaar",
+      "Zes jaar"
+    ],
+    "c": 2,
+    "exp": "Artikel 17 lid 3 VEU.\n\nDe ambtstermijn van de leden van de Commissie bedraagt vijf jaar."
+  },
+  {
+    "q": "Hoe is het Hof van Justitie (als onderdeel van het HvJ EU) samengesteld?",
+    "a": [
+      "Uit zeven rechters die bij consensus worden benoemd",
+      "Uit negen rechters en negen advocaten-generaal",
+      "Uit twee rechters per lidstaat van de Europese Unie",
+      "Uit één rechter per lidstaat van de Europese Unie"
+    ],
+    "c": 3,
+    "exp": "Artikel 19 lid 2 VEU.\n\nHet Hof van Justitie bestaat uit één rechter per lidstaat."
+  },
+  {
+    "q": "Voor welke termijn wordt de voorzitter van de Europese Raad gekozen?",
+    "a": [
+      "Voor een termijn van achttien maanden",
+      "Voor een termijn van een jaar",
+      "Voor een termijn van tweeënhalf jaar",
+      "Voor een termijn van vijf jaar"
+    ],
+    "c": 2,
+    "exp": "Artikel 15 lid 5 VEU.\n\nDe Europese Raad kiest zijn voorzitter met gekwalificeerde meerderheid van stemmen voor een periode van tweeënhalf jaar. De voorzitter is eenmaal herkiesbaar."
+  },
+  {
+    "q": "Met welk instrument kan het Europees Parlement de Europese Commissie tot aftreden dwingen?",
+    "a": [
+      "Een beroep wegens nalaten",
+      "Een motie van afkeuring",
+      "Een wetgevingsresolutie",
+      "Een advies van ongeschiktheid"
+    ],
+    "c": 1,
+    "exp": "Artikel 234 VWEU.\n\nIndien de motie van afkeuring is aangenomen, moeten de leden van de Commissie collectief ontslag nemen."
+  },
+  {
+    "q": "Welk orgaan is belast met de voorbereiding van de werkzaamheden van de Raad?",
+    "a": [
+      "Het Comité van Permanente Vertegenwoordigers (COREPER)",
+      "Het College van Commissarissen",
+      "Het Secretariaat van het Parlement",
+      "De Europese Rekenkamer"
+    ],
+    "c": 0,
+    "exp": "Artikel 16 lid 7 VEU.\n\nEen comité van permanente vertegenwoordigers van de regeringen der lidstaten is belast met de voorbereiding van de werkzaamheden van de Raad."
+  },
+  {
+    "q": "Welke belangrijke wijziging bracht het Verdrag van Lissabon (2007/2009) met zich mee?",
+    "a": [
+      "De oprichting van de Europese Economische Gemeenschap",
+      "De invoering van de Euro als gemeenschappelijke munt",
+      "De toetreding van tien nieuwe lidstaten tot de Unie",
+      "De afschaffing van de pijlerstructuur van de Unie"
+    ],
+    "c": 3,
+    "exp": "Verdrag van Lissabon.\n\nMet het verdrag van Lissabon van 2007 gingen de eerdere gemeenschappen (met uitzondering van Euratom) en de pijlerstructuur helemaal op in de Europese Unie."
+  },
+  {
+    "q": "Hoeveel lidstaten zijn minimaal vereist om een blokkerende minderheid te vormen in de Raad?",
+    "a": [
+      "Twee lidstaten",
+      "Drie lidstaten",
+      "Vier lidstaten",
+      "Vijf lidstaten"
+    ],
+    "c": 2,
+    "exp": "Artikel 16 lid 4 VEU.\n\nEen blokkerende minderheid moet ten minste uit vier Raadsleden bestaan; in het andere geval wordt de gekwalificeerde meerderheid geacht te zijn verkregen."
+  },
+  {
+    "q": "Welke eis stelt artikel 17 VEU aan de leden van de Europese Commissie?",
+    "a": [
+      "Zij vertegenwoordigen de belangen van hun nationale regering",
+      "Zij oefenen hun ambt volkomen onafhankelijk uit",
+      "Zij moeten lid zijn geweest van het Europees Parlement",
+      "Zij worden direct gekozen door de burgers van de Unie"
+    ],
+    "c": 1,
+    "exp": "Artikel 17 lid 3 VEU.\n\nDe leden van de Commissie oefenen hun ambt volkomen onafhankelijk uit. Zij vragen noch aanvaarden instructies van enige regering, instelling, orgaan of instantie."
+  },
+  {
+    "q": "Wie oefenen gezamenlijk de wetgevingstaak en de begrotingstaak uit?",
+    "a": [
+      "De Raad en het Europees Parlement",
+      "De Commissie en de Europese Raad",
+      "De Europese Raad en het Parlement",
+      "De Commissie en de Raad"
+    ],
+    "c": 0,
+    "exp": "Artikel 14 lid 1 VEU & Artikel 16 lid 1 VEU.\n\nHet Europees Parlement oefent samen met de Raad de wetgevingstaak en de begrotingstaak uit."
+  },
+  {
+    "q": "Hoe wordt de begroting van de Europese Unie gefinancierd volgens het Werkingsverdrag?",
+    "a": [
+      "Door vrijwillige bijdragen van lidstaten",
+      "Door leningen op de kapitaalmarkt",
+      "Door subsidies van de Verenigde Naties",
+      "Geheel uit eigen middelen"
+    ],
+    "c": 3,
+    "exp": "Artikel 311 VWEU.\n\nDe begroting van de Unie wordt, onverminderd de andere ontvangsten, volledig uit eigen middelen gefinancierd."
+  },
+  {
+    "q": "Wie zit de Raad Buitenlandse Zaken voor?",
+    "a": [
+      "De roulerende voorzitter van de Raad",
+      "De voorzitter van de Europese Raad",
+      "De Hoge Vertegenwoordiger van de Unie",
+      "De voorzitter van de Europese Commissie"
+    ],
+    "c": 2,
+    "exp": "Artikel 18 lid 3 VEU.\n\nDe Hoge Vertegenwoordiger van de Unie voor buitenlandse zaken en veiligheidsbeleid zit de Raad Buitenlandse Zaken voor."
+  },
+  {
+    "q": "Wat is het minimumaantal leden dat een lidstaat mag hebben in het Europees Parlement?",
+    "a": [
+      "Vier leden",
+      "Zes leden",
+      "Tien leden",
+      "Twaalf leden"
+    ],
+    "c": 1,
+    "exp": "Artikel 14 lid 2 VEU.\n\nDe vertegenwoordiging van de burgers is degressief evenredig, met een minimumdrempel van zes leden per lidstaat."
+  },
+  {
+    "q": "Welke crisis ontstond in 1965 doordat Frankrijk weigerde aanwezig te zijn bij Raadsvergaderingen?",
+    "a": [
+      "De Lege Stoel-crisis",
+      "De Eurosclerose-crisis",
+      "De Institutionele crisis",
+      "De Begrotingscrisis"
+    ],
+    "c": 0,
+    "exp": "Lege Stoel-crisis (1965).\n\nVoornamelijk de Franse regering was erg tegen een supranationale opstelling van de Commissie. Dit leidde tot de 'Lege Stoel-crisis' van 1965, waarbij Frankrijk weigerde aanwezig te zijn bij bijeenkomsten."
+  },
+  {
+    "q": "Welke gemeenschappen werden opgericht met de Verdragen van Rome in 1957?",
+    "a": [
+      "De EGKS en de EEG",
+      "De EEG en de EU",
+      "De EU en Euratom",
+      "De EEG en Euratom"
+    ],
+    "c": 3,
+    "exp": "Verdragen van Rome (1957).\n\nIn 1957 werden met de Verdragen van Rome de Europese Economische Gemeenschap (EEG) en de Europese Gemeenschap voor Atoomenergie (EGA of Euratom) opgericht."
+  },
+  {
+    "q": "Welke instelling stelt het meerjarig financieel kader vast volgens artikel 312 VWEU?",
+    "a": [
+      "De Commissie, na raadpleging van het Parlement",
+      "Het Parlement, na goedkeuring van de Raad",
+      "De Raad, na goedkeuring door het Parlement",
+      "De Europese Raad, met instemming van de Commissie"
+    ],
+    "c": 2,
+    "exp": "Artikel 312 lid 2 VWEU.\n\nDe Raad stelt de verordening houdende het meerjarig financieel kader vast. De Raad besluit met eenparigheid van stemmen, na goedkeuring door het Europees Parlement."
+  },
+  {
+    "q": "Wie draagt de kandidaat voor het ambt van voorzitter van de Commissie voor aan het Europees Parlement?",
+    "a": [
+      "De Raad van Ministers",
+      "De Europese Raad",
+      "De uittredende Commissievoorzitter",
+      "De nationale parlementen"
+    ],
+    "c": 1,
+    "exp": "Artikel 17 lid 7 VEU.\n\nRekening houdend met de verkiezingen voor het Europees Parlement en na passende raadpleging, draagt de Europese Raad (...) bij het Europees Parlement een kandidaat voor het ambt van voorzitter van de Commissie voor."
+  },
+  {
+    "q": "Wat is het doel van de zogenoemde 'Ioannina-bepaling' bij besluitvorming in de Raad?",
+    "a": [
+      "Het bieden van een vertragingsmechanisme bij een aanzienlijke minderheid van tegenstemmen",
+      "Het toestaan van een opt-out voor lidstaten die niet willen meedoen aan wetgeving",
+      "Het vergroten van de invloed van het Europees Parlement op de besluitvorming",
+      "Het versnellen van de procedure bij besluiten over het buitenlands beleid"
+    ],
+    "c": 0,
+    "exp": "Ioannina-bepaling.\n\nDeze bepaling is in feite een vertragingsmechanisme en verplicht Raadsleden om binnen een redelijke termijn een bevredigende oplossing te vinden die aan de bezwaren tegemoetkomt, indien 75% van de blokkerende minderheid tegen is."
+  },
+  {
+    "q": "Hoe wordt het voorzitterschap van de Raad van de Europese Unie (met uitzondering van Buitenlandse Zaken) bekleed?",
+    "a": [
+      "Door een vaste voorzitter gekozen voor 2,5 jaar",
+      "Door de voorzitter van de Europese Commissie",
+      "Door de lidstaat met het meeste inwonersaantal",
+      "Door elke lidstaat bij toerbeurt voor zes maanden"
+    ],
+    "c": 3,
+    "exp": "Artikel 16 lid 9 VEU.\n\nHet voorzitterschap van de Raadsformaties, met uitzondering van de formatie Buitenlandse Zaken, wordt door de vertegenwoordigers van de lidstaten in de Raad bij toerbeurt uitgeoefend (zes maanden)."
+  },
+  {
+    "q": "Wat is de primaire taak van de advocaten-generaal bij het Hof van Justitie?",
+    "a": [
+      "Het vertegenwoordigen van de lidstaten in rechtszaken",
+      "Het verdedigen van de standpunten van de Commissie",
+      "Het nemen van onpartijdige conclusies in aanhangige zaken",
+      "Het administratief ondersteunen van de rechters"
+    ],
+    "c": 2,
+    "exp": "Artikel 252 VWEU.\n\nDe advocaat-generaal heeft tot taak in het openbaar en in volkomen onpartijdigheid en onafhankelijkheid met redenen omklede conclusies te nemen in zaken die bij het Hof aanhangig zijn."
+  },
+  {
+    "q": "Welk beginsel vormt de grondslag voor de verdeling van taken en bevoegdheden tussen de EU-instellingen?",
+    "a": [
+      "Het beginsel van institutioneel evenwicht",
+      "Het beginsel van de scheiding der machten",
+      "Het beginsel van nationale soevereiniteit",
+      "Het beginsel van directe werking"
+    ],
+    "c": 0,
+    "exp": "Artikel 13 lid 2 VEU.\n\nIedere instelling handelt binnen de grenzen van de bevoegdheden die haar in de Verdragen zijn toegedeeld (...) De instellingen werken in onderling overleg loyaal samen (institutioneel evenwicht)."
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Welke cumulatieve criteria hanteert het Hof van Justitie om te bepalen of een persoon als 'werknemer' in de zin van artikel 45 VWEU kan worden gekwalificeerd?",
+    "a": [
+      "De persoon moet een gezagsverhouding hebben, arbeid verrichten en een schriftelijk contract hebben.",
+      "De persoon moet gedurende een bepaalde tijd, voor een ander en onder diens gezag prestaties leveren tegen beloning.",
+      "De persoon moet arbeid verrichten die van economische waarde is en minimaal het minimumloon verdienen.",
+      "De persoon moet onderdaan zijn van een lidstaat en voltijds arbeid verrichten in een andere lidstaat."
+    ],
+    "c": 1,
+    "exp": "Arrest Lawrie-Blum.\n\nHet Hof heeft bepaald dat het begrip werknemer objectief moet worden uitgelegd. De drie essentiële kenmerken zijn: 1) gedurende een bepaalde tijd, 2) voor een ander en onder diens gezag prestaties leveren, en 3) als tegenprestatie een vergoeding ontvangen."
+  },
+  {
+    "q": "In welke situatie is er volgens het arrest Gebhard sprake van vestiging in plaats van dienstverrichting?",
+    "a": [
+      "Wanneer de economische activiteit een tijdelijk en incidenteel karakter heeft in de gastlidstaat.",
+      "Wanneer de dienstverrichter geen enkele infrastructuur gebruikt in de lidstaat van ontvangst.",
+      "Wanneer de activiteit duurzaam, stabiel en continu wordt uitgeoefend in de gastlidstaat.",
+      "Wanneer de dienstverrichter zich enkel richt op grensoverschrijdende digitale dienstverlening."
+    ],
+    "c": 2,
+    "exp": "Arrest Gebhard.\n\nHet onderscheid tussen vestiging en dienstverrichting ligt in het duurzame karakter. Vestiging impliceert dat een gemeenschapsonderdaan duurzaam deelneemt aan het economisch leven van een andere lidstaat (stabiel en continu), terwijl diensten tijdelijk van aard zijn."
+  },
+  {
+    "q": "Wat is volgens Richtlijn 2004/38 een vereiste voor economisch inactieve burgers om langer dan drie maanden in een andere lidstaat te verblijven?",
+    "a": [
+      "Zij moeten ingeschreven staan bij het lokale arbeidsbureau als werkzoekende.",
+      "Zij moeten beschikken over voldoende bestaansmiddelen en een volledige ziektekostenverzekering.",
+      "Zij moeten direct na aankomst een verblijfsvergunning aanvragen bij de lokale autoriteiten.",
+      "Zij moeten aantonen dat zij familie zijn van een werknemer in de gastlidstaat."
+    ],
+    "c": 1,
+    "exp": "Artikel 7 lid 1 sub b Richtlijn 2004/38.\n\nVoor een verblijf van langer dan drie maanden moeten economisch inactieve personen voor zichzelf en hun familieleden beschikken over voldoende bestaansmiddelen en een verzekering die de ziektekosten in het gastland volledig dekt, om te voorkomen dat zij ten laste komen van het socialebijstandsstelsel."
+  },
+  {
+    "q": "Kan een nationale maatregel die zonder onderscheid naar nationaliteit geldt, toch in strijd zijn met artikel 45 VWEU?",
+    "a": [
+      "Ja, indien de maatregel de toegang tot de arbeidsmarkt van de andere lidstaat belemmert of minder aantrekkelijk maakt.",
+      "Nee, artikel 45 VWEU verbiedt uitsluitend directe en indirecte discriminatie op grond van nationaliteit.",
+      "Ja, maar uitsluitend als de maatregel betrekking heeft op de hoogte van het salaris van de werknemer.",
+      "Nee, niet-discriminerende maatregelen vallen per definitie onder de nationale beleidsvrijheid."
+    ],
+    "c": 0,
+    "exp": "Arrest Bosman.\n\nHet Hof heeft geoordeeld dat ook nationale maatregelen die zonder onderscheid gelden, verboden zijn als ze de toegang tot de arbeidsmarkt belemmeren of de uitoefening van het recht op vrij verkeer minder aantrekkelijk maken."
+  },
+  {
+    "q": "Welke uitzondering op het vrije verkeer van werknemers is vastgelegd in artikel 45 lid 4 VWEU?",
+    "a": [
+      "Functies die een specifiek diploma vereisen dat niet in andere lidstaten wordt erkend.",
+      "Betrekkingen die vallen onder de nationale gezondheidszorg.",
+      "Betrekkingen in overheidsdienst.",
+      "Tijdelijke stages die geen economische waarde vertegenwoordigen."
+    ],
+    "c": 2,
+    "exp": "Artikel 45 lid 4 VWEU.\n\nDit artikel bepaalt expliciet dat de bepalingen van het vrije verkeer van werknemers niet van toepassing zijn op betrekkingen in overheidsdienst."
+  },
+  {
+    "q": "Onder welke voorwaarde hebben Unieburgers een onvoorwaardelijk verblijfsrecht gedurende de eerste drie maanden in een andere lidstaat?",
+    "a": [
+      "Zij moeten beschikken over voldoende bestaansmiddelen.",
+      "Zij moeten beschikken over een ziektekostenverzekering.",
+      "Zij moeten ingeschreven staan bij de gemeente.",
+      "Zij moeten in het bezit zijn van een geldig paspoort of identiteitskaart."
+    ],
+    "c": 3,
+    "exp": "Artikel 6 Richtlijn 2004/38.\n\nUnieburgers hebben het recht gedurende maximaal drie maanden op het grondgebied van een andere lidstaat te verblijven zonder andere voorwaarden of formaliteiten dan de verplichting in het bezit te zijn van een geldig identiteitsbewijs of paspoort."
+  },
+  {
+    "q": "Wat wordt in het kader van artikel 57 VWEU als essentieel kenmerk van een 'dienst' beschouwd?",
+    "a": [
+      "De dienst moet fysiek worden uitgevoerd in de lidstaat van de ontvanger.",
+      "De dienstverrichting moet gewoonlijk tegen vergoeding geschieden.",
+      "De dienst moet betrekking hebben op de productie van goederen.",
+      "De dienstverrichter moet een duurzame vestiging hebben in de gastlidstaat."
+    ],
+    "c": 1,
+    "exp": "Artikel 57 VWEU.\n\nDit artikel definieert diensten als dienstverrichtingen die gewoonlijk tegen vergoeding geschieden, voor zover de bepalingen betreffende het vrij verkeer van goederen, kapitaal en personen niet van toepassing zijn."
+  },
+  {
+    "q": "In het arrest Bosman oordeelde het Hof over transferregels in het profvoetbal. Wat was de kern van dit oordeel?",
+    "a": [
+      "Transferregels vallen buiten het EU-recht omdat sport een uitzondering vormt op de interne markt.",
+      "Transferregels zijn toegestaan mits de transfersom wordt hergeinvesteerd in de jeugdopleiding.",
+      "Transferregels belemmeren het vrij verkeer van werknemers en zijn in strijd met artikel 45 VWEU.",
+      "Transferregels zijn alleen verboden als ze direct discrimineren op basis van nationaliteit."
+    ],
+    "c": 2,
+    "exp": "Arrest Bosman.\n\nHet Hof oordeelde dat transferregels die een betaling eisen bij einde contract een belemmering vormen voor het vrije verkeer van werknemers, omdat ze de toegang tot de arbeidsmarkt in andere lidstaten blokkeren of ontmoedigen."
+  },
+  {
+    "q": "Wanneer verkrijgt een Unieburger volgens Richtlijn 2004/38 een duurzaam verblijfsrecht in een gastlidstaat?",
+    "a": [
+      "Na een ononderbroken periode van vijf jaar legaal verblijf in de gastlidstaat.",
+      "Zodra de Unieburger een vast arbeidscontract voor onbepaalde tijd heeft getekend.",
+      "Na drie jaar, mits de Unieburger in die periode niet werkloos is geweest.",
+      "Direct bij aankomst, indien de Unieburger aantoont over voldoende middelen te beschikken."
+    ],
+    "c": 0,
+    "exp": "Artikel 16 Richtlijn 2004/38.\n\nIedere burger van de Unie die gedurende een ononderbroken periode van vijf jaar legaal op het grondgebied van het gastland heeft verbleven, heeft aldaar een duurzaam verblijfsrecht."
+  },
+  {
+    "q": "Welke vier voorwaarden stelt het Hof in het arrest Gebhard aan nationale maatregelen die fundamentele vrijheden beperken (de Gebhard-toets)?",
+    "a": [
+      "Niet-discriminatoir, dwingende reden van algemeen belang, geschikt en noodzakelijk.",
+      "Niet-discriminatoir, economisch noodzakelijk, tijdelijk van aard en proportioneel.",
+      "Wettelijke basis, algemeen belang, subsidiariteit en wederzijdse erkenning.",
+      "Niet-discriminatoir, openbare orde, openbare veiligheid en volksgezondheid."
+    ],
+    "c": 0,
+    "exp": "Arrest Gebhard.\n\nNationale maatregelen die de uitoefening van fundamentele vrijheden belemmeren moeten: 1) zonder discriminatie worden toegepast, 2) gerechtvaardigd zijn door een dwingende reden van algemeen belang, 3) geschikt zijn om het doel te bereiken, en 4) niet verder gaan dan nodig (noodzakelijk/evenredig)."
+  },
+  {
+    "q": "Wat houdt het begrip 'betrekking in overheidsdienst' in volgens het arrest Lawrie-Blum?",
+    "a": [
+      "Elke functie waarbij de overheid de werkgever is en het salaris betaalt.",
+      "Functies die vallen onder het nationale ambtenarenrecht van de lidstaat.",
+      "Functies die deelname aan de uitoefening van openbaar gezag en bescherming van algemene staatsbelangen inhouden.",
+      "Alle functies in het onderwijs, de zorg en bij de politie, ongeacht de specifieke taken."
+    ],
+    "c": 2,
+    "exp": "Arrest Lawrie-Blum.\n\nDe uitzondering van artikel 45 lid 4 VWEU geldt alleen voor functies die gepaard gaan met de uitoefening van overheidsgezag en werkzaamheden die gericht zijn op de bescherming van de algemene belangen van de staat."
+  },
+  {
+    "q": "Op welke gronden mogen lidstaten volgens het VWEU beperkingen stellen aan het vrije verkeer van personen?",
+    "a": [
+      "Economische noodzaak, bescherming van de werkgelegenheid en openbare orde.",
+      "Openbare orde, openbare veiligheid en volksgezondheid.",
+      "Culturele identiteit, taalvaardigheid en openbare orde.",
+      "Bescherming van consumenten, eerlijkheid in de handel en openbare veiligheid."
+    ],
+    "c": 1,
+    "exp": "Artikel 45 lid 3 VWEU / Artikel 52 VWEU.\n\nDe verdragsrechtelijke rechtvaardigingsgronden voor beperkingen van het vrije verkeer van personen en de vestigingsvrijheid zijn openbare orde, openbare veiligheid en volksgezondheid."
+  },
+  {
+    "q": "Welke beperking geldt er ten aanzien van het recht op gelijke behandeling voor economisch niet-actieve burgers gedurende de eerste drie maanden van verblijf?",
+    "a": [
+      "Zij hebben geen recht op toegang tot de gezondheidszorg in het gastland.",
+      "Zij mogen geen gebruik maken van het openbaar vervoer tegen gereduceerd tarief.",
+      "Zij hebben geen recht op een sociale bijstandsuitkering in het gastland.",
+      "Zij mogen zich niet inschrijven bij de gemeente als ingezetene."
+    ],
+    "c": 2,
+    "exp": "Artikel 24 lid 2 Richtlijn 2004/38.\n\nDe gastlidstaat is niet verplicht om gedurende de eerste drie maanden van het verblijf recht op sociale bijstand toe te kennen aan andere personen dan werknemers of zelfstandigen."
+  },
+  {
+    "q": "Kan een stagiair die een vergoeding ontvangt als werknemer in de zin van artikel 45 VWEU worden beschouwd?",
+    "a": [
+      "Nee, stages zijn per definitie gericht op leren en niet op het verrichten van arbeid.",
+      "Nee, tenzij de stagiair een volledig marktconform salaris ontvangt.",
+      "Ja, mits de activiteiten reëel en daadwerkelijk zijn en niet van louter marginale aard.",
+      "Ja, maar alleen als de stage langer duurt dan zes maanden."
+    ],
+    "c": 2,
+    "exp": "Arrest Lawrie-Blum.\n\nHet Hof oordeelde dat ook een stagiair (in casu een leraar-stagiair) als werknemer wordt beschouwd als er gedurende een bepaalde tijd, onder gezag, prestaties worden geleverd tegen beloning, mits de arbeid reëel en daadwerkelijk is."
+  },
+  {
+    "q": "Welke regel paste het Hof toe in het Bosman-arrest ten aanzien van nationaliteitsclausules in het clubvoetbal?",
+    "a": [
+      "Deze zijn toegestaan omdat sportverenigingen private organisaties zijn.",
+      "Deze zijn toegestaan om de lokale binding en jeugdopleiding te beschermen.",
+      "Deze zijn verboden omdat ze directe discriminatie op grond van nationaliteit vormen.",
+      "Deze zijn verboden tenzij ze zijn goedgekeurd door de Europese Commissie."
+    ],
+    "c": 2,
+    "exp": "Arrest Bosman.\n\nHet Hof oordeelde dat regels die het aantal buitenlandse spelers beperken (nationaliteitsclausules) directe discriminatie op grond van nationaliteit vormen en verboden zijn onder artikel 45 VWEU, behalve voor wedstrijden tussen landenteams."
+  },
+  {
+    "q": "Wat is de status van familieleden van een Unieburger die zelf niet de nationaliteit van een lidstaat hebben?",
+    "a": [
+      "Zij hebben geen afgeleid verblijfsrecht en moeten een visum aanvragen via nationale procedures.",
+      "Zij hebben een afgeleid verblijfsrecht als zij de Unieburger begeleiden of zich bij hem voegen.",
+      "Zij mogen alleen in de lidstaat verblijven als zij zelf economisch actief zijn.",
+      "Zij verkrijgen automatisch het staatsburgerschap van de lidstaat van verblijf."
+    ],
+    "c": 1,
+    "exp": "Artikel 2 en 7 Richtlijn 2004/38.\n\nFamilieleden die niet de nationaliteit van een lidstaat bezitten, hebben het recht van verblijf indien zij de burger van de Unie begeleiden of zich bij hem voegen in het gastland."
+  },
+  {
+    "q": "Wanneer mag een Unieburger die een duurzaam verblijfsrecht heeft verworven worden uitgezet?",
+    "a": [
+      "Alleen om ernstige redenen van openbare orde of openbare veiligheid.",
+      "Zodra hij een beroep doet op het sociale bijstandsstelsel.",
+      "Wanneer hij langer dan zes maanden werkloos is.",
+      "Alleen om dwingende redenen van openbare veiligheid (indien 10+ jaar verblijf).."
+    ],
+    "c": 0,
+    "exp": "Artikel 28 lid 2 Richtlijn 2004/38.\n\nVoor burgers van de Unie die een duurzaam verblijfsrecht hebben verworven, mag een verwijderingsmaatregel alleen worden genomen om ernstige redenen van openbare orde of openbare veiligheid."
+  },
+  {
+    "q": "Hoe definieert het Hof van Justitie 'vestiging' in het arrest Gebhard?",
+    "a": [
+      "Het tijdelijk verrichten van diensten in een andere lidstaat zonder vaste infrastructuur.",
+      "Het oprichten van een dochteronderneming met meer dan 50 werknemers.",
+      "De duurzame deelneming aan het economisch leven van een andere lidstaat.",
+      "Het bezitten van de nationaliteit van de lidstaat waarin men werkt."
+    ],
+    "c": 2,
+    "exp": "Arrest Gebhard.\n\nHet begrip vestiging houdt in dat een gemeenschapsonderdaan duurzaam kan deelnemen aan het economisch leven van een andere lidstaat dan zijn staat van herkomst en daar voordeel uit kan halen."
+  },
+  {
+    "q": "Wat is de verhouding tussen de vrijheid van dienstverrichting (art. 56 VWEU) en de andere vrijheden?",
+    "a": [
+      "De vrijheid van dienstverrichting heeft voorrang op de vrijheid van vestiging.",
+      "De vrijheid van dienstverrichting is een restvrijheid en geldt als andere vrijheden niet van toepassing zijn.",
+      "De vrijheid van dienstverrichting geldt alleen voor niet-economische activiteiten.",
+      "De vrijheid van dienstverrichting is identiek aan de vrijheid van vestiging."
+    ],
+    "c": 1,
+    "exp": "Artikel 57 VWEU.\n\nDienstverrichtingen worden als diensten beschouwd voor zover de bepalingen betreffende het vrij verkeer van goederen, kapitaal en personen op deze dienstverrichtingen niet van toepassing zijn."
+  },
+  {
+    "q": "Welke entiteiten kunnen naast natuurlijke personen een beroep doen op de vrijheid van vestiging ex artikel 49 VWEU?",
+    "a": [
+      "Alleen vennootschappen die volledig in handen zijn van de overheid.",
+      "Vennootschappen opgericht volgens de wetgeving van een lidstaat met hun zetel binnen de Unie.",
+      "Niet-gouvernementele organisaties zonder winstoogmerk.",
+      "Vennootschappen met hun hoofdkantoor buiten de EU, mits ze handelen in de EU."
+    ],
+    "c": 1,
+    "exp": "Artikel 54 VWEU.\n\nVennootschappen die in overeenstemming met de wetgeving van een lidstaat zijn opgericht en hun statutaire zetel, hoofdbestuur of hoofdvestiging binnen de Unie hebben, worden gelijkgesteld met natuurlijke personen die onderdaan zijn van de lidstaten."
+  },
+  {
+    "q": "Wat houdt directe discriminatie op grond van nationaliteit in binnen het kader van artikel 45 VWEU?",
+    "a": [
+      "Maatregelen die formeel geen onderscheid maken, maar feitelijk buitenlanders benadelen.",
+      "Maatregelen die een onderscheid maken dat rechtstreeks gebaseerd is op nationaliteit.",
+      "Maatregelen die de toegang tot de markt belemmeren zonder onderscheid naar nationaliteit.",
+      "Maatregelen die proportioneel zijn aan een legitiem doel van algemeen belang."
+    ],
+    "c": 1,
+    "exp": "Arrest Bosman.\n\nDirecte discriminatie betreft regels die uitdrukkelijk een onderscheid maken op basis van nationaliteit, zoals de nationaliteitsclausules in het Bosman-arrest, en is in beginsel verboden."
+  },
+  {
+    "q": "Wat is kenmerkend voor indirecte discriminatie in het kader van vrij verkeer?",
+    "a": [
+      "De maatregel verwijst direct naar nationaliteit als criterium.",
+      "De maatregel geldt uitsluitend voor buitenlandse werknemers.",
+      "De maatregel is neutraal geformuleerd maar treft feitelijk meer buitenlanders dan eigen onderdanen.",
+      "De maatregel valt nooit onder het verbod van artikel 45 VWEU."
+    ],
+    "c": 2,
+    "exp": "Artikel 45 VWEU / Arrest O'Flynn (impliciet in context van indirecte discriminatie).\n\nIndirecte discriminatie doet zich voor wanneer een nationale bepaling, hoewel neutraal geformuleerd, in feite voornamelijk migranten treft of benadeelt ten opzichte van nationale werknemers."
+  },
+  {
+    "q": "Wat is de juridische grondslag voor het Unieburgerschap?",
+    "a": [
+      "Artikel 45 VWEU.",
+      "Artikel 20 VWEU.",
+      "Richtlijn 2004/38.",
+      "Het EVRM."
+    ],
+    "c": 1,
+    "exp": "Artikel 20 VWEU.\n\nArtikel 20 lid 1 VWEU stelt het burgerschap van de Unie in. Eenieder die de nationaliteit van een lidstaat bezit, is burger van de Unie."
+  },
+  {
+    "q": "Welk recht geeft artikel 5 van Richtlijn 2004/38 aan Unieburgers?",
+    "a": [
+      "Het recht om een permanente verblijfsvergunning aan te vragen.",
+      "Het recht om het grondgebied van een lidstaat te verlaten en binnen te komen.",
+      "Het recht op volledige gelijke behandeling met eigen onderdanen.",
+      "Het recht op sociale bijstand vanaf de eerste dag van aankomst."
+    ],
+    "c": 1,
+    "exp": "Artikel 5 Richtlijn 2004/38.\n\nArtikel 5 regelt het inreisrecht: lidstaten laten de burgers van de Unie die in het bezit zijn van een geldige identiteitskaart of paspoort, toe tot hun grondgebied."
+  },
+  {
+    "q": "Onder welke voorwaarde behoudt een werknemer die tijdelijk arbeidsongeschikt is zijn status van werknemer volgens Richtlijn 2004/38?",
+    "a": [
+      "Alleen als de arbeidsongeschiktheid het gevolg is van een bedrijfsongeval.",
+      "Als de arbeidsongeschiktheid tijdelijk is en het gevolg van ziekte of ongeval.",
+      "Als hij zich binnen een week inschrijft bij het UWV.",
+      "Als hij een permanente verblijfsvergunning heeft."
+    ],
+    "c": 1,
+    "exp": "Artikel 7 lid 3 Richtlijn 2004/38.\n\nDe burger van de Unie die zijn werkzaamheden als werknemer of zelfstandige niet meer uitoefent, behoudt de status van werknemer of zelfstandige indien hij tijdelijk arbeidsongeschikt is als gevolg van ziekte of ongeval."
+  },
+  {
+    "q": "Welke uitzondering geldt er voor de vrijheid van vestiging op grond van artikel 51 VWEU?",
+    "a": [
+      "Werkzaamheden ter uitoefening van het openbaar gezag.",
+      "Werkzaamheden in de private beveiligingssector.",
+      "Werkzaamheden die een academische graad vereisen.",
+      "Werkzaamheden die de nationale veiligheid indirect raken."
+    ],
+    "c": 0,
+    "exp": "Artikel 51 VWEU.\n\nDe bepalingen betreffende de vrijheid van vestiging zijn niet van toepassing op werkzaamheden die in de betrokken lidstaat, zij het slechts incidenteel, te maken hebben met de uitoefening van het openbaar gezag."
+  },
+  {
+    "q": "Is een grensoverschrijdend element noodzakelijk voor een beroep op de fundamentele vrijheden van de interne markt?",
+    "a": [
+      "Nee, de vrijheden gelden ook voor zuiver interne situaties.",
+      "Ja, de verdragsbepalingen zijn niet van toepassing op zuiver interne situaties.",
+      "Alleen voor het goederenverkeer, niet voor personenverkeer.",
+      "Nee, tenzij er sprake is van omgekeerde discriminatie."
+    ],
+    "c": 1,
+    "exp": "Artikel 45/49/56 VWEU.\n\nDe bepalingen inzake het vrije verkeer zijn niet van toepassing op situaties die zich in alle aspecten binnen één lidstaat afspelen (zuiver interne situaties)."
+  },
+  {
+    "q": "Wat bepaalt het Hof in het arrest Gebhard over de erkenning van diploma's bij vestiging?",
+    "a": [
+      "Lidstaten mogen altijd vasthouden aan hun eigen nationale diploma-eisen.",
+      "Diploma's uit andere lidstaten worden automatisch erkend zonder toetsing.",
+      "Lidstaten moeten rekening houden met de gelijkwaardigheid van diploma's en kwalificaties vergelijken.",
+      "Alleen diploma's die op een Europese lijst staan moeten worden erkend."
+    ],
+    "c": 2,
+    "exp": "Arrest Gebhard.\n\nLidstaten moeten de gelijkwaardigheid van diploma's in aanmerking nemen en, indien nodig, de kennis en kwalificaties van de betrokkene vergelijken met de nationale vereisten."
+  },
+  {
+    "q": "Hoe wordt de proportionaliteitstoets in het kader van de Gebhard-criteria ingevuld?",
+    "a": [
+      "De maatregel moet geschikt zijn om het doel te bereiken en niet verder gaan dan noodzakelijk.",
+      "De maatregel moet economisch voordelig zijn voor de lidstaat.",
+      "De maatregel moet de goedkeuring hebben van de Europese Commissie.",
+      "De maatregel moet discriminerend zijn om effectief te zijn."
+    ],
+    "c": 0,
+    "exp": "Arrest Gebhard.\n\nNationale maatregelen die de uitoefening van fundamentele vrijheden belemmeren moeten geschikt zijn om de verwezenlijking van het nagestreefde doel te waarborgen en mogen niet verder gaan dan nodig is voor het bereiken van dat doel."
+  },
+  {
+    "q": "Wat is de verhouding tussen artikel 18 VWEU (algemeen discriminatieverbod) en de specifieke vrijheden zoals artikel 45 VWEU?",
+    "a": [
+      "Artikel 18 VWEU heeft voorrang op artikel 45 VWEU.",
+      "Artikel 18 VWEU wordt autonoom toegepast naast artikel 45 VWEU.",
+      "Artikel 18 VWEU vindt alleen toepassing als de specifieke bepalingen (zoals art. 45) niet van toepassing zijn.",
+      "Artikel 45 VWEU is een uitzondering op artikel 18 VWEU."
+    ],
+    "c": 2,
+    "exp": "Artikel 18 VWEU.\n\nHet algemene discriminatieverbod van artikel 18 VWEU geldt 'onverminderd de bijzondere bepalingen'. Het wordt dus alleen toegepast als een situatie niet onder een van de specifieke vrijheden (zoals werknemers of diensten) valt."
+  }
+]

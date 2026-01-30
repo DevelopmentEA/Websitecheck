@@ -1,0 +1,272 @@
+[
+  {
+    "q": "De 'legal code' is in de huidige samenleving zo complex geworden dat het voor zowel burgers als professionals onmogelijk is om alle regels te kennen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De complexiteit van de moderne samenleving heeft geleid tot een 'legal code' die zo omvangrijk is dat volledige kennis van alle regels onmogelijk is geworden voor zowel leken als juridische professionals."
+  },
+  {
+    "q": "De vier mechanismen om naleving van nieuwe regels positief te beïnvloeden zijn: aankondiging, bestraffing, informatieverstrekking en directe .",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Naast het opschrijven van wetten kan naleving worden bevorderd door deze vier specifieke strategieën: aankondiging (wennen), bestraffing (motiveren), informatieverstrekking (begrip) en directe  (herinnering)."
+  },
+  {
+    "q": "De term 'behavioral code' verwijst naar de formele verzameling van wetten die door de overheid in wetboeken is vastgelegd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De 'behavioral code' is niet de wettekst zelf, maar een verzameling principes en strategieën uit de gedragswetenschappen die bedoeld zijn om menselijk gedrag te sturen zodat de 'legal code' wordt nageleefd."
+  },
+  {
+    "q": "Uit onderzoek in Engeland en Wales blijkt dat burgers over het algemeen meer feitelijke kennis hebben van het consumentenrecht dan van het huurrecht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Onderzoek toont aan dat de kennis van het consumentenrecht met 34% correcte antwoorden aanzienlijk lager is dan de kennis van het huurrecht (71%) en het arbeidsrecht (66%)."
+  },
+  {
+    "q": "Het 'false consensus effect' houdt in dat mensen geneigd zijn te denken dat de wet overeenkomt met hun eigen morele opvattingen over rechtvaardigheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Burgers projecteren vaak hun eigen normen en waarden op de wet, in de veronderstelling dat wat zij rechtvaardig of logisch vinden, ook de juridische regel is."
+  },
+  {
+    "q": "Onderzoek toont aan dat een hogere leeftijd consistent geassocieerd is met een hoger niveau van juridische kennis.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De data wijzen uit dat leeftijd omgekeerd evenredig samenhangt met juridische kennis; oudere respondenten hebben over het algemeen een lager kennisniveau dan mensen van middelbare leeftijd."
+  },
+  {
+    "q": "De juridische benadering van het recht hanteert een extern perspectief, terwijl de empirische benadering een intern perspectief hanteert.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De juridische benadering bestudeert het recht van binnenuit (intern perspectief, vanuit de regels), terwijl de empirische benadering het recht van buitenaf bestudeert als een maatschappelijk verschijnsel (extern perspectief)."
+  },
+  {
+    "q": "De instrumentele benadering beschouwt het recht primair als een middel om maatschappelijke en gedragsmatige doelen te bereiken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In de instrumentele benadering wordt recht niet gezien als een autonoom systeem, maar als een beleidsinstrument om gedrag te sturen en maatschappelijke verandering te realiseren."
+  },
+  {
+    "q": "Een kernidee van de instrumentele benadering is dat er vaak een kloof bestaat tussen 'law in books' en 'law in action'.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De instrumentele benadering en het daarop voortbouwende Empirical Legal Studies erkennen het onderscheid tussen de papieren wetgeving en de daadwerkelijke toepassing in de praktijk."
+  },
+  {
+    "q": "De Legal Realists stelden dat het recht een volledig autonoom systeem is dat losstaat van maatschappelijke belangen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Legal Realists bekritiseerden juist de autonome benadering en benadrukten dat het recht vaak in het voordeel werkt van machtige partijen en niet losstaat van maatschappelijke krachten."
+  },
+  {
+    "q": "Empirical Legal Studies (ELS) kenmerkt zich door een sterke focus op zware sociaalwetenschappelijke theorievorming.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "ELS onderscheidt zich juist door het gebruik van empirische methoden om effectiviteit te onderzoeken zonder daarbij sterk te leunen op complexe sociaalwetenschappelijke theorieën."
+  },
+  {
+    "q": "Volgens de rechtspluralistische benadering wordt het recht uitsluitend gevormd door wetten die door de staat zijn uitgevaardigd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Rechtspluralisme stelt dat naast formele staatswetten ook andere normatieve stelsels, zoals sociale, religieuze of culturele normen, als recht functioneren en gedrag binden."
+  },
+  {
+    "q": "Het begrip 'levende recht' (living law) van Ehrlich verwijst naar de formele wetgeving zoals vastgelegd in wetboeken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Ehrlichs 'levende recht' verwijst naar de regels die daadwerkelijk het maatschappelijk leven beheersen, in tegenstelling tot het officiële recht van de staat."
+  },
+  {
+    "q": "De recht-en-samenlevingbenadering onderzoekt de wederzijdse beïnvloeding tussen juridische regels en sociale structuren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Deze benadering kijkt hoe sociale, politieke en economische krachten het recht vormen en hoe het recht op zijn beurt de maatschappij beïnvloedt."
+  },
+  {
+    "q": "Positiefrechtelijk onderzoek richt zich primair op de vraag of een bepaalde juridische regel rechtvaardig of wenselijk is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Positiefrechtelijk onderzoek analyseert wat de geldende regels zijn (interpretatie en toepassing). De vraag naar rechtvaardigheid of wenselijkheid behoort tot het domein van rechtsfilosofisch onderzoek."
+  },
+  {
+    "q": "Bij beleidsbeslissingen is inzicht in 'wat is' (empirie) niet voldoende; er zijn ook normatieve afwegingen ('wat zou moeten zijn') nodig.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Empirisch onderzoek levert feiten over de werking van het recht ('is'), maar de stap naar beleid vereist een normatief oordeel ('ought') over wenselijkheid en ethiek."
+  },
+  {
+    "q": "Een deductieve onderzoeksbenadering begint met observaties uit de praktijk om vervolgens tot een nieuwe theorie te komen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Deductief onderzoek start vanuit een bestaande theorie en toetst deze (hypothesen) aan de praktijk. Inductief onderzoek werkt andersom: van observatie naar theorie."
+  },
+  {
+    "q": "Inductief onderzoek start vanuit empirische waarnemingen en probeert op basis daarvan theorieën te formuleren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Inductie is het proces waarbij men vanuit specifieke observaties in de werkelijkheid probeert algemene patronen of theorieën te ontwikkelen."
+  },
+  {
+    "q": "Operationalisatie is het proces waarbij abstracte concepten worden vertaald naar meetbare variabelen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Om abstracte begrippen (zoals 'afschrikking') empirisch te kunnen meten, moeten ze concreet gemaakt worden in indicatoren (zoals 'aantal boetes'), wat operationalisatie heet."
+  },
+  {
+    "q": "Kwalitatieve onderzoeksmethoden, zoals diepte-interviews, zijn bij uitstek geschikt om hypothesen te toetsen op grote datasets.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Kwalitatieve methoden zijn gericht op diepgaand begrip en beschrijving. Voor het toetsen van hypothesen op grote schaal zijn kwantitatieve methoden (statistiek) geschikt."
+  },
+  {
+    "q": "Kwantitatieve methoden zijn gericht op statistische analyse van grootschalige data, zoals enquêtes en experimenten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Kwantitatief onderzoek gebruikt numerieke data en statistiek om patronen te ontdekken en verbanden te toetsen binnen grote groepen."
+  },
+  {
+    "q": "Validiteit in empirisch onderzoek verwijst naar de vraag of de gebruikte methode daadwerkelijk meet wat men beoogt te meten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Validiteit gaat over de geldigheid en accuraatheid van het meetinstrument: meten we echt het concept dat we willen onderzoeken, of per ongeluk iets anders?"
+  },
+  {
+    "q": "Generaliseerbaarheid betreft de mate waarin onderzoeksresultaten toepasbaar zijn op een bredere groep of andere situaties.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Generaliseerbaarheid (externe validiteit) geeft aan of bevindingen uit een specifieke steekproef geëxtrapoleerd kunnen worden naar de gehele populatie of andere contexten."
+  },
+  {
+    "q": "Robuustheid van onderzoek verwijst naar de mate waarin de onderzoeker zijn persoonlijke mening uitsluit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het uitsluiten van persoonlijke meningen betreft 'objectiviteit'. Robuustheid gaat over de betrouwbaarheid en consistentie van de resultaten bij herhaling of variatie."
+  },
+  {
+    "q": "Het vinden van een correlatie tussen twee variabelen bewijst automatisch dat er sprake is van een causaal verband.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Correlatie betekent slechts dat er een statistisch verband is. Voor causaliteit (oorzaak-gevolg) moet worden uitgesloten dat andere factoren het verband verklaren, wat correlatie alleen niet doet."
+  },
+  {
+    "q": "Objectiviteit vereist dat de onderzoeker geen commerciële of politieke belangen heeft bij een bepaalde uitkomst van het onderzoek.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Onafhankelijkheid en het ontbreken van belangenverstrengeling zijn essentiële voorwaarden voor objectiviteit in wetenschappelijk onderzoek."
+  },
+  {
+    "q": "De invoering van de autogordelplicht in de VS leidde onmiddellijk en zonder extra maatregelen tot massale naleving.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De wet op zichzelf ('mere text') was niet genoeg. Naleving steeg pas significant na de inzet van handhaving (boetes), campagnes en technologie (waarschuwingssignalen)."
+  },
+  {
+    "q": "Mensen die werkzaam zijn (in loondienst) scoren significant hoger op vragen over arbeidsrecht dan mensen die niet werken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Persoonlijke relevantie speelt een rol: respondenten die in dienstverband werken, hebben meer kennis van arbeidsrechtelijke regels dan mensen zonder werk."
+  },
+  {
+    "q": "Mensen hebben over het algemeen een correct beeld van hun eigen kennisniveau van consumentenrechten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Er is sprake van een mismatch: mensen drukken vaak vertrouwen uit in hun kennis van consumentenrecht, terwijl uit testen blijkt dat hun feitelijke kennis zeer laag is (slechter dan gokken)."
+  },
+  {
+    "q": "Volgens Moore kunnen groepen binnen 'semiautonome sociale velden' hun eigen regels genereren die naleving van staatswetten kunnen beïnvloeden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Moore's theorie stelt dat sociale groepen (velden) eigen normen en sancties hebben die de werking van formele wetgeving kunnen versterken of tegenwerken."
+  }
+]

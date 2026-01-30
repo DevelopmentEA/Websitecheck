@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Wanneer is een schuldenaar volgens de wet in verzuim zonder dat daarvoor een ingebrekestelling is vereist?",
+    "a": [
+      "Indien de schuldeiser mondeling heeft medegedeeld dat haast geboden is.",
+      "Indien de schuldenaar tijdelijk niet in staat is de prestatie te verrichten.",
+      "Indien een voor de voldoening bepaalde termijn verstrijkt zonder nakoming.",
+      "Indien de schuldenaar een deel van de prestatie reeds heeft voldaan."
+    ],
+    "c": 2,
+    "exp": "Artikel 6:83 aanhef en sub a BW.\n\nHet verzuim treedt zonder ingebrekestelling in wanneer een voor de voldoening bepaalde termijn verstrijkt zonder dat de verbintenis is nagekomen, tenzij blijkt dat de termijn een andere strekking heeft."
+  },
+  {
+    "q": "Welke stelling over de ontbinding van een overeenkomst wegens een tekortkoming in de nakoming is correct in het licht van het arrest Twickler?",
+    "a": [
+      "Ontbinding is uitsluitend mogelijk indien de tekortkoming de kern van de prestatie betreft.",
+      "Ontbinding is slechts toegestaan indien de tekortkoming van voldoende ernstige aard is.",
+      "Elke tekortkoming rechtvaardigt in beginsel ontbinding, tenzij de uitzondering van art. 6:265 lid 1 BW geldt.",
+      "De rechter moet bij ontbinding de belangen van de schuldenaar zwaarder laten wegen."
+    ],
+    "c": 2,
+    "exp": "HR Twickler.\n\nIn dit arrest heeft de Hoge Raad bepaald dat iedere tekortkoming in de nakoming in beginsel aan de wederpartij de bevoegdheid geeft om de overeenkomst geheel of gedeeltelijk te ontbinden. De bijzondere aard of geringe betekenis van de tekortkoming kan een uitzondering vormen, maar dit moet door de schuldenaar worden gesteld en bewezen."
+  },
+  {
+    "q": "Wat is het vereiste voor de bevoegdheid tot opschorting van de nakoming van een verbintenis?",
+    "a": [
+      "De wederpartij moet in verzuim zijn geraakt door een ingebrekestelling.",
+      "De wederpartij komt haar daartegenover staande verplichting niet na.",
+      "De verbintenis van de wederpartij moet blijvend onmogelijk zijn geworden.",
+      "De rechter moet voorafgaand toestemming geven voor de opschorting."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:262 lid 1 BW.\n\nIndien een der partijen haar verbintenis niet nakomt, is de wederpartij bevoegd de nakoming van haar daartegenover staande verplichtingen op te schorten."
+  },
+  {
+    "q": "Hoe luidt de hoofdregel voor de aansprakelijkheid van ouders voor een onrechtmatige daad van een kind dat de leeftijd van veertien jaar nog niet heeft bereikt?",
+    "a": [
+      "De ouders zijn aansprakelijk, tenzij zij kunnen bewijzen dat hen geen verwijt treft.",
+      "De ouders zijn risicoaansprakelijk voor de als een doen te beschouwen gedraging.",
+      "Het kind is zelf aansprakelijk, maar de ouders moeten de schadevergoeding betalen.",
+      "De ouders zijn slechts aansprakelijk indien zij het kind hiertoe hebben aangezet."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:169 lid 1 BW.\n\nVoor schade aan een derde toegebracht door een als een doen te beschouwen gedraging van een kind onder de veertien jaar, is degene die het ouderlijk gezag of de voogdij uitoefent aansprakelijk. Dit is een risicoaansprakelijkheid."
+  },
+  {
+    "q": "Welk criterium uit het arrest Kelderluik ziet op de proportionaliteit van de te nemen maatregelen?",
+    "a": [
+      "De mate van waarschijnlijkheid waarmee de niet-inachtneming van de vereiste oplettendheid kan worden verwacht.",
+      "De kans dat uit de onoplettendheid en onvoorzichtigheid ongevallen ontstaan.",
+      "De ernst van de gevolgen die kunnen optreden indien het gevaar zich verwezenlijkt.",
+      "De mate van bezwaarlijkheid van het nemen van voorzorgsmaatregelen."
+    ],
+    "c": 3,
+    "exp": "HR Kelderluik.\n\nDe vierde maatstaf in dit arrest betreft de vraag in hoeverre het nemen van veiligheidsmaatregelen bezwaarlijk is. Dit ziet op de verhouding tussen de inspanning/kosten van de maatregel en het risico."
+  },
+  {
+    "q": "Wanneer is een werkgever op grond van artikel 6:170 BW aansprakelijk voor schade veroorzaakt door een ondergeschikte?",
+    "a": [
+      "Indien de ondergeschikte handelt in strijd met de uitdrukkelijke instructies van de werkgever.",
+      "Indien de kans op de fout door de opdracht is vergroot en de werkgever zeggenschap had.",
+      "Indien de ondergeschikte de schade opzettelijk heeft toegebracht buiten werktijd.",
+      "Indien de werkgever zelf ook een verwijt kan worden gemaakt ten aanzien van de schade."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:170 lid 1 BW.\n\nVoor aansprakelijkheid is vereist dat de schade is toegebracht door een fout van de ondergeschikte, de kans op de fout door de opdracht is vergroot en de werkgever zeggenschap had over de gedragingen waarin de fout was gelegen."
+  },
+  {
+    "q": "Wat werd bepaald in het arrest Partycentrum met betrekking tot de functionele samenhang bij werkgeversaansprakelijkheid?",
+    "a": [
+      "Werkgeversaansprakelijkheid vervalt indien de schade buiten reguliere werktijden is ontstaan.",
+      "De werkgever is niet aansprakelijk als de werknemers handelen tijdens een bedrijfsfeest.",
+      "Aansprakelijkheid bestaat indien er een zodanige functionele samenhang is tussen fout en dienstbetrekking.",
+      "Alleen de leidinggevende kan aansprakelijk worden gesteld voor schade tijdens een feest."
+    ],
+    "c": 2,
+    "exp": "HR Partycentrum.\n\nDe Hoge Raad oordeelde dat ter beantwoording van de vraag of tussen de fout en de dienstbetrekking een zodanige functionele samenhang bestaat dat de werkgever aansprakelijk is, alle omstandigheden moeten worden meegewogen, ook als de werknemers geen opdracht hadden bij het feest aanwezig te zijn."
+  },
+  {
+    "q": "Welke stelling over de risicoaansprakelijkheid voor opstallen in artikel 6:174 BW is juist?",
+    "a": [
+      "De bezitter is aansprakelijk, tenzij de schade het gevolg is van overmacht of opzet van derden.",
+      "De bezitter is aansprakelijk indien de opstal niet voldoet aan de eisen die men daaraan mag stellen.",
+      "De eigenaar is uitsluitend aansprakelijk indien hem een verwijt kan worden gemaakt van het gebrek.",
+      "De huurder van het pand is hoofdelijk aansprakelijk naast de bezitter voor gebreken aan de opstal."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:174 lid 1 BW.\n\nDe bezitter van een opstal die niet voldoet aan de eisen die men daaraan in de gegeven omstandigheden mag stellen, en daardoor gevaar voor personen of zaken oplevert, is aansprakelijk wanneer dit gevaar zich verwezenlijkt."
+  },
+  {
+    "q": "Wat is volgens het arrest Struikelen over stroomkabel op stoep bepalend voor de aansprakelijkheid van de wegbeheerder voor voorwerpen op de weg?",
+    "a": [
+      "De risicoaansprakelijkheid van art. 6:174 BW geldt ook voor losse voorwerpen die op de weg liggen.",
+      "De aanwezigheid van niet tot de weg behorende voorwerpen valt niet onder art. 6:174 BW maar onder art. 6:162 BW.",
+      "De wegbeheerder is nooit aansprakelijk voor voorwerpen die door derden op de weg zijn geplaatst.",
+      "De wegbeheerder is alleen aansprakelijk als het voorwerp een gebrek aan het weglichaam zelf veroorzaakt."
+    ],
+    "c": 1,
+    "exp": "HR Struikelen over stroomkabel op stoep.\n\nDe aanwezigheid op een openbare weg van een voorwerp dat niet behoort tot de weg in de zin van art. 6:174 BW is geen gebrek van de weg. De wegbeheerder kan echter wel op grond van de algemene onrechtmatige daad (art. 6:162 BW) aansprakelijk zijn."
+  },
+  {
+    "q": "Op welke grondslag kan een bezitter van een dier aansprakelijkheid afweren?",
+    "a": [
+      "Indien het dier werd uitgelaten door een derde die het dier onder controle had.",
+      "Indien de bezitter alle redelijke zorg heeft betracht om schade te voorkomen.",
+      "Indien aansprakelijkheid zou ontbreken als de bezitter de gedraging in zijn macht had gehad.",
+      "Indien het dier onverwachts reageerde op een externe prikkel van buitenaf."
+    ],
+    "c": 2,
+    "exp": "Artikel 6:179 BW.\n\nDe bezitter is niet aansprakelijk indien aansprakelijkheid op grond van de vorige afdeling (onrechtmatige daad) zou hebben ontbroken indien hij de gedraging van het dier waardoor de schade werd toegebracht, in zijn macht zou hebben gehad (de tenzij-formule)."
+  },
+  {
+    "q": "In welke situatie is volgens het arrest Fisser/Tycho ontbinding mogelijk zonder dat verzuim is ingetreden?",
+    "a": [
+      "Indien de schuldenaar tijdelijk in betalingsonmacht verkeert.",
+      "Indien een voortdurende verbintenis (zoals geheimhouding) is geschonden.",
+      "Indien de schuldeiser de prestatie niet meer op prijs stelt.",
+      "Indien de overeenkomst een wederkerig karakter heeft."
+    ],
+    "c": 1,
+    "exp": "HR Fisser/Tycho.\n\nIndien een voortdurende verbintenis (zoals een geheimhoudingsplicht) niet wordt nagekomen, is nakoming wat betreft het verleden blijvend onmogelijk. Ontbinding is dan mogelijk zonder verzuim (art. 6:265 lid 2 BW)."
+  },
+  {
+    "q": "Wanneer is een opdrachtgever aansprakelijk voor de fout van een niet-ondergeschikte op grond van artikel 6:171 BW?",
+    "a": [
+      "Wanneer de niet-ondergeschikte handelt in strijd met de instructies van de opdrachtgever.",
+      "Wanneer de werkzaamheden zijn verricht ter uitoefening van het bedrijf van de opdrachtgever.",
+      "Wanneer de opdrachtgever de niet-ondergeschikte zelf heeft uitgekozen en betaald.",
+      "Wanneer de benadeelde de opdrachtgever als enige aanspreekbare partij beschouwt."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:171 BW.\n\nAansprakelijkheid bestaat indien de werkzaamheden zijn verricht ter uitoefening van het bedrijf van de opdrachtgever. Dit vereist een zekere eenheid van onderneming naar buiten toe."
+  },
+  {
+    "q": "Welke schade komt voor vergoeding in aanmerking volgens het arrest Blauw oog?",
+    "a": [
+      "Enkel de medische kosten die direct voortvloeien uit het letsel.",
+      "Immateriële schadevergoeding wegens aantasting in de persoon bij lichamelijk letsel.",
+      "Geen schadevergoeding, aangezien een blauw oog als te gering wordt beschouwd.",
+      "Alleen vermogensschade, omdat immateriële schade ernstig geestelijk letsel vereist."
+    ],
+    "c": 1,
+    "exp": "HR Blauw oog.\n\nDe Hoge Raad oordeelde dat een blauw oog lichamelijk letsel is. De benadeelde heeft daarom recht op een naar billijkheid vast te stellen schadevergoeding op grond van art. 6:106 lid 1 onder b BW (aantasting in de persoon)."
+  },
+  {
+    "q": "Wat bepaalt artikel 6:166 BW over de aansprakelijkheid van groepsleden?",
+    "a": [
+      "Groepsleden zijn slechts aansprakelijk voor hun eigen aandeel in de schade.",
+      "Ieder groepslid is hoofdelijk aansprakelijk als de kans op schade hen had moeten weerhouden.",
+      "Alleen de persoon die de schade daadwerkelijk heeft toegebracht is aansprakelijk.",
+      "De groep is als rechtspersoon aansprakelijk voor de gedragingen van de leden."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:166 lid 1 BW.\n\nIndien één persoon uit een groep onrechtmatig schade toebrengt, is ieder lid hoofdelijk aansprakelijk indien de kans op het aldus toebrengen van schade hen had behoren te weerhouden van hun gedragingen in groepsverband."
+  },
+  {
+    "q": "Wanneer verjaart de rechtsvordering tot vernietiging van een rechtshandeling wegens dwaling?",
+    "a": [
+      "Drie jaren nadat de rechtshandeling is verricht.",
+      "Vijf jaren nadat de dwaling is ontdekt.",
+      "Drie jaren nadat de dwaling is ontdekt.",
+      "Twintig jaren na het sluiten van de overeenkomst."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:52 lid 1 sub c BW.\n\nDe rechtsvordering tot vernietiging van een rechtshandeling verjaart in geval van dwaling drie jaren nadat de dwaling is ontdekt."
+  },
+  {
+    "q": "Wat is vereist voor een geslaagd beroep op de onzekerheidsexceptie van artikel 6:263 BW?",
+    "a": [
+      "De wederpartij moet reeds in verzuim zijn geraakt.",
+      "De partij moet verplicht zijn als eerste te presteren.",
+      "Er moet sprake zijn van een tekortkoming in de nakoming.",
+      "De prestatie moet blijvend onmogelijk zijn geworden."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:263 lid 1 BW.\n\nDe partij die verplicht is het eerst te presteren, is bevoegd de nakoming op te schorten indien haar na het sluiten van de overeenkomst ter kennis gekomen omstandigheden goede grond geven te vrezen dat de wederpartij niet zal nakomen."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest Geerts/Ten Dam over de eigen schuld van een passagier bij een dronken bestuurder?",
+    "a": [
+      "De passagier verliest elk recht op schadevergoeding door het aanvaarden van het risico.",
+      "De dronken bestuurder is niet aansprakelijk omdat de passagier toestemming gaf.",
+      "Het enkele meerijden met een dronken bestuurder ontneemt niet het recht op schadevergoeding.",
+      "De schade wordt in dit geval altijd 50/50 verdeeld tussen bestuurder en passagier."
+    ],
+    "c": 2,
+    "exp": "HR Geerts/Ten Dam.\n\nDe Hoge Raad oordeelde dat de enkele omstandigheid dat de passagier wist dat de bestuurder gedronken had, niet meebrengt dat hij geen enkele aanspraak op schadevergoeding heeft. Wel kan er sprake zijn van eigen schuld (art. 6:101 BW)."
+  },
+  {
+    "q": "Welke eis stelt artikel 6:162 BW aan de verplichting tot schadevergoeding bij een onrechtmatige daad?",
+    "a": [
+      "De schade moet zijn ontstaan door opzet of grove schuld van de dader.",
+      "De gedraging moet aan de dader kunnen worden toegerekend.",
+      "De dader moet strafrechtelijk zijn veroordeeld voor de gedraging.",
+      "De benadeelde moet de dader vooraf in gebreke hebben gesteld."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:162 lid 1 BW.\n\nHij die jegens een ander een onrechtmatige daad pleegt, welke hem kan worden toegerekend, is verplicht de schade die de ander dientengevolge lijdt, te vergoeden."
+  },
+  {
+    "q": "Wat is het gevolg van schuldeisersverzuim voor de bevoegdheid tot ontbinding?",
+    "a": [
+      "De schuldenaar kan de overeenkomst niet meer ontbinden.",
+      "De schuldeiser is niet bevoegd de overeenkomst te ontbinden.",
+      "Ontbinding is slechts mogelijk met tussenkomst van de rechter.",
+      "De verbintenis wordt van rechtswege omgezet in een natuurlijke verbintenis."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:266 lid 1 BW.\n\nGeen ontbinding kan worden gegrond op een tekortkoming in de nakoming van een verbintenis ten aanzien waarvan de schuldeiser zelf in verzuim is."
+  },
+  {
+    "q": "Hoe wordt de schade begroot die voortvloeit uit een onrechtmatige daad?",
+    "a": [
+      "De schade wordt uitsluitend begroot op basis van de werkelijk gemaakte kosten.",
+      "De rechter begroot de schade op de wijze die het meest met de aard ervan in overeenstemming is.",
+      "De schade wordt forfaitair vastgesteld volgens wettelijke tabellen.",
+      "De schade wordt beperkt tot het bedrag dat door de verzekering wordt gedekt."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:97 BW.\n\nDe rechter begroot de schade op de wijze die het meest met de aard ervan in overeenstemming is. Kan de omvang niet nauwkeurig worden vastgesteld, dan wordt zij geschat."
+  },
+  {
+    "q": "Wat was de kern van de uitspraak in het arrest Struikelen over deurmat?",
+    "a": [
+      "De werkgever is altijd aansprakelijk voor ongevallen thuis als gevolg van letsel op het werk.",
+      "De werknemer heeft eigen schuld als hij struikelt over zijn eigen deurmat.",
+      "Causaal verband in de zin van art. 6:98 BW moet worden beoordeeld aan de hand van alle omstandigheden.",
+      "Deurmatten vormen een bijzonder gevaar waarvoor risicoaansprakelijkheid geldt."
+    ],
+    "c": 2,
+    "exp": "HR Struikelen over deurmat.\n\nDe Hoge Raad oordeelde dat bij de toerekening van schade (art. 6:98 BW) alle omstandigheden moeten worden meegewogen, waaronder de aard van de aansprakelijkheid en de aard van de schade. Het hof had zijn oordeel dat het verband te ver verwijderd was onvoldoende gemotiveerd."
+  },
+  {
+    "q": "Wanneer is een producent aansprakelijk voor schade veroorzaakt door een product?",
+    "a": [
+      "Indien het product niet de veiligheid biedt die men daarvan mag verwachten.",
+      "Indien de producent nalatig is geweest in het productieproces.",
+      "Indien de consument het product heeft gebruikt volgens de gebruiksaanwijzing.",
+      "Indien het product duurder was dan vergelijkbare producten op de markt."
+    ],
+    "c": 0,
+    "exp": "Artikel 6:185 lid 1 jo. 6:186 lid 1 BW.\n\nDe producent is aansprakelijk voor de schade veroorzaakt door een gebrek in zijn product. Een product is gebrekkig indien het niet de veiligheid biedt die men daarvan mag verwachten."
+  },
+  {
+    "q": "Wat houdt het relativiteitsvereiste in bij de onrechtmatige daad?",
+    "a": [
+      "De schade moet in verhouding staan tot de ernst van de gedraging.",
+      "De geschonden norm moet strekken tot bescherming tegen de schade zoals de benadeelde die heeft geleden.",
+      "De aansprakelijkheid geldt alleen tussen familieleden in de eerste en tweede graad.",
+      "De rechter moet de schadevergoeding matigen indien deze onredelijk hoog uitvalt."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:163 BW.\n\nGeen verplichting tot schadevergoeding bestaat, wanneer de geschonden norm niet strekt tot bescherming tegen de schade zoals de benadeelde die heeft geleden."
+  },
+  {
+    "q": "In welk geval kan de rechter een wettelijke verplichting tot schadevergoeding matigen?",
+    "a": [
+      "Indien de dader niet verzekerd is voor de schade.",
+      "Indien volledige vergoeding tot kennelijk onaanvaardbare gevolgen zou leiden.",
+      "Indien de benadeelde een hoog inkomen heeft en de schade makkelijk kan dragen.",
+      "Indien de onrechtmatige daad niet opzettelijk is gepleegd."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:109 lid 1 BW.\n\nDe rechter kan een wettelijke verplichting tot schadevergoeding matigen indien toekenning van volledige schadevergoeding in de gegeven omstandigheden tot kennelijk onaanvaardbare gevolgen zou leiden."
+  },
+  {
+    "q": "Wanneer kan een benadeelde vergoeding van immateriële schade vorderen?",
+    "a": [
+      "Alleen indien de dader het oogmerk had om immateriële schade toe te brengen.",
+      "Indien er sprake is van vermogensschade die groter is dan €500.",
+      "Indien de benadeelde lichamelijk letsel heeft opgelopen of in zijn eer is geschaad.",
+      "Altijd wanneer er sprake is van een onrechtmatige daad."
+    ],
+    "c": 2,
+    "exp": "Artikel 6:106 aanhef en sub b BW.\n\nDe benadeelde heeft recht op een naar billijkheid vast te stellen schadevergoeding voor nadeel dat niet in vermogensschade bestaat, indien hij lichamelijk letsel heeft opgelopen, in zijn eer of goede naam is geschaad of op andere wijze in zijn persoon is aangetast."
+  },
+  {
+    "q": "Welke regel geldt voor de aansprakelijkheid van ouders voor een kind van 15 jaar?",
+    "a": [
+      "De ouders zijn altijd hoofdelijk aansprakelijk naast het kind.",
+      "De ouders zijn aansprakelijk, tenzij hen niet kan worden verweten dat zij de gedraging niet hebben belet.",
+      "Het kind is als enige aansprakelijk voor zijn onrechtmatige daden.",
+      "De ouders zijn alleen aansprakelijk als het kind geen eigen vermogen heeft."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:169 lid 2 BW.\n\nVoor schade veroorzaakt door een kind van veertien of vijftien jaar is degene die het gezag uitoefent aansprakelijk, tenzij hem niet kan worden verweten dat hij de gedraging van het kind niet heeft belet."
+  },
+  {
+    "q": "Wat is vereist voor rectificatie op grond van artikel 6:167 BW?",
+    "a": [
+      "De publicatie moet onrechtmatig zijn jegens de benadeelde.",
+      "De dader moet te kwader trouw zijn geweest bij de publicatie.",
+      "De benadeelde moet financiële schade hebben geleden door de publicatie.",
+      "De rectificatie moet in hetzelfde medium worden geplaatst als de oorspronkelijke publicatie."
+    ],
+    "c": 0,
+    "exp": "Artikel 6:167 lid 1 BW.\n\nWanneer iemand jegens een ander aansprakelijk is ter zake van een onjuiste of door onvolledigheid misleidende publicatie, kan de rechter hem veroordelen tot openbaarmaking van een rectificatie."
+  },
+  {
+    "q": "Wanneer is de bezitter van een roerende zaak aansprakelijk voor schade veroorzaakt door die zaak?",
+    "a": [
+      "Indien de zaak niet voldoet aan de eisen die men daaraan mag stellen en daardoor gevaar oplevert.",
+      "Indien de bezitter wist dat de zaak gebrekkig was en dit niet heeft gemeld.",
+      "Indien de zaak is gebruikt door een persoon zonder toestemming van de bezitter.",
+      "Indien de schade is ontstaan door normale slijtage van de zaak."
+    ],
+    "c": 0,
+    "exp": "Artikel 6:173 lid 1 BW.\n\nDe bezitter van een roerende zaak waarvan bekend is dat zij, zo zij niet voldoet aan de eisen die men in de gegeven omstandigheden eraan mag stellen, een bijzonder gevaar voor personen of zaken oplevert, is aansprakelijk wanneer dit gevaar zich verwezenlijkt."
+  },
+  {
+    "q": "Wat houdt de billijkheidscorrectie in bij de eigen schuld regeling van artikel 6:101 BW?",
+    "a": [
+      "De schade wordt altijd bij helfte gedeeld als beide partijen schuld hebben.",
+      "De rechter kan een andere verdeling toepassen indien de billijkheid dit wegens de uiteenlopende ernst van de fouten eist.",
+      "De billijkheidscorrectie wordt alleen toegepast bij letselschade van kinderen.",
+      "De rechter mag de schadevergoeding geheel kwijtschelden op grond van billijkheid."
+    ],
+    "c": 1,
+    "exp": "Artikel 6:101 lid 1 BW.\n\nNa de causale verdeling kan een andere verdeling plaatsvinden of de vergoedingsplicht geheel vervallen of in stand blijven, indien de billijkheid dit wegens de uiteenlopende ernst van de gemaakte fouten of de andere omstandigheden van het geval eist."
+  },
+  {
+    "q": "Welke aansprakelijkheid regelt artikel 6:175 BW?",
+    "a": [
+      "De aansprakelijkheid voor gebrekkige opstallen.",
+      "De aansprakelijkheid voor dieren.",
+      "De aansprakelijkheid voor gevaarlijke stoffen.",
+      "De aansprakelijkheid voor producten."
+    ],
+    "c": 2,
+    "exp": "Artikel 6:175 BW.\n\nDit artikel regelt de risicoaansprakelijkheid van degene die in de uitoefening van zijn beroep of bedrijf een stof gebruikt of onder zich heeft, waarvan bekend is dat zij zodanige eigenschappen heeft dat zij een bijzonder gevaar van ernstige aard voor personen of zaken oplevert."
+  }
+]

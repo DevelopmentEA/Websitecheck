@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Volgens de heersende leer in het internationaal recht heeft de erkenning van een staat een constitutief karakter.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "East Timor and ors v Netherlands.\n\nDe erkenning heeft een declaratoir karakter: het is een politieke bevestiging dat een entiteit voldoet aan de feitelijke criteria. Het ontbreken van erkenning betekent juridisch niet dat een staat niet bestaat."
+  },
+  {
+    "q": "De Verenigde Naties bezitten objectieve internationale rechtspersoonlijkheid, wat betekent dat hun rechtspersoonlijkheid ook geldt tegenover staten die geen lid zijn.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nHet Hof oordeelde dat de VN een entiteit is met objectieve internationale rechtspersoonlijkheid en de capaciteit heeft om claims in te dienen, ook tegen niet-lidstaten."
+  },
+  {
+    "q": "Volgens het advies 'Reference re Secession of Quebec' verleent het internationaal recht een volk een algemeen recht op eenzijdige afscheiding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Reference re Secession of Quebec.\n\nHet internationaal recht kent geen algemeen recht op eenzijdige afscheiding toe. Het recht op zelfbeschikking moet in beginsel intern worden uitgeoefend, tenzij er sprake is van uitzonderlijke situaties zoals kolonisatie."
+  },
+  {
+    "q": "Internationale organisaties beschikken over bevoegdheden die uitsluitend beperkt zijn tot wat expliciet in hun oprichtingsverdrag staat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nNaast expliciete bevoegdheden beschikken internationale organisaties ook over 'implied powers': bevoegdheden die noodzakelijk zijn voor de vervulling van hun taken."
+  },
+  {
+    "q": "Het criterium 'government' uit het Montevideo-Verdrag vereist dat een staat een democratisch gekozen regering heeft.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Western Sahara Advisory Opinion.\n\nHet internationaal recht schrijft geen specifieke staatsstructuur voor. Een staat hoeft geen democratische regering te hebben om aan het criterium van gezag te voldoen."
+  },
+  {
+    "q": "De bevoegdheid van de VN om schadevergoeding te eisen voor schade toegebracht aan haar functionarissen is een voorbeeld van functionele bescherming.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nDe VN kan functionele bescherming bieden door schadevergoeding te vorderen voor schade aan haar afgezanten, wat noodzakelijk is om hen onafhankelijk hun taken te laten vervullen."
+  },
+  {
+    "q": "Een 'de facto regime' wordt in het internationaal recht beschouwd als een entiteit met volledige rechtssubjectiviteit, gelijkwaardig aan een staat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene leerstukken week 2.\n\nDe facto regimes hebben slechts een beperkte en vaak tijdelijke rechtssubjectiviteit, in tegenstelling tot de volledige subjectiviteit van staten."
+  },
+  {
+    "q": "Het effectiviteitsbeginsel houdt in dat de daadwerkelijke uitoefening van publiek gezag bepalend is voor de rechtssubjectiviteit van een staat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "East Timor and ors v Netherlands.\n\nHet recht erkent de feitelijke uitoefening van macht en gezag (effectiviteit) als primaire grondslag voor de rechtssubjectiviteit van staten."
+  },
+  {
+    "q": "Volgens het Internationaal Gerechtshof in de 'Nuclear Weapons'-opinie worden internationale organisaties beheerst door het specialiteitsbeginsel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Legality of the Use by a State of Nuclear Weapons in Armed Conflict (Advies).\n\nInternationale organisaties hebben geen algemene bevoegdheden zoals staten, maar zijn gebonden aan het specialiteitsbeginsel: hun bevoegdheden zijn beperkt tot hun specifieke doelen."
+  },
+  {
+    "q": "Cessie is de term voor de verkrijging van grondgebied door de ontdekking van terra nullius.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene leerstukken week 2.\n\nCessie is de overdracht van grondgebied van de ene staat aan de andere door middel van een verdrag, niet door ontdekking."
+  },
+  {
+    "q": "Interne zelfbeschikking ziet op het recht van een volk om binnen de grenzen van een staat zijn eigen politieke, economische en culturele ontwikkeling te bepalen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Reference re Secession of Quebec.\n\nHet Hof maakt onderscheid tussen interne zelfbeschikking (ontwikkeling binnen de staat) en externe zelfbeschikking (afscheiding)."
+  },
+  {
+    "q": "Staten zijn juridisch verplicht om een nieuwe entiteit te erkennen zodra deze voldoet aan de criteria van het Montevideo-Verdrag.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "East Timor and ors v Netherlands.\n\nErkenning is een discretionaire politieke handeling. Het niet-erkennen verhindert in beginsel niet het bestaan van de staat als aan de feitelijke criteria is voldaan."
+  },
+  {
+    "q": "De 'capacity to enter into relations with other states' is een van de vier criteria voor staatsvorming volgens het Montevideo-Verdrag.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 1 Montevideo-Verdrag.\n\nDit artikel noemt vier criteria: bevolking, grondgebied, gezag en de bekwaamheid om betrekkingen met andere staten aan te gaan."
+  },
+  {
+    "q": "Een staat kan de titel op een grondgebied verkrijgen door langdurige effectieve bezetting zonder protest van andere staten (verjaring/estoppel).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Algemene leerstukken week 2.\n\nNa verloop van tijd kan effectief gezag, gecombineerd met berusting (acquiescence) of estoppel, leiden tot een geldige titel op grondgebied."
+  },
+  {
+    "q": "Individuen kunnen in het moderne internationaal recht rechtstreeks strafrechtelijk aansprakelijk worden gesteld voor internationale misdrijven zoals genocide.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Algemene leerstukken week 2.\n\nHet internationaal recht kent individuele strafrechtelijke aansprakelijkheid voor ernstige misdrijven, onafhankelijk van de nationale rechtsorde."
+  },
+  {
+    "q": "Multinationale ondernemingen hebben in het internationaal publiekrecht volledige rechtssubjectiviteit, net als staten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene leerstukken week 2.\n\nMultinationals hebben in beginsel alleen rechtssubjectiviteit in de nationale rechtsorde; zij zijn geen subjecten van het internationaal publiekrecht."
+  },
+  {
+    "q": "Bij ontbinding van een staat blijft de oorspronkelijke staat bestaan, terwijl een deel zich afsplitst.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene leerstukken week 2.\n\nBij ontbinding valt de staat uiteen en houdt het centrale gezag op te bestaan (bijv. Joegoslavië). Bij afscheiding blijft de moederstaat bestaan."
+  },
+  {
+    "q": "Het rechtsbeginsel 'estoppel' houdt in dat een staat niet mag terugkomen op een eerdere handeling of berusting als een andere staat daarop heeft vertrouwd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Algemene leerstukken week 2.\n\nEstoppel belet een staat om een situatie te betwisten waarin hij eerder (stilzwijgend) heeft berust, ter bescherming van het rechtsvertrouwen."
+  },
+  {
+    "q": "De Heilige Stoel wordt in het internationaal recht erkend als een entiteit met een beperkte, specifieke internationale status.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Algemene leerstukken week 2.\n\nDe Heilige Stoel is een  sui generis rechtssubject met beperkte status, dat onder meer verdragen kan sluiten en diplomatieke betrekkingen onderhoudt."
+  },
+  {
+    "q": "Het recht op zelfbeschikking geeft een volk automatisch het recht om een eigen staat te stichten (externe zelfbeschikking).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Reference re Secession of Quebec.\n\nHet recht op externe zelfbeschikking (afscheiding) is beperkt tot uitzonderlijke gevallen zoals kolonisatie of bezetting; in beginsel geldt interne zelfbeschikking."
+  },
+  {
+    "q": "Het ontbreken van erkenning door andere staten betekent juridisch gezien dat een entiteit per definitie geen staat is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "East Timor and ors v Netherlands.\n\nErkenning is declaratoir. Voor het bestaan van een staat zijn uitsluitend de feitelijke criteria van het volkenrecht (Montevideo) bepalend."
+  },
+  {
+    "q": "Het IGH oordeelde in 'Reparation for Injuries' dat de VN bevoegd is om schadeclaims in te dienen omdat dit noodzakelijk is voor de uitoefening van haar functies.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nHet Hof baseerde de bevoegdheid op het leerstuk van 'implied powers': bevoegdheden die noodzakelijk zijn om de doelen van de organisatie te bereiken."
+  },
+  {
+    "q": "Het attributiebeginsel houdt in dat internationale organisaties alle bevoegdheden bezitten die niet expliciet aan de lidstaten zijn voorbehouden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene leerstukken week 2 / Nuclear Weapons.\n\nHet attributiebeginsel houdt juist in dat organisaties enkel die bevoegdheden hebben die hen expliciet of impliciet zijn toegekend door de staten."
+  },
+  {
+    "q": "Een staat moet volgens het internationaal recht een specifiek minimumaantal inwoners hebben om als staat te kwalificeren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 1 Montevideo-Verdrag.\n\nHet verdrag vereist een 'permanent population', maar stelt geen minimumaantal vast."
+  },
+  {
+    "q": "Non-gouvernementele organisaties (NGO's) hebben in het internationaal publiekrecht doorgaans geen eigen rechtssubjectiviteit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Algemene leerstukken week 2.\n\nNGO's zijn private organisaties die vallen onder het nationaal recht van de staat van vestiging en hebben geen publiekrechtelijke subjectiviteit."
+  },
+  {
+    "q": "De soevereiniteit van een staat impliceert dat andere staten zich niet mogen mengen in diens interne aangelegenheden (non-interventie).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Nicaragua t. Verenigde Staten.\n\nHet beginsel van non-interventie vloeit rechtstreeks voort uit de soevereine gelijkheid van staten."
+  },
+  {
+    "q": "In de zaak 'East Timor and ors v. Netherlands' oordeelde de rechter dat erkenning door Nederland constitutief was voor het zijn van een staat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "East Timor and ors v Netherlands.\n\nDe rechter oordeelde juist dat niet-erkenning door Nederland irrelevant was voor de vraag of Oost-Timor feitelijk een staat was."
+  },
+  {
+    "q": "Bevrijdingsbewegingen kunnen in het internationaal recht een zekere mate van rechtssubjectiviteit verkrijgen in de context van zelfbeschikking.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Algemene leerstukken week 2.\n\nVanwege het recht op zelfbeschikking en de strijd tegen kolonisatie/bezetting wordt aan bevrijdingsbewegingen vaak een verdergaande status toegekend dan aan andere groepen."
+  },
+  {
+    "q": "Het internationaal recht verbiedt staten om hun eigen politieke, economische en sociale systeem te kiezen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Nicaragua t. Verenigde Staten.\n\nHet Hof bevestigde dat elke staat het fundamentele recht heeft om zijn eigen politieke, economische en sociale systeem te kiezen (interne soevereiniteit)."
+  },
+  {
+    "q": "Aaneensluiting door absorptie betekent dat twee staten samensmelten tot een volledig nieuwe staat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene leerstukken week 2.\n\nAbsorptie betekent dat één staat opgaat in een andere (zoals de DDR in de BRD); bij fusie vormen twee staten samen een nieuwe staat."
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Casus: Sonja loopt 's avonds in het park. Plotseling springt een man uit de bosjes die haar tas probeert te grijpen en haar hardhandig vastpakt. Om zichzelf te bevrijden en haar tas te behouden, geeft Sonja de man een harde kniestoot in zijn kruis en rent weg. De man doet aangifte van mishandeling. Sonja beroept zich op noodweer. Zal dit verweer slagen?",
+    "sample": "Issue: Kan Sonja een geslaagd beroep doen op de rechtvaardigingsgrond noodweer ex artikel 41 lid 1 Sr?\n\nRule: Voor noodweer is vereist dat de verdediging noodzakelijk en geboden is tegen een ogenblikkelijke, wederrechtelijke aanranding van eigen of andermans lijf, eerbaarheid of goed. De verdediging moet voldoen aan de eisen van proportionaliteit en subsidiariteit.\n\nApplication: De man pakte Sonja vast en probeerde haar tas te stelen, wat kwalificeert als een ogenblikkelijke, wederrechtelijke aanranding van haar lijf en goed. De kniestoot was noodzakelijk om te ontkomen (subsidiariteit) en stond in redelijke verhouding tot de aanranding (proportionaliteit).\n\nConclusion: Het beroep op noodweer slaagt; de wederrechtelijkheid vervalt en Sonja wordt vrijgesproken.",
+    "checklist": [
+      "Ogenblikkelijke wederrechtelijke aanranding",
+      "Verdediging lijf of goed",
+      "Toetsing proportionaliteit en subsidiariteit",
+      "Rechtvaardigingsgrond artikel 41 Sr"
+    ],
+    "exp": "Op basis van artikel 41 lid 1 Sr en het Overzichtsarrest noodweer(exces) wordt getoetst of aan alle voorwaarden voor noodweer is voldaan."
+  },
+  {
+    "q": "Casus: Winkelier Willem wordt overvallen door een gewapende man die geld eist. Willem geeft het geld, waarna de overvaller de winkel uitrent. Willem is echter zo woedend en bang door de bedreiging dat hij zijn eigen pistool pakt, achter de overvaller aanrent en hem buiten in zijn been schiet terwijl deze wegvlucht. Willem beroept zich op noodweerexces.",
+    "sample": "Issue: Kan Willem een geslaagd beroep doen op de schulduitsluitingsgrond noodweerexces ex artikel 41 lid 2 Sr?\n\nRule: Noodweerexces vereist een overschrijding van de grenzen van de noodzakelijke verdediging, die het onmiddellijk gevolg is van een hevige gemoedsbeweging door de aanranding veroorzaakt (dubbele causaliteit). Er moet sprake zijn geweest van een voorafgaande noodweersituatie.\n\nApplication: Er was een noodweersituatie, maar Willem overschreed de grenzen door te schieten na de aanval (tardief exces). Deze overschrijding was echter het directe gevolg van de hevige angst en woede (gemoedsbeweging) veroorzaakt door de overval.\n\nConclusion: Het beroep op noodweerexces slaagt; de verwijtbaarheid vervalt en ontslag van rechtsvervolging volgt.",
+    "checklist": [
+      "Overschrijding grenzen noodzakelijke verdediging",
+      "Onmiddellijk gevolg hevige gemoedsbeweging",
+      "Dubbele causaliteit vereiste",
+      "Schulduitsluitingsgrond artikel 41 Sr"
+    ],
+    "exp": "Conform artikel 41 lid 2 Sr en jurisprudentie (o.a. Bijlmer tasjesroof) kan ook bij een beëindigde aanval (tardief) noodweerexces slagen indien de hevige gemoedsbeweging doorwerkt."
+  },
+  {
+    "q": "Casus: Een opticien wordt na sluitingstijd benaderd door een klant die dringend een bril nodig heeft omdat hij anders gevaarlijk slecht ziet. De Winkelsluitingswet verbiedt verkoop na 18:00 uur. De opticien besluit de klant toch te helpen en verkoopt de bril. Hij wordt vervolgd voor overtreding van de Winkelsluitingswet en beroept zich op overmacht.",
+    "sample": "Issue: Kan de opticien een geslaagd beroep doen op overmacht in de zin van noodtoestand (artikel 40 Sr)?\n\nRule: Overmacht noodtoestand is een rechtvaardigingsgrond waarbij sprake is van een conflict van plichten. De verdachte moet kiezen voor het zwaarstwegende maatschappelijke belang en handelen volgens proportionaliteit en subsidiariteit.\n\nApplication: De opticien stond voor een conflict tussen de wettelijke plicht (sluiten) en de maatschappelijke zorgplicht (hulpbehoevende klant). Het helpen van de klant woog zwaarder (Opticien-arrest). Er was geen redelijk alternatief.\n\nConclusion: Het beroep op overmacht noodtoestand slaagt; de daad is gerechtvaardigd en niet strafbaar.",
+    "checklist": [
+      "Conflict van plichten",
+      "Zwaarwegend maatschappelijk belang",
+      "Proportionaliteit en subsidiariteit",
+      "Rechtvaardigingsgrond artikel 40 Sr"
+    ],
+    "exp": "Gebaseerd op het standaardarrest Opticien (HR 15 oktober 1923), waarin de Hoge Raad overmacht als noodtoestand erkende bij een conflict van plichten."
+  },
+  {
+    "q": "Casus: Klaas lijdt aan een ernstige waanstoornis. Tijdens een psychose denkt hij dat zijn buurman een demon is en valt hem aan. Deskundigen stellen vast dat Klaas ten tijde van het feit volledig ontoerekeningsvatbaar was door deze ziekelijke stoornis en dat er een causaal verband bestaat tussen de stoornis en het feit. De raadsman bepleit straffeloosheid.",
+    "sample": "Issue: Kan Klaas een geslaagd beroep doen op ontoerekeningsvatbaarheid ex artikel 39 Sr?\n\nRule: Niet strafbaar is hij die een feit begaat dat hem wegens de gebrekkige ontwikkeling of ziekelijke stoornis van zijn geestvermogens niet kan worden toegerekend. Dit is een schulduitsluitingsgrond.\n\nApplication: Vaststaat dat Klaas leed aan een ziekelijke stoornis die het feit heeft veroorzaakt (causaal verband). Het feit kan hem daarom niet worden toegerekend.\n\nConclusion: Het beroep slaagt; Klaas is niet strafbaar en wordt ontslagen van alle rechtsvervolging (eventueel volgt een maatregel).",
+    "checklist": [
+      "Ziekelijke stoornis geestvermogens",
+      "Causaal verband stoornis daad",
+      "Niet kunnen worden toegerekend",
+      "Schulduitsluitingsgrond artikel 39 Sr"
+    ],
+    "exp": "Artikel 39 Sr bepaalt dat bij volledige ontoerekeningsvatbaarheid de dader niet strafbaar is, wat leidt tot ontslag van alle rechtsvervolging."
+  },
+  {
+    "q": "Casus: Boer Jan wil een schuur bouwen en vraagt bij de bevoegde gemeenteambtenaar of hij een vergunning nodig heeft. De ambtenaar verzekert hem schriftelijk dat dit vergunningsvrij is. Jan bouwt de schuur, maar wordt later vervolgd voor bouwen zonder vergunning omdat de informatie onjuist bleek. Jan beroept zich op afwezigheid van alle schuld (AVAS).",
+    "sample": "Issue: Kan Jan een geslaagd beroep doen op AVAS wegens verontschuldigbare rechtsdwaling?\n\nRule: AVAS is een ongeschreven schulduitsluitingsgrond (Melk en Water-arrest). Verontschuldigbare rechtsdwaling wordt aangenomen als de verdachte handelde op basis van inlichtingen van een daartoe bevoegde instantie waaraan hij redelijkerwijs mocht twijfelen.\n\nApplication: Jan heeft inlichtingen ingewonnen bij de bevoegde instantie (gemeente) en mocht vertrouwen op het schriftelijke antwoord. Hem treft redelijkerwijs geen verwijt.\n\nConclusion: Het beroep op AVAS slaagt; de verwijtbaarheid ontbreekt en Jan wordt ontslagen van alle rechtsvervolging.",
+    "checklist": [
+      "Verontschuldigbare feitelijke rechtsdwaling",
+      "Inlichtingen bevoegde instantie",
+      "Afwezigheid van alle schuld",
+      "Schulduitsluitingsgrond buitenwettelijk"
+    ],
+    "exp": "Gebaseerd op de jurisprudentie rondom AVAS (HR Melk en water) en specifiek verontschuldigbare rechtsdwaling (zoals in HR Motorpapieren)."
+  }
+]

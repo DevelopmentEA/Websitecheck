@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Wat is juridisch de graad van bloedverwantschap tussen een broer en een zus?",
+    "a": [
+      "Zij zijn bloedverwanten in de eerste graad in de zijlijn.",
+      "Zij zijn bloedverwanten in de tweede graad in de zijlijn.",
+      "Zij zijn bloedverwanten in de derde graad in de zijlijn.",
+      "Zij zijn bloedverwanten in de vierde graad in de zijlijn."
+    ],
+    "c": 1,
+    "exp": "Art. 1:3 BW.\n\nDe graad van bloedverwantschap wordt bepaald door het getal der geboorten die de bloedverwantschap hebben veroorzaakt. Tussen broer en zus telt men van de broer naar de ouder (1) en van de ouder naar de zus (2). Dit resulteert in de tweede graad."
+  },
+  {
+    "q": "In welke situatie ontstaat er van rechtswege gezamenlijk ouderlijk gezag bij ongehuwde partners die geen geregistreerd partnerschap zijn aangegaan?",
+    "a": [
+      "Wanneer de partners minimaal drie jaar samenwonen.",
+      "Wanneer de vader het kind erkent na 1 januari 2023.",
+      "Wanneer de moeder hiervoor toestemming geeft bij de kantonrechter.",
+      "Wanneer de vader het kind wettigt door een later huwelijk."
+    ],
+    "c": 1,
+    "exp": "Art. 1:251b BW.\n\nSinds de wetswijziging van 1 januari 2023 verkrijgen ongehuwde en niet-geregistreerde partners automatisch gezamenlijk ouderlijk gezag met de moeder indien zij het kind erkennen. Een gang naar de rechter is hiervoor niet meer vereist."
+  },
+  {
+    "q": "Welk rechtsgevolg heeft het ongeboren zijn van een kind op zijn vermogensrechtelijke belangen indien deze belangen dit vorderen?",
+    "a": [
+      "Het kind wordt als reeds geboren aangemerkt.",
+      "Het kind heeft pas rechten na de geboorteaangifte.",
+      "Het kind wordt vertegenwoordigd door een bijzondere curator.",
+      "Het kind kan geen rechten ontlenen aan de periode voor de geboorte."
+    ],
+    "c": 0,
+    "exp": "Art. 1:2 BW.\n\nHet kind waarvan een vrouw zwanger is, wordt als reeds geboren aangemerkt zo dikwijls zijn belang dit vordert. Komt het dood ter wereld, dan wordt het geacht nooit te hebben bestaan."
+  },
+  {
+    "q": "Hoe kan een geregistreerd partnerschap worden beëindigd op een wijze die niet mogelijk is bij een huwelijk?",
+    "a": [
+      "Door een eenzijdige verklaring bij de ambtenaar van de burgerlijke stand.",
+      "Door overlijden van een van de partners.",
+      "Met wederzijds goedvinden via de ambtenaar van de burgerlijke stand, mits er geen minderjarige kinderen zijn.",
+      "Door een beschikking van de rechtbank na duurzame ontwrichting."
+    ],
+    "c": 2,
+    "exp": "Art. 1:80c lid 1 sub c BW.\n\nEen belangrijk verschil tussen het huwelijk en het geregistreerd partnerschap is dat het geregistreerd partnerschap met wederzijds goedvinden kan worden beëindigd zonder tussenkomst van de rechter, mits de partners geen kinderen hebben waarover zij gezamenlijk gezag uitoefenen."
+  },
+  {
+    "q": "Wat is de hoofdregel omtrent de handelingsbekwaamheid van minderjarigen?",
+    "a": [
+      "Een minderjarige is handelingsbekwaam, tenzij de wet anders bepaalt.",
+      "Een minderjarige is handelingsonbekwaam, tenzij hij met toestemming van zijn wettelijke vertegenwoordiger handelt.",
+      "Een minderjarige is handelingsbekwaam voor rechtshandelingen die hem voordeel opleveren.",
+      "Een minderjarige is handelingsonbekwaam, tenzij hij de leeftijd van 16 jaar heeft bereikt."
+    ],
+    "c": 1,
+    "exp": "Art. 1:234 lid 1 BW.\n\nEen minderjarige is, behoudens wettelijke uitzonderingen, bekwaam rechtshandelingen te verrichten, mits hij handelt met toestemming van zijn wettelijke vertegenwoordiger."
+  },
+  {
+    "q": "Welk oordeel gaf de Hoge Raad over de toepasselijkheid van art. 1:87 BW (vergoedingsrechten) op informeel samenwonenden?",
+    "a": [
+      "Art. 1:87 BW is analoog van toepassing op informeel samenwonenden.",
+      "De regels voor echtgenoten lenen zich niet voor analoge toepassing op informeel samenwonenden.",
+      "Informeel samenwonenden hebben automatisch recht op vergoeding bij investering in elkaars goed.",
+      "Er ontstaat een gemeenschap van goederen waardoor vergoeding niet aan de orde is."
+    ],
+    "c": 1,
+    "exp": "HR 10 mei 2019 (Huwelijksvermogensrecht geldt niet voor samenwoners).\n\nDe Hoge Raad oordeelde dat de vermogensrechtelijke verhouding tussen informeel samenlevenden niet wordt bepaald door de regels van titels 6-8 van Boek 1 BW. Deze regels lenen zich niet voor analoge toepassing. Een vergoedingsrecht moet worden beoordeeld aan de hand van het algemene verbintenissenrecht."
+  },
+  {
+    "q": "Wat houdt het wilsrecht van art. 4:19 BW in voor een kind?",
+    "a": [
+      "Het recht om de legitieme portie direct op te eisen bij overlijden.",
+      "Het recht om goederen van de nalatenschap aan zich overgedragen te krijgen bij het hertrouwen van de langstlevende ouder.",
+      "Het recht om de wettelijke verdeling ongedaan te maken.",
+      "Het recht om een som ineens te vorderen voor verzorging en opvoeding."
+    ],
+    "c": 1,
+    "exp": "Art. 4:19 BW.\n\nIndien de langstlevende echtgenoot aangifte doet van zijn voornemen een huwelijk aan te gaan, zijn de kinderen bevoegd om overdracht te vragen van goederen uit de nalatenschap van hun overleden ouder, ter waarde van hun vordering."
+  },
+  {
+    "q": "Welke stelling over de wettelijke verdeling is juist?",
+    "a": [
+      "De wettelijke verdeling geldt alleen als er een testament is opgemaakt.",
+      "De kinderen verkrijgen direct goederen uit de nalatenschap.",
+      "De echtgenoot verkrijgt de goederen en de kinderen krijgen een niet-opeisbare geldvordering.",
+      "De wettelijke verdeling kan niet ongedaan worden gemaakt door de langstlevende echtgenoot."
+    ],
+    "c": 2,
+    "exp": "Art. 4:13 BW.\n\nBij de wettelijke verdeling verkrijgt de echtgenoot van rechtswege de goederen van de nalatenschap. De voldoening van de schulden komt voor zijn rekening. De kinderen verkrijgen als erfgenaam een geldvordering op de echtgenoot."
+  },
+  {
+    "q": "Wat is het gevolg van onwaardigheid in het erfrecht?",
+    "a": [
+      "De onwaardige erfgenaam verliest zijn recht op de legitieme portie, maar blijft erfgenaam.",
+      "De onwaardige wordt van rechtswege onterfd en er treedt geen plaatsvervulling op.",
+      "De onwaardige kan niet erven, maar zijn afstammelingen kunnen bij plaatsvervulling erven.",
+      "De onwaardige kan alleen erven indien hij de erflater schadeloos stelt."
+    ],
+    "c": 2,
+    "exp": "Art. 4:3 BW jo. Art. 4:12 BW.\n\nOnwaardigheid leidt ertoe dat men van rechtswege onwaardig is om uit de nalatenschap voordeel te trekken. Echter, plaatsvervulling treedt op met betrekking tot personen die onwaardig zijn."
+  },
+  {
+    "q": "Welke maatstaf hanteert de Hoge Raad voor de uitleg van een uiterste wilsbeschikking?",
+    "a": [
+      "Uitsluitend de letterlijke taalkundige betekenis van de bewoordingen is beslissend.",
+      "Er moet worden gekeken naar de bedoeling van de notaris die de akte heeft opgesteld.",
+      "Er moet worden gelet op de verhoudingen die de erflater wilde regelen en de omstandigheden waaronder de beschikking is gemaakt.",
+      "De uitleg die het meest gunstig is voor de legitimarissen prevaleert."
+    ],
+    "c": 2,
+    "exp": "HR 3 december 2004 (Uitleg uiterste wilsbeschikking).\n\nDe Hoge Raad oordeelde dat bij de beantwoording van de vraag of de bewoordingen duidelijk zijn, mede dient te worden gelet op de verhoudingen die de erflater bij zijn wilsbeschikking heeft willen regelen en op de omstandigheden waaronder deze is gemaakt."
+  },
+  {
+    "q": "Hoe groot is het erfdeel van een halfbroer in de tweede parentele ten opzichte van een volle broer?",
+    "a": [
+      "Het erfdeel is gelijk aan dat van een volle broer.",
+      "Het erfdeel bedraagt een derde van dat van een volle broer.",
+      "Het erfdeel bedraagt de helft van dat van een volle broer.",
+      "Het erfdeel bedraagt een kwart van dat van een volle broer."
+    ],
+    "c": 2,
+    "exp": "Art. 4:11 lid 2 BW.\n\nIn de tweede parentele bedraagt het erfdeel van een halfbroer of halfzuster de helft van dat van een volle broer, volle zuster, halfbroer of halfzuster."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest 'Cadeaubonnen en gebak' over zuivere aanvaarding?",
+    "a": [
+      "Het leeghalen van de kamer van de erflater leidt altijd tot zuivere aanvaarding.",
+      "Gedragingen van beheer leiden niet zonder meer tot de conclusie van zuivere aanvaarding.",
+      "Elke betaling ten laste van de nalatenschap geldt als een daad van zuivere aanvaarding.",
+      "Zuivere aanvaarding kan niet worden afgeleid uit gedragingen, alleen uit een verklaring."
+    ],
+    "c": 1,
+    "exp": "HR 29 oktober 2021 (Cadeaubonnen en gebak).\n\nDe Hoge Raad oordeelde dat uit gedragingen van een erfgenaam niet te snel mag worden afgeleid dat deze de bedoeling heeft de nalatenschap zuiver te aanvaarden. Beheerhandelingen vallen hier niet onder."
+  },
+  {
+    "q": "Welk recht prevaleert bij een conflict tussen het recht van een kind op afstammingsinformatie en het recht van de vader op privacy?",
+    "a": [
+      "Het recht van de vader op privacy prevaleert altijd.",
+      "De rechten zijn gelijkwaardig en de rechter beslist per geval.",
+      "Het recht van het kind op informatie prevaleert in beginsel.",
+      "Het belang van de moeder is doorslaggevend in deze afweging."
+    ],
+    "c": 2,
+    "exp": "HR 11 maart 2022 (Meewerken aan DNA-onderzoek).\n\nHet recht van een kind op het verkrijgen van informatie over de eigen biologische afstamming prevaleert in beginsel boven het recht van de vermoedelijke biologische vader om medewerking aan DNA-onderzoek te weigeren."
+  },
+  {
+    "q": "Wanneer is een uiterste wilsbeschikking ten gunste van een verzorger vernietigbaar?",
+    "a": [
+      "Indien de verzorger familie is van de erflater tot in de vierde graad.",
+      "Indien de verzorger beroepsmatig betrokken was bij de individuele gezondheidszorg van de erflater tijdens diens ziekte waaraan hij is overleden.",
+      "Indien de verzorger de erflater minder dan een jaar heeft verzorgd.",
+      "Indien de verzorger tevens executeur is."
+    ],
+    "c": 1,
+    "exp": "Art. 4:59 lid 1 BW.\n\nBeroepsbeoefenaren op het gebied van de individuele gezondheidszorg, die iemand gedurende de ziekte waaraan hij is overleden, bijstand hebben verleend, kunnen geen voordeel trekken uit de uiterste wilsbeschikkingen die zodanig persoon gedurende de behandeling ten behoeve van hen heeft gemaakt."
+  },
+  {
+    "q": "Wat is de legitimaire breuk voor een kind?",
+    "a": [
+      "Het gehele erfdeel dat het kind bij versterf zou hebben gekregen.",
+      "Een kwart van het erfdeel dat het kind bij versterf zou hebben gekregen.",
+      "De helft van het erfdeel dat het kind bij versterf zou hebben gekregen.",
+      "Een derde van het erfdeel dat het kind bij versterf zou hebben gekregen."
+    ],
+    "c": 2,
+    "exp": "Art. 4:64 BW.\n\nDe legitieme portie van een kind bedraagt de helft van de waarde van het erfdeel dat het kind bij versterf zou hebben gekregen."
+  },
+  {
+    "q": "Wat is het gevolg voor de aansprakelijkheid van de echtgenoten voor schulden bij een huwelijk in gemeenschap van goederen?",
+    "a": [
+      "Beide echtgenoten worden hoofdelijk aansprakelijk voor alle schulden.",
+      "De echtgenoot die de schuld aangaat is aansprakelijk; de andere echtgenoot is draagplichtig.",
+      "Alleen het gemeenschapsvermogen is vatbaar voor verhaal, niet het privévermogen.",
+      "De schuldeiser kan zich verhalen op de gemeenschap en het privévermogen van de aansprakelijke echtgenoot."
+    ],
+    "c": 3,
+    "exp": "Art. 1:96 BW.\n\nVoor een schuld van een echtgenoot kan de schuldeiser zich verhalen op de goederen van de gemeenschap en op het eigen vermogen van de echtgenoot die de schuld is aangegaan."
+  },
+  {
+    "q": "Op welke wijze geschiedt de levering van een onroerende zaak?",
+    "a": [
+      "Door overhandiging van de sleutels en de eigendomsakte.",
+      "Door een onderhandse akte gevolgd door inschrijving in de openbare registers.",
+      "Door een notariële akte gevolgd door inschrijving in de openbare registers.",
+      "Door een notariële akte alleen."
+    ],
+    "c": 2,
+    "exp": "Art. 3:89 lid 1 BW.\n\nDe voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers."
+  },
+  {
+    "q": "Wat houdt het beginsel 'paritas creditorum' in?",
+    "a": [
+      "Oudere rechten gaan voor op jongere rechten.",
+      "Schuldeisers hebben een gelijk recht op voldoening uit de opbrengst van de goederen van de schuldenaar.",
+      "Pandhouders en hypotheekhouders hebben altijd voorrang op de fiscus.",
+      "Schuldeisers moeten in gelijke mate bijdragen aan de faillissementskosten."
+    ],
+    "c": 1,
+    "exp": "Art. 3:277 BW.\n\nSchuldeisers hebben onderling een gelijk recht om uit de netto-opbrengst van de goederen van hun schuldenaar te worden voldaan naar evenredigheid van ieders vordering, behoudens door de wet erkende redenen van voorrang."
+  },
+  {
+    "q": "Wat is een kenmerk van een absoluut recht?",
+    "a": [
+      "Het kan slechts tegen de contractspartij worden ingeroepen.",
+      "Het heeft zaaksgevolg (droit de suite).",
+      "Het is een recht op een prestatie van de schuldenaar.",
+      "Het kan uitsluitend op onroerende zaken worden gevestigd."
+    ],
+    "c": 1,
+    "exp": "Art. 3:8 BW (impliciet) / Algemene leerstuk.\n\nAbsolute rechten, zoals eigendom en beperkte rechten, hebben zaaksgevolg. Dit betekent dat het recht het goed volgt, ongeacht onder wie het goed zich bevindt."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest 'Executeur en effecten'?",
+    "a": [
+      "Een executeur mag nooit aandelen verkopen zonder toestemming van alle erfgenamen.",
+      "Een executeur is verplicht aandelen direct te verkopen om koersrisico te vermijden.",
+      "Een executeur mag naar eigen inzicht beheer voeren, inclusief verkoop van aandelen ter voorkoming van nadeel.",
+      "Een executeur is risicoaansprakelijk voor elke waardedaling van de aandelenportefeuille."
+    ],
+    "c": 2,
+    "exp": "HR 21 november 2008 (Executeur en effecten).\n\nDe executeur mag het beheer naar eigen inzicht voeren en is bevoegd om goederen te verkopen ten behoeve van de afwikkeling. Hij schiet pas tekort als hij geen maatregelen treft ter voorkoming van dreigend nadeel."
+  },
+  {
+    "q": "Wanneer wordt toestemming voor een rechtshandeling van een minderjarige verondersteld te zijn verleend?",
+    "a": [
+      "Indien het een schenking betreft ten voordele van de minderjarige.",
+      "Indien de minderjarige de leeftijd van 16 jaar heeft bereikt.",
+      "Indien het gebruikelijk is dat minderjarigen van zijn leeftijd deze handeling zelfstandig verrichten.",
+      "Indien de ouders geen schriftelijk bezwaar hebben gemaakt."
+    ],
+    "c": 2,
+    "exp": "Art. 1:234 lid 3 BW.\n\nDe toestemming wordt aan de minderjarige verondersteld te zijn verleend, indien het een rechtshandeling betreft ten aanzien waarvan in het maatschappelijk verkeer gebruikelijk is dat minderjarigen van zijn leeftijd deze zelfstandig verrichten."
+  },
+  {
+    "q": "Wat is een uitsluitingsclausule in een testament?",
+    "a": [
+      "Een bepaling die de legitieme portie van kinderen uitsluit.",
+      "Een bepaling die voorkomt dat een erfenis in de huwelijksgemeenschap van de verkrijger valt.",
+      "Een bepaling die de partner van de erflater uitsluit als erfgenaam.",
+      "Een bepaling die schuldeisers uitsluit van verhaal op de erfenis."
+    ],
+    "c": 1,
+    "exp": "Art. 1:94 lid 1 BW.\n\nEen uitsluitingsclausule bepaalt dat hetgeen wordt verkregen buiten de gemeenschap van goederen van de verkrijger valt. Dit voorkomt dat bij een scheiding de ex-partner aanspraak maakt op de erfenis."
+  },
+  {
+    "q": "Wat is het rechtsgevolg van zuivere aanvaarding van een nalatenschap?",
+    "a": [
+      "De erfgenaam is alleen aansprakelijk met de goederen van de nalatenschap.",
+      "De erfgenaam kan de nalatenschap later nog verwerpen.",
+      "De erfgenaam is verplicht de nalatenschap te vereffenen volgens de wet.",
+      "De erfgenaam is ook met zijn privévermogen aansprakelijk voor de schulden van de nalatenschap."
+    ],
+    "c": 3,
+    "exp": "Art. 4:184 lid 2 BW.\n\nEen erfgenaam die de nalatenschap zuiver heeft aanvaard, is verplicht de schulden van de nalatenschap ten laste van zijn overig vermogen te voldoen, voor zover de nalatenschap ontoereikend is."
+  },
+  {
+    "q": "Welke eis stelt art. 3:84 lid 2 BW aan de titel van overdracht?",
+    "a": [
+      "De titel moet schriftelijk zijn vastgelegd.",
+      "Het goed moet bij de titel met voldoende bepaaldheid omschreven zijn.",
+      "De titel mag niet vernietigbaar zijn.",
+      "De titel moet zijn ingeschreven in de openbare registers."
+    ],
+    "c": 1,
+    "exp": "Art. 3:84 lid 2 BW.\n\nBij de titel moet het goed met voldoende bepaaldheid omschreven zijn. Dit is een geldigheidsvereiste voor de overdracht."
+  },
+  {
+    "q": "Wat is een 'som ineens' in het erfrecht?",
+    "a": [
+      "Het bedrag dat een executeur als loon ontvangt.",
+      "Een geldbedrag waarop een kind aanspraak kan maken voor verzorging en opvoeding.",
+      "De uitkering van de levensverzekering aan de begunstigde.",
+      "Het totaalbedrag van de schulden van de nalatenschap."
+    ],
+    "c": 1,
+    "exp": "Art. 4:35 BW.\n\nDe wet kent aan het kind een aanspraak toe op een som ineens, voor zover dit nodig is voor zijn verzorging en opvoeding tot het achttiende levensjaar, en vervolgens voor levensonderhoud en studie tot het eenentwintigste levensjaar."
+  },
+  {
+    "q": "Kan een 17-jarige zelfstandig een uiterste wil (testament) maken?",
+    "a": [
+      "Nee, hiervoor is men pas bekwaam vanaf 18 jaar.",
+      "Ja, vanaf 16 jaar is men bekwaam om een uiterste wil te maken.",
+      "Ja, maar alleen met toestemming van de kantonrechter.",
+      "Ja, maar alleen met toestemming van de ouders."
+    ],
+    "c": 1,
+    "exp": "Art. 4:55 lid 1 BW.\n\nVoor het maken van een uiterste wil is vereist dat de erflater de leeftijd van zestien jaren heeft bereikt. De minderjarige van 16 of 17 jaar is dus bekwaam."
+  },
+  {
+    "q": "Wat houdt het beginsel van 'zaaksgevolg' (droit de suite) in?",
+    "a": [
+      "Dat de eigenaar zijn zaak kan opeisen van eenieder die haar zonder recht houdt.",
+      "Dat de zaak automatisch overgaat op de erfgenamen bij overlijden.",
+      "Dat een beperkt recht op de zaak blijft rusten, ook als de zaak wordt overgedragen.",
+      "Dat de bezitter wordt vermoed eigenaar te zijn."
+    ],
+    "c": 2,
+    "exp": "Art. 3:8 BW (afgeleid) / Theorie.\n\nZaaksgevolg houdt in dat een beperkt recht (zoals hypotheek of vruchtgebruik) op de zaak blijft rusten, ongeacht in wiens handen de zaak zich bevindt. Het recht volgt de zaak."
+  },
+  {
+    "q": "Wie heeft het gezag over een kind geboren uit een geregistreerd partnerschap (anders dan tussen twee mannen)?",
+    "a": [
+      "Alleen de moeder heeft van rechtswege het gezag.",
+      "De ouders oefenen van rechtswege gezamenlijk het gezag uit.",
+      "Gezag moet worden aangevraagd bij de rechtbank.",
+      "Gezag wordt verkregen door aantekening in het gezagsregister."
+    ],
+    "c": 1,
+    "exp": "Art. 1:253aa BW.\n\nBij een geregistreerd partnerschap oefenen de ouders van rechtswege gezamenlijk het gezag uit, vergelijkbaar met het huwelijk, tenzij er sprake is van specifieke uitzonderingen."
+  },
+  {
+    "q": "Wat gebeurt er met de schulden bij de wettelijke verdeling?",
+    "a": [
+      "De schulden worden hoofdelijk verdeeld over alle erfgenamen.",
+      "De kinderen zijn verplicht de schulden direct te voldoen.",
+      "De langstlevende echtgenoot moet de schulden van de nalatenschap voor zijn rekening nemen.",
+      "De schuldeisers kunnen zich alleen verhalen op de goederen van de nalatenschap."
+    ],
+    "c": 2,
+    "exp": "Art. 4:13 lid 2 BW.\n\nBij de wettelijke verdeling verkrijgt de echtgenoot de goederen van de nalatenschap, en de voldoening van de schulden van de nalatenschap komt voor zijn rekening."
+  },
+  {
+    "q": "Wanneer is een onderhandse akte voldoende voor de vestiging van een stil pandrecht?",
+    "a": [
+      "Wanneer de akte is geregistreerd bij de Belastingdienst.",
+      "Wanneer de akte is ondertekend door twee getuigen.",
+      "Wanneer de akte is medegedeeld aan de schuldenaar.",
+      "Wanneer de pandhouder de zaak in zijn macht heeft."
+    ],
+    "c": 0,
+    "exp": "Art. 3:237 lid 1 BW.\n\nPandrecht op een roerende zaak kan worden gevestigd bij authentieke of geregistreerde onderhandse akte, zonder dat de zaak in de macht van de pandhouder wordt gebracht."
+  }
+]

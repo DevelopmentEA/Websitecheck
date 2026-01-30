@@ -1,0 +1,272 @@
+[
+  {
+    "q": "De Staat der Nederlanden geniet volledige strafrechtelijke immuniteit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De centrale overheid (de Staat) geniet volledige strafrechtelijke immuniteit vanwege het uitgangspunt dat de handelingen van de staat geacht moeten worden het algemeen belang te dienen."
+  },
+  {
+    "q": "Een rechtspersoon kan alleen strafrechtelijk aansprakelijk worden gesteld als de fysieke dader een formeel dienstverband heeft bij die rechtspersoon.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Van een gedraging in de sfeer van de rechtspersoon kan ook sprake zijn indien het gaat om handelen of nalaten van iemand die uit anderen hoofde werkzaam is ten behoeve van de rechtspersoon, bijvoorbeeld een ingehuurde kracht."
+  },
+  {
+    "q": "Voor de strafbaarheid van een feitelijk leidinggever is vereist dat de rechtspersoon zelf onherroepelijk is veroordeeld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Dat feitelijk leidinggeven accessoir is aan het daderschap van de rechtspersoon, betekent niet dat de rechtspersoon zelf per se moet worden vervolgd of veroordeeld; slechts het daderschap van de rechtspersoon moet vaststaan."
+  },
+  {
+    "q": "Het criterium 'beschikken' in de zin van functioneel daderschap vereist dat de verdachte juridisch eigenaar is van de middelen waarmee het delict is gepleegd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Beschikken houdt in dat de verdachte feitelijke zeggenschap heeft over de gedraging en de mogelijkheid heeft om deze te verhinderen of te bewerkstelligen; juridisch eigendom is geen vereiste."
+  },
+  {
+    "q": "Een gemeente geniet strafrechtelijke immuniteit wanneer de gedraging voortvloeit uit een exclusieve bestuurstaak die niet door derden kan worden verricht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Immuniteit geldt indien de gedragingen naar hun aard en gelet op het wettelijk systeem rechtens niet anders dan door bestuursfunctionarissen kunnen worden verricht, zodat derden zijn uitgesloten van deelname op gelijke voet."
+  },
+  {
+    "q": "Bij feitelijk leidinggeven is het voldoende als de leidinggever opzet heeft op het leidinggeven; opzet op het gronddelict is niet vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Feitelijk leidinggeven veronderstelt dubbel opzet: opzet op het leidinggeven zelf én op het strafbare grondfeit dat door de rechtspersoon wordt begaan."
+  },
+  {
+    "q": "Het 'aanvaarden' van een verboden gedraging door een rechtspersoon kan ook bestaan uit het niet betrachten van de zorg die redelijkerwijs gevergd kon worden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Onder aanvaarden wordt mede begrepen het niet betrachten van de zorg die in redelijkheid van de rechtspersoon kon worden gevergd met het oog op de voorkoming van de gedraging (passieve aanvaarding)."
+  },
+  {
+    "q": "Artikel 51 Sr bepaalt dat strafbare feiten uitsluitend door natuurlijke personen kunnen worden begaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 51 Sr bepaalt juist dat strafbare feiten kunnen worden begaan door zowel natuurlijke personen als rechtspersonen."
+  },
+  {
+    "q": "Een openbaar lichaam geniet geen immuniteit wanneer het handelt als deelnemer aan het economisch verkeer.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Wanneer derden op gelijke voet als het openbaar lichaam aan het maatschappelijk verkeer kunnen deelnemen, zoals bij economische activiteiten, is er geen grond voor immuniteit."
+  },
+  {
+    "q": "Voorwaardelijk opzet is onvoldoende om de opzet van een feitelijk leidinggever te bewijzen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het opzet bij feitelijk leidinggeven, zowel op het leidinggeven als op het gronddelict, kan ook voorkomen in de vorm van voorwaardelijk opzet (het bewust aanvaarden van de aanmerkelijke kans)."
+  },
+  {
+    "q": "De 'sfeer van de rechtspersoon' is een belangrijk oriëntatiepunt voor de toerekening van een strafbaar feit aan die rechtspersoon.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Of een gedraging heeft plaatsgevonden in de sfeer van de rechtspersoon is een centraal criterium voor de redelijke toerekening van daderschap aan de rechtspersoon."
+  },
+  {
+    "q": "Als een openbaar lichaam immuniteit geniet, zijn de feitelijk leidinggevers en opdrachtgevers van dat lichaam ook niet vervolgbaar.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Indien de rechtspersoon (het openbaar lichaam) immuniteit geniet, geldt deze immuniteit eveneens voor de opdrachtgevers en feitelijk leidinggevers aan de gedragingen van dat lichaam."
+  },
+  {
+    "q": "Een vennootschap onder firma (VOF) wordt in het strafrecht niet gelijkgesteld aan een rechtspersoon.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 51 lid 3 Sr stelt de vennootschap zonder rechtspersoonlijkheid, zoals de VOF, gelijk aan de rechtspersoon voor de toepassing van strafbaarheid."
+  },
+  {
+    "q": "Of een gedraging 'dienstig' is geweest aan de rechtspersoon, is een factor die meeweegt bij de toerekening van daderschap.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dat de gedraging de rechtspersoon dienstig is geweest in het door hem uitgeoefende bedrijf, is een van de omstandigheden waaronder sprake kan zijn van toerekening."
+  },
+  {
+    "q": "Oplichting (art. 326 Sr) is een kwaliteitsdelict dat niet door een rechtspersoon kan worden gepleegd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Oplichting is geen kwaliteitsdelict dat uitsluitend door natuurlijke personen kan worden gepleegd; een rechtspersoon kan normadressaat zijn van deze bepaling."
+  },
+  {
+    "q": "Passief feitelijk leidinggeven is niet strafbaar; er is altijd actief ingrijpen vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Feitelijk leidinggeven kan ook passief geschieden, namelijk indien men bevoegd en gehouden was maatregelen te treffen ter voorkoming van de gedraging en dit achterwege laat."
+  },
+  {
+    "q": "Culpa van een rechtspersoon kan worden vastgesteld door te kijken naar gebreken in de organisatiestructuur.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Culpa kan worden vastgesteld indien de verwaarlozing van de zorgplicht direct is terug te voeren op gebreken en onachtzaamheden in de structuur van de organisatie."
+  },
+  {
+    "q": "Een waterschap geniet altijd volledige strafrechtelijke immuniteit, net als de Staat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Decentrale overheden zoals waterschappen genieten slechts immuniteit voor exclusieve bestuurstaken; de Staat geniet als enige algehele immuniteit."
+  },
+  {
+    "q": "Het opzet van een natuurlijk persoon kan onder omstandigheden worden toegerekend aan een rechtspersoon.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Opzet van een rechtspersoon kan worden vastgesteld door toerekening van het opzet van natuurlijke personen die binnen de organisatie werkzaam zijn."
+  },
+  {
+    "q": "Voor strafbaarheid als feitelijk leidinggever is fysieke aanwezigheid bij de verboden gedraging vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Fysieke aanwezigheid is geen vereiste; het gaat om de bevoegdheid, beschikkingsmacht en aanvaarding (eventueel op afstand) van de gedraging."
+  },
+  {
+    "q": "De criteria voor toerekening aan een rechtspersoon uit het Drijfmest-arrest vormen een limitatieve opsomming.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De genoemde omstandigheden in het Drijfmest-arrest zijn oriëntatiepunten en vormen geen limitatieve opsomming; ook andere omstandigheden kunnen tot toerekening leiden."
+  },
+  {
+    "q": "Een gemeente die nalaat onderhoud te plegen aan een openbare weg kan strafrechtelijk worden vervolgd voor dood door schuld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Omdat wegonderhoud ook door derden kan worden verricht en geen exclusieve bestuurstaak is, geniet de gemeente in dat geval geen immuniteit."
+  },
+  {
+    "q": "Het 'beschikkingscriterium' houdt in dat de verdachte de feitelijke macht had om de gedraging te verhinderen of te bewerkstelligen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Beschikken verwijst naar de feitelijke zeggenschap of macht over het plaatsvinden van de verboden gedraging."
+  },
+  {
+    "q": "Een feitelijk leidinggever moet op de hoogte zijn van de specifieke verboden gedragingen of van soortgelijke gedragingen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Voor (passief) feitelijk leidinggeven is vereist dat de verdachte wetenschap had van de in de tenlastelegging omschreven feiten dan wel van soortgelijke feiten."
+  },
+  {
+    "q": "Functioneel daderschap is alleen van toepassing op rechtspersonen, niet op natuurlijke personen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Functioneel daderschap geldt juist ook voor natuurlijke personen (zoals eigenaren van eenmanszaken) die strafrechtelijk verantwoordelijk worden gehouden voor gedragingen van anderen."
+  },
+  {
+    "q": "Als een gedraging past in de normale bedrijfsvoering, is dat een indicatie voor toerekening aan de rechtspersoon.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dat de gedraging past in de normale bedrijfsvoering of taakuitoefening is een van de criteria om vast te stellen of de gedraging in de sfeer van de rechtspersoon heeft plaatsgevonden."
+  },
+  {
+    "q": "Strafrechtelijke immuniteit van de overheid is bij wet volledig afgeschaft.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een wetsvoorstel tot algehele afschaffing van de immuniteit is verworpen; de immuniteit voor exclusieve bestuurstaken (Pikmeer II) bestaat nog steeds."
+  },
+  {
+    "q": "Opdrachtgeverschap in de zin van art. 51 Sr vereist dat de verdachte de uitvoering van het strafbare feit opzettelijk heeft bevolen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Voor strafbaarheid als opdrachtgever is vereist dat de verdachte opzettelijk de uitvoering van het strafbare feit door de rechtspersoon heeft geïnitieerd of bevolen."
+  },
+  {
+    "q": "Een rechtspersoon kan zich nooit beroepen op strafuitsluitingsgronden omdat deze persoonlijk van aard zijn.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een rechtspersoon kan zich wel degelijk beroepen op strafuitsluitingsgronden, bijvoorbeeld als aannemelijk is dat alle redelijkerwijs te vergen maatregelen zijn genomen (AVAS)."
+  },
+  {
+    "q": "Het plaatsen van muskusratklemmen door een waterschap kan vallen onder strafrechtelijke immuniteit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Indien deze taak uitvoering is van een wettelijke bestuurstaak die exclusief door bestuursfunctionarissen wordt verricht, geldt immuniteit."
+  }
+]

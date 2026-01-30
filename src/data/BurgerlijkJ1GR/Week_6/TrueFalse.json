@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Voor een geslaagd beroep op ontbinding op grond van artikel 6:265 BW is vereist dat de tekortkoming de kern van de prestatie betreft.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Twickler. Iedere tekortkoming in de nakoming geeft in beginsel de bevoegdheid tot ontbinding, tenzij de tekortkoming gezien haar bijzondere aard of geringe betekenis de ontbinding niet rechtvaardigt. Het onderscheid tussen kern- en niet-kernbedingen is door de Hoge Raad verworpen."
+  },
+  {
+    "q": "Indien een werknemer tijdens een bedrijfsfeest buiten werktijd schade veroorzaakt door een fout, kan de werkgever hiervoor nooit aansprakelijk zijn op grond van artikel 6:170 BW.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Partycentrum. Voor werkgeversaansprakelijkheid is vereist dat er een functionele samenhang bestaat tussen de fout en de dienstbetrekking. Deze samenhang kan ook bestaan tijdens een bedrijfsfeest buiten werktijd, afhankelijk van alle omstandigheden van het geval."
+  },
+  {
+    "q": "Ouders van een kind van 12 jaar zijn risicoaansprakelijk voor de onrechtmatige daad van hun kind, ongeacht of zij de gedraging hadden kunnen voorkomen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:169 lid 1 BW. Voor kinderen onder de 14 jaar geldt een risicoaansprakelijkheid voor de ouders. Het doet niet ter zake of de ouders de gedraging hadden kunnen beletten."
+  },
+  {
+    "q": "De wegbeheerder is op grond van artikel 6:174 BW aansprakelijk voor schade veroorzaakt door een losliggende elektriciteitskabel op de stoep die geen deel uitmaakt van de weguitrusting.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Struikelen over stroomkabel op stoep. Artikel 6:174 BW ziet op gebreken aan de weg zelf of de weguitrusting. Een los voorwerp op de weg valt onder de algemene onrechtmatige daad van artikel 6:162 BW (gevaarzetting), niet onder de risicoaansprakelijkheid van artikel 6:174 BW."
+  },
+  {
+    "q": "Indien een voortdurende verplichting om iets na te laten (zoals een geheimhoudingsplicht) wordt geschonden, is ontbinding mogelijk zonder dat verzuim is ingetreden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Fisser/Tycho. Bij schending van een voortdurende verplichting is nakoming voor het verleden blijvend onmogelijk. In dat geval ontstaat de bevoegdheid tot ontbinding direct, zonder dat een ingebrekestelling of verzuim vereist is."
+  },
+  {
+    "q": "Bij groepsaansprakelijkheid op grond van artikel 6:166 BW is ieder lid van de groep slechts aansprakelijk voor zijn eigen aandeel in de schade.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:166 lid 1 BW. Indien één groepslid onrechtmatig schade toebrengt en de kans daarop de anderen van deelname had moeten weerhouden, zijn zij hoofdelijk aansprakelijk voor de gehele schade."
+  },
+  {
+    "q": "Het meerijden met een bestuurder waarvan de passagier weet dat deze onder invloed van alcohol is, leidt ertoe dat de passagier elk recht op schadevergoeding verliest.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Geerts/Ten Dam. De enkele omstandigheid dat de passagier wist van het alcoholgebruik, brengt niet mee dat hij geen enkele aanspraak op schadevergoeding heeft. Wel kan de schadevergoedingsplicht worden verminderd wegens eigen schuld (artikel 6:101 BW)."
+  },
+  {
+    "q": "De bezitter van een dier kan zich succesvol verweren tegen aansprakelijkheid indien hij kan aantonen dat hij het dier niet onder controle had op het moment van de schade.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:179 BW. De bezitter is risicoaansprakelijk voor de eigen energie van het dier. Aansprakelijkheid ontbreekt slechts indien er ook geen aansprakelijkheid op grond van artikel 6:162 BW zou hebben bestaan als de bezitter het dier wél in zijn macht had gehad (de tenzij-formule)."
+  },
+  {
+    "q": "Het toebrengen van een 'blauw oog' kwalificeert als lichamelijk letsel in de zin van artikel 6:106 BW, waardoor recht op smartengeld bestaat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Blauw oog. De Hoge Raad oordeelde dat een blauw oog lichamelijk letsel is. De benadeelde heeft daarom recht op vergoeding van immateriële schade (smartengeld)."
+  },
+  {
+    "q": "Ontbinding van een overeenkomst heeft terugwerkende kracht tot het moment van het sluiten van de overeenkomst.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:269 BW. De ontbinding heeft geen terugwerkende kracht. Er ontstaat een verbintenis tot ongedaanmaking van de reeds ontvangen prestaties (artikel 6:271 BW)."
+  },
+  {
+    "q": "De criteria uit het Kelderluik-arrest zijn uitsluitend van toepassing op situaties waarin een luik is opengezet.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Kelderluik. De in dit arrest geformuleerde criteria (waarschijnlijkheid onoplettendheid, kans op ongeval, ernst gevolgen, bezwaarlijkheid maatregelen) zijn algemene criteria voor de beoordeling van gevaarzetting binnen de onrechtmatige daad."
+  },
+  {
+    "q": "Voor aansprakelijkheid op grond van artikel 6:171 BW (niet-ondergeschikten) is vereist dat de werkzaamheden zijn verricht ter uitoefening van het bedrijf van de opdrachtgever.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:171 BW. Aansprakelijkheid voor niet-ondergeschikten bestaat alleen indien de werkzaamheden zijn verricht ter uitoefening van het bedrijf van de opdrachtgever, waarbij het voor de buitenwereld moet lijken alsof het één onderneming betreft."
+  },
+  {
+    "q": "Een geestelijke stoornis staat niet in de weg aan toerekening van een onrechtmatige daad aan de dader.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:165 lid 1 BW. Een als een doen te beschouwen gedraging van een persoon van veertien jaar of ouder wordt hem als een onrechtmatige daad toegerekend, ook als deze onder invloed van een geestelijke of lichamelijke tekortkoming is verricht."
+  },
+  {
+    "q": "Bij zaakwaarneming is de belanghebbende verplicht de schade te vergoeden die de zaakwaarnemer heeft geleden, mits de waarneming behoorlijk is verricht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:200 lid 1 BW. De belanghebbende is gehouden de zaakwaarnemer de schade te vergoeden die deze ten gevolge van de waarneming heeft geleden, voor zover zijn belang naar behoren is behartigd."
+  },
+  {
+    "q": "Indien een voor de voldoening bepaalde termijn verstrijkt zonder dat de verbintenis is nagekomen, is de schuldenaar in beginsel direct in verzuim.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:83 sub a BW. Het verzuim treedt zonder ingebrekestelling in wanneer een voor de voldoening bepaalde termijn verstrijkt zonder dat de verbintenis is nagekomen, tenzij blijkt dat de termijn een andere strekking heeft."
+  },
+  {
+    "q": "Voor een geslaagd beroep op de onzekerheidsexceptie (artikel 6:263 BW) is vereist dat de wederpartij reeds in verzuim is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:263 BW. De onzekerheidsexceptie geeft de partij die als eerste moet presteren de bevoegdheid tot opschorting indien zij goede grond heeft te vrezen dat de wederpartij niet zal nakomen. Verzuim van de wederpartij is hierbij geen vereiste."
+  },
+  {
+    "q": "Degene die ongerechtvaardigd is verrijkt ten koste van een ander, is verplicht de schade te vergoeden tot het volledige bedrag van de verarming.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:212 lid 1 BW. De schadevergoedingsplicht bij ongerechtvaardigde verrijking is beperkt tot het bedrag van de verrijking."
+  },
+  {
+    "q": "De bezitter van een opstal is niet aansprakelijk als de schade het gevolg is van een gebrek dat pas na de bouw is ontstaan door slecht onderhoud.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:174 BW. De bezitter van een opstal die niet voldoet aan de eisen die men daaraan in de gegeven omstandigheden mag stellen (gebrekkig is), is aansprakelijk voor de schade die daardoor ontstaat. Dit geldt ook voor gebreken door slecht onderhoud."
+  },
+  {
+    "q": "Een werkgever heeft regres op zijn werknemer voor schadevergoeding betaald aan een derde, tenzij de werknemer opzettelijk of bewust roekeloos handelde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:170 lid 3 BW. De werknemer hoeft in de onderlinge verhouding niet bij te dragen in de schadevergoeding, tenzij de schade een gevolg is van zijn opzet of bewuste roekeloosheid."
+  },
+  {
+    "q": "De 'tenzij-formule' in artikel 6:265 lid 1 BW moet ambtshalve door de rechter worden toegepast.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Twickler. De schuldenaar moet zich beroepen op de tenzij-formule (de uitzondering dat de tekortkoming de ontbinding niet rechtvaardigt) en de feiten en omstandigheden daarvoor stellen en bewijzen."
+  },
+  {
+    "q": "Schuldeisersverzuim bevrijdt de schuldenaar van zijn verplichting tot nakoming.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:58 BW. Schuldeisersverzuim heft de verbintenis niet op. Wel kan de schuldenaar de rechter verzoeken hem van zijn verbintenis te bevrijden (artikel 6:60 BW)."
+  },
+  {
+    "q": "Degene die een goed heeft gegeven ter uitvoering van een nietige overeenkomst, kan dit goed als onverschuldigd betaald terugvorderen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:203 lid 1 BW. Indien een rechtsgrond voor de prestatie ontbreekt (zoals bij nietigheid), is er sprake van onverschuldigde betaling en kan het goed worden teruggevorderd."
+  },
+  {
+    "q": "Causaal verband in de zin van artikel 6:98 BW wordt uitsluitend bepaald door de leer van de conditio sine qua non.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:98 BW. Voor schadevergoeding is een toerekening naar redelijkheid vereist. De conditio sine qua non-leer is slechts een ondergrens, maar de toerekening hangt af van de aard van de aansprakelijkheid en de aard van de schade."
+  },
+  {
+    "q": "De bezitter van een roerende zaak is aansprakelijk voor schade veroorzaakt door een gebrek aan die zaak, tenzij het gebrek hem niet bekend was.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:173 BW. Dit artikel vestigt een risicoaansprakelijkheid. Bekendheid met het gebrek is geen vereiste voor aansprakelijkheid."
+  },
+  {
+    "q": "De rechter kan de schadevergoeding matigen indien toekenning van de volledige schadevergoeding tot kennelijk onaanvaardbare gevolgen zou leiden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:109 lid 1 BW. De rechter heeft de bevoegdheid tot matiging indien volledige vergoeding in de gegeven omstandigheden tot kennelijk onaanvaardbare gevolgen leidt."
+  },
+  {
+    "q": "De predispositie van een slachtoffer (zoals een reeds zwakke gezondheid) doorbreekt altijd het causaal verband met de schade.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Struikelen over deurmat. De predispositie van het slachtoffer doorbreekt het causaal verband niet automatisch. Toerekening hangt af van de redelijkheid, waarbij de aard van de aansprakelijkheid en schade een rol spelen."
+  },
+  {
+    "q": "Ouders zijn aansprakelijk voor de onrechtmatige daad van hun 15-jarige kind, tenzij zij bewijzen dat zij de gedraging niet konden beletten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6:169 lid 2 BW. Voor kinderen van 14 en 15 jaar geldt een weerlegbaar vermoeden van schuld voor de ouders (omgekeerde bewijslast)."
+  },
+  {
+    "q": "Een beroep op een exoneratiebeding kan nooit worden gepasseerd op grond van de redelijkheid en billijkheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Kuunders/Swinkels. Een exoneratiebeding kan buiten toepassing blijven indien een beroep daarop naar maatstaven van redelijkheid en billijkheid onaanvaardbaar is, bijvoorbeeld bij opzet of bewuste roekeloosheid."
+  },
+  {
+    "q": "Verrekening van voordeel (voordeelstoerekening) is alleen mogelijk indien het voordeel dezelfde aard heeft als de schade.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6:100 BW. Voordeelstoerekening vereist dat eenzelfde gebeurtenis zowel schade als voordeel heeft opgeleverd. Gelijksoortigheid van schade en voordeel is geen wettelijk vereiste, wel dat de verrekening redelijk is."
+  },
+  {
+    "q": "Bij een stil pandrecht op een vordering op naam is mededeling aan de schuldenaar vereist voor de vestiging.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:239 lid 1 BW. Een stil pandrecht op een vordering op naam kan worden gevestigd bij authentieke of geregistreerde onderhandse akte, zonder mededeling aan de schuldenaar."
+  }
+]

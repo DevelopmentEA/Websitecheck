@@ -1,0 +1,57 @@
+[
+  {
+    "q": "De Gemeentewet kent de bevoegdheid tot het vaststellen van parkeerverordeningen toe aan de gemeenteraad. De gemeenteraad van de gemeente X wil deze bevoegdheid overdragen aan het college van burgemeester en wethouders, zodat het college zelfstandig parkeerregels kan vaststellen en daarvoor verantwoordelijk is. De Gemeentewet bevat geen bepaling die deze overdracht regelt. Mag de gemeenteraad dit doen?",
+    "sample": "Issue: Mag de gemeenteraad zijn bevoegdheid delegeren aan het college zonder specifieke wettelijke grondslag?\n\nRule: Delegatie is het overdragen van een bevoegdheid (art. 10:13 Awb). Delegatie is slechts toegestaan indien daarin is voorzien bij wettelijk voorschrift (art. 10:15 Awb).\n\nApplication: De raad wil de bevoegdheid en verantwoordelijkheid overdragen, wat kwalificeert als delegatie. De casus stelt dat de Gemeentewet geen grondslag biedt voor deze overdracht.\n\nConclusion: Nee, de gemeenteraad mag dit niet doen wegens het ontbreken van een wettelijke grondslag.",
+    "checklist": [
+      "Kwalificatie als delegatie (overdracht)",
+      "Vereiste wettelijke grondslag (10:15 Awb)",
+      "Grondslag ontbreekt in casus",
+      "Delegatie is niet toegestaan"
+    ],
+    "exp": "Uit artikel 10:15 Awb volgt dat voor delegatie een specifieke wettelijke grondslag vereist is. Zonder deze grondslag in de wet kan de bevoegdheid niet worden overgedragen."
+  },
+  {
+    "q": "De burgemeester van de gemeente Y draagt een ambtenaar van de afdeling Openbare Orde op om namens hem besluiten te nemen over demonstraties. De ambtenaar neemt vervolgens een besluit en ondertekent dit met: \"Besluit van de medewerker Openbare Orde\". Is dit besluit op de juiste wijze tot stand gekomen?",
+    "sample": "Issue: Voldoet de wijze van besluitvorming en ondertekening aan de regels voor mandaat?\n\nRule: Mandaat is de bevoegdheid om in naam van een bestuursorgaan besluiten te nemen (art. 10:1 Awb). Een besluit genomen krachtens mandaat vermeldt namens welk bestuursorgaan het is genomen (art. 10:10 Awb).\n\nApplication: De ambtenaar neemt het besluit op eigen titel en niet namens de burgemeester. De verantwoordelijkheid en bevoegdheid blijven echter bij de mandaatgever.\n\nConclusion: Nee, het besluit is onjuist ondertekend; het had namens de burgemeester genomen moeten worden.",
+    "checklist": [
+      "Kwalificatie als mandaat",
+      "Handelen in naam van (10:1 Awb)",
+      "Verantwoordelijkheid blijft bij mandaatgever",
+      "Ondertekening is onjuist (10:10 Awb)"
+    ],
+    "exp": "Bij mandaat worden geen bevoegdheden overgedragen. De ambtenaar handelt in naam van het bestuursorgaan (de burgemeester) en moet dit in het besluit tot uitdrukking brengen."
+  },
+  {
+    "q": "In een wet staat: \"De Minister kan subsidie verstrekken voor innovatieve projecten.\" De Minister weigert een aanvraag van Bedrijf A omdat hij het beschikbare budget prioriteert voor andere beleidsdoelen. Bedrijf A stelt dat de rechter deze weigering volledig en indringend moet toetsen. Heeft Bedrijf A gelijk?",
+    "sample": "Issue: Welke toetsingsintensiteit hanteert de rechter bij een bevoegdheid geformuleerd met 'kan'?\n\nRule: Het woord 'kan' duidt op beleidsruimte (discretionaire bevoegdheid). De rechter toetst het gebruik van vrije bevoegdheden terughoudend (marginaal) aan de maatstaf van artikel 3:4 Awb.\n\nApplication: De wet geeft de Minister keuzevrijheid ('kan'). De rechter treedt niet in de plaats van het bestuur maar toetst of het orgaan in redelijkheid tot het besluit kon komen.\n\nConclusion: Nee, Bedrijf A heeft ongelijk; de rechter toetst het besluit terughoudend.",
+    "checklist": [
+      "Term 'kan' duidt beleidsruimte aan",
+      "Bestuursorgaan heeft keuzevrijheid",
+      "Rechter toetst terughoudend (marginaal)",
+      "Toetsing aan redelijkheid (3:4 Awb)"
+    ],
+    "exp": "Bij beleidsruimte heeft het bestuur de vrijheid om te kiezen. De rechter respecteert deze ruimte en toetst slechts marginaal of de belangenafweging redelijk is geweest."
+  },
+  {
+    "q": "De Subsidieverordening van de gemeente Z bepaalt dat het college van burgemeester en wethouders bevoegd is subsidies te verstrekken. Het college besluit deze bevoegdheid te delegeren aan het hoofd van de afdeling Sociale Zaken, een ambtenaar die ondergeschikt is aan het college. Is dit delegatiebesluit rechtmatig?",
+    "sample": "Issue: Mag het college een bevoegdheid delegeren aan een ondergeschikte ambtenaar?\n\nRule: Delegatie aan ondergeschikten is niet toegestaan (art. 10:14 Awb).\n\nApplication: Het hoofd van de afdeling Sociale Zaken is ondergeschikt aan het college. Delegatie impliceert overdracht van verantwoordelijkheid, wat niet past binnen een hiërarchische verhouding.\n\nConclusion: Nee, het besluit is onrechtmatig wegens strijd met het verbod op delegatie aan ondergeschikten.",
+    "checklist": [
+      "Casus betreft delegatie aan ondergeschikte",
+      "Strijd met artikel 10:14 Awb",
+      "Delegatie aan ondergeschikten verboden",
+      "Besluit is onrechtmatig"
+    ],
+    "exp": "Artikel 10:14 Awb verbiedt delegatie aan ondergeschikten omdat de hiërarchische instructiebevoegdheid blijft bestaan, terwijl delegatie juist de overdracht van bevoegdheid en verantwoordelijkheid beoogt."
+  },
+  {
+    "q": "De Algemene Plaatselijke Verordening bepaalt dat een vergunning wordt geweigerd \"indien naar het oordeel van de burgemeester de openbare orde in gevaar komt\". De burgemeester weigert een vergunning op deze grond. Is hier sprake van beleidsruimte of beoordelingsruimte?",
+    "sample": "Issue: Kwalificeert de frase \"naar het oordeel van\" als beleidsruimte of beoordelingsruimte?\n\nRule: Van beoordelingsruimte is sprake wanneer de wet een vage term of norm bevat die gepreciseerd moet worden, vaak herkenbaar aan \"naar het oordeel van\".\n\nApplication: De wetgever laat het aan de bestuurlijke wijsheid over om te beoordelen of de feiten onder de norm \"gevaar voor openbare orde\" vallen.\n\nConclusion: Er is sprake van beoordelingsruimte.",
+    "checklist": [
+      "Terminologie 'naar het oordeel van'",
+      "Vage norm vereist precisering",
+      "Kwalificatie als beoordelingsruimte",
+      "Bestuurlijke wijsheid beoordeelt feiten"
+    ],
+    "exp": "De wetgever geeft het bestuursorgaan ruimte om de vage norm ('gevaar voor openbare orde') in de praktijk in te vullen, wat wordt aangeduid als beoordelingsruimte."
+  }
+]

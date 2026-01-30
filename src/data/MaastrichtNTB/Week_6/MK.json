@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Wat wordt in het Wetboek van Strafvordering verstaan onder het voorbereidend onderzoek?",
+    "a": [
+      "Het onderzoek dat aan de behandeling ter terechtzitting voorafgaat.",
+      "Het onderzoek dat plaatsvindt tijdens de behandeling ter terechtzitting.",
+      "Het onderzoek dat enkel door de rechter-commissaris wordt uitgevoerd.",
+      "Het onderzoek dat uitsluitend gericht is op het opleggen van een straf."
+    ],
+    "c": 0,
+    "exp": "Artikel 132 Sv.\n\nHet voorbereidend onderzoek is het onderzoek dat aan de behandeling ter terechtzitting voorafgaat."
+  },
+  {
+    "q": "Aan welke criteria moet worden voldaan om iemand als verdachte in de zin van artikel 27 Sv aan te merken?",
+    "a": [
+      "Er moet een aangifte liggen, een bekentenis zijn afgelegd en daderwetenschap zijn.",
+      "Er moet een strafbaar feit zijn gepleegd, een dader zijn en een opsporingsambtenaar.",
+      "Er moet een vermoeden zijn van schuld, gebaseerd op een bevel van de officier van justitie.",
+      "Er moet een redelijk vermoeden van schuld zijn aan een strafbaar feit, gebaseerd op feiten of omstandigheden."
+    ],
+    "c": 3,
+    "exp": "Artikel 27 Sv.\n\nAls verdachte wordt aangemerkt degene te wiens aanzien uit feiten of omstandigheden een redelijk vermoeden van schuld aan een strafbaar feit voortvloeit."
+  },
+  {
+    "q": "Wie is bevoegd om een verdachte staande te houden ter vaststelling van de identiteit?",
+    "a": [
+      "Iedere burger die een strafbaar feit waarneemt.",
+      "Uitsluitend de officier van justitie.",
+      "Elke opsporingsambtenaar.",
+      "Alleen de rechter-commissaris."
+    ],
+    "c": 2,
+    "exp": "Artikel 52 Sv.\n\nIedere opsporingsambtenaar is bevoegd de verdachte staande te houden om hem naar zijn naam, voornamen, geboortedatum en geboorteplaats, alsmede naar zijn adres en woon- of verblijfplaats te vragen."
+  },
+  {
+    "q": "In welk geval is iedere burger bevoegd om een verdachte aan te houden?",
+    "a": [
+      "In geval van een bevel tot voorlopige hechtenis.",
+      "In geval van ontdekking op heterdaad.",
+      "In geval van een misdrijf met een straf van 4 jaar of meer.",
+      "In geval van een verdenking van een terroristisch misdrijf."
+    ],
+    "c": 1,
+    "exp": "Artikel 53 Sv.\n\nIn geval van ontdekking op heterdaad is ieder bevoegd de verdachte aan te houden."
+  },
+  {
+    "q": "Hoe lang mag een verdachte voor wie geen voorlopige hechtenis is toegelaten maximaal worden opgehouden voor onderzoek?",
+    "a": [
+      "Ten hoogste zes uur, waarbij de tijd tussen 00:00 en 09:00 uur niet meetelt.",
+      "Ten hoogste negen uur, waarbij de tijd tussen 00:00 en 09:00 uur niet meetelt.",
+      "Ten hoogste zes uur, waarbij de uren voor het verhoor niet meetellen.",
+      "Ten hoogste negen uur, inclusief de nachtelijke uren."
+    ],
+    "c": 0,
+    "exp": "Artikel 61 Sv.\n\nDe verdachte kan gedurende ten hoogste zes uren voor het onderzoek worden opgehouden, waarbij de tijd tussen middernacht en negen uur 's ochtends niet wordt meegerekend."
+  },
+  {
+    "q": "Wie is bevoegd om een bevel tot inverzekeringstelling te geven?",
+    "a": [
+      "De rechter-commissaris of de raadkamer van de rechtbank.",
+      "De (hulp)officier van justitie.",
+      "Elke opsporingsambtenaar.",
+      "De burgemeester in bijzondere gevallen."
+    ],
+    "c": 1,
+    "exp": "Artikel 57 Sv.\n\nDe officier van justitie of de hulpofficier van justitie kan bevelen dat de verdachte in het belang van het onderzoek in verzekering wordt gesteld."
+  },
+  {
+    "q": "Wat is de maximale duur van de inverzekeringstelling inclusief een eventuele verlenging?",
+    "a": [
+      "Drie dagen, zonder mogelijkheid tot verlenging.",
+      "Drie dagen, met een eenmalige verlenging van drie dagen.",
+      "Zes dagen, met een eenmalige verlenging van drie dagen.",
+      "Veertien dagen, inclusief alle verlengingen."
+    ],
+    "c": 1,
+    "exp": "Artikel 58 Sv.\n\nDe inverzekeringstelling duurt ten hoogste drie dagen en kan door de officier van justitie in het belang van het onderzoek met ten hoogste drie dagen worden verlengd."
+  },
+  {
+    "q": "Welke autoriteit is bevoegd om een bevel tot bewaring af te geven?",
+    "a": [
+      "De officier van justitie.",
+      "De hulpofficier van justitie.",
+      "De rechter-commissaris.",
+      "De raadkamer van de rechtbank."
+    ],
+    "c": 2,
+    "exp": "Artikel 63 Sv.\n\nHet bevel tot bewaring wordt gegeven door de rechter-commissaris op vordering van de officier van justitie."
+  },
+  {
+    "q": "Wat is een vereiste voor de toepassing van voorlopige hechtenis volgens artikel 67 Sv?",
+    "a": [
+      "Er moet sprake zijn van een verdenking van een overtreding.",
+      "Er moet sprake zijn van ernstige bezwaren tegen de verdachte.",
+      "De verdachte moet op heterdaad zijn betrapt.",
+      "De verdachte moet een bekentenis hebben afgelegd."
+    ],
+    "c": 1,
+    "exp": "Artikel 67 lid 3 Sv.\n\nEen bevel tot voorlopige hechtenis kan alleen worden gegeven indien uit feiten of omstandigheden blijkt van ernstige bezwaren tegen de verdachte."
+  },
+  {
+    "q": "Welk criterium formuleerde de Hoge Raad in het arrest 'Hollende kleurling' omtrent het verdachte-begrip?",
+    "a": [
+      "Het wegrennen bij het zien van politie levert altijd een redelijk vermoeden van schuld op.",
+      "Algemene kenmerken en de enkele omstandigheid van het hard weglopen zijn onvoldoende voor een redelijk vermoeden van schuld.",
+      "Een redelijk vermoeden van schuld mag enkel gebaseerd zijn op een heterdaadsituatie.",
+      "De bekendheid van een locatie als drugshandelplaats maakt iedereen die daar loopt tot verdachte."
+    ],
+    "c": 1,
+    "exp": "Hof Amsterdam 3 juni 1977, NJ 1978/601 (Hollende man van kleur).\n\nEr is geen redelijk vermoeden van schuld als een getinte man hard komt aanlopen uit de richting van een als drugscafé bekendstaande horecagelegenheid. De agenten hadden de man niet staande mogen houden."
+  },
+  {
+    "q": "Wanneer moet volgens artikel 29 lid 2 Sv de cautie worden gegeven?",
+    "a": [
+      "Direct bij de staandehouding, ongeacht of er vragen worden gesteld.",
+      "Voorafgaand aan het verhoor van een verdachte.",
+      "Pas op het moment dat de verdachte een bekentenis wil afleggen.",
+      "Alleen als de verdachte wordt bijgestaan door een raadsman."
+    ],
+    "c": 1,
+    "exp": "Artikel 29 lid 2 Sv.\n\nVoor het verhoor wordt aan de verdachte medegedeeld dat hij niet tot antwoorden verplicht is."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest 'Plastic boodschappentasje' over het moment van de cautie?",
+    "a": [
+      "De cautie moet worden gegeven zodra een opsporingsambtenaar iemand aanspreekt.",
+      "De cautie moet worden gegeven als er vragen worden gesteld aan een bij de politie bekend persoon.",
+      "Er is pas sprake van een verhoorsituatie die de cautie vereist nadat uit antwoorden een redelijk vermoeden van schuld ontstaat.",
+      "Het niet geven van de cautie leidt altijd tot niet-ontvankelijkheid van het Openbaar Ministerie."
+    ],
+    "c": 2,
+    "exp": "HR 29 september 1981, NJ 1982/258 (Plastic boodschappentasje).\n\nDe man kon pas na zijn antwoord dat hij de boeken had gestolen worden aangemerkt als verdachte. Vóór dat antwoord hoefde nog geen cautie te worden gegeven."
+  },
+  {
+    "q": "Wat bepaalt het arrest 'Braak bij binnentreden' over het gebruik van bevoegdheden?",
+    "a": [
+      "Een formele bevoegdheid tot binnentreden rechtvaardigt elk gebruik van geweld tegen goederen.",
+      "Het binnentreden door braak is alleen toegestaan bij een verdenking van een misdrijf met 4 jaar gevangenisstraf.",
+      "Ook bij een formele bevoegdheid moeten de beginselen van proportionaliteit en subsidiariteit in acht worden genomen.",
+      "Het forceren van een ruit is nooit toegestaan zonder uitdrukkelijke machtiging van de rechter-commissaris."
+    ],
+    "c": 2,
+    "exp": "HR 12 december 1978, NJ 1979/142 (Braak bij binnentreden).\n\nZelfs bij formele bevoegdheid tot binnentreden moeten het proportionaliteits- en subsidiariteitsbeginsel in acht worden genomen. Dwang mag alleen als dat noodzakelijk is."
+  },
+  {
+    "q": "Wat is het rechtsgevolg van een onrechtmatige doorzoeking volgens het arrest 'Braak bij binnentreden'?",
+    "a": [
+      "Het Openbaar Ministerie wordt niet-ontvankelijk verklaard.",
+      "De straf wordt verminderd.",
+      "Het verkregen bewijs mag niet worden gebruikt.",
+      "De verdachte wordt onmiddellijk in vrijheid gesteld."
+    ],
+    "c": 2,
+    "exp": "HR 12 december 1978, NJ 1979/142 (Braak bij binnentreden).\n\nHet met braak binnentreden zonder eerst andere manieren te proberen is onrechtmatig, waardoor het proces-verbaal waarin het bewijs is opgenomen onrechtmatig is verkregen en niet mag worden gebruikt."
+  },
+  {
+    "q": "Welke voorwaarde geldt voor het onderzoek aan de kleding volgens artikel 56 Sv?",
+    "a": [
+      "Er moet sprake zijn van ernstige bezwaren tegen de verdachte.",
+      "Dit mag alleen worden uitgevoerd door een arts of verpleegkundige.",
+      "Dit is alleen toegestaan bij misdrijven waarop zes jaar gevangenisstraf staat.",
+      "Dit is toegestaan bij het bestaan van ernstige bezwaren bij elk strafbaar feit."
+    ],
+    "c": 0,
+    "exp": "Artikel 56 Sv.\n\nDe officier van justitie of de hulpofficier kan bij het bestaan van ernstige bezwaren tegen de verdachte, in het belang van het onderzoek, bepalen dat deze aan zijn lichaam of kleding zal worden onderzocht."
+  },
+  {
+    "q": "Wat houdt het anticipatiegebod bij voorlopige hechtenis in?",
+    "a": [
+      "De voorlopige hechtenis moet worden bevolen voordat het onderzoek ter terechtzitting begint.",
+      "De voorlopige hechtenis mag niet langer duren dan de te verwachten vrijheidsstraf.",
+      "De voorlopige hechtenis mag alleen worden toegepast bij recidivegevaar.",
+      "De voorlopige hechtenis moet elke 30 dagen opnieuw worden getoetst."
+    ],
+    "c": 1,
+    "exp": "Artikel 67a lid 3 Sv.\n\nEen bevel tot voorlopige hechtenis blijft achterwege of wordt opgeheven wanneer ernstig rekening moet worden gehouden met de mogelijkheid dat aan de verdachte geen vrijheidsbenemende straf zal worden opgelegd of dat deze korter zal zijn dan de duur van de voorlopige hechtenis."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest 'Verhoor' (HR 6 november 2018) over de definitie van een verhoor?",
+    "a": [
+      "Een enkele vraag over de aanwezigheid van een hennepkwekerij geldt niet als verhoor.",
+      "Vragen aan een aangehouden verdachte over zijn betrokkenheid bij een strafbaar feit vormen een verhoor.",
+      "Er is pas sprake van een verhoor als de verdachte in een verhoorkamer op het bureau wordt ondervraagd.",
+      "Vragen gesteld tijdens een huiszoeking vallen buiten de definitie van verhoor en vereisen geen cautie."
+    ],
+    "c": 1,
+    "exp": "HR 6 november 2018, NJ 2019/309 (Verhoor).\n\nEr is sprake van een verhoor indien door de politie aan een aangehouden verdachte gestelde vragen betrekking hebben op diens betrokkenheid bij een strafbaar feit ten aanzien waarvan hij als verdachte is aangemerkt."
+  },
+  {
+    "q": "Welk criterium uit het 'Zeedijk'-arrest (Damrak) mag meewegen voor een redelijk vermoeden van schuld?",
+    "a": [
+      "De huidskleur van de verdachte in combinatie met de locatie.",
+      "De politie-ervaring en bekendheid met de locatie als plaats van drugshandel.",
+      "Het enkele feit dat iemand wegrent bij het zien van politie.",
+      "Een anonieme tip zonder enige verificatie."
+    ],
+    "c": 1,
+    "exp": "HR 6 december 1983, NJ 1984/442 (Zeedijk).\n\nEen redelijk vermoeden van schuld mag worden gebaseerd op concrete feiten en omstandigheden, waarbij ook de ervaring van de opsporingsambtenaren en de bekendheid met de locatie een rol speelt."
+  },
+  {
+    "q": "Wanneer is volgens artikel 126g Sv stelselmatige observatie toegestaan?",
+    "a": [
+      "Bij verdenking van elk strafbaar feit.",
+      "Bij verdenking van een misdrijf.",
+      "Alleen bij verdenking van een misdrijf met een gevangenisstraf van 4 jaar of meer.",
+      "Alleen met toestemming van de rechter-commissaris."
+    ],
+    "c": 1,
+    "exp": "Artikel 126g Sv.\n\nIn geval van verdenking van een misdrijf kan de officier van justitie in het belang van het onderzoek bevelen dat stelselmatig observatie plaatsvindt."
+  },
+  {
+    "q": "Wat is het doel van de inbeslagneming volgens artikel 94 Sv?",
+    "a": [
+      "Het bestraffen van de verdachte voordat de rechter uitspraak doet.",
+      "De waarheidsvinding, de verbeurdverklaring of de onttrekking aan het verkeer.",
+      "Het veiligstellen van de kosten van het strafproces.",
+      "Het compenseren van het slachtoffer door directe overdracht."
+    ],
+    "c": 1,
+    "exp": "Artikel 94 Sv.\n\nVatbaar voor inbeslagneming zijn alle voorwerpen die kunnen dienen om de waarheid aan de dag te brengen of om wederrechtelijk verkregen voordeel, verbeurdverklaring of onttrekking aan het verkeer aan te tonen."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest 'Geweld bij burgeraanhouding'?",
+    "a": [
+      "Een burger mag nooit geweld gebruiken bij een aanhouding.",
+      "Geweld is toegestaan mits proportioneel en subsidiair, waardoor geen sprake is van wederrechtelijke aanranding.",
+      "Elk geweld door een burger levert een strafbaar feit op, maar kan worden geëxcuseerd door noodweer.",
+      "Alleen professionele beveiligers mogen geweld gebruiken bij een aanhouding."
+    ],
+    "c": 1,
+    "exp": "HR 5 maart 2019, NJ 2019/124 (Geweld bij burgeraanhouding).\n\nDe burger mag geweld gebruiken, maar alleen als dit noodzakelijk is, getoetst aan de eisen van proportionaliteit en subsidiariteit. Hierdoor is geen sprake van een wederrechtelijke aanranding."
+  },
+  {
+    "q": "Wat is de maximale duur van de gevangenhouding volgens artikel 66 Sv?",
+    "a": [
+      "30 dagen.",
+      "60 dagen.",
+      "90 dagen.",
+      "104 dagen."
+    ],
+    "c": 2,
+    "exp": "Artikel 66 lid 1 Sv.\n\nHet bevel tot gevangenhouding is van kracht gedurende een door de rechtbank te bepalen termijn van ten hoogste negentig dagen."
+  },
+  {
+    "q": "Wie heeft de bevoegdheid om een bevel tot gevangenhouding te geven?",
+    "a": [
+      "De officier van justitie.",
+      "De rechter-commissaris.",
+      "De rechtbank.",
+      "Het gerechtshof."
+    ],
+    "c": 2,
+    "exp": "Artikel 65 Sv.\n\nDe rechtbank kan op vordering van de officier van justitie de gevangenhouding van de verdachte bevelen."
+  },
+  {
+    "q": "Wat hield de uitspraak in de zaak 'Checkpoint II' in met betrekking tot de ontvankelijkheid van het OM?",
+    "a": [
+      "Het OM is altijd ontvankelijk, ongeacht gedoogbeleid.",
+      "Het OM is niet-ontvankelijk als er sprake is van gerechtvaardigd vertrouwen door toe te rekenen uitlatingen of gedragingen.",
+      "Het enkele uitblijven van handhaving leidt automatisch tot niet-ontvankelijkheid.",
+      "Gemeentelijk beleid bindt het OM volledig, waardoor vervolging uitgesloten is."
+    ],
+    "c": 1,
+    "exp": "HR 24 juni 2016, NJ 2016/388 (Checkpoint II).\n\nNiet-ontvankelijkheid volgt als het OM uitlatingen heeft gedaan die bij de verdachte het gerechtvaardigd vertrouwen hebben opgewekt dat hij niet zal worden vervolgd. Het enkele uitblijven van handhaving is niet genoeg."
+  },
+  {
+    "q": "Wat is pseudo-koop volgens artikel 126i Sv?",
+    "a": [
+      "Het kopen van goederen door een burger om bewijs te verzamelen.",
+      "Het afnemen van goederen of diensten door een opsporingsambtenaar van de verdachte.",
+      "Het infiltreren in een criminele organisatie zonder strafbare feiten te plegen.",
+      "Het in beslag nemen van goederen die te koop worden aangeboden."
+    ],
+    "c": 1,
+    "exp": "Artikel 126i Sv.\n\nIn geval van verdenking van een misdrijf kan de officier van justitie bevelen dat een opsporingsambtenaar goederen afneemt van of diensten verleent aan de verdachte."
+  },
+  {
+    "q": "Welke eis stelt artikel 126h Sv aan infiltratie?",
+    "a": [
+      "Er moet sprake zijn van een verdenking van een misdrijf waarvoor voorlopige hechtenis is toegelaten.",
+      "Er moet sprake zijn van een verdenking van een misdrijf als omschreven in artikel 67 lid 1 Sv dat gezien zijn aard of de samenhang met andere misdrijven een ernstige inbreuk op de rechtsorde maakt.",
+      "Er moet toestemming zijn van de minister van Justitie.",
+      "De infiltrant mag geen strafbare feiten plegen tijdens de infiltratie."
+    ],
+    "c": 1,
+    "exp": "Artikel 126h Sv.\n\nInfiltratie kan worden bevolen in geval van verdenking van een misdrijf als omschreven in artikel 67 lid 1 Sv dat gezien zijn aard of de samenhang met andere misdrijven een ernstige inbreuk op de rechtsorde maakt."
+  },
+  {
+    "q": "Wat wordt in het arrest 'Dynamische verkeerscontrole' bepaald over de bevoegdheid tot controle?",
+    "a": [
+      "Controlebevoegdheden mogen nooit worden gebruikt voor opsporingsdoeleinden.",
+      "Het gebruik van controlebevoegdheden is toegestaan, zolang deze mede zijn uitgeoefend ter controle van de naleving van verkeersvoorschriften.",
+      "Dynamische verkeerscontroles zijn per definitie onrechtmatig wegens strijd met het discriminatieverbod.",
+      "Alleen bij een concrete verdenking van een misdrijf mag een voertuig worden gecontroleerd."
+    ],
+    "c": 1,
+    "exp": "HR 1 november 2016, NJ 2017/84 (Dynamische verkeerscontrole).\n\nZolang een controlebevoegdheid mede is uitgeoefend ter controle van de naleving van de verkeersvoorschriften, is die uitoefening in beginsel rechtmatig, ook als er opsporingshandelingen uit voortvloeien."
+  },
+  {
+    "q": "Wat is het gevolg als een opsporingsambtenaar op grond van de Drankwet binnentreedt en een wapen vindt, volgens het arrest 'Geweer'?",
+    "a": [
+      "Het wapen mag niet in beslag worden genomen omdat de ambtenaar voor de Drankwet kwam.",
+      "De ambtenaar mag ter plaatse voortgezette opsporingsbevoegdheden (zoals inbeslagname) uitoefenen.",
+      "De ambtenaar moet de woning verlaten en terugkomen met een huiszoekingsbevel.",
+      "Het bewijs is onrechtmatig verkregen en moet worden uitgesloten."
+    ],
+    "c": 1,
+    "exp": "HR 2 december 1935, NJ 1936/250 (Geweerarrest).\n\nEen ambtenaar die rechtmatig in de woning aanwezig is, mag ook andere opsporingsbevoegdheden uitoefenen, mits hij daartoe wettelijk bevoegd is. Voortgezette toepassing is toegestaan."
+  },
+  {
+    "q": "Welke rol heeft de rechter-commissaris in het voorbereidend onderzoek?",
+    "a": [
+      "Het leiden van het opsporingsonderzoek en het aansturen van de politie.",
+      "Het oordelen over de schuldvraag voordat de zaak naar de zitting gaat.",
+      "Het houden van toezicht op de rechtmatigheid en de voortgang van het opsporingsonderzoek.",
+      "Het vertegenwoordigen van de verdachte tijdens verhoren."
+    ],
+    "c": 2,
+    "exp": "Artikel 170 Sv.\n\nDe rechter-commissaris is belast met toezichthoudende bevoegdheden ten aanzien van het opsporingsonderzoek."
+  },
+  {
+    "q": "Wanneer begint de termijn van zes uur voor het ophouden voor onderzoek te lopen?",
+    "a": [
+      "Op het moment van de staandehouding op straat.",
+      "Op het moment van de feitelijke aanhouding.",
+      "Op het moment dat de verdachte op het politiebureau aankomt.",
+      "Vanaf het moment dat het bevel tot ophouden voor onderzoek wordt gegeven of de aankomst op de plaats van verhoor."
+    ],
+    "c": 3,
+    "exp": "Artikel 61 Sv.\n\nDe termijn voor het ophouden voor onderzoek vangt aan op het moment dat het bevel daartoe is gegeven, dan wel vanaf het moment van aankomst op de plaats van verhoor."
+  }
+]

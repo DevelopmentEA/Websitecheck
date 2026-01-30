@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Casus: Karel en Mo hebben het plan opgevat om een wisselkantoor te overvallen. Zij rijden in een gestolen auto naar het kantoor en parkeren vlakbij de ingang. Ze hebben pruiken op, en in de auto liggen geladen vuurwapens en handboeien. Ze laten de motor draaien en wachten op het moment dat de bankbediende arriveert. Een oplettende voorbijganger belt de politie, die arriveert voordat Karel en Mo de auto hebben verlaten. De officier van justitie vervolgt hen voor poging tot afpersing. Beoordeel of er sprake is van een strafbare poging.",
+    "sample": "Issue: Is er sprake van een begin van uitvoering in de zin van art. 45 Sr?\n\nRule: Voor een strafbare poging is vereist dat de gedragingen naar hun uiterlijke verschijningsvorm moeten worden beschouwd als te zijn gericht op de voltooiing van het misdrijf (HR Uitzendbureau Cito). Het enkele rijden naar de locatie en daar wachten in de auto is onvoldoende (HR Grenswisselkantoor).\n\nApplication: Karel en Mo hebben de auto niet verlaten en hebben geen handeling verricht die direct gericht is op de voltooiing van de afpersing, zoals het betreden van het pand of het bedreigen van personeel. Het wachten in de auto is naar uiterlijke verschijningsvorm nog geen begin van uitvoering.\n\nConclusion: Er is geen sprake van een strafbare poging, slechts van voorbereidingshandelingen.",
+    "checklist": [
+      "Art. 45 Sr: begin van uitvoering vereist",
+      "Criterium: gedraging naar uiterlijke verschijningsvorm",
+      "Auto niet verlaten is geen uitvoering",
+      "Conclusie: geen strafbare poging bewezen"
+    ],
+    "exp": "Analyse gebaseerd op HR Grenswisselkantoor. Zolang de verdachten de auto niet verlaten en geen directe uitvoeringshandeling verrichten, is de grens tussen voorbereiding en poging niet overschreden, ongeacht hun intentie en hulpmiddelen."
+  },
+  {
+    "q": "Casus: Hassan wil een terroristische aanslag plegen. De politie valt zijn woning binnen en vindt plattegronden van overheidsgebouwen, een hoeveelheid kunstmest, batterijen en een handleiding voor het maken van bommen. De materialen zijn op zichzelf legaal en de constructie die Hassan probeert te maken wordt door deskundigen als 'primitief en onbeholpen' bestempeld. Hassan stelt dat er geen sprake kan zijn van strafbare voorbereiding omdat de middelen ondeugdelijk zijn. Beoordeel dit verweer.",
+    "sample": "Issue: Kunnen primitieve of onbeholpen middelen worden aangemerkt als voorbereidingsmiddelen in de zin van art. 46 Sr?\n\nRule: Voor strafbare voorbereiding moet worden beoordeeld of de voorwerpen naar hun uiterlijke verschijningsvorm ten tijde van het handelen dienstig kunnen zijn voor het misdadige doel (HR Samir A.). Hierbij mag niet worden geabstraheerd van de misdadige intentie van de verdachte.\n\nApplication: Hoewel de middelen primitief zijn, had Hassan de intentie een aanslag te plegen. In het licht van dit misdadige doel waren de voorwerpen naar hun uiterlijke verschijningsvorm dienstig om dat doel te bereiken.\n\nConclusion: Het verweer faalt; er is sprake van strafbare voorbereiding.",
+    "checklist": [
+      "Art. 46 Sr: middelen bestemd tot",
+      "Criterium: uiterlijke verschijningsvorm dienstig voor doel",
+      "Misdadige intentie kleurt de middelen",
+      "Primitieve aard staat strafbaarheid niet in de weg"
+    ],
+    "exp": "Analyse gebaseerd op HR Samir A. De Hoge Raad bepaalde dat ook onbeholpen middelen strafbaar zijn als voorbereidingsmiddel, zolang ze in combinatie met de intentie dienstig kunnen zijn voor het criminele doel."
+  },
+  {
+    "q": "Casus: Peter wil zijn zakenpartner Johan doden. Hij snijdt de remkabels van Johans auto door. Een uur later krijgt hij spijt. Hij belt Johan op en zegt: \"Stap niet in je auto, de remmen zijn kapot!\" Johan, die net op het punt stond te vertrekken, controleert de auto en rijdt niet weg. Peter wordt vervolgd voor poging tot moord. Hij beroept zich op vrijwillige terugtred. Beoordeel de slaagkans van dit beroep.",
+    "sample": "Issue: Is vrijwillige terugtred mogelijk bij een voltooide poging?\n\nRule: Bij een voltooide poging is voor een geslaagd beroep op vrijwillige terugtred (art. 46b Sr) een zodanig optreden van de verdachte vereist dat dit naar aard en tijdstip geschikt is om het intreden van het gevolg te beletten (HR Kopje Onder/HR Remkabel).\n\nApplication: Peter heeft de uitvoeringshandeling voltooid (kabels doorgesneden). Door tijdig te bellen en Johan effectief te waarschuwen voordat het ongeval plaatsvond, heeft hij een handeling verricht die geschikt was om het gevolg te voorkomen. Het gevolg is uitgebleven door zijn wil.\n\nConclusion: Het beroep op vrijwillige terugtred slaagt.",
+    "checklist": [
+      "Art. 46b Sr: vrijwillige terugtred",
+      "Voltooide poging vereist actief ingrijpen",
+      "Optreden geschikt om gevolg te beletten",
+      "Terugtred is tijdig en effectief geweest"
+    ],
+    "exp": "Analyse gebaseerd op HR Remkabel en HR Kopje Onder. Bij een voltooide poging (alles gedaan wat nodig was) moet de dader actief het gevolg voorkomen. Een tijdige en effectieve waarschuwing volstaat."
+  },
+  {
+    "q": "Casus: Willem wil zijn rivaal neersteken. Hij wacht hem op en steekt met grote kracht een mes in diens buik. Het slachtoffer overleeft de aanval ongedeerd omdat hij toevallig, zonder dat Willem dit wist, een steekwerend vest onder zijn trui droeg. De advocaat van Willem betoogt dat er sprake is van een absoluut ondeugdelijke poging en dus straffeloosheid, omdat het doden met een mes door een vest onmogelijk was. Beoordeel dit verweer.",
+    "sample": "Issue: Is er sprake van een strafbare poging of een straffeloze absoluut ondeugdelijke poging?\n\nRule: Er is sprake van een strafbare relatief ondeugdelijke poging als het middel of object slechts in het specifieke geval ondeugdelijk is. Een bijzondere omstandigheid zoals een vest neemt niet weg dat steken normaal een aanmerkelijke kans op de dood oplevert (HR Steken in de buik).\n\nApplication: Het steken met een mes in de buik is naar zijn aard geschikt om de dood te veroorzaken. Het vest is een toevallige omstandigheid die het in dit specifieke geval verhinderde (relatieve ondeugdelijkheid).\n\nConclusion: Het verweer faalt; er is sprake van een strafbare poging tot doodslag.",
+    "checklist": [
+      "Onderscheid relatieve en absolute ondeugdelijkheid",
+      "Steken levert normaal aanmerkelijke kans op",
+      "Vest is toevallige, relatieve belemmering",
+      "Conclusie: strafbare poging (art. 45 Sr)"
+    ],
+    "exp": "Analyse gebaseerd op HR Steken in de buik. De Hoge Raad oordeelde dat een onvoorziene bescherming (zoals een vest) de poging relatief ondeugdelijk maakt, wat strafbaar blijft."
+  },
+  {
+    "q": "Casus: Twee mannen bellen aan bij een juwelier. Ze dragen bivakmutsen die hun gezicht deels bedekken en hebben een doorgeladen pistool in hun hand. Ze hebben ook een lege sporttas bij zich. De juwelier vertrouwt het niet, doet niet open en belt 112. De mannen worden gearresteerd. De verdediging stelt dat er slechts sprake is van voorbereiding, omdat ze de winkel niet hebben betreden en geen geweld hebben gebruikt. Beoordeel of sprake is van een poging.",
+    "sample": "Issue: Vormt het aanbellen in deze uitmonstering een begin van uitvoering (art. 45 Sr)?\n\nRule: Gedragingen worden als begin van uitvoering aangemerkt als zij naar hun uiterlijke verschijningsvorm moeten worden beschouwd als te zijn gericht op de voltooiing van het misdrijf (HR Uitzendbureau Cito).\n\nApplication: Het aanbellen met gezichtsbedekking, een vuurwapen en een tas voor de buit is een handeling die naar uiterlijke verschijningsvorm direct gericht is op de overval. Er is geen sprake meer van louter voorbereiding.\n\nConclusion: Er is sprake van een strafbare poging tot overval.",
+    "checklist": [
+      "Art. 45 Sr: begin van uitvoering",
+      "Criterium: uiterlijke verschijningsvorm Cito",
+      "Gedraging direct gericht op voltooiing",
+      "Conclusie: strafbare poging bewezen"
+    ],
+    "exp": "Analyse gebaseerd op HR Uitzendbureau Cito. De combinatie van vermomming, wapen en de handeling van het aanbellen maakt dat de fase van voorbereiding is overgegaan in uitvoering."
+  }
+]

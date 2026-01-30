@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Welk fundamenteel beginsel bepaalt dat de Europese Unie enkel handelt binnen de grenzen van de bevoegdheden die haar door de lidstaten in de Verdragen zijn toegedeeld?",
+    "a": [
+      "Het subsidiariteitsbeginsel",
+      "Het evenredigheidsbeginsel",
+      "Het attributiebeginsel",
+      "Het loyaliteitsbeginsel"
+    ],
+    "c": 2,
+    "exp": "Art. 5 lid 2 VEU.\n\nKrachtens het beginsel van bevoegdheidstoedeling (attributiebeginsel) handelt de Unie enkel binnen de grenzen van de bevoegdheden die haar door de lidstaten in de Verdragen zijn toegedeeld om de daarin bepaalde doelstellingen te verwezenlijken. Bevoegdheden die niet aan de Unie zijn toegedeeld, blijven bij de lidstaten."
+  },
+  {
+    "q": "Welke categorie van bevoegdheden is van toepassing op de douane-unie, de vaststelling van mededingingsregels voor de interne markt en het monetair beleid voor de lidstaten die de euro hebben?",
+    "a": [
+      "De exclusieve bevoegdheid",
+      "De gedeelde bevoegdheid",
+      "De ondersteunende bevoegdheid",
+      "De coördinerende bevoegdheid"
+    ],
+    "c": 0,
+    "exp": "Art. 3 lid 1 VWEU.\n\nDe Unie beschikt over een exclusieve bevoegdheid op de genoemde gebieden (douane-unie, mededingingsregels interne markt, monetair beleid euro-landen). In deze gevallen kan alleen de Unie wetgevend optreden en bindende handelingen vaststellen."
+  },
+  {
+    "q": "Wat is het rechtsgevolg wanneer de Europese Unie gebruikmaakt van haar bevoegdheid op een gebied dat valt onder de gedeelde bevoegdheden zoals omschreven in artikel 4 VWEU?",
+    "a": [
+      "De lidstaten verliezen permanent elke bevoegdheid om op dat terrein nog op te treden.",
+      "De lidstaten mogen hun bevoegdheid uitoefenen voor zover de Unie de hare niet uitoefent.",
+      "De lidstaten mogen uitsluitend optreden indien de Unie hen daartoe expliciet machtigt.",
+      "De lidstaten behouden altijd voorrang boven de regelgeving van de Europese Unie."
+    ],
+    "c": 1,
+    "exp": "Art. 2 lid 2 VWEU.\n\nWanneer de Verdragen aan de Unie een met de lidstaten gedeelde bevoegdheid toedelen, kunnen de Unie en de lidstaten op dat gebied wetgevend optreden en bindende handelingen vaststellen. De lidstaten oefenen hun bevoegdheid uit voor zover de Unie de hare niet heeft uitgeoefend."
+  },
+  {
+    "q": "Op welke beleidsterreinen heeft de Europese Unie de bevoegdheid om op te treden om het optreden van de lidstaten te ondersteunen, te coördineren of aan te vullen, zonder dat harmonisatie van de wettelijke bepalingen van de lidstaten is toegestaan?",
+    "a": [
+      "Interne markt, sociaal beleid en consumentenbescherming.",
+      "Onderwijs, beroepsopleiding, jongeren en sport.",
+      "Douane-unie, monetair beleid en handelspolitiek.",
+      "Landbouw, visserij en milieu."
+    ],
+    "c": 1,
+    "exp": "Art. 6 VWEU jo. art. 2 lid 5 VWEU.\n\nOp de gebieden genoemd in artikel 6 VWEU, waaronder onderwijs, beroepsopleiding, jongeren en sport, is de Unie bevoegd om op te treden om het optreden van de lidstaten te ondersteunen, te coördineren of aan te vullen. Hierbij is harmonisatie van de wettelijke en bestuursrechtelijke bepalingen van de lidstaten uitgesloten."
+  },
+  {
+    "q": "Welk beginsel vereist dat de Europese Unie op gebieden die niet onder haar exclusieve bevoegdheid vallen, slechts optreedt indien en voor zover de doelstellingen van het overwogen optreden niet voldoende door de lidstaten kunnen worden verwezenlijkt?",
+    "a": [
+      "Het gelijkheidsbeginsel",
+      "Het subsidiariteitsbeginsel",
+      "Het rechtszekerheidsbeginsel",
+      "Het loyaliteitsbeginsel"
+    ],
+    "c": 1,
+    "exp": "Art. 5 lid 3 VEU.\n\nHet subsidiariteitsbeginsel bepaalt dat de Unie op gebieden die niet onder haar exclusieve bevoegdheid vallen, slechts optreedt indien de doelstellingen niet voldoende door de lidstaten op centraal, regionaal of lokaal niveau kunnen worden verwezenlijkt, maar vanwege de omvang of gevolgen beter door de Unie kunnen worden bereikt."
+  },
+  {
+    "q": "Wat houdt het evenredigheidsbeginsel in zoals vastgelegd in artikel 5 lid 4 VEU met betrekking tot het optreden van de Europese Unie?",
+    "a": [
+      "De inhoud en de vorm van het optreden van de Unie gaan niet verder dan wat nodig is om de doelstellingen van de Verdragen te verwezenlijken.",
+      "De Unie mag uitsluitend optreden wanneer alle lidstaten hiermee unaniem hebben ingestemd in de Raad.",
+      "De Unie moet altijd kiezen voor het zwaarste wetgevingsinstrument om maximale harmonisatie te garanderen.",
+      "De kosten van het optreden van de Unie mogen nooit hoger zijn dan de baten voor de lidstaten."
+    ],
+    "c": 0,
+    "exp": "Art. 5 lid 4 VEU.\n\nKrachtens het evenredigheidsbeginsel gaan de inhoud en de vorm van het optreden van de Unie niet verder dan wat nodig is om de doelstellingen van de Verdragen te verwezenlijken."
+  },
+  {
+    "q": "Welk juridisch instrument, zoals gedefinieerd in artikel 288 VWEU, heeft een algemene strekking, is verbindend in al zijn onderdelen en is rechtstreeks toepasselijk in elke lidstaat?",
+    "a": [
+      "De richtlijn",
+      "Het besluit",
+      "Het advies",
+      "De verordening"
+    ],
+    "c": 3,
+    "exp": "Art. 288 VWEU.\n\nEen verordening heeft een algemene strekking. Zij is verbindend in al haar onderdelen en is rechtstreeks toepasselijk in elke lidstaat. Dit onderscheidt de verordening van de richtlijn, die omzetting in nationaal recht behoeft."
+  },
+  {
+    "q": "Wat is het kenmerkende juridische gevolg van een richtlijn volgens artikel 288 VWEU ten aanzien van de lidstaten waarvoor zij bestemd is?",
+    "a": [
+      "Zij is verbindend ten aanzien van het te bereiken resultaat, maar laat de keuze van vorm en middelen aan de nationale instanties.",
+      "Zij is verbindend in al haar onderdelen en direct toepasselijk zonder enige tussenkomst van nationale wetgeving.",
+      "Zij is uitsluitend een niet-bindende aanbeveling die lidstaten naar eigen inzicht kunnen opvolgen of negeren.",
+      "Zij is verbindend voor individuele burgers en bedrijven direct vanaf de datum van publicatie in het Publicatieblad."
+    ],
+    "c": 0,
+    "exp": "Art. 288 VWEU.\n\nEen richtlijn is verbindend ten aanzien van het te bereiken resultaat voor elke lidstaat waarvoor zij bestemd is, doch aan de nationale instanties wordt de bevoegdheid gelaten vorm en middelen te kiezen."
+  },
+  {
+    "q": "Wanneer de Europese Commissie een wetgevingshandeling wil voorstellen, welke motiveringsplicht rust er dan op de instelling volgens het VWEU?",
+    "a": [
+      "Er moet worden verwezen naar de goedkeuring van de nationale parlementen.",
+      "Er moet worden verwezen naar de financiële kosten van de handeling.",
+      "Er moet worden verwezen naar de voorstellen, initiatieven of aanbevelingen.",
+      "Er moet worden verwezen naar de adviezen van de Raad van Europa."
+    ],
+    "c": 2,
+    "exp": "Art. 296 VWEU.\n\nRechtshandelingen worden met redenen omkleed en verwijzen naar de voorstellen, initiatieven, aanbevelingen, verzoeken of adviezen waarin de Verdragen voorzien. Een toereikende rechtsbasis en motivering (raison d’être) zijn vereist."
+  },
+  {
+    "q": "Welke rol vervult de Europese Commissie in de gewone wetgevingsprocedure zoals beschreven in artikel 294 VWEU?",
+    "a": [
+      "Zij heeft het exclusieve recht om wetgeving uiteindelijk vast te stellen en te publiceren.",
+      "Zij dient een voorstel in bij het Europees Parlement en de Raad.",
+      "Zij heeft een louter adviserende rol zonder recht van initiatief.",
+      "Zij controleert achteraf of de wetgeving correct is aangenomen."
+    ],
+    "c": 1,
+    "exp": "Art. 294 lid 2 VWEU.\n\nDe Commissie dient een voorstel in bij het Europees Parlement en de Raad. Dit is de eerste stap in de gewone wetgevingsprocedure, waarbij de Commissie in beginsel het exclusieve initiatiefrecht heeft (behoudens specifieke uitzonderingen)."
+  },
+  {
+    "q": "Wat houdt de 'flexibiliteitsclausule' van artikel 352 VWEU in met betrekking tot de bevoegdheden van de Europese Unie?",
+    "a": [
+      "De Unie mag op elk beleidsterrein optreden zolang het Europees Parlement hiermee instemt.",
+      "De Raad kan met eenparigheid van stemmen maatregelen vaststellen als de verdragen niet in de bevoegdheid voorzien, maar optreden wel noodzakelijk is voor de doelstellingen.",
+      "De lidstaten mogen eenzijdig afwijken van EU-wetgeving als hun nationale belang ernstig wordt geschaad.",
+      "De Commissie kan zelfstandig bevoegdheden uitbreiden zonder tussenkomst van de Raad of het Parlement."
+    ],
+    "c": 1,
+    "exp": "Art. 352 lid 1 VWEU.\n\nIndien een optreden van de Unie noodzakelijk blijkt om een van de doelstellingen van de Verdragen te verwezenlijken, en de Verdragen niet in de daartoe vereiste bevoegdheden voorzien, stelt de Raad met eenparigheid van stemmen, op voorstel van de Commissie en na goedkeuring door het Europees Parlement, de passende maatregelen vast."
+  },
+  {
+    "q": "In de zaak *Slowakije en Hongarije v. Raad* oordeelde het Hof van Justitie over de geldigheid van een besluit tot herplaatsing van asielzoekers. Wat was het oordeel over de aard van dit besluit?",
+    "a": [
+      "Het besluit was een wetgevingshandeling en had de gewone procedure moeten volgen.",
+      "Het besluit was ongeldig omdat nationale parlementen niet waren geraadpleegd.",
+      "Het besluit was een niet-wetgevingshandeling gebaseerd op art. 78 lid 3 VWEU.",
+      "Het besluit was strijdig met het evenredigheidsbeginsel en werd vernietigd."
+    ],
+    "c": 2,
+    "exp": "Arrest *Slowakije en Hongarije v. Raad* (C-643/15 en C-647/15).\n\nHet Hof oordeelde dat het bestreden besluit een niet-wetgevingshandeling was, vastgesteld op basis van art. 78 lid 3 VWEU. Daarom hoefde de gewone wetgevingsprocedure niet te worden gevolgd en was betrokkenheid van nationale parlementen niet vereist."
+  },
+  {
+    "q": "Wat is volgens artikel 290 VWEU het doel van een gedelegeerde handeling?",
+    "a": [
+      "Het vaststellen van uniforme voorwaarden voor de uitvoering van bindende uniehandelingen.",
+      "Het wijzigen of aanvullen van niet-essentiële onderdelen van een wetgevingshandeling.",
+      "Het creëren van nieuwe primaire wetgeving op gebieden van exclusieve bevoegdheid.",
+      "Het harmoniseren van nationale wetgeving op het gebied van strafrecht."
+    ],
+    "c": 1,
+    "exp": "Art. 290 lid 1 VWEU.\n\nEen wetgevingshandeling kan aan de Commissie de bevoegdheid overdragen niet-wetgevingshandelingen van algemene strekking vast te stellen ter aanvulling of wijziging van bepaalde niet-essentiële onderdelen van de wetgevingshandeling."
+  },
+  {
+    "q": "Onder welke voorwaarden kunnen uitvoeringshandelingen worden vastgesteld door de Commissie volgens artikel 291 VWEU?",
+    "a": [
+      "Wanneer er behoefte is aan uniforme voorwaarden voor de uitvoering van juridisch bindende handelingen van de Unie.",
+      "Wanneer het Europees Parlement de Commissie hiertoe een direct mandaat geeft buiten de wetgevingsprocedure om.",
+      "Wanneer de lidstaten unaniem besluiten hun uitvoerende bevoegdheid over te dragen aan de Unie.",
+      "Wanneer het gaat om essentiële onderdelen van wetgeving die niet via de gewone procedure kunnen worden geregeld."
+    ],
+    "c": 0,
+    "exp": "Art. 291 lid 2 VWEU.\n\nIndien er behoefte is aan uniforme voorwaarden voor de uitvoering van juridisch bindende handelingen van de Unie, verlenen die handelingen uitvoeringsbevoegdheden aan de Commissie (of in specifieke gevallen aan de Raad)."
+  },
+  {
+    "q": "Welke meerderheid is vereist in de Raad voor de goedkeuring van wetgeving in de gewone wetgevingsprocedure, tenzij de Verdragen anders bepalen?",
+    "a": [
+      "Gewone meerderheid",
+      "Absolute meerderheid",
+      "Gekwalificeerde meerderheid",
+      "Eenparigheid van stemmen"
+    ],
+    "c": 2,
+    "exp": "Art. 16 lid 3 VEU.\n\nTenzij in de Verdragen anders is bepaald, besluit de Raad met gekwalificeerde meerderheid van stemmen. Dit is de standaardregel in de gewone wetgevingsprocedure."
+  },
+  {
+    "q": "Wat houdt het 'pre-emption' (blokkerings) effect in bij gedeelde bevoegdheden?",
+    "a": [
+      "Lidstaten mogen geen regels meer stellen zodra de Unie haar bevoegdheid heeft uitgeoefend.",
+      "De Unie mag niet optreden zolang de lidstaten reeds wetgeving hebben aangenomen.",
+      "De Commissie moet elk nationaal wetsvoorstel vooraf goedkeuren.",
+      "Het Hof van Justitie toetst nationale wetten preventief aan het Unierecht."
+    ],
+    "c": 0,
+    "exp": "Art. 2 lid 2 VWEU.\n\nDe lidstaten oefenen hun bevoegdheid uit voor zover de Unie de hare niet heeft uitgeoefend. Zodra de Unie haar bevoegdheid uitoefent, verliezen de lidstaten de bevoegdheid om op dat specifieke gebied zelf nog op te treden (blokkeringseffect)."
+  },
+  {
+    "q": "Welk vereiste stelt artikel 297 VWEU aan de inwerkingtreding van wetgevingshandelingen?",
+    "a": [
+      "Zij moeten worden goedgekeurd door alle nationale parlementen.",
+      "Zij moeten worden bekendgemaakt in het Publicatieblad van de Europese Unie.",
+      "Zij moeten worden bekrachtigd door het Hof van Justitie.",
+      "Zij treden onmiddellijk in werking na de eindstemming in de Raad."
+    ],
+    "c": 1,
+    "exp": "Art. 297 lid 1 VWEU.\n\nWetgevingshandelingen worden bekendgemaakt in het Publicatieblad van de Europese Unie. Zij treden in werking op de datum die zij bepalen of, bij gebreke daarvan, op de twintigste dag na die van hun bekendmaking."
+  },
+  {
+    "q": "Wat wordt in de context van de begrotingsprocedure verstaan onder 'eigen middelenbesluiten' (art. 311 VWEU)?",
+    "a": [
+      "Besluiten die de uitgaven van de Unie voor een specifiek jaar limiteren.",
+      "Besluiten die de salarissen van de EU-ambtenaren vaststellen.",
+      "Besluiten die de inkomstenbronnen van de Unie vaststellen, zoals contributies.",
+      "Besluiten die de Commissie machtigen om leningen aan te gaan."
+    ],
+    "c": 2,
+    "exp": "Art. 311 VWEU.\n\nDe Unie voorziet zich van de middelen die nodig zijn om haar doelstellingen te verwezenlijken. De begroting wordt, onverminderd andere inkomsten, volledig uit eigen middelen gefinancierd. De Raad stelt de bepalingen vast die op het stelsel van eigen middelen van de Unie van toepassing zijn."
+  },
+  {
+    "q": "In de *Quotumzaak* (Slowakije & Hongarije v. Raad) betoogden de lidstaten dat artikel 78 lid 3 VWEU ongeschikt was als rechtsbasis. Wat oordeelde het Hof over de aard van de maatregelen onder dit artikel?",
+    "a": [
+      "Het artikel staat enkel niet-bindende aanbevelingen toe.",
+      "Het artikel vereist unanimiteit, wat in deze zaak ontbrak.",
+      "Het artikel biedt een rechtsgrondslag voor tijdelijke, bindende maatregelen in noodsituaties.",
+      "Het artikel mag alleen worden gebruikt na instemming van alle nationale parlementen."
+    ],
+    "c": 2,
+    "exp": "Arrest *Slowakije en Hongarije v. Raad* (C-643/15 en C-647/15).\n\nHet Hof oordeelde dat art. 78 lid 3 VWEU de Raad de bevoegdheid geeft om voorlopige maatregelen vast te stellen ten gunste van lidstaten die in een noodsituatie verkeren. Deze maatregelen kunnen bindend zijn en afwijken van wetgevingshandelingen, mits ze tijdelijk zijn."
+  },
+  {
+    "q": "Welk type rechtshandeling is volgens artikel 288 VWEU verbindend in al zijn onderdelen, maar indien de adressaten worden vermeld, alleen voor hen verbindend?",
+    "a": [
+      "De verordening",
+      "De richtlijn",
+      "Het besluit",
+      "De aanbeveling"
+    ],
+    "c": 2,
+    "exp": "Art. 288 VWEU.\n\nEen besluit is verbindend in al zijn onderdelen. Indien de adressaten worden vermeld, is het alleen voor hen verbindend. Dit onderscheidt het van een verordening (algemene strekking) en een richtlijn (gericht tot lidstaten met resultaatverplichting)."
+  },
+  {
+    "q": "Welke instelling heeft in de gewone wetgevingsprocedure (art. 294 VWEU) het recht om amendementen voor te stellen op het voorstel van de Commissie in de eerste lezing?",
+    "a": [
+      "Het Europees Parlement",
+      "Het Hof van Justitie",
+      "De Europese Centrale Bank",
+      "Het Comité van de Regio's"
+    ],
+    "c": 0,
+    "exp": "Art. 294 lid 3 VWEU.\n\nHet Europees Parlement stelt zijn standpunt in eerste lezing vast en deelt dit mee aan de Raad. Dit standpunt kan amendementen op het voorstel van de Commissie bevatten."
+  },
+  {
+    "q": "Wat is de functie van een 'bemiddelingscomité' in de gewone wetgevingsprocedure?",
+    "a": [
+      "Het adviseren van de Commissie voordat een voorstel wordt ingediend.",
+      "Het oplossen van geschillen tussen lidstaten over de implementatie van een richtlijn.",
+      "Het bereiken van overeenstemming over een gemeenschappelijke ontwerptekst tussen Raad en Parlement indien de Raad de amendementen van het Parlement in tweede lezing niet goedkeurt.",
+      "Het toetsen van de subsidiariteit van een voorstel namens de nationale parlementen."
+    ],
+    "c": 2,
+    "exp": "Art. 294 lid 10 VWEU.\n\nHet bemiddelingscomité heeft tot taak binnen zes weken na zijn bijeenroeping met een gekwalificeerde meerderheid van stemmen van de leden van de Raad of hun vertegenwoordigers en met een meerderheid van stemmen van de leden die het Europees Parlement vertegenwoordigen, overeenstemming te bereiken over een gemeenschappelijke ontwerptekst."
+  },
+  {
+    "q": "Onder welke categorie van het secundair Unierecht vallen 'soft law' instrumenten zoals resoluties en richtsnoeren?",
+    "a": [
+      "Bindende wetgevingshandelingen",
+      "Bindende uitvoeringshandelingen",
+      "Niet-bindende rechtshandelingen",
+      "Primaire rechtsbronnen"
+    ],
+    "c": 2,
+    "exp": "Art. 288 VWEU.\n\nAanbevelingen en adviezen zijn niet verbindend. Soft law, zoals resoluties en richtsnoeren, valt buiten de bindende categorieën (verordening, richtlijn, besluit) en heeft geen directe bindende werking, hoewel het interpretatieve waarde kan hebben."
+  },
+  {
+    "q": "Wat impliceert het 'specialiteitsbeginsel' ten aanzien van internationale organisaties, zoals bevestigd in de *Nuclear Weapons*-opinion?",
+    "a": [
+      "Organisaties hebben alle bevoegdheden die staten ook hebben.",
+      "Organisaties hebben uitsluitend bevoegdheden die verbonden zijn aan het doel waarvoor de organisatie is opgericht.",
+      "Organisaties mogen hun bevoegdheden naar eigen inzicht uitbreiden.",
+      "Organisaties zijn niet gebonden aan internationaal recht."
+    ],
+    "c": 1,
+    "exp": "ICJ *Nuclear Weapons* Advisory Opinion, par. 25.\n\nInternationale organisaties worden beheerst door het specialiteitsbeginsel. Zij beschikken over de bevoegdheden die hun door de staten die hen hebben opgericht, zijn toegekend, welke begrensd zijn door de functies en doelen van de organisatie."
+  },
+  {
+    "q": "Welk artikel vormt de rechtsbasis voor de vaststelling van de jaarlijkse begroting van de Europese Unie?",
+    "a": [
+      "Artikel 294 VWEU",
+      "Artikel 314 VWEU",
+      "Artikel 352 VWEU",
+      "Artikel 263 VWEU"
+    ],
+    "c": 1,
+    "exp": "Art. 314 VWEU.\n\nHet Europees Parlement en de Raad stellen de jaarlijkse begroting van de Unie vast volgens een bijzondere wetgevingsprocedure, zoals omschreven in artikel 314 VWEU."
+  },
+  {
+    "q": "Wat was de conclusie van het Hof in *Slowakije en Hongarije v. Raad* met betrekking tot de noodzakelijkheid van de herplaatsingsmaatregel?",
+    "a": [
+      "De maatregel was niet noodzakelijk omdat de instroom van migranten al afnam.",
+      "De maatregel was niet noodzakelijk omdat vrijwillige herplaatsing effectiever zou zijn.",
+      "De maatregel was noodzakelijk gezien de ernst van de noodsituatie in Griekenland en Italië.",
+      "De maatregel was disproportioneel en daarom niet noodzakelijk."
+    ],
+    "c": 2,
+    "exp": "Arrest *Slowakije en Hongarije v. Raad* (C-643/15 en C-647/15).\n\nHet Hof oordeelde dat de maatregel geschikt en noodzakelijk was om de aanzienlijke druk op de asielstelsels van Griekenland en Italië te verlichten, gelet op de ernst van de noodsituatie en het doel van solidariteit."
+  },
+  {
+    "q": "Welke instellingen fungeren gezamenlijk als de 'begrotingsautoriteit' van de Unie?",
+    "a": [
+      "De Europese Raad en de Commissie",
+      "De Europese Centrale Bank en de Rekenkamer",
+      "Het Europees Parlement en de Raad",
+      "De Commissie en het Europees Parlement"
+    ],
+    "c": 2,
+    "exp": "Art. 314 VWEU.\n\nHet Europees Parlement en de Raad stellen de jaarlijkse begroting van de Unie vast. Zij vormen samen de begrotingsautoriteit die beslist over de uitgaven van de Unie."
+  },
+  {
+    "q": "Wat is het wezenlijke verschil tussen een 'wetgevingshandeling' en een 'niet-wetgevingshandeling' in de zin van het VWEU?",
+    "a": [
+      "Wetgevingshandelingen zijn altijd verordeningen, niet-wetgevingshandelingen zijn richtlijnen.",
+      "Wetgevingshandelingen worden aangenomen via een wetgevingsprocedure; niet-wetgevingshandelingen zijn gedelegeerde of uitvoeringshandelingen.",
+      "Wetgevingshandelingen zijn bindend; niet-wetgevingshandelingen zijn nooit bindend.",
+      "Wetgevingshandelingen worden aangenomen door de Europese Raad; niet-wetgevingshandelingen door de Commissie."
+    ],
+    "c": 1,
+    "exp": "Art. 289 lid 3 VWEU.\n\nRechtshandelingen die volgens een wetgevingsprocedure worden aangenomen, zijn wetgevingshandelingen. Handelingen vastgesteld op basis van art. 290 (gedelegeerd) of art. 291 (uitvoering) zijn niet-wetgevingshandelingen."
+  },
+  {
+    "q": "Welke rol speelt de Raad in de bijzondere wetgevingsprocedure waarin het Parlement slechts geraadpleegd wordt?",
+    "a": [
+      "De Raad is verplicht het advies van het Parlement op te volgen.",
+      "De Raad moet wachten op het advies maar mag daarvan afwijken.",
+      "De Raad mag besluiten zonder het advies van het Parlement af te wachten.",
+      "De Raad heeft geen beslissingsbevoegdheid; die ligt bij de Commissie."
+    ],
+    "c": 1,
+    "exp": "Art. 289 lid 2 VWEU.\n\nIn de bijzondere wetgevingsprocedure stelt de Raad de handeling vast met raadpleging van het Europees Parlement. Raadpleging is een geldigheidsvereiste, maar het advies is juridisch niet bindend voor de Raad."
+  },
+  {
+    "q": "Wat bepaalt artikel 2 lid 5 VWEU met betrekking tot de ondersteunende bevoegdheden van de Unie?",
+    "a": [
+      "De Unie mag op deze gebieden volledige harmonisatie van wetgeving opleggen.",
+      "De Unie mag bindende rechtshandelingen vaststellen, maar harmonisatie van de wettelijke bepalingen van de lidstaten is uitgesloten.",
+      "De Unie heeft op deze gebieden geen enkele bevoegdheid om bindende besluiten te nemen.",
+      "De Unie mag alleen aanbevelingen doen en geen verordeningen of richtlijnen vaststellen."
+    ],
+    "c": 1,
+    "exp": "Art. 2 lid 5 VWEU.\n\nOp bepaalde gebieden is de Unie bevoegd om het optreden van de lidstaten te ondersteunen, te coördineren of aan te vullen, zonder dat zij daarbij in de plaats van de bevoegdheid van de lidstaten treedt. Juridisch bindende handelingen van de Unie op deze gebieden kunnen geen harmonisatie van de wettelijke en bestuursrechtelijke bepalingen van de lidstaten inhouden."
+  }
+]

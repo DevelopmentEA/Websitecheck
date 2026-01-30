@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Casus: Karel organiseert een overval op een juwelier. Hij regelt de plattegronden, kraakt de beveiligingscode en instrueert zijn handlangers B en C precies wat ze moeten doen. Tijdens de uitvoering zit Karel thuis op de bank. B en C voeren de overval uit en worden gepakt. Karel wordt vervolgd als medepleger van de overval. Zijn advocaat stelt dat Karel vrijgesproken moet worden van medeplegen omdat hij niet fysiek aanwezig was op de plaats delict.\n\nBeoordeel of het verweer van de advocaat kans van slagen heeft.",
+    "sample": "Issue: Kan Karel worden aangemerkt als medepleger van de overval ondanks zijn fysieke afwezigheid tijdens de uitvoering?\n\nRule: Voor medeplegen (art. 47 Sr) is een nauwe en bewuste samenwerking vereist. Volgens de Hoge Raad is fysieke aanwezigheid niet noodzakelijk indien de intellectuele en/of materiële bijdrage van de verdachte van voldoende gewicht is (HR Containerdiefstal; HR Overzichtsarrest Medeplegen).\n\nApplication: Karel heeft de overval georganiseerd, plattegronden geregeld, de code gekraakt en instructies gegeven. Zijn rol was sturend en onmisbaar voor het slagen van het plan. Er is sprake van een wezenlijke bijdrage en nauwe samenwerking, ondanks zijn afwezigheid.\n\nConclusion: Het verweer faalt; Karel kan als medepleger worden veroordeeld.",
+    "checklist": [
+      "Fysieke aanwezigheid is geen vereiste voor medeplegen",
+      "Vereiste van nauwe en bewuste samenwerking",
+      "Intellectuele of materiële bijdrage moet van voldoende gewicht zijn",
+      "Karel leverde een wezenlijke en sturende bijdrage"
+    ],
+    "exp": "Analyse gebaseerd op HR Containerdiefstal en HR Overzichtsarrest Medeplegen. De kern is dat een organisator (intellectuele dader) medepleger kan zijn zonder uitvoeringshandelingen te verrichten, mits de samenwerking nauw en de bijdrage wezenlijk is."
+  },
+  {
+    "q": "Casus: Tijdens de jaarwisseling vernielen drie jongens een bushokje met zwaar vuurwerk. Simon staat erbij te kijken. Hij juicht de actie toe en lacht hardop wanneer het glas springt, maar hij gooit zelf niets en helpt ook niet fysiek. Hij distantieert zich echter niet van de groep. Simon wordt vervolgd voor het medeplegen van de vernieling.\n\nBeoordeel of er sprake is van medeplegen.",
+    "sample": "Issue: Levert de aanwezigheid, het instemmen en het niet-distantiëren van Simon voldoende grond op voor het medeplegen van vernieling?\n\nRule: Voor medeplegen is een wezenlijke bijdrage aan het delict vereist. Het louter aanwezig zijn, instemmen met en zich niet distantiëren van de vernieling is onvoldoende voor de kwalificatie medeplegen (HR Vlinderbom).\n\nApplication: Simon was aanwezig en stemde in met de vernieling door te lachen, maar hij leverde geen materiële of intellectuele bijdrage van enig gewicht. Er is geen sprake van een nauwe en bewuste samenwerking gericht op de uitvoering.\n\nConclusion: Er is geen sprake van medeplegen; Simon dient te worden vrijgesproken.",
+    "checklist": [
+      "Voor medeplegen is een wezenlijke bijdrage vereist",
+      "Loutere aanwezigheid en instemming is onvoldoende",
+      "Het niet-distantiëren levert op zichzelf geen medeplegen op",
+      "Simon leverde geen bijdrage aan de uitvoering"
+    ],
+    "exp": "Analyse gebaseerd op HR Vlinderbom. De grens van medeplegen wordt hier bewaakt: passieve aanwezigheid en morele steun zonder actieve bijdrage is onvoldoende voor het daderschap van medeplegen."
+  },
+  {
+    "q": "Casus: Mark geeft zijn vriend Johan een stiletto. Johan heeft gezegd dat hij het mes nodig heeft om zijn rivaal 'bang te maken' en te bedreigen. Mark weet dat Johan opvliegend is. Tijdens de confrontatie steekt Johan de rivaal in zijn been, wat zwaar lichamelijk letsel oplevert. Mark wordt vervolgd voor medeplichtigheid aan zware mishandeling. Hij stelt dat zijn opzet slechts gericht was op bedreiging, niet op het toebrengen van letsel.\n\nBeoordeel de strafbaarheid van Mark.",
+    "sample": "Issue: Heeft Mark als medeplichtige (voorwaardelijk) opzet gehad op het gronddelict (zware mishandeling), hoewel hij dacht dat het bij bedreiging zou blijven?\n\nRule: Bij medeplichtigheid hoeft het opzet niet gericht te zijn op de precieze wijze van uitvoering. Voldoende is dat het misdrijf voldoende verband houdt met wat de medeplichtige voor ogen had of dat hij de aanmerkelijke kans op het gevolg heeft aanvaard (HR Geef het mes!).\n\nApplication: Door een wapen te verschaffen aan een opvliegend persoon, heeft Mark de aanmerkelijke kans aanvaard dat dit wapen daadwerkelijk gebruikt zou worden voor geweld. Tussen bedreiging met een mes en steken bestaat voldoende verband.\n\nConclusion: Mark is strafbaar voor medeplichtigheid aan zware mishandeling.",
+    "checklist": [
+      "Medeplichtigheid vereist (voorwaardelijk) opzet op het gronddelict",
+      "Opzet hoeft niet gericht te zijn op exacte uitvoering",
+      "Voldoende verband tussen beoogde bedreiging en uiteindelijke mishandeling",
+      "Mark aanvaardde de kans op gebruik van het mes"
+    ],
+    "exp": "Analyse gebaseerd op HR Geef het mes!. Het opzet van de medeplichtige hoeft niet naadloos aan te sluiten op de daadwerkelijke uitvoering, zolang er geen sprake is van een wezenlijke afwijking."
+  },
+  {
+    "q": "Casus: Anna en Bea beroven samen een tankstation. Ze spreken af geen geweld te gebruiken. Als de politie arriveert, springen ze samen op een scooter, bestuurd door Anna. Bea zit achterop. Tijdens de wilde vlucht rijdt Anna een voetganger dood. Bea wordt vervolgd voor het medeplegen van het verkeersongeval met dodelijke afloop. Bea verweert zich: zij bestuurde de scooter niet.\n\nBeoordeel de strafbaarheid van Bea voor het medeplegen van het verkeersongeval.",
+    "sample": "Issue: Kan passagier Bea als medepleger aansprakelijk worden gesteld voor het dodelijke ongeval veroorzaakt door bestuurder Anna tijdens de vlucht?\n\nRule: Medeplegen kan zich uitstrekken tot de vluchtfase indien de gevaarlijke vlucht besloten lag in het gezamenlijke plan (nauwe en bewuste samenwerking), waarbij de risico's op de koop toe zijn genomen (HR Nijmeegse scooter).\n\nApplication: De gevaarlijke vlucht was een voorzienbaar gevolg van de gezamenlijke overval. Door samen te vluchten na de overval, bleef de nauwe samenwerking bestaan en aanvaardde Bea de risico's van het rijgedrag van Anna.\n\nConclusion: Bea is strafbaar als medepleger van het verkeersongeval.",
+    "checklist": [
+      "Medeplegen kan zich uitstrekken tot de vluchtfase",
+      "Gevaarlijke vlucht lag besloten in het overvalplan",
+      "Nauwe en bewuste samenwerking duurde voort tijdens vlucht",
+      "Bea aanvaardde risico's van het rijgedrag"
+    ],
+    "exp": "Analyse gebaseerd op HR Nijmeegse scooter. De nauwe en bewuste samenwerking bij de overval straalt af op de vlucht, waardoor ook de passagier medepleger wordt van de gevolgen van de vlucht."
+  },
+  {
+    "q": "Casus: Peter is in zijn eigen woning aanwezig terwijl zijn vrienden een man zwaar mishandelen. De man is door toedoen van de groep weerloos gemaakt. Peter doet zelf niets, maar grijpt ook niet in en stuurt niemand weg, terwijl hij ziet dat het slachtoffer ernstig gewond raakt. Hij wordt vervolgd voor medeplichtigheid aan de mishandeling. Peter stelt dat hij passief was en dus niets strafbaars deed.\n\nBeoordeel of Peter strafbaar is als medeplichtige.",
+    "sample": "Issue: Kan het niet-ingrijpen (nalaten) van Peter in zijn eigen woning worden aangemerkt als medeplichtigheid aan de mishandeling?\n\nRule: Passiviteit kan medeplichtigheid opleveren indien op de verdachte een rechtsplicht rustte om in te grijpen of het misdrijf te beletten (HR Honden Peter).\n\nApplication: Peter was in zijn eigen woning en wist dat het slachtoffer weerloos was. Op hem rustte een rechtsplicht om het geweld te stoppen of de daders weg te sturen. Door dit na te laten, heeft hij het misdrijf bevorderd.\n\nConclusion: Peter is strafbaar voor medeplichtigheid door nalaten.",
+    "checklist": [
+      "Passiviteit kan medeplichtigheid opleveren bij rechtsplicht",
+      "Peter had zeggenschap in zijn eigen woning",
+      "Slachtoffer was weerloos en afhankelijk van ingrijpen",
+      "Nalaten heeft het misdrijf bevorderd"
+    ],
+    "exp": "Analyse gebaseerd op HR Honden Peter. Passieve aanwezigheid wordt strafbare medeplichtigheid wanneer er een rechtsplicht tot handelen bestaat (bijvoorbeeld als eigenaar van de woning bij een weerloos slachtoffer)."
+  }
+]

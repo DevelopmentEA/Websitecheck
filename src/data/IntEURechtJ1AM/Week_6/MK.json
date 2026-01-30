@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Wat vormt de kern van het oordeel van het Hof van Justitie in de zaak Van Gend en Loos met betrekking tot de aard van de Europese Gemeenschap?",
+    "a": [
+      "De Gemeenschap vormt een nieuwe rechtsorde in het volkenrecht waarbinnen alleen lidstaten rechten en plichten hebben.",
+      "De Gemeenschap vormt een nieuwe rechtsorde in het volkenrecht waarbinnen ook particulieren rechtstreeks rechten kunnen ontlenen.",
+      "De Gemeenschap is een traditionele internationale organisatie waarbij nationale soevereiniteit volledig intact blijft zonder beperkingen.",
+      "De Gemeenschap creëert uitsluitend verplichtingen voor lidstaten die vervolgens door nationale wetgeving aan burgers worden doorgegeven."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Van Gend en Loos.\n\nDe Gemeenschap vormt in het volkenrecht een nieuwe rechtsorde ten bate waarvan de staten hun soevereiniteit hebben begrensd en waarbinnen niet slechts lidstaten, maar ook hun onderdanen gerechtigd zijn."
+  },
+  {
+    "q": "Welk rechtsgevolg heeft het arrest Costa/ENEL voor de verhouding tussen nationaal recht en Europees recht?",
+    "a": [
+      "Nationaal recht heeft altijd voorrang op Europees recht indien de nationale wet van latere datum is dan de Europese bepaling.",
+      "Europees recht heeft voorrang op nationaal recht, behalve als het gaat om fundamentele beginselen van de nationale grondwet.",
+      "Europees recht heeft voorrang op nationaal recht, en latere nationale wettelijke voorschriften kunnen niet boven het gemeenschapsrecht worden gesteld.",
+      "Nationaal recht en Europees recht zijn gelijkwaardig, waarbij de rechter per geval beslist welke regel voorrang heeft op basis van billijkheid."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Costa/ENEL.\n\nHet verdragsrecht, dat uit een autonome bron voortvloeit, kan door geen enkel nationaal voorschrift opzij worden gezet zonder zijn karakter te verliezen. Een later nationaal wettelijk voorschrift kan niet boven de rechtsorde van de Gemeenschap worden gesteld."
+  },
+  {
+    "q": "Wat dient een nationale rechter te doen indien een nationale wet in strijd is met een rechtstreeks werkende bepaling van Unierecht, volgens het arrest Simmenthal II?",
+    "a": [
+      "De rechter moet de nationale wet buiten toepassing laten zonder te wachten op vernietiging door een constitutioneel hof.",
+      "De rechter moet de zaak aanhouden en een prejudiciële vraag stellen aan het constitutionele hof over de geldigheid van de wet.",
+      "De rechter moet de nationale wet toepassen totdat de nationale wetgever deze formeel heeft ingetrokken of gewijzigd.",
+      "De rechter moet de nationale wet toepassen, tenzij de Europese Commissie de lidstaat in gebreke heeft gesteld."
+    ],
+    "c": 0,
+    "exp": "HvJ EU Simmenthal II.\n\nDe nationale rechter heeft de plicht om bepalingen die in strijd zijn met het Unierecht buiten toepassing te laten, zonder dat hij de voorafgaande opheffing hiervan via wetgeving of een constitutionele procedure hoeft te vragen of af te wachten."
+  },
+  {
+    "q": "Welke voorwaarden stelde het Hof in Van Gend en Loos oorspronkelijk vast voor directe werking van verdragsbepalingen?",
+    "a": [
+      "De bepaling moet in een richtlijn staan en de implementatietermijn moet zijn verstreken.",
+      "De bepaling moet duidelijk zijn, onvoorwaardelijk, en geen nadere handelingen van lidstaten vereisen.",
+      "De bepaling moet zijn goedgekeurd door het nationale parlement en gepubliceerd in de staatscourant.",
+      "De bepaling moet horizontale werking hebben en plichten opleggen aan particulieren onderling."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Van Gend en Loos.\n\nVoor directe werking moet de bepaling helder geformuleerd zijn, onvoorwaardelijk zijn en geen wettelijke tussenkomst van de lidstaten behoeven."
+  },
+  {
+    "q": "Wat houdt het verbod op omgekeerde verticale werking in, zoals bevestigd in het arrest Kolpinghuis?",
+    "a": [
+      "Een particulier kan zich nooit tegenover de staat beroepen op een richtlijn die niet tijdig is omgezet.",
+      "De staat kan zich niet tegenover een particulier beroepen op een richtlijn die nog niet in nationaal recht is omgezet.",
+      "Een particulier kan zich niet tegenover een andere particulier beroepen op een richtlijn die niet is omgezet.",
+      "De staat kan zich niet tegenover een andere lidstaat beroepen op een verdragsbepaling die niet is nageleefd."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Kolpinghuis.\n\nEen richtlijn kan niet uit zichzelf verplichtingen opleggen aan particulieren. De staat kan zich daarom niet ten laste van particulieren beroepen op een bepaling van een richtlijn die niet in nationaal recht is omgezet."
+  },
+  {
+    "q": "Kan een particulier zich in een geschil met een andere particulier beroepen op een niet-omgezette richtlijn (horizontale werking)?",
+    "a": [
+      "Ja, mits de bepaling duidelijk en onvoorwaardelijk is en de implementatietermijn is verstreken.",
+      "Ja, maar alleen als de richtlijn rechten toekent die fundamenteel zijn vastgelegd in het Handvest.",
+      "Nee, een richtlijn kan uit zichzelf geen verplichtingen opleggen aan particulieren en heeft enkel verticale werking.",
+      "Nee, tenzij de nationale rechter besluit dat de richtlijn van dwingend recht is voor de openbare orde."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Faccini Dori.\n\nRichtlijnen hebben geen horizontale werking. Een particulier kan zich niet beroepen op een richtlijn tegenover een andere particulier, omdat een richtlijn alleen verplichtingen schept voor lidstaten."
+  },
+  {
+    "q": "Welke verplichting rust er op de nationale rechter volgens het beginsel van richtlijnconforme interpretatie?",
+    "a": [
+      "De rechter moet het nationale recht buiten toepassing laten zodra het afwijkt van een Europese richtlijn.",
+      "De rechter moet het nationale recht uitleggen in het licht van de bewoordingen en het doel van de richtlijn.",
+      "De rechter moet een schadevergoeding toekennen aan de particulier als de richtlijn niet is omgezet.",
+      "De rechter moet de zaak direct doorverwijzen naar het Hof van Justitie voor een prejudiciële beslissing."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Dominguez.\n\nDe nationale rechter moet de nationale wetgeving zoveel mogelijk uitleggen in het licht van de bewoordingen en het doel van de richtlijn om het beoogde resultaat te bereiken."
+  },
+  {
+    "q": "Wat is volgens het arrest Delana Wells het juridische gevolg wanneer een beroep op een richtlijn tegen de staat nadelige gevolgen heeft voor derden?",
+    "a": [
+      "Dit is niet toegestaan, omdat richtlijnen geen verplichtingen voor particulieren kunnen scheppen.",
+      "Dit is toegestaan, zolang het gaat om een verplichting van de staat en geen directe plicht voor de derde.",
+      "Dit is alleen toegestaan als de derde partij vooraf schadeloos wordt gesteld door de overheid.",
+      "Dit is niet toegestaan, tenzij de richtlijn expliciet voorziet in horizontale werking tussen burgers."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Delana Wells.\n\nEen burger mag zich tegen de staat beroepen op een richtlijn, ook als dit nadelige gevolgen heeft voor derden. Zolang het geen directe verplichtingen aan die derden oplegt, is dit geen ongeoorloofde horizontale werking."
+  },
+  {
+    "q": "In het arrest Bauer oordeelde het Hof dat een werknemer zich tegenover een particuliere werkgever kon beroepen op het recht op betaalde vakantie. Waarom slaagde dit beroep ondanks het verbod op horizontale werking van richtlijnen?",
+    "a": [
+      "Omdat de werkgever in kwestie als een overheidsorgaan (emanatie van de staat) werd beschouwd.",
+      "Omdat het recht op betaalde vakantie ook is vastgelegd in het Handvest, dat wel horizontale directe werking kan hebben.",
+      "Omdat de nationale rechter de nationale wetgeving contra legem heeft geïnterpreteerd.",
+      "Omdat de richtlijn in kwestie uitzonderlijk wel horizontale werking had gekregen door een speciaal besluit."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Bauer.\n\nHet recht op jaarlijkse vakantie met behoud van loon is verankerd in art. 31 lid 2 van het Handvest. Deze bepaling heeft directe werking, ook in geschillen tussen particulieren, waardoor het verbod op horizontale werking van richtlijnen via het Handvest wordt omzeild."
+  },
+  {
+    "q": "Wat is de eerste stap die een nationale rechter moet nemen bij een conflict tussen nationaal recht en een richtlijnbepaling, volgens het arrest Dominguez?",
+    "a": [
+      "Onderzoeken of de bepaling rechtstreekse werking heeft.",
+      "Onderzoeken of staatsaansprakelijkheid van toepassing is.",
+      "Proberen het nationale recht richtlijnconform uit te leggen.",
+      "Het nationale recht direct buiten toepassing laten."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Dominguez.\n\nDe nationale rechter moet eerst proberen de nationale wet zó uit te leggen dat die in lijn is met de richtlijn (richtlijnconforme interpretatie). Pas als dat niet lukt, wordt gekeken naar rechtstreekse werking of staatsaansprakelijkheid."
+  },
+  {
+    "q": "Welke beperking stelt het arrest Kolpinghuis aan de verplichting tot richtlijnconforme interpretatie in strafzaken?",
+    "a": [
+      "Interpretatie mag niet leiden tot strafrechtelijke aansprakelijkheid op basis van een niet-omgezette richtlijn.",
+      "Interpretatie mag alleen plaatsvinden als de verdachte daar uitdrukkelijk mee heeft ingestemd.",
+      "Interpretatie is verboden als de richtlijn nog niet is gepubliceerd in het Publicatieblad van de EU.",
+      "Interpretatie mag enkel worden toegepast als dit leidt tot een lichtere straf voor de verdachte."
+    ],
+    "c": 0,
+    "exp": "HvJ EU Kolpinghuis.\n\nDe verplichting tot richtlijnconforme interpretatie wordt begrensd door algemene rechtsbeginselen, met name het rechtszekerheidsbeginsel en het verbod op terugwerkende kracht. Het mag niet leiden tot strafrechtelijke aansprakelijkheid op basis van enkel een richtlijn."
+  },
+  {
+    "q": "Welke van de volgende elementen is GEEN vereiste voor staatsaansprakelijkheid volgens het Francovich-arrest?",
+    "a": [
+      "De geschonden rechtsregel moet rechten toekennen aan particulieren.",
+      "De inhoud van de rechten moet op basis van de richtlijn duidelijk zijn.",
+      "Er moet sprake zijn van opzet of grove schuld aan de zijde van de lidstaat.",
+      "Er moet een causaal verband zijn tussen de schending en de geleden schade."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Francovich.\n\nDe voorwaarden zijn: 1) de richtlijn kent rechten toe aan particulieren, 2) de inhoud is bepaalbaar, en 3) er is een causaal verband. Opzet of grove schuld is geen vereiste volgens Francovich."
+  },
+  {
+    "q": "Wat verduidelijkt het arrest Brasserie du Pêcheur & Factortame ten aanzien van staatsaansprakelijkheid?",
+    "a": [
+      "Staatsaansprakelijkheid geldt alleen als de nationale wetgever de schending heeft veroorzaakt.",
+      "Staatsaansprakelijkheid geldt voor elke schending van EU-recht, ongeacht welk staatsorgaan verantwoordelijk is.",
+      "Staatsaansprakelijkheid is beperkt tot gevallen waarin een richtlijn niet tijdig is omgezet.",
+      "Staatsaansprakelijkheid vervalt als de particulier geen beroep heeft gedaan op directe werking."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Brasserie du Pêcheur & Factortame.\n\nHet beginsel van staatsaansprakelijkheid geldt voor alle gevallen van schending van het gemeenschapsrecht door een lidstaat, ongeacht het orgaan van de lidstaat (inclusief de wetgever) dat de schending heeft begaan."
+  },
+  {
+    "q": "Wanneer is er sprake van een 'voldoende gekwalificeerde schending' in de context van staatsaansprakelijkheid?",
+    "a": [
+      "Wanneer de lidstaat de grenzen van zijn discretionaire bevoegdheid kennelijk en ernstig heeft miskend.",
+      "Wanneer de lidstaat een richtlijn niet binnen de gestelde termijn van twee jaar heeft geïmplementeerd.",
+      "Wanneer de schending van het EU-recht heeft geleid tot financiële schade voor meer dan één particulier.",
+      "Wanneer het Hof van Justitie de lidstaat eerder al heeft veroordeeld voor een soortgelijke overtreding."
+    ],
+    "c": 0,
+    "exp": "HvJ EU Brasserie du Pêcheur & Factortame.\n\nEen schending is voldoende gekwalificeerd als er sprake is van een kennelijke en ernstige miskenning van de grenzen waarbinnen de discretionaire bevoegdheid dient te blijven."
+  },
+  {
+    "q": "Wat impliceert het 'loyaliteitsbeginsel' (art. 4 lid 3 VEU) voor nationale rechters volgens Simmenthal II?",
+    "a": [
+      "Zij moeten prejudiciële vragen stellen bij elke twijfel over de uitleg van EU-recht.",
+      "Zij moeten wachten op instructies van het nationale constitutionele hof bij strijdigheid.",
+      "Zij moeten elke nationale bepaling die strijdig is met Unierecht direct buiten toepassing laten.",
+      "Zij moeten de nationale wetgever verzoeken om strijdige wetgeving in te trekken."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Simmenthal II.\n\nOp grond van het loyaliteitsbeginsel zijn nationale rechters verplicht de rechten uit het Unierecht te beschermen en elke strijdige nationale bepaling buiten toepassing te laten."
+  },
+  {
+    "q": "Waarom kon mevrouw Faccini Dori zich niet rechtstreeks op de richtlijn beroepen tegenover het taleninstituut?",
+    "a": [
+      "Omdat de richtlijn niet duidelijk en onvoorwaardelijk genoeg was geformuleerd.",
+      "Omdat het taleninstituut een particuliere partij was en richtlijnen geen horizontale werking hebben.",
+      "Omdat de implementatietermijn van de richtlijn op dat moment nog niet was verstreken.",
+      "Omdat het contract was gesloten op een station, wat buiten de werkingssfeer viel."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Faccini Dori.\n\nParticulieren kunnen zich niet beroepen op een richtlijn tegenover een andere particulier (geen horizontale werking) als de lidstaat de richtlijn niet heeft omgezet."
+  },
+  {
+    "q": "Wat is het gevolg als conforme interpretatie en directe werking beide niet mogelijk zijn om een recht uit een richtlijn te effectueren?",
+    "a": [
+      "De particulier heeft geen enkele mogelijkheid meer om zijn recht te halen.",
+      "De particulier kan een klacht indienen bij de Europese Commissie, maar geen rechtszaak starten.",
+      "De particulier kan een vordering tot schadevergoeding instellen tegen de staat wegens schending van EU-recht.",
+      "De nationale rechter moet de nationale wet alsnog contra legem uitleggen om het resultaat te bereiken."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Dominguez.\n\nAls richtlijnconforme interpretatie en rechtstreekse werking niet mogelijk zijn, kan de benadeelde partij schadevergoeding eisen van de staat op grond van het arrest Francovich."
+  },
+  {
+    "q": "Welke beperking geldt voor de nationale rechter bij het toepassen van richtlijnconforme interpretatie?",
+    "a": [
+      "De interpretatie mag niet leiden tot een resultaat dat 'contra legem' is (tegen de wet in).",
+      "De interpretatie mag alleen worden toegepast als de staat partij is in het geding.",
+      "De interpretatie mag niet worden gebruikt in civielrechtelijke geschillen tussen burgers.",
+      "De interpretatie is alleen toegestaan als de richtlijn al volledig is omgezet."
+    ],
+    "c": 0,
+    "exp": "HvJ EU Dominguez.\n\nDe verplichting tot richtlijnconforme interpretatie wordt begrensd door algemene rechtsbeginselen en mag niet dienen als grondslag voor een uitlegging van nationaal recht die contra legem is."
+  },
+  {
+    "q": "In welke verhouding kan een richtlijn wel directe werking hebben indien deze niet tijdig of juist is geïmplementeerd?",
+    "a": [
+      "In horizontale verhoudingen (burger tegen burger).",
+      "In verticale verhoudingen (burger tegen staat).",
+      "In omgekeerde verticale verhoudingen (staat tegen burger).",
+      "In alle bovenstaande verhoudingen."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Faccini Dori.\n\nRichtlijnen kunnen, als ze voldoende duidelijk en onvoorwaardelijk zijn, alleen worden ingeroepen door particulieren tegen de staat (verticale werking)."
+  },
+  {
+    "q": "Wat stelde het Hof in Van Gend en Loos vast over de rol van burgers in de Europese rechtsorde?",
+    "a": [
+      "Burgers zijn slechts indirect betrokken via hun nationale regeringen.",
+      "Burgers zijn subjecten van de nieuwe rechtsorde en kunnen rechtstreeks rechten ontlenen aan het Verdrag.",
+      "Burgers kunnen alleen rechten ontlenen aan verordeningen, niet aan verdragsbepalingen.",
+      "Burgers hebben geen actieve rol, behalve het kiezen van het Europees Parlement."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Van Gend en Loos.\n\nDe Gemeenschap vormt een nieuwe rechtsorde waarbinnen niet slechts de lidstaten, maar ook hun onderdanen gerechtigd zijn. Het gemeenschapsrecht is geëigend rechten te scheppen die zij uit eigen hoofde geldend kunnen maken."
+  },
+  {
+    "q": "Welke rol speelt art. 47 van het Handvest (recht op een doeltreffende voorziening in rechte) in relatie tot doorwerking?",
+    "a": [
+      "Het verplicht lidstaten om nieuwe rechterlijke instanties op te richten voor EU-zaken.",
+      "Het vereist dat nationale rechters EU-rechten effectief beschermen, desnoods door strijdig recht buiten toepassing te laten.",
+      "Het geeft de Europese Commissie de bevoegdheid om nationale vonnissen te vernietigen.",
+      "Het verbiedt nationale rechters om prejudiciële vragen te stellen als de zaak spoedeisend is."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Simmenthal II.\n\nNationale rechters zijn verplicht de rechten die burgers aan het Unierecht ontlenen te beschermen en de volledige werking van die regels te waarborgen."
+  },
+  {
+    "q": "Wat is volgens het arrest Bauer een 'fundamenteel sociaal recht' dat directe werking kan hebben?",
+    "a": [
+      "Het recht op een minimumloon.",
+      "Het recht op staking.",
+      "Het recht op jaarlijkse vakantie met behoud van loon.",
+      "Het recht op bescherming tegen ontslag."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Bauer.\n\nHet recht op jaarlijkse vakantie met behoud van loon (art. 31 lid 2 Handvest) is een fundamenteel sociaal recht dat directe werking heeft, ook in horizontale verhoudingen."
+  },
+  {
+    "q": "Wat houdt de 'omzettingsverplichting' bij richtlijnen in?",
+    "a": [
+      "Lidstaten moeten de richtlijn letterlijk overnemen in de grondwet.",
+      "Lidstaten zijn vrij in de keuze van vorm en middelen, maar moeten het beoogde resultaat bereiken.",
+      "Lidstaten moeten de richtlijn omzetten in een verordening om directe werking te garanderen.",
+      "Lidstaten hoeven niets te doen als de richtlijn voldoende duidelijk is."
+    ],
+    "c": 1,
+    "exp": "Art. 288 VWEU.\n\nEen richtlijn is verbindend ten aanzien van het te bereiken resultaat voor elke lidstaat waarvoor zij bestemd is, doch aan de nationale instanties wordt de bevoegdheid gelaten vorm en middelen te kiezen."
+  },
+  {
+    "q": "Wanneer begint de verplichting voor een nationale rechter om nationaal recht richtlijnconform uit te leggen?",
+    "a": [
+      "Vanaf het moment dat de richtlijn is voorgesteld door de Commissie.",
+      "Vanaf de datum van inwerkingtreding van de richtlijn.",
+      "Pas na het verstrijken van de omzettingstermijn.",
+      "Pas nadat het Hof van Justitie de lidstaat heeft veroordeeld."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Kolpinghuis.\n\nDe verplichting voor de nationale rechter om zich bij de uitleg van nationale regels te laten leiden door de inhoud van een richtlijn geldt vanaf het moment dat de omzettingstermijn is verstreken."
+  },
+  {
+    "q": "Wat is het doel van het stellen van prejudiciële vragen door nationale rechters aan het Hof van Justitie?",
+    "a": [
+      "Om de feiten van de zaak door het Hof te laten vaststellen.",
+      "Om de nationale wetgeving door het Hof te laten vernietigen.",
+      "Om uitleg te krijgen over de interpretatie of geldigheid van het Unierecht.",
+      "Om toestemming te vragen voor het buiten toepassing laten van nationaal recht."
+    ],
+    "c": 2,
+    "exp": "HvJ EU Costa/ENEL.\n\nOp grond van art. 177 EEG-Verdrag (nu 267 VWEU) mag het Hof uitspraak doen over de uitleg van verdragsbepalingen om een uniforme toepassing in alle lidstaten te verzekeren."
+  },
+  {
+    "q": "Welke conclusie trok het Hof in Simmenthal II over de bevoegdheid van lagere rechters?",
+    "a": [
+      "Lagere rechters moeten altijd wachten op het oordeel van de hoogste nationale rechter.",
+      "Lagere rechters zijn ook bevoegd en verplicht om strijdig nationaal recht buiten toepassing te laten.",
+      "Lagere rechters mogen alleen EU-recht toepassen als de partijen daarom vragen.",
+      "Lagere rechters moeten de zaak doorverwijzen naar de wetgever voor aanpassing van de wet."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Simmenthal II.\n\nIedere nationale rechter, aangezocht binnen de grenzen van zijn bevoegdheid, heeft de plicht om het gemeenschapsrecht toe te passen en strijdige nationale bepalingen buiten toepassing te laten."
+  },
+  {
+    "q": "Wat betekent het dat een verordening 'verbindend in al haar onderdelen' is?",
+    "a": [
+      "Dat lidstaten selectief mogen kiezen welke onderdelen ze toepassen.",
+      "Dat de verordening alleen bindend is voor de lidstaten waaraan deze is gericht.",
+      "Dat de verordening als geheel moet worden toegepast en niet onvolledig mag worden uitgevoerd.",
+      "Dat de verordening eerst moet worden omgezet in nationale wetgeving om bindend te zijn."
+    ],
+    "c": 2,
+    "exp": "Art. 288 VWEU.\n\nEen verordening heeft een algemene strekking, is verbindend in al haar onderdelen en is rechtstreeks toepasselijk in elke lidstaat."
+  },
+  {
+    "q": "Waarom is het arrest Van Gend en Loos samen met Costa/ENEL van cruciaal belang voor het Unierecht?",
+    "a": [
+      "Ze bepalen de samenstelling van de Europese Commissie en de Raad.",
+      "Ze zorgen ervoor dat EU-recht effectief werkt door directe werking en voorrang te combineren.",
+      "Ze regelen de procedure voor het uittreden van een lidstaat uit de Unie.",
+      "Ze stellen vast dat nationale grondwetten altijd boven het EU-recht staan."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Costa/ENEL.\n\nSamen zorgen deze arresten ervoor dat EU-recht écht werkt: Van Gend en Loos maakt bepalingen inroepbaar voor burgers, en Costa/ENEL garandeert dat deze bepalingen voorrang hebben op nationaal recht."
+  },
+  {
+    "q": "In het arrest Delana Wells, wat was het gevolg van het ontbreken van een milieueffectrapportage (MER)?",
+    "a": [
+      "De vergunning bleef geldig omdat de termijn voor bezwaar was verstreken.",
+      "De staat moest maatregelen nemen om het ontbreken van de MER te herstellen, bijvoorbeeld door de vergunning in te trekken.",
+      "Het mijnbouwbedrijf moest een schadevergoeding betalen aan de staat.",
+      "De richtlijn kon niet worden ingeroepen omdat dit nadelig was voor het mijnbouwbedrijf."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Delana Wells.\n\nNationale autoriteiten zijn verplicht het ontbreken van een MER te herstellen. Lidstaten moeten maatregelen nemen, zoals het intrekken of opschorten van de vergunning, om de gevolgen van de schending ongedaan te maken."
+  },
+  {
+    "q": "Wat voegt het arrest Kolpinghuis toe aan de jurisprudentie over directe werking?",
+    "a": [
+      "Het bevestigt dat richtlijnen horizontale directe werking hebben.",
+      "Het bepaalt dat de overheid zich niet op een niet-omgezette richtlijn kan beroepen tegen een burger (geen omgekeerde verticale werking).",
+      "Het stelt dat strafrechtelijke aansprakelijkheid direct uit een richtlijn kan voortvloeien.",
+      "Het verplicht de rechter om nationaal recht altijd contra legem uit te leggen."
+    ],
+    "c": 1,
+    "exp": "HvJ EU Kolpinghuis.\n\nEen richtlijn kan niet uit zichzelf verplichtingen opleggen aan particulieren. De staat kan zich dus niet tegenover een particulier beroepen op een richtlijn die nog niet is omgezet (geen omgekeerde verticale werking)."
+  }
+]

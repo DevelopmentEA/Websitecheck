@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Op welke wijze vindt de levering van een roerende zaak plaats indien de vervreemder de zaak bezit en hij deze krachtens een bij de levering gemaakt beding voortaan voor de verkrijger gaat houden?",
+    "a": [
+      "Door feitelijke bezitsverschaffing aan de verkrijger.",
+      "Door een tweezijdige verklaring: traditio brevi manu.",
+      "Door een tweezijdige verklaring: constitutum possessorium.",
+      "Door een tweezijdige verklaring: traditio longa manu."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:115 sub a BW.\n\nEen levering waarbij de vervreemder de zaak bezit en deze krachtens een bij de levering gemaakt beding voortaan voor de verkrijger houdt, wordt aangeduid als constitutum possessorium. Dit is een vorm van bezitsoverdracht door middel van een tweezijdige verklaring zonder feitelijke handeling."
+  },
+  {
+    "q": "Wat is een vereiste voor de geldige levering van een onroerende zaak krachtens artikel 3:89 BW?",
+    "a": [
+      "Een onderhandse akte gevolgd door inschrijving in de openbare registers.",
+      "Een notariële akte gevolgd door inschrijving in de openbare registers.",
+      "Enkel het opmaken van een notariële akte tussen partijen.",
+      "Enkel de feitelijke machtsverschaffing van de onroerende zaak."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:89 lid 1 BW.\n\nDe voor overdracht van onroerende zaken vereiste levering geschiedt door een daartoe bestemde, tussen partijen opgemaakte notariële akte, gevolgd door de inschrijving daarvan in de daartoe bestemde openbare registers."
+  },
+  {
+    "q": "In welk geval werkt de levering via constitutum possessorium niet tegen een derde met een ouder recht op de zaak?",
+    "a": [
+      "Indien de verkrijger te goeder trouw is op het moment van de levering.",
+      "Indien de vervreemder de zaak feitelijk aan de verkrijger heeft overhandigd.",
+      "Zolang de zaak zich in handen van de vervreemder bevindt.",
+      "Wanneer de derde toestemming heeft gegeven voor de overdracht."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:90 lid 2 BW.\n\nEen levering van een roerende zaak die geschiedt door constitutum possessorium (waarbij de vervreemder de zaak blijft houden) werkt niet tegen een persoon die een ouder recht op de zaak heeft, zolang de zaak in handen van de vervreemder blijft."
+  },
+  {
+    "q": "Welke eis stelt artikel 3:94 lid 1 BW aan de levering van een vordering op naam bij openbare cessie?",
+    "a": [
+      "Een authentieke akte zonder mededeling aan de schuldenaar.",
+      "Een onderhandse akte en mededeling aan de schuldenaar.",
+      "Een geregistreerde onderhandse akte zonder mededeling.",
+      "Enkel een mondelinge overeenkomst met de schuldenaar."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:94 lid 1 BW.\n\nDe levering van tegen een of meer bepaalde personen uit te oefenen rechten (vorderingen op naam) geschiedt door een daartoe bestemde akte en mededeling daarvan aan die personen (de schuldenaren)."
+  },
+  {
+    "q": "Wat oordeelde de Hoge Raad in het arrest Oryx/Van Eesteren omtrent een contractueel verpandingsverbod?",
+    "a": [
+      "Een dergelijk verbod heeft slechts verbintenisrechtelijke werking tussen partijen.",
+      "Een dergelijk verbod leidt tot beschikkingsonbevoegdheid van de gerechtigde.",
+      "Een dergelijk verbod leidt tot niet-overdraagbaarheid van de vordering zelf.",
+      "Een dergelijk verbod is nietig wegens strijd met de openbare orde."
+    ],
+    "c": 2,
+    "exp": "HR 17 januari 2003, ECLI:NL:HR:2003:AF0168 (Oryx/Van Eesteren).\n\nEen tussen partijen overeengekomen verbod tot overdracht (of verpanding) leidt niet tot beschikkingsonbevoegdheid van de gerechtigde, maar tot niet-overdraagbaarheid van de vordering zelf. Dit heeft goederenrechtelijke werking, waardoor een overdracht of verpanding in strijd met dit verbod ongeldig is."
+  },
+  {
+    "q": "Welk vereiste geldt voor een geslaagd beroep op derdenbescherming krachtens artikel 3:86 lid 1 BW bij de overdracht van een roerende zaak?",
+    "a": [
+      "De overdracht moet geschieden om niet.",
+      "De overdracht moet anders dan om niet geschieden.",
+      "De verkrijger hoeft geen onderzoek te doen.",
+      "De vervreemder moet beschikkingsbevoegd zijn."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:86 lid 1 BW.\n\nVoor een geslaagd beroep op derdenbescherming tegen de beschikkingsonbevoegdheid van de vervreemder is onder meer vereist dat de overdracht anders dan om niet geschiedt."
+  },
+  {
+    "q": "Wanneer kan een eigenaar zijn gestolen roerende zaak, ondanks een geldige overdracht aan een derde te goeder trouw, revindiceren?",
+    "a": [
+      "Gedurende vijf jaren na de diefstal, tenzij het geld betreft.",
+      "Gedurende drie jaren na de diefstal, tenzij het consumentenkoop betreft.",
+      "Gedurende tien jaren na de diefstal, ongeacht de omstandigheden.",
+      "Gedurende twintig jaren na de diefstal bij een registergoed."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:86 lid 3 BW.\n\nDe eigenaar van een roerende zaak die het bezit daarvan door diefstal heeft verloren, kan deze gedurende drie jaren, te rekenen van de dag van de diefstal, als zijn eigendom opeisen. Dit geldt niet indien de zaak is verkregen door een consument in een daartoe bestemde bedrijfsruimte (sub a) of indien het geld of toonder/orderpapier betreft (sub b)."
+  },
+  {
+    "q": "Op welke wijze vindt de levering plaats bij traditio longa manu?",
+    "a": [
+      "De bezitter draagt het bezit over door de zaak feitelijk aan de verkrijger te geven.",
+      "De houder draagt het bezit over aan de verkrijger die reeds houder was.",
+      "Een derde die de zaak houdt, gaat deze houden voor de verkrijger na mededeling of erkenning.",
+      "De bezitter draagt het bezit over maar blijft de zaak zelf houden voor de verkrijger."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:115 sub c BW.\n\nBij traditio longa manu hield een derde de zaak voor de vervreemder, en gaat deze derde de zaak na de overdracht voor de ontvanger (verkrijger) houden. De overgang vindt plaats door erkenning door de derde of mededeling aan hem."
+  },
+  {
+    "q": "Wat is vereist voor de totstandkoming van een stille cessie?",
+    "a": [
+      "Een authentieke of geregistreerde onderhandse akte zonder mededeling.",
+      "Een onderhandse akte en mededeling aan de schuldenaar.",
+      "De feitelijke overgave van het stuk waarin de vordering is belichaamd.",
+      "Een notariële akte en inschrijving in de openbare registers."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:94 lid 3 BW.\n\nDe levering van een vordering op naam kan ook geschieden door een authentieke of geregistreerde onderhandse akte, zonder mededeling aan de schuldenaar (stille cessie). De levering kan dan niet aan de schuldenaar worden tegengeworpen totdat mededeling is gedaan."
+  },
+  {
+    "q": "Welke bescherming biedt artikel 3:88 BW aan een verkrijger van een registergoed?",
+    "a": [
+      "Bescherming tegen elke vorm van beschikkingsonbevoegdheid van de vervreemder.",
+      "Bescherming tegen onbevoegdheid voortvloeiend uit ongeldigheid van een vroegere overdracht.",
+      "Bescherming tegen beschikkingsonbevoegdheid als gevolg van faillissement.",
+      "Bescherming tegen de diefstal van het registergoed door de vervreemder."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:88 lid 1 BW.\n\nArtikel 3:88 BW biedt bescherming tegen beschikkingsonbevoegdheid die voortvloeit uit de ongeldigheid van een vroegere overdracht, mits de verkrijger te goeder trouw is en de ongeldigheid niet het gevolg is van onbevoegdheid van de toenmalige vervreemder."
+  },
+  {
+    "q": "Wat houdt het interversieverbod in met betrekking tot houderschap?",
+    "a": [
+      "Een bezitter kan zichzelf niet tot houder maken zonder toestemming.",
+      "Een houder kan zichzelf niet tot bezitter maken door enkele wilsverandering.",
+      "Een houder kan het houderschap niet overdragen aan een derde.",
+      "Een bezitter kan het bezit niet overdragen door enkel feitelijke macht."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:111 BW.\n\nWanneer men heeft aangevangen krachtens een rechtsverhouding voor een ander te houden, gaat men daarmee onder dezelfde titel voort, zolang niet blijkt dat hierin verandering is gebracht, hetzij ten gevolge van een handeling van hem voor wie men houdt, hetzij ten gevolge van tegenspraak van diens recht. Een houder kan dus niet door enkele wilsverandering bezitter worden."
+  },
+  {
+    "q": "Hoe lang is de verjaringstermijn voor verkrijgende verjaring van een roerende zaak door een bezitter te goeder trouw?",
+    "a": [
+      "Drie jaren.",
+      "Vijf jaren.",
+      "Tien jaren.",
+      "Twintig jaren."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:99 lid 1 BW.\n\nRechten op roerende zaken die niet-registergoederen zijn, worden door een bezitter te goeder trouw verkregen door een onafgebroken bezit van drie jaren."
+  },
+  {
+    "q": "Wat is de rechtsregel uit het arrest Coppes/Van de Kolk met betrekking tot de goede trouw bij de aankoop van een tweedehands auto?",
+    "a": [
+      "De koper is te goeder trouw als hij de auto bij een erkende dealer koopt.",
+      "De koper moet onderzoek doen naar het kentekenbewijs om te goeder trouw te zijn.",
+      "De koper is te goeder trouw als hij een marktconforme prijs betaalt.",
+      "De koper hoeft geen onderzoek te doen als de verkoper betrouwbaar oogt."
+    ],
+    "c": 1,
+    "exp": "HR 7 oktober 2005, ECLI:NL:HR:2005:AU2555 (Coppes/Van de Kolk).\n\nDe Hoge Raad oordeelde dat een verkrijger van een tweedehands auto, wil hij ten tijde van de verkrijging te goeder trouw zijn, ten minste de autopapieren (kentekenbewijs) moet hebben onderzocht met het oog op de beschikkingsbevoegdheid van zijn voorman."
+  },
+  {
+    "q": "Wanneer treedt bevrijdende verjaring van een rechtsvordering tot beëindiging van bezit in beginsel in?",
+    "a": [
+      "Na verloop van drie jaren.",
+      "Na verloop van vijf jaren.",
+      "Na verloop van tien jaren.",
+      "Na verloop van twintig jaren."
+    ],
+    "c": 3,
+    "exp": "Artikel 3:306 BW jo. artikel 3:105 BW.\n\nIndien de wet niet anders bepaalt, verjaart een rechtsvordering door verloop van twintig jaren. Hij die een goed bezit op het tijdstip waarop de verjaring van de rechtsvordering tot beëindiging van het bezit wordt voltooid, verkrijgt dat goed, ook al was zijn bezit niet te goeder trouw (art. 3:105 BW)."
+  },
+  {
+    "q": "Kan een levering via traditio brevi manu plaatsvinden indien de verkrijger de zaak nog niet feitelijk onder zich heeft?",
+    "a": [
+      "Ja, mits er een notariële akte wordt opgemaakt.",
+      "Ja, mits de derde-houder hiervan op de hoogte wordt gesteld.",
+      "Nee, de verkrijger moet houder van de zaak zijn voor de vervreemder.",
+      "Nee, tenzij de vervreemder de zaak ook niet onder zich heeft."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:115 sub b BW.\n\nTraditio brevi manu is de levering waarbij de verkrijger de zaak reeds houdt voor de vervreemder. Indien de verkrijger de zaak niet onder zich heeft, is levering op deze wijze niet mogelijk."
+  },
+  {
+    "q": "Wat is het gevolg van faillissement van de vervreemder voor de beschikkingsbevoegdheid?",
+    "a": [
+      "De vervreemder blijft beschikkingsbevoegd tot de verificatievergadering.",
+      "De vervreemder wordt met terugwerkende kracht beschikkingsonbevoegd.",
+      "De vervreemder is van rechtswege beschikkingsonbevoegd vanaf de faillietverklaring.",
+      "De vervreemder blijft beschikkingsbevoegd tenzij er beslag ligt."
+    ],
+    "c": 2,
+    "exp": "Artikel 23 Faillissementswet.\n\nDoor de faillietverklaring verliest de schuldenaar van rechtswege de beschikking en het beheer over zijn tot het faillissement behorend vermogen. Hij wordt hiermee beschikkingsonbevoegd."
+  },
+  {
+    "q": "Is een levering van een roerende zaak geldig indien deze geschiedt door middel van een akte krachtens artikel 3:95 BW, terwijl bezitsverschaffing mogelijk was?",
+    "a": [
+      "Ja, artikel 3:95 BW is een algemeen vangnet voor alle leveringen.",
+      "Ja, mits partijen dit uitdrukkelijk zijn overeengekomen.",
+      "Nee, artikel 3:95 BW geldt slechts als geen andere leveringsvorm is voorgeschreven.",
+      "Nee, tenzij het gaat om een levering bij voorbaat."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:95 BW.\n\nDit artikel geldt voor goederen waarvoor de wet noch in titel 3.4, noch elders een eigen leveringsvorm voorschrijft. Voor roerende zaken schrijft de wet bezitsverschaffing voor (art. 3:90 BW), dus is art. 3:95 BW niet van toepassing als bezitsverschaffing mogelijk is."
+  },
+  {
+    "q": "Welke eis stelt artikel 3:84 lid 2 BW aan de titel van overdracht?",
+    "a": [
+      "De titel moet schriftelijk zijn vastgelegd.",
+      "Het goed moet bij de titel met voldoende bepaaldheid omschreven zijn.",
+      "De titel mag niet vernietigbaar zijn.",
+      "De titel moet zijn ingeschreven in de openbare registers."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:84 lid 2 BW.\n\nBij de titel moet het goed met voldoende bepaaldheid omschreven zijn. Dit is vereist opdat duidelijk is welk object wordt overgedragen."
+  },
+  {
+    "q": "Wat houdt het beginsel van de 'goede trouw' in artikel 3:11 BW in?",
+    "a": [
+      "Goede trouw ontbreekt alleen bij daadwerkelijke kennis van de feiten.",
+      "Goede trouw wordt vermoed aanwezig te zijn, behoudens tegenbewijs.",
+      "Goede trouw vereist dat men de feiten kende noch behoorde te kennen.",
+      "Goede trouw is niet vereist bij verkrijging om niet."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:11 BW.\n\nGoede trouw van een persoon ontbreekt niet alleen indien hij de feiten of het recht waarop zijn goede trouw betrekking moet hebben kende, maar ook indien hij ze in de gegeven omstandigheden behoorde te kennen (onderzoeksplicht)."
+  },
+  {
+    "q": "Kan een beperkt recht op een registergoed door verjaring worden verkregen?",
+    "a": [
+      "Nee, beperkte rechten kunnen alleen door vestiging ontstaan.",
+      "Ja, door verkrijgende verjaring na tien jaar bezit te goeder trouw.",
+      "Ja, maar alleen door bevrijdende verjaring na dertig jaar.",
+      "Nee, tenzij het beperkte recht roerend van aard is."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:99 lid 1 BW.\n\nRechten op registergoederen (waaronder beperkte rechten op registergoederen) worden door een bezitter te goeder trouw verkregen door een onafgebroken bezit van tien jaren."
+  },
+  {
+    "q": "Wat is het gevolg van een levering onder tijdsbepaling?",
+    "a": [
+      "De levering is geldig maar de werking wordt uitgesteld.",
+      "De levering is geldig en werkt direct.",
+      "De levering is ongeldig.",
+      "De levering is vernietigbaar."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:85 BW.\n\nEen verbintenis tot overdracht van een goed onder tijdsbepaling levert geen geldige titel voor overdracht op. De levering ter uitvoering van zo'n verbintenis is ongeldig."
+  },
+  {
+    "q": "Welke functie heeft de inschrijving in de openbare registers bij de levering van een registergoed?",
+    "a": [
+      "De inschrijving heeft slechts een declaratoire werking.",
+      "De inschrijving is een constitutief vereiste voor de levering.",
+      "De inschrijving dient enkel ter bewijs van de levering.",
+      "De inschrijving maakt de levering tegenwerpelijk aan derden."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:89 lid 1 BW.\n\nDe levering van onroerende zaken geschiedt door een notariële akte gevolgd door inschrijving in de openbare registers. De inschrijving is een noodzakelijk (constitutief) onderdeel van de leveringshandeling."
+  },
+  {
+    "q": "Wat gebeurt er met een recht van vruchtgebruik als de zaak waarop het rust wordt verkocht aan een derde?",
+    "a": [
+      "Het recht van vruchtgebruik vervalt van rechtswege.",
+      "Het recht van vruchtgebruik blijft op de zaak rusten (zaaksgevolg).",
+      "Het recht van vruchtgebruik wordt omgezet in een vordering.",
+      "Het recht van vruchtgebruik eindigt tenzij de derde instemt."
+    ],
+    "c": 1,
+    "exp": "Algemeen beginsel goederenrecht (zaaksgevolg/droit de suite).\n\nBeperkte rechten (zoals vruchtgebruik) hebben zaaksgevolg. Dit betekent dat het recht op de zaak blijft rusten, ongeacht wie de eigenaar van de zaak wordt. De vervreemding van de zaak tast het beperkte recht niet aan."
+  },
+  {
+    "q": "Wanneer is een bezitter van een niet-registergoed te goeder trouw in de zin van artikel 3:86 BW?",
+    "a": [
+      "Indien hij niet wist dat de vervreemder onbevoegd was.",
+      "Indien hij de onbevoegdheid niet kende noch behoorde te kennen.",
+      "Indien hij een redelijke prijs voor het goed heeft betaald.",
+      "Indien de vervreemder heeft verklaard bevoegd te zijn."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:86 lid 1 BW jo. artikel 3:11 BW.\n\nVoor een beroep op art. 3:86 BW is vereist dat de verkrijger te goeder trouw is. Dit betekent dat hij de onbevoegdheid van de vervreemder niet kende en ook niet behoorde te kennen in de gegeven omstandigheden."
+  },
+  {
+    "q": "Wat is een kenmerk van de levering van een recht aan toonder?",
+    "a": [
+      "Levering vereist een akte en mededeling.",
+      "Levering geschiedt door middel van endossement.",
+      "Levering geschiedt door de overgave van het papier.",
+      "Levering vereist inschrijving in een register."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:93 BW.\n\nDe levering van een recht aan toonder geschiedt door de levering van het papier (het toonderpapier) waarin het recht is belichaamd. Dit vereist bezitsverschaffing van het papier."
+  },
+  {
+    "q": "Is de verkrijger van een gestolen fiets beschermd indien hij deze koopt bij een particulier op straat?",
+    "a": [
+      "Ja, indien hij te goeder trouw is en anders dan om niet verkrijgt.",
+      "Ja, na verloop van drie jaar na de aankoop.",
+      "Nee, de eigenaar kan de fiets binnen drie jaar na diefstal opeisen.",
+      "Nee, de eigenaar kan de fiets altijd opeisen, ongeacht de termijn."
+    ],
+    "c": 2,
+    "exp": "Artikel 3:86 lid 3 BW.\n\nDe eigenaar van een door diefstal verloren roerende zaak kan deze gedurende drie jaren na de diefstal opeisen, tenzij de uitzonderingen van lid 3 sub a (consumentenkoop in winkel) of b (geld) van toepassing zijn. Koop op straat valt niet onder de uitzondering."
+  },
+  {
+    "q": "Welk vereiste geldt voor de levering van een recht aan order?",
+    "a": [
+      "Enkel de overgave van het papier.",
+      "Overgave van het papier en endossement.",
+      "Notariële akte en mededeling.",
+      "Registratie van de onderhandse akte."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:93 BW.\n\nDe levering van een recht aan order vereist de levering van het papier én endossement (een verklaring op de achterzijde van het papier)."
+  },
+  {
+    "q": "Wat is het gevolg van een levering die berust op een vernietigbare titel die later wordt vernietigd?",
+    "a": [
+      "De overdracht blijft geldig vanwege de goede trouw.",
+      "De overdracht is achteraf bezien ongeldig (terugwerkende kracht).",
+      "De overdracht is geldig tot het moment van vernietiging.",
+      "De overdracht wordt omgezet in een verbintenis tot teruggave."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:53 lid 1 BW.\n\nVernietiging werkt terug tot het tijdstip waarop de rechtshandeling is verricht. Hierdoor wordt de titel met terugwerkende kracht ongeldig geacht, waardoor achteraf bezien niet aan het vereiste van een geldige titel (art. 3:84 BW) is voldaan en de overdracht dus nooit heeft plaatsgevonden."
+  },
+  {
+    "q": "In welk geval is de verkrijger van een registergoed beschermd tegen de onbevoegdheid van de vervreemder krachtens artikel 3:88 BW?",
+    "a": [
+      "Als de onbevoegdheid voortvloeit uit een eerdere ongeldige titel.",
+      "Als de onbevoegdheid het gevolg is van de onbevoegdheid van de vorige vervreemder.",
+      "Als de verkrijger niet in de openbare registers heeft gekeken.",
+      "Als de verkrijger het goed om niet heeft verkregen."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:88 lid 1 BW.\n\nBescherming wordt geboden indien de onbevoegdheid voortvloeit uit de ongeldigheid van een vroegere overdracht, die niet het gevolg was van onbevoegdheid van de toenmalige vervreemder. Een titelgebrek in een eerdere schakel wordt hiermee 'geheeld' voor de verkrijger te goeder trouw."
+  },
+  {
+    "q": "Welke regel geldt voor de verjaringstermijn bij onvrijwillig bezitsverlies?",
+    "a": [
+      "De verjaring loopt door zolang de bezitter het bezit binnen een jaar terugkrijgt.",
+      "De verjaring wordt gestuit en begint opnieuw te lopen na terugkrijging.",
+      "De verjaring wordt geschorst gedurende het bezitsverlies.",
+      "Het bezit wordt geacht niet onderbroken te zijn, ongeacht de duur."
+    ],
+    "c": 0,
+    "exp": "Artikel 3:103 BW.\n\nOnvrijwillig bezitsverlies onderbreekt een lopende verjaring van het bezit niet, mits het bezit binnen een jaar wordt terugverkregen of een vordering tot terugverkrijging binnen dat jaar wordt ingesteld."
+  }
+]

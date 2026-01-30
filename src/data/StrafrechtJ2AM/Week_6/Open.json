@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Casus: Aannemersbedrijf 'De Bouwer B.V.' heeft de opdracht een kantoorpand te renoveren. Werknemer Jan stort in strijd met de milieuwetgeving bouwafval in een natuurgebied om stortkosten te besparen. De directeur van de B.V. weet hiervan, maar grijpt niet in omdat het bedrijf financieel zwaar weer verkeert en de besparing goed uitkomt. Kan 'De Bouwer B.V.' strafrechtelijk worden vervolgd voor het storten van het afval?",
+    "sample": "Rechtsvraag: Kan de gedraging van werknemer Jan (het illegaal storten van afval) aan de rechtspersoon 'De Bouwer B.V.' worden toegerekend in de zin van artikel 51 Sr?\n\nRechtsregel: Volgens artikel 51 Sr kunnen strafbare feiten worden begaan door rechtspersonen. Of een gedraging redelijkerwijs aan de rechtspersoon kan worden toegerekend, hangt af van de omstandigheden. Het arrest HR Drijfmest geeft hiervoor oriëntatiepunten: is de gedraging verricht door iemand die werkzaam is ten behoeve van de rechtspersoon, past het in de normale bedrijfsvoering, is het dienstig geweest, en vermocht de rechtspersoon erover te beschikken en het te aanvaarden?\n\nToepassing: Jan is werkzaam ten behoeve van de B.V. Het afvoeren van puin past binnen de normale bedrijfsvoering van een aannemersbedrijf. De gedraging was dienstig, aangezien kosten werden bespaard. De B.V. (via de directeur) had de macht erover te beschikken en heeft de gedraging aanvaard door, ondanks wetenschap, niet de redelijkerwijs te vergen zorg te betrachten om het te voorkomen.\n\nConclusie: De gedraging heeft plaatsgevonden in de sfeer van de rechtspersoon en kan aan 'De Bouwer B.V.' worden toegerekend.",
+    "checklist": [
+      "Artikel 51 Sr: strafbaarheid rechtspersonen",
+      "HR Drijfmest: toerekeningscriteria sfeer rechtspersoon",
+      "Gedraging dienstig en normale bedrijfsvoering",
+      "Beschikkingsmacht en (passieve) aanvaarding"
+    ],
+    "exp": "De casus vereist een analyse van de toerekenbaarheid van een strafbaar feit aan een rechtspersoon. Centraal staat het Drijfmest-arrest, waarbij factoren als dienstigheid (kostenbesparing) en aanvaarding (niet ingrijpen door leiding) leiden tot daderschap van de B.V."
+  },
+  {
+    "q": "Casus: De gemeente X laat onderhoud plegen aan de openbare weg door eigen ambtenaren. Door ernstige nalatigheid van deze ambtenaren ontstaat een gat in de weg, waardoor een motorrijder dodelijk verongelukt. Het Openbaar Ministerie vervolgt de gemeente voor dood door schuld (art. 307 Sr). De gemeente beroept zich op strafrechtelijke immuniteit. Slaagt dit beroep?",
+    "sample": "Rechtsvraag: Geniet de gemeente X strafrechtelijke immuniteit voor het niet onderhouden van de openbare weg?\n\nRechtsregel: Een openbaar lichaam geniet volgens HR Pikmeer II en HR Immuniteit Waterschap slechts immuniteit indien de gedragingen naar hun aard en gelet op het wettelijk systeem rechtens niet anders dan door bestuursfunctionarissen kunnen worden verricht (exclusieve bestuurstaak), zodat derden zijn uitgesloten van deelname op gelijke voet aan het maatschappelijk verkeer.\n\nToepassing: Het onderhouden van wegen is weliswaar een publieke taak, maar geen exclusieve bestuurstaak die alleen door bestuursfunctionarissen kan worden verricht. Wegenonderhoud kan ook door private partijen (derden) worden uitgevoerd. De gemeente neemt hier deel aan het maatschappelijk verkeer op gelijke voet met derden.\n\nConclusie: Er is geen sprake van een exclusieve bestuurstaak, dus de gemeente geniet geen strafrechtelijke immuniteit.",
+    "checklist": [
+      "HR Pikmeer II / Immuniteit Waterschap",
+      "Criterium exclusieve bestuurstaak",
+      "Deelname maatschappelijk verkeer op gelijke voet",
+      "Geen strafrechtelijke immuniteit gemeente"
+    ],
+    "exp": "De analyse richt zich op de beperkte immuniteit van decentrale overheden. Cruciaal is het onderscheid of de taak exclusief door de overheid moet worden uitgevoerd of dat derden dit ook kunnen (gelijke voet criterium)."
+  },
+  {
+    "q": "Casus: Karel is directeur en enig aandeelhouder van een transportbedrijf (B.V.). Hij weet dat zijn chauffeurs stelselmatig de rijtijdenwet overtreden om sneller te leveren. Karel heeft de bevoegdheid om dit te stoppen, maar doet dit niet omdat het extra winst oplevert. Kan Karel strafrechtelijk worden vervolgd als feitelijk leidinggever aan de verboden gedragingen van de B.V.?",
+    "sample": "Rechtsvraag: Kan Karel worden aangemerkt als feitelijk leidinggever in de zin van artikel 51 Sr?\n\nRechtsregel: Volgens HR Overzichtsarrest feitelijk leidinggeven is voor strafbaarheid vereist dat de rechtspersoon strafbaar is (accessoriteit) en dat de verdachte feitelijke macht had en maatregelen heeft nagelaten ter voorkoming (passief leidinggeven). Daarnaast is dubbel opzet vereist: opzet op het leidinggeven én op het grondfeit.\n\nToepassing: De B.V. pleegt strafbare feiten (rijtijdenwet). Karel heeft als directeur de feitelijke macht en bevoegdheid om in te grijpen (beschikken). Hij is op de hoogte en laat maatregelen achterwege om de gedragingen te beëindigen (passief leidinggeven/aanvaarden). Hij heeft opzet op het leidinggeven en (voorwaardelijk) opzet op de overtredingen, nu hij deze accepteert voor winst.\n\nConclusie: Karel kan worden vervolgd als feitelijk leidinggever ex artikel 51 Sr.",
+    "checklist": [
+      "Artikel 51 Sr: feitelijk leidinggeven",
+      "HR Overzichtsarrest feitelijk leidinggeven",
+      "Passief leidinggeven: bevoegdheid en nalaten",
+      "Vereiste van dubbel opzet"
+    ],
+    "exp": "Deze vraag toetst de criteria voor passief feitelijk leidinggeven. Essentieel zijn de beschikkingsmacht, de aanvaarding door niet in te grijpen (terwijl er een zorgplicht is) en het vereiste van dubbel opzet."
+  },
+  {
+    "q": "Casus: Een exportbedrijf (N.V.) verstuurt goederen zonder de vereiste vergunningen. De logistiek manager, die niet in het bestuur zit, regelt dit zelfstandig. Het bestuur weet van niets, maar er is binnen het bedrijf geen enkel controlesysteem om vergunningen te checken. Is de N.V. strafbaar voor de illegale export?",
+    "sample": "Rechtsvraag: Kan de illegale export aan de N.V. worden toegerekend ondanks onwetendheid van het bestuur?\n\nRechtsregel: Toerekening aan een rechtspersoon (art. 51 Sr) vindt plaats als de gedraging in de sfeer van de rechtspersoon valt (HR Drijfmest). Dit kan o.a. als de rechtspersoon de gedraging heeft aanvaard. Onder aanvaarden valt mede het niet betrachten van de zorg die in redelijkheid kon worden gevergd ter voorkoming van de gedraging.\n\nToepassing: De export past in de normale bedrijfsvoering en is dienstig. Hoewel het bestuur geen directe kennis had, ontbrak een adequaat controlesysteem. De rechtspersoon heeft niet de redelijkerwijs te vergen zorg betracht om illegale export te voorkomen. Hiermee is voldaan aan het criterium van (passieve) aanvaarding.\n\nConclusie: De gedraging kan redelijkerwijs aan de N.V. worden toegerekend.",
+    "checklist": [
+      "Toerekening aan rechtspersoon (sfeer)",
+      "HR Drijfmest criteria",
+      "Aanvaarden door schending zorgplicht",
+      "Geen actieve wetenschap vereist"
+    ],
+    "exp": "De focus ligt hier op de toerekening aan de rechtspersoon via het 'aanvaarden' in de zin van het schenden van een zorgplicht (gebrekkige organisatie/controle), zelfs zonder direct opzet van het bestuur."
+  },
+  {
+    "q": "Casus: Boer Jansen (eenmanszaak) geeft zijn knecht opdracht om mest uit te rijden op een moment dat dit wettelijk verboden is. Jansen is zelf niet aanwezig bij het uitrijden. Kan Jansen strafrechtelijk aansprakelijk worden gesteld als dader van het verboden uitrijden?",
+    "sample": "Rechtsvraag: Kan Boer Jansen als functioneel dader worden aangemerkt voor het feitelijk handelen van zijn knecht?\n\nRechtsregel: Voor functioneel daderschap bij natuurlijke personen gelden de IJzerdraad-criteria (HR IJzerdraad / HR Drijfmest). Vereist is dat de verdachte erover vermocht te beschikken of de gedraging zou plaatsvinden (beschikkingsmacht) en dat hij de gedraging heeft aanvaard.\n\nToepassing: Jansen heeft als eigenaar van de eenmanszaak zeggenschap over de werkzaamheden van de knecht (beschikkingsmacht). Door de expliciete opdracht te geven, heeft hij de gedraging niet alleen aanvaard, maar zelfs geïnitieerd (actieve aanvaarding/opzet).\n\nConclusie: Jansen kan worden aangemerkt als functioneel dader van het verboden uitrijden van mest.",
+    "checklist": [
+      "Functioneel daderschap (eenmanszaak)",
+      "HR IJzerdraad / HR Drijfmest",
+      "Beschikkingsmacht over de gedraging",
+      "Aanvaardingscriterium (hier: opdracht geven)"
+    ],
+    "exp": "Dit betreft functioneel daderschap bij een natuurlijke persoon (eenmanszaak). De IJzerdraad-criteria (beschikken en aanvaarden) zijn leidend om de fysieke handeling van de knecht toe te rekenen aan de eigenaar."
+  }
+]

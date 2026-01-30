@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Welke drie kerncriteria staan centraal in de besluitvorming van rechters bij straftoemeting volgens de 'focal concerns'-theorie?",
+    "a": [
+      "De verwijtbaarheid, de gevaarlijkheid en de praktische gevolgen.",
+      "De wettelijke bewijsregels, de proceshouding en de recidive.",
+      "De persoonlijke omstandigheden, de proceskosten en de tijd.",
+      "De maatschappelijke onrust, de mediadruk en de preventie."
+    ],
+    "c": 0,
+    "exp": "De besluitvorming bij straftoemeting wordt gestuurd door drie hoofdcriteria: de mate van verwijtbaarheid van de dader, de gevaarlijkheid van de dader (bescherming van de maatschappij) en de praktische gevolgen van de beslissing."
+  },
+  {
+    "q": "Wat is het effect van het uiterlijk en de taalbeheersing van een verdachte op de kans om een onvoorwaardelijke gevangenisstraf opgelegd te krijgen?",
+    "a": [
+      "Verdachten die geen Nederlands spreken hebben een significant lagere kans op een gevangenisstraf.",
+      "Verdachten met een buitenlands uiterlijk die geen Nederlands spreken hebben de hoogste kans.",
+      "Uiterlijke kenmerken en taalbeheersing spelen geen enkele rol bij de besluitvorming van de rechter.",
+      "Verdachten met een Nederlands uiterlijk worden vaker veroordeeld tot een onvoorwaardelijke straf."
+    ],
+    "c": 1,
+    "exp": "Uit observaties blijkt dat verdachten met een buitenlands uiterlijk die de Nederlandse taal niet beheersen, een aanzienlijk hogere kans (tot twintig keer hoger) hebben op een onvoorwaardelijke gevangenisstraf dan verdachten die Nederlands spreken en een Nederlands uiterlijk hebben."
+  },
+  {
+    "q": "In welke civiele zaken is procesvertegenwoordiging door een advocaat niet verplicht?",
+    "a": [
+      "In alle civiele zaken die dienen bij de rechtbank, ongeacht het financiële belang van de vordering.",
+      "In zaken bij de kantonrechter met een financieel belang tot € 25.000 en specifieke aardzaken.",
+      "Uitsluitend in arbeidsrechtelijke geschillen waarbij het belang minder is dan € 5.000.",
+      "Alleen in zaken betreffende huurrecht, mits beide partijen hiermee uitdrukkelijk instemmen."
+    ],
+    "c": 1,
+    "exp": "Bij de kantonrechter kunnen partijen procederen zonder verplichte advocaat in zaken met een financieel belang tot € 25.000, evenals in specifieke aardzaken zoals arbeidsrecht, huurrecht en consumentenrecht."
+  },
+  {
+    "q": "Hoe wordt de spanning omschreven die kantonrechters ervaren bij niet-vertegenwoordigde partijen in een civiele procedure?",
+    "a": [
+      "De spanning tussen de verplichting tot het opleggen van een schikking en het wijzen van een vonnis.",
+      "Het conflict tussen het toepassen van outputfinanciering en het waarborgen van de kwaliteit.",
+      "De balans tussen partijautonomie en de noodzaak tot ongelijkheidscompensatie door de rechter.",
+      "De keuze tussen het toepassen van het formele bewijsrecht en de vrije bewijsleer in strafzaken."
+    ],
+    "c": 2,
+    "exp": "Kantonrechters balanceren tussen partijautonomie (waarbij partijen zelf de procedure invullen) en ongelijkheidscompensatie, waarbij de rechter actief ingrijpt om een eerlijk proces te waarborgen voor partijen zonder juridische bijstand."
+  },
+  {
+    "q": "Welk effect heeft het tonen van spijt door de verdachte tijdens een politierechterzitting op de kans om een onvoorwaardelijke gevangenisstraf te krijgen?",
+    "a": [
+      "Het tonen van spijt leidt tot een halvering van de kans op een gevangenisstraf.",
+      "Het tonen van spijt heeft geen significant effect op de kans op deze straf.",
+      "Het niet tonen van spijt leidt automatisch tot een hogere strafmaat.",
+      "Het effect van spijt is alleen meetbaar bij vrouwelijke verdachten."
+    ],
+    "c": 1,
+    "exp": "Analyses wijzen uit dat het al dan niet betuigen van spijt geen significante invloed heeft op de kans om een onvoorwaardelijke gevangenisstraf opgelegd te krijgen door de politierechter."
+  },
+  {
+    "q": "Wat houdt het concept 'New Public Management' (NPM) in binnen de context van de rechterlijke organisatie?",
+    "a": [
+      "Een focus op efficiëntie, prestatiegerichtheid, meetbare resultaten en bedrijfsmatige sturing.",
+      "Een terugkeer naar de klassieke rechtsstatelijke waarden zonder enige financiële prikkels.",
+      "De volledige privatisering van de rechtspraak om marktwerking te maximaliseren.",
+      "Het afschaffen van de Raad voor de rechtspraak ten gunste van de Hoge Raad."
+    ],
+    "c": 0,
+    "exp": "New Public Management (NPM) introduceerde een bedrijfsmatige aanpak in de rechtspraak met een nadruk op efficiëntie, prestatiebeheer (zoals outputfinanciering) en meetbare resultaten."
+  },
+  {
+    "q": "Wat is een kenmerk van de 'maatschappelijk effectieve rechtspraak' (MER)?",
+    "a": [
+      "Het strikt toepassen van formele procedureregels zonder oog voor de context.",
+      "De nadruk op repressie en het maximaliseren van de strafmaat in alle gevallen.",
+      "De focus op responsiviteit en het oplossen van achterliggende problemen.",
+      "Het uitsluiten van enige inmenging van sociale hulpverlening in het recht."
+    ],
+    "c": 2,
+    "exp": "Maatschappelijk effectieve rechtspraak richt zich op responsiviteit en laagdrempeligheid, waarbij rechters proberen bij te dragen aan de oplossing van de achterliggende maatschappelijke problemen van een juridisch geschil."
+  },
+  {
+    "q": "Welke invloed heeft outputfinanciering op het werk van rechters?",
+    "a": [
+      "Rechters krijgen hierdoor meer tijd per zaak om de kwaliteit te waarborgen.",
+      "Rechters ervaren een hogere productiedruk en strakkere zittingsroosters.",
+      "Rechters worden betaald op basis van de tevredenheid van de procespartijen.",
+      "Rechters hebben geen last van financiële prikkels binnen de rechtspraak."
+    ],
+    "c": 1,
+    "exp": "Outputfinanciering, waarbij gerechten worden bekostigd op basis van het aantal afgehandelde zaken, leidt tot strakkere zittingsroosters en een verhoogde productiedruk voor rechters."
+  },
+  {
+    "q": "Wat wordt verstaan onder 'awareness optimism' bij rechters?",
+    "a": [
+      "De overtuiging dat zij hun eigen vooroordelen volledig kunnen scheiden van hun beslissingen.",
+      "Het idee dat de maatschappij zich steeds bewuster wordt van de werking van het recht.",
+      "De verwachting dat digitalisering alle efficiëntieproblemen in de rechtspraak zal oplossen.",
+      "Het vertrouwen dat partijen altijd de waarheid spreken tijdens een rechtszitting."
+    ],
+    "c": 0,
+    "exp": "Rechters zijn over het algemeen optimistisch dat ze hun eigen subjectieve opvattingen en vooroordelen kunnen scheiden van hun rechterlijke beslissingen, een fenomeen dat 'awareness optimism' wordt genoemd."
+  },
+  {
+    "q": "Welke rol speelt de kantonrechter vaak bij niet-vertegenwoordigde partijen tijdens een rolzitting?",
+    "a": [
+      "De rechter wijst de vordering direct af als er geen juridisch verweer is.",
+      "De rechter neemt deels de rol van advocaat aan door feiten te achterhalen.",
+      "De rechter blijft strikt passief en wacht enkel op schriftelijke stukken.",
+      "De rechter mag in deze fase nog geen contact hebben met de partijen."
+    ],
+    "c": 1,
+    "exp": "Tijdens de rolzitting nemen rechters bij niet-vertegenwoordigde partijen vaak een actievere rol aan door vragen te stellen om relevante feiten en juridische argumenten boven tafel te krijgen, ter compensatie van het gebrek aan rechtsbijstand."
+  },
+  {
+    "q": "Welk beginsel staat onder druk wanneer een kantonrechter een niet-vertegenwoordigde partij actief helpt?",
+    "a": [
+      "Het beginsel van openbaarheid van de zitting.",
+      "Het beginsel van de rechterlijke onpartijdigheid.",
+      "Het beginsel van de onschuldpresumptie.",
+      "Het beginsel van de dubbele aanleg."
+    ],
+    "c": 1,
+    "exp": "Wanneer een rechter een niet-vertegenwoordigde partij actief ondersteunt of adviseert, kan dit spanning opleveren met de rechterlijke onpartijdigheid, aangezien de rechter de schijn van partijdigheid moet vermijden."
+  },
+  {
+    "q": "Wat blijkt uit onderzoek over de invloed van geslacht op straftoemeting bij de politierechter?",
+    "a": [
+      "Vrouwen hebben een significant lagere kans op een onvoorwaardelijke gevangenisstraf dan mannen.",
+      "Er is geen meetbaar verschil tussen mannen en vrouwen bij de oplegging van gevangenisstraffen.",
+      "Mannen krijgen vaker een taakstraf, terwijl vrouwen vaker een geldboete krijgen opgelegd.",
+      "Vrouwen worden strenger gestraft bij vermogensdelicten, maar lichter bij geweldsdelicten."
+    ],
+    "c": 0,
+    "exp": "Statistische analyses tonen aan dat vrouwelijke verdachten een significant lagere kans hebben om een onvoorwaardelijke gevangenisstraf opgelegd te krijgen dan mannelijke verdachten."
+  },
+  {
+    "q": "Wat is een mogelijk nadeel van het 'hinten' op juridische verweren (zoals verjaring) door de rechter?",
+    "a": [
+      "Het leidt tot een onnodige verlenging van de totale doorlooptijd van de procedure.",
+      "Het kan weerstand oproepen bij de wederpartij die wel juridisch vertegenwoordigd is.",
+      "Het is wettelijk verboden voor rechters om ambtshalve rechtsgronden aan te vullen.",
+      "Het zorgt ervoor dat de griffierechten voor de gedaagde partij worden verhoogd."
+    ],
+    "c": 1,
+    "exp": "Wanneer een rechter actief hint op juridische verweren om een niet-vertegenwoordigde partij te helpen, kan dit weerstand oproepen bij de (professioneel vertegenwoordigde) tegenpartij, die dit als een inbreuk op de neutraliteit kan ervaren."
+  },
+  {
+    "q": "Welke verandering in de structuur van de rechtspraak vond plaats in 2013 met het oog op efficiëntie?",
+    "a": [
+      "De invoering van het lekenrechtspraak in strafzaken.",
+      "De oprichting van de Raad voor de rechtspraak.",
+      "De Wet herziening Gerechtelijke Kaart.",
+      "De afschaffing van de kantonrechter."
+    ],
+    "c": 2,
+    "exp": "In 2013 werd de Wet herziening Gerechtelijke Kaart ingevoerd, waarbij het aantal rechtbanken werd teruggebracht (schaalvergroting) met als doel de rechtspraak efficiënter te maken."
+  },
+  {
+    "q": "Wat is de kern van de 'equality of arms' in civiele procedures?",
+    "a": [
+      "Dat beide partijen in de rechtszaal over dezelfde fysieke wapens mogen beschikken.",
+      "Dat elke partij een redelijke mogelijkheid moet hebben om zijn zaak te presenteren zonder nadeel.",
+      "Dat de rechter altijd verplicht is om een advocaat toe te wijzen aan de zwakkere partij.",
+      "Dat de proceskosten altijd gelijkelijk worden verdeeld over de winnende en verliezende partij."
+    ],
+    "c": 1,
+    "exp": "Equality of arms (onderdeel van artikel 6 EVRM) houdt in dat elke partij een redelijke mogelijkheid moet hebben om zijn zaak te presenteren onder voorwaarden die hem niet in een nadelige positie brengen ten opzichte van de tegenpartij."
+  },
+  {
+    "q": "Welke factor heeft de grootste voorspellende waarde voor het opleggen van een gevangenisstraf?",
+    "a": [
+      "De leeftijd van de verdachte.",
+      "Het type delict en de recidive.",
+      "De aanwezigheid van slachtoffers.",
+      "De duur van de zitting."
+    ],
+    "c": 1,
+    "exp": "Delictskenmerken (aard van het delict) en de criminele geschiedenis (recidive) zijn de belangrijkste voorspellende factoren voor de zwaarte van de straf en de keuze voor een gevangenisstraf."
+  },
+  {
+    "q": "Wat wordt bedoeld met de 'compensatoire rol' van de rechter?",
+    "a": [
+      "De bevoegdheid van de rechter om schadevergoedingen toe te kennen aan slachtoffers.",
+      "De taak van de rechter om onevenwichtigheden tussen partijen recht te trekken.",
+      "De verplichting om proceskosten te compenseren bij onterechte veroordelingen.",
+      "De rol van de rechter bij het vaststellen van smartengeld in letselschadezaken."
+    ],
+    "c": 1,
+    "exp": "De compensatoire rol houdt in dat de rechter actief ingrijpt in de procedure (bijvoorbeeld door uitleg of doorvragen) om de ongelijkheid tussen een professionele partij en een niet-vertegenwoordigde partij te compenseren."
+  },
+  {
+    "q": "Welke stelling over wrakingsverzoeken in de Nederlandse rechtspraak is juist?",
+    "a": [
+      "Wrakingsverzoeken worden in bijna de helft van de gevallen toegewezen.",
+      "Het aantal wrakingsverzoeken is de afgelopen jaren sterk gedaald.",
+      "Het aantal verzoeken stijgt licht, maar toewijzing blijft zeer zeldzaam.",
+      "Wraking is alleen mogelijk in strafzaken, niet in civiele procedures."
+    ],
+    "c": 2,
+    "exp": "Het aantal wrakingsverzoeken is de afgelopen jaren licht gestegen, maar het percentage toegewezen verzoeken blijft zeer laag, omdat veel verzoeken voortkomen uit onvrede over de procedure in plaats van objectieve partijdigheid."
+  },
+  {
+    "q": "Wat is een kenmerk van wijkrechtspraak?",
+    "a": [
+      "De focus ligt uitsluitend op de juridische afdoening van het geschil.",
+      "De rechter werkt samen met hulpverleners om achterliggende problemen aan te pakken.",
+      "Het vindt plaats in een zwaarbewaakte rechtbanklocatie buiten de woonwijken.",
+      "Het is een vorm van rechtspraak waarbij bewoners zelf als rechter optreden."
+    ],
+    "c": 1,
+    "exp": "Bij wijkrechtspraak staat niet alleen de juridische kwestie centraal, maar wordt ook gekeken naar achterliggende problemen (zoals schulden of psychische problemen) en werkt de rechter samen met hulpverleners en gemeentes."
+  },
+  {
+    "q": "Welke beperking geldt voor de generaliseerbaarheid van de bevindingen over straftoemeting?",
+    "a": [
+      "Het onderzoek beperkt zich tot meervoudige kamers in strafzaken.",
+      "De resultaten zijn gebaseerd op waarnemingen bij politierechters.",
+      "Het onderzoek is uitsluitend uitgevoerd in het civiele recht.",
+      "De data zijn afkomstig uit een periode van vóór 2000."
+    ],
+    "c": 1,
+    "exp": "De bevindingen over de invloed van persoonskenmerken op straftoemeting zijn gebaseerd op observaties bij politierechterzittingen (alleensprekende rechters), wat verschilt van de dynamiek in meervoudige kamers."
+  },
+  {
+    "q": "Wat is het effect van voorlopige hechtenis op de uiteindelijke strafmaat?",
+    "a": [
+      "Het heeft geen invloed op de kans op een onvoorwaardelijke gevangenisstraf.",
+      "Het verlaagt de kans op een onvoorwaardelijke straf omdat de tijd al is uitgezeten.",
+      "Het verhoogt de kans op het opleggen van een onvoorwaardelijke gevangenisstraf.",
+      "Het leidt automatisch tot vrijspraak als de hechtenis onterecht was."
+    ],
+    "c": 2,
+    "exp": "Verdachten die in voorlopige hechtenis hebben gezeten, hebben een significant grotere kans om bij de uiteindelijke veroordeling een onvoorwaardelijke gevangenisstraf opgelegd te krijgen."
+  },
+  {
+    "q": "Welke spanning bestaat er tussen efficiëntie en kwaliteit in de rechtspraak?",
+    "a": [
+      "Efficiëntie leidt automatisch tot hogere kwaliteit door snellere doorlooptijden.",
+      "Productiedruk kan leiden tot minder tijd voor verdieping en zorgvuldigheid per zaak.",
+      "Kwaliteit wordt uitsluitend gemeten aan de hand van het aantal behandelde zaken.",
+      "Efficiëntie heeft geen invloed op de inhoudelijke kwaliteit van vonnissen."
+    ],
+    "c": 1,
+    "exp": "Door de nadruk op efficiëntie en productiedruk (outputfinanciering) hebben rechters soms minder tijd om zich in zaken te verdiepen, wat kan botsen met de zorgvuldigheid en kwaliteit van de rechtspraak."
+  },
+  {
+    "q": "Wat wordt in het kader van burgerlijk procesrecht verstaan onder 'partijautonomie'?",
+    "a": [
+      "De vrijheid van partijen om zelf hun rechter te kiezen.",
+      "Het beginsel dat partijen zelf bepalen welke feiten en argumenten zij aandragen.",
+      "De regel dat partijen altijd verplicht zijn om een advocaat in te schakelen.",
+      "De bevoegdheid van partijen om het vonnis van de rechter naast zich neer te leggen."
+    ],
+    "c": 1,
+    "exp": "Partijautonomie houdt in dat de procespartijen zelf bepalen hoe zij hun geschil inrichten en welke feiten en rechtsgronden zij aan de rechter voorleggen."
+  },
+  {
+    "q": "Wat is een consequentie van de 'lijdelijkheid' van de civiele rechter?",
+    "a": [
+      "De rechter mag geen vragen stellen tijdens de zitting.",
+      "De rechter is afhankelijk van de informatie die partijen hem verschaffen.",
+      "De rechter moet altijd ambtshalve op zoek gaan naar de waarheid.",
+      "De rechter is verplicht om in elke zaak een schikking te beproeven."
+    ],
+    "c": 1,
+    "exp": "Lijdelijkheid betekent dat de rechter een passieve rol heeft en slechts beslist op basis van de feiten en argumenten die de partijen zelf hebben aangedragen."
+  },
+  {
+    "q": "Welke conclusie trekt het onderzoek over de kansen van niet-vertegenwoordigde gedaagden?",
+    "a": [
+      "Zij winnen vaker omdat rechters sympathie voor hen hebben.",
+      "Zij hebben een aanzienlijk kleinere kans op succes (meer dan 80% verliest).",
+      "Hun kansen zijn gelijk aan die van partijen met een advocaat.",
+      "Zij worden vaker doorverwezen naar mediation dan vertegenwoordigde partijen."
+    ],
+    "c": 1,
+    "exp": "Onderzoek toont aan dat gedaagden zonder juridische vertegenwoordiging een zeer lage kans op succes hebben; in meer dan 80% van de gevallen verliezen zij de zaak."
+  },
+  {
+    "q": "Wat is een doel van het gebruik van 'Klare Taal' in rechterlijke uitspraken?",
+    "a": [
+      "Het verhogen van de juridische complexiteit voor professionele partijen.",
+      "Het vergroten van de begrijpelijkheid en toegankelijkheid voor burgers.",
+      "Het verminderen van de lengte van de vonnissen om papier te besparen.",
+      "Het standaardiseren van vonnissen voor automatische verwerking door AI."
+    ],
+    "c": 1,
+    "exp": "Projecten zoals 'Klare Taal' hebben als doel het juridisch taalgebruik te vereenvoudigen zodat uitspraken beter begrijpelijk en toegankelijk zijn voor mensen zonder juridische achtergrond."
+  },
+  {
+    "q": "Welk effect heeft digitalisering op de rechtspraak volgens het 'enablement'-perspectief?",
+    "a": [
+      "Het beperkt de menselijke maat en leidt tot kille besluitvorming.",
+      "Het maakt rechtspraak efficiënter en vermindert fouten.",
+      "Het zorgt voor een grotere afstand tussen de rechter en de burger.",
+      "Het leidt tot een toename van de kosten voor de rechtzoekende."
+    ],
+    "c": 1,
+    "exp": "De 'enablement-these' stelt dat digitalisering kan helpen om efficiënter te werken en fouten te verminderen, in tegenstelling tot de 'curtailment-these' die risico's benadrukt."
+  },
+  {
+    "q": "Welk type rechtvaardigheid staat centraal bij 'Maatschappelijk Effectieve Rechtspraak'?",
+    "a": [
+      "Formele rechtvaardigheid (correcte toepassing van regels).",
+      "Materiële rechtvaardigheid (oplossing voor het probleem).",
+      "Retributieve rechtvaardigheid (vergelding van het onrecht).",
+      "Distributieve rechtvaardigheid (eerlijke verdeling van middelen)."
+    ],
+    "c": 1,
+    "exp": "Maatschappelijk Effectieve Rechtspraak streeft naar materiële rechtvaardigheid, waarbij het doel is om een effectieve oplossing te vinden voor de achterliggende problemen van de partijen, in plaats van alleen de regels toe te passen."
+  },
+  {
+    "q": "Wat is de functie van de 'rolzitting' in een kantonprocedure?",
+    "a": [
+      "Het is de zitting waar de einduitspraak wordt gedaan.",
+      "Het is een korte zitting waar de gedaagde mondeling verweer kan voeren.",
+      "Het is een besloten bijeenkomst voor mediation tussen partijen.",
+      "Het is het moment waarop de getuigen worden gehoord onder ede."
+    ],
+    "c": 1,
+    "exp": "De rolzitting is een korte zitting aan het begin van de procedure waar gedaagden (vaak zonder advocaat) de gelegenheid krijgen om mondeling verweer te voeren en waar de rechter instructies geeft."
+  },
+  {
+    "q": "Welk risico brengt 'contractvrijheid' met zich mee bij schikkingen tussen ongelijke partijen?",
+    "a": [
+      "Dat de rechter verplicht is elk schikkingsvoorstel goed te keuren.",
+      "Dat een niet-vertegenwoordigde partij instemt met een voor hem ongunstige regeling.",
+      "Dat de procedure oneindig lang wordt gerekt door onderhandelingen.",
+      "Dat de schikking niet juridisch bindend is zonder notariële akte."
+    ],
+    "c": 1,
+    "exp": "Omdat contractvrijheid en partijautonomie leidend zijn, heeft de rechter beperkte mogelijkheden om in te grijpen, waardoor een niet-vertegenwoordigde partij (leek) kan instemmen met een schikking die juridisch of financieel nadelig is ten opzichte van een professionele tegenpartij."
+  }
+]

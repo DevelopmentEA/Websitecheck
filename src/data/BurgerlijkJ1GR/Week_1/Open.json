@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Sanne en Mark wonen al vijf jaar informeel samen in de woning die eigendom is van Mark. Zij hebben geen samenlevingsovereenkomst gesloten. Sanne financiert met haar spaargeld een nieuwe keuken ter waarde van €20.000 in de woning van Mark. De relatie strandt en Sanne vordert dit bedrag terug. Zij beroept zich hierbij analoog op artikel 1:87 BW (vergoedingsrecht echtgenoten). Mark weigert te betalen. Heeft de vordering van Sanne op deze grondslag kans van slagen?",
+    "sample": "Rechtsvraag: Zijn de regels van het huwelijksvermogensrecht, specifiek artikel 1:87 BW, analoog van toepassing op informeel samenwonenden zonder samenlevingsovereenkomst?\n\nRechtsregel: De Hoge Raad heeft bepaald dat de vermogensrechtelijke verhouding tussen informeel samenlevenden niet wordt bepaald door de regels voor echtgenoten. Deze regels lenen zich niet voor analoge toepassing. Vergoedingsrechten moeten worden beoordeeld aan de hand van het algemene verbintenissenrecht.\n\nToepassing: Sanne en Mark wonen informeel samen zonder contract. Sanne beroept zich op een wetsartikel dat specifiek voor echtgenoten is geschreven. Omdat analoge toepassing door de Hoge Raad is uitgesloten, kan zij haar vordering niet op deze wetsbepaling baseren.\n\nConclusie: De vordering van Sanne heeft op deze grondslag geen kans van slagen.",
+    "checklist": [
+      "Informeel samenwonen zonder contract",
+      "Geen analoge toepassing huwelijksvermogensrecht",
+      "Beroep op art. 1:87 BW faalt",
+      "Beoordeling via algemeen verbintenissenrecht"
+    ],
+    "exp": "De casus is gebaseerd op het arrest HR 10 mei 2019 (Huwelijksvermogensrecht geldt niet voor samenwoners). De Hoge Raad oordeelde dat de regels uit Boek 1 BW voor echtgenoten zich niet lenen voor analoge toepassing op informeel samenwonenden. Een vergoedingsrecht moet worden vastgesteld aan de hand van het algemene verbintenissenrecht, zoals de onverschuldigde betaling, ongerechtvaardigde verrijking of de redelijkheid en billijkheid."
+  },
+  {
+    "q": "Karel komt te overlijden. Hij laat geen testament na. Karel was niet gehuwd en had geen kinderen. Zijn enige nog levende familieleden zijn zijn broer Jan en zijn neef Tim (de zoon van zijn vooroverleden zus). Bereken de graad van bloedverwantschap tussen Karel en Tim en leg uit hoe deze wordt vastgesteld volgens de wet.",
+    "sample": "Rechtsvraag: Wat is de graad van bloedverwantschap tussen Karel en zijn neef Tim?\n\nRechtsregel: Volgens artikel 1:3 BW wordt de graad van bloedverwantschap bepaald door het getal der geboorten die de bloedverwantschap hebben veroorzaakt. Hierbij moet worden teruggerekend naar de gemeenschappelijke stamouder.\n\nToepassing: Om van Karel naar Tim te komen, tellen we de stappen via de ouders (stamouders). Van Karel naar de ouders is 1 stap. Van de ouders naar de zus (moeder van Tim) is 1 stap (totaal 2). Van de zus naar Tim is 1 stap. Het totaal aantal stappen is drie.\n\nConclusie: Er bestaat tussen Karel en Tim bloedverwantschap in de derde graad in de zijlijn.",
+    "checklist": [
+      "Graad bepaald door aantal geboorten",
+      "Terugrekenen naar gemeenschappelijke stamouder",
+      "Drie stappen in de telling",
+      "Derdegraads bloedverwantschap in zijlijn"
+    ],
+    "exp": "Bloedverwantschap wordt berekend door de stappen te tellen via de gemeenschappelijke voorouder. Tussen broers/zussen is dit de tweede graad (broer -> ouder -> zus). Tim is de zoon van de zus, dus komt er één stap bij. Dit maakt Tim een derdegraads bloedverwant van Karel (oom-neef verhouding)."
+  },
+  {
+    "q": "Lisa overlijdt en laat haar echtgenoot Peter en hun twee kinderen, Tom en Anna, achter. Lisa heeft geen testament opgesteld. De nalatenschap bevat onder andere de echtelijke woning en een spaarrekening. Tom eist direct na de begrafenis dat de woning wordt verkocht en zijn deel van de erfenis in geld aan hem wordt uitgekeerd. Peter weigert dit. Staart Tom in zijn recht?",
+    "sample": "Rechtsvraag: Kan een kind bij versterf de verdeling van de nalatenschap en uitbetaling van zijn erfdeel eisen als er een langstlevende echtgenoot is?\n\nRechtsregel: Artikel 4:13 BW bepaalt dat bij versterf de wettelijke verdeling geldt. De langstlevende echtgenoot verkrijgt van rechtswege de goederen van de nalatenschap. De kinderen krijgen een geldvordering op de langstlevende echtgenoot die pas opeisbaar is bij diens overlijden of faillissement.\n\nToepassing: De wettelijke verdeling is van toepassing. Peter wordt eigenaar van alle goederen, inclusief de woning. De vordering van Tom is op dit moment van rechtswege niet opeisbaar.\n\nConclusie: Tom staat niet in zijn recht; hij kan geen directe verdeling of uitbetaling eisen.",
+    "checklist": [
+      "Toepassing wettelijke verdeling (art. 4:13 BW)",
+      "Langstlevende echtgenoot verkrijgt goederen",
+      "Kinderen verkrijgen niet-opeisbare geldvordering",
+      "Vordering pas opeisbaar bij overlijden/faillissement"
+    ],
+    "exp": "De wettelijke verdeling is bedoeld om de langstlevende echtgenoot te beschermen, zodat deze ongestoord kan voortleven. De kinderen verkrijgen wel een erfdeel (een vordering), maar geen goederen en kunnen dit bedrag in beginsel niet direct opeisen zolang de langstlevende echtgenoot leeft en niet failliet is."
+  },
+  {
+    "q": "Na het overlijden van moeder bezoekt dochter Emma de kamer van moeder in het verzorgingstehuis. In opdracht van de familie haalt Emma de kamer leeg. Ze gooit waardeloze spullen weg en neemt enkele fotoalbums zonder economische waarde mee naar huis. Een schuldeiser van moeder stelt dat Emma door deze handelingen de nalatenschap zuiver heeft aanvaard en spreekt haar aan voor de schulden. Heeft de schuldeiser gelijk?",
+    "sample": "Rechtsvraag: Heeft Emma door het ontruimen van de kamer en het meenemen van zaken zonder economische waarde de nalatenschap zuiver aanvaard door gedragingen?\n\nRechtsregel: Uit gedragingen mag niet te snel zuivere aanvaarding worden afgeleid (art. 4:192 lid 1 BW). Handelingen die gericht zijn op beheer of het veiligstellen van goederen, of handelingen met goederen zonder economische waarde, leiden niet tot zuivere aanvaarding, tenzij de intentie ondubbelzinnig blijkt.\n\nToepassing: Emma verricht beheershandelingen door de kamer te ontruimen. De fotoalbums en weggegooide spullen vertegenwoordigen geen economische waarde. Uit deze gedragingen blijkt niet ondubbelzinnig de wil om als rechthebbende over de nalatenschap te beschikken ten nadele van schuldeisers.\n\nConclusie: De schuldeiser heeft ongelijk; er is geen sprake van zuivere aanvaarding.",
+    "checklist": [
+      "Zuivere aanvaarding door gedragingen",
+      "Handelingen betreffen beheer/geen economische waarde",
+      "Geen ondubbelzinnige intentie tot aanvaarding",
+      "Beroep op HR Cadeaubonnen en gebak"
+    ],
+    "exp": "In het arrest HR Cadeaubonnen en gebak oordeelde de Hoge Raad dat terughoudendheid geboden is bij het aannemen van zuivere aanvaarding door gedragingen. Het leeghalen van een kamer en meenemen van spullen zonder economische waarde zijn beheershandelingen of handelingen van emotionele waarde, geen beschikkingshandelingen die leiden tot aansprakelijkheid voor schulden."
+  },
+  {
+    "q": "Johan, 45 jaar oud, wil weten wie zijn biologische vader is. Hij vermoedt dat dit meneer De Vries is. Johan vordert dat De Vries meewerkt aan een DNA-onderzoek. De Vries weigert en stelt dat dit een inbreuk is op zijn lichamelijke integriteit en privacy, en dat hij hierdoor psychische schade oploopt. Wiens belang weegt zwaarder?",
+    "sample": "Rechtsvraag: Weegt het recht van het kind op kennis van zijn afstamming zwaarder dan het recht op privacy en lichamelijke integriteit van de vermoedelijke verwekker?\n\nRechtsregel: Op grond van artikel 8 EVRM heeft iedereen het recht om zijn afstamming te kennen om zijn identiteit te vormen. Volgens de Hoge Raad prevaleert dit belang in beginsel boven het belang van de vermoedelijke verwekker om niet mee te werken, tenzij zwaarwegende belangen zich hiertegen verzetten.\n\nToepassing: Johan heeft een groot belang bij het kennen van zijn afstamming voor zijn identiteitsontwikkeling. Hoewel De Vries recht heeft op privacy, is de inbreuk door een DNA-test beperkt. Zonder zeer specifieke zwaarwegende redenen gaat het belang van Johan voor.\n\nConclusie: Het belang van Johan weegt zwaarder; De Vries zal waarschijnlijk moeten meewerken.",
+    "checklist": [
+      "Recht op kennis afstamming (art. 8 EVRM)",
+      "Belang kind bij identiteitsvorming prevaleert",
+      "Afweging tegen privacy/lichamelijke integriteit",
+      "Beroep op HR Meewerken aan DNA-onderzoek"
+    ],
+    "exp": "De Hoge Raad heeft bepaald dat het belang van het kind om te weten van wie het afstamt in de regel voorrang heeft. Dit is fundamenteel voor de ontwikkeling van de eigen identiteit en persoonlijkheid. Slechts in zeer uitzonderlijke situaties kan het belang van de verwekker voorgaan."
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Het proces van geschilbeslechting begint volgens het theoretische model direct met de fase van 'claiming', waarin een partij compensatie eist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het proces van geschilontwikkeling verloopt in drie fasen: eerst moet een ervaring worden herkend als onrecht ('naming'), vervolgens moet een verantwoordelijke worden aangewezen ('blaming'), en pas daarna kan actie worden ondernomen richting de tegenpartij ('claiming')."
+  },
+  {
+    "q": "Uit empirisch onderzoek blijkt dat de overgrote meerderheid van de juridische geschillen tussen burgers uiteindelijk door de rechter wordt beslecht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Slechts een zeer klein percentage (ongeveer 3%) van de juridische problemen leidt tot een gerechtelijke procedure; de meeste geschillen worden onderling opgelost, via buitengerechtelijke wegen, of er wordt geen actie ondernomen."
+  },
+  {
+    "q": "Burgers die maatschappelijk en economisch actief zijn, lopen een groter risico om met juridische problemen te maken te krijgen dan inactieve burgers.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Een actievere deelname aan de maatschappij, zoals werken, huren en consumeren, verhoogt de frequentie van transacties en relaties, wat de statistische kans op het ontstaan van juridische conflicten vergroot."
+  },
+  {
+    "q": "In de fase van 'blaming' wordt een specifieke partij of instantie verantwoordelijk gehouden voor het ervaren probleem.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In de 'blaming'-fase verschuift de perceptie van het probleem van toeval of pech naar de schuld van een specifieke andere partij, wat een voorwaarde is voor het indienen van een claim."
+  },
+  {
+    "q": "De strategie waarbij een benadeelde partij bewust besluit geen actie te ondernemen en het probleem te accepteren, wordt aangeduid als 'lumping it'.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "'Lumping it' verwijst naar de reactie waarbij een persoon met een juridisch probleem besluit om geen stappen te ondernemen en het onrecht of verlies te verdragen, vaak vanwege kosten, angst of onwetendheid."
+  },
+  {
+    "q": "Een klacht-gebaseerd handhavingssysteem is de meest effectieve manier om structurele arbeidsovertredingen zoals loondiefstal aan te pakken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een systeem dat afhankelijk is van individuele klachten is inefficiënt bij loondiefstal, omdat kwetsbare werknemers vaak geen actie durven ondernemen uit angst voor represailles, waardoor structurele overtredingen onbestraft blijven."
+  },
+  {
+    "q": "Partijen die als 'repeat players' worden aangemerkt, hebben in juridische procedures doorgaans een strategisch voordeel ten opzichte van 'one-shotters'.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "'Repeat players', zoals grote bedrijven of overheidsinstanties, beschikken over meer proceservaring, financiële middelen en specialistische kennis om procedures in hun voordeel te sturen dan incidentele procespartijen."
+  },
+  {
+    "q": "De 'smalle definitie' van toegang tot het recht omvat ook preventieve maatregelen en buitengerechtelijke geschilbeslechting.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De smalle definitie beperkt zich tot de formele toegang tot de rechtspraak en juridische bijstand (advocatuur), terwijl de brede definitie ook kijkt naar preventie, uitkomsten en alternatieve geschilbeslechting."
+  },
+  {
+    "q": "Kwetsbare groepen, zoals uitkeringsgerechtigden, ondernemen vaker geen actie bij juridische problemen dan hoogopgeleiden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Kwetsbare groepen blijven vaker passief bij juridische problemen door een combinatie van factoren zoals een gebrek aan juridische kennis, beperkte financiële middelen, angst en een lager vertrouwen in het rechtssysteem."
+  },
+  {
+    "q": "In de Deliveroo-zaak kozen bijna alle maaltijdbezorgers er onmiddellijk voor om hun rechten op te eisen nadat de rechter oordeelde dat zij werknemers waren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Ondanks de gunstige uitspraak vroegen veel bezorgers geen arbeidscontract aan vanwege onwetendheid, angst voor ontslag of omdat zij de voorkeur gaven aan de flexibiliteit van het zzp-schap."
+  },
+  {
+    "q": "Een individualistische benadering van toegang tot het recht houdt rekening met de structurele machtsverschillen tussen procespartijen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een individualistische benadering gaat uit van de zelfredzaamheid van de burger en negeert vaak de sociale en economische barrières en machtsverschillen die mensen belemmeren om hun recht te halen."
+  },
+  {
+    "q": "De meeste burgers die met een juridisch probleem te maken krijgen, proberen dit in eerste instantie zelf op te lossen zonder professionele hulp.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Uit onderzoek blijkt dat bijna de helft van de rechtzoekenden eerst probeert het probleem zelfstandig op te lossen, bijvoorbeeld door direct contact op te nemen met de tegenpartij."
+  },
+  {
+    "q": "De kosten van een procedure zijn de enige beslissende factor voor burgers om wel of niet juridische hulp in te schakelen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Naast kosten spelen ook de ernst van het probleem, het financiële belang, de verwachte kans op succes en de beschikbaarheid van alternatieven een grote rol in de afweging om hulp te zoeken."
+  },
+  {
+    "q": "Het hebben van een rechtsbijstandsverzekering verlaagt de drempel om juridische hulp in te schakelen aanzienlijk.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Verzekerden maken vaker gebruik van juridische diensten bij geschillen omdat de directe financiële barrière voor professionele bijstand is weggenomen."
+  },
+  {
+    "q": "Strategisch procederen heeft als primair doel om een snelle, individuele schikking voor de cliënt te bereiken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het doel van strategisch procederen is het bewerkstelligen van bredere maatschappelijke of juridische veranderingen via jurisprudentie, wat het individuele belang van de zaak overstijgt."
+  },
+  {
+    "q": "Psychologische barrières, zoals angst voor conflict of wantrouwen, spelen een rol in de beslissing om juridische stappen te ondernemen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Psychologische factoren zoals angst voor represailles, onzekerheid over de uitkomst en wantrouwen in instituties zijn belangrijke drempels die mensen ervan weerhouden hun recht te halen."
+  },
+  {
+    "q": "Problemen met overheidsinstanties zijn volgens de statistieken de meest voorkomende categorie juridische problemen onder burgers.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De meest voorkomende categorie juridische problemen betreft geschillen rondom de aankoop van producten en diensten (consumentenrecht), gevolgd door werkgerelateerde problemen."
+  },
+  {
+    "q": "Juridisering van de samenleving betekent dat steeds meer sociale relaties en alledaagse situaties worden gereguleerd door formele regels.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Juridisering beschrijft het proces waarbij het recht en juridische regels steeds dieper doordringen in het dagelijks leven, waardoor sociale problemen vaker als juridische problemen worden geframed."
+  },
+  {
+    "q": "Loonroof wordt in de literatuur beschreven als een louter individueel probleem tussen werknemer en werkgever zonder bredere maatschappelijke impact.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Loonroof wordt gezien als een systemisch sociaal probleem dat niet alleen individuen raakt, maar ook armoede verergert, arbeidsmarkten verstoort en eerlijke concurrentie ondermijnt."
+  },
+  {
+    "q": "Mediation is volgens de statistieken de meest gebruikte methode om juridische geschillen in Nederland op te lossen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Mediation wordt slechts in een klein percentage van de gevallen ingezet (circa 5%), voornamelijk bij familie- en relatieproblemen, en is veel minder gebruikelijk dan zelfhulp of inschakeling van een advocaat."
+  },
+  {
+    "q": "Mensen met multiproblematiek zijn door hun ervaring doorgaans effectiever in het oplossen van juridische geschillen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De stapeling van problemen (zoals schulden, wonen en werk) leidt vaak tot stress en complexiteit, waardoor het vermogen om rationeel en effectief juridische actie te ondernemen juist afneemt."
+  },
+  {
+    "q": "Een verhoging van de griffierechten leidt doorgaans tot een afname van het aantal civiele zaken dat bij de rechter wordt aangebracht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Hogere proceskosten, zoals griffierechten, verhogen de financiële drempel, waardoor mensen – zeker bij zaken met een lager financieel belang – vaker afzien van een gerechtelijke procedure."
+  },
+  {
+    "q": "Vertrouwen in de rechtspraak is gelijk verdeeld over alle bevolkingsgroepen in Nederland.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Er bestaat ongelijkheid in vertrouwen; met name mensen met een lager inkomen of een uitkering hebben vaker twijfels over de eerlijkheid en toegankelijkheid van het rechtssysteem."
+  },
+  {
+    "q": "Veel juridische problemen blijven onzichtbaar voor het rechtssysteem omdat mensen zich niet realiseren dat hun probleem een juridische component heeft.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Als mensen een probleem niet als juridisch herkennen (fase van 'naming'), bijvoorbeeld door het als pech te zien, zullen zij ook geen juridische oplossing zoeken, waardoor het probleem buiten beeld blijft."
+  },
+  {
+    "q": "Een systeem dat sterk leunt op zelfredzaamheid vergroot de ongelijkheid in toegang tot het recht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Omdat juridische kennis en vaardigheden ongelijk verdeeld zijn, benadeelt een focus op zelfredzaamheid kwetsbare groepen die minder goed in staat zijn hun weg te vinden in het rechtssysteem."
+  },
+  {
+    "q": "In de 'naming'-fase van het geschilbeslechtingsproces wordt de schuldvraag definitief beantwoord.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In de 'naming'-fase wordt een ervaring enkel benoemd als een probleem of onrecht; het toewijzen van schuld of verantwoordelijkheid aan een andere partij gebeurt pas in de daaropvolgende 'blaming'-fase."
+  },
+  {
+    "q": "Hervormingen om loondiefstal aan te pakken falen vaak omdat ze blijven leunen op het initiatief van de individuele werknemer.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Hervormingen zijn vaak ineffectief omdat ze afhankelijk blijven van klachten van werknemers (individual empowerment), in plaats van in te zetten op proactieve handhaving door de overheid."
+  },
+  {
+    "q": "Een burger die eenmalig een rechtszaak voert tegen een grote verzekeringsmaatschappij kwalificeert als een 'one-shotter'.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Een 'one-shotter' is een partij die slechts incidenteel betrokken is bij juridische procedures en daardoor minder ervaring en middelen heeft dan de 'repeat player' (de verzekeringsmaatschappij)."
+  },
+  {
+    "q": "Kwantitatief onderzoek is de meest geschikte methode om diepgaand inzicht te krijgen in de persoonlijke motivaties waarom mensen geen rechtshulp zoeken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Kwantitatief onderzoek toont cijfers en trends, maar kwalitatief onderzoek (zoals interviews) is nodig om de dieperliggende motivaties, emoties en psychologische drempels te begrijpen."
+  },
+  {
+    "q": "Het aantal gerechtelijke procedures dat door burgers wordt gestart is sinds 2003 aanzienlijk toegenomen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Uit langjarig onderzoek blijkt juist dat het percentage geschillen dat leidt tot een gang naar de rechter sinds 2003 sterk is gedaald, tot ongeveer een halvering."
+  }
+]

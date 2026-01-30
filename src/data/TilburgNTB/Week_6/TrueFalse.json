@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Het zorgvuldigheidsbeginsel uit artikel 3:2 Awb verplicht een bestuursorgaan om bij de voorbereiding van een besluit de nodige kennis over de relevante feiten en af te wegen belangen te vergaren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:2 Algemene wet bestuursrecht legt de zogenaamde kennisvergaringsplicht vast, die inhoudt dat het bestuursorgaan een besluit zorgvuldig moet voorbereiden door alle relevante feiten en belangen in kaart te brengen."
+  },
+  {
+    "q": "Het verbod van détournement de pouvoir houdt in dat een bestuursorgaan een bevoegdheid niet mag gebruiken voor een ander doel dan waarvoor die bevoegdheid is verleend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:3 Algemene wet bestuursrecht codificeert het specialiteitsbeginsel, wat inhoudt dat een bestuursbevoegdheid uitsluitend mag worden aangewend voor het specifieke doel waarvoor de wetgever deze heeft toegekend."
+  },
+  {
+    "q": "Het evenredigheidsbeginsel van artikel 3:4 lid 2 Awb is uitsluitend van toepassing op belastende beschikkingen en niet op begunstigende beschikkingen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:4 lid 2 Algemene wet bestuursrecht geldt voor alle besluiten waarbij een belangenafweging moet plaatsvinden. Ook bij begunstigende beschikkingen mogen de nadelige gevolgen voor derden niet onevenredig zijn in verhouding tot het met het besluit te dienen doel."
+  },
+  {
+    "q": "Volgens de uitspraak Dakopbouw Amsterdam is voor een geslaagd beroep op het vertrouwensbeginsel vereist dat de toezegging is gedaan door een ambtenaar die formeel bevoegd was om het besluit te nemen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In de uitspraak Dakopbouw Amsterdam is bepaald dat een toezegging aan het bevoegde orgaan kan worden toegerekend indien de betrokkene op goede gronden mocht veronderstellen dat degene die de toezegging deed de opvatting van het bevoegde orgaan vertolkte, ook als deze ambtenaar zelf onbevoegd was."
+  },
+  {
+    "q": "Het gelijkheidsbeginsel verplicht twee verschillende gemeenten om in feitelijk gelijke gevallen exact dezelfde beslissing te nemen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het gelijkheidsbeginsel ziet op beslissingen van één en hetzelfde bestuursorgaan. Dat verschillende bestuursorganen (zoals twee gemeenten) in vergelijkbare gevallen anders beslissen, is niet in strijd met het gelijkheidsbeginsel."
+  },
+  {
+    "q": "Een besluit moet altijd berusten op een deugdelijke motivering die de beslissing kan dragen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:46 Algemene wet bestuursrecht vereist dat een besluit berust op een deugdelijke motivering. Dit betekent dat de argumenten de beslissing inhoudelijk moeten kunnen ondersteunen (draagkrachtige motivering)."
+  },
+  {
+    "q": "De rechter toetst het gebruik van een discretionaire bevoegdheid door een bestuursorgaan terughoudend (marginaal).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij discretionaire bevoegdheden (beleidsruimte) heeft het bestuursorgaan keuzevrijheid. De rechter respecteert deze vrijheid en toetst slechts of het orgaan in redelijkheid tot het besluit heeft kunnen komen, waarbij de belangenafweging centraal staat."
+  },
+  {
+    "q": "Het fair-play-beginsel is gecodificeerd in de Algemene wet bestuursrecht en verbiedt vooringenomenheid bij de vervulling van de bestuurstaak.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 2:4 Algemene wet bestuursrecht bepaalt dat het bestuursorgaan zijn taak vervult zonder vooringenomenheid. Dit is de wettelijke verankering van het fair-play-beginsel."
+  },
+  {
+    "q": "Een bestuursorgaan mag nimmer afwijken van een zelf vastgestelde en gepubliceerde beleidsregel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 4:84 Algemene wet bestuursrecht bevat een inherente afwijkingsbevoegdheid. Het bestuursorgaan moet overeenkomstig de beleidsregel handelen, tenzij dat voor een of meer belanghebbenden gevolgen zou hebben die wegens bijzondere omstandigheden onevenredig zijn."
+  },
+  {
+    "q": "Het vertrouwensbeginsel brengt met zich mee dat gerechtvaardigde verwachtingen altijd moeten worden gehonoreerd, ongeacht strijdigheid met de wet of belangen van derden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Volgens het stappenplan uit de jurisprudentie (o.a. Dakopbouw Amsterdam) volgt na de vaststelling van een toerekenbare toezegging een belangenafweging. Zwaarder wegende belangen, zoals die van derden of het algemeen belang, kunnen aan honorering in de weg staan, eventueel leidend tot schadevergoeding."
+  },
+  {
+    "q": "Bij de verdeling van schaarse vergunningen vloeit uit het gelijkheidsbeginsel voort dat deze vergunningen in beginsel niet voor onbepaalde tijd mogen worden verleend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Uit de jurisprudentie (o.a. Speelautomatenhal Vlaardingen) volgt dat om gelijke kansen te bieden aan potentiële gegadigden, schaarse vergunningen slechts tijdelijk mogen worden verleend, zodat de markt niet permanent wordt afgesloten."
+  },
+  {
+    "q": "Het beginsel van materiële rechtszekerheid verzet zich in beginsel tegen het met terugwerkende kracht wijzigen van besluiten ten nadele van de burger.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het materiële rechtszekerheidsbeginsel houdt in dat het geldende recht daadwerkelijk moet worden toegepast en dat burgers moeten kunnen vertrouwen op hun rechtspositie. Belastende maatregelen met terugwerkende kracht zijn in strijd met dit beginsel, tenzij de wijziging voorzienbaar was."
+  },
+  {
+    "q": "Indien een besluit steunt op een beleidsregel, is het voor de motivering nooit voldoende om slechts naar die beleidsregel te verwijzen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 4:82 Algemene wet bestuursrecht bepaalt dat ter motivering van een besluit kan worden volstaan met een verwijzing naar een vaste gedragslijn (beleidsregel), voor zover deze zelf deugdelijk is gemotiveerd."
+  },
+  {
+    "q": "In de uitspraak Woningsluiting Harderwijk heeft de Afdeling bestuursrechtspraak geoordeeld dat de rechter bij de toetsing aan het evenredigheidsbeginsel moet beoordelen of het besluit geschikt, noodzakelijk en evenwichtig is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De Afdeling oordeelde in deze uitspraak dat de rechter bij de toetsing aan artikel 3:4 lid 2 Awb niet slechts toetst of het orgaan 'in redelijkheid' tot het besluit kon komen, maar aan de hand van drie stappen: geschiktheid, noodzakelijkheid en evenwichtigheid (maatvoering)."
+  },
+  {
+    "q": "Een bestuursorgaan heeft op grond van de vergewisplicht van artikel 3:9 Awb de taak om zich ervan te verzekeren dat een onderzoek door een adviseur op zorgvuldige wijze heeft plaatsgevonden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:9 Algemene wet bestuursrecht legt de vergewisplicht vast. Het bestuursorgaan mag niet blind varen op een advies, maar moet controleren of het onderzoek naar feiten op zorgvuldige wijze is verricht."
+  },
+  {
+    "q": "Het consistentiebeginsel houdt in dat een bestuursorgaan verplicht is om voor elke bevoegdheid beleidsregels vast te stellen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het consistentiebeginsel eist dat een bestuursorgaan niet willekeurig handelt en een bepaalde lijn volgt in beslissingen. Het vaststellen van beleidsregels is een middel om dit te bereiken en verdient de voorkeur, maar is geen wettelijke verplichting."
+  },
+  {
+    "q": "De rechter toetst een besluit waarbij een bestuurlijke boete wordt opgelegd terughoudend aan het evenredigheidsbeginsel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij bestraffende sancties (punitieve sancties) zoals een bestuurlijke boete toetst de rechter vol (indringend) of de sanctie evenredig is aan de ernst van de overtreding en de mate van verwijtbaarheid. De rechter mag hier zijn eigen oordeel in de plaats stellen van dat van het bestuur."
+  },
+  {
+    "q": "Het beginsel van formele rechtszekerheid vereist dat een besluit een zodanige inhoud heeft dat de belanghebbende weet waar hij aan toe is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Formele rechtszekerheid ziet op de duidelijkheid en begrijpelijkheid van besluiten. Een besluit moet ondubbelzinnig geformuleerd zijn zodat de burger zijn rechten en plichten kent."
+  },
+  {
+    "q": "De hoorplicht van artikel 4:7 Awb geldt alleen als de beschikking op aanvraag wordt gegeven.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 4:8 Algemene wet bestuursrecht regelt de hoorplicht voor ambtshalve (niet op aanvraag) genomen beschikkingen waarbij een belanghebbende naar verwachting bedenkingen zal hebben. De hoorplicht is dus niet beperkt tot beschikkingen op aanvraag."
+  },
+  {
+    "q": "Een bestuursorgaan is verplicht om bij de bekendmaking van een besluit te vermelden door wie, binnen welke termijn en bij welk orgaan bezwaar of beroep kan worden ingesteld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:45 Algemene wet bestuursrecht verplicht het bestuursorgaan om bij de bekendmaking van een besluit melding te maken van de mogelijkheid tot bezwaar of beroep en de daarbij horende procedurele vereisten."
+  },
+  {
+    "q": "Het motiveringsbeginsel is een formeel beginsel van behoorlijk bestuur.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het motiveringsbeginsel (art. 3:46 Awb) vereist dat een besluit op een deugdelijke motivering berust. Dit wordt gerekend tot de formele beginselen omdat het ziet op de onderbouwing en totstandkoming, hoewel de inhoud van de motivering (draagkracht) ook materiële aspecten raakt."
+  },
+  {
+    "q": "Als een bestuursorgaan afwijkt van een krachtens wettelijk voorschrift uitgebracht advies, hoeft dit alleen in de interne stukken te worden gemotiveerd en niet in het besluit zelf.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:50 Algemene wet bestuursrecht bepaalt dat indien het bestuursorgaan een besluit neemt dat afwijkt van een wettelijk advies, de redenen voor die afwijking in de motivering van het besluit zelf moeten worden vermeld."
+  },
+  {
+    "q": "Een geslaagd beroep op het gelijkheidsbeginsel vereist dat het bestuursorgaan een in het verleden gemaakte fout in een nieuw geval moet herhalen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het gelijkheidsbeginsel strekt niet zo ver dat het bestuursorgaan gedwongen kan worden om in strijd met de wet te handelen (contra legem) door een eerder gemaakte fout te herhalen."
+  },
+  {
+    "q": "De rechter past bij de toetsing van beleidsregels de zogenaamde tweefasentoetsing toe.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De tweefasentoetsing houdt in dat de rechter eerst beoordeelt of het beleid zelf de redelijkheidstoets kan doorstaan (is het beleid niet onredelijk?), en vervolgens toetst of de toepassing van dat beleid in het concrete geval in overeenstemming is met art. 4:84 Awb (o.a. inherente afwijkingsbevoegdheid)."
+  },
+  {
+    "q": "De bekendmaking van een besluit dat is gericht tot een of meer belanghebbenden geschiedt uitsluitend door publicatie in een huis-aan-huisblad.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:41 Algemene wet bestuursrecht bepaalt dat de bekendmaking van besluiten die tot een of meer belanghebbenden zijn gericht, geschiedt door toezending of uitreiking aan hen."
+  },
+  {
+    "q": "Het zorgvuldigheidsbeginsel impliceert dat een bestuursorgaan bij de voorbereiding van een besluit geen gebruik mag maken van een adviescommissie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het zorgvuldigheidsbeginsel (art. 3:2 Awb) verplicht juist tot het vergaren van kennis. Het inschakelen van deskundigen of adviescommissies is vaak een manier om aan deze plicht te voldoen, mits de vergewisplicht (art. 3:9 Awb) in acht wordt genomen."
+  },
+  {
+    "q": "Bij de verdeling van schaarse rechten is het bestuur verplicht om een passende mate van openbaarheid te verzekeren met betrekking tot de verdelingsprocedure.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dit vloeit voort uit het gelijkheidsbeginsel en de transparantieverplichting bij schaarse vergunningen. Potentiële gegadigden moeten weten dat er iets te verdelen valt en hoe de procedure verloopt (Jurisprudentie Speelautomatenhal Vlaardingen)."
+  },
+  {
+    "q": "Het verbod van vooringenomenheid uit artikel 2:4 Awb geldt alleen voor leden van het bestuursorgaan en niet voor ambtenaren die het besluit voorbereiden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 2:4 Algemene wet bestuursrecht bepaalt dat het bestuursorgaan zijn taak vervult zonder vooringenomenheid en waakt ervoor dat tot het bestuursorgaan behorende of daarvoor werkzame personen (zoals ambtenaren) geen persoonlijk belang hebben bij de besluitvorming."
+  },
+  {
+    "q": "De motivering van een besluit mag in spoedeisende gevallen uiterlijk binnen een week na de bekendmaking worden verstrekt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:47 lid 2 Algemene wet bestuursrecht maakt het mogelijk dat, indien de spoed zich verzet tegen het direct vermelden van de motivering, deze later wordt verstrekt, maar uiterlijk binnen een week na de bekendmaking."
+  },
+  {
+    "q": "De burger kan aan het vertrouwensbeginsel rechten ontlenen indien bij hem de gerechtvaardigde indruk is gewekt van een welbewuste standpuntbepaling door het bestuur.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dit is de kern van de eerste stap in het beoordelingskader voor het vertrouwensbeginsel (Dakopbouw Amsterdam): er moet sprake zijn van een toezegging die bij een redelijk denkende burger de indruk wekt van een welbewuste standpuntbepaling."
+  }
+]

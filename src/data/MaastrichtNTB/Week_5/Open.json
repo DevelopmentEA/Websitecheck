@@ -1,0 +1,57 @@
+[
+  {
+    "q": "De politie houdt verdachte Karel aan op verdenking van rijden onder invloed. Zonder dat Karel toestemming geeft en zonder dat er een specifieke wettelijke regeling voor bestaat, neemt een arts in opdracht van de politie bloed bij hem af om het alcoholpromillage vast te stellen. De politie stelt dat dit mag op grond van hun algemene taakstelling. Beoordeel de rechtmatigheid van deze bloedafname.",
+    "sample": "Issue: Is de gedwongen bloedafname zonder specifieke wettelijke grondslag rechtmatig op basis van de algemene politietaak?\n\nRule: In het arrest Bloedproef II oordeelde de Hoge Raad dat een inbreuk op de lichamelijke integriteit een specifieke wettelijke grondslag vereist. De algemene taakomschrijving van de politie is hiervoor onvoldoende.\n\nApplication: De politie maakt inbreuk op de lichamelijke integriteit van Karel door bloed af te nemen zonder zijn toestemming. Er is in deze casus geen specifieke wettelijke bepaling die dit toestaat.\n\nConclusion: De bloedafname is onrechtmatig wegens strijd met het legaliteitsbeginsel en het recht op lichamelijke integriteit.",
+    "checklist": [
+      "Inbreuk op lichamelijke integriteit vereist specifieke wet.",
+      "Algemene taakomschrijving politie is onvoldoende grondslag.",
+      "Handeling is onrechtmatig zonder wettelijke basis.",
+      "Verwijzing naar arrest Bloedproef II."
+    ],
+    "exp": "HR Bloedproef II.\n\nDe Hoge Raad bepaalde dat ingrijpende dwangmiddelen die de lichamelijke integriteit schenden, niet gebaseerd kunnen worden op een algemene taakomschrijving, maar een specifieke wettelijke basis in formele zin vereisen."
+  },
+  {
+    "q": "De politie heeft een machtiging om de woning van verdachte X te doorzoeken. De agenten arriveren bij de woning en zien X door het raam in de woonkamer zitten. Zonder aan te bellen of hun komst aan te kondigen, trappen de agenten direct de voordeur in om binnen te treden. X stelt dat dit optreden onrechtmatig is. Heeft X gelijk?",
+    "sample": "Issue: Is het direct forceren van de deur rechtmatig wanneer er een formele bevoegdheid tot binnentreden is, maar de bewoner aanwezig is?\n\nRule: In het arrest Braak bij binnentreden is bepaald dat ook bij een formele bevoegdheid de beginselen van proportionaliteit en subsidiariteit in acht moeten worden genomen.\n\nApplication: De agenten hadden kunnen aanbellen (subsidiariteit) omdat X zichtbaar aanwezig was. Het direct intrappen van de deur veroorzaakt onnodige schade en is disproportioneel.\n\nConclusion: X heeft gelijk; het binnentreden is onrechtmatig wegens schending van de beginselen van een behoorlijke procesorde.",
+    "checklist": [
+      "Formele bevoegdheid ontslaat niet van beginselen.",
+      "Toetsing aan proportionaliteit en subsidiariteit vereist.",
+      "Minder ingrijpend middel (aanbellen) was mogelijk.",
+      "Verwijzing naar arrest Braak bij binnentreden."
+    ],
+    "exp": "HR Braak bij binnentreden.\n\nZelfs als de politie formeel bevoegd is (machtiging), moet de uitvoering van die bevoegdheid voldoen aan de eisen van proportionaliteit en subsidiariteit. Onnodig geweld tegen goederen maakt het optreden onrechtmatig."
+  },
+  {
+    "q": "Douaneambtenaren voeren een controle uit bij een reiziger op Schiphol. Op basis van de Douanewet, die de bevoegdheid geeft tot 'lijfsvisitatie', besluiten zij niet alleen de kleding te onderzoeken, maar ook rectaal te schouwen (in het lichaam te kijken) om bolletjes drugs op te sporen. Is deze handeling toegestaan op basis van de term 'lijfsvisitatie'?",
+    "sample": "Issue: Valt het schouwen van lichaamsopeningen (rectaal onderzoek) onder de wettelijke term 'lijfsvisitatie'?\n\nRule: In het arrest Lijfvisitatie o.b.v. de Douanewet oordeelde de Hoge Raad dat 'lijfsvisitatie' enkel het onderzoek aan het lichaam/kleding betreft. Onderzoek in het lichaam vereist een expliciete wettelijke grondslag.\n\nApplication: De ambtenaren kijken in het lichaam (rectaal). De Douanewet gaf slechts bevoegdheid tot lijfsvisitatie (aan het lichaam).\n\nConclusion: De handeling is onrechtmatig omdat de wettelijke grondslag voor onderzoek in het lichaam ontbreekt.",
+    "checklist": [
+      "Lijfsvisitatie betreft onderzoek aan het lichaam.",
+      "Onderzoek in lichaam vereist specifieke grondslag.",
+      "Term lijfsvisitatie dekt geen inwendig onderzoek.",
+      "Verwijzing arrest Lijfvisitatie o.b.v. Douanewet."
+    ],
+    "exp": "HR Lijfvisitatie o.b.v. de Douanewet.\n\nDe Hoge Raad maakte een strikt onderscheid tussen onderzoek aan het lichaam (lijfsvisitatie) en onderzoek in het lichaam. Voor dat laatste is de term lijfsvisitatie onvoldoende als wettelijke basis."
+  },
+  {
+    "q": "Tijdens een verhoor wordt verdachte Y door de politie onder zware druk gezet. De agenten dreigen dat Y zijn advocaat niet mag spreken en dat hij in voorlopige hechtenis blijft als hij niet bekent. Onder deze druk legt Y een bekentenis af. Welk fundamenteel beginsel is hier geschonden?",
+    "sample": "Issue: Is een bekentenis die onder dwang is verkregen in strijd met de beginselen van het strafprocesrecht?\n\nRule: Het nemo-teneturbeginsel (afgeleid uit art. 6 EVRM) houdt in dat niemand gedwongen mag worden om bewijs tegen zichzelf te leveren (verbod op zelfincriminatie).\n\nApplication: De politie oefent oneigenlijke druk uit om Y te laten spreken. Hiermee wordt Y gedwongen mee te werken aan zijn eigen veroordeling.\n\nConclusion: Het nemo-teneturbeginsel is geschonden; de bekentenis is onrechtmatig verkregen.",
+    "checklist": [
+      "Schending van het nemo-teneturbeginsel.",
+      "Verdachte mag niet gedwongen worden spreken.",
+      "Strijd met artikel 6 EVRM.",
+      "Recht om niet mee te werken."
+    ],
+    "exp": "Artikel 6 EVRM / Nemo tenetur.\n\nHet nemo-teneturbeginsel beschermt de verdachte tegen gedwongen zelfincriminatie. Dwang uitoefenen om een verklaring te verkrijgen schendt dit fundamentele recht op een eerlijk proces."
+  },
+  {
+    "q": "In het Wetboek van Strafvordering staat dat strafvordering alleen plaatsvindt op de wijze bij de wet voorzien. De gemeente Z stelt een verordening op waarin lokale boa's de bevoegdheid krijgen om woningen te doorzoeken bij vermoeden van fraude. Is deze verordening een geldige basis voor dit dwangmiddel?",
+    "sample": "Issue: Kan een gemeentelijke verordening dienen als wettelijke basis voor strafvorderlijke dwangmiddelen zoals huiszoeking?\n\nRule: Artikel 1 Sv (strafvorderlijk legaliteitsbeginsel) vereist dat strafvordering plaatsvindt op wijze bij de wet voorzien. Dit doelt op een wet in formele zin, zeker bij ingrijpende dwangmiddelen.\n\nApplication: Een gemeentelijke verordening is geen wet in formele zin. Huiszoeking is een ingrijpend dwangmiddel dat de persoonlijke levenssfeer schendt.\n\nConclusion: Nee, de verordening is geen geldige basis; een wet in formele zin is vereist.",
+    "checklist": [
+      "Strafvordering vereist wet in formele zin.",
+      "Artikel 1 Sv strafvorderlijk legaliteitsbeginsel.",
+      "Gemeentelijke verordening is onvoldoende basis.",
+      "Ingrijpende dwangmiddelen vereisen formele wet."
+    ],
+    "exp": "Artikel 1 Sv.\n\nHet strafvorderlijk legaliteitsbeginsel vereist dat de bevoegdheden tot strafvordering, en zeker ingrijpende dwangmiddelen, gebaseerd zijn op een wet in formele zin (van regering en Staten-Generaal) om rechtszekerheid te garanderen."
+  }
+]

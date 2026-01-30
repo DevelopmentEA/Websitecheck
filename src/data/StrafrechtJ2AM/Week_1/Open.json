@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Casus: Boris dwingt een 13-jarige jongen onder bedreiging van een pak slaag om in te loggen op het online spel 'RuneScape'. De jongen moet een virtueel zwaard en een magisch amulet, waarvoor hij veel speeltijd heeft geïnvesteerd, overdragen naar het account van Boris. Boris wordt vervolgd voor diefstal met geweld. Zijn advocaat stelt dat er geen sprake is van diefstal omdat virtuele voorwerpen bestaan uit ‘bits en bytes’ en dus geen ‘enig goed’ zijn in de zin van artikel 310 Sr. Beoordeel dit verweer.",
+    "sample": "Rechtsvraag: Kunnen virtuele objecten in een online spel worden aangemerkt als ‘enig goed’ in de zin van artikel 310 Sr?\n\nRegel: In het arrest RuneScape oordeelde de Hoge Raad dat de virtuele aard van objecten niet in de weg staat aan de kwalificatie als ‘goed’. Beslissend is of de objecten voor de bezitter een reële waarde vertegenwoordigen (door tijdsinvestering en inspanning) en of de bezitter de feitelijke en exclusieve heerschappij over deze objecten had.\n\nToepassing: De jongen heeft veel speeltijd geïnvesteerd in het verkrijgen van het zwaard en amulet, waardoor deze een reële waarde voor hem hebben. Hij had de exclusieve heerschappij over deze objecten totdat Boris hem dwong deze over te dragen. Hiermee verloor het slachtoffer de beschikkingsmacht.\n\nConclusie: De virtuele objecten kwalificeren als ‘enig goed’. Het verweer van de advocaat faalt.",
+    "checklist": [
+      "Virtuele objecten kunnen 'enig goed' zijn (art. 310 Sr)",
+      "Objecten vertegenwoordigen reële waarde door tijdsinvestering",
+      "Slachtoffer verliest feitelijke en exclusieve heerschappij",
+      "Extensieve interpretatie van goederenbegrip is toegestaan"
+    ],
+    "exp": "De Hoge Raad heeft bepaald dat virtuele objecten, ondanks hun immateriële aard, als goed kunnen worden aangemerkt als ze waarde hebben en onder feitelijke heerschappij staan."
+  },
+  {
+    "q": "Casus: Een groep boeren blokkeert uit protest tegen het landbouwbeleid drie dagen lang de belangrijkste snelwegen rondom de hoofdstad. Hierdoor ontstaan enorme files en economische schade. De politie beëindigt de blokkade en de leiders worden strafrechtelijk vervolgd voor het verstoren van de openbare orde. De verdediging beroept zich op artikel 11 EVRM en stelt dat de overheid tolerantie moet tonen bij demonstraties, ook als deze hinder veroorzaken. Beoordeel de strafbaarheid in het licht van het demonstratierecht.",
+    "sample": "Rechtsvraag: Is de strafrechtelijke vervolging een gerechtvaardigde inmenging in het recht op vergadering (art. 11 EVRM)?\n\nRegel: Volgens het EHRM in de zaak Kudrevičius t. Litouwen is strafrechtelijk optreden tegen demonstranten een inmenging die gerechtvaardigd kan zijn als deze bij wet is voorzien, een legitiem doel dient (zoals het voorkomen van wanorde en beschermen van rechten van anderen) en noodzakelijk is in een democratische samenleving. Enige hinder moet worden getolereerd, maar langdurige en ernstige verstoring van het verkeer gaat de grenzen van het demonstratierecht te buiten.\n\nToepassing: De blokkade duurde drie dagen en veroorzaakte ernstige ontwrichting. Dit overstijgt de normale hinder die de overheid moet tolereren. De ingreep dient het legitieme doel van openbare orde en verkeersveiligheid en is, mits de straf proportioneel is, noodzakelijk.\n\nConclusie: Het beroep op artikel 11 EVRM slaagt niet; de vervolging is gerechtvaardigd vanwege de ernstige wanorde.",
+    "checklist": [
+      "Strafvervolging is inmenging in vergaderingsvrijheid (art. 11 EVRM)",
+      "Inmenging gerechtvaardigd door legitiem doel (wanorde/rechten derden)",
+      "Langdurige blokkade overschrijdt tolerantiegrens van de overheid",
+      "Optreden is noodzakelijk in democratische samenleving (proportionaliteit)"
+    ],
+    "exp": "Hoewel demonstraties enige hinder mogen veroorzaken, rechtvaardigt ernstige en langdurige ontwrichting van het verkeer strafrechtelijk ingrijpen ter bescherming van de openbare orde."
+  },
+  {
+    "q": "Casus: Tijdens een klimaatprotest giet actievoerder Karel een olieachtige substantie over de stenen trappen van een overheidsgebouw. De trappen worden hierdoor glad en gevaarlijk voor voorbijgangers. De politie arresteert Karel voor vernieling. Karel stelt dat zijn actie symbolisch en vreedzaam was en daarom beschermd moet worden door artikel 10 en 11 EVRM. Hij betoogt dat strafvervolging een ontoelaatbaar 'chilling effect' heeft. Beoordeel of de vervolging gerechtvaardigd is.",
+    "sample": "Rechtsvraag: Is de strafvervolging wegens vernieling een schending van artikel 10 en 11 EVRM gezien het gevaarzettende karakter van de actie?\n\nRegel: In het arrest Extinction Rebellion oordeelde de Hoge Raad dat het recht op demonstratie niet absoluut is. Strafrechtelijk optreden is gerechtvaardigd bij 'laakbaar gedrag' (reprehensible acts), zoals het creëren van gevaarlijke situaties. De sanctie moet wel proportioneel zijn om een 'chilling effect' te voorkomen.\n\nToepassing: Door de trappen glad te maken, creëerde Karel een gevaarlijke situatie voor anderen. Dit kwalificeert als laakbaar gedrag dat niet beschermd wordt door de vreedzame demonstratievrijheid. De bescherming van andermans veiligheid is een legitiem doel voor inperking.\n\nConclusie: De vervolging is gerechtvaardigd vanwege het gevaarzettende karakter, mits de straf proportioneel blijft.",
+    "checklist": [
+      "Beperking demonstratierecht vereist legitiem doel en noodzaak",
+      "Gevaarzetting kwalificeert als laakbaar gedrag (reprehensible act)",
+      "Vreedzame demonstratie dekt geen gevaarlijke gedragingen",
+      "Sanctie moet proportioneel zijn (voorkomen chilling effect)"
+    ],
+    "exp": "Het opzettelijk veroorzaken van gevaar tijdens een demonstratie geldt als laakbaar gedrag, waardoor strafrechtelijk optreden noodzakelijk en gerechtvaardigd kan zijn."
+  },
+  {
+    "q": "Casus: Een man tapt illegaal stroom af van het elektriciteitsnet door de meter te manipuleren. Hij wordt vervolgd voor diefstal (art. 310 Sr). Zijn advocaat stelt dat elektriciteit geen tastbaar voorwerp is en daarom niet kan worden 'weggenomen' zoals de wet vereist. Hij pleit voor een grammaticale interpretatie van de wet. De officier van justitie pleit voor een teleologische interpretatie. Welke interpretatiemethode hanteert de rechter en is de man strafbaar?",
+    "sample": "Rechtsvraag: Kan het aftappen van elektriciteit worden gekwalificeerd als het wegnemen van 'enig goed' in de zin van artikel 310 Sr?\n\nRegel: In het Elektriciteitsarrest paste de Hoge Raad een teleologische interpretatie toe. Het doel van de bepaling is de bescherming van het vermogen van de rechthebbende. Elektriciteit heeft een economische waarde en kan door de mens worden beheerst en overgedragen.\n\nToepassing: Hoewel elektriciteit niet tastbaar is, vertegenwoordigt het waarde en wordt het aan het vermogen van het energiebedrijf onttrokken. Een strikt grammaticale uitleg zou voorbijgaan aan de strekking van de wet.\n\nConclusie: De rechter hanteert de teleologische methode (of extensieve interpretatie). Elektriciteit is een goed en de man is strafbaar.",
+    "checklist": [
+      "Teleologische interpretatie kijkt naar strekking wet",
+      "Elektriciteit is een goed door economische waarde",
+      "Bescherming van vermogensrecht staat centraal bij diefstal",
+      "Extensieve interpretatie is toegestaan binnen legaliteitsbeginsel"
+    ],
+    "exp": "De rechter kijkt naar de maatschappelijke functie en waarde (teleologisch) in plaats van enkel de letterlijke tekst, waardoor elektriciteit onder diefstal valt."
+  },
+  {
+    "q": "Casus: Simon pleegt een winkeldiefstal op 1 januari. Op dat moment staat er een maximale gevangenisstraf van 4 jaar op dit delict. Op 1 februari wordt de wet gewijzigd en wordt de maximumstraf verhoogd naar 6 jaar vanwege toegenomen criminaliteit. De rechtszaak vindt plaats op 1 maart. De officier van justitie eist een straf op basis van de nieuwe wet. Welke strafbepaling moet de rechter toepassen?",
+    "sample": "Rechtsvraag: Mag de rechter de nieuwe, zwaardere strafbepaling toepassen op een feit dat gepleegd is vóór de wetswijziging?\n\nRegel: Artikel 1 lid 1 Sr bepaalt dat geen feit strafbaar is dan uit kracht van een daaraan voorafgegane wettelijke strafbepaling (verbod op terugwerkende kracht). Artikel 1 lid 2 Sr maakt een uitzondering: bij verandering van wetgeving na het feit wordt de voor de verdachte gunstigste bepaling toegepast.\n\nToepassing: De wetswijziging is een strafverzwaring en dus ongunstiger voor Simon. Op grond van het legaliteitsbeginsel mag de nieuwe wet niet met terugwerkende kracht worden toegepast in het nadeel van de verdachte.\n\nConclusie: De rechter moet de oude wet (maximaal 4 jaar) toepassen.",
+    "checklist": [
+      "Geen straf zonder voorafgaande wet (art. 1 lid 1 Sr)",
+      "Verbod op terugwerkende kracht ten nadele verdachte",
+      "Uitzondering geldt alleen bij gunstigere bepaling (art. 1 lid 2 Sr)",
+      "Rechter moet oude, lichtere strafmaximum toepassen"
+    ],
+    "exp": "Het legaliteitsbeginsel verbiedt toepassing van strengere strafwetten achteraf; alleen gunstigere wijzigingen werken terug."
+  }
+]

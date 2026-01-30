@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Het strafvorderlijk legaliteitsbeginsel van artikel 1 Sv vereist dat strafvorderlijke voorschriften altijd zijn neergelegd in een wet in formele zin.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 1 Sv verbiedt delegatie niet. De grondslag moet in een wet in formele zin liggen, maar nadere uitwerking kan worden gedelegeerd aan een lagere wetgever, tenzij het gaat om ingrijpende dwangmiddelen die fundamentele rechten schenden."
+  },
+  {
+    "q": "In het arrest Bloedproef II oordeelde de Hoge Raad dat een inbreuk op de lichamelijke integriteit, zoals een bloedproef, een specifieke wettelijke grondslag vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Bloedproef II. Een inbreuk op de lichamelijke integriteit is ingrijpend en vereist een uitdrukkelijke wettelijke basis. Zonder deze basis of toestemming van de verdachte is de handeling onrechtmatig."
+  },
+  {
+    "q": "Het beginsel van interne openbaarheid houdt in dat de terechtzitting toegankelijk moet zijn voor het publiek.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Beginselen van strafprocesrecht. Interne openbaarheid ziet op de toegankelijkheid van het dossier voor de procespartijen. De toegankelijkheid voor het publiek wordt aangeduid als externe openbaarheid."
+  },
+  {
+    "q": "Uit het arrest Braak bij binnentreden volgt dat een formele bevoegdheid tot binnentreden automatisch de bevoegdheid impliceert om de woning met geweld (braak) te openen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Braak bij binnentreden. Zelfs bij een formele bevoegdheid moeten de beginselen van proportionaliteit en subsidiariteit in acht worden genomen. Eerst moet worden getracht op minder ingrijpende wijze (vrijwillige opening) binnen te treden."
+  },
+  {
+    "q": "Het onmiddellijkheidsbeginsel houdt in dat de rechter zijn oordeel enkel mag baseren op hetgeen tijdens het onderzoek ter terechtzitting aan de orde is gesteld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 338 Sv / Beginselen. Het onmiddellijkheidsbeginsel houdt in dat de rechter oordeelt op basis van materiaal dat ter terechtzitting naar voren is gebracht, maar sluit het gebruik van processen-verbaal (van horen zeggen) niet uit, zoals bepaald in het De Auditu-arrest."
+  },
+  {
+    "q": "Het Nederlandse strafprocesrecht wordt gekenmerkt als een zuiver accusatoir stelsel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Karakter strafproces. Het Nederlandse stelsel is een gematigd accusatoir stelsel. Het vooronderzoek heeft inquisitoire trekken (onderzoeksrechter/OM leidend), terwijl de zitting accusatoire trekken heeft (partijen gelijkwaardiger)."
+  },
+  {
+    "q": "In het arrest Lijfvisitatie o.b.v. de Douanewet oordeelde de Hoge Raad dat het schouwen van natuurlijke lichaamsopeningen valt onder de bevoegdheid tot lijfsvisitatie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Lijfvisitatie o.b.v. de Douanewet. Het schouwen van lichaamsopeningen is een ingrijpende inbreuk (onderzoek in het lichaam) die niet valt onder de term 'lijfsvisitatie' (onderzoek aan het lichaam/kleding) en vereist een specifieke wettelijke grondslag."
+  },
+  {
+    "q": "Het nemo-teneturbeginsel, afgeleid uit artikel 6 EVRM, houdt in dat een verdachte niet gedwongen mag worden om mee te werken aan zijn eigen veroordeling.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6 EVRM / Nemo tenetur. Dit beginsel waarborgt het recht van de verdachte om zichzelf niet te belasten (nemo tenetur se ipsum accusare) en omvat het zwijgrecht."
+  },
+  {
+    "q": "De onschuldpresumptie houdt in dat een verdachte voor onschuldig wordt gehouden totdat het tegendeel door de rechter wettig en overtuigend is bewezen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6 lid 2 EVRM. De onschuldpresumptie (praesumptio innocentiae) bepaalt dat iedere verdachte voor onschuldig wordt gehouden totdat zijn schuld in rechte is vastgesteld."
+  },
+  {
+    "q": "Het strafrecht is, in tegenstelling tot het civiele recht, primair reparatoir van aard.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Karakter strafrecht. Het strafrecht is non-reparatoir; het is gericht op leedtoevoeging (bestraffing) en preventie, niet primair op het herstellen van de schade of het onrecht tussen burgers."
+  },
+  {
+    "q": "Een van de beginselen van een behoorlijke procesorde is het vertrouwensbeginsel, dat inhoudt dat door de overheid opgewekte verwachtingen in redelijkheid moeten worden gehonoreerd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Beginselen van behoorlijke procesorde. Het vertrouwensbeginsel beschermt de burger tegen de overheid als deze gerechtvaardigde verwachtingen heeft gewekt (bijvoorbeeld een toezegging niet te vervolgen)."
+  },
+  {
+    "q": "In het arrest Braak bij binnentreden oordeelde de Hoge Raad dat het onrechtmatig verkregen bewijs toch mocht worden gebruikt voor de bewijsvoering.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Braak bij binnentreden. De Hoge Raad oordeelde dat het optreden onrechtmatig was wegens schending van proportionaliteit en subsidiariteit, en dat het verkregen bewijs daarom niet mocht worden gebruikt (bewijsuitsluiting)."
+  },
+  {
+    "q": "Artikel 1 Sv bevat een absoluut verbod op delegatie van strafvorderlijke bevoegdheden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 1 Sv. Hoewel de hoofdregel 'bij de wet voorzien' is, is delegatie toegestaan voor nadere uitwerkingen, mits het niet gaat om fundamentele inbreuken die een formele wettelijke basis vereisen."
+  },
+  {
+    "q": "Het opportuniteitsbeginsel houdt in dat het Openbaar Ministerie verplicht is om elk strafbaar feit waarvan het kennisneemt te vervolgen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 167 lid 2 Sv. Het opportuniteitsbeginsel houdt juist in dat het OM kan besluiten om van vervolging af te zien op gronden aan het algemeen belang ontleend (beleidssepot)."
+  },
+  {
+    "q": "De Hoge Raad heeft in Bloedproef II bepaald dat een verdachte verplicht is mee te werken aan een bloedproef, ook zonder wettelijke grondslag.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Bloedproef II. De Hoge Raad bepaalde juist dat zonder uitdrukkelijke wettelijke regeling een verdachte niet verplicht is een inbreuk op zijn lichamelijke integriteit te dulden."
+  },
+  {
+    "q": "Het beginsel van 'audi et alteram partem' verwijst naar het recht op hoor en wederhoor.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Beginselen van procesrecht. Audi et alteram partem betekent letterlijk 'hoor ook de andere partij' en vormt de basis voor het recht op hoor en wederhoor in het strafproces."
+  },
+  {
+    "q": "Het strafprocesrecht heeft als enige doel de waarheidsvinding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Doelen strafprocesrecht. Naast waarheidsvinding zijn rechtsbescherming van de verdachte (eerlijk proces) en het toepassen van het materiële strafrecht (bestraffing) essentiële doelen."
+  },
+  {
+    "q": "Een verdachte heeft op grond van artikel 6 EVRM recht op bijstand van een raadsman.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6 lid 3 sub c EVRM. Dit artikel garandeert het recht van een verdachte om zichzelf te verdedigen of rechtsbijstand te krijgen van een raadsman naar keuze."
+  },
+  {
+    "q": "Het 'equality of arms'-beginsel houdt in dat het Openbaar Ministerie en de verdediging exact dezelfde bevoegdheden moeten hebben.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 6 EVRM / Jurisprudentie. Equality of arms vereist niet absolute gelijkheid, maar dat de verdediging een redelijke mogelijkheid krijgt haar zaak te presenteren zonder in een substantieel nadeliger positie te verkeren."
+  },
+  {
+    "q": "De rechter-commissaris (RC) is belast met het leiden van het opsporingsonderzoek.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 170 Sv / Rolverdeling. De Officier van Justitie heeft het gezag over de opsporing. De Rechter-Commissaris houdt toezicht en verricht specifieke onderzoekshandelingen in het voorbereidend onderzoek."
+  },
+  {
+    "q": "Het legaliteitsbeginsel in artikel 1 Sv heeft als doel rechtszekerheid en rechtsbescherming te bieden aan de burger.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 1 Sv. Door te eisen dat strafvordering alleen plaatsvindt op de wijze bij de wet voorzien, wordt de burger beschermd tegen willekeurig overheidsoptreden en weet hij wat hem te wachten staat."
+  },
+  {
+    "q": "In het inquisitoire stelsel staat de verdachte centraal als subject van rechten en gelijkwaardige procespartij.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Procesmodellen. In een zuiver inquisitoir stelsel is de verdachte eerder object van onderzoek. In het accusatoire stelsel is de verdachte een gelijkwaardige procespartij (subject van rechten)."
+  },
+  {
+    "q": "Het beginsel van zuiverheid van oogmerk (détournement de pouvoir) verbiedt het gebruik van een bevoegdheid voor een ander doel dan waarvoor deze is gegeven.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Beginselen van behoorlijke procesorde. Détournement de pouvoir houdt in dat een bestuursrechtelijke of strafvorderlijke bevoegdheid niet mag worden misbruikt voor een oneigenlijk doel."
+  },
+  {
+    "q": "De beslissing om te vervolgen ligt in Nederland exclusief bij de rechter-commissaris.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 167 Sv. Het Openbaar Ministerie (de Officier van Justitie) heeft het vervolgingsmonopolie en beslist over het al dan niet vervolgen van strafbare feiten."
+  },
+  {
+    "q": "De eisen van proportionaliteit en subsidiariteit gelden alleen voor dwangmiddelen die expliciet in de wet zijn genoemd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Braak bij binnentreden. Deze beginselen van behoorlijke procesorde gelden voor al het overheidsoptreden, ook als een bevoegdheid formeel in de wet staat (zoals binnentreden)."
+  },
+  {
+    "q": "Het strafrecht valt onder het privaatrecht omdat het geschillen beslecht tussen dader en slachtoffer.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Rechtsgebieden. Strafrecht is onderdeel van het publiekrecht, omdat het de verticale relatie regelt tussen de overheid (die straft namens de samenleving) en de burger."
+  },
+  {
+    "q": "De zittingsrechter mag ambtshalve de rechtmatigheid van het voorbereidend onderzoek toetsen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 348/350 Sv. De rechter moet toetsen of het voorbereidend onderzoek rechtmatig is verlopen, zeker als dit gevolgen heeft voor de ontvankelijkheid van het OM of de bewijsvoering."
+  },
+  {
+    "q": "Een verdachte moet onmiddellijk op de hoogte worden gesteld van de reden van zijn arrestatie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 6 lid 3 sub a EVRM / Artikel 27c Sv. De verdachte heeft het recht om in een voor hem begrijpelijke taal op de hoogte te worden gesteld van de aard en reden van de beschuldiging."
+  },
+  {
+    "q": "Het Wetboek van Strafvordering kent geen discretionaire bevoegdheden voor politie en justitie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Discretionaire bevoegdheid. Het wetboek staat bol van bevoegdheden waarbij de autoriteiten beleidsvrijheid hebben ('kan'-bepalingen), begrensd door de beginselen van een goede procesorde."
+  },
+  {
+    "q": "In het arrest Lijfvisitatie o.b.v. de Douanewet oordeelde de Hoge Raad dat art. 8 EVRM (privacy) in het geding was.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Lijfvisitatie o.b.v. de Douanewet. De Hoge Raad verwees naar artikel 8 EVRM en grondrechten om te onderbouwen dat voor een ingrijpend onderzoek in het lichaam een specifieke wettelijke basis vereist is."
+  }
+]

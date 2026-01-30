@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Een subjectief belang, zoals een emotionele betrokkenheid, is voldoende om als belanghebbende in de zin van de Algemene wet bestuursrecht te worden aangemerkt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het belang moet objectief bepaalbaar zijn. Een louter subjectief belang, zoals smaak, gedachten of eer, is onvoldoende om als belanghebbende te kwalificeren."
+  },
+  {
+    "q": "Een concurrent kan als belanghebbende worden aangemerkt indien hij actief is in hetzelfde marktsegment en hetzelfde verzorgingsgebied als de adressaat van het besluit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Volgens vaste jurisprudentie wordt een concurrentiebelang als persoonlijk belang aangemerkt indien voldaan is aan de cumulatieve voorwaarden van actief zijn in hetzelfde marktsegment én hetzelfde verzorgingsgebied."
+  },
+  {
+    "q": "Iemand heeft een rechtstreeks belang als zijn belang uitsluitend voortvloeit uit een contractuele relatie met de adressaat van het besluit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Er is geen sprake van een rechtstreeks belang maar van een afgeleid belang als het belang slechts voortvloeit uit een contractuele relatie, tenzij dat belang tegengesteld is aan dat van de adressaat."
+  },
+  {
+    "q": "Voor rechtspersonen worden hun statutaire doelstellingen en feitelijke werkzaamheden mede als hun belangen beschouwd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 1:2 lid 3 Algemene wet bestuursrecht bepaalt dat ten aanzien van rechtspersonen als hun belangen mede worden beschouwd de algemene en collectieve belangen die zij krachtens hun doelstellingen en blijkens hun feitelijke werkzaamheden in het bijzonder behartigen."
+  },
+  {
+    "q": "Een begunstigende beschikking kan met terugwerkende kracht worden ingetrokken (teruggenomen) indien deze is verleend op basis van onjuiste gegevens verstrekt door de aanvrager.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Indien de beschikking is verleend op grond van verwijtbaar onjuiste of onvolledige gegevens verstrekt door de aanvrager, is intrekking met terugwerkende kracht (terugneming) toegestaan."
+  },
+  {
+    "q": "Voor de intrekking van een gebonden beschikking wegens een beleidswijziging is geen specifieke wettelijke grondslag vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Voor de intrekking van een gebonden beschikking wegens verandering van beleid of inzicht is een wettelijke grondslag vereist, omdat de wet dwingend voorschrijft wanneer de beschikking moet worden verleend."
+  },
+  {
+    "q": "Uit het Didam-arrest volgt dat een overheidslichaam bij de verkoop van onroerende zaken volledige contractsvrijheid heeft en zelf mag bepalen aan wie het verkoopt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Hoge Raad oordeelde dat een overheidslichaam bij het aangaan van privaatrechtelijke overeenkomsten het gelijkheidsbeginsel in acht moet nemen en mededingingsruimte moet bieden."
+  },
+  {
+    "q": "Een overheidslichaam hoeft geen selectieprocedure te volgen bij de verkoop van grond als bij voorbaat vaststaat dat er slechts één serieuze gegadigde is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Indien op grond van objectieve, toetsbare en redelijke criteria bij voorbaat vaststaat of redelijkerwijs mag worden aangenomen dat er slechts één serieuze gegadigde in aanmerking komt, hoeft geen mededingingsruimte te worden geboden."
+  },
+  {
+    "q": "De 'alles-of-niets'-lijn in de toeslagenrechtspraak hield in dat bij elke onregelmatigheid het volledige bedrag aan toeslag werd teruggevorderd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De 'alles-of-niets'-lijn hield in dat de wet dwingend werd uitgelegd, waardoor bij elke onregelmatigheid het volledige bedrag moest worden teruggevorderd zonder ruimte voor belangenafweging."
+  },
+  {
+    "q": "Artikel 120 van de Grondwet staat de rechter toe om formele wetten te toetsen aan algemene rechtsbeginselen zoals het evenredigheidsbeginsel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 120 Grondwet verbiedt de rechter te treden in de beoordeling van de grondwettigheid van wetten en verdragen; dit toetsingsverbod strekt zich volgens vaste jurisprudentie ook uit tot toetsing aan algemene rechtsbeginselen."
+  },
+  {
+    "q": "De Afdeling bestuursrechtspraak heeft in oktober 2019 haar koers gewijzigd door de wet anders te interpreteren om zo ruimte te creëren voor het evenredigheidsbeginsel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In oktober 2019 wijzigde de Afdeling haar koers door de wet anders te interpreteren (een 'noodgreep'), waardoor ruimte ontstond voor maatwerk en toetsing aan artikel 3:4 lid 2 Algemene wet bestuursrecht."
+  },
+  {
+    "q": "Het wetsvoorstel Wet versterking waarborgfunctie Awb introduceert een nieuw 'dienstbaarheidsbeginsel' in artikel 2:4a Awb.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het voorgestelde artikel 2:4a Algemene wet bestuursrecht bepaalt dat bestuursorganen zich bij de uitoefening van hun taak dienstbaar opstellen."
+  },
+  {
+    "q": "In de consultatieversie van de Wet versterking waarborgfunctie Awb is de uniforme bezwaartermijn van zes weken losgelaten ten gunste van een gedifferentieerd stelsel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In de consultatieversie is het voorstel tot differentiatie van termijnen (zes en dertien weken) teruggedraaid; de regering houdt vast aan een uniforme termijn van zes weken."
+  },
+  {
+    "q": "Het specialiteitsbeginsel houdt in dat een bestuursorgaan een bevoegdheid alleen mag gebruiken voor het doel waarvoor deze is verleend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:3 Algemene wet bestuursrecht bepaalt dat een bestuursorgaan de bevoegdheid tot het nemen van een besluit niet voor een ander doel mag gebruiken dan waarvoor die bevoegdheid is verleend."
+  },
+  {
+    "q": "Een bestuursorgaan mag nooit handelen in strijd met de wet (contra legem), zelfs niet als strikte toepassing onevenredige gevolgen heeft.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Handelen contra legem is bij uitzondering toegestaan indien strikte toepassing van het wettelijk voorschrift voor een of meer belanghebbenden gevolgen zou hebben die wegens bijzondere omstandigheden onevenredig zijn in verhouding tot de met de bepaling te dienen doelen."
+  },
+  {
+    "q": "Het relativiteitsvereiste (artikel 8:69a Awb) houdt in dat een besluit wordt vernietigd ongeacht of de geschonden norm strekt tot bescherming van de belangen van de beroepsinsteller.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 8:69a Algemene wet bestuursrecht bepaalt dat de bestuursrechter een besluit niet vernietigt als de geschonden rechtsregel kennelijk niet strekt tot bescherming van de belangen van degene die zich daarop beroept."
+  },
+  {
+    "q": "Volgens de consultatieversie van de Wet versterking waarborgfunctie Awb moet een bestuursorgaan altijd horen bij een financiële beschikking als het nadeel groter is dan 1500 euro.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De harde grens van 1500 euro uit de pre-consultatie is vervangen door criteria als 'niet voorzien door de burger' en 'aanmerkelijke gevolgen voor de directe bestedingsruimte'."
+  },
+  {
+    "q": "De 'burgerlus' stelt de bestuursrechter in staat een burger in de gelegenheid te stellen een stelling aannemelijk te maken of een beroepsgrond nader te onderbouwen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het voorgestelde artikel 8:51e Algemene wet bestuursrecht introduceert de burgerlus om equality of arms te bevorderen door de burger de kans te geven bewijs te leveren of gronden te onderbouwen."
+  },
+  {
+    "q": "Een bevoegdhedenovereenkomst is een overeenkomst waarbij de overheid contracteert over de wijze waarop een publiekrechtelijke bevoegdheid wordt gebruikt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij een bevoegdhedenovereenkomst contracteert een overheidsrechtspersoon privaatrechtelijk over het gebruik van een publiekrechtelijke bevoegdheid van een van zijn bestuursorganen."
+  },
+  {
+    "q": "De overheid mag publieke eigendommen, zoals wegen, afsluiten voor publiek gebruik puur op basis van haar eigendomsrecht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De publieke bestemming van de grond die deze bestemming heeft, mag niet worden aangetast door het privaatrechtelijke eigendomsrecht; iedereen mag bijvoorbeeld over een openbare weg rijden."
+  },
+  {
+    "q": "Een besluit tot intrekking van een beschikking is zelf geen beschikking.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De intrekking van een beschikking is zelf ook een besluit (beschikking), aangezien het een publiekrechtelijke rechtshandeling betreft die een eerdere rechtstoestand wijzigt of beëindigt."
+  },
+  {
+    "q": "Het gelijkheidsbeginsel speelt geen rol bij de verdeling van schaarse vergunningen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij de verdeling van schaarse vergunningen vloeit uit het gelijkheidsbeginsel voort dat potentiële gegadigden gelijke kansen moeten krijgen om mee te dingen (mededingingsnorm)."
+  },
+  {
+    "q": "De 'alles-of-niets'-benadering in de toeslagenaffaire vloeide voort uit artikel 26 van de Algemene wet inkomensafhankelijke regelingen (Awir).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 26 Awir bepaalde dwingend dat het volledige bedrag van de toeslag moest worden teruggevorderd indien er geen recht op bestond, wat leidde tot de 'alles-of-niets'-lijn."
+  },
+  {
+    "q": "Een bestuursorgaan heeft bij het bepalen van belanghebbendheid geen beoordelingsruimte; uiteindelijk beslist de rechter.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het begrip belanghebbende is een objectief begrip. Hoewel het bestuursorgaan een eerste oordeel velt, beslist de rechter uiteindelijk of iemand in een bepaald geval als belanghebbende kan worden aangemerkt."
+  },
+  {
+    "q": "De formele rechtskracht van een besluit betekent dat de burgerlijke rechter van de rechtmatigheid van dat besluit moet uitgaan als er geen bestuursrechtelijk rechtsmiddel is aangewend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het leerstuk van de formele rechtskracht houdt in dat de burgerlijke rechter moet uitgaan van de rechtmatigheid van een besluit indien daartegen een bestuursrechtelijke rechtsgang heeft opengestaan waarvan geen gebruik is gemaakt."
+  },
+  {
+    "q": "Bij een belangenafweging ex artikel 3:4 lid 1 Awb moet het bestuursorgaan altijd alle mogelijke belangen meewegen, zonder uitzondering.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:4 lid 1 Algemene wet bestuursrecht bepaalt dat belangen worden afgewogen, voor zover niet uit een wettelijk voorschrift of uit de aard van de uit te oefenen bevoegdheid een beperking voortvloeit."
+  },
+  {
+    "q": "Het vertrouwensbeginsel vereist voor een geslaagd beroep dat er sprake is van een toezegging, toerekenbaarheid en een belangenafweging.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Volgens het stappenplan uit de jurisprudentie moet worden beoordeeld of er een toezegging is, of deze toerekenbaar is en of de belangenafweging niet aan honorering in de weg staat."
+  },
+  {
+    "q": "Een aanvraag in de zin van de Awb kan ook een verzoek zijn tot het verrichten van een feitelijke handeling.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 3 Algemene wet bestuursrecht definieert een aanvraag als een verzoek van een belanghebbende, een besluit te nemen. Een verzoek tot een feitelijke handeling valt hier niet onder."
+  },
+  {
+    "q": "In het wetsvoorstel Wet versterking waarborgfunctie Awb wordt voorgesteld om in het besluit de exacte einddatum van de bezwaartermijn te vermelden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het voorstel beoogt artikel 3:45 Algemene wet bestuursrecht te wijzigen zodat bestuursorganen verplicht worden de concrete datum te vermelden waarop de termijn voor het indienen van bezwaar of beroep eindigt."
+  },
+  {
+    "q": "Een begunstigende beschikking kan worden ingetrokken wegens verandering van beleid, waarbij dit meestal de vorm van 'terugneming' (met terugwerkende kracht) heeft.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij verandering van beleid of inzicht is intrekking doorgaans alleen mogelijk voor de toekomst (opzeggen), niet met terugwerkende kracht (terugneming), vanwege de rechtszekerheid."
+  }
+]

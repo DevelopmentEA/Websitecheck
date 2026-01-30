@@ -10,24 +10,21 @@ import {
 // --- CONFIGURATIE ---
 const QUESTION_TYPES = [
   { label: "Meerkeuze", key: "MK" },
-  { label: "True / False", key: "TF" },
+  { label: "True / False", key: "TrueFalse" },
   { label: "Open Vraag", key: "Open" } 
 ];
 
-const LIMITS = { "MK": 30, "TF": 30, "Open": 10 };
+const LIMITS = { "MK": 30, "TrueFalse": 30, "Open": 10 };
 
 export default function UnifiedAdaptiveQuiz() {
   const navigate = useNavigate();
   
-  // --- AANGEPAST DEEL START ---
-  // In plaats van masterData te importeren, halen we de geladen data op uit de context
+  // --- DATA UIT CONTEXT ---
   const { db, config } = useOutletContext();
 
-  // We mappen de variabelen zodat de rest van je script blijft werken zonder wijzigingen
   const questionsDb = db || {};
   const activeSubject = config; 
   const accentColor = config?.accent || "#059669";
-  // --- AANGEPAST DEEL EIND ---
 
   // States
   const [gameState, setGameState] = useState('intro'); 
@@ -164,7 +161,6 @@ export default function UnifiedAdaptiveQuiz() {
             <ChevronLeft size={14} strokeWidth={3} /> TERUG
           </button>
           
-          {/* LOGO SECTIE */}
           <div className="flex items-center gap-2">
             <Scale size={18} style={{ color: accentColor }} />
             <div className="text-[10px] font-black uppercase tracking-[0.3em] italic" style={{ color: accentColor }}>
@@ -172,7 +168,7 @@ export default function UnifiedAdaptiveQuiz() {
             </div>
           </div>
 
-          <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-black transition-colors"><Settings2 size={18}/></button>
+          <div className="w-8" /> {/* Spacer om balans te houden na verwijderen settings */}
         </div>
         {gameState === 'quiz' && (
           <div className="absolute bottom-0 left-0 w-full h-[2px] bg-slate-100">
@@ -183,7 +179,6 @@ export default function UnifiedAdaptiveQuiz() {
 
       {/* --- MODALS --- */}
       <AnimatePresence>
-        {/* 1. Bevestigings Modal */}
         {showConfirmModal && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[200] bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-6">
             <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="bg-white p-8 rounded-[2rem] max-w-sm w-full shadow-2xl text-center">
@@ -198,7 +193,6 @@ export default function UnifiedAdaptiveQuiz() {
           </motion.div>
         )}
 
-        {/* 2. Filter / Settings Modal */}
         {showSettings && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[200] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-6">
             <motion.div initial={{ scale: 0.95, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95, y: 20 }} className="bg-white w-full max-w-md rounded-[2.5rem] shadow-2xl overflow-hidden">
@@ -254,7 +248,7 @@ export default function UnifiedAdaptiveQuiz() {
 
             <div className="grid grid-cols-1 gap-3 max-w-2xl mx-auto">
               {targetType !== 'Open' ? (
-                currentQ.a?.map((opt, i) => {
+                (currentQ.a || ["Waar", "Niet waar"]).map((opt, i) => {
                   const isSelected = selectedOption === i;
                   const isCorrect = i === currentQ.c;
                   return (
@@ -331,7 +325,7 @@ export default function UnifiedAdaptiveQuiz() {
 
       {/* --- BOTTOM NAV --- */}
       <div className="fixed bottom-6 left-0 w-full flex justify-center px-6 z-[150]">
-          <div className="bg-white/90 backdrop-blur-xl border border-slate-200 p-1.5 rounded-2xl shadow-xl flex gap-1">
+          <div className="bg-white/90 backdrop-blur-xl border border-slate-200 p-1.5 rounded-2xl shadow-xl flex items-center gap-1">
               {QUESTION_TYPES.map((type) => (
                   <button key={type.key} onClick={() => requestTypeChange(type.key)} 
                     className={`px-5 py-2.5 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all
@@ -339,6 +333,18 @@ export default function UnifiedAdaptiveQuiz() {
                     style={targetType === type.key ? { backgroundColor: accentColor } : {}}
                   > {type.label} </button>
               ))}
+
+              {/* Verticale Divider */}
+              <div className="w-[1px] h-6 bg-slate-200 mx-1" />
+
+              {/* Nieuwe Filter Knop */}
+              <button 
+                onClick={() => setShowSettings(true)}
+                className="px-4 py-2.5 rounded-xl text-[9px] font-black uppercase tracking-widest text-slate-600 hover:bg-slate-100 flex items-center gap-2 transition-all"
+              >
+                <Settings2 size={14} className="text-slate-400" />
+                Filter
+              </button>
           </div>
       </div>
 

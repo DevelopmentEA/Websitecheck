@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Kan een verdragsregel de basis vormen voor het ontstaan van een regel van internationaal gewoonterecht?",
+    "a": [
+      "Nee, verdragen en gewoonterecht zijn strikt gescheiden bronnen.",
+      "Ja, mits de regel een fundamenteel normcreërend karakter heeft.",
+      "Nee, tenzij alle staten ter wereld partij zijn bij het verdrag.",
+      "Ja, maar uitsluitend als het verdrag ouder is dan vijftig jaar."
+    ],
+    "c": 1,
+    "exp": "North Sea Continental Shelf Case.\n\nVolgens het Internationaal Gerechtshof kan een verdragsregel de basis vormen voor de ontwikkeling van een regel van internationaal gewoonterecht. Een dergelijke regel moet dan wel een fundamenteel normcreërend karakter hebben, zodat deze de basis kan leggen voor algemene rechtsregels."
+  },
+  {
+    "q": "Welke twee cumulatieve vereisten stelt het Internationaal Gerechtshof voor het bestaan van een regel van internationaal gewoonterecht?",
+    "a": [
+      "Een vastgelegde codificatie en ratificatie door een meerderheid van staten.",
+      "Een morele verplichting en een resolutie van de Algemene Vergadering.",
+      "Een extensieve statenpraktijk en een rechtsovertuiging (opinio iuris).",
+      "Een bilateraal verdrag en de instemming van de Veiligheidsraad."
+    ],
+    "c": 2,
+    "exp": "North Sea Continental Shelf Case.\n\nVoor het bestaan van gewoonterecht moet sprake zijn van twee elementen: een statenpraktijk die extensief en zichtbaar uniform is, en een opinio iuris, wat inhoudt dat staten hebben gehandeld vanuit een gevoel van juridische verplichting."
+  },
+  {
+    "q": "Hoe verhouden regels van internationaal gewoonterecht zich tot identieke verdragsregels volgens het Internationaal Gerechtshof?",
+    "a": [
+      "Het gewoonterecht houdt op te bestaan zodra het in een verdrag is vastgelegd.",
+      "Het verdragsrecht heeft altijd voorrang en vervangt het gewoonterecht volledig.",
+      "Het gewoonterecht behoudt een zelfstandig bestaan naast het verdragsrecht.",
+      "Het verdragsrecht wordt ongeldig indien het afwijkt van het gewoonterecht."
+    ],
+    "c": 2,
+    "exp": "Nicaragua t. Verenigde Staten.\n\nHet Hof oordeelde dat regels van internationaal gewoonterecht en verdragsrecht naast elkaar blijven bestaan, zelfs als zij inhoudelijk identiek zijn. Het feit dat een regel in een verdrag is opgenomen, betekent niet dat de gewoonterechtelijke regel verdwijnt."
+  },
+  {
+    "q": "Welk karakter heeft het verbod op het gebruik van geweld zoals vervat in artikel 2 lid 4 VN-Handvest?",
+    "a": [
+      "Het is uitsluitend een verdragsrechtelijke bepaling zonder bredere werking.",
+      "Het bezit tevens een gewoonterechtelijk karakter dat alle staten bindt.",
+      "Het is een politieke richtlijn die enkel geldt voor leden van de Veiligheidsraad.",
+      "Het is een soft law-instrument dat afhankelijk is van nationale implementatie."
+    ],
+    "c": 1,
+    "exp": "Nicaragua t. Verenigde Staten.\n\nHet Hof stelde vast dat het verbod op het gebruik van geweld, zoals vervat in artikel 2 lid 4 VN-Handvest, tevens een gewoonterechtelijk karakter heeft. Beide staten zijn gebonden aan deze regel om af te zien van het dreigen met of gebruiken van geweld."
+  },
+  {
+    "q": "Wat markeert de Vrede van Westfalen (1648) in de ontwikkeling van het internationaal publiekrecht?",
+    "a": [
+      "De oprichting van de eerste supranationale organisatie met wetgevende macht.",
+      "Het ontstaan van een systeem van soevereine en gelijke staten.",
+      "De codificatie van universele mensenrechten in een bindend verdrag.",
+      "De afschaffing van staatssoevereiniteit ten gunste van een wereldregering."
+    ],
+    "c": 1,
+    "exp": "Vrede van Westfalen.\n\nMet de Vrede van Westfalen ontstond een systeem van soevereine en gelijke staten. De oorsprong van het moderne internationale publiekrecht ligt in de erkenning van deze staatssoevereiniteit en het netwerk van onderlinge rechtsbetrekkingen."
+  },
+  {
+    "q": "Wat kenmerkt een dualistisch stelsel met betrekking tot de verhouding tussen nationaal en internationaal recht?",
+    "a": [
+      "Internationaal recht maakt automatisch deel uit van de nationale rechtsorde.",
+      "Internationaal en nationaal recht vormen samen één enkele rechtsorde.",
+      "Internationale normen gelden direct voor burgers zonder tussenkomst.",
+      "Internationaal recht en nationaal recht zijn gescheiden rechtsordes."
+    ],
+    "c": 3,
+    "exp": "Dualisme.\n\nDe dualistische opvatting gaat ervan uit dat de internationale rechtsorde en nationale rechtsorde geheel gescheiden rechtssystemen zijn. In dit stelsel kunnen internationale normen niet zomaar deel uitmaken van de nationale rechtsorde zonder omzetting."
+  },
+  {
+    "q": "Welke rechtsbron wordt in artikel 38 van het Statuut van het Internationaal Gerechtshof aangemerkt als hulpmiddel voor het bepalen van rechtsregels?",
+    "a": [
+      "Internationale verdragen.",
+      "Internationale gewoonte.",
+      "Algemene rechtsbeginselen.",
+      "Rechterlijke beslissingen."
+    ],
+    "c": 3,
+    "exp": "Artikel 38 Statuut IGH.\n\nArtikel 38 noemt rechterlijke beslissingen, alsmede opvattingen van schrijvers der verschillende naties, als hulpmiddelen voor het bepalen van rechtsregels. Dit is onder voorbehoud van artikel 59."
+  },
+  {
+    "q": "Wat is het uitgangspunt betreffende de gebondenheid van staten aan regels van internationaal recht?",
+    "a": [
+      "Staten zijn gebonden aan alle regels ongeacht hun instemming.",
+      "Staten zijn slechts gebonden indien zij hiermee hebben ingestemd.",
+      "Staten zijn alleen gebonden als de VN-Veiligheidsraad dit beslist.",
+      "Staten zijn gebonden op basis van meerderheidsbesluitvorming."
+    ],
+    "c": 1,
+    "exp": "S.S. Lotus.\n\nHet uitgangspunt, voortvloeiend uit soevereiniteit, is dat staten slechts zijn gebonden aan verdragsbepalingen indien zij hiermee hebben ingestemd (consent). Beperkingen op de onafhankelijkheid van staten mogen niet worden verondersteld."
+  },
+  {
+    "q": "Welke eis stelt het Internationaal Gerechtshof aan de tijdsduur voor de vorming van een regel van gewoonterecht?",
+    "a": [
+      "Er moet altijd een periode van minstens vijftig jaar zijn verstreken.",
+      "Er geldt geen specifieke tijdsduur, mits er daadwerkelijk gehandeld wordt.",
+      "De regel moet gedurende meerdere generaties zijn toegepast.",
+      "Er is een minimale periode van tien jaar vereist voor uniformiteit."
+    ],
+    "c": 1,
+    "exp": "North Sea Continental Shelf Case.\n\nHet Hof overwoog dat of het gaat om een korte periode niet zo van belang is; er moet een periode zijn waarin daadwerkelijk naar de regel gehandeld wordt. Er is geen specifieke tijdsduur vereist."
+  },
+  {
+    "q": "Wat wordt in het internationaal recht verstaan onder het vereiste van opinio iuris sive necessitatis?",
+    "a": [
+      "De handeling moet voortkomen uit politieke of economische wenselijkheid.",
+      "De handeling moet louter gebaseerd zijn op hoffelijkheid of traditie.",
+      "De handeling moet verricht zijn vanuit een gevoel van juridische verplichting.",
+      "De handeling moet uitsluitend worden uitgevoerd door westerse staten."
+    ],
+    "c": 2,
+    "exp": "North Sea Continental Shelf Case.\n\nOpinio iuris houdt in dat staten op een bepaalde manier moeten hebben gehandeld vanuit een gevoel van juridische verplichting. De overtuiging moet bestaan dat de vaste praktijk verplicht is."
+  },
+  {
+    "q": "Wat is de juridische positie van een zogenaamde 'persistent objector' ten aanzien van een regel van internationaal gewoonterecht?",
+    "a": [
+      "De staat is niet gebonden aan de regel als hij zich vanaf het ontstaan consistent heeft verzet.",
+      "De staat is gebonden aan de regel zodra een meerderheid van staten de regel aanvaardt.",
+      "De staat kan zich alleen aan de regel onttrekken met toestemming van het IGH.",
+      "De staat is gebonden tenzij het gaat om een regel van regionaal gewoonterecht."
+    ],
+    "c": 0,
+    "exp": "Persistent objector.\n\nEen persistent objector is een staat die zich vanaf het ontstaan van de regel heeft verzet tegen een bepaalde praktijk en dit duidelijk heeft laten blijken. Persistent objectors zijn niet gebonden aan die regel van gewoonterecht."
+  },
+  {
+    "q": "Welke status hebben regels van dwingend recht (jus cogens) binnen de internationale rechtsorde?",
+    "a": [
+      "Zij hebben dezelfde status als alle andere verdragsregels.",
+      "Zij hebben voorrang boven enige andere regel van internationaal recht.",
+      "Zij zijn ondergeschikt aan latere bilaterale verdragen.",
+      "Zij zijn slechts bindend voor staten die ze expliciet erkennen."
+    ],
+    "c": 1,
+    "exp": "Artikel 53 WVV.\n\nRegels van dwingend recht oftewel jus cogens hebben voorrang boven enige andere regel van internationaal recht. Deze regels kunnen niet door staten opzij worden gezet."
+  },
+  {
+    "q": "Welke functie vervullen algemene rechtsbeginselen primair in de internationale rechtspraktijk?",
+    "a": [
+      "Zij dienen om bestaande verdragen onmiddellijk te vernietigen.",
+      "Zij fungeren als enige bron voor strafrechtelijke aansprakelijkheid.",
+      "Zij worden toegepast om leemten in het toepasselijke recht op te vullen.",
+      "Zij vervangen de nationale wetgeving in monistische stelsels."
+    ],
+    "c": 2,
+    "exp": "Algemene rechtsbeginselen.\n\nAlgemene rechtsbeginselen worden in het algemeen toegepast om een lacune (leemte) in het toepasselijke recht op te vullen."
+  },
+  {
+    "q": "Wat houdt besluitvorming bij consensus in binnen een internationale organisatie?",
+    "a": [
+      "Besluiten worden genomen met een gekwalificeerde meerderheid van stemmen.",
+      "Besluiten vereisen de uitdrukkelijke instemming van alle aanwezige leden.",
+      "Besluiten worden aangenomen zonder hoofdelijke stemming als niemand zich verzet.",
+      "Besluiten zijn alleen geldig als de grote mogendheden hun veto niet gebruiken."
+    ],
+    "c": 2,
+    "exp": "Consensus.\n\nConsensus betekent dat na onderhandelingen wordt vastgesteld dat alle leden met een besluit kunnen leven en zich niet verzetten, maar ook niet uitdrukkelijk instemmen."
+  },
+  {
+    "q": "Wat is een onderscheidend kenmerk van het internationaal publiekrecht ten opzichte van het internationaal privaatrecht?",
+    "a": [
+      "Het reguleert de uitoefening van publiek gezag en beschermt publieke belangen.",
+      "Het regelt uitsluitend de privaatrechtelijke betrekkingen tussen burgers.",
+      "Het is gebaseerd op de wetboeken van strafrecht van individuele staten.",
+      "Het heeft geen betrekking op de verhouding tussen soevereine staten."
+    ],
+    "c": 0,
+    "exp": "Internationaal publiekrecht.\n\nInternationaal publiekrecht reguleert de uitoefening van publiek (overheids-)gezag en beschermt publieke belangen zoals veiligheid, welzijn en milieu. Het onderscheidt zich hiermee van internationaal privaatrecht."
+  },
+  {
+    "q": "Wat is volgens artikel 51 VN-Handvest een noodzakelijke voorwaarde voor een geldig beroep op het recht op zelfverdediging?",
+    "a": [
+      "Er moet sprake zijn van een preventieve dreiging.",
+      "Er moet sprake zijn van een gewapende aanval.",
+      "Er moet toestemming zijn van de Algemene Vergadering.",
+      "Er moet sprake zijn van economische sancties."
+    ],
+    "c": 1,
+    "exp": "Artikel 51 VN-Handvest.\n\nWil een beroep op artikel 51 VN-Handvest geldig zijn, dan moet er sprake zijn van een gewapende aanval. Dit vormt een uitzondering op het algemene geweldsverbod."
+  },
+  {
+    "q": "Welke aanvullende voorwaarde geldt specifiek voor de uitoefening van collectieve zelfverdediging?",
+    "a": [
+      "De staat moet lid zijn van de Noord-Atlantische Verdragsorganisatie.",
+      "De staat moet een expliciet mandaat hebben van de VN-Veiligheidsraad.",
+      "De aangevallen staat moet een uitdrukkelijk verzoek tot hulp hebben gedaan.",
+      "De staat moet aantonen dat het eigen grondgebied direct wordt bedreigd."
+    ],
+    "c": 2,
+    "exp": "Nicaragua t. Verenigde Staten.\n\nBij collectieve zelfverdediging geldt de aanvullende voorwaarde dat er een uitdrukkelijk verzoek tot hulp moet zijn gedaan door de staat die zichzelf als slachtoffer van een gewapende aanval heeft aangemerkt."
+  },
+  {
+    "q": "Hoe kwalificeert het Internationaal Gerechtshof handelingen die afwijken van een bestaande gewoonterechtelijke regel?",
+    "a": [
+      "Als bewijs dat de oude regel niet meer bestaat.",
+      "Als het begin van een nieuwe rechtsregel.",
+      "Als schendingen van de bestaande regel.",
+      "Als toegestane uitzonderingen op de regel."
+    ],
+    "c": 2,
+    "exp": "Nicaragua t. Verenigde Staten.\n\nHandelingen die afwijken van de regel worden in het algemeen behandeld als schendingen van die regel, niet als indicaties voor de erkenning van een nieuwe regel, zolang de regel ondersteund blijft door rechtsovertuiging."
+  },
+  {
+    "q": "Welk beginsel ligt ten grondslag aan de verplichting van staten om gesloten verdragen te respecteren en na te leven?",
+    "a": [
+      "Opinio iuris sive necessitatis.",
+      "Pacta sunt servanda.",
+      "Jus cogens.",
+      "Lex specialis."
+    ],
+    "c": 1,
+    "exp": "Artikel 26 WVV.\n\nHet beginsel pacta sunt servanda houdt in dat gesloten verdragen moeten worden gerespecteerd en nageleefd. Dit beginsel voorkomt dat een verdrag automatisch wordt beëindigd bij een wilswijziging."
+  },
+  {
+    "q": "Welk juridisch kenmerk is typerend voor instrumenten die worden aangeduid als 'soft law'?",
+    "a": [
+      "Zij zijn juridisch bindend en direct afdwingbaar voor de rechter.",
+      "Zij zijn niet bindend, maar kunnen indirect juridisch effect hebben.",
+      "Zij hebben voorrang boven nationaal recht en gewoonterecht.",
+      "Zij vereisen ratificatie door alle deelnemende staten."
+    ],
+    "c": 1,
+    "exp": "Soft law.\n\nSoft law bestaat uit beleidsinstrumenten zoals resoluties en richtsnoeren. Dit zijn niet-bindende instrumenten, maar ze kunnen wel van invloed zijn op de vorming van gewoonterecht of een indirect juridisch effect teweegbrengen."
+  },
+  {
+    "q": "Welk karakter moet een verdragsbepaling hebben om de basis te kunnen vormen voor een algemene regel van gewoonterecht?",
+    "a": [
+      "Een fundamenteel normcreërend karakter.",
+      "Een uitsluitend procedureel karakter.",
+      "Een tijdelijk en voorlopig karakter.",
+      "Een regionaal beperkt karakter."
+    ],
+    "c": 0,
+    "exp": "North Sea Continental Shelf Case.\n\nHet Internationaal Gerechtshof stelt dat een regel een fundamenteel normcreërend karakter moet hebben, zodat het de basis kan leggen voor algemene rechtsregels van gewoonterecht."
+  },
+  {
+    "q": "Welk criterium hanteert het Hof om handelingen van gewapende groepen aan een staat toe te rekenen?",
+    "a": [
+      "Algemene steunverlening.",
+      "Politieke sympathie.",
+      "Effectieve controle.",
+      "Financiële hulp."
+    ],
+    "c": 2,
+    "exp": "Nicaragua t. Verenigde Staten.\n\nHet Hof formuleerde het vereiste van effectieve controle. Alleen als wordt aangetoond dat een staat effectieve controle had over de gewapende groepen, kunnen hun handelingen aan die staat worden toegerekend."
+  },
+  {
+    "q": "Welke procedurele verplichting rust op een staat die maatregelen neemt uit hoofde van zelfverdediging?",
+    "a": [
+      "De maatregelen moeten onverwijld aan de Veiligheidsraad worden gemeld.",
+      "De maatregelen moeten vooraf worden goedgekeurd door de Algemene Vergadering.",
+      "De maatregelen moeten worden gepubliceerd in het nationale staatsblad.",
+      "De maatregelen moeten worden voorgelegd aan het Internationaal Gerechtshof."
+    ],
+    "c": 0,
+    "exp": "Artikel 51 VN-Handvest.\n\nMaatregelen die leden nemen bij de uitoefening van het recht op zelfverdediging, moeten onverwijld ter kennis worden gebracht van de Veiligheidsraad."
+  },
+  {
+    "q": "Welk rechtsgevolg kan in het internationaal recht worden verbonden aan het stilzwijgen van een staat (berusting)?",
+    "a": [
+      "De staat behoudt altijd het recht om later alsnog bezwaar te maken.",
+      "Het stilzwijgen wordt gezien als een verwerping van de situatie.",
+      "Het stilzwijgen kan leiden tot aanvaarding van een situatie.",
+      "De staat wordt automatisch beschouwd als een persistent objector."
+    ],
+    "c": 2,
+    "exp": "Berusting (acquiescence).\n\nBerusting houdt het stilzwijgend aanvaarden van een door een andere staat gecreëerde situatie in. Hierdoor kan een staat zijn recht verliezen om zich later tegen die situatie te verzetten (estoppel)."
+  },
+  {
+    "q": "Hoe wordt een conflict tussen een algemene regel en een bijzondere regel van internationaal recht in beginsel opgelost?",
+    "a": [
+      "De algemene regel gaat voor de bijzondere regel.",
+      "De bijzondere regel gaat voor de algemene regel.",
+      "De regel met de meeste staten als partij gaat voor.",
+      "De regel die het eerst is vastgesteld gaat voor."
+    ],
+    "c": 1,
+    "exp": "Lex specialis derogat legi generali.\n\nBij conflicten tussen rechtsregels geldt de regel dat de bijzondere regel voorrang heeft boven de algemene regel (lex specialis derogat legi generali)."
+  },
+  {
+    "q": "Waarom stelden de Verenigde Staten dat het Internationaal Gerechtshof onbevoegd was in de Nicaragua-zaak?",
+    "a": [
+      "Omdat Nicaragua geen lid was van de Verenigde Naties.",
+      "Omdat het geschil ging over een multilateraal verdrag.",
+      "Omdat er geen sprake was van een gewapende aanval.",
+      "Omdat het Hof vooringenomen zou zijn tegen de VS."
+    ],
+    "c": 1,
+    "exp": "Nicaragua t. Verenigde Staten.\n\nDe VS had een voorbehoud gemaakt met betrekking tot de jurisdictie van het Hof, waarbij werd gesteld dat het niet bevoegd zou zijn als het geschil was gebaseerd op een multilateraal verdrag (zoals het VN-Handvest)."
+  },
+  {
+    "q": "Wat onderscheidt een juridische regel van een politieke of morele regel binnen de internationale rechtsorde?",
+    "a": [
+      "De regel is vastgelegd in een schriftelijk document.",
+      "De regel wordt gesteund door een meerderheid van staten.",
+      "De regel vloeit voort uit een erkende rechtsbron.",
+      "De regel heeft betrekking op economische belangen."
+    ],
+    "c": 2,
+    "exp": "Rechtsbronnen.\n\nHet onderscheid tussen juridische regels en andere regels wordt bepaald aan de hand van rechtsbronnen: alleen normen die uit vooraf bepaalde rechtsbronnen voortvloeien behoren tot het internationaal publiekrecht."
+  },
+  {
+    "q": "Wat houdt het beginsel van 'estoppel' in binnen de context van eenzijdige rechtshandelingen of titels op grondgebied?",
+    "a": [
+      "Een staat mag niet terugkomen op een handeling waardoor een andere staat daarop vertrouwt.",
+      "Een staat kan te allen tijde zijn instemming met een verdrag intrekken.",
+      "Een staat is verplicht om elk nieuw ontdekt gebied effectief te bezetten.",
+      "Een staat moet altijd protesteren tegen handelingen van andere staten."
+    ],
+    "c": 0,
+    "exp": "Estoppel.\n\nEstoppel houdt in dat een staat niet mag terugkomen op een verrichte (rechts)handeling of het nalaten daarvan, wanneer een andere staat daarop heeft vertrouwd."
+  },
+  {
+    "q": "Welke status hebben rechterlijke beslissingen volgens artikel 38 van het Statuut van het Internationaal Gerechtshof?",
+    "a": [
+      "Zij zijn een primaire rechtsbron en binden alle staten.",
+      "Zij zijn een hulpmiddel voor het bepalen van rechtsregels.",
+      "Zij vormen dwingend recht waar niet van kan worden afgeweken.",
+      "Zij hebben geen enkele juridische betekenis in het internationaal recht."
+    ],
+    "c": 1,
+    "exp": "Artikel 38 Statuut IGH.\n\nRechterlijke beslissingen worden aangemerkt als hulpmiddelen voor het bepalen van rechtsregels. Zij zijn van secundair belang en vormen geen primaire rechtsbron zoals verdragen of gewoonte."
+  },
+  {
+    "q": "Hoe wordt het stelsel van doorwerking van internationaal recht in de Nederlandse rechtsorde gekwalificeerd?",
+    "a": [
+      "Als een strikt dualistisch stelsel.",
+      "Als een gematigd monistisch stelsel.",
+      "Als een zuiver monistisch stelsel.",
+      "Als een constitutioneel pluralistisch stelsel."
+    ],
+    "c": 1,
+    "exp": "Nederlandse Grondwet.\n\nNederland kent een gematigd monistisch systeem. Internationaal recht werkt automatisch door, maar de Grondwet bepaalt dat dit voor 'een ieder verbindende' bepalingen specifiek geldt wat betreft voorrang en rechtstreekse werking."
+  }
+]

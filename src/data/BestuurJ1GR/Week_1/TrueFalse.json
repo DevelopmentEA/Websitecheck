@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Attributie wordt gekenmerkt door het overdragen van een reeds bestaande bevoegdheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Attributie is het scheppen van een nieuwe, oorspronkelijke bevoegdheid. Het overdragen van een bestaande bevoegdheid heet delegatie (Art. 10:13 Awb)."
+  },
+  {
+    "q": "Voor mandatering is in beginsel geen wettelijke grondslag vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 10:3 Awb bepaalt dat bestuursorganen mandaat kunnen verlenen, tenzij bij wettelijk voorschrift anders is bepaald of de aard van de bevoegdheid zich daartegen verzet."
+  },
+  {
+    "q": "Bij delegatie verliest het delegerende bestuursorgaan de bevoegdheid om de gedelegeerde bevoegdheid zelf uit te oefenen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 10:17 Awb bepaalt dat de delegans door delegatie de bevoegdheid tot uitoefening van de gedelegeerde bevoegdheid verliest."
+  },
+  {
+    "q": "De delegans kan een verleende delegatie te allen tijde beëindigen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 10:18 Awb bepaalt dat de delegans de delegatie te allen tijde kan beëindigen."
+  },
+  {
+    "q": "Het is toegestaan om een bevoegdheid te delegeren aan een ondergeschikte.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 10:14 Awb verbiedt delegatie aan ondergeschikten."
+  },
+  {
+    "q": "Besluiten genomen in mandaat gelden juridisch als besluiten van de gemandateerde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij mandaat worden besluiten genomen in naam en onder verantwoordelijkheid van de mandaatgever (Art. 10:1 Awb)."
+  },
+  {
+    "q": "Uit het arrest Fluoridering volgt dat ingrijpend overheidsoptreden altijd een wettelijke grondslag behoeft, ook als het geen dwingend bevel is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De Hoge Raad oordeelde in het arrest Fluoridering dat ingrijpende feitelijke maatregelen, zoals toevoeging van stoffen aan drinkwater, een wettelijke grondslag vereisen."
+  },
+  {
+    "q": "Het verbod van détournement de pouvoir houdt in dat een bestuursorgaan een bevoegdheid niet mag gebruiken voor een ander doel dan waarvoor deze is verleend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dit verbod is vastgelegd in Art. 3:3 Awb."
+  },
+  {
+    "q": "Bestuursorganen hebben op grond van de Algemene wet bestuursrecht een eigen vermogen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bestuursorganen hebben geen eigen vermogen; de vermogensrechtelijke gevolgen treffen de rechtspersoon waartoe het orgaan behoort (Art. 1:1 lid 4 Awb)."
+  },
+  {
+    "q": "De Algemene wet bestuursrecht staat in hiërarchie boven bijzondere wetten in formele zin.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Awb is een wet in formele zin en staat niet boven andere formele wetten. Bijzondere wetten kunnen afwijken van de Awb."
+  },
+  {
+    "q": "Attributie aan een ambtenaar doorbreekt de hiërarchische bevoegdheid tot het geven van aanwijzingen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 10:22 Awb bepaalt dat attributie aan een ambtenaar de hiërarchische bevoegdheid tot het geven van aanwijzingen niet doorbreekt."
+  },
+  {
+    "q": "Mandaat aan een niet-ondergeschikte is alleen mogelijk met instemming van de gemandateerde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 10:4 lid 1 Awb vereist instemming van de gemandateerde bij mandaat aan een niet-ondergeschikte."
+  },
+  {
+    "q": "Onderdelegatie is toegestaan, tenzij de wet dit verbiedt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Onderdelegatie is slechts toegestaan indien daarin bij wettelijk voorschrift is voorzien (Art. 10:15 Awb)."
+  },
+  {
+    "q": "Bij strijd tussen beleidsregels van de delegans en de delegataris hebben de regels van de delegataris voorrang.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Regels van de delegans (hogere orde) hebben voorrang op die van de delegataris (Art. 4:81 Awb en algemene rechtsbeginselen)."
+  },
+  {
+    "q": "Het arrest Methadonbrief bevestigde dat inspecteurs bindende voorschriften mogen opleggen zonder specifieke wettelijke grondslag.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Hoge Raad oordeelde dat inspecteurs geen bevoegdheid hadden om zonder wettelijke grondslag bindende voorschriften op te leggen en daarmee in te grijpen in de beroepsuitoefening."
+  },
+  {
+    "q": "Een algemeen mandaat moet schriftelijk worden verleend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 10:5 lid 2 Awb schrijft voor dat het verlenen van een algemeen mandaat schriftelijk geschiedt."
+  },
+  {
+    "q": "Bestuursrechtelijke normen zijn in tegenstelling tot strafrechtelijke normen vaak onvoorwaardelijk van aard.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Strafrechtelijke normen zijn vaak onvoorwaardelijk; bestuursrechtelijke normen zijn vaak voorwaardelijk van aard."
+  },
+  {
+    "q": "De delegans behoudt bij delegatie de bevoegdheid om concrete instructies te geven over de uitoefening van de bevoegdheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De delegans verliest de bevoegdheid en kan geen concrete instructies meer geven, enkel beleidsregels vaststellen."
+  },
+  {
+    "q": "Het specialiteitsbeginsel houdt in dat een bestuursorgaan uitsluitend de belangen mag behartigen waarvoor de bevoegdheid is verleend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 3:4 lid 1 Awb codificeert het specialiteitsbeginsel: belangenafweging binnen het doel van de wet."
+  },
+  {
+    "q": "De rechter mag wetten in formele zin toetsen aan de Grondwet.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 120 Grondwet verbiedt de toetsing van wetten in formele zin aan de Grondwet."
+  },
+  {
+    "q": "Privaatrechtelijke handelingen van de overheid zijn gebonden aan de algemene beginselen van behoorlijk bestuur.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 3:1 lid 2 Awb bepaalt dat de normen van behoorlijk bestuur ook gelden voor privaatrechtelijke handelingen van bestuursorganen (schakelbepaling)."
+  },
+  {
+    "q": "Voor delegatie is altijd een wettelijke grondslag vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 10:15 Awb bepaalt dat delegatie slechts kan geschieden indien daarin is voorzien bij wettelijk voorschrift."
+  },
+  {
+    "q": "De presterende functie van de overheid omvat de handhaving van de openbare orde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De handhaving van de openbare orde valt onder de ordenende functie; de presterende functie betreft het realiseren van voorzieningen."
+  },
+  {
+    "q": "Het vertrouwensbeginsel maakt deel uit van het materiële rechtszekerheidsbeginsel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het materiële rechtszekerheidsbeginsel omvat het honoreren van gerechtvaardigde verwachtingen (vertrouwensbeginsel)."
+  },
+  {
+    "q": "Een mandaatgever blijft verantwoordelijk voor besluiten genomen door de gemandateerde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij mandaat blijft de bevoegdheid en verantwoordelijkheid bij de mandaatgever (Art. 10:1 Awb)."
+  },
+  {
+    "q": "De Algemene wet bestuursrecht bevat uitsluitend regels van dwingend recht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Awb bevat dwingend, regelend, aanvullend en facultatief recht."
+  },
+  {
+    "q": "Attributie is het scheppen van een nieuwe bevoegdheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Attributie wordt gedefinieerd als het scheppen van een originaire (nieuwe) bevoegdheid."
+  },
+  {
+    "q": "De delegataris oefent de bevoegdheid uit op eigen naam en onder eigen verantwoordelijkheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 10:13 Awb: delegatie is overdracht aan een ander die deze onder eigen verantwoordelijkheid uitoefent."
+  },
+  {
+    "q": "Het legaliteitsbeginsel vereist een wettelijke grondslag voor belastend overheidsoptreden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Overheidsoptreden dat vrijheid of eigendom beperkt (belastend) behoeft een grondslag in de wet."
+  },
+  {
+    "q": "Bestuursorganen hebben eigen belangen die los staan van hun wettelijke taak.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 1:2 lid 2 Awb bepaalt dat bestuursorganen geen eigen belangen hebben, maar slechts de hun toevertrouwde belangen behartigen."
+  }
+]

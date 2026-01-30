@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Staat A en Staat B zijn geen partij bij het Verdrag van Genève. Staat A stelt echter dat Staat B gebonden is aan artikel 6 van dit verdrag, omdat deze regel volgens Staat A internationaal gewoonterecht is geworden door de praktijk van vele andere staten. Staat B voert aan dat deze staten de regel slechts uit praktische overwegingen toepassen en niet vanuit een plichtsgevoel. Is Staat B gebonden aan deze regel?",
+    "sample": "Issue: Is de regel uit artikel 6 van het verdrag bindend voor Staat B als internationaal gewoonterecht?\n\nRule: Volgens de North Sea Continental Shelf Case vereist gewoonterecht twee elementen: een extensieve en vrijwel uniforme statenpraktijk én een opinio iuris (rechtsovertuiging). Handelen uit louter hoffelijkheid, gemak of traditie is onvoldoende.\n\nApplication: Hoewel er sprake is van statenpraktijk, ontbreekt volgens het verweer van Staat B de opinio iuris. Staten handelen niet vanuit het gevoel dat zij juridisch verplicht zijn (opinio iuris sive necessitatis).\n\nConclusion: Bij gebrek aan opinio iuris is er geen sprake van een regel van gewoonterecht. Staat B is niet gebonden.",
+    "checklist": [
+      "Vereiste van extensieve/uniforme statenpraktijk",
+      "Vereiste van opinio iuris",
+      "Handelen vanuit juridische verplichting",
+      "Louter gemak of traditie onvoldoende"
+    ],
+    "exp": "North Sea Continental Shelf Case.\n\nVoor het bestaan van gewoonterecht is naast statenpraktijk ook een rechtsovertuiging (opinio iuris) vereist; staten moeten handelen vanuit een gevoel van juridische verplichting."
+  },
+  {
+    "q": "De Verenigde Staten financieren en trainen een rebellengroep in Nicaragua. Deze rebellen plegen zelfstandig oorlogsmisdaden tegen burgers. Nicaragua stelt de VS hiervoor aansprakelijk, met het argument dat de VS de groep heeft opgericht en ondersteund. Kan het handelen van de rebellen aan de VS worden toegerekend?",
+    "sample": "Issue: Kunnen de specifieke schendingen door de rebellen aan de VS worden toegerekend?\n\nRule: In de zaak Nicaragua t. Verenigde Staten bepaalde het Hof dat voor toerekening van handelingen van niet-statelijke actoren ‘effectieve controle’ van de staat over de specifieke operaties vereist is.\n\nApplication: Het financieren, trainen en uitrusten van rebellen bewijst ‘algemene controle’, maar is onvoldoende om aan te tonen dat de VS ‘effectieve controle’ had over de specifieke misdrijven.\n\nConclusion: De handelingen kunnen niet aan de VS worden toegerekend wegens het ontbreken van effectieve controle.",
+    "checklist": [
+      "Toerekening aan de staat",
+      "Vereiste van effectieve controle",
+      "Financiële steun is onvoldoende",
+      "Geen toerekening zonder specifieke aansturing"
+    ],
+    "exp": "Nicaragua t. Verenigde Staten.\n\nHandelingen van gewapende groepen kunnen alleen aan een staat worden toegerekend indien die staat effectieve controle uitoefende over de specifieke operaties waarbij de schendingen plaatsvonden."
+  },
+  {
+    "q": "Staat X valt Staat Y binnen. Staat Z besluit Staat Y militair te hulp te schieten en beroept zich op het recht van collectieve zelfverdediging. Staat Y heeft echter nooit publiekelijk verklaard slachtoffer te zijn van een aanval en heeft Staat Z ook niet om hulp gevraagd. Is het beroep van Staat Z op collectieve zelfverdediging geldig?",
+    "sample": "Issue: Voldoet het optreden van Staat Z aan de voorwaarden voor collectieve zelfverdediging ex artikel 51 VN-Handvest?\n\nRule: Volgens het arrest Nicaragua t. Verenigde Staten vereist collectieve zelfverdediging dat de aangevallen staat zichzelf als slachtoffer aanmerkt én een uitdrukkelijk verzoek tot hulp doet.\n\nApplication: Staat Y heeft zichzelf niet als slachtoffer aangemerkt en geen verzoek om bijstand gedaan aan Staat Z.\n\nConclusion: Staat Z kan geen geldig beroep doen op collectieve zelfverdediging; het geweldgebruik is onrechtmatig.",
+    "checklist": [
+      "Beroep op collectieve zelfverdediging",
+      "Staat moet zichzelf slachtoffer noemen",
+      "Uitdrukkelijk verzoek om hulp vereist",
+      "Handelen Staat Z is onrechtmatig"
+    ],
+    "exp": "Nicaragua t. Verenigde Staten.\n\nVoor een geldig beroep op collectieve zelfverdediging gelden de aanvullende voorwaarden dat de aangevallen staat zichzelf als slachtoffer moet hebben aangemerkt en een uitdrukkelijk verzoek tot hulp moet hebben gedaan."
+  },
+  {
+    "q": "Er ontstaat een nieuwe regel van internationaal gewoonterecht die diepzeemijnbouw verbiedt. Staat Q heeft echter vanaf het allereerste moment dat deze regel in ontwikkeling was, consequent en duidelijk bezwaar gemaakt tegen de toepassing ervan op zijn schepen. Is Staat Q gebonden aan dit nieuwe gewoonterecht?",
+    "sample": "Issue: Is Staat Q gebonden aan de nieuwe gewoonterechtelijke regel ondanks zijn bezwaren?\n\nRule: Een staat die zich vanaf het ontstaan van een regel van gewoonterecht consistent en duidelijk heeft verzet tegen die regel, geldt als een 'persistent objector'.\n\nApplication: Staat Q heeft zich vanaf het begin (ab initio) en volhardend verzet tegen de regel.\n\nConclusion: Als persistent objector is Staat Q niet gebonden aan de nieuwe regel van gewoonterecht.",
+    "checklist": [
+      "Persistent objector leerstuk",
+      "Verzet vanaf het ontstaan",
+      "Consistent en duidelijk bezwaar",
+      "Staat Q is niet gebonden"
+    ],
+    "exp": "Persistent objector.\n\nEen staat die zich vanaf het ontstaan van een regel consistent heeft verzet tegen een bepaalde praktijk (persistent objector), is niet gebonden aan die regel van gewoonterecht."
+  },
+  {
+    "q": "Twee staten sluiten een verdrag waarin zij afspreken om gezamenlijk een buurland militair binnen te vallen en te annexeren, zonder enig mandaat van de VN-Veiligheidsraad. Zij stellen dat dit verdrag rechtsgeldig is tussen hen beiden. Is dit correct?",
+    "sample": "Issue: Is een verdrag dat agressie faciliteert rechtsgeldig in het internationaal recht?\n\nRule: Artikel 53 WVV bepaalt dat verdragen die in strijd zijn met een regel van dwingend recht (jus cogens) nietig zijn. Het verbod op agressie is een norm van jus cogens.\n\nApplication: De inhoud van het verdrag betreft agressie, wat in strijd is met een dwingende norm van internationaal recht.\n\nConclusion: Het verdrag is nietig en heeft geen rechtskracht.",
+    "checklist": [
+      "Strijd met jus cogens",
+      "Dwingend recht heeft voorrang",
+      "Verbod op agressie",
+      "Verdrag is nietig"
+    ],
+    "exp": "Artikel 53 WVV.\n\nRegels van dwingend recht (jus cogens), zoals het verbod op agressie, hebben voorrang boven enige andere regel. Een verdrag dat hiermee in strijd is, is nietig."
+  }
+]

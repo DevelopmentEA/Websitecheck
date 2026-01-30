@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Tijdens een top in Brussel komen de staatshoofden en regeringsleiders van de lidstaten bijeen. De Franse president stelt voor dat deze vergadering direct een nieuwe bindende wet aanneemt om de visserijquota in de hele Unie te verlagen. Kan deze vergadering dit wetgevingsbesluit rechtsgeldig nemen?",
+    "sample": "Issue: Heeft de Europese Raad de bevoegdheid om wetgevende handelingen aan te nemen?\n\nRule: Artikel 15 lid 1 VEU bepaalt dat de Europese Raad de Unie de nodige impulsen geeft en politieke beleidslijnen bepaalt, maar geen wetgevingstaak uitoefent.\n\nApplication: De vergadering van staatshoofden en regeringsleiders vormt de Europese Raad. Het voorstel betreft het aannemen van een bindende wet.\n\nConclusion: Nee, de Europese Raad is onbevoegd om wetgeving aan te nemen; dit is voorbehouden aan de Raad en het Parlement.",
+    "checklist": [
+      "De vergadering kwalificeert als de Europese Raad",
+      "Europese Raad oefent geen wetgevingstaak uit (Art. 15 VEU)",
+      "Wetgevingstaak ligt bij Raad en Europees Parlement",
+      "Besluit is niet rechtsgeldig wegens onbevoegdheid"
+    ],
+    "exp": "De Europese Raad (staatshoofden/regeringsleiders) geeft politieke impulsen maar heeft expliciet geen wetgevende bevoegdheid (Art. 15 VEU). Wetgeving is de taak van de Raad en het Parlement."
+  },
+  {
+    "q": "Een grote lidstaat ziet zijn bevolkingsaantal explosief groeien en eist bij de volgende verkiezingen 100 zetels in het Europees Parlement om de representativiteit te waarborgen. Is deze eis in overeenstemming met het Verdrag?",
+    "sample": "Issue: Mag een lidstaat meer dan 96 zetels in het Europees Parlement hebben?\n\nRule: Artikel 14 lid 2 VEU stelt dat het Europees Parlement uit maximaal 751 leden bestaat, met een degressief evenredige verdeling waarbij elke lidstaat minimaal 6 en maximaal 96 zetels krijgt.\n\nApplication: De lidstaat eist 100 zetels. Dit aantal overschrijdt het verdragsrechtelijke maximum van 96 zetels per lidstaat.\n\nConclusion: Nee, de eis is in strijd met het maximum van 96 zetels per lidstaat zoals vastgelegd in het VEU.",
+    "checklist": [
+      "Zetelverdeling is degressief evenredig",
+      "Maximum aantal zetels per lidstaat is 96 (Art. 14 VEU)",
+      "Eis van 100 zetels overschrijdt het maximum",
+      "Totaal aantal leden is beperkt tot 751"
+    ],
+    "exp": "Artikel 14 VEU maximeert het aantal zetels per lidstaat op 96. Een eis voor 100 zetels is juridisch onmogelijk, ongeacht bevolkingsgroei."
+  },
+  {
+    "q": "De Eurocommissaris voor Transport ontvangt een dwingende instructie van de Duitse bondskanselier om een wetsvoorstel voor strengere emissie-eisen in te trekken, omdat dit de Duitse auto-industrie zou schaden. Moet de commissaris gehoor geven aan deze instructie?",
+    "sample": "Issue: Mag een lid van de Europese Commissie instructies aannemen van een nationale regering?\n\nRule: Artikel 17 VEU en artikel 245 VWEU bepalen dat leden van de Commissie hun ambt volkomen onafhankelijk uitoefenen en geen instructies vragen of aanvaarden van enige regering.\n\nApplication: De commissaris krijgt een instructie van de Duitse regering. De commissaris dient echter het algemeen belang van de Unie te dienen, niet het nationaal belang.\n\nConclusion: Nee, de commissaris moet de instructie weigeren op grond van de verplichte onafhankelijkheid en het verbod op instructies.",
+    "checklist": [
+      "Commissieleden oefenen ambt volkomen onafhankelijk uit",
+      "Zij vertegenwoordigen het algemeen belang van de Unie",
+      "Verbod op vragen of aanvaarden van instructies (Art. 17 VEU)",
+      "Lidstaten moeten deze onafhankelijkheid eerbiedigen"
+    ],
+    "exp": "Commissieleden zijn onafhankelijk en dienen het algemeen belang (Art. 17 VEU). Het aanvaarden van nationale instructies is strijdig met de Verdragen."
+  },
+  {
+    "q": "In de Raad van de Europese Unie wordt gestemd over een voorstel waarvoor een gekwalificeerde meerderheid nodig is. 14 lidstaten stemmen voor. Deze lidstaten vertegenwoordigen samen 60% van de bevolking van de Unie. Is het voorstel aangenomen?",
+    "sample": "Issue: Is voldaan aan de vereisten voor een gekwalificeerde meerderheid in de Raad?\n\nRule: Artikel 16 lid 4 VEU bepaalt dat een gekwalificeerde meerderheid vereist: instemming van ten minste 55% van de leden van de Raad (minimaal 15) én ten minste 65% van de bevolking van de Unie.\n\nApplication: Er zijn slechts 14 leden voor (minder dan 15) en 60% van de bevolking (minder dan 65%).\n\nConclusion: Nee, het voorstel is niet aangenomen omdat aan geen van beide drempels voor gekwalificeerde meerderheid is voldaan.",
+    "checklist": [
+      "Vereiste 1: Ten minste 55% van de leden (minimaal 15)",
+      "Vereiste 2: Ten minste 65% van de bevolking",
+      "Er stemmen slechts 14 leden voor (te weinig)",
+      "Er is slechts 60% bevolkingssteun (te weinig)"
+    ],
+    "exp": "Voor gekwalificeerde meerderheid zijn minstens 15 lidstaten (55%) én 65% van de bevolking nodig (Art. 16 VEU). Hier wordt aan beide eisen niet voldaan."
+  },
+  {
+    "q": "Het Europees Parlement is zeer ontevreden over het functioneren van de zittende Europese Commissie wegens vermeend wanbeheer. Het Parlement wil dat de gehele Commissie, inclusief de voorzitter, aftreedt. Kan het Parlement dit afdwingen?",
+    "sample": "Issue: Heeft het Europees Parlement de bevoegdheid om de Europese Commissie tot aftreden te dwingen?\n\nRule: Artikel 234 VWEU geeft het Parlement de bevoegdheid om een motie van afkeuring aan te nemen. Indien deze met de vereiste meerderheid wordt aangenomen, moeten de leden van de Commissie collectief ontslag nemen.\n\nApplication: Het Parlement wil de Commissie naar huis sturen wegens wanbeheer. Dit valt onder de controlerende taak.\n\nConclusion: Ja, door het aannemen van een motie van afkeuring kan het Parlement de Commissie dwingen collectief af te treden.",
+    "checklist": [
+      "Parlement heeft een controlerende taak jegens Commissie",
+      "Middel is de motie van afkeuring (Art. 234 VWEU)",
+      "Gevolg is collectief ontslag van de Commissie",
+      "Hoge Vertegenwoordiger moet ook aftreden"
+    ],
+    "exp": "Het Parlement kan de Commissie collectief tot aftreden dwingen via een motie van afkeuring (Art. 234 VWEU), als onderdeel van zijn controlerende taak."
+  }
+]

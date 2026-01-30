@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Een rechtvaardigingsgrond neemt de verwijtbaarheid van de dader weg.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een rechtvaardigingsgrond neemt de wederrechtelijkheid van de gedraging weg. Het is de schulduitsluitingsgrond die de verwijtbaarheid van de dader wegneemt."
+  },
+  {
+    "q": "Noodweer is een wettelijke schulduitsluitingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Noodweer, geregeld in artikel 41 lid 1 Sr, is een rechtvaardigingsgrond omdat het de wederrechtelijkheid van de handeling wegneemt."
+  },
+  {
+    "q": "Voor een geslaagd beroep op noodweer moet de verdediging gericht zijn tegen een ogenblikkelijke, wederrechtelijke aanranding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 41 lid 1 Sr vereist dat de verdediging noodzakelijk is tegen een ogenblikkelijke en wederrechtelijke aanranding van eigen of andermans lijf, eerbaarheid of goed."
+  },
+  {
+    "q": "De ongeschreven schulduitsluitingsgrond 'afwezigheid van alle schuld' (AVAS) werd geïntroduceerd in het arrest Melk en water.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De Hoge Raad introduceerde de ongeschreven schulduitsluitingsgrond AVAS in het arrest Melk en water, waarbij werd bepaald dat strafbaarheid ontbreekt indien de verdachte geen enkel verwijt kan worden gemaakt."
+  },
+  {
+    "q": "Een beroep op noodweerexces kan slagen als de overschrijding van de verdedigingsgrenzen het gevolg is van een hevige gemoedsbeweging door de aanranding veroorzaakt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 41 lid 2 Sr bepaalt dat de overschrijding van de grenzen van noodzakelijke verdediging niet strafbaar is, indien zij het onmiddellijk gevolg is van een hevige gemoedsbeweging door de aanranding veroorzaakt."
+  },
+  {
+    "q": "Overmacht in de zin van noodtoestand is een schulduitsluitingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Overmacht in de zin van noodtoestand wordt beschouwd als een rechtvaardigingsgrond, waarbij een conflict van plichten wordt opgelost door het zwaarstwegende belang te kiezen."
+  },
+  {
+    "q": "In het Opticien-arrest werd een beroep op overmacht-noodtoestand gehonoreerd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In het Opticien-arrest honoreerde de Hoge Raad het beroep op overmacht (noodtoestand) omdat de opticien koos voor de maatschappelijke plicht om een klant in nood te helpen boven de wettelijke plicht van de winkelsluiting."
+  },
+  {
+    "q": "Indien de wederrechtelijkheid als bestanddeel in de delictsomschrijving is opgenomen, leidt een geslaagd beroep op een rechtvaardigingsgrond tot ontslag van alle rechtsvervolging.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Als wederrechtelijkheid een bestanddeel is, leidt het ontbreken daarvan (door een rechtvaardigingsgrond) tot vrijspraak, omdat het feit dan niet bewezen kan worden conform de tenlastelegging."
+  },
+  {
+    "q": "Het opvolgen van een onbevoegd ambtelijk bevel is nooit een geldige strafuitsluitingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 43 lid 2 Sr bepaalt dat een onbevoegd bevel strafbaarheid opheft indien het te goeder trouw als bevoegd werd beschouwd en de nakoming binnen de kring van ondergeschiktheid lag."
+  },
+  {
+    "q": "Putatief noodweer valt onder de wettelijke regeling van artikel 41 Sr.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Putatief noodweer (waarbij de verdachte dwaalt over het bestaan van de aanranding) is geen vorm van wettelijk noodweer, maar valt onder de ongeschreven schulduitsluitingsgrond afwezigheid van alle schuld (AVAS)."
+  },
+  {
+    "q": "Het ontbreken van de materiële wederrechtelijkheid is een ongeschreven rechtvaardigingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In het Veearts-arrest introduceerde de Hoge Raad het ontbreken van materiële wederrechtelijkheid als buitenwettelijke rechtvaardigingsgrond."
+  },
+  {
+    "q": "Psychische overmacht vereist een van buiten komende drang waaraan de verdachte redelijkerwijs geen weerstand kon bieden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Psychische overmacht (artikel 40 Sr) veronderstelt een externe drang die de wilsvrijheid zodanig aantast dat weerstand bieden redelijkerwijs niet gevergd kon worden."
+  },
+  {
+    "q": "Tegen een rechtmatige aanhouding door een politieagent is een beroep op noodweer mogelijk.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Noodweer vereist een 'wederrechtelijke' aanranding. Een rechtmatige ambtshandeling is niet wederrechtelijk, waardoor verdediging daartegen niet is toegestaan."
+  },
+  {
+    "q": "Het vereiste van subsidiariteit bij noodweer houdt in dat het verdedigingsmiddel in verhouding moet staan tot de aanranding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Dit is de definitie van proportionaliteit. Subsidiariteit houdt in dat het verdedigingsmiddel noodzakelijk moet zijn en er geen reële mogelijkheid was om zich aan de aanranding te onttrekken."
+  },
+  {
+    "q": "Een geslaagd beroep op ontoerekeningsvatbaarheid (art. 39 Sr) leidt tot ontslag van alle rechtsvervolging.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Ontoerekeningsvatbaarheid is een schulduitsluitingsgrond. Als de dader niet strafbaar is, volgt ontslag van alle rechtsvervolging."
+  },
+  {
+    "q": "Culpa in causa kan een geslaagd beroep op noodweer in de weg staan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Eigen schuld (culpa in causa) aan het ontstaan van de noodweersituatie kan de aanvaarding van het beroep op noodweer of noodweerexces blokkeren of beperken."
+  },
+  {
+    "q": "De Garantenstellung speelt geen rol bij de beoordeling van noodweerexces.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Garantenstellung (hoedanigheid van de persoon, bijv. politieagent) speelt wel degelijk een rol; van bepaalde personen mag een grotere mate van beheersing worden verwacht."
+  },
+  {
+    "q": "Het uitvoeren van een wettelijk voorschrift (art. 42 Sr) is een schulduitsluitingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het uitvoeren van een wettelijk voorschrift is een rechtvaardigingsgrond, omdat de wet de handeling gebiedt en daarmee de wederrechtelijkheid wegneemt."
+  },
+  {
+    "q": "Bij tardief noodweerexces is de aanranding reeds beëindigd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Tardief noodweerexces ziet op de situatie waarin de verdediging plaatsvindt nadat de aanranding is afgelopen, maar nog steeds het directe gevolg is van een hevige gemoedsbeweging door die aanranding."
+  },
+  {
+    "q": "Verontschuldigbare rechtsdwaling is een vorm van afwezigheid van alle schuld (AVAS).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Verontschuldigbare rechtsdwaling is een categorie binnen de buitenwettelijke schulduitsluitingsgrond AVAS, zoals bevestigd in jurisprudentie (o.a. Motorpapieren)."
+  },
+  {
+    "q": "In het Veearts-arrest werd de verdachte veroordeeld omdat hij de wet formeel had overtreden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De veearts werd ontslagen van alle rechtsvervolging omdat, hoewel hij de wet formeel overtrad, de materiële wederrechtelijkheid ontbrak doordat hij handelde in het belang van de volksgezondheid."
+  },
+  {
+    "q": "Noodweer mag worden toegepast ter verdediging van goederen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 41 lid 1 Sr staat noodweer toe ter verdediging van eigen of andermans lijf, eerbaarheid of goed."
+  },
+  {
+    "q": "Een schulduitsluitingsgrond betreft de objectieve kant van het strafbare feit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een schulduitsluitingsgrond betreft de subjectieve kant van het strafbare feit (de verwijtbaarheid van de dader), terwijl een rechtvaardigingsgrond de objectieve kant (de daad) betreft."
+  },
+  {
+    "q": "In het arrest Bijlmer tasjesroof speelde het illegaal wapenbezit een rol bij de beoordeling van het noodweerexces.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In dit arrest (en vergelijkbare jurisprudentie) kan het illegaal voorhanden hebben van een wapen (culpa in causa) van invloed zijn op de aanvaarding van het beroep op noodweer(exces)."
+  },
+  {
+    "q": "Het Motorpapieren-arrest heeft betrekking op de strafuitsluitingsgrond ontoerekeningsvatbaarheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het Motorpapieren-arrest is een standaardarrest voor de beoordeling van een beroep op verontschuldigbare rechtsdwaling (AVAS)."
+  },
+  {
+    "q": "Dubbele causaliteit bij noodweerexces betekent dat zowel de aanval de emotie moet veroorzaken, als de emotie de reactie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Er moet een causaal verband zijn tussen de aanranding en de hevige gemoedsbeweging, én tussen die gemoedsbeweging en de overschrijding van de verdedigingsgrenzen."
+  },
+  {
+    "q": "Een beroep op bevoegd gegeven ambtelijk bevel slaagt alleen als het bevel door een bevoegde meerdere is gegeven.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 43 lid 1 Sr stelt als eis dat het bevel gegeven moet zijn door het daartoe bevoegde gezag."
+  },
+  {
+    "q": "In het Fietspomp-arrest werd het beroep op noodweer afgewezen wegens het ontbreken van een aanranding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In het Fietspomp-arrest oordeelde het Hof dat de gestelde aanranding niet aannemelijk was geworden, waardoor aan een beroep op noodweer niet werd toegekomen."
+  },
+  {
+    "q": "Als de rechter bij een 'normaal' delict een strafuitsluitingsgrond aanvaardt, volgt vrijspraak.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij een delict waar wederrechtelijkheid of schuld geen bestanddeel is, leidt een geslaagde strafuitsluitingsgrond tot ontslag van alle rechtsvervolging (OVAR)."
+  },
+  {
+    "q": "Maximaal te vergen zorg is een categorie van de schulduitsluitingsgrond AVAS.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Maximaal te vergen zorg is een van de vier vormen van AVAS, waarbij de verdachte ondanks de overtreding geen verwijt kan worden gemaakt omdat hij alle mogelijke zorg heeft betracht."
+  }
+]

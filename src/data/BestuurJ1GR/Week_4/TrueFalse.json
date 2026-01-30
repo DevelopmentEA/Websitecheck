@@ -1,0 +1,272 @@
+[
+  {
+    "q": "De term 'terugtred van de wetgever' impliceert dat de wetgever steeds gedetailleerdere regels vaststelt om de handelingsvrijheid van bestuursorganen in te perken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De terugtred van de wetgever houdt in dat de wetgever steeds minder inhoudelijke rechtsnormen tot stand brengt en dit overlaat aan bestuursorganen, waardoor deze over meer beslissingsruimte beschikken."
+  },
+  {
+    "q": "Beslissingsruimte in het bestuursrecht is een koepelbegrip dat bestaat uit beleidsvrijheid (beleidsruimte) en beoordelingsvrijheid (beoordelingsruimte).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Beslissingsruimte omvat de ruimte die een bestuursorgaan heeft om bevoegdheden uit te oefenen, onderverdeeld in beleidsvrijheid en beoordelingsvrijheid."
+  },
+  {
+    "q": "Wanneer een wettelijke bepaling het werkwoord 'kunnen' of 'is bevoegd' bevat, duidt dit doorgaans op een gebonden bevoegdheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De werkwoorden 'kunnen' en 'bevoegd zijn' duiden op een discretionaire bevoegdheid, waarbij het bestuursorgaan beleidsvrijheid heeft."
+  },
+  {
+    "q": "Bij een discretionaire bevoegdheid toetst de bestuursrechter het besluit integraal (volledig).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij een discretionaire bevoegdheid toetst de rechter terughoudend (marginaal), om te voorkomen dat hij op de stoel van het bestuur gaat zitten."
+  },
+  {
+    "q": "De interpretatie van wettelijke begrippen (wetsuitleg) behoort uiteindelijk tot de exclusieve competentie van het bestuursorgaan, waarbij de rechter niet mag ingrijpen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De rechter bepaalt wat de wet inhoudt en wat daaruit geïnterpreteerd moet worden (interpretatieruimte); dit is geen bevoegdheid van het bestuursorgaan."
+  },
+  {
+    "q": "Bij de vaststelling van de feiten door een bestuursorgaan past de bestuursrechter een terughoudende toetsing toe.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij de vaststelling van feiten is geen ruimte voor beleid of interpretatie; de rechter moet de feiten volledig (integraal) toetsen."
+  },
+  {
+    "q": "Beoordelingsruimte ontstaat wanneer de wetgever gebruikmaakt van vage termen die door het bestuursorgaan moeten worden ingevuld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Van beoordelingsruimte is sprake wanneer de wetgever, vaak door vage termen, ruimte laat om te beoordelen of aan de toepassingsvoorwaarden is voldaan."
+  },
+  {
+    "q": "De clausule 'naar het oordeel van' in een wetstekst duidt op expliciete beoordelingsvrijheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Door de clausule 'naar het oordeel van' of 'ten genoegen van' op te nemen, geeft de wetgever aan dat er sprake is van expliciete beoordelingsvrijheid."
+  },
+  {
+    "q": "In de uitspraak Aanlijngebod Montferland oordeelde de Afdeling dat de kwalificatie van een hond als 'gevaarlijk' een kwestie van beleidsvrijheid is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Afdeling oordeelde dat bij de beoordeling of een hond gevaarlijk is, het college beoordelingsruimte heeft (invulling open norm), geen beleidsvrijheid."
+  },
+  {
+    "q": "In de uitspraak Aanlijngebod Montferland oordeelde de Afdeling dat de beslissing om een aanlijngebod op te leggen beleidsvrijheid bevat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het college heeft beleidsruimte bij de beslissing om wel of geen aanlijngebod op te leggen; de rechter toetst dit terughoudend."
+  },
+  {
+    "q": "Indien criteria voor een bevoegdheid objectief meetbaar zijn, is er sprake van gebonden beoordelingsruimte.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Als criteria meetbaar zijn, is er geen sprake van beoordelingsruimte; er is dan geen ruimte voor verschillende oordelen."
+  },
+  {
+    "q": "Beleidsregels kunnen krachtens artikel 1:3 lid 4 Awb betrekking hebben op de uitleg van wettelijke voorschriften.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Beleidsregels zijn regels omtrent de afweging van belangen, de vaststelling van feiten of de uitleg van wettelijke voorschriften."
+  },
+  {
+    "q": "Een bestuursorgaan is op grond van artikel 4:84 Awb verplicht om altijd overeenkomstig de beleidsregel te handelen, zonder uitzondering.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 4:84 Awb bevat een inherente afwijkingsbevoegdheid (de hardheidsclausule) voor gevallen waarin handelen conform de regel onevenredige gevolgen zou hebben."
+  },
+  {
+    "q": "Of-beleidsvrijheid houdt in dat het bestuursorgaan de vrijheid heeft om te bepalen op welke wijze (hoe) een bevoegdheid wordt uitgeoefend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Of-beleidsvrijheid betreft de keuze om de bevoegdheid wel of niet te gebruiken; hoe-beleidsvrijheid ziet op de wijze van uitoefening."
+  },
+  {
+    "q": "Beleidsregels zijn algemeen verbindende voorschriften in de zin van de Awb.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 4 Awb definieert een beleidsregel expliciet als een algemene regel, niet zijnde een algemeen verbindend voorschrift."
+  },
+  {
+    "q": "De bevoegdheid tot het vaststellen van beleidsregels vereist altijd een expliciete toekenning in een bijzondere wet.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 4:81 lid 1 Awb koppelt de bevoegdheid tot het vaststellen van beleidsregels aan de bestuursbevoegdheid zelf; een aparte wettelijke grondslag is niet altijd vereist."
+  },
+  {
+    "q": "Bij impliciete beoordelingsvrijheid blijkt de vrijheid niet uit de wettekst, maar wordt deze afgeleid uit de aard van de bevoegdheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Indien geen expliciete clausule is opgenomen maar de aard van de bevoegdheid vrijheid impliceert, spreekt men van impliciete beoordelingsvrijheid."
+  },
+  {
+    "q": "Wanneer de wetgever termen gebruikt als 'naar zijn oordeel', mag de rechter het besluit slechts toetsen op kennelijke onredelijkheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij expliciete beoordelingsvrijheid ('naar zijn oordeel') mag de rechter niet treden in de beoordeling, behalve als het kennelijk onredelijk is."
+  },
+  {
+    "q": "Feitenkwalificatie is het proces waarbij wordt beoordeeld of de vastgestelde feiten voldoen aan de wettelijke bevoegdheidscriteria.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Feitenkwalificatie betreft het bepalen van de betekenis van de vastgestelde feiten voor de bevoegdheidsuitoefening (subsumptie)."
+  },
+  {
+    "q": "Het leerstuk van de marginale toetsing is ontwikkeld om de scheiding der machten (trias politica) te waarborgen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Marginale toetsing voorkomt dat de rechter op de stoel van het bestuur gaat zitten, wat in strijd zou zijn met de taakverdeling binnen de trias politica."
+  },
+  {
+    "q": "Een gebonden bevoegdheid laat geen ruimte voor een belangenafweging door het bestuursorgaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij een gebonden bevoegdheid schrijft de wet dwingend voor welk besluit moet worden genomen als aan de voorwaarden is voldaan, zonder beleidsvrijheid."
+  },
+  {
+    "q": "Indien beleidsregels van een delegans en een delegataris strijdig zijn, hebben de regels van de delegataris voorrang.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Regels van hogere orde prevaleren; de beleidsregels van de delegans hebben voorrang op die van de delegataris."
+  },
+  {
+    "q": "Artikel 3:4 lid 1 Awb verplicht een bestuursorgaan om bij elke bevoegdheid, ook gebonden bevoegdheden, de belangen af te wegen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 3:4 lid 1 Awb geldt voor zover niet uit een wettelijk voorschrift of de aard van de bevoegdheid een beperking voortvloeit (dus niet bij gebonden bevoegdheden)."
+  },
+  {
+    "q": "Het vaststellen van feiten in enge zin (constatering wat is voorgevallen) biedt het bestuursorgaan beoordelingsruimte.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij het vaststellen van feiten is geen ruimte voor interpretatie of beleid; het is een objectieve constatering."
+  },
+  {
+    "q": "Interpretatieruimte bij wetsuitleg is hetzelfde als discretionaire bevoegdheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Interpretatieruimte ziet op de uitleg van de norm (wat de rechter bepaalt), terwijl discretionaire bevoegdheid ziet op de beleidsvrijheid bij de toepassing."
+  },
+  {
+    "q": "De rechter toetst bij beleidsvrijheid of het bestuursorgaan 'in redelijkheid' tot het besluit heeft kunnen komen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dit is de kern van de marginale toetsing bij beleidsvrijheid: de rechter beoordeelt de redelijkheid van de belangenafweging, niet de doelmatigheid."
+  },
+  {
+    "q": "Beleidsregels over de vaststelling van feiten kunnen betrekking hebben op meetmethoden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Beleidsregels over de vaststelling van feiten gaan over het meten of bepalen van de betekenis van feiten (bijvoorbeeld meetmethoden)."
+  },
+  {
+    "q": "Beleidsvrijheid wordt beperkt door de algemene beginselen van behoorlijk bestuur.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Ook bij discretionaire bevoegdheden (beleidsvrijheid) is het bestuursorgaan gebonden aan de algemene beginselen van behoorlijk bestuur (zoals evenredigheid en zorgvuldigheid)."
+  },
+  {
+    "q": "Een bestuursorgaan kan beleidsregels vaststellen voor de uitleg van wettelijke voorschriften, ook al is wetsuitleg primair een taak van de rechter.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het is toegestaan wetsinterpreterende beleidsregels vast te stellen om duidelijkheid te scheppen in afwachting van rechterlijke oordelen."
+  },
+  {
+    "q": "In de uitspraak Aanlijngebod Montferland was de rechter van oordeel dat de ernst van het bijtincident onvoldoende was om af te wijken van het advies van de politie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Afdeling zag juist, gelet op de ernst van het incident, geen reden om te oordelen dat het college niet het advies van de politie mocht overnemen."
+  }
+]

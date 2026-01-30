@@ -1,0 +1,57 @@
+[
+  {
+    "q": "De heer Jansen wil een theehuis openen in het buitengebied van de gemeente. Tijdens een informeel werkbezoek aan de locatie zegt de verantwoordelijke wethouder Ruimtelijke Ordening tegen Jansen: \"Dit is een prachtig initiatief dat precies past in onze visie, ik zie geen enkel obstakel voor de vergunningverlening.\" Jansen maakt daarop kosten voor een architect. Een maand later weigert het college van burgemeester en wethouders de vergunning omdat het project in strijd is met het bestemmingsplan. Jansen beroept zich op de uitlating van de wethouder.\n\nBeoordeel de kans van slagen van dit beroep aan de hand van het in de rechtspraak ontwikkelde stappenplan.",
+    "sample": "Issue\nDe rechtsvraag is of de heer Jansen een geslaagd beroep kan doen op het vertrouwensbeginsel op basis van de uitlatingen van de wethouder.\n\nRule\nVolgens de uitspraak Dakopbouw Amsterdam moet de beoordeling in drie stappen plaatsvinden. 1. Kwalificatie van de uitlating: kan deze bij een redelijk denkende burger de indruk wekken van een welbewuste standpuntbepaling (burgerperspectief)? 2. Toerekenbaarheid: mocht de burger er op goede gronden vanuit gaan dat de ambtenaar/bestuurder bevoegd was of de opvatting van het orgaan vertolkte? 3. Belangenafweging: het gewekte vertrouwen wordt afgewogen tegen andere belangen (zoals de wet of belangen van derden).\n\nApplication\nDe uitspraak \"ik zie geen enkel obstakel\" kan door een redelijk denkende burger worden opgevat als een welbewuste standpuntbepaling (stap 1). Hoewel de wethouder alleen niet beslissingsbevoegd is (dat is het college), kan de toezegging aan het college worden toegerekend omdat Jansen mocht veronderstellen dat de wethouder de opvatting van het bevoegde orgaan vertolkte (stap 2). Echter, in stap 3 kan de strijd met het bestemmingsplan (de wet) of belangen van derden zwaarder wegen dan het belang van Jansen.\n\nConclusion\nHet beroep op het vertrouwensbeginsel slaagt waarschijnlijk in de eerste twee stappen, maar kan in de derde stap stranden op de belangenafweging. In dat geval kan Jansen wel aanspraak maken op schadevergoeding.",
+    "checklist": [
+      "Kwalificatie als toezegging (welbewuste standpuntbepaling)",
+      "Toerekenbaarheid aan het bevoegde bestuursorgaan",
+      "Burgerperspectief staat centraal bij beoordeling",
+      "Belangenafweging (vertrouwen vs. andere belangen)"
+    ],
+    "exp": "De analyse volgt de vaste jurisprudentielijn uit de uitspraak ABRvS Dakopbouw Amsterdam (ECLI:NL:RVS:2019:1694), waarin het burgerperspectief en het driestappenplan centraal staan."
+  },
+  {
+    "q": "Burgemeester X sluit een woning in Harderwijk voor de duur van zes maanden op grond van artikel 13b Opiumwet, nadat er een handelshoeveelheid harddrugs is aangetroffen. De bewoner, een alleenstaande vader met twee jonge kinderen, stelt dat deze maatregel voor hem en zijn kinderen leidt tot dakloosheid en dat dit gevolg niet in verhouding staat tot het doel van de sluiting. De burgemeester stelt dat hij beleidsvrijheid heeft en dat de rechter slechts terughoudend mag toetsen.\n\nLeg uit hoe de bestuursrechter dit besluit dient te toetsen.",
+    "sample": "Issue\nDe rechtsvraag is met welke intensiteit de bestuursrechter de sluiting van de woning moet toetsen aan het evenredigheidsbeginsel (artikel 3:4 lid 2 Awb).\n\nRule\nUit de uitspraak Woningsluiting Harderwijk volgt dat de rechter niet slechts marginaal toetst of het orgaan 'in redelijkheid' tot het besluit kon komen, maar moet aansluiten bij artikel 3:4 lid 2 Awb. De toetsing vindt plaats aan de hand van drie aspecten: 1. Geschiktheid (is de maatregel effectief?), 2. Noodzakelijkheid (is er een lichter middel?), en 3. Evenwichtigheid (staan de nadelige gevolgen in verhouding tot de doelen?).\n\nApplication\nDe burgemeester moet niet alleen kijken naar zijn bevoegdheid, maar specifiek naar de gevolgen voor het gezin. De rechter zal beoordelen of een sluiting van zes maanden noodzakelijk is of dat een waarschuwing of kortere sluiting volstaat, en of de dakloosheid van de kinderen niet onevenredig zwaar weegt (evenwichtigheid).\n\nConclusion\nDe stelling van de burgemeester is onjuist; de rechter toetst indringend aan de hand van geschiktheid, noodzakelijkheid en evenwichtigheid.",
+    "checklist": [
+      "Toetsing aan artikel 3:4 lid 2 Awb",
+      "Beoordeling geschiktheid van de maatregel",
+      "Beoordeling noodzakelijkheid (is er een lichter middel?)",
+      "Beoordeling evenwichtigheid (maatvoering van gevolgen)"
+    ],
+    "exp": "Deze casus is gebaseerd op ABRvS 2 februari 2022 (Woningsluiting Harderwijk), waarin de maatstaf voor evenredigheidstoetsing is verduidelijkt."
+  },
+  {
+    "q": "Het college van B&W weigert een subsidieaanvraag van Stichting Z. In de afwijzende beschikking staat enkel de zin: \"Uw aanvraag wordt afgewezen omdat deze niet in het beleid past.\" Het college heeft niet onderzocht of er sprake is van bijzondere omstandigheden en verwijst niet naar een specifiek artikel in de beleidsregel.\n\nWelke algemene beginselen van behoorlijk bestuur zijn hier geschonden?",
+    "sample": "Issue\nVoldoet de besluitvorming van het college aan de formele vereisten voor de voorbereiding en inrichting van besluiten?\n\nRule\nArtikel 3:2 Awb (zorgvuldigheidsbeginsel) vereist dat het bestuursorgaan de nodige kennis omtrent de relevante feiten en af te wegen belangen vergaart. Artikel 3:46 Awb (motiveringsbeginsel) vereist een deugdelijke motivering die de beslissing kan dragen. Artikel 3:47 Awb vereist dat de motivering kenbaar is.\n\nApplication\nHet college heeft nagelaten de specifieke feiten en omstandigheden te onderzoeken (schending 3:2 Awb). Daarnaast is de enkele zin dat de aanvraag \"niet in het beleid past\" zonder verwijzing naar specifieke regels of feiten geen draagkrachtige en kenbare motivering (schending 3:46 en 3:47 Awb).\n\nConclusion\nHet besluit is in strijd met het zorgvuldigheidsbeginsel en het motiveringsbeginsel.",
+    "checklist": [
+      "Schending zorgvuldigheidsbeginsel (artikel 3:2 Awb)",
+      "Kennisvergaringsplicht relevante feiten en belangen",
+      "Schending motiveringsbeginsel (artikel 3:46 Awb)",
+      "Motivering moet beslissing kunnen dragen"
+    ],
+    "exp": "Analyse op basis van de formele beginselen van behoorlijk bestuur zoals vastgelegd in hoofdstuk 3 van de Algemene wet bestuursrecht."
+  },
+  {
+    "q": "Een burgemeester gebruikt zijn bevoegdheid om een demonstratie te verbieden (op grond van de Wet openbare manifestaties) niet omdat hij vreest voor wanordelijkheden, maar omdat hij het niet eens is met de politieke boodschap van de demonstranten en bang is voor imagoschade van de stad.\n\nKwalificeer dit handelen juridisch aan de hand van de Algemene wet bestuursrecht.",
+    "sample": "Issue\nIs het gebruik van de verbodsbevoegdheid door de burgemeester rechtmatig in het licht van het doel waarvoor deze is verleend?\n\nRule\nArtikel 3:3 Awb codificeert het specialiteitsbeginsel, ook wel het verbod op détournement de pouvoir. Dit houdt in dat een bestuursorgaan een bevoegdheid niet mag gebruiken voor een ander doel dan waarvoor die bevoegdheid is verleend.\n\nApplication\nDe bevoegdheid om demonstraties te beperken is verleend ter bescherming van de gezondheid, het verkeer of ter bestrijding van wanordelijkheden. Het weren van een onwelgevallige politieke boodschap of het voorkomen van imagoschade valt niet onder deze doelen.\n\nConclusion\nDe burgemeester handelt in strijd met artikel 3:3 Awb (détournement de pouvoir) door de bevoegdheid voor een oneigenlijk doel te gebruiken.",
+    "checklist": [
+      "Strijd met verbod op détournement de pouvoir",
+      "Grondslag in artikel 3:3 Awb",
+      "Bevoegdheid gebruikt voor ander doel",
+      "Specialiteitsbeginsel vereist doelgebonden gebruik"
+    ],
+    "exp": "Toepassing van artikel 3:3 Awb, dat het verbod op misbruik van bevoegdheid (détournement de pouvoir) regelt."
+  },
+  {
+    "q": "Twee horecaondernemers, A en B, hebben beiden een terras zonder de vereiste vergunning. Hun situaties zijn feitelijk en juridisch identiek. De gemeente besluit handhavend op te treden tegen ondernemer A door een last onder dwangsom op te leggen, maar laat ondernemer B ongemoeid zonder hiervoor een objectieve rechtvaardiging te geven.\n\nKan ondernemer A zich met succes verzetten tegen de handhaving?",
+    "sample": "Issue\nKan ondernemer A zich met succes beroepen op het gelijkheidsbeginsel om handhaving te voorkomen?\n\nRule\nHet gelijkheidsbeginsel (artikel 1 Grondwet, ongeschreven in bestuursrecht) vereist dat gelijke gevallen gelijk worden behandeld. Hoewel het beginsel niet dwingt tot het herhalen van fouten (geen gelijkheid in illegaliteit), heeft het een sterke processuele functie: het bestuursorgaan moet het verschil in behandeling deugdelijk kunnen motiveren.\n\nApplication\nEr is sprake van gelijke gevallen (beiden geen vergunning, identieke situatie). De gemeente handhaaft bij A maar niet bij B, zonder objectieve rechtvaardiging. Omdat het orgaan de ongelijkheid niet kan weerleggen of motiveren, is het besluit onzorgvuldig en/of ondeugdelijk gemotiveerd.\n\nConclusion\nJa, ondernemer A kan zich beroepen op het gelijkheidsbeginsel. Dit leidt tot vernietiging van het besluit wegens strijd met artikel 3:46 (motivering) of 3:2 (zorgvuldigheid) Awb.",
+    "checklist": [
+      "Beroep op het gelijkheidsbeginsel",
+      "Juridisch en feitelijk gelijke gevallen",
+      "Bestuursorgaan moet verschil deugdelijk motiveren",
+      "Vernietiging wegens motiverings- of zorgvuldigheidsgebrek"
+    ],
+    "exp": "De analyse combineert het materiële gelijkheidsbeginsel met de processuele uitwerking ervan (motiveringsplicht) zoals beschreven in de literatuur."
+  }
+]

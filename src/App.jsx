@@ -1,281 +1,239 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  BrowserRouter as Router, 
-  Routes, 
-  Route, 
-  useNavigate, 
-  useLocation, 
-  Outlet, 
-  useParams, 
-  Navigate,
-  useOutletContext
-} from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Scale, 
-  Gavel, 
-  ArrowLeft, 
-  Award, 
-  BrainCircuit, 
-  Zap, 
-  Target, 
-  AlertTriangle, 
-  Maximize2,
-  X 
-} from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Music, Heart, BookOpen, Calendar, Mail, MapPin, Phone, ChevronDown, Award, Star } from 'lucide-react';
 
-// --- UTILS (Logica uit vorige script) ---
-import { getCourseConfig, getCourseQuestions } from './utils/courseLoader';
-
-// --- PAGES ---
-import Zenmode from './Zenmode';
-import VoortgangsToets from './pages/VoortgangsToets'; 
-import TopicOne from './pages/TopicOne';        
-import CourtroomRush from './pages/CourtroomRush'; 
-import TopicTen from './pages/TopicFour';        
-import Support from './pages/Support';
-
-// --- DASHBOARD CONFIG ---
-const genericCards = [
-  { 
-    title: "Oefenvragen", 
-    desc: "Toets de stof op een flexibele manier.", 
-    icon: Gavel, 
-    to: "SRI" 
-  },
-  { 
-    title: "Courtroom Rush", 
-    desc: "Ben jij beter dan Bobby?", 
-    icon: "rush-logo", // Speciale marker voor de afbeelding
-    to: "courtroom-rush" 
-  },
-  { 
-    title: "Tentamen simulator", 
-    desc: "Hoe locked in ben je?", 
-    icon: Award, 
-    to: "jurisprudentie" 
-  }
-];
-
-// --- MODERN CARD COMPONENT ---
-const TiltCard = ({ title, desc, icon: Icon, to, color }) => {
-  const navigate = useNavigate();
-  const { subjectSlug } = useParams();
-
-  return (
-    <motion.div
-      onClick={() => navigate(`/course/${subjectSlug}/${to}`)}
-      whileTap={{ scale: 0.98 }}
-      className="group cursor-pointer w-full bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 flex items-center gap-6"
-    >
-      <div 
-        style={{ color: color, backgroundColor: `${color}15` }} 
-        className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 overflow-hidden group-hover:bg-[#469585] transition-all duration-300"
-      >
-        {Icon === "rush-logo" ? (
-          // HIER IS DE IMAGE LOGICA AANGEPAST VOOR JE NIEUWE LOGO
-          <img 
-            src="/rush.png" 
-            alt="Rush" 
-            className="w-full h-full object-cover" 
-          />
-        ) : (
-          // DIT IS VOOR DE NORMALE ICOONTJES (Kleuren wit bij hover)
-          <div className="group-hover:text-white transition-colors">
-            <Icon size={30} />
-          </div>
-        )}
-      </div>
-      <div className="flex-grow">
-        <h3 className="text-2xl font-bold text-slate-800 mb-1 tracking-tight">{title}</h3>
-        <p className="text-slate-500 text-sm leading-snug">{desc}</p>
-      </div>
-      <div style={{ color: color }} className="hidden md:flex items-center text-[10px] font-black uppercase tracking-[0.2em] gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
-        Start <Zap size={14} fill="currentColor" />
-      </div>
-    </motion.div>
-  );
-};
-
-// --- MODERN DASHBOARD ---
-const Dashboard = () => {
-  const { config } = useOutletContext(); // Haalt data uit de layout context
-  const [isRebrandOpen, setIsRebrandOpen] = useState(false);
-
-  return (
-    <>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-4xl mx-auto py-16 px-8 relative">
-        <div className="mb-14">
-          <div className="flex items-center gap-2 mb-4" style={{ color: config.accent }}>
-            <Target size={14} /> 
-            <span className="text-[10px] font-bold uppercase tracking-[0.4em]">{config.tag || "TRAINING"}</span>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight">
-            Kies je <span className="text-gradient">Oefenmodule</span>
-          </h1>
-        </div>
-        <div className="grid gap-6">
-          {genericCards.map((card, idx) => (
-            <TiltCard key={idx} {...card} color={config.accent} />
-          ))}
-        </div>
-
-        <button 
-          onClick={() => setIsRebrandOpen(true)}
-          className="fixed bottom-8 right-8 z-[150] w-14 h-14 flex items-center justify-center bg-white border border-slate-200 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95 group"
-        >
-          <X size={28} className="text-[#10b981] drop-shadow-[0_0_8px_rgba(16,185,129,0.3)]" strokeWidth={3} />
-        </button>
-      </motion.div>
-
-      <Support isOpen={isRebrandOpen} onClose={() => setIsRebrandOpen(false)} />
-    </>
-  );
-};
-
-// --- MAIN LAYOUT ENGINE ---
-const MainLayout = () => {
-  const { subjectSlug } = useParams();
-  const location = useLocation();
-  const navigate = useNavigate();
-  
-  const [db, setDb] = useState(null);
-  const [config, setConfig] = useState(null);
-  const [status, setStatus] = useState('loading');
-  const [isZenActive, setIsZenActive] = useState(false);
-
-  const isArcade = location.pathname.includes('/courtroom-rush');
-  const isVoortgang = location.pathname.includes('/voortgang');
-  const isSRI = location.pathname.includes('/SRI'); 
-  const isDashboard = location.pathname.replace(/\/$/, "") === `/course/${subjectSlug}`.replace(/\/$/, "");
-
-  const isFullPageModule = isArcade || isVoortgang || isSRI;
+const Klavierplezier = () => {
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const initCourse = async () => {
-      setStatus('loading');
-      
-      // 1. Config ophalen (sync)
-      const foundConfig = getCourseConfig(subjectSlug);
-      if (!foundConfig) {
-        setStatus('denied'); // Of error, wat je wilt. Vak bestaat niet.
-        return;
-      }
-
-      // 2. Security Check (Strengere controle)
-      const hostname = window.location.hostname;
-      const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
-      
-      // In productie MOET het in een iframe zitten
-      const isInIframe = window.self !== window.top;
-      
-      // De referrer check: komt het verzoek van lawbooks.online?
-      // Let op: referrer kan leeg zijn bij direct bezoek of privacy settings, 
-      // dus we checken of hij een toegestaan domein BEVAT.
-      const referrer = document.referrer || "";
-      const allowedDomains = ['lawbooks.online', 'testelbert.learnworlds.com'];
-      const isAllowedReferrer = allowedDomains.some(domain => referrer.includes(domain));
-
-      // DE CHECK:
-      // Als we NIET lokaal zijn, EN (niet in iframe OF verkeerde referrer) -> Blokkeer.
-      if (!isLocal) {
-        if (!isInIframe || !isAllowedReferrer) {
-           console.warn("Security Block: Not local, and failed iframe/referrer check.", { isInIframe, referrer });
-           setStatus('denied');
-           return;
-        }
-      }
-
-      // 3. Data laden (alleen als security geslaagd is)
-      const questions = await getCourseQuestions(subjectSlug);
-      if (!questions) {
-        setStatus('error');
-        return;
-      }
-
-      setConfig(foundConfig);
-      setDb(questions);
-      setStatus('authorized');
-    };
-
-    initCourse();
-  }, [subjectSlug]);
-
-  if (status === 'denied') {
-    return (
-      <div className="h-screen w-full bg-[#F9FAFB] flex items-center justify-center p-6 text-center">
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="max-w-md p-10 bg-white border border-slate-200 rounded-[2.5rem] shadow-xl">
-          <AlertTriangle size={48} className="text-amber-500 mx-auto mb-6" />
-          <h2 className="text-slate-900 font-bold text-xl mb-2">Toegang niet toegestaan</h2>
-          <p className="text-slate-500 text-sm mb-6">Deze module is uitsluitend toegankelijk via de officiële Lawbooks leeromgeving.</p>
-        </motion.div>
-      </div>
-    );
-  }
-
-  if (status === 'loading' || status === 'error') {
-    return <div className="h-screen flex items-center justify-center text-slate-400 font-bold uppercase tracking-widest">
-      {status === 'loading' ? 'Dossier laden...' : 'Fout bij laden data'}
-    </div>;
-  }
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div className={`min-h-screen w-full transition-colors duration-500 ${isArcade ? 'arcade-mode' : 'bg-[#F9FAFB]'}`}>
-      <Zenmode isActive={isZenActive} onClose={() => setIsZenActive(false)} />
+    <div className="bg-[#FAF9F6] text-[#1a1a1a] font-light selection:bg-amber-100 selection:text-amber-900">
+      
+      {/* --- NAVIGATION --- */}
+      <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-8'}`}>
+        <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
+          <div className="group cursor-pointer">
+            <h1 className="text-2xl font-serif font-bold tracking-[0.2em] uppercase">
+              Klavier<span className="text-amber-700 group-hover:text-amber-500 transition-colors">plezier</span>
+            </h1>
+            <p className="text-[10px] tracking-[0.3em] uppercase opacity-60">Annette Niels • Arnhem</p>
+          </div>
+          <div className="hidden md:flex items-center space-x-10 text-sm uppercase tracking-widest font-medium">
+            {['Lessen', 'Over Annette', 'Projecten', 'Agenda', 'Contact'].map((item) => (
+              <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-amber-700 transition-colors">
+                {item}
+              </a>
+            ))}
+            <button className="bg-[#1a1a1a] text-white px-6 py-3 rounded-full hover:bg-amber-800 transition-all transform hover:-translate-y-1">
+              Proefles Boeken
+            </button>
+          </div>
+        </div>
+      </nav>
 
-      {!isFullPageModule && !isDashboard && (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-8 py-4 flex items-center justify-between">
-          <button 
-            onClick={() => navigate(`/course/${subjectSlug}`)} 
-            className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-[#469585] transition-colors"
-          >
-            <ArrowLeft size={16} /> Terug
-          </button>
-          <div className="flex items-center gap-2">
-            {isArcade ? (
-              <img src="/rush.png" alt="Rush" className="w-[18px] h-[18px] object-contain" />
-            ) : (
-              <Scale size={18} style={{ color: config.accent }} />
-            )}
-            <div className="text-[10px] font-black uppercase tracking-[0.3em] italic" style={{ color: config.accent }}>
-              Lawbooks
+      {/* --- HERO SECTION --- */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-black/10 z-10" />
+          <img 
+            src="https://images.unsplash.com/photo-1520527053377-4710dbf6c0bc?auto=format&fit=crop&q=80&w=2000" 
+            className="w-full h-full object-cover scale-105 animate-slow-zoom"
+            alt="Piano keys"
+          />
+        </div>
+        
+        <div className="relative z-20 text-center text-white px-6">
+          <h2 className="text-sm uppercase tracking-[0.5em] mb-6 animate-fade-in">Muziek is een persoonlijke reis</h2>
+          <h1 className="text-6xl md:text-8xl font-serif mb-8 leading-tight">
+            Vind jouw ritme <br />
+            <span className="italic font-normal">bij de bron.</span>
+          </h1>
+          <div className="flex justify-center gap-6 mt-12">
+            <ChevronDown className="animate-bounce w-10 h-10 opacity-70" />
+          </div>
+        </div>
+      </section>
+
+      {/* --- PHILOSOPHY: Oog voor Eigenheid --- */}
+      <section id="lessen" className="py-32 px-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-24 items-center">
+          <div className="space-y-8">
+            <div className="inline-block px-4 py-1 border border-amber-700/30 rounded-full text-amber-800 text-xs tracking-widest uppercase">
+              Onze Methode
+            </div>
+            <h2 className="text-4xl md:text-5xl font-serif leading-snug text-slate-900">
+              Een serieuze aanpak met een <span className="italic">enthousiast hart.</span>
+            </h2>
+            <p className="text-lg leading-relaxed text-slate-600">
+              In mijn praktijk aan de rand van de wijken **Gulden Bodem, Hoogkamp en Schaarsbergen** staat de leerling centraal. Of je nu 6 of 86 bent, we kijken samen naar jouw unieke mogelijkheden. 
+            </p>
+            <blockquote className="border-l-4 border-amber-700 pl-6 italic text-xl text-slate-700 my-8">
+              "De piano is geen instrument, het is een verlengstuk van wie je bent."
+            </blockquote>
+            <p className="text-slate-600 leading-relaxed">
+              De leidraad is de lange en prachtige traditie van het pianospel, maar de invulling is altijd modern en afgestemd op de eigenheid van de pianist.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 relative">
+             <div className="space-y-4 pt-12">
+                <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&q=80&w=600" className="rounded-2xl shadow-lg grayscale hover:grayscale-0 transition-all duration-700" alt="Details" />
+                <div className="bg-amber-700 p-8 rounded-2xl text-white">
+                   <Music className="mb-4" size={32} />
+                   <h3 className="font-serif text-2xl">Traditie</h3>
+                </div>
+             </div>
+             <div className="space-y-4">
+                <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-50">
+                   <Heart className="mb-4 text-amber-700" size={32} />
+                   <h3 className="font-serif text-2xl text-slate-900">Passie</h3>
+                </div>
+                <img src="https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&q=80&w=600" className="rounded-2xl shadow-lg" alt="Piano" />
+             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- OVER ANNETTE --- */}
+      <section id="annette" className="bg-[#1a1a1a] text-white py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
+          <div className="relative">
+            <div className="w-full aspect-square bg-slate-800 rounded-full overflow-hidden border-8 border-white/5">
+               <img src="/api/placeholder/800/800" alt="Annette Niels" className="w-full h-full object-cover" />
+            </div>
+            <div className="absolute -bottom-10 -right-10 bg-amber-700 p-10 rounded-full hidden lg:block animate-pulse">
+               <Award size={48} />
             </div>
           </div>
-        </nav>
-      )}
+          <div className="space-y-8">
+            <h2 className="text-5xl font-serif">Annette Niels</h2>
+            <p className="text-xl text-slate-300 leading-relaxed font-light">
+              Gecertificeerd docente met een diepe liefde voor het vak. Als lid van **EPTA Nederland** en partner van **Muziek Maakt Slim**, waarborg ik de hoogste kwaliteit in muzikale educatie.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm tracking-wider uppercase opacity-80">
+              <div className="flex items-center gap-3"><Star className="text-amber-500" /> 20+ Jaar Ervaring</div>
+              <div className="flex items-center gap-3"><Star className="text-amber-500" /> EPTA Gecertificeerd</div>
+              <div className="flex items-center gap-3"><Star className="text-amber-500" /> Pedagogisch Expert</div>
+              <div className="flex items-center gap-3"><Star className="text-amber-500" /> Artistiek Coach</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <main className={`${(!isFullPageModule && !isDashboard) ? 'pt-24' : ''} h-full`}>
-        {/* We geven db en config door aan alle onderliggende pagina's */}
-        <Outlet context={{ db, config, subjectSlug }} />
-      </main>
+      {/* --- THEMA'S & PROJECTEN --- */}
+      <section id="projecten" className="py-32 px-8 bg-white">
+        <div className="max-w-5xl mx-auto text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6">Thema's & Projecten</h2>
+          <p className="text-slate-500 max-w-2xl mx-auto">
+            Muziek maken doe je niet alleen voor jezelf. Bij Klavierplezier organiseren we regelmatig projecten om samen te groeien.
+          </p>
+        </div>
+        
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+          {[
+            { title: 'Leerlingenconcerten', date: 'Mei 2024', desc: 'Een podium voor iedereen, van beginners tot gevorderden.' },
+            { title: 'Thema Avonden', date: 'Maandelijks', desc: 'Verdieping in specifieke componisten of stijlen.' },
+            { title: 'Vakantie Cursus', date: 'Zomer', desc: 'Intensieve weken voor een boost in je spel.' }
+          ].map((project, idx) => (
+            <div key={idx} className="group cursor-pointer">
+              <div className="h-64 bg-slate-100 rounded-3xl mb-6 overflow-hidden relative">
+                <div className="absolute inset-0 bg-amber-900/0 group-hover:bg-amber-900/40 transition-all duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span className="text-white border border-white px-6 py-2 rounded-full uppercase text-xs tracking-widest">Bekijk Foto's</span>
+                </div>
+              </div>
+              <h3 className="text-2xl font-serif mb-2">{project.title}</h3>
+              <p className="text-amber-700 text-sm font-bold mb-3">{project.date}</p>
+              <p className="text-slate-500 leading-relaxed">{project.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      {!isArcade && (
-        <button 
-          onClick={() => setIsZenActive(true)} 
-          className="fixed bottom-8 left-8 z-[160] w-12 h-12 flex items-center justify-center bg-white border border-slate-200 rounded-full shadow-lg hover:bg-slate-50 transition-all active:scale-90"
-        >
-          <Maximize2 size={18} className="text-slate-600" />
-        </button>
-      )}
+      {/* --- LOCATION & CONTACT --- */}
+      <section id="contact" className="py-32 px-8 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+          <div className="space-y-12">
+            <div>
+              <h2 className="text-5xl font-serif mb-8">Contact & Locatie</h2>
+              <p className="text-slate-600 mb-8 text-lg">
+                De lespraktijk bevindt zich aan de prachtige **Bakenbergseweg 224** in Arnhem Noord. Makkelijk bereikbaar met de fiets, auto en OV.
+              </p>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="flex items-center gap-6 p-4 bg-white rounded-2xl shadow-sm">
+                <div className="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-amber-700">
+                  <MapPin size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold">Bezoekadres</h4>
+                  <p className="text-slate-500 text-sm">Bakenbergseweg 224, 6816 PL Arnhem</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-6 p-4 bg-white rounded-2xl shadow-sm">
+                <div className="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-amber-700">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold">Telefoon</h4>
+                  <p className="text-slate-500 text-sm">Neem telefonisch contact op</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-6 p-4 bg-white rounded-2xl shadow-sm">
+                <div className="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-amber-700">
+                  <Mail size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold">E-mail</h4>
+                  <p className="text-slate-500 text-sm">info@klavierplezier.nl</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-12 rounded-[2rem] shadow-2xl shadow-slate-200">
+            <h3 className="text-2xl font-serif mb-8 text-center uppercase tracking-widest">Stuur een bericht</h3>
+            <form className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Naam" className="w-full bg-slate-50 border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-amber-700 outline-none" />
+                <input type="email" placeholder="E-mailadres" className="w-full bg-slate-50 border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-amber-700 outline-none" />
+              </div>
+              <select className="w-full bg-slate-50 border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-amber-700 outline-none text-slate-500">
+                <option>Ik heb een vraag over...</option>
+                <option>Proefles aanvragen</option>
+                <option>Tarieven en agenda</option>
+                <option>Anders</option>
+              </select>
+              <textarea placeholder="Uw bericht" rows="4" className="w-full bg-slate-50 border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-amber-700 outline-none"></textarea>
+              <button className="w-full bg-[#1a1a1a] text-white font-bold py-5 rounded-xl hover:bg-amber-700 transition-all uppercase tracking-widest shadow-lg">
+                Verstuur Aanvraag
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* --- FOOTER --- */}
+      <footer className="bg-white py-12 px-8 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex gap-10 opacity-40 grayscale hover:grayscale-0 transition-all">
+            <img src="/api/placeholder/120/40" alt="EPTA Logo" className="h-10 object-contain" />
+            <img src="/api/placeholder/120/40" alt="Muziek Maakt Slim" className="h-10 object-contain" />
+          </div>
+          <div className="text-sm text-slate-400">
+            © {new Date().getFullYear()} Klavierplezier Annette Niels. 
+          </div>
+          <div className="flex space-x-6 text-slate-400 text-sm">
+             <a href="#" className="hover:text-amber-700">Privacybeleid</a>
+             <a href="#" className="hover:text-amber-700">Voorwaarden</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
 
-// --- APP ---
-const App = () => (
-  <Router>
-    <Routes>
-      <Route path="/course/:subjectSlug" element={<MainLayout />}>
-        <Route index element={<Dashboard />} />
-        <Route path="voortgang" element={<VoortgangsToets />} />
-        <Route path="SRI" element={<TopicOne />} />
-        <Route path="courtroom-rush" element={<CourtroomRush />} />
-        <Route path="jurisprudentie" element={<TopicTen />} />
-        <Route path="support" element={<Support isOpen={true} onClose={() => window.history.back()} />} />
-      </Route>
-      <Route path="/" element={<div className="p-10">Selecteer een vak via de URL.</div>} />
-    </Routes>
-  </Router>
-);
-
-export default App;
+export default Klavierplezier;

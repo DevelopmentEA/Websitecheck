@@ -1,0 +1,57 @@
+[
+  {
+    "q": "De gemeente Amsterdam wil wildplassen in uitgaansgebieden tegengaan. Zij plaatst borden met de tekst 'Wildplassen verboden: Artikel 142 Wetboek van Strafrecht'. Ondanks deze maatregel blijft het probleem bestaan. Analyseer waarom deze maatregel faalt vanuit het onderscheid tussen de 'legal code' en de 'behavioral code', en adviseer een aanvullend mechanisme om naleving te bevorderen.",
+    "sample": "Issue: De kernvraag is waarom de enkele verwijzing naar de wet niet leidt tot gedragsverandering en hoe dit verbeterd kan worden vanuit gedragswetenschappelijk perspectief.\n\nRule: De 'legal code' omvat de formele regels en wetten. De 'behavioral code' betreft de psychologische en sociale mechanismen die nodig zijn om die regels effectief te laten werken. Naleving vereist meer dan tekst; mechanismen zoals directe  of strafzekerheid zijn essentieel.\n\nApplication: De gemeente vertrouwt enkel op de 'legal code' (de wettekst op het bord). Dit negeert de 'behavioral code', omdat dronken uitgaanspubliek niet rationeel reageert op tekst. Er ontbreekt een prikkel die het gedrag direct stuurt.\n\nConclusion: De maatregel faalt door een focus op tekst in plaats van gedrag. De gemeente moet 'directe ' toepassen, bijvoorbeeld door verlichting of geluidssignalen bij detectie, om de behavioral code te activeren.",
+    "checklist": [
+      "Onderscheid formele wet (legal) en gedragsmechanisme (behavioral)",
+      "Wettekst alleen garandeert geen naleving",
+      "Toepassing mechanisme directe ",
+      "Gedragsbeïnvloeding op moment van overtreding"
+    ],
+    "exp": "De casus toont het verschil tussen recht op papier en recht in de praktijk. De theorie stelt dat wetgeving ('legal code') zonder ondersteunende gedragsmechanismen ('behavioral code') vaak ineffectief is. Effectieve naleving vereist mechanismen zoals directe ."
+  },
+  {
+    "q": "Tijdens een verjaardag discussieert men over ontslagrecht. Henk, die geen juridische achtergrond heeft, beweert stellig: 'Een werkgever mag je nooit ontslaan als je ziek bent, want dat zou onmenselijk zijn.' Hij baseert dit op zijn eigen normen en waarden. Leg uit welk psychologisch fenomeen hier optreedt en wat empirisch onderzoek zegt over de betrouwbaarheid van dergelijke kennis bij burgers.",
+    "sample": "Issue: De vraag betreft de accuraatheid van juridische kennis bij leken en de invloed van persoonlijke moraal op rechtsopvattingen.\n\nRule: Het 'false consensus effect' houdt in dat mensen onterecht aannemen dat de wet overeenkomt met hun eigen morele intuïties over rechtvaardigheid. Empirisch onderzoek toont aan dat burgers vaak slechter scoren op juridische kennistests dan op basis van toeval verwacht mag worden.\n\nApplication: Henk projecteert zijn morele opvatting ('onmenselijk') op de wet. Hij neemt aan dat wat hij ethisch vindt, ook de juridische regel is. Dit is een klassiek voorbeeld van het false consensus effect, waarbij intuïtie de plaats inneemt van feitelijke wetskennis.\n\nConclusion: Henk vertoont het false consensus effect. Zijn stelligheid is waarschijnlijk ongefundeerd, aangezien lekenkennis vaak incorrect is en gedreven wordt door morele projectie in plaats van juridische feiten.",
+    "checklist": [
+      "Identificatie false consensus effect",
+      "Projectie eigen moraal op de wet",
+      "Empirisch bewijs kennistekort burgers",
+      "Verwarring rechtvaardigheid met juridische regels"
+    ],
+    "exp": "Burgers overschatten vaak hun juridische kennis doordat ze denken dat de wet logisch of moreel rechtvaardig is ingericht volgens hun eigen normen. Dit leidt tot het false consensus effect."
+  },
+  {
+    "q": "Onderzoeker A analyseert de wettekst van de Wegenverkeerswet om te bepalen wat de formele vereisten zijn voor een snelheidsboete. Onderzoeker B plaatst camera's langs de weg om te tellen hoe vaak automobilisten remmen bij het zien van een flitspaal. Categoriseer beide onderzoeken naar 'perspectief' (intern/extern) en 'doel' (normatief/beschrijvend).",
+    "sample": "Issue: Het onderscheid tussen de juridische en de empirische benadering van het recht op basis van perspectief en onderzoeksdoel.\n\nRule: De juridische benadering hanteert een intern perspectief (vanuit de regels) en is normatief/prescriptief. De empirische benadering hanteert een extern perspectief (van buitenaf observerend) en is beschrijvend/verklarend.\n\nApplication: Onderzoeker A kijkt vanuit het rechtssysteem naar de regels (intern) om vast te stellen wat geldend recht is (normatief). Onderzoeker B observeert feitelijk gedrag van buitenaf (extern) om de werkelijkheid in kaart te brengen (beschrijvend).\n\nConclusion: Onderzoeker A hanteert een juridische benadering (intern/normatief). Onderzoeker B hanteert een empirische benadering (extern/beschrijvend).",
+    "checklist": [
+      "Juridisch is intern en normatief",
+      "Empirisch is extern en beschrijvend",
+      "A analyseert geldende regels",
+      "B observeert feitelijk gedrag"
+    ],
+    "exp": "Dit illustreert het fundamentele verschil tussen rechtsgeleerdheid (wat is de regel?) en rechtssociologie/empirie (wat is het effect?). De methoden en doelen verschillen fundamenteel."
+  },
+  {
+    "q": "Er wordt een nieuwe wet ingevoerd die bedrijven verplicht hun CO2-uitstoot te rapporteren. Een onderzoeker wil weten of deze wet effectief is. Hij stelt: 'De wet is een instrument om gedrag te sturen, maar in de praktijk spelen ook sociale normen in de sector een rol.' Analyseer deze stelling door de 'instrumentele benadering' en de 'rechtspluralistische benadering' toe te passen.",
+    "sample": "Issue: De verklaring van de werking van de wet vanuit verschillende empirisch-juridische stromingen.\n\nRule: De instrumentele benadering ziet recht als een beleidsinstrument om gedrag te sturen en focust op de kloof tussen 'law in books' en 'law in action'. De rechtspluralistische benadering stelt dat naast staatswetten ook andere normatieve stelsels (zoals sociale of sectorale normen) het gedrag bepalen.\n\nApplication: Het deel van de stelling dat de wet ziet als sturingsmiddel past bij de instrumentele benadering (effectiviteit van de regel). De verwijzing naar sociale normen in de sector duidt op rechtspluralisme, waarbij erkend wordt dat niet-statelijke regels de naleving beïnvloeden.\n\nConclusion: De onderzoeker combineert de instrumentele visie (wet als tool) met een rechtspluralistisch inzicht (concurrentie met sociale normen).",
+    "checklist": [
+      "Instrumentele benadering: recht als middel",
+      "Focus op law in action",
+      "Rechtspluralisme: meerdere normatieve stelsels",
+      "Invloed sociale normen op naleving"
+    ],
+    "exp": "De instrumentele benadering focust op de effectiviteit van overheidsregels. Rechtspluralisme nuanceert dit door te wijzen op concurrerende normenstelsels, zoals bedrijfscultuur."
+  },
+  {
+    "q": "Uit een fictief onderzoek blijkt dat huurders in de sociale sector aanzienlijk vaker het juiste antwoord geven op vragen over huurbescherming dan huiseigenaren. Verklaar dit verschil aan de hand van de factoren die juridische kennis beïnvloeden volgens empirisch onderzoek.",
+    "sample": "Issue: De verklaring voor verschillen in juridische kennisniveaus tussen verschillende bevolkingsgroepen.\n\nRule: Empirisch onderzoek toont aan dat juridische kennis samenhangt met persoonlijke relevantie en ervaring. Mensen hebben meer kennis van rechtsgebieden die direct ingrijpen op hun dagelijks leven of waar ze ervaring mee hebben.\n\nApplication: Voor huurders is huurbescherming direct relevant voor hun woonsituatie en bestaanszekerheid. Huiseigenaren hebben hier geen dagelijkse ervaring mee. De relevantie van het onderwerp voor de huurders zorgt voor een hoger kennisniveau.\n\nConclusion: De hogere score van huurders wordt verklaard door de factor 'persoonlijke relevantie' en ervaring met het specifieke rechtsgebied.",
+    "checklist": [
+      "Kennis is gekoppeld aan relevantie",
+      "Ervaring vergroot juridische kennis",
+      "Huurrecht is relevant voor huurders",
+      "Gebrek aan relevantie bij eigenaren"
+    ],
+    "exp": "Mensen zijn 'cognitive misers': ze slaan alleen informatie op die voor hen nuttig is. Daarom weten mensen vaak meer van recht dat hun eigen situatie raakt."
+  }
+]

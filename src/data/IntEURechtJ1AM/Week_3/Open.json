@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Tijdens een vredesmissie in de staat X, die geen lid is van de Verenigde Naties, wordt de Zweedse VN-bemiddelaar Bernadotte vermoord door lokale rebellen. De VN wil een schadeclaim indienen tegen staat X voor de schade toegebracht aan de organisatie en aan de familie van het slachtoffer. Staat X weigert en stelt dat de VN geen staat is en dus geen vordering kan instellen, en dat staat X als niet-lid niet gebonden is aan de VN. Heeft de VN de bevoegdheid om deze claim in te dienen?",
+    "sample": "Issue: De vraag is of de VN rechtspersoonlijkheid bezit om schadeclaims in te dienen tegen een niet-lidstaat.\n\nRule: In de Reparation for Injuries Advisory Opinion bepaalde het IGH dat de VN objectieve internationale rechtspersoonlijkheid bezit. Tevens geldt het leerstuk van 'implied powers' en functionele bescherming.\n\nApplication: De VN moet haar functionarissen kunnen beschermen om haar taken onafhankelijk uit te voeren. Deze rechtspersoonlijkheid werkt erga omnes, dus ook tegenover staten die geen lid zijn.\n\nConclusion: Ja, de VN is bevoegd de claim in te dienen, ongeacht het lidmaatschap van staat X.",
+    "checklist": [
+      "VN bezit objectieve internationale rechtspersoonlijkheid",
+      "Rechtspersoonlijkheid werkt ook tegen niet-lidstaten",
+      "Bevoegdheid gebaseerd op implied powers",
+      "VN kan functionele bescherming uitoefenen"
+    ],
+    "exp": "Het Internationaal Gerechtshof oordeelde in de Reparation for Injuries Advisory Opinion dat de VN objectieve internationale rechtspersoonlijkheid bezit. Dit is noodzakelijk om de doelen van het Handvest te bereiken. Hierdoor kan de organisatie internationale claims indienen, ook tegen staten die geen lid zijn."
+  },
+  {
+    "q": "De Algemene Vergadering van de VN neemt met een overweldigende meerderheid een resolutie aan waarin het gebruik van kernwapens per direct wordt verboden. De staat Nuclearis stemde tegen en stelt dat zij juridisch niet gebonden is aan dit verbod omdat de Algemene Vergadering geen wereldwetgever is. Heeft Nuclearis gelijk?",
+    "sample": "Issue: De vraag is of resoluties van de Algemene Vergadering juridisch bindend zijn voor lidstaten.\n\nRule: De Algemene Vergadering is een politiek orgaan en geen wetgever. Resoluties zijn in beginsel niet juridisch bindend (soft law), maar kunnen bijdragen aan gewoonterecht.\n\nApplication: Hoewel de resolutie een meerderheid heeft, schept deze op zichzelf geen directe juridische verplichting voor de tegenstemmende staat Nuclearis.\n\nConclusion: Ja, Nuclearis heeft gelijk; de resolutie is niet direct juridisch bindend.",
+    "checklist": [
+      "Algemene Vergadering is geen wetgever",
+      "Resoluties zijn juridisch niet bindend",
+      "Resoluties kwalificeren als soft law",
+      "Kunnen wel bijdragen aan gewoonterecht"
+    ],
+    "exp": "De Algemene Vergadering is een politiek orgaan waar alle lidstaten vertegenwoordigd zijn, maar het bezit geen wetgevende bevoegdheid. Resoluties zijn aanbevelingen en niet bindend, hoewel ze invloed kunnen hebben op de vorming van opinio iuris."
+  },
+  {
+    "q": "De Veiligheidsraad wil een resolutie aannemen om militair in te grijpen in een conflictgebied. Veertien van de vijftien leden, inclusief Frankrijk, VS, VK en Rusland, stemmen voor. China, een permanent lid, stemt tegen. Wordt de resolutie aangenomen?",
+    "sample": "Issue: De rechtsvraag is of een resolutie van de Veiligheidsraad kan worden aangenomen als een permanent lid tegenstemt.\n\nRule: Artikel 27 VN-Handvest vereist voor niet-procedurele kwesties de instemming van negen leden, inclusief de instemmende stemmen van de permanente leden (vetorecht).\n\nApplication: China is een van de vijf permanente leden (P5) en heeft een vetorecht. Een tegenstem van een P5-lid blokkeert de besluitvorming.\n\nConclusion: Nee, de resolutie wordt niet aangenomen vanwege het veto van China.",
+    "checklist": [
+      "Veiligheidsraad heeft vijf permanente leden",
+      "Permanente leden hebben een vetorecht",
+      "Artikel 27 VN-Handvest regelt stemprocedure",
+      "Tegenstem permanent lid blokkeert resolutie"
+    ],
+    "exp": "De Veiligheidsraad bestaat uit 15 leden, waarvan 5 permanent (P5). Besluiten over niet-procedurele zaken vereisen de instemming van de P5. Een tegenstem (veto) van China voorkomt aanname, ongeacht de meerderheid."
+  },
+  {
+    "q": "De VN richt een speciaal vredeskorps op om toezicht te houden op verkiezingen in een post-conflictgebied. Een lidstaat protesteert en stelt dat het VN-Handvest nergens expliciet de bevoegdheid geeft om verkiezingen te monitoren of troepen te sturen voor dit specifieke doel. Is de oprichting rechtmatig?",
+    "sample": "Issue: De vraag is of de VN bevoegdheden kan uitoefenen die niet expliciet in het Handvest staan vermeld.\n\nRule: Het leerstuk van 'implied powers' (Reparation for Injuries) stelt dat de organisatie bevoegdheden heeft die noodzakelijk zijn voor de uitvoering van haar taken.\n\nApplication: Het monitoren van verkiezingen is essentieel voor het doel van handhaving van internationale vrede en veiligheid. De bevoegdheid wordt impliciet verondersteld.\n\nConclusion: Ja, de oprichting is rechtmatig op basis van implied powers.",
+    "checklist": [
+      "Beroep op leerstuk implied powers",
+      "Bevoegdheid niet expliciet in Handvest",
+      "Noodzakelijk voor vervulling van taken",
+      "Bevestigd in Reparation for Injuries"
+    ],
+    "exp": "Volgens het Internationaal Gerechtshof in de Reparation for Injuries Advisory Opinion bezit de VN bevoegdheden die, hoewel niet expliciet vermeld, noodzakelijkerwijs voortvloeien uit de aan de organisatie opgedragen taken (implied powers)."
+  },
+  {
+    "q": "De VN wil ingrijpen in de staat B omdat de regering daar de belastingen drastisch heeft verhoogd, wat leidt tot lokale protesten. Staat B beroept zich op artikel 2 lid 7 van het VN-Handvest en stelt dat dit een interne aangelegenheid is. Kan de VN ingrijpen?",
+    "sample": "Issue: Mag de VN interveniëren in kwesties die wezenlijk tot de binnenlandse rechtsmacht van een staat behoren?\n\nRule: Artikel 2 lid 7 VN-Handvest verbiedt interventie in zaken die wezenlijk binnen de nationale jurisdictie vallen, tenzij Hoofdstuk VII (dwangmaatregelen) van toepassing is.\n\nApplication: Belastingheffing is een interne aangelegenheid. Zolang er geen bedreiging voor de internationale vrede is (Hoofdstuk VII), geldt het non-interventiebeginsel.\n\nConclusion: Nee, de VN kan niet ingrijpen vanwege het non-interventiebeginsel.",
+    "checklist": [
+      "Artikel 2 lid 7 VN-Handvest",
+      "Non-interventie in interne aangelegenheden",
+      "Uitzondering bij Hoofdstuk VII dwangmaatregelen",
+      "Belastingheffing valt onder nationale jurisdictie"
+    ],
+    "exp": "Het beginsel van non-interventie in artikel 2 lid 7 VN-Handvest beschermt de soevereiniteit van staten. De VN mag zich niet mengen in interne aangelegenheden, tenzij de Veiligheidsraad dwangmaatregelen neemt wegens bedreiging van de vrede."
+  }
+]

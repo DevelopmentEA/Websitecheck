@@ -1,0 +1,272 @@
+[
+  {
+    "q": "De Schumanverklaring van 9 mei 1950 stelde voor om de Duitse en Franse productie van kolen en staal onder een gemeenschappelijke Hoge Autoriteit te plaatsen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Schumanverklaring.\n\nDe verklaring stelde voor de gehele Frans-Duitse productie van kolen en staal onder een gemeenschappelijke Hoge Autoriteit te plaatsen, om oorlog materieel onmogelijk te maken."
+  },
+  {
+    "q": "De Europese Economische Gemeenschap (EEG) werd opgericht met het Verdrag van Parijs in 1951.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Geschiedenis EU.\n\nHet Verdrag van Parijs (1951) richtte de Europese Gemeenschap voor Kolen en Staal (EGKS) op. De EEG werd opgericht met de Verdragen van Rome in 1957."
+  },
+  {
+    "q": "De 'Lege Stoel-crisis' van 1965 werd veroorzaakt door een conflict over de supranationale opstelling van de Commissie en de overgang naar meerderheidsbesluitvorming.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Geschiedenis EU.\n\nDe crisis ontstond doordat met name Frankrijk zich verzette tegen de supranationale ambities van de Commissie en de invoering van besluitvorming bij meerderheid in de Raad."
+  },
+  {
+    "q": "Het Akkoord van Luxemburg (1966) legde juridisch vast dat lidstaten een formeel vetorecht behielden in alle gevallen waarin besluitvorming bij meerderheid was voorzien.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Akkoord van Luxemburg.\n\nHet akkoord was geen juridische verdragswijziging, maar een politieke afspraak dat men bij 'zeer gewichtige nationale belangen' zou blijven onderhandelen tot consensus was bereikt."
+  },
+  {
+    "q": "De Europese Unie werd formeel opgericht met het Verdrag van Maastricht in 1992.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Verdrag van Maastricht.\n\nDe Europese Unie ontstond in 1992 met het Verdrag van Maastricht, waarbij de eerdere gemeenschappen werden overkoepeld en nieuwe beleidsterreinen werden toegevoegd."
+  },
+  {
+    "q": "De Europese Raad oefent wetgevingstaken uit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 15 lid 1 VEU.\n\nDe Europese Raad geeft de Unie de nodige impulsen voor haar ontwikkeling en bepaalt de algemene politieke beleidslijnen, maar oefent geen wetgevingstaak uit."
+  },
+  {
+    "q": "De Europese Raad bestaat uit de staatshoofden of regeringsleiders van de lidstaten, zijn voorzitter en de voorzitter van de Commissie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 15 lid 2 VEU.\n\nDe samenstelling van de Europese Raad omvat de staatshoofden of regeringsleiders van de lidstaten, alsmede zijn eigen voorzitter en de voorzitter van de Commissie."
+  },
+  {
+    "q": "De Raad (van Ministers) bestaat uit permanent in Brussel gevestigde ambtenaren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 16 lid 2 VEU.\n\nDe Raad bestaat uit een vertegenwoordiger van iedere lidstaat op ministerieel niveau, die gemachtigd is om de regering van de lidstaat te binden."
+  },
+  {
+    "q": "Tenzij de Verdragen anders bepalen, besluit de Raad met gekwalificeerde meerderheid van stemmen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 16 lid 3 VEU.\n\nDe hoofdregel voor besluitvorming in de Raad is de gekwalificeerde meerderheid van stemmen, tenzij de Verdragen expliciet anders bepalen."
+  },
+  {
+    "q": "De leden van de Europese Commissie vertegenwoordigen de belangen van hun lidstaat van herkomst.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 17 lid 3 VEU.\n\nDe leden van de Commissie oefenen hun ambt uit in volkomen onafhankelijkheid en mogen geen instructies van enige regering vragen of aanvaarden; zij vertegenwoordigen het algemeen belang van de Unie."
+  },
+  {
+    "q": "De Europese Commissie heeft in beginsel het exclusieve recht om wetgevingsvoorstellen in te dienen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 17 lid 2 VEU.\n\nWetgevingshandelingen van de Unie kunnen in beginsel alleen op voorstel van de Commissie worden vastgesteld, behoudens specifieke uitzonderingen in de Verdragen."
+  },
+  {
+    "q": "Het Europees Parlement kan de Europese Commissie tot aftreden dwingen door het aannemen van een motie van afkeuring.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 234 VWEU.\n\nIndien het Parlement een motie van afkeuring aanneemt, moeten de leden van de Commissie collectief ontslag nemen."
+  },
+  {
+    "q": "De zetelverdeling in het Europees Parlement is strikt evenredig aan het aantal inwoners van de lidstaten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 14 lid 2 VEU.\n\nDe vertegenwoordiging van de burgers is degressief evenredig, wat betekent dat kleinere lidstaten relatief meer zetels hebben per inwoner dan grotere lidstaten."
+  },
+  {
+    "q": "Het maximumaantal leden van het Europees Parlement bedraagt 750, plus de voorzitter.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 14 lid 2 VEU.\n\nHet Europees Parlement bestaat uit ten hoogste 750 leden, de voorzitter niet meegerekend."
+  },
+  {
+    "q": "Het Hof van Justitie van de Europese Unie bestaat uit één rechter per lidstaat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 19 lid 2 VEU.\n\nHet Hof van Justitie bestaat uit één rechter per lidstaat."
+  },
+  {
+    "q": "De primaire taak van het Hof van Justitie is het controleren van de financiën van de Unie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 19 lid 1 VEU / Art. 285 VWEU.\n\nDe taak van het Hof is het verzekeren van de eerbiediging van het recht. Het controleren van de rekeningen is de taak van de Europese Rekenkamer."
+  },
+  {
+    "q": "In het arrest Van Gend en Loos oordeelde het Hof dat bepalingen van EU-recht rechtstreekse werking kunnen hebben voor particulieren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HvJEU Van Gend en Loos.\n\nHet Hof stelde vast dat het gemeenschapsrecht, onafhankelijk van de wetgeving van de lidstaten, rechten kan scheppen die particulieren uit eigen hoofde geldend kunnen maken."
+  },
+  {
+    "q": "Volgens Van Gend en Loos is een voorwaarde voor directe werking dat de bepaling afhankelijk is van nadere nationale uitvoeringsmaatregelen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HvJEU Van Gend en Loos.\n\nVoor directe werking moet de bepaling juist onvoorwaardelijk zijn en geen wettelijke tussenkomst van de lidstaten behoeven."
+  },
+  {
+    "q": "In het arrest Costa/ENEL oordeelde het Hof dat nationaal recht van latere datum voorrang heeft op strijdig Europees recht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HvJEU Costa/ENEL.\n\nHet Hof oordeelde dat het gemeenschapsrecht voorrang heeft en dat een later nationaal wettelijk voorschrift niet boven de rechtsorde van de Gemeenschap kan worden gesteld."
+  },
+  {
+    "q": "De voorrang van het EU-recht in Costa/ENEL is gebaseerd op de beperking van soevereiniteit door de lidstaten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HvJEU Costa/ENEL.\n\nHet Hof baseerde de voorrang op het feit dat lidstaten hun soevereiniteit (zij het op beperkt terrein) hebben begrensd en een rechtsstelsel hebben geschapen dat bindend is voor henzelf en hun onderdanen."
+  },
+  {
+    "q": "Het voorzitterschap van de Raad (met uitzondering van Buitenlandse Zaken) rouleert elke zes maanden tussen de lidstaten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 16 lid 9 VEU.\n\nHet voorzitterschap van de Raadsformaties, met uitzondering van Buitenlandse Zaken, wordt door de vertegenwoordigers van de lidstaten in de Raad roulerend uitgeoefend."
+  },
+  {
+    "q": "De Hoge Vertegenwoordiger van de Unie voor buitenlandse zaken en veiligheidsbeleid is voorzitter van de Europese Raad.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 15 lid 2 VEU / Art. 18 lid 3 VEU.\n\nDe Europese Raad kiest zijn eigen voorzitter. De Hoge Vertegenwoordiger zit de Raad Buitenlandse Zaken voor."
+  },
+  {
+    "q": "De begrotingsautoriteit van de Unie wordt gevormd door het Europees Parlement en de Raad gezamenlijk.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 314 VWEU.\n\nHet Europees Parlement en de Raad stellen de jaarlijkse begroting van de Unie vast; zij vormen samen de begrotingsautoriteit."
+  },
+  {
+    "q": "Het Europees Parlement heeft een formeel en volledig recht van initiatief voor wetgeving.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 225 VWEU / Art. 17 VEU.\n\nHet Europees Parlement kan de Commissie verzoeken een voorstel in te dienen, maar heeft zelf geen formeel recht van initiatief; dat ligt bij de Commissie."
+  },
+  {
+    "q": "De Europese Akte van 1986 introduceerde de samenwerkingsprocedure voor wetgeving.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Europese Akte 1986.\n\nDe Europese Akte introduceerde de samenwerkingsprocedure, waarmee de rol van het Parlement werd vergroot, hoewel het primaat nog bij de Raad lag."
+  },
+  {
+    "q": "Met het Verdrag van Lissabon werden de Europese Gemeenschap en de Europese Unie samengevoegd en kreeg de Unie rechtspersoonlijkheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Verdrag van Lissabon.\n\nHet Verdrag van Lissabon (2007) verving de Europese Gemeenschap door de Europese Unie, die daarmee rechtspersoonlijkheid verkreeg en de eerdere pijlerstructuur ophief."
+  },
+  {
+    "q": "De Raad van Europa is een instelling van de Europese Unie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Instellingen EU.\n\nDe Raad van Europa is een aparte internationale organisatie (opgericht in 1949, 47 leden) en geen instelling van de EU. De instelling van de EU is de Europese Raad of de Raad van de EU."
+  },
+  {
+    "q": "COREPER is het orgaan dat de werkzaamheden van de Raad voorbereidt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Art. 240 lid 1 VWEU.\n\nEen comité van permanente vertegenwoordigers van de regeringen der lidstaten (COREPER) is belast met de voorbereiding van de werkzaamheden van de Raad."
+  },
+  {
+    "q": "De Europese Centrale Bank is verantwoordelijk voor het vaststellen van de jaarlijkse begroting van de EU.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 314 VWEU / Art. 282 VWEU.\n\nDe begroting wordt vastgesteld door het Parlement en de Raad. De ECB is verantwoordelijk voor het monetair beleid."
+  },
+  {
+    "q": "Een motie van afkeuring tegen de Commissie vereist een gewone meerderheid van de uitgebrachte stemmen in het Parlement.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Art. 234 VWEU.\n\nEen motie van afkeuring vereist een meerderheid van twee derde van de uitgebrachte stemmen en een meerderheid van de leden van het Parlement."
+  }
+]

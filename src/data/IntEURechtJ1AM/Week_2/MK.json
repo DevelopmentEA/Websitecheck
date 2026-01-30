@@ -1,0 +1,339 @@
+[
+  {
+    "q": "Welke vier criteria voor staatsvorming zijn vastgelegd in artikel 1 van het Montevideo-Verdrag?",
+    "a": [
+      "Een permanente bevolking, een afgebakend grondgebied, een gezagstructuur en een grondwet.",
+      "Een permanente bevolking, een afgebakend grondgebied, een gezagstructuur en de bekwaamheid om betrekkingen met andere staten aan te gaan.",
+      "Een permanente bevolking, een economisch systeem, een gezagstructuur en de erkenning door de Verenigde Naties.",
+      "Een permanente bevolking, een afgebakend grondgebied, een democratisch gekozen regering en de bekwaamheid om verdragen te sluiten."
+    ],
+    "c": 1,
+    "exp": "Artikel 1 Montevideo-Verdrag.\n\nHet artikel somt vier kwalificaties op: a) a permanent population; b) a defined territory; c) government; and d) capacity to enter into relations with other states."
+  },
+  {
+    "q": "Wat houdt het declaratoire karakter van de erkenning van een staat in volgens de heersende leer in het internationaal recht?",
+    "a": "De erkenning schept de rechtssubjectiviteit van de staat en is daarmee een voorwaarde voor het bestaan ervan.",
+    "b": "De erkenning is slechts een politieke bevestiging van het feit dat een entiteit reeds voldoet aan de feitelijke criteria voor staatsvorming.",
+    "c": "De erkenning is uitsluitend vereist voor lidmaatschap van internationale organisaties, maar niet voor bilaterale relaties.",
+    "d": "De erkenning heeft constitutieve werking, wat betekent dat een staat pas juridisch bestaat na erkenning door de VN."
+  },
+  {
+    "c": 1,
+    "exp": "East Timor and ors v Netherlands.\n\nDe rechter oordeelde dat voor de beoordeling of er sprake is van een staat uitsluitend de feitelijke criteria uit het volkenrecht (Montevideo) van belang zijn. Erkenning (of het ontbreken daarvan) is slechts een bevestiging van de feitelijke situatie.",
+    "q": "Wat houdt het declaratoire karakter van de erkenning van een staat in volgens de heersende leer in het internationaal recht?",
+    "a": [
+      "De erkenning schept de rechtssubjectiviteit van de staat en is daarmee een voorwaarde voor het bestaan ervan.",
+      "De erkenning is een bevestiging van het feit dat een entiteit reeds voldoet aan de feitelijke criteria voor staatsvorming.",
+      "De erkenning is uitsluitend vereist voor lidmaatschap van internationale organisaties, maar niet voor bilaterale relaties.",
+      "De erkenning heeft constitutieve werking, wat betekent dat een staat pas juridisch bestaat na erkenning door de VN."
+    ]
+  },
+  {
+    "q": "Heeft de Verenigde Naties de bevoegdheid om een internationale schadeclaim in te dienen tegen een staat die geen lid is van de VN?",
+    "a": [
+      "Nee, de VN kan alleen claims indienen tegen lidstaten, aangezien niet-lidstaten het Handvest niet hebben ondertekend.",
+      "Nee, de rechtspersoonlijkheid van de VN wordt niet erkend door staten die geen lid zijn van de organisatie.",
+      "Ja, de VN bezit objectieve internationale rechtspersoonlijkheid die ook werking heeft tegenover niet-lidstaten.",
+      "Ja, maar uitsluitend indien de niet-lidstaat voorafgaand aan het incident uitdrukkelijk toestemming heeft gegeven."
+    ],
+    "c": 2,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nHet Hof oordeelde dat de VN objectieve internationale rechtspersoonlijkheid bezit en daardoor de capaciteit heeft om internationale claims in te dienen, ook tegen niet-lidstaten."
+  },
+  {
+    "q": "Wat wordt verstaan onder het 'attributiebeginsel' met betrekking tot de bevoegdheden van internationale organisaties?",
+    "a": [
+      "Internationale organisaties bezitten alle bevoegdheden die nodig zijn om hun doelen te bereiken, ongeacht het oprichtingsverdrag.",
+      "Internationale organisaties hebben uitsluitend die bevoegdheden die hen in het oprichtingsverdrag expliciet of impliciet zijn toegekend.",
+      "Internationale organisaties hebben automatisch dezelfde bevoegdheden als de staten die lid zijn van de organisatie.",
+      "Internationale organisaties verkrijgen hun bevoegdheden direct uit het internationaal gewoonterecht en niet uit verdragen."
+    ],
+    "c": 1,
+    "exp": "Reparation for Injuries Advisory Opinion / Nuclear Weapons Opinion.\n\nInternationale organisaties worden beheerst door het attributiebeginsel: zij hebben bevoegdheden die expliciet zijn toebedeeld of die noodzakelijkerwijs voortvloeien uit de toebedeelde taken (implied powers)."
+  },
+  {
+    "q": "Wat oordeelde het Canadese Hooggerechtshof over het recht op eenzijdige afscheiding (secessie) van Quebec op grond van het internationaal recht?",
+    "a": [
+      "Er bestaat een algemeen recht op eenzijdige afscheiding voor elke bevolkingsgroep die een duidelijke meerderheid vormt in een regio.",
+      "Het recht op zelfbeschikking geeft Quebec automatisch het recht op afscheiding omdat de bevolking als een apart 'volk' kwalificeert.",
+      "Het internationaal recht kent geen recht op eenzijdige afscheiding toe, tenzij sprake is van kolonisatie, bezetting of ernstige onderdrukking.",
+      "Eenzijdige afscheiding is toegestaan onder internationaal recht, mits dit wordt ondersteund door een referendum met een gekwalificeerde meerderheid."
+    ],
+    "c": 2,
+    "exp": "Reference re Secession of Quebec.\n\nHet Hof stelde dat het recht op zelfbeschikking in beginsel intern moet worden uitgeoefend. Externe zelfbeschikking (afscheiding) is slechts een ultimum remedium in uitzonderlijke situaties zoals kolonisatie of vreemde overheersing."
+  },
+  {
+    "q": "Welk beginsel houdt in dat staten, onafhankelijk van andere staten, effectief publiek gezag uitoefenen over een grondgebied en de bevolking?",
+    "a": [
+      "Het loyaliteitsbeginsel.",
+      "Het effectiviteitsbeginsel.",
+      "Het vertrouwensbeginsel.",
+      "Het subsidiariteitsbeginsel."
+    ],
+    "c": 1,
+    "exp": "East Timor and ors v Netherlands.\n\nDe rechtspraak bevestigt dat het effectiviteitsbeginsel centraal staat: het daadwerkelijk en effectief uitoefenen van gezag is bepalend voor het bestaan van een staat."
+  },
+  {
+    "q": "Wat wordt in de context van internationale organisaties bedoeld met 'implied powers'?",
+    "a": [
+      "Bevoegdheden die stilzwijgend zijn overgedragen door de VN-Veiligheidsraad aan regionale organisaties.",
+      "Bevoegdheden die niet expliciet in het oprichtingsverdrag staan, maar noodzakelijk zijn voor de vervulling van de taken.",
+      "Bevoegdheden die ontstaan door verjaring wanneer een organisatie langdurig buiten haar mandaat handelt.",
+      "Bevoegdheden die uitsluitend toekomen aan de secretaris-generaal van de organisatie in tijden van crisis."
+    ],
+    "c": 1,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nHet Hof oordeelde: 'Under international law, the Organization must be deemed to have those powers which (...) are conferred upon it by necessary implication as being essential to the performance of its duties'."
+  },
+  {
+    "q": "Kan een staat juridisch ontstaan door afscheiding als dit in strijd is met fundamentele regels van internationaal recht, zoals het verbod op agressie?",
+    "a": [
+      "Ja, zolang er sprake is van effectief gezag over het grondgebied, is de legaliteit van de totstandkoming niet relevant.",
+      "Ja, het effectiviteitsbeginsel gaat altijd boven het legaliteitsbeginsel bij de vorming van nieuwe staten.",
+      "Nee, een schending van internationaal recht, zoals een illegale invasie, kan in de weg staan aan de legale totstandkoming van een staat.",
+      "Nee, tenzij de nieuwe entiteit direct wordt erkend door alle permanente leden van de VN-Veiligheidsraad."
+    ],
+    "c": 2,
+    "exp": "Reference re Secession of Quebec.\n\nHoewel effectiviteit belangrijk is, kan een schending van internationaal recht (legaliteit) de totstandkoming van een staat beletten, en leidt dit vaak tot een plicht tot niet-erkenning door andere staten."
+  },
+  {
+    "q": "Wat is het verschil tussen interne en externe zelfbeschikking volgens het internationaal recht?",
+    "a": [
+      "Interne zelfbeschikking ziet op economische onafhankelijkheid; externe zelfbeschikking ziet op politieke onafhankelijkheid.",
+      "Interne zelfbeschikking is het recht op ontwikkeling binnen de staat; externe zelfbeschikking is het recht op een eigen staat.",
+      "Interne zelfbeschikking geldt voor individuen; externe zelfbeschikking geldt uitsluitend voor staten.",
+      "Interne zelfbeschikking vereist goedkeuring van de VN; externe zelfbeschikking kan eenzijdig worden uitgeroepen."
+    ],
+    "c": 1,
+    "exp": "Reference re Secession of Quebec.\n\nHet Hof maakt onderscheid tussen interne zelfbeschikking (politieke/economische/sociale ontwikkeling binnen de bestaande staatsgrenzen) en externe zelfbeschikking (afscheiding)."
+  },
+  {
+    "q": "Welke conclusie trok het Internationaal Gerechtshof in de Reparation for Injuries-zaak met betrekking tot functionele bescherming?",
+    "a": [
+      "De VN kan alleen functionele bescherming bieden als de staat van nationaliteit van het slachtoffer hiermee instemt.",
+      "De VN heeft de bevoegdheid om schadevergoeding te eisen voor schade toegebracht aan haar functionarissen in dienst.",
+      "Functionele bescherming is een exclusief recht van soevereine staten en kan niet worden uitgeoefend door organisaties.",
+      "De VN kan alleen schadevergoeding eisen voor materiële schade aan VN-eigendommen, niet voor persoonlijk leed."
+    ],
+    "c": 1,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nHet Hof stelde: 'the Organization should be able to call upon the responsible State to remedy its default, and, in particular, to obtain from the State reparation for the damage that the default may have caused to its agents'."
+  },
+  {
+    "q": "Wat is de juridische relevantie van de 'permanente bevolking' als criterium voor staatsvorming?",
+    "a": [
+      "Er moet een minimumaantal van 100.000 inwoners zijn om als staat erkend te worden.",
+      "De bevolking moet cultureel en etnisch homogeen zijn om een staat te kunnen vormen.",
+      "Er moet een bevolking zijn die via nationaliteit juridisch verbonden is met de staat.",
+      "De bevolking mag geen nomadische levensstijl hebben en moet volledig in steden wonen."
+    ],
+    "c": 2,
+    "exp": "Artikel 1 Montevideo-Verdrag / Western Sahara Advisory Opinion.\n\nHet vereiste is een 'permanent population'. De kern is een gemeenschap die via nationaliteit of duurzaam verblijf verbonden is aan het grondgebied en de staat."
+  },
+  {
+    "q": "Wat houdt het 'specialiteitsbeginsel' in bij internationale organisaties?",
+    "a": [
+      "Organisaties hebben alleen die bevoegdheden die verbonden zijn aan het specifieke doel waarvoor zij zijn opgericht.",
+      "Organisaties mogen zich alleen specialiseren in één beleidsterrein, zoals handel of mensenrechten.",
+      "Speciale organisaties hebben voorrang op algemene organisaties bij conflicterende verdragsbepalingen.",
+      "De besluiten van gespecialiseerde organisaties zijn direct bindend voor burgers zonder tussenkomst van de staat."
+    ],
+    "c": 0,
+    "exp": "Legality of the Use by a State of Nuclear Weapons in Armed Conflict (Advies).\n\nHet IGH bevestigt dat organisaties worden beheerst door het specialiteitsbeginsel: zij hebben bevoegdheden die beperkt zijn tot hun specifieke doelstellingen (field of activity)."
+  },
+  {
+    "q": "In de zaak East Timor and ors v. Netherlands oordeelde de rechter over de status van Oost-Timor. Wat was de kern van dit oordeel?",
+    "a": [
+      "Oost-Timor was geen staat omdat Nederland het niet had erkend.",
+      "Niet-erkenning door staten is irrelevant; uitsluitend de feitelijke criteria van het volkenrecht zijn bepalend.",
+      "Oost-Timor was een staat omdat de meerderheid van de VN-lidstaten het had erkend.",
+      "De rechter was onbevoegd om te oordelen over de status van een vreemde mogendheid."
+    ],
+    "c": 1,
+    "exp": "East Timor and ors v Netherlands.\n\nDe rechtbank stelde dat voor de vraag of een entiteit een staat is, uitsluitend de feitelijke criteria uit het volkenrecht (Montevideo) van belang zijn, ongeacht erkenning door Nederland."
+  },
+  {
+    "q": "Welke vorm van verkrijging van grondgebied wordt in het internationaal recht aangeduid met 'cessie'?",
+    "a": [
+      "Het verkrijgen van grondgebied door de ontdekking van terra nullius.",
+      "De overgang van grondgebied tussen staten door middel van een verdrag.",
+      "Het verkrijgen van grondgebied door langdurige en onbetwiste effectieve bezetting.",
+      "De overgang van grondgebied als gevolg van natuurlijke aanwas, zoals rivierverlegging."
+    ],
+    "c": 1,
+    "exp": "Island of Palmas Case (impliciet) / Algemene leerstukken week 2.\n\nCessie is de overdracht van soevereiniteit over een grondgebied van de ene staat aan de andere, meestal vastgelegd in een verdrag (bijv. verkoop)."
+  },
+  {
+    "q": "Wat wordt in het kader van staatsvorming bedoeld met 'ontbinding'?",
+    "a": [
+      "Een deel van de staat scheidt zich af, maar de oorspronkelijke staat blijft bestaan.",
+      "Twee staten gaan samen en vormen één nieuwe staat.",
+      "Een staat valt uiteen in meerdere nieuwe staten en het centrale gezag houdt op te bestaan.",
+      "Een staat wordt tijdelijk bestuurd door een internationale organisatie."
+    ],
+    "c": 2,
+    "exp": "UvA Tentamengids Week 2 / Algemene leerstukken.\n\nOntbinding is het uiteenvallen van een bestaande staat waarbij het centrale gezag stopt te functioneren (zoals bij Joegoslavië), in tegenstelling tot afscheiding waarbij de moederstaat blijft bestaan."
+  },
+  {
+    "q": "Welke rol speelt het 'effectiviteitsbeginsel' bij de totstandkoming van een staat?",
+    "a": [
+      "Het vereist dat de staat democratisch en effectief wordt bestuurd volgens de rechtsstaat.",
+      "Het vereist dat een staat effectief lid moet zijn van de Verenigde Naties om erkend te worden.",
+      "Het vereist dat een staat daadwerkelijk en onafhankelijk publiek gezag uitoefent over een grondgebied en bevolking.",
+      "Het vereist dat de economie van de staat effectief genoeg is om onafhankelijk te functioneren."
+    ],
+    "c": 2,
+    "exp": "East Timor and ors v Netherlands / Algemene leerstukken.\n\nHet internationaal recht erkent de feitelijke uitoefening van macht en gezag (effectiviteit) als primaire grondslag voor rechtssubjectiviteit van staten."
+  },
+  {
+    "q": "Wat impliceert de 'objectieve internationale rechtspersoonlijkheid' van de VN, zoals vastgesteld door het IGH?",
+    "a": [
+      "Dat de rechtspersoonlijkheid van de VN alleen geldt voor de staten die het Handvest hebben ondertekend.",
+      "Dat de VN rechtspersoonlijkheid heeft die werking heeft tegenover alle staten, ook niet-leden.",
+      "Dat de VN boven alle staten staat en dwingende wetgeving kan opleggen aan de gehele wereld.",
+      "Dat de VN dezelfde rechten en plichten heeft als een soevereine staat in alle opzichten."
+    ],
+    "c": 1,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nHet Hof oordeelde dat de VN 'an entity possessing objective international personality, and not merely personality recognized by them [members] alone' is."
+  },
+  {
+    "q": "Welk criterium voor staatsvorming in artikel 1 van het Montevideo-Verdrag verwijst naar de onafhankelijkheid van een staat?",
+    "a": [
+      "A permanent population.",
+      "A defined territory.",
+      "Government.",
+      "Capacity to enter into relations with other states."
+    ],
+    "c": 3,
+    "exp": "Artikel 1 Montevideo-Verdrag.\n\nDe 'capacity to enter into relations with other states' wordt gezien als de juridische vertaling van soevereiniteit en onafhankelijkheid: het vermogen om zelfstandig verplichtingen aan te gaan."
+  },
+  {
+    "q": "Onder welke uitzonderlijke omstandigheid zou volgens de 'Reference re Secession of Quebec' een recht op afscheiding (secessie) kunnen ontstaan?",
+    "a": [
+      "Wanneer een provincie economisch zelfstandig kan opereren en een eigen taal heeft.",
+      "Wanneer er sprake is van koloniale overheersing of buitenlandse bezetting.",
+      "Wanneer een meerderheid van de bevolking in een referendum voor afscheiding stemt.",
+      "Wanneer de centrale overheid de belastingen eenzijdig verhoogt zonder consultatie."
+    ],
+    "c": 1,
+    "exp": "Reference re Secession of Quebec.\n\nHet Hof stelt dat externe zelfbeschikking (afscheiding) beperkt is tot extreme gevallen zoals kolonisatie of onderdrukking/bezetting (en laat in het midden of 'remedial secession' bestaat)."
+  },
+  {
+    "q": "Wat is volgens het IGH de basis voor de bevoegdheid van de VN om schadevergoeding te vorderen voor schade aan haar functionarissen?",
+    "a": [
+      "Het nationaal recht van de staat waar het incident plaatsvond.",
+      "De expliciete tekst van artikel 104 van het VN-Handvest.",
+      "De impliciete bevoegdheden die noodzakelijk zijn voor de uitoefening van haar taken.",
+      "Een resolutie van de Veiligheidsraad die specifieke toestemming gaf."
+    ],
+    "c": 2,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nDe bevoegdheid is niet expliciet, maar vloeit voort uit 'necessary implication as being essential to the performance of its duties' (implied powers)."
+  },
+  {
+    "q": "Wat wordt bedoeld met het begrip 'aaneensluiting' (fusion) in het kader van statenopvolging?",
+    "a": [
+      "Een staat valt uiteen in meerdere kleinere staten.",
+      "Een staat draagt een deel van zijn grondgebied over aan een andere staat.",
+      "Twee of meer staten gaan samen en vormen één nieuwe staat.",
+      "Een staat wordt tijdelijk bestuurd door een andere staat."
+    ],
+    "c": 2,
+    "exp": "UvA Tentamengids Week 2 / Algemene leerstukken.\n\nAaneensluiting (zoals Noord- en Zuid-Vietnam) betekent dat twee bestaande staten juridisch verdwijnen en één nieuwe staat vormen, of één staat opgaat in een andere (absorptie)."
+  },
+  {
+    "q": "Welke rol speelt de 'capacity to enter into relations' bij de beoordeling of een entiteit een staat is?",
+    "a": [
+      "Het is een gevolg van staatsvorming, maar geen strikt criterium.",
+      "Het is een essentieel criterium dat duidt op juridische onafhankelijkheid.",
+      "Het is alleen relevant voor lidmaatschap van de Europese Unie.",
+      "Het is vervangen door het criterium van democratische legitimiteit."
+    ],
+    "c": 1,
+    "exp": "Artikel 1 Montevideo-Verdrag.\n\nDit is het vierde criterium van Montevideo. Het duidt op de capaciteit om zelfstandig, zonder tussenkomst van een andere staat, deel te nemen aan het internationaal rechtsverkeer."
+  },
+  {
+    "q": "Kan een bevrijdingsbeweging aanspraak maken op rechtssubjectiviteit in het internationaal recht?",
+    "a": [
+      "Nee, alleen gevestigde staten hebben rechtssubjectiviteit.",
+      "Ja, in bepaalde gevallen wordt aan hen een beperkte functionele rechtssubjectiviteit toegekend.",
+      "Ja, zij hebben dezelfde volledige rechtssubjectiviteit als soevereine staten.",
+      "Nee, tenzij zij effectieve controle hebben over het gehele grondgebied."
+    ],
+    "c": 1,
+    "exp": "Algemene leerstukken week 2 / UvA Tentamengids.\n\nBevrijdingsbewegingen (zoals de PLO destijds) kunnen een beperkte internationale status en rechtssubjectiviteit verkrijgen, met name in de context van zelfbeschikking."
+  },
+  {
+    "q": "Wat stelt het 'non-interventiebeginsel' dat voortvloeit uit de soevereine gelijkheid van staten?",
+    "a": [
+      "Staten moeten te allen tijde militair ingrijpen om mensenrechten te beschermen.",
+      "Staten mogen zich niet mengen in de interne aangelegenheden van andere staten.",
+      "Internationale organisaties hebben een veto over binnenlandse wetgeving van lidstaten.",
+      "Staten zijn verplicht om economische steun te verlenen aan ontwikkelingslanden."
+    ],
+    "c": 1,
+    "exp": "Nicaragua t. Verenigde Staten / VN-Handvest art. 2(1).\n\nSoevereiniteit impliceert dat staten onafhankelijk zijn en dat andere staten niet mogen interveniëren in zaken die tot de nationale jurisdictie behoren."
+  },
+  {
+    "q": "Welke conclusie kan worden getrokken uit de 'Nuclear Weapons'-adviesopinie over de bevoegdheden van internationale organisaties?",
+    "a": [
+      "Organisaties hebben een algemene bevoegdheid om alles te doen wat niet verboden is.",
+      "Organisaties hebben geen eigen bevoegdheden, alleen de lidstaten hebben die.",
+      "Organisaties worden beheerst door het specialiteitsbeginsel en hebben beperkte, functionele bevoegdheden.",
+      "Organisaties mogen altijd kernwapens gebruiken als dit nodig is voor zelfverdediging."
+    ],
+    "c": 2,
+    "exp": "Legality of the Use by a State of Nuclear Weapons in Armed Conflict (Advies).\n\nHet IGH bevestigde dat IO's, in tegenstelling tot staten, geen algemene bevoegdheden hebben, maar beheerst worden door het 'principle of speciality'."
+  },
+  {
+    "q": "Wat is het rechtsgevolg indien een grondgebied door 'effectieve bezetting' wordt verkregen, maar een andere staat protesteert niet?",
+    "a": [
+      "De bezetting wordt illegaal verklaard door het stilzwijgen.",
+      "Er kan sprake zijn van berusting (acquiescence) of estoppel, waardoor de titel van de bezetter definitief wordt.",
+      "Het grondgebied wordt terra nullius en valt toe aan de Verenigde Naties.",
+      "De staat die niet protesteert behoudt altijd zijn oorspronkelijke rechten."
+    ],
+    "c": 1,
+    "exp": "Temple of Preah Vihear / Algemene leerstukken week 2.\n\nStilzwijgen of berusting (acquiescence) bij effectieve gezagsuitoefening door een ander kan leiden tot verlies van de titel (Estoppel: men kan niet later alsnog klagen)."
+  },
+  {
+    "q": "Wat is het essentiële verschil tussen een staat en een internationale organisatie qua rechtssubjectiviteit?",
+    "a": [
+      "Staten hebben beperkte subjectiviteit; organisaties hebben volledige subjectiviteit.",
+      "Staten hebben oorspronkelijke en volledige subjectiviteit; organisaties hebben afgeleide en functionele subjectiviteit.",
+      "Er is geen juridisch verschil; beide zijn identieke subjecten in het volkenrecht.",
+      "Organisaties kunnen geen verdragen sluiten, staten wel."
+    ],
+    "c": 1,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nHet Hof benadrukte dat IO's wel rechtssubjecten zijn, maar geen staten. Hun subjectiviteit is functioneel en afgeleid van de wil van de lidstaten, terwijl staten volledige subjectiviteit hebben."
+  },
+  {
+    "q": "Wat wordt bedoeld met de 'capacity to bring international claims' in de Reparation for Injuries-zaak?",
+    "a": [
+      "De bevoegdheid van de VN om zaken aanhangig te maken bij nationale rechtbanken.",
+      "De bevoegdheid van de VN om op internationaal niveau rechtsherstel te eisen voor geleden schade.",
+      "De bevoegdheid van VN-medewerkers om hun eigen organisatie aan te klagen.",
+      "De bevoegdheid van de Veiligheidsraad om sancties op te leggen."
+    ],
+    "c": 1,
+    "exp": "Reparation for Injuries Advisory Opinion.\n\nHet betreft de bevoegdheid om op het internationale vlak (diplomatiek of juridisch) een vordering in te stellen tegen een staat wegens schending van een verplichting."
+  },
+  {
+    "q": "Hoe kwalificeerde de rechtbank in Den Haag de erkenning van Oost-Timor in de zaak 'East Timor v. Netherlands'?",
+    "a": [
+      "Als een constitutieve handeling die noodzakelijk is voor het bestaan van de staat.",
+      "Als een politieke daad die geen invloed heeft op het feitelijke bestaan van de staat.",
+      "Als een juridische verplichting onder het VN-Handvest.",
+      "Als irrelevant, omdat Oost-Timor een kolonie was en geen staat."
+    ],
+    "c": 1,
+    "exp": "East Timor and ors v Netherlands.\n\nDe rechtbank stelde dat erkenning (of het ontbreken daarvan) geen invloed heeft op de vraag of een entiteit voldoet aan de feitelijke criteria van staatsvorming (declaratoire theorie)."
+  },
+  {
+    "q": "Wat is volgens de 'Reference re Secession of Quebec' de relatie tussen democratie en het recht op afscheiding?",
+    "a": [
+      "Een democratische meerderheid in een referendum creëert automatisch een recht op afscheiding.",
+      "Democratie betekent dat de wil van het volk altijd voorrang heeft op de grondwet.",
+      "Een democratische uitslag is legitiem, maar creëert op zichzelf geen juridisch recht op eenzijdige afscheiding.",
+      "Democratie is irrelevant in het internationaal recht; alleen militaire macht telt."
+    ],
+    "c": 2,
+    "exp": "Reference re Secession of Quebec.\n\nHet Hof oordeelde dat een referendumuitslag (democratie) gewicht heeft en tot onderhandelingen moet leiden, maar geen automatisch juridisch recht op eenzijdige afscheiding schept."
+  }
+]

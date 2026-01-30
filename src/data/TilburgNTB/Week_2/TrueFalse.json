@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Het begrip 'overheid' is in het staatsrecht synoniem aan het begrip 'openbaar bestuur'.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het openbaar bestuur maakt deel uit van de overheid, maar de overheid omvat tevens de wetgevende macht en de rechterlijke macht. Het openbaar bestuur wordt doorgaans vereenzelvigd met de uitvoerende macht."
+  },
+  {
+    "q": "Nederland wordt staatsrechtelijk gekwalificeerd als een gedecentraliseerde eenheidsstaat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Nederland is een eenheidsstaat omdat de centrale overheid uiteindelijke controle houdt, maar gedecentraliseerd omdat wetgeving en bestuurstaken zijn overgelaten aan lagere overheden zoals provincies en gemeenten."
+  },
+  {
+    "q": "Een openbaar lichaam dat is ingesteld op basis van functionele decentralisatie heeft een open huishouding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Openbare lichamen met functionele decentralisatie, zoals waterschappen, hebben een gesloten huishouding; hun takenpakket is beperkt tot een specifieke functie (doelgebonden)."
+  },
+  {
+    "q": "De gemeente bezit rechtspersoonlijkheid op grond van het Burgerlijk Wetboek.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 2:1 leden 1 en 2 Burgerlijk Wetboek kent rechtspersoonlijkheid toe aan de staat, de provincies, de gemeenten en de waterschappen. Zij zijn publiekrechtelijke rechtspersonen."
+  },
+  {
+    "q": "De gemeenteraad is een rechtspersoon in de zin van artikel 2:1 Burgerlijk Wetboek.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De gemeente is de rechtspersoon. De gemeenteraad is een orgaan van deze rechtspersoon en daarmee een bestuursorgaan in de zin van de Algemene wet bestuursrecht, maar bezit zelf geen rechtspersoonlijkheid."
+  },
+  {
+    "q": "Een a-orgaan is altijd een orgaan van een krachtens publiekrecht ingestelde rechtspersoon.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 1:1 lid 1 onder a Algemene wet bestuursrecht definieert een bestuursorgaan als een orgaan van een rechtspersoon die krachtens publiekrecht is ingesteld."
+  },
+  {
+    "q": "Een privaatrechtelijke stichting kan nooit worden aangemerkt als een bestuursorgaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een orgaan van een privaatrechtelijke rechtspersoon kan op grond van artikel 1:1 lid 1 onder b Algemene wet bestuursrecht als bestuursorgaan worden aangemerkt indien het met openbaar gezag is bekleed (b-orgaan)."
+  },
+  {
+    "q": "De burgemeester is lid van de gemeenteraad.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De burgemeester is voorzitter van de gemeenteraad, maar op grond van de Gemeentewet geen lid van de raad. De burgemeester heeft in de raad een adviserende stem."
+  },
+  {
+    "q": "Het college van burgemeester en wethouders vormt het dagelijks bestuur van de gemeente.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het college van burgemeester en wethouders is belast met het dagelijks bestuur van de gemeente, waaronder de voorbereiding en uitvoering van raadsbesluiten."
+  },
+  {
+    "q": "De Commissaris van de Koning wordt rechtstreeks gekozen door de inwoners van de provincie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Commissaris van de Koning wordt bij koninklijk besluit benoemd (artikel 61 Provinciewet), niet gekozen door de bevolking."
+  },
+  {
+    "q": "Zelfstandige bestuursorganen (ZBO's) zijn hiërarchisch ondergeschikt aan een minister.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een kenmerk van een zelfstandig bestuursorgaan is juist dat het niet hiërarchisch ondergeschikt is aan de minister; de minister heeft geen volledige zeggenschap over de taakuitoefening."
+  },
+  {
+    "q": "Een garagehouder die APK-keuringen verricht, is voor die taak aan te merken als een bestuursorgaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De garagehouder oefent bij het afgeven van APK-keuringsbewijzen openbaar gezag uit en is voor die specifieke taak een b-orgaan in de zin van artikel 1:1 lid 1 onder b Awb."
+  },
+  {
+    "q": "De rechtbank is een bestuursorgaan in de zin van de Algemene wet bestuursrecht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 1:1 lid 2 Algemene wet bestuursrecht zondert de onafhankelijke rechterlijke macht en rechterlijke colleges uit van het begrip bestuursorgaan."
+  },
+  {
+    "q": "De 'openbare lichamen' Bonaire, Sint Eustatius en Saba zijn onderdeel van het land Nederland.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Sinds 10 oktober 2010 hebben deze eilanden de status van openbaar lichaam in de zin van artikel 134 Grondwet en maken zij deel uit van het staatsbestel van Nederland."
+  },
+  {
+    "q": "Het algemeen bestuur van een waterschap is vergelijkbaar met het college van B&W in een gemeente.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het algemeen bestuur van het waterschap is het vertegenwoordigende orgaan, vergelijkbaar met de gemeenteraad. Het dagelijks bestuur is vergelijkbaar met het college van B&W."
+  },
+  {
+    "q": "Voor de kwalificatie als b-orgaan bij geldelijke uitkeringen door een stichting geldt uitsluitend het financiële vereiste.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Uit de uitspraak Stichting bevordering kwaliteit leefomgeving Schipholregio blijkt dat aan twee cumulatieve eisen moet worden voldaan: het financiële vereiste én het inhoudelijke vereiste (beslissende invloed van de overheid op de criteria)."
+  },
+  {
+    "q": "Ambtenaren zijn zelfstandige bestuursorganen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Ambtenaren voeren taken feitelijk uit onder verantwoordelijkheid van een bestuursorgaan (vaak via mandaat), maar zijn zelf geen bestuursorgaan, tenzij een wettelijk voorschrift hen specifiek als zodanig aanwijst (wat uitzonderlijk is, bijv. belastinginspecteur)."
+  },
+  {
+    "q": "De gemeenteraad staat aan het hoofd van de gemeente.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 125 Grondwet en de Gemeentewet bepalen dat de gemeenteraad aan het hoofd van de gemeente staat."
+  },
+  {
+    "q": "Gedeputeerde Staten leggen verantwoording af aan de Provinciale Staten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In het provinciale bestuur leggen de Gedeputeerde Staten (het dagelijks bestuur) verantwoording af aan de Provinciale Staten (het vertegenwoordigende orgaan)."
+  },
+  {
+    "q": "De Sociaal-Economische Raad (SER) is een voorbeeld van territoriale decentralisatie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De SER is een openbaar lichaam voor beroep en bedrijf en is een voorbeeld van functionele decentralisatie, niet gebonden aan een specifiek territoir maar aan een functie/taak."
+  },
+  {
+    "q": "Het 'publiektaakcriterium' bij b-organen houdt in dat de taak wettelijk geregeld moet zijn.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Een b-orgaan is met openbaar gezag bekleed. Dit vereist dat de bevoegdheid om eenzijdig rechtsgevolgen in het leven te roepen (de publieke taak) berust op een wettelijk voorschrift."
+  },
+  {
+    "q": "De burgemeester vertegenwoordigt de gemeente in en buiten rechte.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 171 Gemeentewet bepaalt dat de burgemeester de gemeente in en buiten rechte vertegenwoordigt."
+  },
+  {
+    "q": "Alle bestuursorganen van de centrale overheid zijn a-organen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Hoewel veel organen van de centrale overheid (zoals ministers) a-organen zijn, kunnen er ook zelfstandige bestuursorganen (ZBO's) zijn die als b-orgaan kwalificeren als zij niet onderdeel zijn van een publiekrechtelijke rechtspersoon."
+  },
+  {
+    "q": "De 'benedengrens' bij gemeentelijke verordeningen beschermt de privésfeer van de burger.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De benedengrens houdt in dat de gemeentelijke regelgeving een openbaar belang moet dienen en niet mag treden in de particuliere sfeer van de burger die het publiek belang niet raakt."
+  },
+  {
+    "q": "Een rechtspersoon is een natuurlijke persoon die een overheidsfunctie bekleedt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Een rechtspersoon is een juridische constructie (zoals een gemeente of stichting) die zelfstandig drager is van rechten en plichten, ter onderscheiding van een natuurlijke persoon (een mens)."
+  },
+  {
+    "q": "De waterschappen hebben als taak de waterkwantiteits- en waterkwaliteitszorg.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De taken van het waterschap omvatten het beheer van waterkeringen, waterhuishouding (kwantiteit) en waterkwaliteit, zoals geregeld in de Waterwet."
+  },
+  {
+    "q": "De commissaris van de Koning heeft zelfstandige bevoegdheden op het gebied van openbare orde en veiligheid in de gemeente.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De bevoegdheid tot handhaving van de openbare orde ligt primair bij de burgemeester. De CdK heeft wel specifieke taken bij rampenbestrijding en bij het toezicht, maar geen algemene openbare ordebevoegdheid."
+  },
+  {
+    "q": "Het inhoudelijke vereiste uit het Schipholregio-arrest ziet op de vraag wie de criteria voor uitkeringen bepaalt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het inhoudelijke vereiste houdt in dat de criteria voor de verstrekking in beslissende mate door een a-bestuursorgaan moeten worden bepaald om van openbaar gezag bij een privaatrechtelijke entiteit te kunnen spreken."
+  },
+  {
+    "q": "De Algemene wet bestuursrecht is van toepassing op alle handelingen van b-organen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Awb is bij b-organen slechts van toepassing voor zover zij openbaar gezag uitoefenen. Voor hun privaatrechtelijke handelingen (die niet met openbaar gezag zijn bekleed) geldt de Awb niet."
+  },
+  {
+    "q": "Deconcentratie is een vorm van bevoegdheidstoedeling aan ambtenaren waarbij de minister politiek verantwoordelijk blijft.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij deconcentratie wordt een bevoegdheid toegekend aan een ambtenaar of dienst, maar blijft de politieke verantwoordelijkheid bij de minister bestaan via de hiërarchische relatie en aanwijzingsbevoegdheid."
+  }
+]

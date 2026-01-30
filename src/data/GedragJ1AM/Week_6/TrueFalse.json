@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Volgens de 'focal concerns'-theorie baseren rechters hun straftoemetingsbeslissing onder andere op de praktische gevolgen van de straf voor de organisatie van de strafrechtspleging.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De theorie onderscheidt drie kerncriteria: verwijtbaarheid, gevaarlijkheid (bescherming maatschappij) en de praktische gevolgen (organisatorische beperkingen en kosten)."
+  },
+  {
+    "q": "Uit observaties bij de politierechter blijkt dat het tonen van spijt tijdens de zitting de kans op een onvoorwaardelijke gevangenisstraf significant verkleint.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Onderzoek wijst uit dat het al dan niet betuigen van spijt geen statistisch significant effect heeft op de kans om een onvoorwaardelijke gevangenisstraf opgelegd te krijgen."
+  },
+  {
+    "q": "Verdachten met een buitenlands uiterlijk die de Nederlandse taal niet beheersen, hebben een grotere kans op een onvoorwaardelijke gevangenisstraf dan verdachten met een buitenlands uiterlijk die wel Nederlands spreken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De combinatie van een buitenlands uiterlijk en het niet beheersen van de taal leidt tot een aanzienlijk hogere kans (tot twintig keer hoger) op een onvoorwaardelijke gevangenisstraf in vergelijking met andere groepen."
+  },
+  {
+    "q": "Bij de kantonrechter geldt een verplichte procesvertegenwoordiging door een advocaat voor alle zaken met een belang boven de € 5.000.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Sinds de verhoging van de competentiegrens in 2011 kunnen partijen bij de kantonrechter zonder verplichte advocaat procederen in zaken met een financieel belang tot € 25.000."
+  },
+  {
+    "q": "Het beginsel van 'equality of arms' vereist dat de rechter in civiele procedures actief ingrijpt om een ongelijkheid tussen een professionele partij en een onvertegenwoordigde burger te compenseren.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Rechters nemen een compensatoire rol aan om te waarborgen dat de niet-vertegenwoordigde partij een eerlijke kans krijgt en niet wordt benadeeld door een gebrek aan juridische kennis."
+  },
+  {
+    "q": "Nieuw Publiek Management (NPM) binnen de rechtspraak heeft geleid tot de invoering van outputfinanciering, waarbij gerechten worden bekostigd op basis van het aantal afgehandelde zaken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Onder invloed van NPM is in 2002 outputfinanciering ingevoerd, wat inhoudt dat de financiering van de rechtspraak afhankelijk is van de productie (aantal zaken)."
+  },
+  {
+    "q": "Maatschappelijk Effectieve Rechtspraak (MER) streeft primair naar een strikte toepassing van formele rechtsregels om rechtszekerheid te garanderen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "MER richt zich juist op responsiviteit en het oplossen van de achterliggende maatschappelijke problemen van een geschil, waarbij de materiële uitkomst belangrijker is dan de strikte formele procedure."
+  },
+  {
+    "q": "Het aantal wrakingsverzoeken in Nederland wordt in de meeste gevallen toegewezen omdat rechters vaak blijk geven van partijdigheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Hoewel het aantal verzoeken stijgt, worden wrakingsverzoeken zelden toegewezen (minder dan 1%), omdat ze vaak voortkomen uit onvrede over de procedure in plaats van objectieve partijdigheid."
+  },
+  {
+    "q": "Vrouwelijke verdachten hebben bij de politierechter een significant lagere kans op een onvoorwaardelijke gevangenisstraf dan mannelijke verdachten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Statistische analyses tonen aan dat geslacht een zelfstandig effect heeft, waarbij vrouwen minder vaak tot een onvoorwaardelijke gevangenisstraf worden veroordeeld dan mannen."
+  },
+  {
+    "q": "De Wet herziening Gerechtelijke Kaart (2013) had als doel de rechtspraak dichter bij de burger te brengen door het aantal rechtbanklocaties te vergroten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De wet had juist als doel schaalvergroting en efficiëntie, waardoor het aantal rechtbanken werd teruggebracht van 19 naar 11, wat de fysieke afstand tot de burger in sommige gevallen vergrootte."
+  },
+  {
+    "q": "Rechters ervaren 'awareness optimism', wat inhoudt dat zij geloven hun eigen subjectieve opvattingen goed te kunnen scheiden van hun rechterlijke beslissingen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dit fenomeen beschrijft het vertrouwen van rechters dat zij objectief kunnen oordelen zonder beïnvloed te worden door persoonlijke vooroordelen of achtergrond."
+  },
+  {
+    "q": "In civiele procedures bij de kantonrechter verliezen gedaagden zonder juridische vertegenwoordiging in meer dan 80% van de gevallen de zaak.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Onderzoek toont aan dat de kans op succes voor zelfprocederende gedaagden zeer laag is, mede door een gebrek aan juridische kennis en procedurele vaardigheden."
+  },
+  {
+    "q": "Bij wijkrechtspraak staat uitsluitend de juridische afdoening van het delict centraal, zonder samenwerking met externe hulpverleners.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Wijkrechtspraak kenmerkt zich juist door een integrale aanpak waarbij de rechter samenwerkt met gemeenten en hulpverleners om achterliggende (sociale) problemen aan te pakken."
+  },
+  {
+    "q": "De 'rolzitting' in een kantonprocedure is bedoeld voor een uitgebreide inhoudelijke behandeling van de zaak met pleitnota's.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De rolzitting is een korte, vaak procedurele zitting aan het begin van het proces, waar met name onvertegenwoordigde gedaagden de kans krijgen mondeling verweer te voeren of uitstel te vragen."
+  },
+  {
+    "q": "Het hinten op juridische verweren zoals verjaring door een rechter kan spanning opleveren met het beginsel van rechterlijke onpartijdigheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Wanneer een rechter actief hint op verweren die een partij zelf niet aandraagt, kan de wederpartij dit ervaren als partijdigheid of het helpen van de tegenstander."
+  },
+  {
+    "q": "In de Nederlandse rechtspraak bestaat een strikte scheiding der machten waarbij rechters geen enkele invloed ervaren van de uitvoerende macht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Hoewel onafhankelijkheid centraal staat, is er geen strikte scheiding; de rechterlijke macht is organisatorisch en financieel deels afhankelijk van het ministerie van Justitie en Veiligheid."
+  },
+  {
+    "q": "Het opleggen van een taakstraf is juridisch en praktisch lastiger bij verdachten die de Nederlandse taal niet beheersen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De uitvoerbaarheid van taakstraffen wordt belemmerd door taalbarrières omdat er bij de uitvoering geen tolken beschikbaar zijn, wat rechters kan bewegen tot het opleggen van een gevangenisstraf."
+  },
+  {
+    "q": "Het concept 'partijautonomie' houdt in dat de rechter bepaalt welke feiten en rechtsgronden in een civiele procedure worden behandeld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Partijautonomie betekent dat de procespartijen zelf bepalen waarover wordt geprocedeerd en welke feiten zij aandragen; de rechter is hier in beginsel aan gebonden."
+  },
+  {
+    "q": "De 'enablement-these' stelt dat digitalisering de discretionaire ruimte van professionals beperkt en leidt tot standaardisatie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Dit is de 'curtailment-these'. De 'enablement-these' stelt juist dat technologie professionals ondersteunt om hun werk efficiënter en beter te doen."
+  },
+  {
+    "q": "De kantonrechter heeft in schikkingstrajecten onbeperkte bevoegdheid om in te grijpen als een onvertegenwoordigde partij een nadelige deal sluit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Vanwege contractvrijheid en partijautonomie heeft de rechter slechts beperkte mogelijkheden om in te grijpen bij een schikking, zelfs als deze nadelig is voor een zwakkere partij."
+  },
+  {
+    "q": "Verdachten die in voorlopige hechtenis hebben gezeten, hebben een significant grotere kans op een onvoorwaardelijke gevangenisstraf bij de einduitspraak.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Voorlopige hechtenis blijkt een sterke voorspeller te zijn voor het uiteindelijke vonnis; rechters zijn geneigd de strafmaat aan te sluiten bij de reeds ondergane detentie."
+  },
+  {
+    "q": "De term 'lijdelijkheid' van de rechter betekent dat de rechter een actieve, onderzoekende houding aanneemt in civiele procedures.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Lijdelijkheid impliceert juist een passieve rol waarbij de rechter afwacht wat partijen aandragen en niet zelfstandig op zoek gaat naar de waarheid."
+  },
+  {
+    "q": "Bij de beoordeling van 'verwijtbaarheid' kijken rechters uitsluitend naar de ernst van het delict en niet naar de persoonlijke omstandigheden van de dader.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Verwijtbaarheid omvat zowel de ernst van het feit als de mate waarin het de dader kan worden toegerekend, waarbij ook strafblad en omstandigheden meewegen."
+  },
+  {
+    "q": "Het project 'Klare Taal' heeft als doel juridische vonnissen begrijpelijker te maken voor burgers zonder juridische achtergrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Klare Taal richt zich op het vereenvoudigen van juridisch taalgebruik om de toegankelijkheid en begrijpelijkheid van de rechtspraak te vergroten."
+  },
+  {
+    "q": "Een kantonrechter mag een niet-vertegenwoordigde gedaagde adviseren om juridische hulp te zoeken als de zaak te complex is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In het kader van ongelijkheidscompensatie en goede procesbegeleiding kan en mag een rechter een partij adviseren om alsnog professionele bijstand in te schakelen."
+  },
+  {
+    "q": "De 'Raad voor de rechtspraak' fungeert als schakel tussen de gerechten en het ministerie en is ingesteld om de bedrijfsvoering te stroomlijnen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De Raad voor de rechtspraak is in 2002 opgericht als onderdeel van de modernisering (NPM) om toezicht te houden op de begroting en bedrijfsvoering van de gerechten."
+  },
+  {
+    "q": "Onderzoek toont aan dat rechters bij een hoge werkdruk vaker kiezen voor inhoudelijke behandeling op zitting in plaats van een schikking.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij hoge werkdruk en productiedruk zijn rechters juist eerder geneigd om aan te sturen op een schikking om tijd te besparen en de zittingsduur te verkorten."
+  },
+  {
+    "q": "Stereotypering door rechters treedt voornamelijk op wanneer er veel specifieke informatie over de dader beschikbaar is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Stereotypering treedt volgens de theorie juist op bij een gebrek aan informatie ('information uncertainty'), waardoor rechters terugvallen op algemene beelden of aannames."
+  },
+  {
+    "q": "Het 'sub judice'-beginsel houdt in dat politici en media zich terughoudend moeten opstellen met commentaar op lopende rechtszaken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dit beginsel dient ter bescherming van de onafhankelijkheid van de rechter en een eerlijk proces, door publieke druk en vooroordelen tijdens de rechtsgang te beperken."
+  },
+  {
+    "q": "De kantonrechter behandelt naast civiele zaken tot € 25.000 ook specifieke 'aardzaken' zoals arbeidszaken, ongeacht het financiële belang.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Aardzaken zoals huur, arbeid en consumentenkoop vallen onder de competentie van de kantonrechter, zelfs als het belang de grens van € 25.000 overschrijdt."
+  }
+]

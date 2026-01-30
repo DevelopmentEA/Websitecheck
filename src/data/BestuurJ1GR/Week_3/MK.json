@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Wat wordt in artikel 1:2, eerste lid, van de Algemene wet bestuursrecht verstaan onder het begrip 'belanghebbende'?",
+    "a": [
+      "Degene wiens belang rechtstreeks bij een besluit is betrokken.",
+      "Iedere burger die nadeel ondervindt van een overheidsbesluit.",
+      "Een persoon die een verzoek indient bij een bestuursorgaan.",
+      "Een bestuursorgaan dat een beschikking afgeeft aan een burger."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:2 lid 1 Awb.\n\nDe wet definieert een belanghebbende als degene wiens belang rechtstreeks bij een besluit is betrokken. Dit vereist een voldoende causaal verband tussen de gevolgen van het besluit en het belang van de persoon."
+  },
+  {
+    "q": "Welke eis stelt artikel 8:1 van de Algemene wet bestuursrecht aan het instellen van beroep bij de bestuursrechter?",
+    "a": [
+      "De indiener moet de Nederlandse nationaliteit bezitten.",
+      "De indiener moet als belanghebbende kunnen worden aangemerkt.",
+      "De indiener moet in het bezit zijn van rechtsbijstand.",
+      "De indiener moet woonachtig zijn in de betreffende gemeente."
+    ],
+    "c": 1,
+    "exp": "Artikel 8:1 Awb.\n\nHet artikel bepaalt dat een belanghebbende tegen een besluit beroep kan instellen bij de bestuursrechter. Het zijn van belanghebbende is een constitutieve vereiste voor toegang tot de rechter."
+  },
+  {
+    "q": "Wanneer worden de belangen van een bestuursorgaan als 'eigen belangen' beschouwd in de zin van de Algemene wet bestuursrecht?",
+    "a": [
+      "Wanneer het bestuursorgaan optreedt als privaatrechtelijke rechtspersoon.",
+      "Wanneer het bestuursorgaan financiële schade lijdt door een besluit.",
+      "Wanneer de belangen aan het bestuursorgaan zijn toevertrouwd.",
+      "Wanneer het bestuursorgaan optreedt namens een groep burgers."
+    ],
+    "c": 2,
+    "exp": "Artikel 1:2 lid 2 Awb.\n\nTen aanzien van bestuursorganen worden de hun toevertrouwde belangen als hun belangen beschouwd. Dit moet blijken uit de wettelijke taakomschrijving van het orgaan."
+  },
+  {
+    "q": "Onder welke voorwaarden worden de belangen van rechtspersonen als hun eigen belangen beschouwd volgens artikel 1:2, derde lid, Awb?",
+    "a": [
+      "Indien zij een meerderheidsbelang hebben in een onderneming.",
+      "Indien zij door de overheid zijn aangewezen als belangenbehartiger.",
+      "Indien zij winst maken door de uitvoering van het besluit.",
+      "Indien zij algemene of collectieve belangen krachtens doelstelling en feitelijke werkzaamheden in het bijzonder behartigen."
+    ],
+    "c": 3,
+    "exp": "Artikel 1:2 lid 3 Awb.\n\nTen aanzien van rechtspersonen worden als hun belangen mede beschouwd de algemene en collectieve belangen die zij krachtens hun doelstellingen en blijkens hun feitelijke werkzaamheden in het bijzonder behartigen."
+  },
+  {
+    "q": "Wat is in beginsel de juridische kwalificatie van een belang dat uitsluitend voortvloeit uit een contractuele relatie met de geadresseerde van een besluit?",
+    "a": [
+      "Dit is een afgeleid belang en levert geen belanghebbendheid op.",
+      "Dit is een rechtstreeks belang en levert belanghebbendheid op.",
+      "Dit is een collectief belang en levert belanghebbendheid op.",
+      "Dit is een toevertrouwd belang en levert geen belanghebbendheid op."
+    ],
+    "c": 0,
+    "exp": "Jurisprudentie: CRvB Zorgcentrum Meerkerk.\n\nEen belang dat uitsluitend voortvloeit uit een contractuele relatie met de geadresseerde van een besluit, wordt aangemerkt als een afgeleid belang. Een afgeleid belang is niet rechtstreeks betrokken bij het besluit."
+  },
+  {
+    "q": "Welk criterium hanteert de Afdeling bestuursrechtspraak in de uitspraak Mestbassin Mechelen als correctie op het uitgangspunt van rechtstreekse feitelijke gevolgen?",
+    "a": [
+      "Gevolgen van algemeen belang.",
+      "Gevolgen van enige betekenis.",
+      "Gevolgen van financiële aard.",
+      "Gevolgen van emotionele waarde."
+    ],
+    "c": 1,
+    "exp": "Jurisprudentie: ABRvS Mestbassin Mechelen.\n\nHet criterium 'gevolgen van enige betekenis' dient als correctie op het uitgangspunt dat degene die rechtstreeks feitelijke gevolgen ondervindt, belanghebbende is. Als gevolgen van enige betekenis ontbreken, is men geen belanghebbende."
+  },
+  {
+    "q": "Op welke factoren wordt gelet bij de beoordeling of er sprake is van 'gevolgen van enige betekenis' bij besluiten over ruimtelijke activiteiten?",
+    "a": [
+      "De juridische kennis en ervaring van de betrokkene.",
+      "De nationaliteit en de woonplaats van de betrokkene.",
+      "Afstand, zicht, planologische uitstraling en milieugevolgen.",
+      "De statutaire doelstellingen van de gemeente."
+    ],
+    "c": 2,
+    "exp": "Jurisprudentie: ABRvS Mestbassin Mechelen.\n\nBij de beoordeling van gevolgen van enige betekenis wordt acht geslagen op de factoren afstand tot, zicht op, planologische uitstraling van en milieugevolgen van de activiteit die het besluit toestaat."
+  },
+  {
+    "q": "Wanneer kan een derde met een afgeleid belang volgens de uitspraak Zorgcentrum Meerkerk toch als belanghebbende worden aangemerkt?",
+    "a": [
+      "Indien de derde in dezelfde gemeente woont als de geadresseerde.",
+      "Indien de derde toestemming heeft van het bestuursorgaan.",
+      "Indien het afgeleide belang groter is dan het belang van de geadresseerde.",
+      "Indien de derde los van de contractuele relatie een zelfstandig eigen belang heeft."
+    ],
+    "c": 3,
+    "exp": "Jurisprudentie: CRvB Zorgcentrum Meerkerk.\n\nHet leerstuk van afgeleid belang is niet aan de orde als de derde in kwestie, naast een mogelijk afgeleid belang, een zelfstandig eigen belang heeft dat bij het besluit rechtstreeks betrokken is, bijvoorbeeld ontleend aan een fundamenteel recht."
+  },
+  {
+    "q": "Waarom werd de Stichting Openbare Ruimte in de gelijknamige uitspraak niet als belanghebbende aangemerkt?",
+    "a": [
+      "Het louter in rechte opkomen tegen besluiten geldt niet als feitelijke werkzaamheden.",
+      "De stichting had geen ledenbestand en geen contributieheffing.",
+      "De stichting was niet bij notariële akte opgericht.",
+      "Het bestuur van de stichting bestond uit ambtenaren."
+    ],
+    "c": 0,
+    "exp": "Jurisprudentie: ABRvS Stichting Openbare Ruimte.\n\nHet louter in rechte opkomen tegen besluiten kan als regel niet worden aangemerkt als feitelijke werkzaamheden in de zin van artikel 1:2, derde lid, Awb."
+  },
+  {
+    "q": "Op welke grond werd de vereniging in de zaak Buurtplatform Randwyck wel als belanghebbende aangemerkt?",
+    "a": [
+      "De vereniging ontving subsidie van de gemeente Maastricht.",
+      "De vereniging bundelde rechtstreeks betrokken individuele belangen.",
+      "De vereniging was eigenaar van het betreffende perceel.",
+      "De vereniging had een contractuele relatie met de bouwer."
+    ],
+    "c": 1,
+    "exp": "Jurisprudentie: ABRvS Buurtplatform Randwyck.\n\nIn de door de vereniging tot stand gebrachte bundeling van individuele belangen kunnen de in artikel 1:2, derde lid, Awb genoemde feitelijke werkzaamheden besloten worden geacht."
+  },
+  {
+    "q": "Wat wordt in de context van artikel 1:2, derde lid, Awb verstaan onder 'feitelijke werkzaamheden'?",
+    "a": [
+      "Het enkel voeren van juridische procedures tegen besluiten.",
+      "Het hebben van een doelstelling in de statuten van de rechtspersoon.",
+      "Activiteiten die daadwerkelijk uitvoering geven aan de doelstelling.",
+      "Het betalen van belasting en premies door de rechtspersoon."
+    ],
+    "c": 2,
+    "exp": "Artikel 1:2 lid 3 Awb.\n\nNaast de statutaire doelstelling is vereist dat de rechtspersoon feitelijke werkzaamheden verricht die het belang in het bijzonder behartigen. Louter procederen volstaat volgens jurisprudentie (Stichting Openbare Ruimte) niet."
+  },
+  {
+    "q": "Aan welke eis moet de statutaire doelstelling van een rechtspersoon voldoen om als belanghebbende te worden aangemerkt?",
+    "a": [
+      "De doelstelling moet gericht zijn op het maken van winst.",
+      "De doelstelling moet algemeen en veelomvattend zijn geformuleerd.",
+      "De doelstelling mag geen politieke oogmerken bevatten.",
+      "De doelstelling moet voldoende specifiek en onderscheidend zijn."
+    ],
+    "c": 3,
+    "exp": "Jurisprudentie: ABRvS Stichting Openbare Ruimte.\n\nEen statutair doel dat te veelomvattend is, is niet onderscheidend genoeg. De rechtspersoon moet krachtens haar doelstellingen een specifiek algemeen of collectief belang in het bijzonder behartigen."
+  },
+  {
+    "q": "Wat houdt het relativiteitsvereiste in zoals vastgelegd in artikel 8:69a van de Algemene wet bestuursrecht?",
+    "a": [
+      "De geschonden rechtsregel moet strekken tot bescherming van de belangen van de beroeper.",
+      "De bestuursrechter mag een besluit alleen vernietigen als het algemeen belang dat vereist.",
+      "Een besluit wordt alleen vernietigd als de procedurele fouten ernstig zijn.",
+      "De indiener van het beroep moet aantonen dat hij schade heeft geleden."
+    ],
+    "c": 0,
+    "exp": "Artikel 8:69a Awb.\n\nDe bestuursrechter vernietigt een besluit niet op de grond dat het in strijd is met een rechtsregel, indien deze regel kennelijk niet strekt tot bescherming van de belangen van degene die zich daarop beroept."
+  },
+  {
+    "q": "Wanneer wordt een concurrent als belanghebbende beschouwd bij een besluit gericht tot een ander bedrijf?",
+    "a": [
+      "Als de concurrent het niet eens is met het overheidsbeleid.",
+      "Als de concurrent in hetzelfde marktsegment en verzorgingsgebied actief is.",
+      "Als de concurrent een groter marktaandeel heeft dan de aanvrager.",
+      "Als de concurrent gevestigd is in dezelfde provincie."
+    ],
+    "c": 1,
+    "exp": "Jurisprudentie / Algemene rechtsregel.\n\nEen concurrent is belanghebbende als zijn belang rechtstreeks betrokken is. Dit wordt aangenomen als de ondernemingen actief zijn in hetzelfde marktsegment en hetzelfde verzorgingsgebied, waardoor de concurrentiepositie wordt beïnvloed."
+  },
+  {
+    "q": "Wie wordt bij een persoonsgerichte beschikking altijd als belanghebbende aangemerkt?",
+    "a": [
+      "De omwonenden van de locatie.",
+      "De concurrenten van de aanvrager.",
+      "De geadresseerde van de beschikking.",
+      "De behartiger van het algemeen belang."
+    ],
+    "c": 2,
+    "exp": "Artikel 1:2 lid 1 Awb.\n\nDe geadresseerde van een persoonsgerichte beschikking (de normadressaat) is per definitie degene wiens rechten of plichten door het besluit worden vastgesteld, en is daarmee altijd belanghebbende."
+  },
+  {
+    "q": "Wat betekent het vereiste dat een belang 'actueel' moet zijn om als belanghebbende te kwalificeren?",
+    "a": [
+      "Het belang moet financieel van aard zijn.",
+      "Het belang moet betrekking hebben op het verleden.",
+      "Het belang moet algemeen erkend zijn in de samenleving.",
+      "Het belang mag niet gebaseerd zijn op onzekere toekomstige gebeurtenissen."
+    ],
+    "c": 3,
+    "exp": "Algemene rechtsregel (EPOAD-criteria).\n\nEen belang is actueel en voldoende zeker als het op het moment van het besluit bestaat. Een belang dat afhankelijk is van een onzekere toekomstige gebeurtenis is onvoldoende om als belanghebbende te gelden."
+  },
+  {
+    "q": "Waarom is een louter subjectief gevoel van betrokkenheid onvoldoende voor het zijn van belanghebbende?",
+    "a": [
+      "Omdat het belang objectief bepaalbaar moet zijn.",
+      "Omdat subjectieve gevoelens niet in geld uit te drukken zijn.",
+      "Omdat de wetgever emoties wil uitsluiten van het recht.",
+      "Omdat alleen zakelijke belangen worden beschermd."
+    ],
+    "c": 0,
+    "exp": "Algemene rechtsregel (EPOAD-criteria).\n\nHet belang moet objectief bepaalbaar zijn. Een louter subjectief gevoel van betrokkenheid bij een besluit, zonder objectieve aanknopingspunten, is onvoldoende voor het zijn van belanghebbende."
+  },
+  {
+    "q": "Wat houdt de eis van een 'direct geraakt belang' in bij de beoordeling van belanghebbendheid?",
+    "a": [
+      "Het besluit moet binnen een week effect hebben.",
+      "Er moet een causaal verband zijn tussen besluit en belang.",
+      "De betrokkene moet persoonlijk aanwezig zijn bij de besluitvorming.",
+      "Het belang moet schriftelijk zijn vastgelegd."
+    ],
+    "c": 1,
+    "exp": "Algemene rechtsregel (EPOAD-criteria).\n\nEr moet een voldoende causaal verband bestaan tussen het besluit en de aantasting van het belang. Er mag in beginsel geen sprake zijn van een afgeleid belang."
+  },
+  {
+    "q": "Wat wordt bedoeld met het criterium 'persoonlijk belang' in de definitie van belanghebbende?",
+    "a": [
+      "Het belang moet een natuurlijk persoon betreffen.",
+      "Het belang moet betrekking hebben op de privésfeer.",
+      "De betrokkene moet zich voldoende onderscheiden van anderen.",
+      "Het belang moet door de betrokkene zelf zijn gecreëerd."
+    ],
+    "c": 2,
+    "exp": "Algemene rechtsregel (EPOAD-criteria).\n\nHet persoonlijk belang houdt in dat het belang van de betrokkene zich in voldoende mate moet onderscheiden van dat van willekeurige anderen. Men kan niet opkomen voor het algemeen belang (actio popularis)."
+  },
+  {
+    "q": "Mag een burger in rechte opkomen voor het belang van een ander?",
+    "a": [
+      "Ja, als hij daarvoor toestemming heeft.",
+      "Ja, in alle gevallen van bestuursrecht.",
+      "Nee, tenzij hij als gemachtigde optreedt.",
+      "Nee, men moet een eigen belang hebben."
+    ],
+    "c": 3,
+    "exp": "Algemene rechtsregel (EPOAD-criteria) / Artikel 1:2 lid 1 Awb.\n\nEen van de criteria voor belanghebbendheid is dat men een 'eigen' belang heeft. Men kan niet als belanghebbende opkomen voor de belangen van een ander, tenzij men als gemachtigde optreedt namens die belanghebbende."
+  },
+  {
+    "q": "Wie kan volgens artikel 1:3, derde lid, Awb een aanvraag voor een besluit indienen?",
+    "a": [
+      "Een belanghebbende.",
+      "Iedere ingezetene van Nederland.",
+      "Een bestuursorgaan.",
+      "Een advocaat."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:3 lid 3 Awb.\n\nOnder aanvraag wordt verstaan: een verzoek van een belanghebbende, een besluit te nemen. Alleen een belanghebbende kan dus een aanvraag in de zin van de Awb doen."
+  },
+  {
+    "q": "Hoe worden personen genoemd die geen geadresseerde zijn, maar wel belanghebbende bij een besluit?",
+    "a": [
+      "Bezwaarmakers.",
+      "Derde-belanghebbenden.",
+      "Mede-aanvragers.",
+      "Rechtzoekenden."
+    ],
+    "c": 1,
+    "exp": "Algemene rechtsregel.\n\nMensen die geen normadressaat (geadresseerde) zijn, maar wier belang wel rechtstreeks bij het besluit betrokken is, worden aangeduid als derde-belanghebbenden."
+  },
+  {
+    "q": "Is een wettelijke afstandsnorm bepalend voor de vraag of iemand belanghebbende is bij een milieubesluit?",
+    "a": [
+      "Ja, buiten deze afstand is men nooit belanghebbende.",
+      "Ja, maar alleen als dit in de wet expliciet is bepaald.",
+      "Nee, de wettelijke norm is niet bepalend voor belanghebbendheid.",
+      "Nee, tenzij de afstand groter is dan 500 meter."
+    ],
+    "c": 2,
+    "exp": "Jurisprudentie: ABRvS Mestbassin Mechelen.\n\nAls er een wettelijke norm (zoals een afstandseis) wordt gegeven, is deze norm niet bepalend voor de vraag of de betrokkene belanghebbende is. Het gaat om de feitelijke gevolgen van enige betekenis."
+  },
+  {
+    "q": "Wat was in de zaak Zorgcentrum Meerkerk de reden dat appellante toch als belanghebbende werd aangemerkt?",
+    "a": [
+      "Zij had een contractuele relatie met de gemeente.",
+      "Het besluit was direct aan haar gericht.",
+      "Zij behartigde het algemeen belang van de zorgsector.",
+      "Zij had een zelfstandig eigen belang los van de contractuele relatie."
+    ],
+    "c": 3,
+    "exp": "Jurisprudentie: CRvB Zorgcentrum Meerkerk.\n\nOnderzocht moet worden of de derde los van de contractuele relatie een zelfstandig eigen belang heeft. In dit geval werd appellante geraakt in haar vermogenspositie en fundamentele rechten, los van het contract."
+  },
+  {
+    "q": "Wat was de overweging van de Afdeling in de zaak Buurtplatform Randwyck over het optreden van de vereniging?",
+    "a": [
+      "De vereniging bracht een bundeling van individuele belangen tot stand.",
+      "De vereniging had te weinig leden om representatief te zijn.",
+      "De vereniging had geen feitelijke werkzaamheden verricht.",
+      "De vereniging streefde een te algemeen doel na."
+    ],
+    "c": 0,
+    "exp": "Jurisprudentie: ABRvS Buurtplatform Randwyck.\n\nDe vereniging bracht een bundeling van rechtstreeks bij het besluit betrokken individuele belangen tot stand. Hierin kunnen de vereiste feitelijke werkzaamheden besloten worden geacht."
+  },
+  {
+    "q": "Waarom was de statutaire doelstelling in de zaak Stichting Openbare Ruimte problematisch?",
+    "a": [
+      "De doelstelling was niet gericht op het algemeen belang.",
+      "De doelstelling was te veelomvattend en niet onderscheidend.",
+      "De doelstelling was in strijd met de openbare orde.",
+      "De doelstelling was niet schriftelijk vastgelegd."
+    ],
+    "c": 1,
+    "exp": "Jurisprudentie: ABRvS Stichting Openbare Ruimte.\n\nHet statutaire doel van de stichting was te veelomvattend (veehouderijen in geheel Nederland), waardoor het niet onderscheidend was en de stichting het belang niet 'in het bijzonder' behartigde."
+  },
+  {
+    "q": "Wat wordt in de jurisprudentie verstaan onder 'papieren beleid' bij belangenafweging?",
+    "a": [
+      "Beleid dat alleen digitaal beschikbaar is.",
+      "Beleid dat nooit officieel is gepubliceerd.",
+      "Beleid dat wordt aangevoerd maar feitelijk niet wordt nageleefd.",
+      "Beleid dat uitsluitend op papier staat en niet in de wet."
+    ],
+    "c": 2,
+    "exp": "Algemene rechtsregel / Belangenafweging.\n\nMen spreekt van 'papieren beleid' als een bestuursorgaan zich beroept op het gewicht van een algemeen belang, maar er in de praktijk weinig aan doet om dit belang daadwerkelijk te behartigen."
+  },
+  {
+    "q": "Wanneer ontbreken 'gevolgen van enige betekenis' volgens de uitspraak Mestbassin Mechelen?",
+    "a": [
+      "Indien de gevolgen niet meetbaar zijn met apparatuur.",
+      "Indien de gevolgen zich op meer dan 100 meter afstand voordoen.",
+      "Indien de gevolgen door de buren niet worden waargenomen.",
+      "Indien de gevolgen dermate gering zijn dat een persoonlijk belang ontbreekt."
+    ],
+    "c": 3,
+    "exp": "Jurisprudentie: ABRvS Mestbassin Mechelen.\n\nGevolgen van enige betekenis ontbreken indien de gevolgen van de activiteit in de woon-, leef- of bedrijfssituatie van de betrokkene dermate gering zijn dat een persoonlijk belang bij het besluit ontbreekt."
+  },
+  {
+    "q": "Mag een bestuursorgaan in bezwaar en beroep opkomen tegen een besluit van een ander bestuursorgaan?",
+    "a": [
+      "Ja, mits zijn toevertrouwde belangen rechtstreeks zijn betrokken.",
+      "Ja, bestuursorganen hebben altijd toegang tot de bestuursrechter.",
+      "Nee, geschillen tussen overheden worden intern opgelost.",
+      "Nee, tenzij de minister toestemming geeft."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:2 lid 2 Awb.\n\nEen bestuursorgaan kan belanghebbende zijn bij een besluit van een ander bestuursorgaan, voor zover de aan hem toevertrouwde belangen rechtstreeks bij dat besluit zijn betrokken."
+  },
+  {
+    "q": "Welke rol speelt het relativiteitsvereiste in het bestuursrecht?",
+    "a": [
+      "Het beperkt de toegang tot de rechter tot alleen ernstige gevallen.",
+      "Het koppelt de vernietiging van een besluit aan de bescherming van het ingeroepen belang.",
+      "Het vereist dat belanghebbenden familie van elkaar zijn.",
+      "Het zorgt ervoor dat alle belangen even zwaar wegen."
+    ],
+    "c": 1,
+    "exp": "Artikel 8:69a Awb.\n\nHet relativiteitsvereiste houdt in dat de bepaling waarop iemand zich beroept in verband moet staan met zijn daadwerkelijke belang. Als de geschonden norm niet strekt tot bescherming van de belangen van de beroeper, volgt geen vernietiging."
+  }
+]

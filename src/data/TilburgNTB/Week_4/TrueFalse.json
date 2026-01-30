@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Attributie betreft het overdragen van een reeds bestaande bevoegdheid aan een ander bestuursorgaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene wet bestuursrecht / Staatsrechtelijke theorie.\n\nAttributie is het scheppen van een nieuwe, oorspronkelijke (originaire) bevoegdheid en het toekennen daarvan aan een bestuursorgaan, ambtenaar of particulier."
+  },
+  {
+    "q": "Het is mogelijk om een bestuursbevoegdheid te attribueren aan een particulier.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Algemene wet bestuursrecht.\n\nBevoegdheden kunnen worden geattribueerd aan particulieren, zoals bijvoorbeeld garagehouders die een APK-bevoegdheid krijgen toegekend."
+  },
+  {
+    "q": "Voor delegatie is altijd een specifieke wettelijke grondslag vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 10:15 Algemene wet bestuursrecht.\n\nDelegatie kan slechts geschieden indien daarin is voorzien bij wettelijk voorschrift."
+  },
+  {
+    "q": "Een bestuursorgaan mag een bevoegdheid delegeren aan een ondergeschikte ambtenaar.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:14 Algemene wet bestuursrecht.\n\nDelegatie aan ondergeschikten is niet toegestaan. De ratio is dat bij ondergeschiktheid de hiërarchische relatie blijft bestaan, wat niet past bij de aard van delegatie (overdracht van verantwoordelijkheid)."
+  },
+  {
+    "q": "Bij mandaat wordt de bevoegdheid uitgeoefend op naam en onder verantwoordelijkheid van de gemandateerde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:2 Algemene wet bestuursrecht.\n\nEen door de gemandateerde binnen de grenzen van zijn bevoegdheid genomen besluit geldt als een besluit van de mandaatgever. De verantwoordelijkheid blijft bij de mandaatgever."
+  },
+  {
+    "q": "De mandaatgever verliest de bevoegdheid om de gemandateerde bevoegdheid zelf uit te oefenen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:7 Algemene wet bestuursrecht (impliciet) / Artikel 10:1 Awb.\n\nBij mandaat blijft de mandaatgever zelf bevoegd; er vindt geen overdracht van bevoegdheid plaats."
+  },
+  {
+    "q": "De delegans kan de bevoegdheid die hij heeft gedelegeerd niet meer zelf uitoefenen zolang de delegatie van kracht is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 10:17 Algemene wet bestuursrecht.\n\nDe delegans kan de bevoegdheid niet meer zelf uitoefenen, omdat de bevoegdheid (en de verantwoordelijkheid) is overgedragen aan de delegataris."
+  },
+  {
+    "q": "Bij delegatie kan de delegans per individueel geval instructies geven aan de delegataris.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:16 Algemene wet bestuursrecht.\n\nDe delegans kan met betrekking tot de uitoefening van de bevoegdheid uitsluitend beleidsregels vaststellen (algemene instructies), en geen instructies in concrete gevallen geven."
+  },
+  {
+    "q": "Mandaatverlening vereist in beginsel geen specifieke wettelijke grondslag.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 10:3 Algemene wet bestuursrecht.\n\nVoor mandaat is geen wettelijke grondslag vereist, tenzij bij wettelijk voorschrift anders is bepaald of de aard van de bevoegdheid zich tegen mandaat verzet."
+  },
+  {
+    "q": "Het vaststellen van algemeen verbindende voorschriften kan via mandaat worden opgedragen, tenzij bij wet voorzien.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:3 Algemene wet bestuursrecht.\n\nHet mandaat tot het vaststellen van algemeen verbindende voorschriften wordt niet verleend, tenzij bij de verlening van die bevoegdheid in mandatering is voorzien."
+  },
+  {
+    "q": "De term 'kan' in een wettelijke bepaling duidt op de aanwezigheid van beleidsruimte.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bestuursrechtelijke theorie.\n\nEen 'kan-bepaling' impliceert dat het bestuursorgaan de keuzevrijheid heeft om een bevoegdheid al dan niet te gebruiken, wat neerkomt op beleidsruimte."
+  },
+  {
+    "q": "De rechter toetst het gebruik van een discretionaire bevoegdheid terughoudend (marginaal).",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 3:4 Algemene wet bestuursrecht.\n\nBij beleidsruimte (discretionaire bevoegdheid) toetst de rechter terughoudend of het bestuursorgaan in redelijkheid tot het besluit heeft kunnen komen, met inachtneming van de belangenafweging."
+  },
+  {
+    "q": "Beoordelingsruimte heeft betrekking op de vrijheid om aan een bevoegdheid al dan niet toepassing te geven.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bestuursrechtelijke theorie.\n\nBeoordelingsruimte ziet op de interpretatie van vage normen of feiten (de 'als'-vraag), terwijl de vrijheid om al dan niet toepassing te geven aan de bevoegdheid (de 'dan'-vraag) beleidsruimte betreft."
+  },
+  {
+    "q": "Mandaat aan een niet-ondergeschikte vereist de instemming van de gemandateerde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 10:4 Algemene wet bestuursrecht.\n\nMandaatverlening aan een niet-ondergeschikte behoeft de instemming van de gemandateerde en in het voorkomende geval van degene onder wiens verantwoordelijkheid hij werkt."
+  },
+  {
+    "q": "Een ondertekeningsmandaat geeft de bevoegdheid om zelfstandig besluiten te nemen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:11 Algemene wet bestuursrecht.\n\nEen ondertekeningsmandaat betreft enkel de bevoegdheid om besluiten die door het bestuursorgaan zelf zijn genomen, namens dat orgaan te ondertekenen."
+  },
+  {
+    "q": "De terminologie 'bij wet' in de Grondwet sluit delegatie van de bevoegdheid uit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Staatsrechtelijke terminologie (Grondwet).\n\nDe term 'bij wet' betekent dat de formele wetgever het onderwerp zelf moet regelen en dat delegatie niet is toegestaan."
+  },
+  {
+    "q": "Als de Grondwet stelt dat de wet een onderwerp 'regelt', is delegatie toegestaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Staatsrechtelijke terminologie (Grondwet).\n\nDe terminologie 'de wet regelt' of 'de wet stelt regels' impliceert dat delegatie van regelgevende bevoegdheid aan een lager orgaan mogelijk is."
+  },
+  {
+    "q": "Bij attributie ontstaat een hiërarchische verhouding waarin het attribuerende orgaan volledige zeggenschap behoudt over de uitoefening.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene wet bestuursrecht.\n\nAttributie schept een nieuwe, zelfstandige bevoegdheid. Het geattribueerde orgaan oefent deze op eigen gezag uit, tenzij er specifieke wettelijke toezichtsinstrumenten zijn."
+  },
+  {
+    "q": "Een delegans kan de delegatie te allen tijde intrekken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 10:18 Algemene wet bestuursrecht.\n\nDe delegans kan de delegatie te allen tijde intrekken, waardoor de bevoegdheid weer bij de delegans komt te liggen."
+  },
+  {
+    "q": "Het beslissen op een bezwaarschrift mag worden gemandateerd aan degene die het primaire besluit heeft genomen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:3 Algemene wet bestuursrecht.\n\nHet mandaat tot het beslissen op een bezwaarschrift wordt niet verleend aan degene die het primaire besluit krachtens mandaat heeft genomen."
+  },
+  {
+    "q": "Beleidsruimte en beoordelingsruimte kunnen gecombineerd in één wettelijke bepaling voorkomen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bestuursrechtelijke theorie.\n\nEen bepaling kan zowel een vage norm bevatten die interpretatie behoeft (beoordelingsruimte) als de vrijheid geven om bij vervulling van die norm te kiezen voor een rechtsgevolg (beleidsruimte)."
+  },
+  {
+    "q": "Bij een gebonden bevoegdheid heeft het bestuursorgaan geen beleidsvrijheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bestuursrechtelijke theorie.\n\nBij een gebonden bevoegdheid schrijft de wet dwingend voor wat het bestuursorgaan moet beslissen als aan de wettelijke voorwaarden is voldaan; er is geen keuzevrijheid."
+  },
+  {
+    "q": "De uitdrukking 'bij of krachtens de wet' duidt op de mogelijkheid van subdelegatie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Staatsrechtelijke terminologie.\n\n'Krachtens' duidt erop dat de wetgever de mogelijkheid openlaat dat de gedelegeerde regelgever de bevoegdheid verder delegeert (subdelegatie)."
+  },
+  {
+    "q": "Een ambtenaar aan wie bevoegdheid is geattribueerd is niet meer ondergeschikt aan zijn bestuursorgaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Algemene wet bestuursrecht.\n\nAmbtenaren blijven ondergeschikt aan hun bestuursorgaan en kunnen algemene en bijzondere aanwijzingen ontvangen, ook als de bevoegdheid aan de ambtenaar zelf is geattribueerd."
+  },
+  {
+    "q": "De rechter toetst bij beoordelingsruimte of het bestuursorgaan 'in redelijkheid' tot zijn oordeel heeft kunnen komen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bestuursrechtelijke jurisprudentie/theorie.\n\nBij beoordelingsruimte toetst de rechter de vaststelling en kwalificatie van de feiten. De 'in redelijkheid'-toets (marginale toetsing ex art. 3:4 Awb) hoort bij beleidsruimte (belangenafweging)."
+  },
+  {
+    "q": "Attributie geschiedt bij of krachtens de Grondwet of de wet.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Algemene wet bestuursrecht.\n\nAttributie is het toekennen van een bevoegdheid en vindt plaats op basis van de Grondwet of een wet in formele zin."
+  },
+  {
+    "q": "Bij mandaat verschuift de juridische verantwoordelijkheid naar de gemandateerde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:2 Algemene wet bestuursrecht.\n\nDe mandaatgever blijft verantwoordelijk voor de besluiten die in zijn naam worden genomen."
+  },
+  {
+    "q": "Het college van burgemeester en wethouders kan bevoegdheden delegeren aan de burgemeester.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 10:15 Algemene wet bestuursrecht / Gemeentewet.\n\nDelegatie aan andere bestuursorganen is toegestaan mits er een wettelijke grondslag is. De burgemeester is geen ondergeschikte van het college."
+  },
+  {
+    "q": "Een gemandateerde is bevoegd besluiten te nemen die ingaan tegen het beleid van de mandaatgever.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 10:6 Algemene wet bestuursrecht.\n\nDe mandaatgever kan instructies geven; de gemandateerde moet binnen de grenzen van zijn bevoegdheid en de instructies van de mandaatgever blijven."
+  },
+  {
+    "q": "Het vaststellen van beleidsregels is verplicht voor elk bestuursorgaan dat over beleidsruimte beschikt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 4:81 Algemene wet bestuursrecht.\n\nEen bestuursorgaan 'kan' beleidsregels vaststellen; dit is een bevoegdheid, geen algemene verplichting (tenzij een bijzondere wet dit verplicht)."
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Het strafvorderlijk legaliteitsbeginsel in artikel 1 Sv vereist dat strafvordering alleen plaatsvindt op de wijze bij de wet voorzien.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 1 Sv bepaalt dat strafvordering alleen plaatsvindt op de wijze bij de wet voorzien. Dit waarborgt de rechtszekerheid en beschermt burgers tegen willekeurig overheidsoptreden."
+  },
+  {
+    "q": "Voor het aannemen van een 'redelijk vermoeden van schuld' in de zin van artikel 27 Sv is de subjectieve overtuiging van de opsporingsambtenaar voldoende.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Uit jurisprudentie zoals het arrest Hollende man van kleur blijkt dat een verdenking gebaseerd moet zijn op objectiveerbare feiten en omstandigheden, niet enkel op een subjectief gevoel of intuïtie."
+  },
+  {
+    "q": "In het arrest Hollende man van kleur oordeelde de rechter dat het wegrennen voor de politie op zichzelf voldoende is voor een redelijk vermoeden van schuld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Het enkele feit dat iemand wegrent bij het zien van politie, zelfs in een bepaalde buurt, levert zonder bijkomende concrete omstandigheden geen redelijk vermoeden van schuld op in de zin van artikel 27 Sv."
+  },
+  {
+    "q": "Bij een ontdekking op heterdaad is iedere burger bevoegd om de verdachte aan te houden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 53 lid 1 Sv bepaalt dat in geval van ontdekking op heterdaad eenieder bevoegd is de verdachte aan te houden."
+  },
+  {
+    "q": "Het dwangmiddel 'staande houden' heeft als enig doel het vaststellen van de identiteit van de verdachte.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 52 Sv beperkt de bevoegdheid tot staande houden expliciet tot het vragen naar de personalia van de verdachte (naam, adres, etc.)."
+  },
+  {
+    "q": "Een opsporingsambtenaar mag een burger staande houden om hem te verhoren over zijn betrokkenheid bij een strafbaar feit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Staande houden (art. 52 Sv) is uitsluitend bedoeld voor identiteitsvaststelling. Voor verhoor moet de verdachte worden aangehouden of vrijwillig meewerken."
+  },
+  {
+    "q": "De termijn voor het ophouden voor onderzoek bedraagt maximaal negen uur.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 61 Sv stelt dat de verdachte ten hoogste zes uur kan worden opgehouden voor onderzoek, waarbij de tijd tussen middernacht en negen uur 's ochtends niet meetelt."
+  },
+  {
+    "q": "De termijn van zes uur voor het ophouden voor onderzoek begint te lopen op het moment van de daadwerkelijke aanhouding op straat.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De termijn vangt aan op het moment dat de verdachte op de plaats van verhoor (het bureau) aankomt of het bevel daartoe is gegeven, niet direct bij de aanhouding op straat."
+  },
+  {
+    "q": "Een bevel tot inverzekeringstelling kan worden gegeven door een hulpofficier van justitie.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 57 Sv geeft de (hulp)officier van justitie de bevoegdheid om een verdachte in het belang van het onderzoek in verzekering te stellen."
+  },
+  {
+    "q": "De maximale duur van de inverzekeringstelling, inclusief verlenging, is zes dagen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 58 Sv bepaalt dat de inverzekeringstelling maximaal drie dagen duurt en eenmalig met drie dagen kan worden verlengd in geval van dringende noodzaak."
+  },
+  {
+    "q": "Voor de toepassing van voorlopige hechtenis is slechts een redelijk vermoeden van schuld vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 67 lid 3 Sv eist voor een bevel tot voorlopige hechtenis dat er sprake is van 'ernstige bezwaren' tegen de verdachte, wat een zwaardere verdenking is dan een redelijk vermoeden."
+  },
+  {
+    "q": "Het bevel tot bewaring, als eerste fase van de voorlopige hechtenis, wordt gegeven door de Rechter-Commissaris.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 63 lid 1 Sv bepaalt dat het bevel tot bewaring wordt verleend door de rechter-commissaris op vordering van de officier van justitie."
+  },
+  {
+    "q": "Volgens het arrest Braak bij binnentreden ontslaat een formele bevoegdheid tot binnentreden de politie van de plicht om proportionaliteit en subsidiariteit in acht te nemen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Hoge Raad oordeelde juist dat zelfs bij een formele bevoegdheid de beginselen van proportionaliteit en subsidiariteit (zoals eerst aanbellen alvorens te forceren) in acht moeten worden genomen."
+  },
+  {
+    "q": "De cautie moet worden gegeven zodra een opsporingsambtenaar een burger op straat aanspreekt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 29 lid 2 Sv en het arrest Plastic boodschappentasje bepalen dat de cautie pas verplicht is voorafgaand aan een verhoor van een persoon die als verdachte is aangemerkt."
+  },
+  {
+    "q": "In het arrest Plastic boodschappentasje oordeelde de Hoge Raad dat de cautieplicht pas ontstond nadat de verdachte zichzelf had belast door te antwoorden dat hij de boeken had gestolen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De Hoge Raad stelde dat er vóór het belastende antwoord nog geen sprake was van een redelijk vermoeden van schuld (verdachte), waardoor er nog geen verhoorsituatie was die de cautie vereiste."
+  },
+  {
+    "q": "Een enkele vraag van de politie aan een aangehouden verdachte over de aanwezigheid van een hennepkwekerij kwalificeert als een verhoor.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In het arrest Verhoor over hennepkwekerij oordeelde de Hoge Raad dat vragen over de betrokkenheid bij een strafbaar feit aan een aangehouden verdachte als verhoor gelden, waarvoor cautie en consultatierecht gelden."
+  },
+  {
+    "q": "Het anticipatiegebod bij voorlopige hechtenis houdt in dat de hechtenis niet langer mag duren dan de te verwachten vrijheidsstraf.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 67a lid 3 Sv bepaalt dat een bevel tot voorlopige hechtenis achterwege blijft of wordt opgeheven als ernstig rekening moet worden gehouden met de mogelijkheid dat de straf korter zal zijn dan de duur van de hechtenis."
+  },
+  {
+    "q": "Bij het beoordelen van een redelijk vermoeden van schuld mag de politie-ervaring met betrekking tot een specifieke locatie, zoals in het arrest Zeedijk, geen rol spelen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In het arrest Zeedijk/Damrak oordeelde de Hoge Raad dat de bekendheid van de politie met de locatie als drugshandelplaats en hun ervaring mochten meewegen bij het vaststellen van een verdenking."
+  },
+  {
+    "q": "Inbeslagneming is alleen toegestaan met betrekking tot voorwerpen die verboden zijn om te bezitten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 94 Sv bepaalt dat inbeslagneming ook mogelijk is voor de waarheidsvinding, dus ook legale voorwerpen die als bewijs kunnen dienen, zijn vatbaar voor inbeslagneming."
+  },
+  {
+    "q": "Het onderzoek aan de kleding van een staande gehouden verdachte is toegestaan indien dit noodzakelijk is voor de vaststelling van de identiteit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 55b Sv geeft de bevoegdheid om een staande gehouden verdachte aan de kleding te onderzoeken ter vaststelling van de identiteit."
+  },
+  {
+    "q": "Het bevel tot gevangenhouding is maximaal negentig dagen geldig.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 66 lid 1 Sv bepaalt dat het bevel tot gevangenhouding van kracht is voor een door de rechtbank te bepalen termijn van ten hoogste negentig dagen."
+  },
+  {
+    "q": "De Rechter-Commissaris heeft geen toezichthoudende rol in het voorbereidend onderzoek.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 170 Sv bepaalt juist dat de Rechter-Commissaris is belast met toezichthoudende bevoegdheden ten aanzien van het opsporingsonderzoek."
+  },
+  {
+    "q": "Een verdachte heeft pas recht op rechtsbijstand (consultatierecht) nadat de inverzekeringstelling is bevolen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Uit de Salduz-jurisprudentie en artikel 28c Sv volgt dat een aangehouden verdachte recht heeft op consultatiebijstand voorafgaand aan het eerste politieverhoor."
+  },
+  {
+    "q": "Voorlopige hechtenis is toegestaan bij verdenking van elk misdrijf.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 67 lid 1 Sv beperkt voorlopige hechtenis tot misdrijven waarop een gevangenisstraf van vier jaar of meer staat, en enkele specifiek aangewezen misdrijven."
+  },
+  {
+    "q": "De officier van justitie is bevoegd om een woning te doorzoeken ter inbeslagneming zonder machtiging van de Rechter-Commissaris, mits er sprake is van heterdaad.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 96 Sv (lid 1 en 2) geeft bij ontdekking op heterdaad de opsporingsambtenaar (en dus ook de OvJ) de bevoegdheid elke plaats te betreden en te doorzoeken ter inbeslagneming, behoudens een woning zonder toestemming bewoner (dan is machtiging nodig, tenzij art 97 Sv spoed)."
+  },
+  {
+    "q": "Een bevel tot inverzekeringstelling mag mondeling worden gegeven.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 59 Sv vereist dat het bevel tot inverzekeringstelling schriftelijk is en aan de verdachte wordt uitgereikt (of medegedeeld)."
+  },
+  {
+    "q": "Volgens artikel 27 lid 1 Sv moet een redelijk vermoeden van schuld voortvloeien uit feiten of omstandigheden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 27 lid 1 Sv definieert de verdachte als degene te wiens aanzien uit feiten of omstandigheden een redelijk vermoeden van schuld aan een strafbaar feit voortvloeit."
+  },
+  {
+    "q": "Het nemo-teneturbeginsel houdt in dat een verdachte niet gedwongen mag worden om mee te werken aan zijn eigen veroordeling.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Dit beginsel, verankerd in artikel 6 EVRM en artikel 29 Sv (zwijgrecht), beschermt de verdachte tegen gedwongen zelfincriminatie."
+  },
+  {
+    "q": "De rechter toetst bij de vraag naar de rechtmatigheid van dwangmiddelen ook aan de beginselen van een goede procesorde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Naast de wettelijke vereisten (wetmatigheid) toetst de rechter of de toepassing voldoet aan ongeschreven rechtsbeginselen zoals proportionaliteit en subsidiariteit (rechtmatigheid), zoals bevestigd in het arrest Braak bij binnentreden."
+  },
+  {
+    "q": "Een burgeraanhouding is onrechtmatig als achteraf blijkt dat er geen sprake was van een strafbaar feit, ook al dacht de burger te goeder trouw van wel.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Bij een burgeraanhouding op heterdaad is de aanhouding rechtmatig als er sprake is van een redelijk vermoeden van een strafbaar feit op dat moment; achteraf onschuld maakt de aanhouding niet met terugwerkende kracht onrechtmatig."
+  }
+]

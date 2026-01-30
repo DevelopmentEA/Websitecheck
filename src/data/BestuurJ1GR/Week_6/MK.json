@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Wat is volgens de Algemene wet bestuursrecht de definitie van een besluit?",
+    "a": [
+      "Een schriftelijke beslissing van een bestuursorgaan die een privaatrechtelijke rechtshandeling inhoudt.",
+      "Een mondelinge of schriftelijke beslissing van een bestuursorgaan met een publiekrechtelijk rechtsgevolg.",
+      "Een schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling.",
+      "Een beslissing van een bestuursorgaan die gericht is op het scheppen van een feitelijk gevolg voor de burger."
+    ],
+    "c": 2,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nEen besluit is een schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling. Mondelinge beslissingen of privaatrechtelijke handelingen vallen niet onder deze definitie."
+  },
+  {
+    "q": "Welk element is noodzakelijk om te kunnen spreken van een 'rechtshandeling' in de zin van het besluitbegrip?",
+    "a": [
+      "De handeling is gericht op een rechtsgevolg.",
+      "De handeling is gericht op een feitelijk gevolg.",
+      "De handeling is van algemene strekking.",
+      "De handeling is gebaseerd op beleidsregels."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nEen rechtshandeling is een handeling die is gericht op een rechtsgevolg. Dit betekent dat de handeling beoogt een verandering in de rechten of plichten van een rechtssubject teweeg te brengen, in tegenstelling tot een feitelijke handeling."
+  },
+  {
+    "q": "In welke situatie kwalificeert een bestuurlijke waarschuwing als een besluit in de zin van de Awb?",
+    "a": [
+      "Wanneer de waarschuwing uitsluitend een informerend karakter heeft over geldende regels.",
+      "Wanneer de waarschuwing een essentieel en onlosmakelijk onderdeel is van een wettelijk sanctieregime.",
+      "Wanneer de waarschuwing mondeling wordt gegeven door een toezichthouder tijdens een inspectie.",
+      "Wanneer de waarschuwing wordt gegeven zonder dat deze is gebaseerd op een wettelijk voorschrift."
+    ],
+    "c": 1,
+    "exp": "ABRvS Bestuurlijke waarschuwing.\n\nEen bestuurlijke waarschuwing is een besluit als deze is gebaseerd op een wettelijk voorschrift en een voorwaarde is om bij een volgende overtreding een sanctie op te leggen. Zij is dan een essentieel en onlosmakelijk onderdeel van een sanctieregime."
+  },
+  {
+    "q": "Wat is het kenmerkende onderscheid tussen een algemeen verbindend voorschrift (avv) en een beleidsregel?",
+    "a": [
+      "Een avv bevat een zelfstandige normstelling en een beleidsregel niet.",
+      "Een beleidsregel is bindend voor burgers en een avv bindt alleen het bestuur.",
+      "Een avv hoeft niet schriftelijk te zijn vastgesteld en een beleidsregel wel.",
+      "Een beleidsregel is gebaseerd op een wetgevende bevoegdheid en een avv niet."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:3 lid 4 Awb.\n\nEen algemeen verbindend voorschrift bevat een zelfstandige normstelling en bindt burgers rechtstreeks. Een beleidsregel geeft invulling aan een bestaande bevoegdheid (belangenafweging, feitenvaststelling of wetsuitleg) en bindt in beginsel alleen het bestuursorgaan zelf."
+  },
+  {
+    "q": "Is een beslissing tot afwijzing van een aanvraag van een beschikking een besluit in de zin van de Awb?",
+    "a": [
+      "Nee, want een afwijzing brengt geen wijziging in de rechtspositie en is dus geen rechtshandeling.",
+      "Ja, want de wet stelt de afwijzing van een aanvraag van een beschikking gelijk met een beschikking.",
+      "Nee, tenzij de afwijzing schriftelijk is gedaan en afkomstig is van een a-bestuursorgaan.",
+      "Ja, maar alleen als de afwijzing betrekking heeft op een persoonsgerichte beschikking."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 2 Awb.\n\nOnder een beschikking wordt verstaan: een besluit dat niet van algemene strekking is, met inbegrip van de afwijzing van een aanvraag daarvan. De afwijzing wordt dus wettelijk gelijkgesteld met een besluit."
+  },
+  {
+    "q": "Hoe kwalificeert de Afdeling bestuursrechtspraak in de regel een gedoogbeslissing?",
+    "a": [
+      "Als een beschikking waartegen altijd bezwaar en beroep openstaat.",
+      "Als een begunstigende beslissing die gelijkstaat aan een vergunning.",
+      "Als een weigering om handhavend op te treden, die geen besluit is.",
+      "Als een beleidsregel omtrent de vaststelling van feiten."
+    ],
+    "c": 2,
+    "exp": "ABRvS Gedoogde Hoogeloonse Stal.\n\nGedoogbeslissingen zijn in beginsel geen besluiten omdat deze niet op rechtsgevolg zijn gericht. Een beslissing om niet tot handhaving over te gaan berust niet op een zelfstandige bevoegdheid."
+  },
+  {
+    "q": "Wanneer kan een bestuurlijk rechtsoordeel bij uitzondering worden aangemerkt als een besluit?",
+    "a": [
+      "Als het rechtsoordeel door een minister is ondertekend.",
+      "Als het bestuurlijk rechtsoordeel schriftelijk is vastgelegd.",
+      "Als het voor de betrokkene onevenredig bezwarend is om een daadwerkelijk besluit uit te lokken.",
+      "Als het rechtsoordeel betrekking heeft op een financieel belang van meer dan 5000 euro."
+    ],
+    "c": 2,
+    "exp": "ABRvS De Deense Zeevervoerder.\n\nEen bestuurlijk rechtsoordeel is in beginsel geen besluit. Dit is slechts anders indien het voor de betrokkene onevenredig bezwarend is om het geschil via een beroepsprocedure over een daadwerkelijk besluit (zoals handhaving) aan de orde te stellen."
+  },
+  {
+    "q": "Wat wordt verstaan onder een concretiserend besluit van algemene strekking (c.b.a.s.)?",
+    "a": [
+      "Een besluit dat een zelfstandige normstelling bevat en algemeen verbindend is.",
+      "Een besluit dat de werkingssfeer van een bestaand algemeen verbindend voorschrift naar tijd of plaats bepaalt.",
+      "Een besluit dat zich richt tot één specifiek persoon of een gesloten groep personen.",
+      "Een besluit dat uitsluitend regels geeft over de interne werkwijze van het bestuursorgaan."
+    ],
+    "c": 1,
+    "exp": "ABRvS Aanwijzingsbesluit Zijkanaal D.\n\nEen concretiserend besluit van algemene strekking bepaalt het toepassingsbereik (naar tijd, plaats of object) van een bestaande norm uit een algemeen verbindend voorschrift, zonder zelf een nieuwe zelfstandige norm toe te voegen."
+  },
+  {
+    "q": "Welke bepaling in de Awb regelt de bevoegdheid tot het vaststellen van beleidsregels?",
+    "a": [
+      "Artikel 4:81 Awb.",
+      "Artikel 3:4 Awb.",
+      "Artikel 1:3 lid 4 Awb.",
+      "Artikel 10:1 Awb."
+    ],
+    "c": 0,
+    "exp": "Artikel 4:81 Awb.\n\nEen bestuursorgaan kan beleidsregels vaststellen met betrekking tot een hem toekomende of onder zijn verantwoordelijkheid uitgeoefende, dan wel door hem gedelegeerde bevoegdheid."
+  },
+  {
+    "q": "Is de weigering van een bestuursorgaan om een algemeen verbindend voorschrift (avv) vast te stellen een besluit waartegen beroep openstaat?",
+    "a": [
+      "Ja, dit is een besluit in de zin van artikel 1:3 lid 1 Awb.",
+      "Ja, dit wordt gelijkgesteld met een besluit op grond van artikel 6:2 Awb.",
+      "Nee, want tegen een avv zelf staat ook geen beroep open op grond van artikel 8:3 Awb.",
+      "Nee, tenzij de weigering afkomstig is van een zelfstandig bestuursorgaan."
+    ],
+    "c": 2,
+    "exp": "Artikel 8:3 Awb jo. Artikel 1:3 lid 2 Awb.\n\nEr staat geen beroep open tegen een algemeen verbindend voorschrift. De weigering om een avv vast te stellen is geen beschikking (want algemene strekking) en deelt in het rechtsbeschermingsregime van het avv zelf."
+  },
+  {
+    "q": "Welk type besluit is een beslissing die de juridische status van een object bepaalt, zoals de aanwijzing van een pand als monument?",
+    "a": [
+      "Een algemeen verbindend voorschrift.",
+      "Een persoonsgerichte beschikking.",
+      "Een zaaksgerichte beschikking.",
+      "Een beleidsregel."
+    ],
+    "c": 2,
+    "exp": "Artikel 1:3 lid 2 Awb.\n\nEen zaaksgerichte beschikking bepaalt de juridische status van een object op grond van zijn eigenschappen of hoedanigheden. Hoewel het rechtsgevolgen heeft voor personen, is de kwaliteit van de zaak bepalend."
+  },
+  {
+    "q": "Wat is het rechtsgevolg van het niet tijdig nemen van een besluit op aanvraag volgens de Awb?",
+    "a": [
+      "Het niet tijdig beslissen wordt voor de mogelijkheid van beroep gelijkgesteld met een besluit.",
+      "Het niet tijdig beslissen leidt automatisch tot een toewijzing van de aanvraag in alle gevallen.",
+      "Het niet tijdig beslissen maakt het bestuursorgaan strafrechtelijk aansprakelijk.",
+      "Het niet tijdig beslissen betekent dat de aanvraag als niet ingediend wordt beschouwd."
+    ],
+    "c": 0,
+    "exp": "Artikel 6:2 aanhef en onder b Awb.\n\nVoor de toepassing van wettelijke voorschriften over bezwaar en beroep wordt het niet tijdig nemen van een besluit met een besluit gelijkgesteld."
+  },
+  {
+    "q": "Kan een privaatrechtelijke rechtshandeling van een bestuursorgaan, zoals het kopen van pennen, worden aangemerkt als een besluit?",
+    "a": [
+      "Nee, want een besluit vereist een publiekrechtelijke rechtshandeling.",
+      "Ja, want het is een schriftelijke beslissing van een bestuursorgaan.",
+      "Ja, indien de aankoop wordt gedaan ten behoeve van een publieke taak.",
+      "Nee, tenzij de aankoop is gebaseerd op een wettelijk voorschrift."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nDe definitie van een besluit vereist een publiekrechtelijke rechtshandeling. Privaatrechtelijke handelingen, zoals het sluiten van een koopovereenkomst, vallen hierbuiten."
+  },
+  {
+    "q": "Wat houdt het vereiste van 'externe werking' bij een besluit in?",
+    "a": [
+      "De beslissing moet schriftelijk aan de burger worden medegedeeld.",
+      "De beslissing moet gevolgen hebben buiten de organisatie van het bestuursorgaan.",
+      "De beslissing moet zijn gepubliceerd in de Staatscourant of het Gemeenteblad.",
+      "De beslissing moet afkomstig zijn van een extern adviesorgaan."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nEen besluit moet gericht zijn op rechtsgevolg. Dit impliceert dat de beslissing effect moet hebben op de rechtspositie van subjecten buiten de interne organisatie van het bestuursorgaan (externe werking)."
+  },
+  {
+    "q": "Welk van de volgende handelingen is een feitelijke handeling en geen rechtshandeling?",
+    "a": [
+      "Het verlenen van een omgevingsvergunning.",
+      "Het feitelijk plaatsen van een verkeersbord.",
+      "Het vaststellen van een bestemmingsplan.",
+      "Het opleggen van een bestuurlijke boete."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nHet feitelijk plaatsen van een bord is een feitelijke handeling ter uitvoering van een besluit (het verkeersbesluit). De plaatsing zelf beoogt geen wijziging in de juridische status, maar is de feitelijke effectuering."
+  },
+  {
+    "q": "Onder welke categorie valt een besluit dat het toepassingsbereik van een algemeen verbindend voorschrift bepaalt door concrete plaatsen aan te wijzen, zonder de norm te wijzigen?",
+    "a": [
+      "Concretiserend besluit van algemene strekking.",
+      "Algemeen verbindend voorschrift.",
+      "Persoonsgerichte beschikking.",
+      "Beleidsregel."
+    ],
+    "c": 0,
+    "exp": "ABRvS Aanwijzingsbesluit Zijkanaal D.\n\nIndien in de verordening zelf geen gebied is aangewezen, maar aanwijzing geschiedt bij nader besluit dat slechts het toepassingsbereik bepaalt zonder de norm te wijzigen, is sprake van een concretiserend besluit van algemene strekking."
+  },
+  {
+    "q": "Wat wordt verstaan onder een 'rechtsvastleggend besluit'?",
+    "a": [
+      "Een besluit waarmee een bestuursorgaan een nieuwe bevoegdheid in het leven roept.",
+      "Een besluit waarmee een bestuursorgaan bindend vaststelt wat in een concreet geval rechtens is.",
+      "Een besluit dat uitsluitend een feitelijke mededeling bevat zonder juridische status.",
+      "Een besluit waarmee een privaatrechtelijke overeenkomst wordt vastgelegd."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nBij een rechtsvastleggend besluit (declaratoir besluit) stelt het bestuursorgaan bindend vast dat een bepaald rechtsgevolg van rechtswege is ingetreden of wat de juridische status van een persoon of zaak is."
+  },
+  {
+    "q": "Is een mededeling van een bestuursorgaan dat een bepaalde subsidieaanvraag waarschijnlijk zal worden afgewezen een besluit?",
+    "a": [
+      "Ja, dit is een voorbereidingsbesluit in de zin van de Awb.",
+      "Nee, dit is een informatieve mededeling zonder beoogd rechtsgevolg.",
+      "Ja, want de mededeling is schriftelijk en afkomstig van een bestuursorgaan.",
+      "Nee, tenzij de mededeling de vorm heeft van een officiële brief."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nEen mededeling over een waarschijnlijke toekomstige beslissing is niet gericht op een direct rechtsgevolg (wijziging van de rechtspositie) en is daarom geen besluit."
+  },
+  {
+    "q": "Wat is kenmerkend voor een beleidsregel in de zin van artikel 1:3 lid 4 Awb?",
+    "a": [
+      "Het is een algemene regel, vastgesteld bij besluit, over de uitoefening van een bevoegdheid.",
+      "Het is een regel die zelfstandig rechten en plichten voor burgers in het leven roept.",
+      "Het is een besluit dat zich richt tot één specifiek persoon of zaak.",
+      "Het is een regel die altijd gebaseerd moet zijn op een formele wet."
+    ],
+    "c": 0,
+    "exp": "Artikel 1:3 lid 4 Awb.\n\nEen beleidsregel is een bij besluit vastgestelde algemene regel, niet zijnde een algemeen verbindend voorschrift, omtrent de afweging van belangen, de vaststelling van feiten of de uitleg van wettelijke voorschriften bij het gebruik van een bevoegdheid."
+  },
+  {
+    "q": "Welke bevoegdheid wordt door een bestuursorgaan gebruikt bij het vaststellen van een algemeen verbindend voorschrift (avv)?",
+    "a": [
+      "Een bevoegdheid ontleend aan artikel 4:81 Awb.",
+      "Een discretionaire bevoegdheid tot feitelijk handelen.",
+      "Een wetgevende bevoegdheid ontleend aan Grondwet of wet.",
+      "Een privaatrechtelijke bevoegdheid uit het Burgerlijk Wetboek."
+    ],
+    "c": 2,
+    "exp": "Grondwet / Wet in formele zin.\n\nEen algemeen verbindend voorschrift kan slechts worden vastgesteld krachtens een specifiek daartoe strekkende wetgevende bevoegdheid die direct of indirect is ontleend aan de Grondwet of een wet in formele zin."
+  },
+  {
+    "q": "Mag een bestuursorgaan afwijken van een zelf vastgestelde beleidsregel?",
+    "a": [
+      "Nee, beleidsregels zijn bindend en er mag nooit van worden afgeweken.",
+      "Ja, mits de afwijking gunstig is voor de belanghebbende.",
+      "Ja, indien handelen overeenkomstig de beleidsregel gevolgen heeft die onevenredig zijn in verhouding tot de doelen.",
+      "Nee, tenzij de beleidsregel door een hoger bestuursorgaan is ingetrokken."
+    ],
+    "c": 2,
+    "exp": "Artikel 4:84 Awb.\n\nHet bestuursorgaan handelt overeenkomstig de beleidsregel, tenzij dat voor een of meer belanghebbenden gevolgen zou hebben die wegens bijzondere omstandigheden onevenredig zijn in verhouding tot de met de beleidsregel te dienen doelen."
+  },
+  {
+    "q": "Wat houdt de 'schriftelijkheidseis' van artikel 1:3 lid 1 Awb in?",
+    "a": [
+      "Dat het besluit op papier moet zijn gedrukt en per post verzonden.",
+      "Dat het besluit schriftelijk of langs elektronische weg is vastgelegd.",
+      "Dat het besluit mondeling is genomen en later op schrift is gesteld.",
+      "Dat het besluit is gepubliceerd in een dagblad."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nHet vereiste 'schriftelijk' omvat ook besluiten die langs elektronische weg (digitaal) zijn vastgelegd en bekendgemaakt, mits aan de vereisten voor elektronisch bestuurlijk verkeer is voldaan."
+  },
+  {
+    "q": "Is een afwijzing van een aanvraag om een algemeen verbindend voorschrift vast te stellen een beschikking?",
+    "a": [
+      "Ja, want het is een weigering op een aanvraag.",
+      "Nee, want een beschikking is een besluit dat niet van algemene strekking is.",
+      "Ja, op grond van de beperkte gelijkstelling in artikel 6:2 Awb.",
+      "Nee, tenzij de aanvrager een direct belanghebbende is."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 2 Awb.\n\nEen beschikking is een besluit niet van algemene strekking. Een avv is een besluit van algemene strekking. De weigering om een avv vast te stellen is daarom geen beschikking, omdat het object van de weigering (het avv) van algemene strekking is."
+  },
+  {
+    "q": "Kan een plan, zoals een bestemmingsplan, worden aangemerkt als een besluit in de zin van de Awb?",
+    "a": [
+      "Nee, plannen zijn uitsluitend beleidsvoornemens zonder juridische status.",
+      "Ja, indien het plan gericht is op rechtsgevolg en een publiekrechtelijke grondslag heeft.",
+      "Nee, want plannen zijn altijd feitelijke handelingen.",
+      "Ja, maar alleen als het plan door de minister is vastgesteld."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nEen plan kan een besluit zijn als het voldoet aan de besluitkenmerken: schriftelijk, bestuursorgaan, en gericht op rechtsgevolg. Als een plan bindende regels bevat, kan het zelfs een avv zijn; als het concrete bestemmingen aanwijst, een bundle van beschikkingen of c.b.a.s."
+  },
+  {
+    "q": "Is een convenant tussen de overheid en een bedrijf een besluit in de zin van de Awb?",
+    "a": [
+      "Ja, want het is een schriftelijke afspraak met een bestuursorgaan.",
+      "Nee, een convenant is een overeenkomst en geen eenzijdige publiekrechtelijke rechtshandeling.",
+      "Ja, omdat het convenant publieke belangen behartigt.",
+      "Nee, tenzij het convenant als beleidsregel wordt gepubliceerd."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nEen besluit is een eenzijdige rechtshandeling. Een convenant is gebaseerd op wilsovereenstemming (meerzijdig) en kwalificeert als een overeenkomst, niet als een besluit."
+  },
+  {
+    "q": "Wat is het gevolg van het kwalificeren van een beslissing als 'zaaksgericht' in plaats van 'persoonsgericht'?",
+    "a": [
+      "Voor een zaaksgericht besluit geldt geen beroepsmogelijkheid.",
+      "Een zaaksgericht besluit wordt op een andere wijze bekendgemaakt (algemene bekendmaking).",
+      "Een zaaksgericht besluit heeft geen rechtsgevolgen voor personen.",
+      "Een zaaksgericht besluit kan niet worden ingetrokken."
+    ],
+    "c": 1,
+    "exp": "Artikel 3:42 Awb.\n\nEen zaaksgerichte beschikking richt zich niet tot één persoon maar tot de zaak. Dit heeft gevolgen voor de bekendmaking: deze geschiedt niet door toezending (3:41 Awb) maar door openbare kennisgeving/terinzagelegging (3:42 Awb)."
+  },
+  {
+    "q": "Welke eis stelt artikel 1:3 lid 3 Awb aan een 'aanvraag'?",
+    "a": [
+      "De aanvraag moet worden gedaan door een advocaat.",
+      "De aanvraag moet betrekking hebben op een subsidie.",
+      "De aanvraag moet een verzoek zijn van een belanghebbende.",
+      "De aanvraag moet binnen twee weken worden ingediend."
+    ],
+    "c": 2,
+    "exp": "Artikel 1:3 lid 3 Awb.\n\nOnder aanvraag wordt verstaan: een verzoek van een belanghebbende, een besluit te nemen. Een verzoek van een niet-belanghebbende is dus geen aanvraag in de zin van de Awb."
+  },
+  {
+    "q": "Is een mondelinge aanzegging van bestuursdwang een besluit?",
+    "a": [
+      "Ja, dit is altijd een besluit omdat het rechtsgevolg heeft.",
+      "Nee, want een besluit moet schriftelijk zijn.",
+      "Ja, maar alleen in spoedeisende gevallen waarin schriftelijke vastlegging later volgt.",
+      "Nee, dit is een feitelijke handeling."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nDe definitie van besluit vereist schriftelijkheid. Een mondelinge aanzegging voldoet niet aan de definitie. Wel kan in spoedeisende gevallen achteraf op schrift worden gesteld (art. 5:31 lid 2 Awb), maar de mondelinge actie zelf voldoet strikt genomen niet aan 1:3 lid 1."
+  },
+  {
+    "q": "Wat wordt in de Awb verstaan onder een 'bevoegdhedenovereenkomst'?",
+    "a": [
+      "Een overeenkomst waarbij een bestuursorgaan afspraken maakt over de uitoefening van een publiekrechtelijke bevoegdheid.",
+      "Een overeenkomst waarbij een bestuursorgaan bevoegdheden overdraagt aan een ander orgaan (delegatie).",
+      "Een overeenkomst tussen twee burgers over publiekrechtelijke rechten.",
+      "Een overeenkomst die de bevoegdheid van de rechter beperkt."
+    ],
+    "c": 0,
+    "exp": "Jurisprudentie / Doctrine.\n\nEen bevoegdhedenovereenkomst is een overeenkomst waarin een bestuursorgaan afspraken maakt over de wijze waarop het een hem toekomende publiekrechtelijke bevoegdheid (waarbij beleidsvrijheid bestaat) zal uitoefenen."
+  },
+  {
+    "q": "Wanneer is er sprake van een 'publiekrechtelijke' rechtshandeling bij de definitie van een besluit?",
+    "a": [
+      "Als de handeling wordt verricht door een orgaan dat door de overheid wordt gefinancierd.",
+      "Als de bevoegdheid tot het verrichten van de handeling exclusief bij het bestuursorgaan berust.",
+      "Als de handeling het algemeen belang dient.",
+      "Als de handeling schriftelijk is vastgelegd in een wet."
+    ],
+    "c": 1,
+    "exp": "Artikel 1:3 lid 1 Awb.\n\nEen rechtshandeling is publiekrechtelijk als deze is gebaseerd op een publiekrechtelijke bevoegdheid. Dit kenmerkt zich doordat de bevoegdheid exclusief is toegekend aan het openbaar gezag en niet toekomt aan eenieder (zoals bij privaatrechtelijke handelingen)."
+  }
+]

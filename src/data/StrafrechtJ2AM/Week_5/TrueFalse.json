@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Voor de kwalificatie medeplegen is volgens de Hoge Raad in het arrest Containerdiefstal vereist dat de verdachte fysiek aanwezig is op de plaats van het delict.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Uit het arrest Containerdiefstal blijkt dat lijfelijke aanwezigheid niet vereist is voor medeplegen, mits de samenwerking met de uitvoerders zodanig volledig en nauw is geweest dat van medeplegen gesproken kan worden."
+  },
+  {
+    "q": "Bij de deelnemingsvorm 'doen plegen' is de feitelijke uitvoerder van het strafbare feit zelf niet strafbaar.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij doen plegen wordt de feitelijke uitvoerder (de onmiddellijke dader) gezien als een willoos werktuig en is deze straffeloos. De achterman (de middellijke dader) is degene die strafbaar is."
+  },
+  {
+    "q": "Het louter aanwezig zijn bij en zich niet distantiëren van een strafbaar feit is volgens de Hoge Raad in het arrest Vlinderbom voldoende om medeplegen aan te nemen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In het arrest Vlinderbom oordeelde de Hoge Raad dat het enkel aanwezig zijn, instemmen met en zich niet distantiëren onvoldoende is voor de nauwe en bewuste samenwerking die vereist is voor medeplegen."
+  },
+  {
+    "q": "Deelneming aan een strafbaar feit vereist in beginsel dubbel opzet: opzet op de deelnemingshandeling en opzet op het gronddelict.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Voor alle deelnemingsvormen geldt dat er in beginsel sprake moet zijn van dubbel opzet: de deelnemer moet opzet hebben op de totstandkoming van het gronddelict én opzet hebben op zijn eigen bijdrage (de deelnemingsgedraging)."
+  },
+  {
+    "q": "Medeplichtigheid tot een misdrijf (consecutieve medeplichtigheid) kan alleen worden gepleegd door het verschaffen van gelegenheid, middelen of inlichtingen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De wet onderscheidt twee vormen: medeplichtigheid 'bij' (behulpzaam zijn) en medeplichtigheid 'tot'. Voor medeplichtigheid 'tot' (voorafgaand) eist de wet specifiek het verschaffen van gelegenheid, middelen of inlichtingen."
+  },
+  {
+    "q": "In het arrest Nijmeegse scooter oordeelde de Hoge Raad dat gevaarlijk rijgedrag tijdens een vlucht niet kon worden toegerekend aan de medeplegers van de daaraan voorafgaande overval.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Hoge Raad oordeelde juist dat in het plan van de overval ook een eventuele vlucht met gevaarlijk rijgedrag besloten lag, waardoor de nauwe en bewuste samenwerking zich ook tot de vlucht en het dodelijke ongeval uitstrekte."
+  },
+  {
+    "q": "Een uitlokker is volgens de wet ook aansprakelijk voor de gevolgen van het strafbare feit, zelfs als zijn opzet niet specifiek op die gevolgen was gericht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De uitlokker (en medeplichtige) is ook aansprakelijk voor de gevolgen van het strafbare feit zonder dat hun opzet op die gevolgen hoeft te zijn gericht, mits er voldoende verband bestaat met het uitgelokte feit."
+  },
+  {
+    "q": "Passiviteit (niet ingrijpen) kan nooit leiden tot strafbaarheid als medeplichtige.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Uit het arrest Honden Peter blijkt dat passiviteit wel degelijk medeplichtigheid kan opleveren indien er op de verdachte een rechtsplicht rustte om in te grijpen of het misdrijf te voorkomen."
+  },
+  {
+    "q": "Bij medeplichtigheid wordt het wettelijk strafmaximum van het gronddelict met een derde verminderd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 49 Sr bepaalt dat het maximum van de hoofdstraffen op het misdrijf gesteld bij medeplichtigheid met een derde wordt verminderd."
+  },
+  {
+    "q": "Voorwaardelijk opzet is onvoldoende om als medeplichtige strafbaar te zijn; er is vol opzet vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De jurisprudentie, waaronder het arrest Geef het mes!, bevestigt dat voorwaardelijk opzet (het bewust aanvaarden van de aanmerkelijke kans) voldoende is voor de strafbaarheid van de medeplichtige."
+  },
+  {
+    "q": "In het arrest Bacchus werd medeplegen van doodslag aangenomen hoewel niet vaststond wie het dodelijke schot had gelost.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "De Hoge Raad oordeelde in Bacchus dat sprake was van medeplegen op basis van een nauwe en bewuste samenwerking, waarbij de verdachte de aanmerkelijke kans op dodelijk geweld bewust had aanvaard, ongeacht wie schoot."
+  },
+  {
+    "q": "Het opzet van de medeplichtige moet volgens het arrest Geef het mes! gericht zijn op de precieze wijze waarop het gronddelict wordt uitgevoerd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In HR Geef het mes! is bepaald dat het opzet van de medeplichtige niet gericht hoeft te zijn op de precieze wijze van uitvoering, zolang er voldoende verband bestaat tussen het beoogde en het begane misdrijf."
+  },
+  {
+    "q": "Om van medeplegen te kunnen spreken, moet de bijdrage van de verdachte aan het delict van voldoende gewicht zijn.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "In het Overzichtsarrest Medeplegen stelt de Hoge Raad voorop dat de kwalificatie medeplegen alleen gerechtvaardigd is indien de intellectuele en/of materiële bijdrage van de verdachte van voldoende gewicht is."
+  },
+  {
+    "q": "Het accessoriteitsvereiste houdt in dat een deelnemer pas strafbaar is als het grondfeit (of een poging daartoe) daadwerkelijk is begaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Deelneming heeft een accessoir karakter, wat betekent dat een strafbaar grondfeit (voltooid delict of strafbare poging/voorbereiding) verwezenlijkt moet zijn alvorens de deelnemer strafbaar kan zijn."
+  },
+  {
+    "q": "Bij de deelnemingsvorm 'uitlokking' mag de uitlokker elk willekeurig middel gebruiken om de ander te bewegen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Voor strafbare uitlokking is vereist dat gebruik is gemaakt van een of meer van de in de wet limitatief opgesomde uitlokkingsmiddelen, zoals giften, beloften, geweld of bedreiging."
+  },
+  {
+    "q": "Als er sprake is van wezenlijk uiteenlopend opzet tussen de medeplichtige en de uitvoerder, kan de medeplichtige niet voor het zwaardere gevolg worden veroordeeld.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Indien er sprake is van een wezenlijke afwijking (totaal uiteenlopend opzet) tussen wat de medeplichtige beoogde en wat de dader deed, ontbreekt het opzet op het grondfeit en volgt geen veroordeling voor dat specifieke feit."
+  },
+  {
+    "q": "Medeplichtigheid bij een misdrijf (simultane medeplichtigheid) vereist dat de verdachte middelen of inlichtingen verschaft.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Voor medeplichtigheid 'bij' het misdrijf (simultaan) is het voldoende dat men opzettelijk behulpzaam is; het verschaffen van specifieke middelen of inlichtingen is een vereiste voor medeplichtigheid 'tot' (voorafgaand)."
+  },
+  {
+    "q": "In het arrest Overzichtsarrest Medeplegen oordeelde de Hoge Raad dat het zich niet distantiëren op zichzelf een grote betekenis heeft voor het bewijs van medeplegen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Hoge Raad stelde juist dat aan het zich niet distantiëren op zichzelf geen grote betekenis toekomt; er moet sprake zijn van een wezenlijke bijdrage aan het delict."
+  },
+  {
+    "q": "Medeplichtigheid aan een overtreding is volgens het Wetboek van Strafrecht strafbaar.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Medeplichtigheid is alleen strafbaar bij misdrijven; medeplichtigheid aan overtredingen is niet strafbaar gesteld."
+  },
+  {
+    "q": "Bij de deelnemingsvorm 'doen plegen' wordt de achterman de middellijke dader genoemd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij doen plegen wordt degene die de daad laat uitvoeren de middellijke dader genoemd, terwijl de feitelijke uitvoerder de onmiddellijke dader is."
+  },
+  {
+    "q": "Een intellectuele bijdrage aan een delict kan nooit leiden tot kwalificatie als medepleger; fysieke uitvoering is vereist.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Uit jurisprudentie, zoals Containerdiefstal, blijkt dat een intellectuele bijdrage (organiseren, plannen) van voldoende gewicht wel degelijk medeplegen kan opleveren, ook zonder fysieke uitvoering."
+  },
+  {
+    "q": "Voor medeplegen is vereist dat de samenwerking 'nauw en bewust' is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Het kerncriterium voor medeplegen is dat er sprake moet zijn van een bewuste en nauwe samenwerking tussen de betrokkenen."
+  },
+  {
+    "q": "In het arrest Honden Peter werd de verdachte veroordeeld als medepleger omdat hij de honden had opgehitst.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "In Honden Peter werd de verdachte veroordeeld voor medeplichtigheid (niet medeplegen) door nalaten, omdat hij niet ingreep terwijl hij een rechtsplicht had om het weerloze slachtoffer in zijn eigen huis te beschermen."
+  },
+  {
+    "q": "De medeplichtige moet objectief gezien een effectieve bijdrage hebben geleverd aan het misdrijf.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Voor strafbare medeplichtigheid is vereist dat de hulpverlening objectief gezien effect heeft gehad en de totstandkoming van het misdrijf heeft bevorderd of vergemakkelijkt."
+  },
+  {
+    "q": "Bij doen plegen kan straffeloosheid van de uitvoerder voortkomen uit het ontbreken van een wettelijke kwaliteit die wel bij de achterman aanwezig is.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Bij doen plegen kan de uitvoerder straffeloos zijn omdat hij een bepaalde kwaliteit mist die vereist is voor het delict, terwijl de achterman (doen pleger) die kwaliteit wel bezit."
+  },
+  {
+    "q": "In het arrest Bacchus oordeelde de Hoge Raad dat de verdachte die niet schoot geen opzet had op de doodslag.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "De Hoge Raad oordeelde in Bacchus dat de verdachte voorwaardelijk opzet had op de doodslag door de aanmerkelijke kans op het gebruik van het wapen door zijn mededader bewust te aanvaarden."
+  },
+  {
+    "q": "Het leerstuk van voorwaardelijk opzet kan worden gebruikt om 'gaten' in het opzet tussen medeplegers te dichten.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Als het opzet niet identiek is, maar niet wezenlijk uiteenloopt, kan voorwaardelijk opzet worden gebruikt om aan te nemen dat de medeplegers elkaars handelen en de gevolgen daarvan hebben aanvaard."
+  },
+  {
+    "q": "Als een verdachte inwisselbaar is in de uitvoering van een delict, is dit een indicatie voor medeplichtigheid in plaats van medeplegen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Inwisselbaarheid van rollen is juist een indicator voor medeplegen (nauwe samenwerking), terwijl medeplichtigheid vaak een meer ondergeschikte, ondersteunende rol impliceert."
+  },
+  {
+    "q": "Voor uitlokking is het voldoende dat de uitlokker het misdrijf wilde, zelfs als het gevolg door de dader niet is bereikt.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Uitlokking is accessoir: als het misdrijf (of een strafbare poging daartoe) niet volgt, is er geen sprake van voltooide uitlokking, hoewel poging tot uitlokking (art. 46a Sr) wel strafbaar kan zijn."
+  },
+  {
+    "q": "Deelneming aan deelneming, zoals het medeplegen van medeplichtigheid, is volgens de wet en jurisprudentie mogelijk.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Omdat deelnemingsvormen zelf strafbare feiten zijn, is deelneming aan deelneming (bijvoorbeeld iemand helpen om een ander te helpen bij een misdrijf) juridisch mogelijk."
+  }
+]

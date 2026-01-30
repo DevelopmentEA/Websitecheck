@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Politieagenten zien een man, bekend bij de politie, op straat lopen met een plastic tasje. Ze vragen hem wat erin zit. De man antwoordt: 'Vier boeken'. Op de vervolgvraag hoe hij eraan komt, antwoordt hij: 'Gestolen'. Pas daarna wordt hij aangehouden. De raadsman betoogt ter zitting dat het bewijs onrechtmatig is verkregen omdat de agenten voorafgaand aan de tweede vraag de cautie hadden moeten geven. Slaagt dit verweer?",
+    "sample": "Issue: Was er sprake van een verhoorsituatie die het geven van de cautie vereiste voorafgaand aan de bekentenis?\n\nRule: Volgens artikel 29 lid 2 Sv moet de cautie worden gegeven voorafgaand aan het verhoor van een verdachte. Een verdachte is iemand ten aanzien van wie uit feiten of omstandigheden een redelijk vermoeden van schuld voortvloeit (art. 27 Sv). In het arrest Plastic Boodschappentasje oordeelde de Hoge Raad dat oriënterende vragen nog geen verhoor vormen.\n\nApplication: De agenten stelden oriënterende vragen aan een bekende van de politie. Het enkele dragen van een tasje leverde nog geen redelijk vermoeden van schuld op. Pas na het antwoord 'gestolen' ontstond de verdenking en daarmee de cautieplicht.\n\nConclusion: Het verweer slaagt niet; de cautie hoefde nog niet gegeven te worden.",
+    "checklist": [
+      "Cautie verplicht voorafgaand aan verhoor verdachte (Art. 29 Sv).",
+      "Verdachte vereist redelijk vermoeden van schuld (Art. 27 Sv).",
+      "Oriënterende vragen vormen nog geen verhoorsituatie (Plastic Boodschappentasje).",
+      "Pas na bekentenis ontstond verdenking; verweer faalt."
+    ],
+    "exp": "Artikel 29 Sv; Artikel 27 Sv; HR Plastic Boodschappentasje.\n\nEr is pas sprake van een verhoorsituatie als er een verdachte is in de zin van artikel 27 Sv. Zolang vragen slechts oriënterend zijn en er geen redelijk vermoeden van schuld is, geldt de cautieplicht niet."
+  },
+  {
+    "q": "In een wijk die bekendstaat om drugshandel, zien agenten een man lopen. Zodra de man de politieauto ziet, kijkt hij schichtig om zich heen en zet het op een lopen. De agenten rennen erachteraan, houden hem staande en vinden drugs in zijn zakken. De advocaat stelt dat de staandehouding onrechtmatig was omdat er geen sprake was van een verdachte. Beoordeel dit verweer.",
+    "sample": "Issue: Levert het wegrennen voor de politie voldoende grond op voor een redelijk vermoeden van schuld (verdachte)?\n\nRule: Artikel 27 Sv vereist dat een verdenking gebaseerd is op feiten of omstandigheden. In het arrest Hollende man van kleur oordeelde het Hof dat het enkele feit dat iemand wegrent bij het zien van politie, zelfs in een bepaalde buurt, onvoldoende is voor deze status.\n\nApplication: De man vertoonde geen ander verdacht gedrag dan wegrennen en schichtig kijken. Zonder bijkomende feiten (zoals in arrest Zeedijk/Damrak) ontbreekt de objectieve grondslag voor een redelijk vermoeden van schuld.\n\nConclusion: Het verweer slaagt; de man was geen verdachte, dus de staandehouding was onrechtmatig.",
+    "checklist": [
+      "Verdachte vereist redelijk vermoeden van schuld (Art. 27 Sv).",
+      "Vermoeden moet gebaseerd zijn op objectiveerbare feiten.",
+      "Enkel wegrennen voor politie is onvoldoende (Hollende kleurling).",
+      "Staandehouding was onrechtmatig; verweer slaagt."
+    ],
+    "exp": "Artikel 27 Sv; Hof Amsterdam Hollende man van kleur.\n\nHet enkele feit dat iemand hard wegloopt bij het zien van politie levert geen redelijk vermoeden van schuld op. Er moeten bijkomende feiten of omstandigheden zijn om iemand als verdachte aan te merken."
+  },
+  {
+    "q": "Klaas wordt op zaterdagavond om 23:00 uur op heterdaad aangehouden voor winkeldiefstal. Hij wordt om 23:30 uur voorgeleid aan de hulpofficier van justitie op het bureau, die beveelt dat hij wordt opgehouden voor onderzoek. De volgende ochtend om 10:00 uur wordt hij heengezonden. Klaas stelt dat hij te lang is vastgehouden. Heeft Klaas gelijk?",
+    "sample": "Issue: Is de wettelijke termijn voor het ophouden voor onderzoek overschreden?\n\nRule: Artikel 61 Sv bepaalt dat een verdachte maximaal zes uur mag worden opgehouden voor onderzoek. De tijd tussen 00:00 uur en 09:00 uur telt hierbij niet mee.\n\nApplication: De termijn start bij aankomst/voorgeleiding om 23:30. Tot 00:00 is 30 minuten verstreken. De klok staat stil tussen 00:00 en 09:00. Vanaf 09:00 tot 10:00 loopt de termijn weer (1 uur). Totale tijd: 1 uur en 30 minuten.\n\nConclusion: Klaas heeft ongelijk; de termijn van zes uur is niet overschreden.",
+    "checklist": [
+      "Ophouden voor onderzoek duurt maximaal zes uur (Art. 61 Sv).",
+      "Termijn start op moment van aankomst plaats verhoor.",
+      "Tijd tussen middernacht en 09:00 telt niet mee.",
+      "Totale duur 1,5 uur; termijn niet overschreden."
+    ],
+    "exp": "Artikel 61 Sv.\n\nDe termijn voor het ophouden voor onderzoek bedraagt ten hoogste zes uur, waarbij de nachtelijke uren (00:00-09:00) niet meetellen. De feitelijke aanhoudingstijd op straat is niet leidend, maar het bevel/aankomst op bureau."
+  },
+  {
+    "q": "Agenten zien op het Damrak een bekende drugsdealer contact maken met een onbekende man. Ze wisselen snel iets uit. De agenten, die ervaren zijn in drugszaken en de locatie kennen als handelspark, houden de man aan. De advocaat stelt dat er onvoldoende grond was voor de aanhouding, verwijzend naar het arrest 'Hollende kleurling'. Beoordeel de rechtmatigheid van de aanhouding.",
+    "sample": "Issue: Was er sprake van een redelijk vermoeden van schuld dat een aanhouding rechtvaardigde?\n\nRule: Artikel 27 Sv vereist feiten en omstandigheden voor een verdenking. In het arrest Zeedijk (Damrak) oordeelde de Hoge Raad dat de bekendheid van de politie met de locatie en hun ervaring mogen meewegen bij het aannemen van een verdenking.\n\nApplication: Anders dan in 'Hollende kleurling' is er hier sprake van een specifieke transactie op een bekende drugsplek, waargenomen door ervaren agenten. Dit levert voldoende feiten op voor een redelijk vermoeden.\n\nConclusion: De aanhouding is rechtmatig; het beroep op 'Hollende kleurling' faalt door de andere omstandigheden.",
+    "checklist": [
+      "Verdenking vereist objectieve feiten en omstandigheden (Art. 27 Sv).",
+      "Politie-ervaring en locatie mogen meewegen (Zeedijk-arrest).",
+      "Concrete transactie onderscheidt casus van Hollende kleurling.",
+      "Redelijk vermoeden van schuld aanwezig; aanhouding rechtmatig."
+    ],
+    "exp": "Artikel 27 Sv; HR Zeedijk (Damrak).\n\nEen redelijk vermoeden van schuld kan worden gebaseerd op een combinatie van factoren, waaronder de specifieke gedraging, de reputatie van de locatie en de ambtservaring van de politie."
+  },
+  {
+    "q": "De politie heeft een machtiging tot binnentreden in een woning ter inbeslagneming van een gestolen schilderij. De bewoner is thuis. De agenten trappen zonder aan te bellen of hun doel kenbaar te maken direct de voordeur in, omdat ze 'geen tijd te verliezen hebben'. Beoordeel de rechtmatigheid van dit optreden.",
+    "sample": "Issue: Is het direct forceren van de deur rechtmatig bij een bevoegdheid tot binnentreden?\n\nRule: Het gebruik van bevoegdheden moet voldoen aan de beginselen van proportionaliteit en subsidiariteit (Art. 8 Politiewet/ongeschreven recht). In het arrest Braak bij binnentreden bepaalde de HR dat een formele bevoegdheid niet automatisch geweldgebruik rechtvaardigt; eerst moet de minst ingrijpende wijze worden geprobeerd.\n\nApplication: De agenten hadden eerst moeten aanbellen en sommeren tot opening (subsidiariteit). Directe braak zonder concrete noodzaak (alleen 'geen tijd') is disproportioneel.\n\nConclusion: Het optreden is onrechtmatig wegens schending van de beginselen van proportionaliteit en subsidiariteit.",
+    "checklist": [
+      "Optreden moet voldoen aan proportionaliteit en subsidiariteit.",
+      "Formele bevoegdheid rechtvaardigt niet automatisch braak (Braak-arrest).",
+      "Eerst aanbellen en doel kenbaar maken was vereist.",
+      "Directe braak was onrechtmatig; schending subsidiariteit."
+    ],
+    "exp": "HR Braak bij binnentreden.\n\nZelfs als de politie formeel bevoegd is een woning te betreden, moeten zij daarbij de beginselen van proportionaliteit en subsidiariteit in acht nemen. Geweld (braak) is pas toegestaan als vrijwillige toegang wordt geweigerd of niet mogelijk is."
+  }
+]

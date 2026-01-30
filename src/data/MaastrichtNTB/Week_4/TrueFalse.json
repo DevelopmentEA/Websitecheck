@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Indien de wederrechtelijkheid als bestanddeel in de delictsomschrijving is opgenomen, leidt een geslaagd beroep op een rechtvaardigingsgrond tot ontslag van alle rechtsvervolging.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 350 Sv jo. Artikel 352 Sv.\n\nIndien de wederrechtelijkheid een bestanddeel is van de delictsomschrijving, moet dit worden bewezen. Een geslaagd beroep op een rechtvaardigingsgrond neemt de wederrechtelijkheid weg, waardoor het tenlastegelegde niet bewezen kan worden. Dit leidt tot vrijspraak, niet tot ontslag van alle rechtsvervolging."
+  },
+  {
+    "q": "Noodweer ex artikel 41 lid 1 Sr is een schulduitsluitingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 41 lid 1 Sr.\n\nNoodweer is een rechtvaardigingsgrond. Een geslaagd beroep hierop neemt de wederrechtelijkheid van de gedraging weg, waardoor het feit niet strafbaar is."
+  },
+  {
+    "q": "Voor een geslaagd beroep op noodweer moet er sprake zijn van een ogenblikkelijke, wederrechtelijke aanranding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 41 lid 1 Sr.\n\nDe wet stelt als vereiste voor noodweer dat de verdediging noodzakelijk moet zijn tegen een ogenblikkelijke, wederrechtelijke aanranding van eigen of andermans lijf, eerbaarheid of goed."
+  },
+  {
+    "q": "De ongeschreven schulduitsluitingsgrond 'afwezigheid van alle schuld' (AVAS) werd geïntroduceerd in het Veearts-arrest.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Melk en water.\n\nHet leerstuk van AVAS (afwezigheid van alle schuld) is geïntroduceerd in het arrest Melk en water. Het Veearts-arrest introduceerde de ongeschreven rechtvaardigingsgrond 'ontbreken van de materiële wederrechtelijkheid'."
+  },
+  {
+    "q": "Noodweerexces vereist een dubbele causaliteit: de aanranding veroorzaakt de gemoedsbeweging en de gemoedsbeweging veroorzaakt de overschrijding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 41 lid 2 Sr.\n\nEr moet sprake zijn van een hevige gemoedsbeweging die het onmiddellijk gevolg is van de aanranding, en de overschrijding van de grenzen van de noodzakelijke verdediging moet het gevolg zijn van die gemoedsbeweging."
+  },
+  {
+    "q": "Een beroep op overmacht in de zin van noodtoestand is een schulduitsluitingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 40 Sr.\n\nOvermacht in de zin van noodtoestand wordt beschouwd als een rechtvaardigingsgrond, omdat er sprake is van een conflict van plichten waarbij het zwaarwegende belang voorgaat en de daad rechtvaardigt."
+  },
+  {
+    "q": "Het opvolgen van een onbevoegd ambtelijk bevel leidt nooit tot straffeloosheid.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 43 lid 2 Sr.\n\nEen onbevoegd ambtelijk bevel kan straffeloosheid (schulduitsluiting) opleveren, mits het te goeder trouw als bevoegd werd beschouwd en de nakoming binnen de kring van ondergeschiktheid lag."
+  },
+  {
+    "q": "Putatief noodweer valt onder de wettelijke regeling van artikel 41 Sr.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Overzichtsarrest noodweer(exces).\n\nPutatief noodweer (waarbij de verdachte dwaalt over het bestaan van de noodweersituatie) valt niet onder artikel 41 Sr, maar wordt beoordeeld als een vorm van verontschuldigbare dwaling (AVAS)."
+  },
+  {
+    "q": "Bij ontoerekeningsvatbaarheid ex artikel 39 Sr wordt de verdachte vrijgesproken.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 39 Sr / Artikel 352 lid 2 Sv.\n\nOntoerekeningsvatbaarheid is een schulduitsluitingsgrond. Een geslaagd beroep hierop leidt tot ontslag van alle rechtsvervolging, omdat de dader niet strafbaar is, niet tot vrijspraak."
+  },
+  {
+    "q": "Het 'ontbreken van de materiële wederrechtelijkheid' is een ongeschreven rechtvaardigingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Veearts.\n\nDe Hoge Raad erkende in het Veearts-arrest dat een gedraging niet strafbaar is als de materiële wederrechtelijkheid ontbreekt, ook al is de delictsomschrijving formeel vervuld. Dit is een ongeschreven rechtvaardigingsgrond."
+  },
+  {
+    "q": "Subsidiariteit bij noodweer houdt in dat het verdedigingsmiddel in verhouding moet staan tot de aanranding.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Overzichtsarrest noodweer(exces).\n\nSubsidiariteit ziet op de noodzakelijkheid van de verdediging (was er een alternatief?). Proportionaliteit ziet op de verhouding tussen het verdedigingsmiddel en de aanranding."
+  },
+  {
+    "q": "Culpa in causa kan aanvaarding van een beroep op noodweer(exces) in de weg staan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Overzichtsarrest noodweer(exces).\n\nEigen schuld aan het ontstaan van de noodweersituatie (culpa in causa) kan ertoe leiden dat een beroep op noodweer of noodweerexces niet slaagt of wordt beperkt."
+  },
+  {
+    "q": "De Garantenstellung houdt in dat aan personen met een bepaalde kwaliteit lagere eisen worden gesteld bij de beoordeling van noodweer.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Overzichtsarrest noodweer(exces).\n\nDe Garantenstellung houdt juist in dat aan personen met een bepaalde hoedanigheid (bijv. politieagenten) hogere eisen worden gesteld wat betreft proportionaliteit en subsidiariteit."
+  },
+  {
+    "q": "Het plegen van een feit ter uitvoering van een wettelijk voorschrift is een rechtvaardigingsgrond.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 42 Sr.\n\nArtikel 42 Sr bepaalt dat niet strafbaar is hij die een feit begaat ter uitvoering van een wettelijk voorschrift. Dit neemt de wederrechtelijkheid weg en is dus een rechtvaardigingsgrond."
+  },
+  {
+    "q": "Tegen een rechtmatige aanhouding door de politie is noodweer toegestaan.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 41 lid 1 Sr.\n\nNoodweer vereist een 'wederrechtelijke' aanranding. Een rechtmatige aanhouding is gebaseerd op een wettelijke bevoegdheid en is dus niet wederrechtelijk, waardoor verdediging daartegen niet is toegestaan."
+  },
+  {
+    "q": "Psychische overmacht vereist een van buiten komende drang waaraan de verdachte redelijkerwijs geen weerstand kon bieden.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 40 Sr.\n\nPsychische overmacht (vis compulsiva) is een schulduitsluitingsgrond waarbij sprake moet zijn van een externe psychische druk die zo groot is dat van de verdachte redelijkerwijs niet gevergd kon worden dat hij weerstand bood."
+  },
+  {
+    "q": "Een beroep op AVAS wegens rechtsdwaling slaagt als de verdachte advies heeft ingewonnen bij een willekeurige derde.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Motorpapieren.\n\nVoor een geslaagd beroep op rechtsdwaling (AVAS) is vereist dat de verdachte advies heeft ingewonnen bij een persoon of instantie met zodanig gezag dat hij in redelijkheid op de juistheid van dat advies mocht vertrouwen."
+  },
+  {
+    "q": "Bij noodweerexces moet de hevige gemoedsbeweging uitsluitend bestaan uit angst of vrees.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Overzichtsarrest noodweer(exces).\n\nDe Hoge Raad heeft bepaald dat de 'hevige gemoedsbeweging' bij noodweerexces niet beperkt is tot angst of vrees, maar ook andere emoties zoals woede of drift kan omvatten, mits veroorzaakt door de aanranding."
+  },
+  {
+    "q": "Indien de delictsomschrijving geen expliciet schuldbestanddeel bevat, is AVAS niet mogelijk.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Melk en water.\n\nIn het arrest Melk en water bepaalde de Hoge Raad dat 'geen straf zonder schuld' een fundamenteel beginsel is. Ook bij overtredingen (zonder schuldbestanddeel) kan een beroep op afwezigheid van alle schuld (AVAS) leiden tot straffeloosheid."
+  },
+  {
+    "q": "Noodweer is toegestaan ter verdediging van goederen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 41 lid 1 Sr.\n\nDe wet noemt expliciet dat noodweer is toegestaan ter verdediging van eigen of andermans lijf, eerbaarheid of goed."
+  },
+  {
+    "q": "De term 'eerbaarheid' in artikel 41 Sr omvat ook de bescherming tegen beledigingen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 41 lid 1 Sr.\n\nIn de context van noodweer ziet 'eerbaarheid' uitsluitend op de seksuele eerbaarheid. Beledigingen vallen hier niet onder en rechtvaardigen geen fysieke verdediging."
+  },
+  {
+    "q": "Een beroep op overmacht-noodtoestand vereist dat het gediende belang zwaarder weegt dan het geschonden belang.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Opticien.\n\nBij overmacht in de zin van noodtoestand is sprake van een conflict van plichten. De rechtvaardiging ligt in het feit dat de verdachte heeft gekozen voor het objectief zwaarstwegende belang."
+  },
+  {
+    "q": "Bij tardief noodweerexces vindt de overschrijding van de verdediging plaats nadat de aanval is beëindigd.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Overzichtsarrest noodweer(exces).\n\nTardief noodweerexces ziet op de situatie waarin de verdedigingshandeling plaatsvindt nadat de noodweersituatie (de aanranding) is beëindigd, maar nog wel het onmiddellijk gevolg is van de hevige gemoedsbeweging."
+  },
+  {
+    "q": "Indien een dader volledig ontoerekeningsvatbaar is, kan de rechter hem tbs opleggen.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Artikel 37a Sr.\n\nHoewel een ontoerekeningsvatbare dader niet strafbaar is (art. 39 Sr), kan de rechter wel de maatregel tbs opleggen indien aan de wettelijke voorwaarden van art. 37a Sr is voldaan."
+  },
+  {
+    "q": "Bij een geslaagd beroep op een schulduitsluitingsgrond bij een culpoos delict volgt ontslag van alle rechtsvervolging.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 352 lid 1 Sv.\n\nBij een culpoos delict is de verwijtbaarheid (schuld) een bestanddeel. Een schulduitsluitingsgrond neemt de verwijtbaarheid weg, waardoor het bestanddeel schuld niet bewezen kan worden. Dit leidt tot vrijspraak."
+  },
+  {
+    "q": "Een beroep op noodweer slaagt ook als er slechts sprake was van vrees voor een aanranding, zonder dat er een feitelijke dreiging was.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 41 lid 1 Sr.\n\nNoodweer vereist een ogenblikkelijke wederrechtelijke aanranding (of een onmiddellijk dreigend gevaar daarvoor). Enkele vrees zonder objectieve dreiging is onvoldoende (dan is het mogelijk putatief noodweer/AVAS)."
+  },
+  {
+    "q": "Het Opticien-arrest heeft betrekking op de strafuitsluitingsgrond psychische overmacht.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "HR Opticien.\n\nHet Opticien-arrest is het standaardarrest voor overmacht in de zin van noodtoestand (conflict van plichten), wat een rechtvaardigingsgrond is, en niet voor psychische overmacht."
+  },
+  {
+    "q": "De rechter toetst bij noodweer of de verdediging voldoet aan de eisen van proportionaliteit en subsidiariteit.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "HR Overzichtsarrest noodweer(exces).\n\nDe verdediging moet noodzakelijk zijn (subsidiariteit: geen redelijk alternatief) en geboden (proportionaliteit: verhouding tussen middel en doel). De rechter toetst aan deze beide eisen."
+  },
+  {
+    "q": "Een verdachte die zich beroept op verontschuldigbare onmacht stelt dat hij fysiek niet in staat was de wet na te leven.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 0,
+    "exp": "Jurisprudentie AVAS.\n\nVerontschuldigbare onmacht is een vorm van AVAS waarbij de verdachte buiten zijn schuld in een situatie verkeert waarin naleving van de wet fysiek onmogelijk is."
+  },
+  {
+    "q": "De volgorde van de materiële vragen in artikel 350 Sv is niet dwingend.",
+    "a": [
+      "Waar",
+      "Niet waar"
+    ],
+    "c": 1,
+    "exp": "Artikel 350 Sv.\n\nDe volgorde van de vragen in artikel 350 Sv (bewijs, strafbaarheid feit, strafbaarheid dader, sanctie) is dwingend voorgeschreven; de rechter mag hier niet van afwijken."
+  }
+]
