@@ -1,180 +1,219 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Music, Heart, BookOpen, Star, MapPin, Mail, Phone, 
-  ChevronDown, Quote, Award, Sparkles, Coffee 
-} from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Music, Heart, BookOpen, Star, MapPin, Mail, Phone, ChevronDown, Award, Coffee, Sparkles, GraduationCap } from 'lucide-react';
 
 const Klavierplezier = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div className="bg-[#FCFBF9] text-[#1a1a1a] font-light selection:bg-amber-100 selection:text-amber-900">
+    <div className="bg-[#FAF9F6] text-[#2c2c2c] font-light selection:bg-amber-100 selection:text-amber-900">
       
       {/* --- ELEGANT NAVIGATION --- */}
-      <nav className={`fixed w-full z-50 transition-all duration-700 ${
-        scrolled ? 'bg-white/80 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-8'
-      }`}>
-        <div className="max-w-7xl mx-auto px-10 flex justify-between items-center">
+      <nav className={`fixed w-full z-50 transition-all duration-700 ${scrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-md' : 'bg-transparent py-8'}`}>
+        <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
           <div className="group cursor-pointer">
-            <h1 className="text-3xl font-serif tracking-[0.15em] uppercase">
-              Klavier<span className="text-amber-800 italic">plezier</span>
+            <h1 className="text-2xl font-serif font-bold tracking-[0.15em] uppercase text-slate-900">
+              Klavier<span className="text-amber-800 italic group-hover:text-amber-600 transition-colors">plezier</span>
             </h1>
-            <div className="h-0.5 bg-amber-800 w-0 group-hover:w-full transition-all duration-500" />
-            <p className="text-[10px] tracking-[0.4em] uppercase opacity-60 mt-1">Annette Niels • Arnhem</p>
+            <p className="text-[10px] tracking-[0.3em] uppercase opacity-60">Annette Niels • Arnhem</p>
           </div>
-          
-          <div className="hidden lg:flex items-center space-x-12 text-[11px] uppercase tracking-[0.2em] font-medium">
+          <div className="hidden lg:flex items-center space-x-10 text-[11px] uppercase tracking-[0.2em] font-medium">
             {['De Praktijk', 'Kinderen', 'Volwassenen', 'Over Annette', 'Contact'].map((item) => (
               <a key={item} href={`#${item.toLowerCase().replace(' ', '')}`} className="hover:text-amber-800 transition-colors">
                 {item}
               </a>
             ))}
-            <button className="border border-[#1a1a1a] px-8 py-3 hover:bg-[#1a1a1a] hover:text-white transition-all duration-500 uppercase tracking-[0.2em]">
-              Kennismaken
+            <button className="bg-slate-900 text-white px-8 py-3 rounded-sm hover:bg-amber-900 transition-all shadow-lg hover:-translate-y-0.5">
+              Kennismaking
             </button>
           </div>
         </div>
       </nav>
 
       {/* --- HERO SECTION --- */}
-      <section className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0">
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-white/40 z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&q=80&w=2000" 
-            className="w-full h-full object-cover grayscale opacity-20"
-            alt="Piano Background"
+            src="/public/image_7f7e59.jpg" 
+            className="w-full h-full object-cover scale-105"
+            alt="Foto 2: De sfeervolle lespraktijk van Klavierplezier"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#FCFBF9]/0 via-[#FCFBF9]/40 to-[#FCFBF9]" />
         </div>
         
-        <div className="relative z-10 text-center max-w-4xl px-6">
-          <span className="text-xs uppercase tracking-[0.6em] mb-8 block text-amber-800 font-medium">Lessen op de Bakenbergseweg</span>
-          <h2 className="text-6xl md:text-[5.5rem] font-serif leading-[1.1] mb-10">
-            Vind jouw ritme bij <br />
-            <span className="italic">de bron.</span>
+        <div className="relative z-20 text-center px-6 max-w-4xl">
+          <span className="text-xs uppercase tracking-[0.6em] mb-6 block text-amber-900 font-semibold">Muziek is een persoonlijke reis</span>
+          <h2 className="text-5xl md:text-7xl font-serif mb-8 leading-tight text-slate-900">
+            Vind jouw ritme <br />
+            <span className="italic font-normal text-amber-900 text-4xl md:text-6xl">bij de bron.</span>
           </h2>
-          <div className="w-24 h-[1px] bg-amber-800/40 mx-auto mb-10" />
-          <p className="text-lg md:text-xl text-slate-600 font-serif italic max-w-2xl mx-auto leading-relaxed">
-            "Annette Niels heeft een grote belangstelling voor ieders persoonlijke en muzikale ontwikkeling."
+          <div className="w-24 h-[1px] bg-amber-800 mx-auto mb-8" />
+          <p className="text-lg md:text-xl font-serif italic text-slate-800 leading-relaxed">
+            "De piano is geen instrument, het is een verlengstuk van wie je bent."
           </p>
-          <ChevronDown className="mx-auto mt-16 animate-bounce opacity-30" size={30} />
+        </div>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+           <ChevronDown size={32} />
         </div>
       </section>
 
-      {/* --- PHILOSOPHY SECTION --- */}
-      <section id="depraktijk" className="py-32 px-10 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-20 items-center">
-          <div className="lg:col-span-7 space-y-10">
-            <div className="space-y-4">
-              <h3 className="text-xs uppercase tracking-[0.4em] text-amber-800 font-bold">De Visie</h3>
-              <h2 className="text-4xl md:text-5xl font-serif leading-tight">Muziek als verlengstuk van de mens.</h2>
-            </div>
-            <p className="text-lg text-slate-700 leading-relaxed first-letter:text-5xl first-letter:font-serif first-letter:mr-3 first-letter:float-left">
-              De vele aspecten van de muziek, zoals techniek, geschiedenis en haar vele verschijningsvormen, 
-              hebben de speciale interesse van Annette. In haar praktijk staat niet alleen het instrument, 
-              maar de wisselwerking tussen 'de mens en muziek' centraal. Of het nu gaat om het brein of 
-              het hart, muziek is een persoonlijke reis.
+      {/* --- FILOSOFIE: DE PRAKTIJK --- */}
+      <section id="depraktijk" className="py-32 px-8 max-w-7xl mx-auto border-b border-slate-200">
+        <div className="grid md:grid-cols-2 gap-20 items-center">
+          <div className="space-y-8">
+            <h3 className="text-xs uppercase tracking-[0.4em] text-amber-800 font-bold">Pianoles in Arnhem</h3>
+            <h2 className="text-4xl md:text-5xl font-serif leading-snug text-slate-900">
+              Een serieuze aanpak met een <span className="italic underline decoration-amber-200 underline-offset-8">enthousiast hart.</span>
+            </h2>
+            <p className="text-lg leading-relaxed text-slate-600">
+              Annette Niels heeft een grote belangstelling voor ieders persoonlijke en muzikale ontwikkeling. 
+              In mijn praktijk aan de rand van de wijken **Gulden Bodem, Hoogkamp en Schaarsbergen** staat de leerling centraal. 
+              Of je nu 6 of 86 bent, we kijken samen naar jouw unieke mogelijkheden.
             </p>
-            <div className="bg-white border-l-4 border-amber-800 p-10 shadow-sm italic text-xl text-slate-600">
-              Onze enorme culturele erfenis en de plaats die muziek daarin inneemt is een bron voor de thema’s 
-              en projecten die in de lessen worden uitgewerkt.
-            </div>
+            <p className="text-slate-600 leading-relaxed">
+              De vele aspecten van de muziek, zoals techniek, geschiedenis, haar vele verschijningsvormen, 
+              muziek en het brein en ‘de mens en muziek’ hebben haar speciale interesse. De leidraad is de lange en 
+              prachtige traditie van het pianospel, maar de invulling is altijd modern en afgestemd op de eigenheid van de pianist.
+            </p>
           </div>
-          <div className="lg:col-span-5 relative">
-            <img 
-              src="https://images.unsplash.com/photo-1520527053377-4710dbf6c0bc?auto=format&fit=crop&q=80&w=1000" 
-              className="rounded-sm shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000" 
-              alt="Piano detail"
-            />
+          <div className="relative">
+            <div className="aspect-[4/5] rounded-t-full overflow-hidden shadow-2xl border-8 border-white">
+              <img src="/public/image_7f7e59.jpg" className="w-full h-full object-cover" alt="Foto 2: De studio" />
+            </div>
+            <div className="absolute -bottom-8 -left-8 bg-white p-8 shadow-xl max-w-xs hidden lg:block">
+              <Quote className="text-amber-800 mb-4" />
+              <p className="font-serif italic text-slate-700">
+                Onze enorme culturele erfenis is een bron voor de thema’s en projecten in de les.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* --- TARGET AUDIENCES --- */}
-      <section className="py-24 bg-[#1a1a1a] text-white">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="grid md:grid-cols-2 gap-1px bg-white/10 border border-white/10">
-            
-            {/* KINDEREN */}
-            <div id="kinderen" className="p-16 space-y-8 hover:bg-white/[0.02] transition-colors">
-              <Sparkles className="text-amber-500" size={32} />
-              <h3 className="text-3xl font-serif italic">Voor de Jonge Ontdekkers</h3>
-              <p className="text-slate-400 leading-relaxed">
-                Met jonge kinderen wordt er naast een methode ook met liedjes gewerkt. Deze zingen en klappen we en spelen ze tenslotte na. 
-                We plakken ze dan in een mooi <strong>plakboek</strong> waar ook het huiswerk in komt te staan. 
-                Samen met een mooie muziekkaart en de wekelijkse sticker ontstaat er een vrolijk en persoonlijk boek.
-              </p>
-              <ul className="space-y-4 text-sm tracking-wide text-slate-300">
-                <li className="flex items-center gap-4"><Music size={16} className="text-amber-500" /> Klassiek, pop, jazz of blues</li>
-                <li className="flex items-center gap-4"><Music size={16} className="text-amber-500" /> Drie voorspeelmiddagen per jaar</li>
-                <li className="flex items-center gap-4"><Music size={16} className="text-amber-500" /> Stimulatie van eigen muzikale smaak</li>
-              </ul>
-            </div>
-
-            {/* VOLWASSENEN */}
-            <div id="volwassenen" className="p-16 space-y-8 hover:bg-white/[0.02] transition-colors">
-              <Coffee className="text-amber-500" size={32} />
-              <h3 className="text-3xl font-serif italic">Voor de Gevorderde Wens</h3>
-              <p className="text-slate-400 leading-relaxed">
-                Het is nooit te laat om een langgekoesterde wens te vervullen of oude lessen op te pakken. 
-                In een vol bestaan gaan we flexibel om met oefentijd en afspraken. 
-                Hoogtepunt is de jaarlijkse <strong>'avond onder ons'</strong>: een informele setting met koffie of een glas wijn.
-              </p>
-              <div className="p-6 border border-white/10 rounded-sm">
-                <p className="text-sm italic text-amber-200/80">
-                  "De avonden vinden plaats bij Annette thuis, zodat er gespeeld kan worden op de prachtige Steinway Concertvleugel."
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* --- ABOUT ANNETTE --- */}
-      <section id="overannette" className="py-32 px-10">
+      {/* --- KINDEREN: CREATIVITEIT & PLEZIER --- */}
+      <section id="kinderen" className="py-32 bg-white px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-24 items-center">
-            <div className="w-full lg:w-1/3">
-              <div className="relative group">
-                <div className="absolute inset-0 border-2 border-amber-800 translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform" />
-                <img 
-                  src="/api/placeholder/800/1000" 
-                  alt="Annette Niels" 
-                  className="w-full aspect-[4/5] object-cover rounded-sm shadow-xl"
-                />
+          <div className="flex flex-col md:flex-row gap-16 items-center">
+            <div className="md:w-1/2 order-2 md:order-1 grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <div className="h-48 bg-amber-50 rounded-2xl flex flex-col items-center justify-center text-amber-800 p-6 text-center">
+                  <Sparkles size={32} className="mb-2" />
+                  <span className="text-xs font-bold uppercase tracking-widest">Wekelijkse Stickers</span>
+                </div>
+                <div className="h-64 bg-slate-100 rounded-2xl overflow-hidden shadow-inner">
+                   <img src="https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover grayscale" alt="Piano" />
+                </div>
+              </div>
+              <div className="space-y-4 pt-8">
+                <div className="h-64 bg-slate-100 rounded-2xl overflow-hidden shadow-inner">
+                   <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover" alt="Detail" />
+                </div>
+                <div className="h-48 bg-slate-900 rounded-2xl flex flex-col items-center justify-center text-white p-6 text-center">
+                  <BookOpen size={32} className="mb-2" />
+                  <span className="text-xs font-bold uppercase tracking-widest">Persoonlijk Plakboek</span>
+                </div>
               </div>
             </div>
-            
-            <div className="w-full lg:w-2/3 space-y-8">
-              <h2 className="text-5xl font-serif leading-tight">Annette Niels</h2>
-              <div className="space-y-6 text-slate-700 leading-relaxed text-lg">
+            <div className="md:w-1/2 order-1 md:order-2 space-y-8">
+              <h2 className="text-4xl font-serif text-slate-900">Voor de jonge ontdekkers</h2>
+              <p className="text-lg text-slate-600 leading-relaxed font-serif italic">
+                "Muzikale smaak is een ontwikkeling die gerespecteerd en gestimuleerd moet worden."
+              </p>
+              <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  Na haar afstuderen aan <strong>ArtEZ</strong>, vervolgde Annette haar studie aan het 
-                  <strong> Utrechts Conservatorium</strong> waar zij liedbegeleiding studeerde bij Thom Bollen. 
-                  Sinds 2000 vormt zij een vast duo met zangeres Maria Kemler.
+                  Met jonge kinderen wordt er naast een methode ook met liedjes gewerkt. Deze zingen en klappen we en spelen ze tenslotte na. 
+                  We plakken ze dan in een mooi <strong>plakboek</strong> waar ook het huiswerk in komt te staan. Samen met een mooie muziekkaart 
+                  en de wekelijkse sticker ontstaat er een vrolijk en persoonlijk boek.
                 </p>
                 <p>
-                  Als lid van de <strong>EPTA</strong> (European Piano Teachers Association) is zij actief betrokken 
-                  bij de organisatie en jurering van landelijke graadexamens. Leerlingen van Klavierplezier 
-                  krijgen dan ook de mogelijkheid om officieel erkende examens af te leggen.
+                  Hoe groter de kinderen worden hoe specifieker hun eigen wensen. Klassieke of popmuziek, jazz en bluesimprovisatie: 
+                  het ligt allemaal binnen de mogelijkheden. Delen en verbinden is essentieel; daarom organiseren we drie voorspeelmiddagen per jaar.
                 </p>
               </div>
-              
-              <div className="grid grid-cols-2 gap-8 pt-6 border-t border-slate-200">
-                <div className="flex items-center gap-4">
-                  <Award className="text-amber-800" />
-                  <span className="text-xs uppercase tracking-widest font-bold">ArtEZ Alumna</span>
+              <div className="flex gap-4 pt-4">
+                 <div className="px-4 py-2 bg-amber-50 text-amber-800 rounded-full text-xs font-bold uppercase tracking-widest border border-amber-100">Thema Projecten</div>
+                 <div className="px-4 py-2 bg-amber-50 text-amber-800 rounded-full text-xs font-bold uppercase tracking-widest border border-amber-100">Voorspeelmiddagen</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- VOLWASSENEN: FLEXIBILITEIT & DE STEINWAY --- */}
+      <section id="volwassenen" className="py-32 bg-slate-900 text-white px-8 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-amber-900/10 -skew-x-12 translate-x-10" />
+        <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-12 gap-16 items-center">
+          <div className="lg:col-span-7 space-y-8">
+            <div className="inline-flex items-center gap-3 text-amber-400">
+               <Coffee size={24} />
+               <span className="text-xs font-bold uppercase tracking-[0.3em]">Onder ons</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-serif leading-tight text-white">
+              Eindelijk die langgekoesterde <span className="italic text-amber-200 text-3xl md:text-4xl">wens vervullen.</span>
+            </h2>
+            <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
+              <p>
+                Ook als volwassene is het fijn om vroegere lessen weer op te pakken of nu eindelijk eens die stap te zetten. 
+                In een vol bestaan kunnen afspraken en oefenen onder druk komen te staan; daar wordt zo flexibel mogelijk mee omgegaan.
+              </p>
+              <div className="bg-white/5 border border-white/10 p-10 rounded-sm italic font-serif text-amber-100 text-xl leading-relaxed shadow-2xl backdrop-blur-sm">
+                "Eén keer per jaar hebben we een avondje ‘onder ons’. Er worden stukken voor elkaar gespeeld onder het genot van een kop koffie 
+                of een glas wijn, op de prachtige **Steinway Concertvleugel** bij Annette thuis."
+              </div>
+            </div>
+          </div>
+          <div className="lg:col-span-5 hidden lg:block">
+            <img src="https://images.unsplash.com/photo-1520527053377-4710dbf6c0bc?auto=format&fit=crop&q=80&w=1000" className="rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl opacity-60 hover:opacity-100" alt="Steinway Detail" />
+          </div>
+        </div>
+      </section>
+
+      {/* --- OVER ANNETTE --- */}
+      <section id="overannette" className="py-32 px-8 bg-[#F4F2EE]">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-12 gap-16 items-start">
+            <div className="md:col-span-5 relative">
+              <div className="absolute inset-0 border-[12px] border-white -translate-x-6 -translate-y-6 z-0 shadow-lg" />
+              <img 
+                src="/public/image_7f7e3a.png" 
+                className="w-full relative z-10 shadow-2xl" 
+                alt="Foto 1: Annette Niels" 
+              />
+              <div className="absolute -bottom-6 -right-6 bg-slate-900 p-8 text-white z-20 shadow-xl">
+                 <Award size={40} className="text-amber-400" />
+              </div>
+            </div>
+            <div className="md:col-span-7 space-y-8 lg:pl-10">
+              <h2 className="text-5xl font-serif text-slate-900">Annette Niels</h2>
+              <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+                <p>
+                  Na mijn afstuderen aan <strong>ArtEZ</strong> heb ik mijn studie vervolgd aan het <strong>Utrechts Conservatorium</strong>, 
+                  waar ik liedbegeleiding studeerde bij Thom Bollen. Sinds 2000 vorm ik een duo met zangeres Maria Kemler; wij treden regelmatig op.
+                </p>
+                <p>
+                  Ik ben lid van de <strong>EPTA</strong>, waar ik actief ben bij de organisatie en jurering van de landelijke graadexamens. 
+                  Voor mijn leerlingen is er dan ook de mogelijkheid om aan deze examens deel te nemen.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8">
+                <div className="flex items-start gap-4 p-6 bg-white shadow-sm border-t-2 border-amber-800">
+                  <GraduationCap className="text-amber-800" size={28} />
+                  <div>
+                    <h4 className="font-bold text-sm uppercase tracking-widest mb-1">Pedagogisch Expert</h4>
+                    <p className="text-xs text-slate-500">Focus op techniek, brein & menselijke ontwikkeling.</p>
+                  </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <Star className="text-amber-800" />
-                  <span className="text-xs uppercase tracking-widest font-bold">EPTA Jurylid</span>
+                <div className="flex items-start gap-4 p-6 bg-white shadow-sm border-t-2 border-amber-800">
+                  <Star className="text-amber-800" size={28} />
+                  <div>
+                    <h4 className="font-bold text-sm uppercase tracking-widest mb-1">EPTA Gecertificeerd</h4>
+                    <p className="text-xs text-slate-500">Mogelijkheid tot landelijke graadexamens.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -182,50 +221,48 @@ const Klavierplezier = () => {
         </div>
       </section>
 
-      {/* --- CONTACT & LOCATION --- */}
-      <section id="contact" className="py-32 bg-[#F4F2EE]">
-        <div className="max-w-7xl mx-auto px-10 grid lg:grid-cols-2 gap-24">
+      {/* --- CONTACT & LOCATIE --- */}
+      <section id="contact" className="py-32 px-8 bg-white border-t border-slate-100">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
           <div className="space-y-12">
-            <h2 className="text-5xl font-serif">De Studio in Arnhem</h2>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              De lespraktijk bevindt zich in een inspirerende omgeving in Arnhem Noord. 
-              Hier komen traditie en modern pianospel samen.
-            </p>
+            <div>
+              <h2 className="text-5xl font-serif mb-8 text-slate-900">Contact & Locatie</h2>
+              <p className="text-slate-600 mb-8 text-lg leading-relaxed">
+                De lespraktijk bevindt zich in de inspirerende omgeving van Arnhem Noord. 
+                Gevestigd aan de prachtige **Bakenbergseweg 224**, goed bereikbaar met de fiets, auto en het openbaar vervoer.
+              </p>
+            </div>
             
-            <div className="space-y-8">
-              <div className="flex items-start gap-6">
-                <MapPin className="text-amber-800 mt-1" />
-                <div>
-                  <h4 className="font-bold uppercase tracking-widest text-xs mb-1">Bezoekadres</h4>
-                  <p className="text-slate-600">Bakenbergseweg 224, 6816 PL Arnhem</p>
+            <div className="space-y-6">
+              {[
+                { icon: MapPin, title: 'Bezoekadres', desc: 'Bakenbergseweg 224, 6816 PL Arnhem' },
+                { icon: Phone, title: 'Telefoon', desc: 'Voor vragen of overleg' },
+                { icon: Mail, title: 'E-mail', desc: 'info@klavierplezier.nl' }
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-6 p-6 bg-[#FAF9F6] rounded-sm group hover:bg-slate-900 hover:text-white transition-all duration-500">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-amber-800 shadow-sm">
+                    <item.icon size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-xs uppercase tracking-[0.2em]">{item.title}</h4>
+                    <p className="opacity-70 text-sm">{item.desc}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start gap-6">
-                <Mail className="text-amber-800 mt-1" />
-                <div>
-                  <h4 className="font-bold uppercase tracking-widest text-xs mb-1">E-mail</h4>
-                  <p className="text-slate-600 font-serif italic">info@klavierplezier.nl</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
-          <div className="bg-white p-12 shadow-xl">
-            <form className="space-y-6">
-              <div className="space-y-2">
-                <label className="text-[10px] uppercase tracking-[0.2em] font-bold">Uw Naam</label>
-                <input type="text" className="w-full border-b border-slate-200 py-3 focus:border-amber-800 outline-none transition-colors bg-transparent" />
+          <div className="bg-[#FAF9F6] p-12 rounded-sm shadow-2xl relative">
+            <div className="absolute inset-0 border-2 border-amber-800/10 -m-4 rounded-sm" />
+            <h3 className="text-2xl font-serif mb-8 text-center uppercase tracking-widest text-slate-800">Stuur een bericht</h3>
+            <form className="space-y-6 relative z-10">
+              <div className="grid md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Naam" className="w-full bg-white border border-slate-200 rounded-sm px-6 py-4 focus:ring-1 focus:ring-amber-800 outline-none transition-all" />
+                <input type="email" placeholder="E-mailadres" className="w-full bg-white border border-slate-200 rounded-sm px-6 py-4 focus:ring-1 focus:ring-amber-800 outline-none transition-all" />
               </div>
-              <div className="space-y-2">
-                <label className="text-[10px] uppercase tracking-[0.2em] font-bold">E-mailadres</label>
-                <input type="email" className="w-full border-b border-slate-200 py-3 focus:border-amber-800 outline-none transition-colors bg-transparent" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-[10px] uppercase tracking-[0.2em] font-bold">Bericht</label>
-                <textarea rows="4" className="w-full border-b border-slate-200 py-3 focus:border-amber-800 outline-none transition-colors bg-transparent resize-none"></textarea>
-              </div>
-              <button className="w-full bg-[#1a1a1a] text-white py-5 uppercase tracking-[0.3em] text-xs hover:bg-amber-900 transition-colors duration-500">
-                Verstuur Bericht
+              <textarea placeholder="Uw bericht" rows="4" className="w-full bg-white border border-slate-200 rounded-sm px-6 py-4 focus:ring-1 focus:ring-amber-800 outline-none transition-all"></textarea>
+              <button className="w-full bg-slate-900 text-white font-bold py-5 rounded-sm hover:bg-amber-900 transition-all uppercase tracking-[0.3em] text-xs shadow-lg">
+                Verstuur Aanvraag
               </button>
             </form>
           </div>
@@ -233,16 +270,27 @@ const Klavierplezier = () => {
       </section>
 
       {/* --- FOOTER --- */}
-      <footer className="py-20 px-10 bg-white border-t border-slate-100 text-center">
-        <div className="max-w-7xl mx-auto space-y-10">
-          <h2 className="text-2xl font-serif tracking-widest uppercase">Klavierplezier</h2>
-          <div className="flex justify-center gap-12 opacity-50 grayscale">
-            <img src="/api/placeholder/100/40" alt="EPTA Logo" className="h-8 object-contain" />
-            <img src="/api/placeholder/100/40" alt="ArtEZ Logo" className="h-8 object-contain" />
+      <footer className="bg-slate-900 text-white py-20 px-8">
+        <div className="max-w-7xl mx-auto flex flex-col items-center space-y-12">
+          <div className="text-center space-y-2">
+            <h2 className="text-2xl font-serif tracking-[0.3em] uppercase">Klavierplezier</h2>
+            <p className="text-amber-400 text-[10px] tracking-[0.4em] uppercase">Annette Niels • Muziekpraktijk</p>
           </div>
-          <p className="text-[10px] uppercase tracking-[0.4em] text-slate-400">
-            © {new Date().getFullYear()} Klavierplezier Annette Niels • Arnhem Noord
-          </p>
+          
+          <div className="flex gap-12 opacity-40 grayscale hover:grayscale-0 transition-all">
+            <img src="/api/placeholder/120/40" alt="EPTA Logo" className="h-8 object-contain" />
+            <img src="/api/placeholder/120/40" alt="ArtEZ Logo" className="h-8 object-contain" />
+          </div>
+
+          <div className="w-full h-[1px] bg-white/10" />
+
+          <div className="flex flex-col md:flex-row justify-between w-full items-center gap-8 text-[10px] text-slate-500 uppercase tracking-widest">
+            <p>© {new Date().getFullYear()} Klavierplezier Annette Niels. Alle rechten voorbehouden.</p>
+            <div className="flex space-x-10">
+               <a href="#" className="hover:text-amber-400">Privacybeleid</a>
+               <a href="#" className="hover:text-amber-400">Algemene Voorwaarden</a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
