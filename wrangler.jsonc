@@ -1,5 +1,4 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "websitetest",
   "compatibility_date": "2026-01-30",
   "assets": {
@@ -8,11 +7,5 @@
   },
   "observability": {
     "enabled": true
-  }
-}{
-  "name": "websitetest",
-  "compatibility_date": "2026-01-30",
-  "assets": {
-    "directory": "./dist"
   }
 }
