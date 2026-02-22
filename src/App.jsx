@@ -14,6 +14,14 @@ export default function PepijnVervoert() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // State voor het contactformulier
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+
   // Zorgt voor een donkere navigatiebalk zodra je naar beneden scrollt
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +41,27 @@ export default function PepijnVervoert() {
       el.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
     }
+  };
+
+  // Functie om formulier om te zetten naar een WhatsApp bericht
+  const handleWhatsAppSubmit = (e) => {
+    e.preventDefault();
+    const { name, phone, email, message } = formData;
+    
+    // Maak de tekst op met WhatsApp opmaak (*dikgedrukt*)
+    const whatsappText = `*Nieuwe Aanvraag via Website*\n\n*Naam:* ${name}\n*Telefoon:* ${phone}\n*E-mail:* ${email}\n\n*Wat moet er gebeuren?*\n${message}`;
+    
+    // Zet de tekst om naar een geldig URL formaat
+    const encodedText = encodeURIComponent(whatsappText);
+    
+    // Open de WhatsApp link in een nieuw tabblad
+    const whatsappUrl = `https://wa.me/31614069705?text=${encodedText}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const navLinks = [
@@ -274,29 +303,57 @@ export default function PepijnVervoert() {
 
           <div className="flex flex-col lg:flex-row gap-8 max-w-5xl mx-auto">
             
-            {/* Contact Form */}
+            {/* Contact Form (Nu gekoppeld aan WhatsApp integratie) */}
             <div className="flex-[2] bg-white rounded-2xl p-10 shadow-sm border border-gray-200">
-              <form className="space-y-6">
+              <form onSubmit={handleWhatsAppSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-xs uppercase tracking-widest font-bold text-gray-500">Naam</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" required />
+                    <input 
+                      type="text" 
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" 
+                      required 
+                    />
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs uppercase tracking-widest font-bold text-gray-500">Telefoon</label>
-                    <input type="tel" className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" required />
+                    <input 
+                      type="tel" 
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" 
+                      required 
+                    />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-gray-500">E-mailadres</label>
-                  <input type="email" className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" required />
+                  <input 
+                    type="email" 
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" 
+                    required 
+                  />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-gray-500">Wat moet er gebeuren?</label>
-                  <textarea rows="4" className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all resize-none" required></textarea>
+                  <textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    rows="4" 
+                    className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all resize-none" 
+                    required
+                  ></textarea>
                 </div>
-                <button type="button" className="w-full py-4 bg-gray-900 text-white rounded-lg font-bold tracking-widest uppercase text-sm hover:bg-black transition-all mt-4">
-                  Bericht versturen
+                <button type="submit" className="w-full py-4 bg-gray-900 text-white rounded-lg font-bold tracking-widest uppercase text-sm hover:bg-black transition-all mt-4 flex justify-center items-center gap-2">
+                  <MessageCircle size={18} /> Verstuur via WhatsApp
                 </button>
               </form>
             </div>
@@ -335,26 +392,70 @@ export default function PepijnVervoert() {
         </div>
       </section>
 
-      {/* --- Footer --- */}
-      <footer className="bg-white py-12 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6 text-center">
+      {/* --- Strakke, Donkere Footer --- */}
+      <footer className="bg-gray-950 pt-16 pb-8 border-t border-gray-900">
+        <div className="max-w-7xl mx-auto px-6">
           
-          <div className="flex items-center gap-2 text-gray-900">
-            <Truck size={22} strokeWidth={1.5} />
-            <span className="font-bold tracking-widest uppercase text-base">Pepijn Vervoert</span>
+          {/* Footer Grid met content */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 border-b border-gray-800 pb-12">
+            
+            {/* Kolom 1: Merk en Over */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-white mb-6">
+                <Truck size={24} strokeWidth={1.5} className="text-gray-300" />
+                <span className="font-bold tracking-widest uppercase text-base">Pepijn Vervoert</span>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
+                Jouw betrouwbare partner voor kleine verhuizingen, meubeltransport en ontruimingen. Snel, veilig en altijd met een persoonlijke aanpak geregeld.
+              </p>
+            </div>
+
+            {/* Kolom 2: Snelle Links */}
+            <div>
+              <h4 className="text-white font-bold tracking-widest uppercase text-sm mb-6">Navigatie</h4>
+              <ul className="space-y-3">
+                {navLinks.map((link) => (
+                  <li key={link.id}>
+                    <button 
+                      onClick={() => scrollTo(link.id)} 
+                      className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wider font-semibold"
+                    >
+                      {link.name}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Kolom 3: Contact overzicht */}
+            <div>
+              <h4 className="text-white font-bold tracking-widest uppercase text-sm mb-6">Contactgegevens</h4>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-3 text-gray-400 text-sm">
+                  <Phone size={18} className="text-gray-500" /> 06 14069705
+                </li>
+                <li className="flex items-center gap-3 text-gray-400 text-sm">
+                  <Mail size={18} className="text-gray-500" /> Pepijnvervoert@outlook.com
+                </li>
+                <li className="flex items-center gap-3 text-gray-400 text-sm">
+                  <Truck size={18} className="text-gray-500" /> Beschikbaar in de regio
+                </li>
+              </ul>
+            </div>
+
           </div>
-          
-          <div className="flex flex-col gap-2 items-center">
-            <p className="text-sm font-medium tracking-wide text-gray-500">
+
+          {/* Onderste balk (Copyright + Credits) */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <p className="text-xs font-medium tracking-wide text-gray-500">
               © {new Date().getFullYear()} Pepijn Vervoert. Alle rechten voorbehouden.
             </p>
             
-            {/* Maker Credit Link */}
             <a 
-              href="mailto:elbertandriessen08@gmail.com" 
-              className="text-xs font-semibold text-gray-400 hover:text-gray-900 transition-colors duration-300 mt-2"
+              href="https://wa.me/31638044720" 
+              className="group text-xs font-semibold text-gray-600 hover:text-white transition-colors duration-300 flex items-center gap-2"
             >
-              Ook zo'n website?
+              Goedkope website? <span className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">&rarr;</span>
             </a>
           </div>
 
