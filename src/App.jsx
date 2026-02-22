@@ -196,7 +196,7 @@ export default function PepijnVervoert() {
                  <img 
                     src={pepijnFoto} 
                     alt="Pepijn" 
-                    className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-full object-cover object-center transition-all duration-700"
                  />
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function PepijnVervoert() {
                 Persoonlijke service van een vakman in wording
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Als student autotechniek en ondernemer combineer ik technische kennis met praktijkervaring in de vervoersbranche. Sinds meer dan een jaar help ik particulieren en bedrijven met professionele vervoersdiensten, van kleine verhuizingen tot opruimklussen. 
+                Als leerling autotechnicus bij Broekhuis en ondernemer combineer ik technische vakkennis met praktijkervaring in de vervoersbranche. Sinds meer dan een jaar help ik particulieren en bedrijven met professionele vervoersdiensten, van kleine verhuizingen tot opruimklussen. 
               </p>
               <p className="text-gray-600 leading-relaxed text-lg">
                 Mijn focus ligt op betrouwbare service, scherpe tarieven en persoonlijke aandacht voor elke opdracht. Jij hebt een klus, ik de oplossing.
@@ -283,7 +283,7 @@ export default function PepijnVervoert() {
             <div className="lg:w-1/2 bg-gray-950 text-white p-10 md:p-14 rounded-2xl relative shadow-2xl">
               <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-widest text-sm">De technische voorsprong</h3>
               <p className="text-gray-300 leading-relaxed text-lg mb-6">
-                Als student autotechniek weet ik hoe ik mijn bus in topconditie moet houden en hoe laadgewichten en krachten werken tijdens transport. 
+                Als leerling autotechnicus bij Broekhuis weet ik precies hoe ik mijn bus in topconditie moet houden en hoe laadgewichten en krachten werken tijdens transport. 
               </p>
               <p className="text-gray-300 leading-relaxed text-lg">
                 Die technische kennis lijkt overdreven voor een kleine verhuizing, maar het betekent in de praktijk dat jouw spullen veiliger en efficiënter van A naar B gaan.
