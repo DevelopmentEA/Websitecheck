@@ -1,294 +1,353 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
-  Music, Heart, BookOpen, Star, MapPin, Mail, Phone, 
-  ChevronDown, Award, Coffee, Sparkles, GraduationCap, Quote 
+  Menu, X, Truck, Phone, Mail, MessageCircle, 
+  ArrowRight, ShieldCheck, Banknote, Clock, 
+  Wrench, Package, Home, Trash2, CheckCircle2 
 } from 'lucide-react';
 
-const Klavierplezier = () => {
+// Importeer afbeeldingen
+import logoFoto from '/foto.png';
+import pepijnFoto from '/Pepijn.png';
+import backgroundImage from '/Background.png';
+
+export default function PepijnVervoert() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Zorgt voor een donkere navigatiebalk zodra je naar beneden scrollt
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
+  const navLinks = [
+    { name: 'Home', id: 'home' },
+    { name: 'Over mij', id: 'over-mij' },
+    { name: 'Diensten', id: 'diensten' },
+    { name: 'Waarom kiezen', id: 'waarom-kiezen' },
+  ];
+
   return (
-    <div className="bg-[#FAF9F6] text-[#2c2c2c] font-light selection:bg-amber-100 selection:text-amber-900">
+    <div className="min-h-screen font-sans text-gray-800 bg-gray-50 selection:bg-blue-600 selection:text-white">
       
-      {/* --- ELEGANTE NAVIGATIE --- */}
-      <nav className={`fixed w-full z-50 transition-all duration-700 ${scrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-md' : 'bg-transparent py-8'}`}>
-        <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
-          <div className="group cursor-pointer">
-            <h1 className="text-2xl font-serif font-bold tracking-[0.15em] uppercase text-slate-900">
-              Klavier<span className="text-amber-800 italic group-hover:text-amber-600 transition-colors">plezier</span>
-            </h1>
-            <p className="text-[10px] tracking-[0.3em] uppercase opacity-60">Annette Niels • Arnhem</p>
+      {/* --- Navigatie (Minimalistisch over de foto) --- */}
+      <nav className={`fixed w-full z-50 transition-all duration-500 border-b ${scrolled ? 'bg-gray-950/95 backdrop-blur-md border-gray-800 py-2' : 'bg-transparent border-transparent py-4'}`}>
+        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+          
+          <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo('home')}>
+            {/* Logo Afbeelding */}
+            <div className="h-10 w-10 relative overflow-hidden rounded-md bg-white/10 flex-shrink-0">
+               <img src={logoFoto} alt="Pepijn Vervoert Logo" className="object-cover w-full h-full" />
+            </div>
+            <span className="text-xl font-bold tracking-widest text-white uppercase text-sm">
+              Pepijn Vervoert
+            </span>
           </div>
-          <div className="hidden lg:flex items-center space-x-10 text-[11px] uppercase tracking-[0.2em] font-medium">
-            {['De Praktijk', 'Kinderen', 'Volwassenen', 'Over Annette', 'Contact'].map((item) => (
-              <a key={item} href={`#${item.toLowerCase().replace(' ', '')}`} className="hover:text-amber-800 transition-colors">
-                {item}
-              </a>
+
+          {/* Desktop Menu - Minimalistisch zoals in je voorbeeld */}
+          <div className="hidden md:flex gap-8 items-center">
+            {navLinks.map((link) => (
+              <button 
+                key={link.id} 
+                onClick={() => scrollTo(link.id)}
+                className="text-xs font-semibold tracking-widest text-gray-300 hover:text-white uppercase transition-colors"
+              >
+                {link.name}
+              </button>
             ))}
-            <button className="bg-slate-900 text-white px-8 py-3 rounded-sm hover:bg-amber-900 transition-all shadow-lg hover:-translate-y-0.5">
-              Kennismaking
+            <button 
+              onClick={() => scrollTo('contact')}
+              className="text-xs font-semibold tracking-widest text-white hover:text-blue-400 uppercase transition-colors ml-4"
+            >
+              Contact
             </button>
           </div>
+
+          {/* Mobile Menu Toggle */}
+          <button 
+            className="md:hidden p-2 text-white"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-gray-950 border-b border-gray-800 p-6 flex flex-col gap-6 absolute w-full shadow-2xl animate-in slide-in-from-top-2">
+            {navLinks.map((link) => (
+              <button 
+                key={link.id} 
+                onClick={() => scrollTo(link.id)}
+                className="text-left text-sm font-semibold tracking-widest text-gray-300 hover:text-white uppercase transition-colors"
+              >
+                {link.name}
+              </button>
+            ))}
+            <button 
+              onClick={() => scrollTo('contact')}
+              className="text-left text-sm font-semibold tracking-widest text-blue-400 hover:text-blue-300 uppercase transition-colors pt-2 border-t border-gray-800"
+            >
+              Contact
+            </button>
+          </div>
+        )}
       </nav>
 
-      {/* --- HERO SECTION --- */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-white/40 z-10" />
-          <img 
-            src="/image_7f7e59.jpg" 
-            className="w-full h-full object-cover scale-105"
-            alt="De sfeervolle lespraktijk in Arnhem"
-          />
-        </div>
+      {/* --- Fullscreen Hero Sectie (Minimalistische landing page) --- */}
+      <header id="home" className="relative min-h-screen flex items-center justify-center">
         
-        <div className="relative z-20 text-center px-6 max-w-4xl">
-          <span className="text-xs uppercase tracking-[0.6em] mb-6 block text-amber-900 font-semibold">Muziek is een persoonlijke reis</span>
-          <h2 className="text-5xl md:text-7xl font-serif mb-8 leading-tight text-slate-900">
-            Vind jouw ritme <br />
-            <span className="italic font-normal text-amber-900 text-4xl md:text-6xl">bij de bron.</span>
-          </h2>
-          <div className="w-24 h-[1px] bg-amber-800 mx-auto mb-8" />
-          <p className="text-lg md:text-xl font-serif italic text-slate-800 leading-relaxed">
-            "Annette Niels heeft een grote belangstelling voor ieders persoonlijke en muzikale ontwikkeling."
+        {/* Achtergrond Afbeelding */}
+        <div className="absolute inset-0 w-full h-full z-0 bg-gray-900">
+          <img 
+            src={backgroundImage} 
+            alt="Vervoer achtergrond" 
+            className="object-cover w-full h-full object-center opacity-80"
+          />
+          {/* Subtiele donkere overlay om de witte tekst perfect leesbaar te maken */}
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-950/60 via-transparent to-gray-950/80"></div>
+        </div>
+
+        {/* Hero Content - Volledig gecentreerd en clean */}
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-6 flex flex-col items-center text-center mt-12">
+          
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight drop-shadow-xl mb-6">
+            Betrouwbaar <br/> Vervoer.
+          </h1>
+          
+          <p className="text-lg md:text-2xl text-gray-300 max-w-2xl leading-relaxed font-light drop-shadow-md mb-14">
+            Voor kleine verhuizingen, meubeltransport en ontruimingen. Snel en veilig geregeld.
           </p>
-        </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
-           <ChevronDown size={32} />
-        </div>
-      </section>
-
-      {/* --- FILOSOFIE: DE PRAKTIJK --- */}
-      <section id="depraktijk" className="py-32 px-8 max-w-7xl mx-auto border-b border-slate-200">
-        <div className="grid md:grid-cols-2 gap-20 items-center">
-          <div className="space-y-8">
-            <h3 className="text-xs uppercase tracking-[0.4em] text-amber-800 font-bold">Pianoles</h3>
-            <h2 className="text-4xl md:text-5xl font-serif leading-snug text-slate-900">
-              Een serieuze aanpak met een <span className="italic underline decoration-amber-200 underline-offset-8">enthousiast hart.</span>
-            </h2>
-            <p className="text-lg leading-relaxed text-slate-600">
-              Annette Niels heeft een grote belangstelling voor ieders persoonlijke en muzikale ontwikkeling. 
-              De vele aspecten van de muziek, zoals techniek, geschiedenis, haar vele verschijningsvormen, 
-              muziek en het brein en ‘de mens en muziek’ hebben haar speciale interesse.
-            </p>
-            <p className="text-slate-600 leading-relaxed">
-              De leidraad is de lange en prachtige traditie van het pianospel, maar de invulling is altijd modern 
-              en afgestemd op de eigenheid van de pianist. Onze enorme culturele erfenis en de plaats die muziek 
-              daarin inneemt is een bron voor de thema’s en projecten die ze in haar lessen uitwerkt.
-            </p>
-          </div>
-          <div className="relative">
-            <div className="aspect-[4/5] rounded-t-full overflow-hidden shadow-2xl border-8 border-white">
-              <img src="/Foto2.jpg" className="w-full h-full object-cover" alt="De studio" />
-            </div>
-            <div className="absolute -bottom-8 -left-8 bg-white p-8 shadow-xl max-w-xs hidden lg:block">
-              <Quote className="text-amber-800 mb-4" />
-              <p className="font-serif italic text-slate-700">
-                Ieder jaar is er een thema uit de geschiedenis van de muziek, dans of literatuur waar een voorstelling uit voortkomt.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- KINDEREN --- */}
-      <section id="kinderen" className="py-32 bg-white px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-16 items-center">
-            <div className="md:w-1/2 order-2 md:order-1 grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="h-48 bg-amber-50 rounded-2xl flex flex-col items-center justify-center text-amber-800 p-6 text-center">
-                  <Sparkles size={32} className="mb-2" />
-                  <span className="text-xs font-bold uppercase tracking-widest text-slate-800">Wekelijkse Stickers</span>
-                </div>
-                <div className="h-64 bg-slate-100 rounded-2xl overflow-hidden shadow-inner">
-                   <img src="https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover grayscale" alt="Piano" />
-                </div>
-              </div>
-              <div className="space-y-4 pt-8">
-                <div className="h-64 bg-slate-100 rounded-2xl overflow-hidden shadow-inner">
-                   <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover" alt="Detail" />
-                </div>
-                <div className="h-48 bg-slate-900 rounded-2xl flex flex-col items-center justify-center text-white p-6 text-center">
-                  <BookOpen size={32} className="mb-2 text-amber-400" />
-                  <span className="text-xs font-bold uppercase tracking-widest">Persoonlijk Plakboek</span>
-                </div>
-              </div>
-            </div>
-            <div className="md:w-1/2 order-1 md:order-2 space-y-8">
-              <h2 className="text-4xl font-serif text-slate-900 text-center md:text-left">Voor de jonge ontdekkers</h2>
-              <div className="space-y-4 text-slate-600 leading-relaxed">
-                <p>
-                  Met jonge kinderen wordt er naast een methode ook met liedjes gewerkt. Deze zingen en klappen we en spelen ze tenslotte na. 
-                  We plakken ze dan in een mooi <strong>plakboek</strong> waar ook het huiswerk in komt te staan. Samen met een mooie muziekkaart 
-                  en de wekelijkse sticker ontstaat er een vrolijk en persoonlijk boek.
-                </p>
-                <p>
-                  Hoe groter de kinderen worden hoe specifieker hun eigen wensen. Klassieke of popmuziek, jazz en bluesimprovisatie: 
-                  het ligt binnen de mogelijkheden. Muzikale smaak is een ontwikkeling die gerespecteerd en gestimuleerd moet worden.
-                </p>
-                <p>
-                  Delen en verbinden is belangrijk bij Klavierplezier, daarom zijn er drie voorspeelmiddagen per jaar voor de kinderen waarvan één vaak met een thema of in het kader van een project.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- VOLWASSENEN --- */}
-      <section id="volwassenen" className="py-32 bg-slate-900 text-white px-8 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-amber-900/10 -skew-x-12 translate-x-10" />
-        <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-12 gap-16 items-center">
-          <div className="lg:col-span-7 space-y-8">
-            <div className="inline-flex items-center gap-3 text-amber-400">
-               <Coffee size={24} />
-               <span className="text-xs font-bold uppercase tracking-[0.3em]">Avondje onder ons</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-serif leading-tight">
-              Eindelijk die langgekoesterde <span className="italic text-amber-200 text-3xl md:text-4xl">wens vervullen.</span>
-            </h2>
-            <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
-              <p>
-                Ook als volwassene is het fijn om vroegere lessen weer op te pakken of nu eindelijk eens aan die langgekoesterde wens om piano te leren spelen toe te geven. 
-                Naast een vol bestaan kunnen afspraken en oefenen onder druk komen te staan; daar wordt zo flexibel mogelijk mee omgegaan.
-              </p>
-              <div className="bg-white/5 border border-white/10 p-10 rounded-sm italic font-serif text-amber-100 text-xl leading-relaxed shadow-2xl backdrop-blur-sm">
-                "We hebben één keer per jaar een avondje ‘onder ons’ waarbij er stukken voor elkaar worden gespeeld met een kop koffie 
-                of een glas wijn, op de prachtige **Steinway Concertvleugel** bij Annette thuis."
-              </div>
-            </div>
-          </div>
-          <div className="lg:col-span-5 hidden lg:block">
-            <img src="https://images.unsplash.com/photo-1520527053377-4710dbf6c0bc?auto=format&fit=crop&q=80&w=1000" className="rounded-sm grayscale opacity-60 shadow-2xl" alt="Steinway Detail" />
-          </div>
-        </div>
-      </section>
-
-      {/* --- OVER ANNETTE --- */}
-      <section id="overannette" className="py-32 px-8 bg-[#F4F2EE]">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-12 gap-16 items-start">
-            <div className="md:col-span-5 relative">
-              <div className="absolute inset-0 border-[12px] border-white -translate-x-6 -translate-y-6 z-0 shadow-lg" />
-              <img 
-                src="/Foto1.jpg" 
-                className="w-full relative z-10 shadow-2xl rounded-sm" 
-                alt="Annette Niels" 
-              />
-              <div className="absolute -bottom-6 -right-6 bg-slate-900 p-8 text-white z-20 shadow-xl">
-                 <Award size={40} className="text-amber-400" />
-              </div>
-            </div>
-            <div className="md:col-span-7 space-y-8 lg:pl-10">
-              <h2 className="text-5xl font-serif text-slate-900">Annette Niels</h2>
-              <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
-                <p>
-                  Nadat ik afgestudeerd was aan <strong>ArtEZ</strong>, heb ik mijn studie vervolgd aan het <strong>Utrechts Conservatorium</strong>, 
-                  waar ik liedbegeleiding studeerde bij Thom Bollen. Naast mijn werk als pianodocente vorm ik sinds 2000 een duo met zangeres Maria Kemler; wij treden regelmatig op.
-                </p>
-                <p>
-                  Ik ben lid van de <strong>EPTA</strong> waar ik actief ben bij de organisatie en de jurering van de landelijke graadexamens. 
-                  Uiteraard is er voor mijn leerlingen ook een mogelijkheid om mee te doen aan deze examens.
-                </p>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8">
-                <div className="flex items-start gap-4 p-6 bg-white shadow-sm border-t-2 border-amber-800">
-                  <GraduationCap className="text-amber-800" size={28} />
-                  <div>
-                    <h4 className="font-bold text-sm uppercase tracking-widest mb-1 text-slate-800">Expertise</h4>
-                    <p className="text-xs text-slate-500 italic">Techniek, geschiedenis & muziek-brein onderzoek.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4 p-6 bg-white shadow-sm border-t-2 border-amber-800">
-                  <Star className="text-amber-800" size={28} />
-                  <div>
-                    <h4 className="font-bold text-sm uppercase tracking-widest mb-1 text-slate-800">EPTA Jurering</h4>
-                    <p className="text-xs text-slate-500 italic">Begeleiding naar officiële graadexamens.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- CONTACT --- */}
-      <section id="contact" className="py-32 px-8 bg-white border-t border-slate-100">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
-          <div className="space-y-12">
-            <div>
-              <h2 className="text-5xl font-serif mb-8 text-slate-900">Contact & Locatie</h2>
-              <p className="text-slate-600 mb-8 text-lg leading-relaxed">
-                De lespraktijk bevindt zich aan de rand van de wijken **Gulden Bodem, Hoogkamp en Schaarsbergen**. 
-                Gevestigd aan de prachtige **Bakenbergseweg 224**, Arnhem.
-              </p>
-            </div>
+          
+          {/* Minimalistische knoppen / Links (Zoals in de screenshot) */}
+          <div className="flex flex-col sm:flex-row gap-8 sm:gap-14 justify-center items-center">
+            <button 
+              onClick={() => scrollTo('contact')} 
+              className="group text-white text-sm md:text-base font-bold tracking-[0.2em] uppercase hover:text-gray-300 transition-all flex items-center gap-3 relative pb-2"
+            >
+              Offerte Aanvragen
+              <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </button>
             
-            <div className="space-y-6">
-              {[
-                { icon: MapPin, title: 'Adres', desc: 'Bakenbergseweg 224, 6816 PL Arnhem' },
-                { icon: Phone, title: 'Telefoon', desc: 'Neem contact op voor een proefles' },
-                { icon: Mail, title: 'E-mail', desc: 'info@klavierplezier.nl' }
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-6 p-6 bg-[#FAF9F6] rounded-sm group hover:bg-slate-900 hover:text-white transition-all duration-500">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-amber-800 shadow-sm">
-                    <item.icon size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs uppercase tracking-[0.2em]">{item.title}</h4>
-                    <p className="opacity-70 text-sm">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="bg-[#FAF9F6] p-12 rounded-sm shadow-2xl relative">
-            <div className="absolute inset-0 border-2 border-amber-800/10 -m-4 rounded-sm" />
-            <h3 className="text-2xl font-serif mb-8 text-center uppercase tracking-widest text-slate-800">Bericht versturen</h3>
-            <form className="space-y-6 relative z-10">
-              <div className="grid md:grid-cols-2 gap-6">
-                <input type="text" placeholder="Naam" className="w-full bg-white border border-slate-200 rounded-sm px-6 py-4 outline-none focus:border-amber-800 transition-all" />
-                <input type="email" placeholder="E-mail" className="w-full bg-white border border-slate-200 rounded-sm px-6 py-4 outline-none focus:border-amber-800 transition-all" />
-              </div>
-              <textarea placeholder="Uw bericht" rows="4" className="w-full bg-white border border-slate-200 rounded-sm px-6 py-4 outline-none focus:border-amber-800 transition-all"></textarea>
-              <button className="w-full bg-slate-900 text-white font-bold py-5 rounded-sm hover:bg-amber-900 transition-all uppercase tracking-[0.3em] text-xs shadow-lg">
-                Proefles Aanvragen
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      {/* --- FOOTER --- */}
-      <footer className="bg-slate-900 text-white py-20 px-8">
-        <div className="max-w-7xl mx-auto flex flex-col items-center space-y-12">
-          <div className="text-center space-y-2">
-            <h2 className="text-2xl font-serif tracking-[0.3em] uppercase">Klavierplezier</h2>
-            <p className="text-amber-400 text-[10px] tracking-[0.4em] uppercase">Annette Niels • Arnhem Noord</p>
+            <button 
+              onClick={() => scrollTo('diensten')} 
+              className="group text-gray-300 text-sm md:text-base font-bold tracking-[0.2em] uppercase hover:text-white transition-all relative pb-2"
+            >
+              Mijn Diensten
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+            </button>
           </div>
           
-          <div className="w-full h-[1px] bg-white/10" />
+        </div>
+      </header>
 
-          <div className="flex flex-col md:flex-row justify-between w-full items-center gap-8 text-[10px] text-slate-500 uppercase tracking-widest text-center md:text-left">
-            <p>© {new Date().getFullYear()} Klavierplezier Annette Niels. Lid van EPTA Nederland.</p>
-            <div className="flex space-x-10">
-               <a href="#" className="hover:text-amber-400">Privacybeleid</a>
-               <a href="#" className="hover:text-amber-400">Algemene Voorwaarden</a>
+      {/* --- Over Mij --- */}
+      <section id="over-mij" className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row gap-16 items-center">
+            <div className="md:w-5/12 relative">
+               {/* Portret Foto Pepijn */}
+              <div className="aspect-[4/5] bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
+                 <img 
+                    src={pepijnFoto} 
+                    alt="Pepijn" 
+                    className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+                 />
+              </div>
             </div>
+            
+            <div className="md:w-7/12 space-y-6">
+              <div className="inline-block px-3 py-1 bg-gray-100 text-gray-600 rounded text-xs font-bold uppercase tracking-[0.15em] mb-2">Over mij</div>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+                Persoonlijke service van een vakman in wording
+              </h2>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                Als student autotechniek en ondernemer combineer ik technische kennis met praktijkervaring in de vervoersbranche. Sinds meer dan een jaar help ik particulieren en bedrijven met professionele vervoersdiensten, van kleine verhuizingen tot opruimklussen. 
+              </p>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                Mijn focus ligt op betrouwbare service, scherpe tarieven en persoonlijke aandacht voor elke opdracht. Jij hebt een klus, ik de oplossing.
+              </p>
+              
+              <blockquote className="border-l-4 border-gray-900 bg-gray-50 p-6 rounded-r-xl italic text-gray-800 text-lg my-8">
+                "Ik denk altijd met je mee en zorg dat de klus netjes en snel wordt gedaan. Voor grotere opdrachten regel ik gewoon extra handjes."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- Diensten --- */}
+      <section id="diensten" className="py-24 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="inline-block px-3 py-1 bg-white text-gray-600 border border-gray-200 rounded text-xs font-bold uppercase tracking-[0.15em] mb-4">Diensten</div>
+            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">Waarmee kan ik helpen?</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { icon: Home, title: "Kleine verhuizingen", desc: "Perfect voor studentenkamers, studio's of als je net dat beetje extra laadruimte nodig hebt." },
+              { icon: Package, title: "Meubeltransport", desc: "Marktplaats aankoop gedaan? Ik haal het veilig op en breng het naar binnen." },
+              { icon: Wrench, title: "Ontruimingen", desc: "Schuren, garages of opslagboxen vakkundig en bezemschoon leegruimen." },
+              { icon: Trash2, title: "Grofvuil & Kringloop", desc: "Spullen waar je vanaf wilt breng ik netjes naar de stort of de lokale kringloop." },
+              { icon: Truck, title: "Flexibele klushulp", desc: "Heb je naast vervoer ook iemand nodig die helpt tillen of monteren? Ik help mee." },
+              { icon: MessageCircle, title: "Maatwerk", desc: "Staat je klus er niet tussen? Neem contact op, er is vaak meer mogelijk dan je denkt." }
+            ].map((service, idx) => (
+              <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="text-gray-900 mb-6">
+                  <service.icon size={36} strokeWidth={1.5} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* --- Waarom Kiezen --- */}
+      <section id="waarom-kiezen" className="py-24 bg-white border-y border-gray-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="lg:w-1/2 space-y-10">
+              <div>
+                <div className="inline-block px-3 py-1 bg-gray-100 text-gray-600 rounded text-xs font-bold uppercase tracking-[0.15em] mb-4">Voordelen</div>
+                <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">Waarom je voor mij kiest</h2>
+                <p className="text-xl text-gray-600">Geen gedoe met grote verhuisbedrijven of busjes huren. Ik kom voorrijden en we regelen het samen.</p>
+              </div>
+
+              <div className="space-y-8">
+                {[
+                  { icon: Clock, title: "Altijd op tijd", desc: "Een afspraak is een afspraak. Ik ben er wanneer we hebben afgesproken." },
+                  { icon: Banknote, title: "Transparante tarieven", desc: "Vooraf een duidelijke prijsopgave, zodat je precies weet waar je aan toe bent." },
+                  { icon: ShieldCheck, title: "Zuinig op jouw spullen", desc: "Ik ga met jouw spullen om alsof het mijn eigen spullen zijn. Veilig vastgezet in de bus." },
+                ].map((item, idx) => (
+                  <div key={idx} className="flex gap-5 items-start">
+                    <div className="mt-1 text-gray-900 shrink-0">
+                      <item.icon size={24} strokeWidth={2} />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h4>
+                      <p className="text-gray-600 text-lg">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="lg:w-1/2 bg-gray-950 text-white p-10 md:p-14 rounded-2xl relative shadow-2xl">
+              <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-widest text-sm">De technische voorsprong</h3>
+              <p className="text-gray-300 leading-relaxed text-lg mb-6">
+                Als student autotechniek weet ik hoe ik mijn bus in topconditie moet houden en hoe laadgewichten en krachten werken tijdens transport. 
+              </p>
+              <p className="text-gray-300 leading-relaxed text-lg">
+                Die technische kennis lijkt overdreven voor een kleine verhuizing, maar het betekent in de praktijk dat jouw spullen veiliger en efficiënter van A naar B gaan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- Contact --- */}
+      <section id="contact" className="py-24 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900">Klaar om te plannen?</h2>
+            <p className="text-gray-600 text-xl">Vul het formulier in of stuur me direct een appje. Ik reageer zo snel mogelijk met een voorstel.</p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-8 max-w-5xl mx-auto">
+            
+            {/* Contact Form */}
+            <div className="flex-[2] bg-white rounded-2xl p-10 shadow-sm border border-gray-200">
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-xs uppercase tracking-widest font-bold text-gray-500">Naam</label>
+                    <input type="text" className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" required />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs uppercase tracking-widest font-bold text-gray-500">Telefoon</label>
+                    <input type="tel" className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" required />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <label className="text-xs uppercase tracking-widest font-bold text-gray-500">E-mailadres</label>
+                  <input type="email" className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all" required />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-xs uppercase tracking-widest font-bold text-gray-500">Wat moet er gebeuren?</label>
+                  <textarea rows="4" className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:bg-white focus:ring-2 focus:ring-gray-900 focus:border-gray-900 outline-none transition-all resize-none" required></textarea>
+                </div>
+                <button type="button" className="w-full py-4 bg-gray-900 text-white rounded-lg font-bold tracking-widest uppercase text-sm hover:bg-black transition-all mt-4">
+                  Bericht versturen
+                </button>
+              </form>
+            </div>
+
+            {/* Contact Info (Zijkant) */}
+            <div className="flex-[1] flex flex-col gap-6">
+              <div className="bg-gray-950 p-10 rounded-2xl text-white h-full flex flex-col justify-center">
+                <h4 className="font-bold text-xl mb-8 uppercase tracking-widest text-sm">Direct Contact</h4>
+                <div className="space-y-8">
+                  <a href="https://wa.me/31614069705" target="_blank" rel="noreferrer" className="flex items-center gap-4 group">
+                    <MessageCircle size={24} className="text-gray-400 group-hover:text-white transition-colors" />
+                    <div>
+                      <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">WhatsApp</p>
+                      <p className="font-semibold text-lg">Stuur een appje</p>
+                    </div>
+                  </a>
+                  <a href="tel:0614069705" className="flex items-center gap-4 group">
+                    <Phone size={24} className="text-gray-400 group-hover:text-white transition-colors" />
+                    <div>
+                      <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">Bellen</p>
+                      <p className="font-semibold text-lg">06 14069705</p>
+                    </div>
+                  </a>
+                  <a href="mailto:Pepijnvervoert@outlook.com" className="flex items-center gap-4 group">
+                    <Mail size={24} className="text-gray-400 group-hover:text-white transition-colors" />
+                    <div>
+                      <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">E-mail</p>
+                      <p className="font-semibold break-all">Pepijnvervoert<br/>@outlook.com</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* --- Footer --- */}
+      <footer className="bg-white text-gray-500 py-12 text-center">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-4">
+          <div className="flex items-center gap-2 text-gray-900">
+            <Truck size={20} />
+            <span className="font-bold tracking-widest uppercase text-sm">Pepijn Vervoert</span>
+          </div>
+          <div className="text-xs font-medium tracking-wide">
+             <p>© {new Date().getFullYear()} Pepijn Vervoert. Alle rechten voorbehouden.</p>
           </div>
         </div>
       </footer>
+
     </div>
   );
-};
-
-export default Klavierplezier;
+}

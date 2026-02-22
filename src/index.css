@@ -1,82 +1,54 @@
 @import "tailwindcss";
 
-/* 1. RESET & BASIS STYLING */
-*, *::before, *::after {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+/* 1. THEME CONFIGURATIE */
+@theme {
+  /* Gebruik een strak, modern lettertype voor een betrouwbare uitstraling */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
+/* 2. GLOBALE BASIS STYLING */
 :root {
-  --mint: #6EE7B7;
-  --dark: #1F2937;
-  --bg-gray: #F9FAFB;
-  --font-modern: 'Inter', sans-serif;
-  --font-retro: 'Press Start 2P', cursive;
-  font-family: var(--font-modern);
-  font-size: 14px;
+  /* Standaard scrollbar properties voor Firefox in de blauwe huisstijl */
+  scrollbar-width: thin;
+  scrollbar-color: #2563eb #f9fafb; 
 }
 
-@media (min-width: 768px) {
-  :root { font-size: 16px; }
+html {
+  /* Zorgt ervoor dat anker-links (zoals href="#contact") vloeiend scrollen */
+  scroll-behavior: smooth; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* 2. FLEXIBELE BODY (SCROLL-VRIENDELIJK) */
-html, body {
-  width: 100%;
-  min-height: 100%; /* Gebruik min-height in plaats van vaste height */
+body {
+  /* Voorkomt horizontaal scrollen op mobiel bij te brede elementen */
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background-color: var(--bg-gray);
-  /* Verwijder position: fixed zodat scrollen weer werkt */
-  overflow-x: hidden; 
-  overflow-y: auto; 
 }
 
-/* 3. MAIN WRAPPER */
-main {
-  width: 100%;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
+/* Zorgt voor een mooie blauwe achtergrond als gebruikers tekst selecteren */
+::selection {
+  background-color: #2563eb; /* Tailwind blue-600 */
+  color: #ffffff;
 }
 
-/* 4. MODERN CONTAINER (HUB) */
-.modern-container {
-  width: 100%;
-  max-width: 1400px; 
-  margin: 0 auto;
-  padding: 0 2rem;
+/* 3. CUSTOM SCROLLBAR (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-/* 5. ARCADE MODE (GAME LOCK) */
-/* Wanneer de game aanstaat, zetten we de boel wél op slot voor de arcade-vibe */
-.arcade-mode {
-  background-color: #050505 !important;
-  font-family: var(--font-retro) !important;
-  color: white;
-  position: fixed; /* Lock alleen in game-mode */
-  inset: 0;
-  width: 100vw;
-  height: 100dvh;
-  overflow: hidden; 
-  z-index: 100;
+::-webkit-scrollbar-track {
+  background: #f9fafb; /* Tailwind gray-50, matcht met de website achtergrond */
 }
 
-.arcade-mode img {
-  image-rendering: pixelated;
+::-webkit-scrollbar-thumb {
+  background-color: #2563eb; /* Tailwind blue-600 */
+  border-radius: 9999px; /* Volledig afgerond */
+  /* Een transparante border creëert een mooie 'padding' in de scrollbar-track */
+  border: 3px solid #f9fafb; 
 }
 
-/* --- UI ELEMENTEN --- */
-.text-gradient {
-  background: linear-gradient(to right, #059669, #6EE7B7, #059669);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 4s linear infinite;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1d4ed8; /* Tailwind blue-700 bij hover */
 }
-
-@keyframes shine { to { background-position: 200% center; } }
-
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #f1f1f1; }
-::-webkit-scrollbar-thumb { background: var(--mint); border-radius: 10px; }
