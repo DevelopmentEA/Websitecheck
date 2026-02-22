@@ -452,10 +452,12 @@ export default function PepijnVervoert() {
             </p>
             
             <a 
-              href="https://wa.me/31638044720" 
+              href="https://wa.me/31638044720?text=Hi%20Elbert%2C%20ik%20wil%20graag%20een%20website%20voor%20%22....%22" 
+              target="_blank"
+              rel="noreferrer"
               className="group text-xs font-semibold text-gray-600 hover:text-white transition-colors duration-300 flex items-center gap-2"
             >
-              Goedkope website? <span className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">&rarr;</span>
+              Ook zo'n strakke website laten maken? <span className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">&rarr;</span>
             </a>
           </div>
 
