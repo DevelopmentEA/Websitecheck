@@ -336,15 +336,28 @@ export default function PepijnVervoert() {
       </section>
 
       {/* --- Footer --- */}
-      <footer className="bg-white text-gray-500 py-12 text-center">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-4">
+      <footer className="bg-white py-12 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6 text-center">
+          
           <div className="flex items-center gap-2 text-gray-900">
-            <Truck size={20} />
-            <span className="font-bold tracking-widest uppercase text-sm">Pepijn Vervoert</span>
+            <Truck size={22} strokeWidth={1.5} />
+            <span className="font-bold tracking-widest uppercase text-base">Pepijn Vervoert</span>
           </div>
-          <div className="text-xs font-medium tracking-wide">
-             <p>© {new Date().getFullYear()} Pepijn Vervoert. Alle rechten voorbehouden.</p>
+          
+          <div className="flex flex-col gap-2 items-center">
+            <p className="text-sm font-medium tracking-wide text-gray-500">
+              © {new Date().getFullYear()} Pepijn Vervoert. Alle rechten voorbehouden.
+            </p>
+            
+            {/* Maker Credit Link */}
+            <a 
+              href="mailto:elbertandriessen08@gmail.com" 
+              className="text-xs font-semibold text-gray-400 hover:text-gray-900 transition-colors duration-300 mt-2"
+            >
+              Ook zo'n website?
+            </a>
           </div>
+
         </div>
       </footer>
 
